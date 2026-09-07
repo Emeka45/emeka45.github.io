@@ -3,20 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="C. O. Eric — technology and software. Home of Universal Browser and Universal Reader.">
+  <meta name="description" content="C. O. Eric — independent technology and software. Home of Universal Browser and Universal Reader.">
   <meta name="theme-color" content="#6d28d9">
+  <meta property="og:title" content="C. O. Eric — Technology & Software">
+  <meta property="og:description" content="Independent software development focused on useful products for real people.">
+  <meta property="og:type" content="website">
   <title>C. O. Eric — Technology & Software</title>
   <style>
     :root{--bg:#080612;--panel:#120d21;--text:#f8f7ff;--muted:#b9b2ca;--accent:#8b5cf6;--accent2:#c084fc;--line:rgba(255,255,255,.10)}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#2b1554 0,transparent 34%),linear-gradient(180deg,var(--bg),#0d0917);color:var(--text);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
     a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}.brand{font-weight:800;letter-spacing:.02em}.navlinks{display:flex;gap:22px;color:var(--muted);font-size:.95rem}.navlinks a:hover{color:white}
-    .hero{padding:92px 0 78px;max-width:850px}.eyebrow{display:inline-block;padding:7px 12px;border:1px solid var(--line);border-radius:999px;color:#ddd0ff;background:rgba(139,92,246,.10);font-size:.86rem}.hero h1{font-size:clamp(3rem,8vw,6.5rem);line-height:.95;margin:24px 0 22px;letter-spacing:-.055em}.gradient{background:linear-gradient(100deg,#fff,#d8b4fe);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:1.2rem;color:var(--muted);max-width:680px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:12px 18px;border-radius:12px;border:1px solid var(--line);font-weight:700}.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:white;border:0}.section{padding:70px 0;border-top:1px solid var(--line)}.section h2{font-size:2rem;margin:0 0 10px}.section-intro{color:var(--muted);max-width:700px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:28px}.card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:22px;padding:28px}.card h3{margin:0 0 8px;font-size:1.35rem}.card p{color:var(--muted);margin-bottom:18px}.tag{display:inline-block;color:#dbc8ff;font-size:.8rem;margin-right:10px}.footer{padding:35px 0 50px;color:var(--muted);font-size:.9rem;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}@media(max-width:700px){.navlinks{display:none}.hero{padding-top:65px}.grid{grid-template-columns:1fr}.hero h1{font-size:3.5rem}}
+    .hero{padding:92px 0 78px;max-width:850px}.eyebrow{display:inline-block;padding:7px 12px;border:1px solid var(--line);border-radius:999px;color:#ddd0ff;background:rgba(139,92,246,.10);font-size:.86rem}.hero h1{font-size:clamp(3rem,8vw,6.5rem);line-height:.95;margin:24px 0 22px;letter-spacing:-.055em}.gradient{background:linear-gradient(100deg,#fff,#d8b4fe);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:1.2rem;color:var(--muted);max-width:680px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:12px 18px;border-radius:12px;border:1px solid var(--line);font-weight:700}.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:white;border:0}.section{padding:70px 0;border-top:1px solid var(--line)}.section h2{font-size:2rem;margin:0 0 10px}.section-intro{color:var(--muted);max-width:700px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:28px}.card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:22px;padding:28px}.card h3{margin:0 0 8px;font-size:1.35rem}.card p{color:var(--muted);margin-bottom:18px}.tag{display:inline-block;color:#dbc8ff;font-size:.8rem;margin-right:10px}.status{display:inline-block;margin-top:4px;padding:4px 9px;border-radius:999px;background:rgba(139,92,246,.12);color:#dccaff;font-size:.75rem}.footer{padding:35px 0 50px;color:var(--muted);font-size:.9rem;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-links{display:flex;gap:16px;flex-wrap:wrap}@media(max-width:700px){.navlinks{display:none}.hero{padding-top:65px}.grid{grid-template-columns:1fr}.hero h1{font-size:3.5rem}}
   </style>
 </head>
 <body>
   <header class="wrap nav">
     <a class="brand" href="#top">C. O. Eric</a>
-    <nav class="navlinks" aria-label="Primary"><a href="#projects">Projects</a><a href="#about">About</a><a href="privacy.html">Privacy</a></nav>
+    <nav class="navlinks" aria-label="Primary"><a href="#projects">Projects</a><a href="#about">About</a><a href="contact.html">Contact</a></nav>
   </header>
   <main id="top">
     <section class="wrap hero">
@@ -30,8 +33,8 @@
         <h2>Projects</h2>
         <p class="section-intro">Products being developed under the C. O. Eric technology portfolio.</p>
         <div class="grid">
-          <article class="card"><span class="tag">ANDROID · BROWSER</span><h3>Universal Browser</h3><p>A GeckoView-based mobile browser designed to combine modern browsing, privacy controls, downloads, media handling and extension support in one focused experience.</p><a href="https://github.com/Emeka45/Universal-Browser">View project →</a></article>
-          <article class="card"><span class="tag">ANDROID · READING</span><h3>Universal Reader</h3><p>A document and ebook reading experience built to make personal reading simple and accessible across supported Android devices.</p><a href="https://github.com/Emeka45/Universal-Reader">View project →</a></article>
+          <article class="card"><span class="tag">ANDROID · BROWSER</span><span class="status">In development</span><h3>Universal Browser</h3><p>A GeckoView-based mobile browser designed to combine modern browsing, privacy controls, downloads, media handling and extension support in one focused experience.</p><a href="https://github.com/Emeka45/Universal-Browser">View project →</a></article>
+          <article class="card"><span class="tag">ANDROID · READING</span><span class="status">In development</span><h3>Universal Reader</h3><p>A document and ebook reading experience built to make personal reading simple and accessible across supported Android devices.</p><a href="https://github.com/Emeka45/Universal-Reader">View project →</a></article>
         </div>
       </div>
     </section>
@@ -42,6 +45,6 @@
       </div>
     </section>
   </main>
-  <footer class="wrap footer"><span>© 2026 C. O. Eric. All rights reserved.</span><a href="privacy.html">Privacy Policy</a></footer>
+  <footer class="wrap footer"><span>© 2026 C. O. Eric. All rights reserved.</span><div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Contact</a></div></footer>
 </body>
 </html>
