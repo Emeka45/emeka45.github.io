@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://emeka45.github.io/</loc></url>
+  <url><loc>https://emeka45.github.io/browser.html</loc></url>
+  <url><loc>https://emeka45.github.io/reader.html</loc></url>
+  <url><loc>https://emeka45.github.io/downloads.html</loc></url>
+  <url><loc>https://emeka45.github.io/releases.html</loc></url>
+  <url><loc>https://emeka45.github.io/security.html</loc></url>
   <url><loc>https://emeka45.github.io/privacy.html</loc></url>
   <url><loc>https://emeka45.github.io/terms.html</loc></url>
   <url><loc>https://emeka45.github.io/contact.html</loc></url>
