@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://emeka45-website.netlify.app/sitemap.xml
+Sitemap: https://emeka45.github.io/sitemap.xml
