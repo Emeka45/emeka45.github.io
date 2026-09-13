@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="C. O. Eric Newsroom — independently researched technology, AI, gaming, anime, science and world news.">
+<title>C. O. Eric Newsroom</title>
+<style>body{margin:0;background:#08060f;color:#faf8ff;font-family:system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.7}.wrap{width:min(980px,92%);margin:auto}.hero{padding:70px 0 45px}.eyebrow{color:#d6c4ff;font-weight:800}.hero h1{font-size:clamp(2.8rem,8vw,5rem);line-height:.95;margin:15px 0}.muted{color:#b9b2c9}.notice{border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:20px;background:rgba(155,108,255,.07);margin-bottom:35px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}.card{display:block;color:inherit;text-decoration:none;border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:22px;background:rgba(255,255,255,.035)}.card:hover{border-color:rgba(200,170,255,.4);transform:translateY(-2px)}.tag{font-size:.75rem;color:#d6c4ff;font-weight:800}.card h2{font-size:1.25rem;margin:8px 0}.footer{padding:55px 0;color:#9f98ad}</style>
+</head>
+<body>
+<header class="wrap hero"><span class="eyebrow">C. O. ERIC · NEWSROOM</span><h1>What's happening.<br><span style="color:#b995ff">Verified first.</span></h1><p class="muted">An autonomous newsroom covering technology, AI, gaming, anime, science and world developments. Stories are generated only after automated evidence, originality and safety checks.</p></header>
+<main class="wrap">
+<section class="notice"><strong>Our editorial standard</strong><p class="muted">We do not intentionally publish rumors as facts, fabricated claims or sexually explicit material. Stories that fail the evidence or safety gates are held back instead of being published.</p></section>
+<section><h2>Latest stories</h2><div id="stories" class="grid"><p class="muted">The newsroom is preparing its first verified stories.</p></div></section>
+</main>
+<footer class="wrap footer"><a href="index.html">← C. O. Eric home</a></footer>
+<script>
+(async()=>{try{const r=await fetch('news/index.json',{cache:'no-store'});if(!r.ok)return;const items=await r.json();const box=document.querySelector('#stories');if(!items.length)return;box.innerHTML=items.map(x=>`<a class="card" href="news/${encodeURIComponent(x.file)}"><span class="tag">${x.category||'NEWS'}</span><h2>${x.title}</h2><p class="muted">${x.summary||''}</p><small class="muted">${x.date||''}</small></a>`).join('')}catch(e){console.log(e)}})();
+</script>
+</body></html>
