@@ -1,0 +1,35 @@
+name: C. O. Eric AI Newsroom
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  newsroom:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout site
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run newsroom
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/ai_newsroom.py
+      - name: Publish generated articles
+        run: |
+          git config user.name 'C. O. Eric AI Newsroom'
+          git config user.email 'actions@users.noreply.github.com'
+          git add news/ newsroom-data/
+          if git diff --cached --quiet; then
+            echo 'No publishable stories were generated.'
+          else
+            git commit -m 'AI newsroom: publish verified stories'
+            git push
+          fi
