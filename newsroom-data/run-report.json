@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-14T17:17:21.302196+00:00",
-  "finished_utc": "2026-09-14T17:17:27.314921+00:00",
+  "started_utc": "2026-09-14T17:37:53.387703+00:00",
+  "finished_utc": "2026-09-14T17:38:03.635884+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 4,
   "feed_count": 11,
@@ -8,15 +8,13 @@
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 125,
-  "fresh_items": 123,
+  "fresh_items": 122,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
   "ai_failures": 0,
-  "held_or_rejected": 3,
-  "published_count": 1,
+  "held_or_rejected": 1,
+  "published_count": 3,
   "rejection_reasons": [
-    "The provided source records discuss three entirely different and unrelated events in Grenada, South Africa, and Bali, failing to meet the requirement that at least two different publisher domains materially support the same central event.",
-    "The provided source records discuss two completely different scientific subjects (saltwater crocodiles in Bangladesh and endangered pupfish preservation) and do not materially corroborate the same central event across at least two publisher domains.",
-    "The provided source records discuss two completely different biological and conservation studies involving separate species and locations, failing to provide corroborating sources for a single central event."
+    "The provided source records cover three completely separate, unrelated events across different countries without at least two publisher domains supporting the same central event."
   ]
 }
