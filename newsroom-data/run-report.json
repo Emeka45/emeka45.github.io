@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-14T16:37:09.525850+00:00",
-  "finished_utc": "2026-09-14T16:37:20.002306+00:00",
+  "started_utc": "2026-09-14T16:44:39.448818+00:00",
+  "finished_utc": "2026-09-14T16:44:47.271673+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 4,
   "feed_count": 11,
@@ -15,8 +15,8 @@
   "held_or_rejected": 4,
   "published_count": 0,
   "rejection_reasons": [
-    "Multiple reputable gaming sources provide corroborated details about Blizzard's major announcements at BlizzCon 2026, including Diablo 5 and Diablo 4 updates.",
-    "article did not contain a valid inline link to a supplied source",
+    "Multiple reputable gaming sources from Eurogamer corroborate the announcements made at BlizzCon 2026, including the surprise reveal of Diablo 5 and upcoming plans for Diablo 4.",
+    "The source records discuss different aspects of Diablo 4 (expansions ending vs. a Witcher collaboration and Season 15 release times) without multiple independent sources corroborating the same specific central event.",
     "article did not contain a valid inline link to a supplied source",
     "article did not contain a valid inline link to a supplied source"
   ]
