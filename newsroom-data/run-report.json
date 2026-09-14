@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-14T16:26:29.761621+00:00",
-  "finished_utc": "2026-09-14T16:26:46.233321+00:00",
+  "started_utc": "2026-09-14T16:37:09.525850+00:00",
+  "finished_utc": "2026-09-14T16:37:20.002306+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 4,
   "feed_count": 11,
@@ -8,14 +8,16 @@
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 125,
-  "fresh_items": 125,
+  "fresh_items": 123,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
   "ai_failures": 0,
-  "held_or_rejected": 2,
-  "published_count": 2,
+  "held_or_rejected": 4,
+  "published_count": 0,
   "rejection_reasons": [
-    "Multiple reputable gaming news sources corroborate major announcements made at BlizzCon 2026, including the surprise reveal of Diablo 5 and future updates for Diablo 4.",
-    "The provided source records discuss different topics regarding Diablo 4 (expansions ending before Diablo 5, a Witcher collaboration, and Season 15 release times) without providing at least two sources from different domains that materially support the exact same central event or claim."
+    "Multiple reputable gaming sources provide corroborated details about Blizzard's major announcements at BlizzCon 2026, including Diablo 5 and Diablo 4 updates.",
+    "article did not contain a valid inline link to a supplied source",
+    "article did not contain a valid inline link to a supplied source",
+    "article did not contain a valid inline link to a supplied source"
   ]
 }
