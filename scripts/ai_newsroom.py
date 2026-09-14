@@ -17,19 +17,45 @@ INDEX = NEWS / 'index.json'
 NEWS.mkdir(exist_ok=True)
 DATA.mkdir(exist_ok=True)
 
+# Multiple independent feeds are deliberately used so the two-source rule can
+# actually be satisfied. A single publisher must never count as corroboration.
 FEEDS = {
-    'Technology': 'https://feeds.arstechnica.com/arstechnica/index',
-    'AI': 'https://www.technologyreview.com/feed/',
-    'Science': 'https://www.sciencedaily.com/rss/top/science.xml',
-    'Gaming': 'https://www.polygon.com/rss/index.xml',
-    'Anime': 'https://www.animenewsnetwork.com/all/rss.xml',
-    'World': 'https://feeds.bbci.co.uk/news/world/rss.xml',
+    'Technology': [
+        'https://feeds.arstechnica.com/arstechnica/index',
+        'https://www.theverge.com/rss/index.xml',
+    ],
+    'AI': [
+        'https://www.technologyreview.com/feed/',
+        'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml',
+    ],
+    'Science': [
+        'https://www.sciencedaily.com/rss/top/science.xml',
+        'https://phys.org/rss-feed/',
+    ],
+    'Gaming': [
+        'https://www.polygon.com/rss/index.xml',
+        'https://www.eurogamer.net/feed',
+    ],
+    'Anime': [
+        'https://www.animenewsnetwork.com/all/rss.xml',
+        'https://www.crunchyroll.com/news/rss',
+    ],
+    'World': [
+        'https://feeds.bbci.co.uk/news/world/rss.xml',
+        'https://www.theguardian.com/world/rss',
+    ],
 }
 BLOCKED_TERMS = ['porn', 'pornography', 'xxx', 'explicit sex', 'sexual explicit', 'sex tape', 'nude leak', 'onlyfans', 'erotic', 'sexual fetish']
+STOPWORDS = {
+    'about','after','again','against','being','could','first','from','have','into','more','most','other',
+    'over','said','same','some','than','that','their','there','these','they','this','those','through',
+    'under','what','when','where','which','while','with','would','will','your','news','new','says','has',
+    'its','are','and','for','the','was','were','you','how','why','who','today','latest','official'
+}
 
 
 def fetch(url):
-    req = urllib.request.Request(url, headers={'User-Agent': 'COEricAI-Newsroom/1.0'})
+    req = urllib.request.Request(url, headers={'User-Agent': 'COEricAI-Newsroom/1.1'})
     with urllib.request.urlopen(req, timeout=20) as r:
         return r.read()
 
@@ -38,7 +64,7 @@ def parse_feed(category, url):
     try:
         root = ET.fromstring(fetch(url))
     except Exception as exc:
-        print('Feed failed:', category, exc)
+        print('Feed failed:', category, url, exc)
         return []
     out = []
     for item in root.findall('.//item')[:12]:
@@ -48,7 +74,8 @@ def parse_feed(category, url):
         desc = html.unescape(re.sub(r'\s+', ' ', desc)).strip()
         pub = (item.findtext('pubDate') or '').strip()
         if title and link:
-            out.append({'category': category, 'title': title, 'url': link, 'summary': desc[:1200], 'published': pub})
+            domain = urllib.parse.urlparse(link).netloc.lower().removeprefix('www.')
+            out.append({'category': category, 'title': title, 'url': link, 'summary': desc[:1200], 'published': pub, 'domain': domain})
     return out
 
 
@@ -62,8 +89,33 @@ def load_state():
 
 
 def save_state(state):
-    state['seen'] = state['seen'][-500:]
+    state['seen'] = state['seen'][-1000:]
     STATE.write_text(json.dumps(state, indent=2, ensure_ascii=False))
+
+
+def keywords(text):
+    words = re.findall(r'[a-z0-9]{4,}', text.lower())
+    return {w for w in words if w not in STOPWORDS}
+
+
+def similarity(a, b):
+    ka, kb = keywords(a['title'] + ' ' + a['summary']), keywords(b['title'] + ' ' + b['summary'])
+    if not ka or not kb:
+        return 0
+    return len(ka & kb) / max(1, min(len(ka), len(kb)))
+
+
+def find_corroboration(item, candidates):
+    # Require a different publisher domain and a meaningful overlap in topic.
+    matches = []
+    for other in candidates:
+        if other['url'] == item['url'] or other['domain'] == item['domain'] or other['category'] != item['category']:
+            continue
+        score = similarity(item, other)
+        if score >= 0.30:
+            matches.append((score, other))
+    matches.sort(key=lambda x: x[0], reverse=True)
+    return [other for _, other in matches[:4]]
 
 
 def ask_ai(sources):
@@ -74,7 +126,8 @@ def ask_ai(sources):
 
 HARD RULES:
 - Never publish rumor, speculation, exaggeration, fabricated claims, fabricated quotes, or unsupported allegations as fact.
-- Require at least TWO independent source records supplied below that materially support the central claim. If fewer than two independent sources support it, return publish=false.
+- At least TWO source records below must come from DIFFERENT publisher domains and materially support the SAME central event/claim. The presence of two sources alone is not enough.
+- If the sources do not clearly corroborate the same central claim, return publish=false.
 - If sources materially conflict about the central fact, return publish=false.
 - Do not invent facts, names, dates, numbers, quotes, URLs, or events.
 - Do not copy or lightly rewrite source wording. Write a genuinely original synthesis.
@@ -82,6 +135,7 @@ HARD RULES:
 - Avoid graphic gore. If a story is sensitive but newsworthy, keep descriptions non-graphic.
 - Distinguish confirmed facts from clearly labeled analysis. Prefer facts.
 - Explain why the development matters.
+- Only cite sources that actually support the article. Never invent a source.
 
 Return ONLY valid JSON with this schema:
 {"publish":true|false,"reason":"...","category":"...","title":"...","summary":"...","body_html":"...","sources":[{"name":"...","url":"..."}],"confidence":0-100}
@@ -134,15 +188,24 @@ def publish(article):
 def main():
     state = load_state()
     candidates = []
-    for cat, feed in FEEDS.items():
-        candidates.extend(parse_feed(cat, feed))
+    for cat, feeds in FEEDS.items():
+        for feed in feeds:
+            candidates.extend(parse_feed(cat, feed))
     fresh = [x for x in candidates if x['url'] not in state['seen']]
-    for item in fresh[:8]:
-        related = [x for x in candidates if x['category'] == item['category'] and x['url'] != item['url']]
-        sources = [item] + related[:4]
+    print('Collected', len(candidates), 'candidates;', len(fresh), 'are fresh.')
+    published_count = 0
+    for item in fresh[:12]:
         if contains_blocked(item['title'] + ' ' + item['summary']):
             state['seen'].append(item['url'])
+            print('REJECTED blocked source:', item['title'])
             continue
+        corroborators = find_corroboration(item, candidates)
+        if not corroborators:
+            # Do not waste API calls on stories that cannot satisfy the two-domain rule.
+            print('HELD no independent corroboration:', item['title'])
+            state['seen'].append(item['url'])
+            continue
+        sources = [item] + corroborators
         try:
             article = ask_ai(sources)
         except Exception as exc:
@@ -151,12 +214,15 @@ def main():
         state['seen'].append(item['url'])
         text = article.get('title', '') + ' ' + article.get('summary', '') + ' ' + re.sub('<[^>]+>', ' ', article.get('body_html', ''))
         srcs = article.get('sources', [])
-        if article.get('publish') is True and article.get('confidence', 0) >= 85 and len(srcs) >= 2 and not contains_blocked(text):
+        domains = {urllib.parse.urlparse(s.get('url', '')).netloc.lower().removeprefix('www.') for s in srcs if s.get('url')}
+        if article.get('publish') is True and article.get('confidence', 0) >= 85 and len(srcs) >= 2 and len(domains) >= 2 and not contains_blocked(text):
             print('PUBLISHED', publish(article))
+            published_count += 1
         else:
             print('HELD/REJECTED:', article.get('reason', 'quality gate failed'))
     save_state(state)
     update_index()
+    print('Publication count:', published_count)
 
 if __name__ == '__main__':
     main()
