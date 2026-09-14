@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import datetime as dt
 import hashlib
 import html
@@ -15,117 +17,101 @@ ROOT = Path(__file__).resolve().parents[1]
 NEWS = ROOT / 'news'
 DATA = ROOT / 'newsroom-data'
 STATE = DATA / 'state.json'
-INDEX = NEWS / 'index.json'
 REPORT = DATA / 'run-report.json'
+INDEX = NEWS / 'index.json'
 NEWS.mkdir(exist_ok=True)
 DATA.mkdir(exist_ok=True)
 
+AI_MODEL = 'gemini-3.5-flash-lite'
+MAX_AI_CANDIDATES_PER_RUN = 4
+USER_AGENT = 'COEricAI-Newsroom/1.5'
+BLOCKED_TERMS = {'porn', 'pornography', 'xxx', 'explicit sex', 'sexual explicit', 'sex tape', 'nude leak', 'onlyfans', 'erotic', 'sexual fetish'}
+
 FEEDS = {
     'Technology': ['https://feeds.arstechnica.com/arstechnica/index', 'https://www.theverge.com/rss/index.xml'],
-    'AI': ['https://www.technologyreview.com/feed/', 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml'],
-    'Science': ['https://www.sciencedaily.com/rss/top/science.xml', 'https://phys.org/rss-feed/'],
+    'AI': ['https://www.technologyreview.com/feed/', 'https://www.theverge.com/rss/ai/index.xml'],
+    'Science': ['https://www.sciencedaily.com/rss/all.xml', 'https://phys.org/rss-feed/'],
     'Gaming': ['https://www.polygon.com/rss/index.xml', 'https://www.eurogamer.net/feed'],
     'Anime': ['https://www.animenewsnetwork.com/all/rss.xml'],
     'World': ['https://feeds.bbci.co.uk/news/world/rss.xml', 'https://www.theguardian.com/world/rss'],
 }
-BLOCKED_TERMS = ['porn', 'pornography', 'xxx', 'explicit sex', 'sexual explicit', 'sex tape', 'nude leak', 'onlyfans', 'erotic', 'sexual fetish']
-STOPWORDS = {'about','after','again','against','being','could','first','from','have','into','more','most','other','over','said','same','some','than','that','their','there','these','they','this','those','through','under','what','when','where','which','while','with','would','will','your','news','new','says','has','its','are','and','for','the','was','were','you','how','why','who','today','latest','official'}
-AI_MODEL = 'gemini-3.5-flash-lite'
-MAX_AI_CANDIDATES_PER_RUN = 4
-
-
-def fetch(url):
-    req = urllib.request.Request(url, headers={'User-Agent': 'COEricAI-Newsroom/1.5'})
-    with urllib.request.urlopen(req, timeout=20) as r:
-        return r.read()
-
-
-def parse_feed(category, url):
-    try:
-        root = ET.fromstring(fetch(url))
-    except Exception as exc:
-        print('Feed failed:', category, url, exc)
-        return [], str(exc)
-    out = []
-    for item in root.findall('.//item')[:15]:
-        title = (item.findtext('title') or '').strip()
-        link = (item.findtext('link') or '').strip()
-        desc = re.sub(r'<[^>]+>', ' ', item.findtext('description') or '')
-        desc = html.unescape(re.sub(r'\s+', ' ', desc)).strip()
-        pub = (item.findtext('pubDate') or '').strip()
-        if title and link:
-            domain = urllib.parse.urlparse(link).netloc.lower().removeprefix('www.')
-            out.append({'category': category, 'title': title, 'url': link, 'summary': desc[:1200], 'published': pub, 'domain': domain})
-    return out, None
+STOPWORDS = {'the','a','an','and','or','of','to','in','on','for','with','from','by','at','is','are','as','new','news','after','into','over','its','this','that','will','has','have','how','why','what','who','their','they','it','be','about','more','than','says','said'}
 
 
 def load_state():
     if STATE.exists():
         try:
-            data = json.loads(STATE.read_text())
-            return data if isinstance(data, dict) else {'seen': []}
+            return json.loads(STATE.read_text(encoding='utf-8'))
         except Exception:
             pass
     return {'seen': []}
 
 
 def save_state(state):
-    state['seen'] = state.get('seen', [])[-1000:]
-    STATE.write_text(json.dumps(state, indent=2, ensure_ascii=False))
+    state['seen'] = list(dict.fromkeys(state.get('seen', [])))[-2000:]
+    STATE.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding='utf-8')
 
 
-def keywords(text):
-    words = re.findall(r'[a-z0-9]{4,}', text.lower())
-    return {w for w in words if w not in STOPWORDS}
+def parse_feed(category, url):
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            raw = r.read()
+        root = ET.fromstring(raw)
+        items = []
+        for node in root.findall('.//item')[:15]:
+            title = (node.findtext('title') or '').strip()
+            link = (node.findtext('link') or '').strip()
+            summary = (node.findtext('description') or '').strip()
+            if title and link:
+                items.append({'category': category, 'title': re.sub('<[^>]+>', ' ', title), 'summary': re.sub('<[^>]+>', ' ', summary), 'url': link, 'domain': urllib.parse.urlparse(link).netloc.lower().removeprefix('www.')})
+        return items, None
+    except Exception as exc:
+        return [], str(exc)
+
+
+def tokens(text):
+    return {x for x in re.findall(r'[a-z0-9]{3,}', text.lower()) if x not in STOPWORDS}
 
 
 def similarity(a, b):
-    ka = keywords(a['title'] + ' ' + a['summary'])
-    kb = keywords(b['title'] + ' ' + b['summary'])
-    if not ka or not kb:
-        return 0.0
-    return len(ka & kb) / max(1, min(len(ka), len(kb)))
+    aa, bb = tokens(a['title'] + ' ' + a['summary']), tokens(b['title'] + ' ' + b['summary'])
+    if not aa or not bb:
+        return 0
+    return len(aa & bb) / max(1, min(len(aa), len(bb)))
 
 
-def find_corroboration(item, candidates):
+def find_corroboration(item, all_items):
     matches = []
-    for other in candidates:
-        if other['url'] == item['url'] or other['domain'] == item['domain'] or other['category'] != item['category']:
+    for other in all_items:
+        if other['url'] == item['url'] or other['category'] != item['category'] or other['domain'] == item['domain']:
             continue
-        score = similarity(item, other)
-        if score >= 0.18:
-            matches.append((score, other))
-    matches.sort(key=lambda x: x[0], reverse=True)
-    return [other for _, other in matches[:4]]
+        if similarity(item, other) >= 0.18:
+            matches.append(other)
+    return matches[:3]
 
 
 def ask_ai(sources):
     key = os.environ.get('GEMINI_API_KEY')
     if not key:
-        raise RuntimeError('GEMINI_API_KEY is not configured')
-    prompt = '''You are the autonomous C. O. Eric Newsroom editor. Produce ONE original news article only if the evidence is strong enough.
+        raise RuntimeError('GEMINI_API_KEY is missing')
+    prompt = '''You are the C. O. Eric AI Newsroom. Create a concise original news article only when the supplied source records materially corroborate the same central event.
 
-HARD RULES:
-- Never publish rumor, speculation, exaggeration, fabricated claims, fabricated quotes, or unsupported allegations as fact.
-- At least TWO source records below must come from DIFFERENT publisher domains and materially support the SAME central event or claim.
-- If the records are merely about the same broad topic but do not corroborate the same event, return publish=false.
-- If sources materially conflict about the central fact, return publish=false.
-- Do not invent facts, names, dates, numbers, quotes, URLs, or events.
-- Do not copy or lightly rewrite source wording. Write a genuinely original synthesis.
-- Do not publish sexually explicit or pornographic content, sexualized descriptions, or sexual-leak stories. If the story's central subject is sexual/explicit, return publish=false.
-- Avoid graphic gore. If a story is sensitive but newsworthy, keep descriptions non-graphic.
-- Distinguish confirmed facts from clearly labeled analysis. Prefer facts.
-- Explain why the development matters.
-- Only cite and link to sources supplied below. Never invent a source or URL.
+STRICT RULES:
+- Do not publish rumor, speculation, exaggeration, fabricated facts, fabricated quotes, or invented URLs.
+- At least two different publisher domains must materially support the same central event.
+- Do not copy or lightly rewrite source wording.
+- No sexually explicit or pornographic content. No graphic gore.
+- Distinguish confirmed facts from analysis.
+- Use only the supplied source URLs.
 
-LINKING RULES — IMPORTANT:
-- The article body_html MUST contain at least ONE useful inline hyperlink to a supplied source URL when the source is relevant to the sentence being written.
-- You may use multiple inline hyperlinks when useful, but do not stuff links into every sentence.
-- Use normal HTML anchors such as <a href="EXACT_SUPPLIED_URL">publisher or relevant source text</a>.
-- Every href in body_html MUST exactly match one of the supplied source URLs. Never create, guess, alter, shorten, or redirect a URL.
-- Use links naturally: for example, link the first mention of a reported announcement, company, game, study, or event to the source that supports that claim.
-- The Sources section is handled by the publishing system; do not create a separate Sources heading inside body_html.
-- body_html should contain article paragraphs and, when appropriate, headings or lists, but no scripts, iframes, forms, or external assets.
+LINKING RULES:
+- body_html MUST contain at least one useful inline hyperlink to a supplied source URL.
+- Use a normal HTML anchor such as <a href="EXACT_SUPPLIED_URL">relevant source text</a>.
+- Every href in body_html MUST exactly match one of the supplied source URLs.
+- Never invent, alter, shorten, redirect, or track URLs.
+- Link naturally to the first useful mention of the announcement, company, game, study, event, or other subject.
+- Do not add scripts, iframes, forms, or external assets.
 
 Return ONLY valid JSON with this schema:
 {"publish":true|false,"reason":"...","category":"...","title":"...","summary":"...","body_html":"...","sources":[{"name":"...","url":"..."}],"confidence":0-100}
@@ -162,18 +148,18 @@ def contains_blocked(text):
 
 
 def extract_links(body_html):
-    return re.findall(r'<a\b[^>]*\bhref=["\']([^"\']+)["\'][^>]*>', body_html or '', flags=re.I)
+    # Decode HTML entities so URLs such as ?a=1&amp;b=2 compare exactly with feed URLs.
+    return [html.unescape(u) for u in re.findall(r'<a\b[^>]*\bhref=["\']([^"\']+)["\'][^>]*>', body_html or '', flags=re.I)]
 
 
 def sanitize_body_html(body_html, allowed_urls):
-    """Keep article HTML simple and strip links that were not supplied by our feeds."""
     allowed = set(allowed_urls)
     def replace_link(match):
         attrs, label = match.group(1), match.group(2)
         href_match = re.search(r'\bhref=["\']([^"\']+)["\']', attrs, flags=re.I)
-        if not href_match or href_match.group(1) not in allowed:
+        if not href_match or html.unescape(href_match.group(1)) not in allowed:
             return html.escape(re.sub(r'<[^>]+>', '', label))
-        href = html.escape(href_match.group(1), quote=True)
+        href = html.escape(html.unescape(href_match.group(1)), quote=True)
         text = re.sub(r'<[^>]+>', '', label).strip()
         return f'<a href="{href}" rel="nofollow noopener" target="_blank">{html.escape(text)}</a>'
     body_html = re.sub(r'<a\b([^>]*)>(.*?)</a>', replace_link, body_html or '', flags=re.I | re.S)
