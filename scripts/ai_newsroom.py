@@ -35,7 +35,7 @@ MAX_AI_CANDIDATES_PER_RUN = 4
 
 
 def fetch(url):
-    req = urllib.request.Request(url, headers={'User-Agent': 'COEricAI-Newsroom/1.4'})
+    req = urllib.request.Request(url, headers={'User-Agent': 'COEricAI-Newsroom/1.5'})
     with urllib.request.urlopen(req, timeout=20) as r:
         return r.read()
 
@@ -116,7 +116,16 @@ HARD RULES:
 - Avoid graphic gore. If a story is sensitive but newsworthy, keep descriptions non-graphic.
 - Distinguish confirmed facts from clearly labeled analysis. Prefer facts.
 - Explain why the development matters.
-- Only cite sources supplied below. Never invent a source or URL.
+- Only cite and link to sources supplied below. Never invent a source or URL.
+
+LINKING RULES — IMPORTANT:
+- The article body_html MUST contain at least ONE useful inline hyperlink to a supplied source URL when the source is relevant to the sentence being written.
+- You may use multiple inline hyperlinks when useful, but do not stuff links into every sentence.
+- Use normal HTML anchors such as <a href="EXACT_SUPPLIED_URL">publisher or relevant source text</a>.
+- Every href in body_html MUST exactly match one of the supplied source URLs. Never create, guess, alter, shorten, or redirect a URL.
+- Use links naturally: for example, link the first mention of a reported announcement, company, game, study, or event to the source that supports that claim.
+- The Sources section is handled by the publishing system; do not create a separate Sources heading inside body_html.
+- body_html should contain article paragraphs and, when appropriate, headings or lists, but no scripts, iframes, forms, or external assets.
 
 Return ONLY valid JSON with this schema:
 {"publish":true|false,"reason":"...","category":"...","title":"...","summary":"...","body_html":"...","sources":[{"name":"...","url":"..."}],"confidence":0-100}
@@ -150,6 +159,27 @@ SOURCE RECORDS:
 def contains_blocked(text):
     low = text.lower()
     return any(term in low for term in BLOCKED_TERMS)
+
+
+def extract_links(body_html):
+    return re.findall(r'<a\b[^>]*\bhref=["\']([^"\']+)["\'][^>]*>', body_html or '', flags=re.I)
+
+
+def sanitize_body_html(body_html, allowed_urls):
+    """Keep article HTML simple and strip links that were not supplied by our feeds."""
+    allowed = set(allowed_urls)
+    def replace_link(match):
+        attrs, label = match.group(1), match.group(2)
+        href_match = re.search(r'\bhref=["\']([^"\']+)["\']', attrs, flags=re.I)
+        if not href_match or href_match.group(1) not in allowed:
+            return html.escape(re.sub(r'<[^>]+>', '', label))
+        href = html.escape(href_match.group(1), quote=True)
+        text = re.sub(r'<[^>]+>', '', label).strip()
+        return f'<a href="{href}" rel="nofollow noopener" target="_blank">{html.escape(text)}</a>'
+    body_html = re.sub(r'<a\b([^>]*)>(.*?)</a>', replace_link, body_html or '', flags=re.I | re.S)
+    body_html = re.sub(r'<\s*(script|iframe|object|embed|form)\b[^>]*>.*?<\s*/\s*\1\s*>', '', body_html, flags=re.I | re.S)
+    body_html = re.sub(r'\s+on[a-z]+\s*=\s*["\'][^"\']*["\']', '', body_html, flags=re.I)
+    return body_html
 
 
 def slug(text):
@@ -236,12 +266,16 @@ def main():
             print('AI failed:', exc)
             continue
 
+        allowed_urls = {s['url'] for s in sources}
+        article['body_html'] = sanitize_body_html(article.get('body_html', ''), allowed_urls)
+        body_links = extract_links(article['body_html'])
         text = article.get('title', '') + ' ' + article.get('summary', '') + ' ' + re.sub('<[^>]+>', ' ', article.get('body_html', ''))
         srcs = article.get('sources', []) if isinstance(article.get('sources', []), list) else []
-        supplied_urls = {s['url'] for s in sources}
+        supplied_urls = allowed_urls
         returned_urls = {s.get('url') for s in srcs if isinstance(s, dict)}
         domains = {urllib.parse.urlparse(u).netloc.lower().removeprefix('www.') for u in returned_urls if u}
-        valid = article.get('publish') is True and article.get('confidence', 0) >= 85 and len(srcs) >= 2 and len(domains) >= 2 and returned_urls.issubset(supplied_urls) and not contains_blocked(text)
+        body_link_valid = bool(body_links) and set(body_links).issubset(supplied_urls)
+        valid = article.get('publish') is True and article.get('confidence', 0) >= 85 and len(srcs) >= 2 and len(domains) >= 2 and returned_urls.issubset(supplied_urls) and body_link_valid and not contains_blocked(text)
 
         if valid:
             print('PUBLISHED', publish(article))
@@ -249,7 +283,9 @@ def main():
             state['seen'].append(item['url'])
         else:
             held_count += 1
-            reason = article.get('reason', 'quality gate failed')
+            reason = article.get('reason', 'quality/link safety gate failed')
+            if not body_link_valid:
+                reason = 'article did not contain a valid inline link to a supplied source'
             rejection_reasons.append(reason)
             print('HELD/REJECTED:', reason)
 
