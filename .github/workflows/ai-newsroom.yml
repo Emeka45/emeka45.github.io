@@ -1,6 +1,10 @@
 name: C. O. Eric AI Newsroom
 
 on:
+  push:
+    paths:
+      - 'scripts/ai_newsroom.py'
+      - '.github/workflows/ai-newsroom.yml'
   schedule:
     - cron: '0 */4 * * *'
   workflow_dispatch:
