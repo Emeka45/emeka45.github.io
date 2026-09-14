@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-14T16:14:49.349777+00:00",
-  "finished_utc": "2026-09-14T16:14:55.340047+00:00",
+  "started_utc": "2026-09-14T16:16:18.633517+00:00",
+  "finished_utc": "2026-09-14T16:16:44.472690+00:00",
   "feed_count": 12,
   "feed_success_count": 11,
   "feed_failure_count": 1,
@@ -15,10 +15,11 @@
   "fresh_items": 125,
   "corroborated_candidates": 22,
   "ai_attempts": 22,
-  "ai_failures": 22,
-  "held_or_rejected": 2,
+  "ai_failures": 21,
+  "held_or_rejected": 3,
   "published_count": 0,
   "rejection_reasons": [
+    "The provided source records do not corroborate the same central event or claim. While they all pertain to the Diablo franchise, they discuss entirely separate developments: the end of Diablo 4 expansions following the Diablo 5 announcement, a Witcher collaboration, and the release timing of Season 15. Since there are not at least two sources from different domains supporting the same central event, publishing is not permitted under the rules.",
     "no independent corroboration yet",
     "no independent corroboration yet"
   ]
