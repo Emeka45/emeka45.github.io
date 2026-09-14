@@ -22,14 +22,25 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/ai_newsroom.py
-      - name: Publish generated articles
+      - name: Show newsroom diagnostics
+        if: always()
+        run: |
+          echo '=== NEWSROOM DIAGNOSTICS ==='
+          if [ -f newsroom-data/run-report.json ]; then
+            cat newsroom-data/run-report.json
+          else
+            echo 'No run-report.json was generated.'
+          fi
+          echo '=== GENERATED NEWS ==='
+          find news -maxdepth 1 -type f -name '*.html' -print | sort || true
+      - name: Publish generated articles and diagnostics
         run: |
           git config user.name 'C. O. Eric AI Newsroom'
           git config user.email 'actions@users.noreply.github.com'
           git add news/ newsroom-data/
           if git diff --cached --quiet; then
-            echo 'No publishable stories were generated.'
+            echo 'No newsroom changes to publish.'
           else
-            git commit -m 'AI newsroom: publish verified stories'
+            git commit -m 'AI newsroom: publish verified stories and diagnostics'
             git push
           fi
