@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'scripts/ai_newsroom.py'
+      - 'scripts/run_ai_newsroom.py'
       - '.github/workflows/ai-newsroom.yml'
   schedule:
     - cron: '0 */4 * * *'
@@ -25,7 +26,7 @@ jobs:
       - name: Run newsroom
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python scripts/ai_newsroom.py
+        run: python scripts/run_ai_newsroom.py
       - name: Show newsroom diagnostics
         if: always()
         run: |
