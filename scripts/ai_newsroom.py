@@ -119,7 +119,7 @@ Return ONLY valid JSON with this schema:
 
 SOURCE RECORDS:
 ''' + json.dumps(sources, ensure_ascii=False)
-    endpoint = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=' + urllib.parse.quote(key)
+    endpoint = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent?key=' + urllib.parse.quote(key)
     payload = {'contents': [{'parts': [{'text': prompt}]}], 'generationConfig': {'temperature': 0.2, 'responseMimeType': 'application/json'}}
     req = urllib.request.Request(endpoint, data=json.dumps(payload).encode(), headers={'Content-Type': 'application/json'}, method='POST')
     with urllib.request.urlopen(req, timeout=60) as r:
