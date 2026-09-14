@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-14T17:37:53.387703+00:00",
-  "finished_utc": "2026-09-14T17:38:03.635884+00:00",
+  "started_utc": "2026-09-14T22:52:24.384494+00:00",
+  "finished_utc": "2026-09-14T22:52:31.144613+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 4,
   "feed_count": 11,
@@ -8,13 +8,15 @@
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 125,
-  "fresh_items": 122,
+  "fresh_items": 120,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
   "ai_failures": 0,
-  "held_or_rejected": 1,
-  "published_count": 3,
+  "held_or_rejected": 3,
+  "published_count": 1,
   "rejection_reasons": [
-    "The provided source records cover three completely separate, unrelated events across different countries without at least two publisher domains supporting the same central event."
+    "The supplied source records describe three entirely distinct, unrelated events across different countries without at least two independent sources corroborating the same central event.",
+    "Although both sources discuss Mount Etna, they cover different scientific studies and findings (one about magma ascent speed and gases, and the other about microscopic magma fracturing during eruptions). Therefore, they do not materially corroborate the exact same central event.",
+    "The provided sources discuss different aspects of volcanic eruptions at Mount Etna and microscopic magma behavior without corroborating the exact same central event or study."
   ]
 }
