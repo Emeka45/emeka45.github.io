@@ -14,46 +14,24 @@ NEWS = ROOT / 'news'
 DATA = ROOT / 'newsroom-data'
 STATE = DATA / 'state.json'
 INDEX = NEWS / 'index.json'
+REPORT = DATA / 'run-report.json'
 NEWS.mkdir(exist_ok=True)
 DATA.mkdir(exist_ok=True)
 
 FEEDS = {
-    'Technology': [
-        'https://feeds.arstechnica.com/arstechnica/index',
-        'https://www.theverge.com/rss/index.xml',
-    ],
-    'AI': [
-        'https://www.technologyreview.com/feed/',
-        'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml',
-    ],
-    'Science': [
-        'https://www.sciencedaily.com/rss/top/science.xml',
-        'https://phys.org/rss-feed/',
-    ],
-    'Gaming': [
-        'https://www.polygon.com/rss/index.xml',
-        'https://www.eurogamer.net/feed',
-    ],
-    'Anime': [
-        'https://www.animenewsnetwork.com/all/rss.xml',
-        'https://www.crunchyroll.com/news/rss',
-    ],
-    'World': [
-        'https://feeds.bbci.co.uk/news/world/rss.xml',
-        'https://www.theguardian.com/world/rss',
-    ],
+    'Technology': ['https://feeds.arstechnica.com/arstechnica/index', 'https://www.theverge.com/rss/index.xml'],
+    'AI': ['https://www.technologyreview.com/feed/', 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml'],
+    'Science': ['https://www.sciencedaily.com/rss/top/science.xml', 'https://phys.org/rss-feed/'],
+    'Gaming': ['https://www.polygon.com/rss/index.xml', 'https://www.eurogamer.net/feed'],
+    'Anime': ['https://www.animenewsnetwork.com/all/rss.xml', 'https://www.crunchyroll.com/news/rss'],
+    'World': ['https://feeds.bbci.co.uk/news/world/rss.xml', 'https://www.theguardian.com/world/rss'],
 }
 BLOCKED_TERMS = ['porn', 'pornography', 'xxx', 'explicit sex', 'sexual explicit', 'sex tape', 'nude leak', 'onlyfans', 'erotic', 'sexual fetish']
-STOPWORDS = {
-    'about','after','again','against','being','could','first','from','have','into','more','most','other',
-    'over','said','same','some','than','that','their','there','these','they','this','those','through',
-    'under','what','when','where','which','while','with','would','will','your','news','new','says','has',
-    'its','are','and','for','the','was','were','you','how','why','who','today','latest','official'
-}
+STOPWORDS = {'about','after','again','against','being','could','first','from','have','into','more','most','other','over','said','same','some','than','that','their','there','these','they','this','those','through','under','what','when','where','which','while','with','would','will','your','news','new','says','has','its','are','and','for','the','was','were','you','how','why','who','today','latest','official'}
 
 
 def fetch(url):
-    req = urllib.request.Request(url, headers={'User-Agent': 'COEricAI-Newsroom/1.2'})
+    req = urllib.request.Request(url, headers={'User-Agent': 'COEricAI-Newsroom/1.3'})
     with urllib.request.urlopen(req, timeout=20) as r:
         return r.read()
 
@@ -63,7 +41,7 @@ def parse_feed(category, url):
         root = ET.fromstring(fetch(url))
     except Exception as exc:
         print('Feed failed:', category, url, exc)
-        return []
+        return [], str(exc)
     out = []
     for item in root.findall('.//item')[:15]:
         title = (item.findtext('title') or '').strip()
@@ -74,7 +52,7 @@ def parse_feed(category, url):
         if title and link:
             domain = urllib.parse.urlparse(link).netloc.lower().removeprefix('www.')
             out.append({'category': category, 'title': title, 'url': link, 'summary': desc[:1200], 'published': pub, 'domain': domain})
-    return out
+    return out, None
 
 
 def load_state():
@@ -102,23 +80,15 @@ def similarity(a, b):
     kb = keywords(b['title'] + ' ' + b['summary'])
     if not ka or not kb:
         return 0.0
-    overlap = len(ka & kb)
-    return overlap / max(1, min(len(ka), len(kb)))
+    return len(ka & kb) / max(1, min(len(ka), len(kb)))
 
 
 def find_corroboration(item, candidates):
     matches = []
     for other in candidates:
-        if other['url'] == item['url']:
-            continue
-        if other['domain'] == item['domain']:
-            continue
-        if other['category'] != item['category']:
+        if other['url'] == item['url'] or other['domain'] == item['domain'] or other['category'] != item['category']:
             continue
         score = similarity(item, other)
-        # A deliberately permissive discovery threshold. Gemini performs the
-        # final semantic verification, so discovery should not discard a real
-        # story merely because two publishers phrase it differently.
         if score >= 0.18:
             matches.append((score, other))
     matches.sort(key=lambda x: x[0], reverse=True)
@@ -193,38 +163,56 @@ def publish(article):
 
 
 def main():
+    started = dt.datetime.now(dt.timezone.utc)
     state = load_state()
     candidates = []
     feed_count = 0
+    feed_success = 0
+    feed_failures = []
     for cat, feeds in FEEDS.items():
         for feed in feeds:
-            items = parse_feed(cat, feed)
+            items, error = parse_feed(cat, feed)
             feed_count += 1
+            if error:
+                feed_failures.append({'category': cat, 'url': feed, 'error': error})
+            else:
+                feed_success += 1
             candidates.extend(items)
+
     fresh = [x for x in candidates if x['url'] not in state.get('seen', [])]
-    print('Feeds checked:', feed_count)
+    ranked = [(len(find_corroboration(item, candidates)), item) for item in fresh]
+    ranked.sort(key=lambda x: x[0], reverse=True)
+
+    print('Feeds checked:', feed_count, 'successful:', feed_success, 'failed:', len(feed_failures))
     print('Collected:', len(candidates), 'items; fresh:', len(fresh))
     published_count = 0
     held_count = 0
+    corroborated_count = 0
+    ai_attempts = 0
+    ai_failures = 0
+    rejection_reasons = []
 
-    for item in fresh[:24]:
+    for _, item in ranked[:24]:
         if contains_blocked(item['title'] + ' ' + item['summary']):
             state['seen'].append(item['url'])
+            rejection_reasons.append('blocked source content')
             print('REJECTED blocked source:', item['title'])
             continue
 
         corroborators = find_corroboration(item, candidates)
         if not corroborators:
-            # IMPORTANT: do not mark this URL as seen. A second publisher may
-            # report the event on the next scheduled run.
             held_count += 1
+            rejection_reasons.append('no independent corroboration yet')
             print('RETRY LATER — no independent corroboration:', item['title'])
             continue
 
+        corroborated_count += 1
         sources = [item] + corroborators
+        ai_attempts += 1
         try:
             article = ask_ai(sources)
         except Exception as exc:
+            ai_failures += 1
             print('AI failed:', exc)
             continue
 
@@ -233,15 +221,7 @@ def main():
         supplied_urls = {s['url'] for s in sources}
         returned_urls = {s.get('url') for s in srcs if isinstance(s, dict)}
         domains = {urllib.parse.urlparse(u).netloc.lower().removeprefix('www.') for u in returned_urls if u}
-
-        valid = (
-            article.get('publish') is True
-            and article.get('confidence', 0) >= 85
-            and len(srcs) >= 2
-            and len(domains) >= 2
-            and returned_urls.issubset(supplied_urls)
-            and not contains_blocked(text)
-        )
+        valid = article.get('publish') is True and article.get('confidence', 0) >= 85 and len(srcs) >= 2 and len(domains) >= 2 and returned_urls.issubset(supplied_urls) and not contains_blocked(text)
 
         if valid:
             print('PUBLISHED', publish(article))
@@ -249,13 +229,30 @@ def main():
             state['seen'].append(item['url'])
         else:
             held_count += 1
-            print('HELD/REJECTED:', article.get('reason', 'quality gate failed'))
-            # Keep the source fresh so a later run can retry if another source
-            # appears or Gemini becomes able to verify it.
+            reason = article.get('reason', 'quality gate failed')
+            rejection_reasons.append(reason)
+            print('HELD/REJECTED:', reason)
 
     save_state(state)
     update_index()
-    print('Publication count:', published_count, 'Held/retry:', held_count)
+    report = {
+        'started_utc': started.isoformat(),
+        'finished_utc': dt.datetime.now(dt.timezone.utc).isoformat(),
+        'feed_count': feed_count,
+        'feed_success_count': feed_success,
+        'feed_failure_count': len(feed_failures),
+        'feed_failures': feed_failures,
+        'total_items': len(candidates),
+        'fresh_items': len(fresh),
+        'corroborated_candidates': corroborated_count,
+        'ai_attempts': ai_attempts,
+        'ai_failures': ai_failures,
+        'held_or_rejected': held_count,
+        'published_count': published_count,
+        'rejection_reasons': rejection_reasons[-50:],
+    }
+    REPORT.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding='utf-8')
+    print('RUN REPORT:', json.dumps(report, ensure_ascii=False))
 
 
 if __name__ == '__main__':
