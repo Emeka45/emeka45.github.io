@@ -17,8 +17,6 @@ INDEX = NEWS / 'index.json'
 NEWS.mkdir(exist_ok=True)
 DATA.mkdir(exist_ok=True)
 
-# Multiple independent feeds are deliberately used so the two-source rule can
-# actually be satisfied. A single publisher must never count as corroboration.
 FEEDS = {
     'Technology': [
         'https://feeds.arstechnica.com/arstechnica/index',
@@ -55,7 +53,7 @@ STOPWORDS = {
 
 
 def fetch(url):
-    req = urllib.request.Request(url, headers={'User-Agent': 'COEricAI-Newsroom/1.1'})
+    req = urllib.request.Request(url, headers={'User-Agent': 'COEricAI-Newsroom/1.2'})
     with urllib.request.urlopen(req, timeout=20) as r:
         return r.read()
 
@@ -67,7 +65,7 @@ def parse_feed(category, url):
         print('Feed failed:', category, url, exc)
         return []
     out = []
-    for item in root.findall('.//item')[:12]:
+    for item in root.findall('.//item')[:15]:
         title = (item.findtext('title') or '').strip()
         link = (item.findtext('link') or '').strip()
         desc = re.sub(r'<[^>]+>', ' ', item.findtext('description') or '')
@@ -82,14 +80,15 @@ def parse_feed(category, url):
 def load_state():
     if STATE.exists():
         try:
-            return json.loads(STATE.read_text())
+            data = json.loads(STATE.read_text())
+            return data if isinstance(data, dict) else {'seen': []}
         except Exception:
             pass
     return {'seen': []}
 
 
 def save_state(state):
-    state['seen'] = state['seen'][-1000:]
+    state['seen'] = state.get('seen', [])[-1000:]
     STATE.write_text(json.dumps(state, indent=2, ensure_ascii=False))
 
 
@@ -99,20 +98,28 @@ def keywords(text):
 
 
 def similarity(a, b):
-    ka, kb = keywords(a['title'] + ' ' + a['summary']), keywords(b['title'] + ' ' + b['summary'])
+    ka = keywords(a['title'] + ' ' + a['summary'])
+    kb = keywords(b['title'] + ' ' + b['summary'])
     if not ka or not kb:
-        return 0
-    return len(ka & kb) / max(1, min(len(ka), len(kb)))
+        return 0.0
+    overlap = len(ka & kb)
+    return overlap / max(1, min(len(ka), len(kb)))
 
 
 def find_corroboration(item, candidates):
-    # Require a different publisher domain and a meaningful overlap in topic.
     matches = []
     for other in candidates:
-        if other['url'] == item['url'] or other['domain'] == item['domain'] or other['category'] != item['category']:
+        if other['url'] == item['url']:
+            continue
+        if other['domain'] == item['domain']:
+            continue
+        if other['category'] != item['category']:
             continue
         score = similarity(item, other)
-        if score >= 0.30:
+        # A deliberately permissive discovery threshold. Gemini performs the
+        # final semantic verification, so discovery should not discard a real
+        # story merely because two publishers phrase it differently.
+        if score >= 0.18:
             matches.append((score, other))
     matches.sort(key=lambda x: x[0], reverse=True)
     return [other for _, other in matches[:4]]
@@ -126,8 +133,8 @@ def ask_ai(sources):
 
 HARD RULES:
 - Never publish rumor, speculation, exaggeration, fabricated claims, fabricated quotes, or unsupported allegations as fact.
-- At least TWO source records below must come from DIFFERENT publisher domains and materially support the SAME central event/claim. The presence of two sources alone is not enough.
-- If the sources do not clearly corroborate the same central claim, return publish=false.
+- At least TWO source records below must come from DIFFERENT publisher domains and materially support the SAME central event or claim.
+- If the records are merely about the same broad topic but do not corroborate the same event, return publish=false.
 - If sources materially conflict about the central fact, return publish=false.
 - Do not invent facts, names, dates, numbers, quotes, URLs, or events.
 - Do not copy or lightly rewrite source wording. Write a genuinely original synthesis.
@@ -135,7 +142,7 @@ HARD RULES:
 - Avoid graphic gore. If a story is sensitive but newsworthy, keep descriptions non-graphic.
 - Distinguish confirmed facts from clearly labeled analysis. Prefer facts.
 - Explain why the development matters.
-- Only cite sources that actually support the article. Never invent a source.
+- Only cite sources supplied below. Never invent a source or URL.
 
 Return ONLY valid JSON with this schema:
 {"publish":true|false,"reason":"...","category":"...","title":"...","summary":"...","body_html":"...","sources":[{"name":"...","url":"..."}],"confidence":0-100}
@@ -188,41 +195,68 @@ def publish(article):
 def main():
     state = load_state()
     candidates = []
+    feed_count = 0
     for cat, feeds in FEEDS.items():
         for feed in feeds:
-            candidates.extend(parse_feed(cat, feed))
-    fresh = [x for x in candidates if x['url'] not in state['seen']]
-    print('Collected', len(candidates), 'candidates;', len(fresh), 'are fresh.')
+            items = parse_feed(cat, feed)
+            feed_count += 1
+            candidates.extend(items)
+    fresh = [x for x in candidates if x['url'] not in state.get('seen', [])]
+    print('Feeds checked:', feed_count)
+    print('Collected:', len(candidates), 'items; fresh:', len(fresh))
     published_count = 0
-    for item in fresh[:12]:
+    held_count = 0
+
+    for item in fresh[:24]:
         if contains_blocked(item['title'] + ' ' + item['summary']):
             state['seen'].append(item['url'])
             print('REJECTED blocked source:', item['title'])
             continue
+
         corroborators = find_corroboration(item, candidates)
         if not corroborators:
-            # Do not waste API calls on stories that cannot satisfy the two-domain rule.
-            print('HELD no independent corroboration:', item['title'])
-            state['seen'].append(item['url'])
+            # IMPORTANT: do not mark this URL as seen. A second publisher may
+            # report the event on the next scheduled run.
+            held_count += 1
+            print('RETRY LATER — no independent corroboration:', item['title'])
             continue
+
         sources = [item] + corroborators
         try:
             article = ask_ai(sources)
         except Exception as exc:
             print('AI failed:', exc)
             continue
-        state['seen'].append(item['url'])
+
         text = article.get('title', '') + ' ' + article.get('summary', '') + ' ' + re.sub('<[^>]+>', ' ', article.get('body_html', ''))
-        srcs = article.get('sources', [])
-        domains = {urllib.parse.urlparse(s.get('url', '')).netloc.lower().removeprefix('www.') for s in srcs if s.get('url')}
-        if article.get('publish') is True and article.get('confidence', 0) >= 85 and len(srcs) >= 2 and len(domains) >= 2 and not contains_blocked(text):
+        srcs = article.get('sources', []) if isinstance(article.get('sources', []), list) else []
+        supplied_urls = {s['url'] for s in sources}
+        returned_urls = {s.get('url') for s in srcs if isinstance(s, dict)}
+        domains = {urllib.parse.urlparse(u).netloc.lower().removeprefix('www.') for u in returned_urls if u}
+
+        valid = (
+            article.get('publish') is True
+            and article.get('confidence', 0) >= 85
+            and len(srcs) >= 2
+            and len(domains) >= 2
+            and returned_urls.issubset(supplied_urls)
+            and not contains_blocked(text)
+        )
+
+        if valid:
             print('PUBLISHED', publish(article))
             published_count += 1
+            state['seen'].append(item['url'])
         else:
+            held_count += 1
             print('HELD/REJECTED:', article.get('reason', 'quality gate failed'))
+            # Keep the source fresh so a later run can retry if another source
+            # appears or Gemini becomes able to verify it.
+
     save_state(state)
     update_index()
-    print('Publication count:', published_count)
+    print('Publication count:', published_count, 'Held/retry:', held_count)
+
 
 if __name__ == '__main__':
     main()
