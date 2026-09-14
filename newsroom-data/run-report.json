@@ -1,26 +1,21 @@
 {
-  "started_utc": "2026-09-14T16:16:18.633517+00:00",
-  "finished_utc": "2026-09-14T16:16:44.472690+00:00",
-  "feed_count": 12,
+  "started_utc": "2026-09-14T16:26:29.761621+00:00",
+  "finished_utc": "2026-09-14T16:26:46.233321+00:00",
+  "model": "gemini-3.5-flash-lite",
+  "max_ai_candidates_per_run": 4,
+  "feed_count": 11,
   "feed_success_count": 11,
-  "feed_failure_count": 1,
-  "feed_failures": [
-    {
-      "category": "Anime",
-      "url": "https://www.crunchyroll.com/news/rss",
-      "error": "not well-formed (invalid token): line 8, column 7356"
-    }
-  ],
+  "feed_failure_count": 0,
+  "feed_failures": [],
   "total_items": 125,
   "fresh_items": 125,
-  "corroborated_candidates": 22,
-  "ai_attempts": 22,
-  "ai_failures": 21,
-  "held_or_rejected": 3,
-  "published_count": 0,
+  "corroborated_candidates": 4,
+  "ai_attempts": 4,
+  "ai_failures": 0,
+  "held_or_rejected": 2,
+  "published_count": 2,
   "rejection_reasons": [
-    "The provided source records do not corroborate the same central event or claim. While they all pertain to the Diablo franchise, they discuss entirely separate developments: the end of Diablo 4 expansions following the Diablo 5 announcement, a Witcher collaboration, and the release timing of Season 15. Since there are not at least two sources from different domains supporting the same central event, publishing is not permitted under the rules.",
-    "no independent corroboration yet",
-    "no independent corroboration yet"
+    "Multiple reputable gaming news sources corroborate major announcements made at BlizzCon 2026, including the surprise reveal of Diablo 5 and future updates for Diablo 4.",
+    "The provided source records discuss different topics regarding Diablo 4 (expansions ending before Diablo 5, a Witcher collaboration, and Season 15 release times) without providing at least two sources from different domains that materially support the exact same central event or claim."
   ]
 }
