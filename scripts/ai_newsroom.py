@@ -4,6 +4,8 @@ import html
 import json
 import os
 import re
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -23,15 +25,17 @@ FEEDS = {
     'AI': ['https://www.technologyreview.com/feed/', 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml'],
     'Science': ['https://www.sciencedaily.com/rss/top/science.xml', 'https://phys.org/rss-feed/'],
     'Gaming': ['https://www.polygon.com/rss/index.xml', 'https://www.eurogamer.net/feed'],
-    'Anime': ['https://www.animenewsnetwork.com/all/rss.xml', 'https://www.crunchyroll.com/news/rss'],
+    'Anime': ['https://www.animenewsnetwork.com/all/rss.xml'],
     'World': ['https://feeds.bbci.co.uk/news/world/rss.xml', 'https://www.theguardian.com/world/rss'],
 }
 BLOCKED_TERMS = ['porn', 'pornography', 'xxx', 'explicit sex', 'sexual explicit', 'sex tape', 'nude leak', 'onlyfans', 'erotic', 'sexual fetish']
 STOPWORDS = {'about','after','again','against','being','could','first','from','have','into','more','most','other','over','said','same','some','than','that','their','there','these','they','this','those','through','under','what','when','where','which','while','with','would','will','your','news','new','says','has','its','are','and','for','the','was','were','you','how','why','who','today','latest','official'}
+AI_MODEL = 'gemini-3.5-flash-lite'
+MAX_AI_CANDIDATES_PER_RUN = 4
 
 
 def fetch(url):
-    req = urllib.request.Request(url, headers={'User-Agent': 'COEricAI-Newsroom/1.3'})
+    req = urllib.request.Request(url, headers={'User-Agent': 'COEricAI-Newsroom/1.4'})
     with urllib.request.urlopen(req, timeout=20) as r:
         return r.read()
 
@@ -119,12 +123,28 @@ Return ONLY valid JSON with this schema:
 
 SOURCE RECORDS:
 ''' + json.dumps(sources, ensure_ascii=False)
-    endpoint = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent?key=' + urllib.parse.quote(key)
-    payload = {'contents': [{'parts': [{'text': prompt}]}], 'generationConfig': {'temperature': 0.2, 'responseMimeType': 'application/json'}}
-    req = urllib.request.Request(endpoint, data=json.dumps(payload).encode(), headers={'Content-Type': 'application/json'}, method='POST')
-    with urllib.request.urlopen(req, timeout=60) as r:
-        data = json.loads(r.read())
-    return json.loads(data['candidates'][0]['content']['parts'][0]['text'])
+    endpoint = 'https://generativelanguage.googleapis.com/v1beta/models/' + AI_MODEL + ':generateContent?key=' + urllib.parse.quote(key)
+    payload = {'contents': [{'parts': [{'text': prompt}]}], 'generationConfig': {'responseMimeType': 'application/json'}}
+    body = json.dumps(payload).encode()
+    last_error = None
+    for attempt in range(3):
+        req = urllib.request.Request(endpoint, data=body, headers={'Content-Type': 'application/json'}, method='POST')
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                data = json.loads(r.read())
+            return json.loads(data['candidates'][0]['content']['parts'][0]['text'])
+        except urllib.error.HTTPError as exc:
+            last_error = exc
+            if exc.code not in (429, 500, 502, 503, 504):
+                raise
+            retry_after = exc.headers.get('Retry-After')
+            try:
+                delay = max(8, min(60, int(retry_after))) if retry_after else 8 * (2 ** attempt)
+            except ValueError:
+                delay = 8 * (2 ** attempt)
+            print(f'AI transient HTTP {exc.code}; retrying in {delay}s (attempt {attempt + 1}/3)')
+            time.sleep(delay)
+    raise last_error
 
 
 def contains_blocked(text):
@@ -192,7 +212,7 @@ def main():
     ai_failures = 0
     rejection_reasons = []
 
-    for _, item in ranked[:24]:
+    for _, item in ranked[:MAX_AI_CANDIDATES_PER_RUN]:
         if contains_blocked(item['title'] + ' ' + item['summary']):
             state['seen'].append(item['url'])
             rejection_reasons.append('blocked source content')
@@ -238,6 +258,8 @@ def main():
     report = {
         'started_utc': started.isoformat(),
         'finished_utc': dt.datetime.now(dt.timezone.utc).isoformat(),
+        'model': AI_MODEL,
+        'max_ai_candidates_per_run': MAX_AI_CANDIDATES_PER_RUN,
         'feed_count': feed_count,
         'feed_success_count': feed_success,
         'feed_failure_count': len(feed_failures),
