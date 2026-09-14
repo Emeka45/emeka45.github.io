@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-09-14T16:14:49.349777+00:00",
+  "finished_utc": "2026-09-14T16:14:55.340047+00:00",
+  "feed_count": 12,
+  "feed_success_count": 11,
+  "feed_failure_count": 1,
+  "feed_failures": [
+    {
+      "category": "Anime",
+      "url": "https://www.crunchyroll.com/news/rss",
+      "error": "not well-formed (invalid token): line 8, column 7356"
+    }
+  ],
+  "total_items": 125,
+  "fresh_items": 125,
+  "corroborated_candidates": 22,
+  "ai_attempts": 22,
+  "ai_failures": 22,
+  "held_or_rejected": 2,
+  "published_count": 0,
+  "rejection_reasons": [
+    "no independent corroboration yet",
+    "no independent corroboration yet"
+  ]
+}
