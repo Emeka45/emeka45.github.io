@@ -1,29 +1,22 @@
 {
-  "started_utc": "2026-09-15T09:04:46.264274+00:00",
-  "finished_utc": "2026-09-15T09:04:48.943206+00:00",
+  "started_utc": "2026-09-15T15:56:35.011041+00:00",
+  "finished_utc": "2026-09-15T15:56:40.750290+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 4,
   "feed_count": 11,
-  "feed_success_count": 10,
-  "feed_failure_count": 1,
-  "feed_failures": [
-    {
-      "category": "Gaming",
-      "url": "https://www.polygon.com/rss/index.xml",
-      "error": "Remote end closed connection without response"
-    }
-  ],
-  "total_items": 115,
-  "fresh_items": 113,
-  "corroborated_candidates": 2,
-  "ai_attempts": 2,
+  "feed_success_count": 11,
+  "feed_failure_count": 0,
+  "feed_failures": [],
+  "total_items": 125,
+  "fresh_items": 123,
+  "corroborated_candidates": 4,
+  "ai_attempts": 4,
   "ai_failures": 0,
-  "held_or_rejected": 4,
-  "published_count": 0,
+  "held_or_rejected": 3,
+  "published_count": 1,
   "rejection_reasons": [
-    "The source records discuss two completely unrelated events (US space weapons and an Ebola outbreak in the DRC) and do not share at least two different publisher domains corroborating the same central event.",
-    "The provided source records discuss two completely unrelated events (an Ebola outbreak in the DRC and a US space weapons deployment) with no shared central event corroborated by multiple sources.",
-    "no independent corroboration yet",
-    "no independent corroboration yet"
+    "The provided source records cover completely unrelated topics (a video game quest guide and a VR headset review) and do not corroborate the same central event across multiple domains.",
+    "The provided source records cover completely different gaming topics (one is a hardware review for the Steam Frame, and the other is a quest guide for The Blood of Dawnwalker) and do not corroborate the same central event across multiple publisher domains.",
+    "The provided source records discuss two completely separate and unrelated events (an abduction in Malawi and a suspected murder-suicide in Bali), meaning there are not at least two different sources corroborating the same central event."
   ]
 }
