@@ -23,17 +23,73 @@ NEWS.mkdir(exist_ok=True)
 DATA.mkdir(exist_ok=True)
 
 AI_MODEL = 'gemini-3.5-flash-lite'
-MAX_AI_CANDIDATES_PER_RUN = 4
-USER_AGENT = 'COEricAI-Newsroom/1.5'
+MAX_AI_CANDIDATES_PER_RUN = 20
+USER_AGENT = 'COEricAI-Newsroom/2.0'
 BLOCKED_TERMS = {'porn', 'pornography', 'xxx', 'explicit sex', 'sexual explicit', 'sex tape', 'nude leak', 'onlyfans', 'erotic', 'sexual fetish'}
 
+# A broad Nigeria-first newsroom. Each sector has multiple independent feeds so
+# the existing corroboration gate can require evidence from different domains.
 FEEDS = {
-    'Technology': ['https://feeds.arstechnica.com/arstechnica/index', 'https://www.theverge.com/rss/index.xml'],
-    'AI': ['https://www.technologyreview.com/feed/', 'https://www.theverge.com/rss/ai/index.xml'],
-    'Science': ['https://www.sciencedaily.com/rss/all.xml', 'https://phys.org/rss-feed/'],
-    'Gaming': ['https://www.polygon.com/rss/index.xml', 'https://www.eurogamer.net/feed'],
-    'Anime': ['https://www.animenewsnetwork.com/all/rss.xml'],
-    'World': ['https://feeds.bbci.co.uk/news/world/rss.xml', 'https://www.theguardian.com/world/rss'],
+    'Nigeria Politics': [
+        'https://rss.punchng.com/v1/category/politics',
+        'https://thereporter.com.ng/rss/category/politics',
+    ],
+    'Religion & Faith': [
+        'https://christianitynigeria.com/feed/',
+        'https://nscia.com.ng/category/news/feed/',
+    ],
+    'Education': [
+        'https://rss.punchng.com/v1/category/education',
+        'https://thereporter.com.ng/rss/category/education',
+    ],
+    'Business & Economy': [
+        'https://rss.punchng.com/v1/category/business',
+        'https://thereporter.com.ng/rss/category/business',
+    ],
+    'Security & Crime': [
+        'https://thereporter.com.ng/rss/category/security',
+        'https://rss.punchng.com/v1/category/latest_news',
+    ],
+    'Health': [
+        'https://rss.punchng.com/v1/category/health',
+        'https://thereporter.com.ng/rss/category/health',
+    ],
+    'Agriculture': [
+        'https://thereporter.com.ng/rss/category/agriculture',
+        'https://rss.punchng.com/v1/category/business',
+    ],
+    'Technology': [
+        'https://feeds.arstechnica.com/arstechnica/index',
+        'https://www.theverge.com/rss/index.xml',
+    ],
+    'AI': [
+        'https://www.technologyreview.com/feed/',
+        'https://www.theverge.com/rss/ai/index.xml',
+    ],
+    'Science': [
+        'https://www.sciencedaily.com/rss/all.xml',
+        'https://phys.org/rss-feed/',
+    ],
+    'Gaming': [
+        'https://www.polygon.com/rss/index.xml',
+        'https://www.eurogamer.net/feed',
+    ],
+    'Anime': [
+        'https://www.animenewsnetwork.com/all/rss.xml',
+        'https://www.animenewsnetwork.com/news/rss.xml',
+    ],
+    'Sports': [
+        'https://rss.punchng.com/v1/category/sports',
+        'https://thereporter.com.ng/rss/category/sports-2',
+    ],
+    'Entertainment & Lifestyle': [
+        'https://rss.punchng.com/v1/category/entertainment',
+        'https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle',
+    ],
+    'World': [
+        'https://feeds.bbci.co.uk/news/world/rss.xml',
+        'https://www.theguardian.com/world/rss',
+    ],
 }
 STOPWORDS = {'the','a','an','and','or','of','to','in','on','for','with','from','by','at','is','are','as','new','news','after','into','over','its','this','that','will','has','have','how','why','what','who','their','they','it','be','about','more','than','says','said'}
 
@@ -59,10 +115,17 @@ def parse_feed(category, url):
             raw = r.read()
         root = ET.fromstring(raw)
         items = []
-        for node in root.findall('.//item')[:15]:
-            title = (node.findtext('title') or '').strip()
+        nodes = root.findall('.//item')
+        if not nodes:
+            nodes = root.findall('.//{http://www.w3.org/2005/Atom}entry')
+        for node in nodes[:20]:
+            title = (node.findtext('title') or node.findtext('{http://www.w3.org/2005/Atom}title') or '').strip()
             link = (node.findtext('link') or '').strip()
-            summary = (node.findtext('description') or '').strip()
+            if not link:
+                atom_link = node.find('{http://www.w3.org/2005/Atom}link')
+                if atom_link is not None:
+                    link = (atom_link.attrib.get('href') or '').strip()
+            summary = (node.findtext('description') or node.findtext('{http://www.w3.org/2005/Atom}summary') or node.findtext('{http://www.w3.org/2005/Atom}content') or '').strip()
             if title and link:
                 items.append({'category': category, 'title': re.sub('<[^>]+>', ' ', title), 'summary': re.sub('<[^>]+>', ' ', summary), 'url': link, 'domain': urllib.parse.urlparse(link).netloc.lower().removeprefix('www.')})
         return items, None
@@ -95,22 +158,23 @@ def ask_ai(sources):
     key = os.environ.get('GEMINI_API_KEY')
     if not key:
         raise RuntimeError('GEMINI_API_KEY is missing')
-    prompt = '''You are the C. O. Eric AI Newsroom. Create a concise original news article only when the supplied source records materially corroborate the same central event.
+    prompt = '''You are the C. O. Eric AI Newsroom, a broad Nigeria-first digital newsroom. Create a concise original news article only when the supplied source records materially corroborate the same central event.
 
 STRICT RULES:
+- Prioritize Nigerian stories across politics, religion and faith, education, business, economy, security, crime, health, agriculture, technology, AI, science, sports, entertainment, culture and other public-interest sectors.
 - Do not publish rumor, speculation, exaggeration, fabricated facts, fabricated quotes, or invented URLs.
 - At least two different publisher domains must materially support the same central event.
 - Do not copy or lightly rewrite source wording.
 - No sexually explicit or pornographic content. No graphic gore.
 - Distinguish confirmed facts from analysis.
 - Use only the supplied source URLs.
+- Treat religious subjects neutrally and respectfully; report claims as claims and avoid sectarian language or stereotyping.
 
 LINKING RULES:
 - body_html MUST contain at least one useful inline hyperlink to a supplied source URL.
 - Use a normal HTML anchor such as <a href="EXACT_SUPPLIED_URL">relevant source text</a>.
 - Every href in body_html MUST exactly match one of the supplied source URLs.
-- Never invent, alter, shorten, redirect, or track URLs.
-- Link naturally to the first useful mention of the announcement, company, game, study, event, or other subject.
+- Link naturally to the first useful mention of the announcement, institution, politician, faith leader, company, game, study, event, or other subject.
 - Do not add scripts, iframes, forms, or external assets.
 
 Return ONLY valid JSON with this schema:
@@ -148,7 +212,6 @@ def contains_blocked(text):
 
 
 def extract_links(body_html):
-    # Decode HTML entities so URLs such as ?a=1&amp;b=2 compare exactly with feed URLs.
     return [html.unescape(u) for u in re.findall(r'<a\b[^>]*\bhref=["\']([^"\']+)["\'][^>]*>', body_html or '', flags=re.I)]
 
 
