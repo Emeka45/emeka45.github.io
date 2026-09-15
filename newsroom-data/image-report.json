@@ -1,36 +1,11 @@
 {
-  "finished_utc": "2026-09-15T19:59:43.758229+00:00",
+  "finished_utc": "2026-09-15T22:35:10.229355+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 4,
-  "attempted": 4,
+  "missing_before_run": 0,
+  "attempted": 0,
   "generated": [],
-  "fallbacks": [
-    {
-      "article": "2026-09-14-lies-of-p-publisher-trademarks-mysterious-wonders-of-o-d82474c860.html",
-      "image": "news/images/2026-09-14-lies-of-p-publisher-trademarks-mysterious-wonders-of-o-d82474c860.svg",
-      "bytes": 1607,
-      "reason": "Gemini image quota unavailable"
-    },
-    {
-      "article": "2026-09-14-indonesian-ferry-capsizes-in-java-sea-leaving-six-dead-and-130-missing-c913dff137.html",
-      "image": "news/images/2026-09-14-indonesian-ferry-capsizes-in-java-sea-leaving-six-dead-and-130-missing-c913dff137.svg",
-      "bytes": 1588,
-      "reason": "Gemini image quota unavailable"
-    },
-    {
-      "article": "2026-09-14-diablo-4-season-15-launches-alongside-nintendo-switch-2-port-and-franchise-anniversary-86719857bd.html",
-      "image": "news/images/2026-09-14-diablo-4-season-15-launches-alongside-nintendo-switch-2-port-and-franchise-anniversary-86719857bd.svg",
-      "bytes": 1677,
-      "reason": "Gemini image quota unavailable"
-    },
-    {
-      "article": "2026-09-14-bali-authorities-investigate-deaths-of-australian-man-and-two-children-96fde2cfbd.html",
-      "image": "news/images/2026-09-14-bali-authorities-investigate-deaths-of-australian-man-and-two-children-96fde2cfbd.svg",
-      "bytes": 1626,
-      "reason": "Gemini image quota unavailable"
-    }
-  ],
+  "fallbacks": [],
   "failures": [],
   "remaining_missing_after_run": 0
 }
