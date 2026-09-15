@@ -49,7 +49,7 @@ Category: {category}
 Summary: {summary}
 
 Visual requirements:
-- Wide 16:9 composition suitable as a website article hero image.
+- Wide landscape 16:9 composition suitable as a website article hero image.
 - Modern professional editorial-news aesthetic.
 - Visually communicate the central subject without reproducing a copyrighted news photograph.
 - Do not depict real people as identifiable exact portraits.
@@ -58,13 +58,20 @@ Visual requirements:
 - Strong focal subject, clean composition, realistic lighting, publication-quality detail.
 - The image must stand on its own and should not contain words."""
 
-    endpoint = f"https://generativelanguage.googleapis.com/v1/models/{MODEL}:generateContent?key={api_key}"
+    # Gemini's current legacy GenerateContent REST API expects the image
+    # configuration under generationConfig.responseFormat.image. Use the
+    # v1beta endpoint, which is the documented endpoint for this API.
+    endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent?key={api_key}"
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {
             "responseModalities": ["Image"],
-            "responseFormat": {"image": {"aspectRatio": "16:9"}},
-        },
+            "responseFormat": {
+                "image": {
+                    "aspectRatio": "16:9"
+                }
+            }
+        }
     }
     request = urllib.request.Request(
         endpoint,
