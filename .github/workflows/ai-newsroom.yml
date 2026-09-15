@@ -5,6 +5,7 @@ on:
     paths:
       - 'scripts/ai_newsroom.py'
       - 'scripts/run_ai_newsroom.py'
+      - 'scripts/generate_news_images.py'
       - '.github/workflows/ai-newsroom.yml'
   schedule:
     - cron: '0 */4 * * *'
@@ -27,6 +28,10 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/run_ai_newsroom.py
+      - name: Generate missing story images with Gemini
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/generate_news_images.py
       - name: Show newsroom diagnostics
         if: always()
         run: |
@@ -36,9 +41,17 @@ jobs:
           else
             echo 'No run-report.json was generated.'
           fi
+          echo '=== IMAGE DIAGNOSTICS ==='
+          if [ -f newsroom-data/image-report.json ]; then
+            cat newsroom-data/image-report.json
+          else
+            echo 'No image-report.json was generated.'
+          fi
           echo '=== GENERATED NEWS ==='
           find news -maxdepth 1 -type f -name '*.html' -print | sort || true
-      - name: Publish generated articles and diagnostics
+          echo '=== STORY IMAGES ==='
+          find news/images -maxdepth 1 -type f -name '*.png' -print | sort || true
+      - name: Publish generated articles, images and diagnostics
         run: |
           git config user.name 'C. O. Eric AI Newsroom'
           git config user.email 'actions@users.noreply.github.com'
@@ -46,6 +59,6 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No newsroom changes to publish.'
           else
-            git commit -m 'AI newsroom: publish verified stories and diagnostics'
+            git commit -m 'AI newsroom: publish stories and generated images'
             git push
           fi
