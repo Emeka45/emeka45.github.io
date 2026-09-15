@@ -1,23 +1,65 @@
 {
-  "started_utc": "2026-09-15T19:27:55.845629+00:00",
-  "finished_utc": "2026-09-15T19:28:01.421136+00:00",
+  "started_utc": "2026-09-15T19:54:49.086075+00:00",
+  "finished_utc": "2026-09-15T19:59:43.082399+00:00",
   "model": "gemini-3.5-flash-lite",
-  "max_ai_candidates_per_run": 4,
-  "feed_count": 11,
-  "feed_success_count": 11,
-  "feed_failure_count": 0,
-  "feed_failures": [],
-  "total_items": 125,
-  "fresh_items": 122,
-  "corroborated_candidates": 4,
-  "ai_attempts": 4,
+  "max_ai_candidates_per_run": 20,
+  "feed_count": 56,
+  "feed_success_count": 51,
+  "feed_failure_count": 5,
+  "feed_failures": [
+    {
+      "category": "Religion & Faith",
+      "url": "https://christianitynigeria.com/feed/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "category": "Entertainment & Lifestyle",
+      "url": "https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle",
+      "error": "not well-formed (invalid token): line 11, column 61"
+    },
+    {
+      "category": "Nigeria - Culture & Heritage",
+      "url": "https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle",
+      "error": "not well-formed (invalid token): line 11, column 61"
+    },
+    {
+      "category": "Nigeria - Tourism & Travel",
+      "url": "https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle",
+      "error": "not well-formed (invalid token): line 11, column 61"
+    },
+    {
+      "category": "Nigeria - Religion & Interfaith",
+      "url": "https://christianitynigeria.com/feed/",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "total_items": 636,
+  "fresh_items": 633,
+  "corroborated_candidates": 20,
+  "ai_attempts": 20,
   "ai_failures": 0,
-  "held_or_rejected": 4,
+  "held_or_rejected": 20,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided sources cover completely different gaming events and announcements without at least two publisher domains corroborating the same central event.",
-    "The source records discuss three completely different gaming topics (Injustice 3 playtests, an Apex Legends crossover, and a Jujutsu Kaisen game delay) from different domains, meaning there are no two different publisher domains corroborating the same central event.",
-    "The provided source records discuss two completely unrelated gaming stories (Apex Legends crossover and Injustice 3 playtests) and do not corroborate the same central event.",
-    "The source records discuss two completely unrelated game delays from different franchises and developers, lacking corroborating evidence for the same central event."
+    "The provided source records cover completely different topics and events, lacking at least two different publisher domains materially supporting the same central event.",
+    "The provided source records do not contain any Nigerian stories or public-interest events relevant to the C. O. Eric AI Newsroom focus areas.",
+    "The provided source records discuss different and unrelated topics concerning justice in Nigeria (Bayelsa State Governor Douye Diri's comments on true federalism, high cost of justice, rule of law commitment, and enforcement gaps in rape laws), failing to meet the requirement that at least two different publisher domains materially support the same central event.",
+    "The source records include multiple articles reporting on the state of transport infrastructure in Nigeria, economic growth, and diplomatic relations. Specifically, the Punch newspaper reports on Nigeria's Ambassador to Spain presenting credentials to King Felipe VI, which lacks a second confirming source domain for that exact diplomatic event, but let's review the available articles. Wait, the prompt requires at least two different publisher domains to materially support the same central event. The provided sources discuss different topics (one is about the envoy to Spain, others are about transport infrastructure). Since there is no single event supported by two domains, I must set publish to false.",
+    "The supplied source records do not contain any stories related to Nigeria, failing the strict Nigeria-first policy requirement.",
+    "The provided source records discuss international gaming news (Injustice 3 playtests, Apex Legends crossover, and Jujutsu Kaisen game delay) with no connection to Nigeria. As a Nigeria-first digital newsroom, this content does not meet our editorial focus on Nigerian public-interest sectors.",
+    "The provided source records discuss three entirely different events from different states without at least two independent sources corroborating the same central event.",
+    "The provided source records discuss entirely different university strikes and events across different states (Abia, Lagos, and Plateau) without two sources materially corroborating the same central event.",
+    "The provided source records do not contain at least two different publisher domains reporting on the same central event.",
+    "The provided source records discuss completely unrelated topics (an advocacy group warning youths against drugs, the NSE hailing the Azikel Refinery, and a group urging Tinubu regarding a Bayelsa council chair). There are no two sources covering the same central event.",
+    "The provided source records do not contain at least two different publisher domains materially supporting the same central event.",
+    "The provided source records cover completely different topics (one about a tax hike on sugary drinks in Lagos and the other about Lagos state police integration) without at least two sources covering the same central event.",
+    "The provided source records discuss two completely unrelated security topics (Akwa Ibom 2027 election warnings and Lagos state police integration) from different publisher domains, lacking the required multi-source corroboration of a single central event.",
+    "The supplied source records discuss two completely unrelated events (ASUU strike in Lagos universities versus Sanwo-Olu's state police integration plan). At least two different publisher domains must materially support the same central event to create a news article.",
+    "The provided source records discuss unrelated topics (an Atlantic hurricane season and an Apple AirPods review) with no intersecting Nigerian or mutually corroborating stories across two different publisher domains.",
+    "The provided source records discuss international technology news regarding Apple, OpenAI, and Elon Musk, lacking any prioritization for Nigerian stories across politics, economy, security, or other public-interest sectors relevant to the C. O. Eric AI Newsroom.",
+    "The provided source records discuss international gaming crossovers and rumors (Apex Legends and Injustice 3) which do not meet the Nigeria-first focus required for the C. O. Eric AI Newsroom. Furthermore, they do not corroborate the same central event from at least two different publisher domains.",
+    "The provided source records discuss international gaming developments (Switch 2 and Jujutsu Kaisen game delays) and lack any connection to Nigerian public interest sectors such as politics, economy, security, or education.",
+    "The supplied source records discuss international gaming news (Bungie's Marathon and Jujutsu Kaisen), which do not meet the Nigeria-first editorial focus required by the C. O. Eric AI Newsroom.",
+    "The provided source records do not contain any Nigerian stories or share a common central event supported by at least two different publisher domains."
   ]
 }
