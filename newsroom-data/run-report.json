@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-15T15:56:35.011041+00:00",
-  "finished_utc": "2026-09-15T15:56:40.750290+00:00",
+  "started_utc": "2026-09-15T19:01:19.168609+00:00",
+  "finished_utc": "2026-09-15T19:01:23.992049+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 4,
   "feed_count": 11,
@@ -8,15 +8,16 @@
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 125,
-  "fresh_items": 123,
+  "fresh_items": 122,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
   "ai_failures": 0,
-  "held_or_rejected": 3,
-  "published_count": 1,
+  "held_or_rejected": 4,
+  "published_count": 0,
   "rejection_reasons": [
-    "The provided source records cover completely unrelated topics (a video game quest guide and a VR headset review) and do not corroborate the same central event across multiple domains.",
-    "The provided source records cover completely different gaming topics (one is a hardware review for the Steam Frame, and the other is a quest guide for The Blood of Dawnwalker) and do not corroborate the same central event across multiple publisher domains.",
-    "The provided source records discuss two completely separate and unrelated events (an abduction in Malawi and a suspected murder-suicide in Bali), meaning there are not at least two different sources corroborating the same central event."
+    "The provided source records discuss four completely unrelated gaming stories without at least two publisher domains supporting the same central event.",
+    "The source records do not corroborate the same central event; they discuss three completely different gaming topics (Injustice 3 playtests, an Apex Legends crossover, and a Jujutsu Kaisen game delay).",
+    "The provided source records discuss two completely different gaming topics (an Apex Legends/Street Fighter crossover and Injustice 3 playtests) with no overlapping central event corroborated by multiple domains.",
+    "The source records discuss two completely unrelated game delays from different franchises and developers, failing to corroborate the same central event."
   ]
 }

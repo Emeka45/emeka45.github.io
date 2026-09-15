@@ -1,0 +1,26 @@
+{
+  "finished_utc": "2026-09-15T19:01:24.378350+00:00",
+  "model": "gemini-2.5-flash-image",
+  "missing_before_run": 8,
+  "attempted": 4,
+  "generated": [],
+  "failures": [
+    {
+      "article": "2026-09-15-carney-welcomes-international-leaders-to-canada-amid-economic-and-defense-talks-ba4c86683f.html",
+      "error": "HTTP Error 400: Bad Request"
+    },
+    {
+      "article": "2026-09-14-valve-opens-reservations-for-steam-frame-standalone-vr-headset-d8b7bf1b72.html",
+      "error": "HTTP Error 400: Bad Request"
+    },
+    {
+      "article": "2026-09-14-sony-intervenes-to-halt-the-last-of-us-part-2-multiplayer-mod-fdb6076371.html",
+      "error": "HTTP Error 400: Bad Request"
+    },
+    {
+      "article": "2026-09-14-sega-and-netflix-team-up-for-crazy-taxi-film-and-new-sonic-projects-9b6d78a53d.html",
+      "error": "HTTP Error 400: Bad Request"
+    }
+  ],
+  "remaining_missing_after_run": 8
+}
