@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-15T19:15:55.336334+00:00",
-  "finished_utc": "2026-09-15T19:16:00.545363+00:00",
+  "started_utc": "2026-09-15T19:27:55.845629+00:00",
+  "finished_utc": "2026-09-15T19:28:01.421136+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 4,
   "feed_count": 11,
@@ -15,9 +15,9 @@
   "held_or_rejected": 4,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided source records discuss four completely different gaming events and stories across different publishers and titles, lacking at least two publisher domains supporting the same central event.",
-    "The provided sources cover completely different gaming topics (Injustice 3 playtests, an Apex Legends crossover, and a Jujutsu Kaisen game delay) with no single central event corroborated by multiple sources.",
-    "The provided source records discuss two completely different gaming topics (an Apex Legends crossover and rumors regarding Injustice 3) and do not corroborate the same central event.",
-    "The source records discuss two completely unrelated game delays from different franchises and developers, failing to corroborate the same central event."
+    "The provided sources cover completely different gaming events and announcements without at least two publisher domains corroborating the same central event.",
+    "The source records discuss three completely different gaming topics (Injustice 3 playtests, an Apex Legends crossover, and a Jujutsu Kaisen game delay) from different domains, meaning there are no two different publisher domains corroborating the same central event.",
+    "The provided source records discuss two completely unrelated gaming stories (Apex Legends crossover and Injustice 3 playtests) and do not corroborate the same central event.",
+    "The source records discuss two completely unrelated game delays from different franchises and developers, lacking corroborating evidence for the same central event."
   ]
 }
