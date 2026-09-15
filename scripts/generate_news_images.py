@@ -41,7 +41,7 @@ def image_name(path: Path) -> str:
     return f"{path.stem}.png"
 
 
-def generate_image(title: str, summary: str, category: str, key: str) -> bytes:
+def generate_image(title: str, summary: str, category: str, api_key: str) -> bytes:
     prompt = f"""Create a polished original editorial news illustration for the C. O. Eric Newsroom.
 
 Headline: {title}
@@ -51,14 +51,14 @@ Summary: {summary}
 Visual requirements:
 - Wide 16:9 composition suitable as a website article hero image.
 - Modern professional editorial-news aesthetic.
-- Visually communicate the central subject of the story without reproducing a copyrighted news photograph.
+- Visually communicate the central subject without reproducing a copyrighted news photograph.
 - Do not depict real people as identifiable exact portraits.
 - No logos, trademarks, watermarks, captions, headlines, readable text, UI screenshots, or invented statistics.
 - No graphic violence or sexual content.
 - Strong focal subject, clean composition, realistic lighting, publication-quality detail.
 - The image must stand on its own and should not contain words."""
 
-    endpoint = f"https://generativelanguage.googleapis.com/v1/models/{MODEL}:generateContent"
+    endpoint = f"https://generativelanguage.googleapis.com/v1/models/{MODEL}:generateContent?key={api_key}"
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {
@@ -69,7 +69,7 @@ Visual requirements:
     request = urllib.request.Request(
         endpoint,
         data=json.dumps(payload).encode("utf-8"),
-        headers={"Content-Type": "application/json", "x-goog-api-key": key},
+        headers={"Content-Type": "application/json"},
         method="POST",
     )
     last_error = None
@@ -77,20 +77,21 @@ Visual requirements:
         try:
             with urllib.request.urlopen(request, timeout=180) as response:
                 data = json.loads(response.read())
-            candidates = data.get("candidates", [])
-            for candidate in candidates:
+            for candidate in data.get("candidates", []):
                 for part in candidate.get("content", {}).get("parts", []):
                     inline = part.get("inlineData") or part.get("inline_data")
                     if inline and inline.get("data"):
                         return base64.b64decode(inline["data"])
             raise RuntimeError("Gemini returned no image data")
         except urllib.error.HTTPError as exc:
-            last_error = exc
+            try:
+                detail = exc.read().decode("utf-8", errors="replace")[:1000]
+            except Exception:
+                detail = str(exc)
+            last_error = RuntimeError(f"HTTP {exc.code}: {detail}")
             if exc.code not in (429, 500, 502, 503, 504):
-                raise
-            delay = 10 * (attempt + 1)
-            print(f"Gemini image HTTP {exc.code}; retrying in {delay}s")
-            time.sleep(delay)
+                raise last_error
+            time.sleep(10 * (attempt + 1))
         except Exception as exc:
             last_error = exc
             if attempt == 2:
@@ -147,8 +148,8 @@ def update_index():
 
 
 def main():
-    key = os.environ.get("GEMINI_API_KEY")
-    if not key:
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key:
         raise RuntimeError("GEMINI_API_KEY is missing")
     IMAGES.mkdir(parents=True, exist_ok=True)
     missing = []
@@ -162,16 +163,14 @@ def main():
         if data:
             missing.append((path, target, data))
     selected = missing[:MAX_IMAGES_PER_RUN]
-    generated = []
-    failures = []
+    generated, failures = [], []
     for path, target, (raw, title, summary, category) in selected:
         try:
             print("Generating image for:", title)
-            image = generate_image(title, summary, category, key)
+            image = generate_image(title, summary, category, api_key)
             target.write_bytes(image)
             path.write_text(add_image_to_article(raw, title, f"images/{target.name}"), encoding="utf-8")
             generated.append({"article": path.name, "image": str(target.relative_to(ROOT)), "bytes": len(image)})
-            print("Generated:", target, len(image), "bytes")
         except Exception as exc:
             failures.append({"article": path.name, "error": str(exc)})
             print("IMAGE FAILED:", path.name, exc)
@@ -187,7 +186,6 @@ def main():
     }
     REPORT.parent.mkdir(parents=True, exist_ok=True)
     REPORT.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print("IMAGE REPORT:", json.dumps(report, ensure_ascii=False))
 
 
 if __name__ == "__main__":
