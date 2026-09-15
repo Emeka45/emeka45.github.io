@@ -49,7 +49,7 @@ Category: {category}
 Summary: {summary}
 
 Visual requirements:
-- Wide landscape 16:9 composition suitable as a website article hero image.
+- Compose the scene as a wide editorial hero image; keep the main subject centered and leave useful space around it for a website crop.
 - Modern professional editorial-news aesthetic.
 - Visually communicate the central subject without reproducing a copyrighted news photograph.
 - Do not depict real people as identifiable exact portraits.
@@ -58,19 +58,16 @@ Visual requirements:
 - Strong focal subject, clean composition, realistic lighting, publication-quality detail.
 - The image must stand on its own and should not contain words."""
 
-    # Gemini's current legacy GenerateContent REST API expects the image
-    # configuration under generationConfig.responseFormat.image. Use the
-    # v1beta endpoint, which is the documented endpoint for this API.
+    # The legacy GenerateContent REST endpoint accepts image output through
+    # responseModalities. The API currently rejects the documented-looking
+    # aspect-ratio string in this REST path, so we deliberately omit the
+    # optional responseFormat block and let the model choose its native image
+    # size. The website presents the result in a 16:9 hero frame via CSS.
     endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent?key={api_key}"
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {
-            "responseModalities": ["Image"],
-            "responseFormat": {
-                "image": {
-                    "aspectRatio": "16:9"
-                }
-            }
+            "responseModalities": ["Image"]
         }
     }
     request = urllib.request.Request(
@@ -117,7 +114,7 @@ def add_image_to_article(raw: str, title: str, relative_image: str) -> str:
         raw = raw.replace("</title>", "</title>" + image_tag, 1)
     hero = (
         f'<figure class="news-hero-image" style="margin:1.25rem 0 1.5rem;">'
-        f'<img src="../{relative_image}" alt="{escaped_title}" loading="eager" decoding="async" style="display:block;width:100%;height:auto;border-radius:16px;">'
+        f'<img src="../{relative_image}" alt="{escaped_title}" loading="eager" decoding="async" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:16px;">'
         f'<figcaption style="margin-top:.5rem;font-size:.85rem;opacity:.7;">AI-generated editorial illustration.</figcaption>'
         f'</figure>'
     )
