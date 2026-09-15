@@ -17,7 +17,7 @@ IMAGES = NEWS / "images"
 INDEX = NEWS / "index.json"
 REPORT = ROOT / "newsroom-data" / "image-report.json"
 MODEL = "gemini-2.5-flash-image"
-MAX_IMAGES_PER_RUN = 4
+MAX_IMAGES_PER_RUN = 20
 
 
 def clean_text(value: str) -> str:
@@ -57,6 +57,15 @@ def generate_fallback_svg(title: str, summary: str, category: str) -> bytes:
         "ai": (124, 58, 237, 255),
         "science": (5, 150, 105, 255),
         "world": (37, 99, 235, 255),
+        "nigeria politics": (0, 92, 76, 255),
+        "religion & faith": (146, 94, 24, 255),
+        "education": (37, 99, 235, 255),
+        "business & economy": (15, 118, 110, 255),
+        "security & crime": (127, 29, 29, 255),
+        "health": (5, 150, 105, 255),
+        "agriculture": (34, 120, 50, 255),
+        "sports": (15, 100, 160, 255),
+        "entertainment & lifestyle": (180, 65, 120, 255),
     }
     r, g, b, _ = palette.get(category.strip().lower(), (17, 24, 39, 255))
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
@@ -188,7 +197,7 @@ def main():
             else:
                 failures.append({"article": path.name, "error": message})
     update_index()
-    report = {"finished_utc": dt.datetime.now(dt.timezone.utc).isoformat(), "model": MODEL, "missing_before_run": len(missing), "attempted": len(selected), "generated": generated, "fallbacks": fallbacks, "failures": failures, "remaining_missing_after_run": max(0, len(missing) - len(generated) - len(fallbacks))}
+    report = {"finished_utc": dt.datetime.now(dt.timezone.utc).isoformat(), "model": MODEL, "max_images_per_run": MAX_IMAGES_PER_RUN, "missing_before_run": len(missing), "attempted": len(selected), "generated": generated, "fallbacks": fallbacks, "failures": failures, "remaining_missing_after_run": max(0, len(missing) - len(generated) - len(fallbacks))}
     REPORT.parent.mkdir(parents=True, exist_ok=True)
     REPORT.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
