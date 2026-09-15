@@ -1,23 +1,29 @@
 {
-  "started_utc": "2026-09-15T02:35:55.125956+00:00",
-  "finished_utc": "2026-09-15T02:36:00.786092+00:00",
+  "started_utc": "2026-09-15T09:04:46.264274+00:00",
+  "finished_utc": "2026-09-15T09:04:48.943206+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 4,
   "feed_count": 11,
-  "feed_success_count": 11,
-  "feed_failure_count": 0,
-  "feed_failures": [],
-  "total_items": 125,
-  "fresh_items": 121,
-  "corroborated_candidates": 4,
-  "ai_attempts": 4,
+  "feed_success_count": 10,
+  "feed_failure_count": 1,
+  "feed_failures": [
+    {
+      "category": "Gaming",
+      "url": "https://www.polygon.com/rss/index.xml",
+      "error": "Remote end closed connection without response"
+    }
+  ],
+  "total_items": 115,
+  "fresh_items": 113,
+  "corroborated_candidates": 2,
+  "ai_attempts": 2,
   "ai_failures": 0,
   "held_or_rejected": 4,
   "published_count": 0,
   "rejection_reasons": [
-    "Multiple reliable sources from Eurogamer corroborate Blizzard's recent announcements regarding the far-future release dates and development plans for Diablo 5 and the new StarCraft shooter.",
-    "The source records do not corroborate the same central event; they discuss completely different gaming topics (a StarCraft shooter, Diablo 5, and a new Steam roguelike).",
-    "The source records do not corroborate the same central event across at least two different publisher domains. The Eurogamer article discusses Diablo 4 and Diablo 5 announcements, while the Polygon articles cover unrelated topics (House of the Dragon streaming stats and a Diablo 5 interview about open-world design).",
-    "The source records discuss three completely different, unrelated tragic events across different countries without at least two independent sources corroborating the same central event."
+    "The source records discuss two completely unrelated events (US space weapons and an Ebola outbreak in the DRC) and do not share at least two different publisher domains corroborating the same central event.",
+    "The provided source records discuss two completely unrelated events (an Ebola outbreak in the DRC and a US space weapons deployment) with no shared central event corroborated by multiple sources.",
+    "no independent corroboration yet",
+    "no independent corroboration yet"
   ]
 }
