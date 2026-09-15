@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-14T22:52:24.384494+00:00",
-  "finished_utc": "2026-09-14T22:52:31.144613+00:00",
+  "started_utc": "2026-09-15T02:35:55.125956+00:00",
+  "finished_utc": "2026-09-15T02:36:00.786092+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 4,
   "feed_count": 11,
@@ -8,15 +8,16 @@
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 125,
-  "fresh_items": 120,
+  "fresh_items": 121,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
   "ai_failures": 0,
-  "held_or_rejected": 3,
-  "published_count": 1,
+  "held_or_rejected": 4,
+  "published_count": 0,
   "rejection_reasons": [
-    "The supplied source records describe three entirely distinct, unrelated events across different countries without at least two independent sources corroborating the same central event.",
-    "Although both sources discuss Mount Etna, they cover different scientific studies and findings (one about magma ascent speed and gases, and the other about microscopic magma fracturing during eruptions). Therefore, they do not materially corroborate the exact same central event.",
-    "The provided sources discuss different aspects of volcanic eruptions at Mount Etna and microscopic magma behavior without corroborating the exact same central event or study."
+    "Multiple reliable sources from Eurogamer corroborate Blizzard's recent announcements regarding the far-future release dates and development plans for Diablo 5 and the new StarCraft shooter.",
+    "The source records do not corroborate the same central event; they discuss completely different gaming topics (a StarCraft shooter, Diablo 5, and a new Steam roguelike).",
+    "The source records do not corroborate the same central event across at least two different publisher domains. The Eurogamer article discusses Diablo 4 and Diablo 5 announcements, while the Polygon articles cover unrelated topics (House of the Dragon streaming stats and a Diablo 5 interview about open-world design).",
+    "The source records discuss three completely different, unrelated tragic events across different countries without at least two independent sources corroborating the same central event."
   ]
 }
