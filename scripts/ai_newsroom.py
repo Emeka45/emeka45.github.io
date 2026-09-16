@@ -27,71 +27,24 @@ MAX_AI_CANDIDATES_PER_RUN = 20
 USER_AGENT = 'COEricAI-Newsroom/2.0'
 BLOCKED_TERMS = {'porn', 'pornography', 'xxx', 'explicit sex', 'sexual explicit', 'sex tape', 'nude leak', 'onlyfans', 'erotic', 'sexual fetish'}
 
-# A broad Nigeria-first newsroom. Each sector has multiple independent feeds so
-# the existing corroboration gate can require evidence from different domains.
 FEEDS = {
-    'Nigeria Politics': [
-        'https://rss.punchng.com/v1/category/politics',
-        'https://thereporter.com.ng/rss/category/politics',
-    ],
-    'Religion & Faith': [
-        'https://christianitynigeria.com/feed/',
-        'https://nscia.com.ng/category/news/feed/',
-    ],
-    'Education': [
-        'https://rss.punchng.com/v1/category/education',
-        'https://thereporter.com.ng/rss/category/education',
-    ],
-    'Business & Economy': [
-        'https://rss.punchng.com/v1/category/business',
-        'https://thereporter.com.ng/rss/category/business',
-    ],
-    'Security & Crime': [
-        'https://thereporter.com.ng/rss/category/security',
-        'https://rss.punchng.com/v1/category/latest_news',
-    ],
-    'Health': [
-        'https://rss.punchng.com/v1/category/health',
-        'https://thereporter.com.ng/rss/category/health',
-    ],
-    'Agriculture': [
-        'https://thereporter.com.ng/rss/category/agriculture',
-        'https://rss.punchng.com/v1/category/business',
-    ],
-    'Technology': [
-        'https://feeds.arstechnica.com/arstechnica/index',
-        'https://www.theverge.com/rss/index.xml',
-    ],
-    'AI': [
-        'https://www.technologyreview.com/feed/',
-        'https://www.theverge.com/rss/ai/index.xml',
-    ],
-    'Science': [
-        'https://www.sciencedaily.com/rss/all.xml',
-        'https://phys.org/rss-feed/',
-    ],
-    'Gaming': [
-        'https://www.polygon.com/rss/index.xml',
-        'https://www.eurogamer.net/feed',
-    ],
-    'Anime': [
-        'https://www.animenewsnetwork.com/all/rss.xml',
-        'https://www.animenewsnetwork.com/news/rss.xml',
-    ],
-    'Sports': [
-        'https://rss.punchng.com/v1/category/sports',
-        'https://thereporter.com.ng/rss/category/sports-2',
-    ],
-    'Entertainment & Lifestyle': [
-        'https://rss.punchng.com/v1/category/entertainment',
-        'https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle',
-    ],
-    'World': [
-        'https://feeds.bbci.co.uk/news/world/rss.xml',
-        'https://www.theguardian.com/world/rss',
-    ],
+    'Nigeria Politics': ['https://rss.punchng.com/v1/category/politics', 'https://thereporter.com.ng/rss/category/politics'],
+    'Religion & Faith': ['https://christianitynigeria.com/feed/', 'https://nscia.com.ng/category/news/feed/'],
+    'Education': ['https://rss.punchng.com/v1/category/education', 'https://thereporter.com.ng/rss/category/education'],
+    'Business & Economy': ['https://rss.punchng.com/v1/category/business', 'https://thereporter.com.ng/rss/category/business'],
+    'Security & Crime': ['https://thereporter.com.ng/rss/category/security', 'https://rss.punchng.com/v1/category/latest_news'],
+    'Health': ['https://rss.punchng.com/v1/category/health', 'https://thereporter.com.ng/rss/category/health'],
+    'Agriculture': ['https://thereporter.com.ng/rss/category/agriculture', 'https://rss.punchng.com/v1/category/business'],
+    'Technology': ['https://feeds.arstechnica.com/arstechnica/index', 'https://www.theverge.com/rss/index.xml'],
+    'AI': ['https://www.technologyreview.com/feed/', 'https://www.theverge.com/rss/ai/index.xml'],
+    'Science': ['https://www.sciencedaily.com/rss/all.xml', 'https://phys.org/rss-feed/'],
+    'Gaming': ['https://www.polygon.com/rss/index.xml', 'https://www.eurogamer.net/feed'],
+    'Anime': ['https://www.animenewsnetwork.com/all/rss.xml', 'https://www.animenewsnetwork.com/news/rss.xml'],
+    'Sports': ['https://rss.punchng.com/v1/category/sports', 'https://thereporter.com.ng/rss/category/sports-2'],
+    'Entertainment & Lifestyle': ['https://rss.punchng.com/v1/category/entertainment', 'https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle'],
+    'World': ['https://feeds.bbci.co.uk/news/world/rss.xml', 'https://www.theguardian.com/world/rss'],
 }
-STOPWORDS = {'the','a','an','and','or','of','to','in','on','for','with','from','by','at','is','are','as','new','news','after','into','over','its','this','that','will','has','have','how','why','what','who','their','they','it','be','about','more','than','says','said'}
+STOPWORDS = {'the','a','an','and','or','of','to','in','on','for','with','from','by','at','is','are','as','new','news','after','into','over','its','this','that','will','has','have','how','why','what','who','their','they','it','be','about','more','than','says','said','amid','among','over','could','would','also','first','latest','report','reports'}
 
 
 def load_state():
@@ -126,8 +79,14 @@ def parse_feed(category, url):
                 if atom_link is not None:
                     link = (atom_link.attrib.get('href') or '').strip()
             summary = (node.findtext('description') or node.findtext('{http://www.w3.org/2005/Atom}summary') or node.findtext('{http://www.w3.org/2005/Atom}content') or '').strip()
+            source_node = node.find('source')
+            source = (source_node.text or '').strip() if source_node is not None else ''
+            if not source:
+                source_node = node.find('{http://www.w3.org/2005/Atom}author')
+                if source_node is not None:
+                    source = (source_node.findtext('{http://www.w3.org/2005/Atom}name') or '').strip()
             if title and link:
-                items.append({'category': category, 'title': re.sub('<[^>]+>', ' ', title), 'summary': re.sub('<[^>]+>', ' ', summary), 'url': link, 'domain': urllib.parse.urlparse(link).netloc.lower().removeprefix('www.')})
+                items.append({'category': category, 'title': re.sub('<[^>]+>', ' ', title), 'summary': re.sub('<[^>]+>', ' ', summary), 'url': link, 'source': source, 'domain': urllib.parse.urlparse(link).netloc.lower().removeprefix('www.')})
         return items, None
     except Exception as exc:
         return [], str(exc)
@@ -144,13 +103,27 @@ def similarity(a, b):
     return len(aa & bb) / max(1, min(len(aa), len(bb)))
 
 
+def event_match(a, b):
+    at = tokens(a.get('title', ''))
+    bt = tokens(b.get('title', ''))
+    shared_title = at & bt
+    if len(shared_title) >= 3 and len(shared_title) / max(1, min(len(at), len(bt))) >= 0.40:
+        return True
+    combined = similarity(a, b)
+    shared_all = tokens(a.get('title', '') + ' ' + a.get('summary', '')) & tokens(b.get('title', '') + ' ' + b.get('summary', ''))
+    return combined >= 0.22 and len(shared_all) >= 3
+
+
 def find_corroboration(item, all_items):
     matches = []
     for other in all_items:
-        if other['url'] == item['url'] or other['category'] != item['category'] or other['domain'] == item['domain']:
+        if other['url'] == item['url'] or other.get('domain') == item.get('domain'):
             continue
-        if similarity(item, other) >= 0.18:
+        if other.get('category') != item.get('category') and not (item.get('category', '').startswith('Nigeria ') and other.get('category', '').startswith('Nigeria ')):
+            continue
+        if event_match(item, other):
             matches.append(other)
+    matches.sort(key=lambda other: similarity(item, other), reverse=True)
     return matches[:3]
 
 
@@ -161,21 +134,19 @@ def ask_ai(sources):
     prompt = '''You are the C. O. Eric AI Newsroom, a broad Nigeria-first digital newsroom. Create a concise original news article only when the supplied source records materially corroborate the same central event.
 
 STRICT RULES:
-- Prioritize Nigerian stories across politics, religion and faith, education, business, economy, security, crime, health, agriculture, technology, AI, science, sports, entertainment, culture and other public-interest sectors.
-- Do not publish rumor, speculation, exaggeration, fabricated facts, fabricated quotes, or invented URLs.
 - At least two different publisher domains must materially support the same central event.
+- Never treat two stories as corroboration merely because they mention the same person, place, company, government, or broad topic.
+- The sources must overlap on the actual event, announcement, incident, transaction, study, decision, or development.
+- Do not publish rumor, speculation, exaggeration, fabricated facts, fabricated quotes, or invented URLs.
 - Do not copy or lightly rewrite source wording.
 - No sexually explicit or pornographic content. No graphic gore.
 - Distinguish confirmed facts from analysis.
 - Use only the supplied source URLs.
-- Treat religious subjects neutrally and respectfully; report claims as claims and avoid sectarian language or stereotyping.
+- Treat religious subjects neutrally and respectfully.
 
 LINKING RULES:
 - body_html MUST contain at least one useful inline hyperlink to a supplied source URL.
-- Use a normal HTML anchor such as <a href="EXACT_SUPPLIED_URL">relevant source text</a>.
 - Every href in body_html MUST exactly match one of the supplied source URLs.
-- Link naturally to the first useful mention of the announcement, institution, politician, faith leader, company, game, study, event, or other subject.
-- Do not add scripts, iframes, forms, or external assets.
 
 Return ONLY valid JSON with this schema:
 {"publish":true|false,"reason":"...","category":"...","title":"...","summary":"...","body_html":"...","sources":[{"name":"...","url":"..."}],"confidence":0-100}
@@ -341,22 +312,12 @@ def main():
     save_state(state)
     update_index()
     report = {
-        'started_utc': started.isoformat(),
-        'finished_utc': dt.datetime.now(dt.timezone.utc).isoformat(),
-        'model': AI_MODEL,
-        'max_ai_candidates_per_run': MAX_AI_CANDIDATES_PER_RUN,
-        'feed_count': feed_count,
-        'feed_success_count': feed_success,
-        'feed_failure_count': len(feed_failures),
-        'feed_failures': feed_failures,
-        'total_items': len(candidates),
-        'fresh_items': len(fresh),
-        'corroborated_candidates': corroborated_count,
-        'ai_attempts': ai_attempts,
-        'ai_failures': ai_failures,
-        'held_or_rejected': held_count,
-        'published_count': published_count,
-        'rejection_reasons': rejection_reasons[-50:],
+        'started_utc': started.isoformat(), 'finished_utc': dt.datetime.now(dt.timezone.utc).isoformat(),
+        'model': AI_MODEL, 'max_ai_candidates_per_run': MAX_AI_CANDIDATES_PER_RUN,
+        'feed_count': feed_count, 'feed_success_count': feed_success, 'feed_failure_count': len(feed_failures),
+        'feed_failures': feed_failures, 'total_items': len(candidates), 'fresh_items': len(fresh),
+        'corroborated_candidates': corroborated_count, 'ai_attempts': ai_attempts, 'ai_failures': ai_failures,
+        'held_or_rejected': held_count, 'published_count': published_count, 'rejection_reasons': rejection_reasons[-50:],
     }
     REPORT.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding='utf-8')
     print('RUN REPORT:', json.dumps(report, ensure_ascii=False))
