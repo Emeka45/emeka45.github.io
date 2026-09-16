@@ -18,7 +18,6 @@ def nigeria_category(category: str) -> bool:
 
 
 def source_domain(item: dict) -> str:
-    """Prefer the publisher named by RSS/Atom over a Google News wrapper domain."""
     url = item.get('url', '')
     parsed = urlparse(url)
     host = parsed.netloc.lower().split('@')[-1].split(':')[0]
