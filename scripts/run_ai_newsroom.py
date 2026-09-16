@@ -116,11 +116,12 @@ ai_newsroom.FEEDS.update(EXPANDED_FEEDS)
 
 
 def sanitize_with_fallback(html: str, sources=None) -> str:
-    cleaned = _original_sanitize(html, sources=sources)
+    allowed_urls = [source.get('url', '') for source in (sources or []) if source.get('url')]
+    cleaned = _original_sanitize(html, allowed_urls)
     if sources and 'Source:' not in cleaned:
         links = []
         for source in sources[:3]:
-            title = source.get('title', 'Source')
+            title = source.get('title') or source.get('name') or 'Source'
             url = source.get('url', '#')
             links.append(f'<li><a href="{url}" rel="noopener noreferrer">{title}</a></li>')
         if links:
