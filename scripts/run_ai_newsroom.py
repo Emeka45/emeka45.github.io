@@ -58,60 +58,20 @@ def broader_corroboration(item, all_items):
 ai_newsroom.find_corroboration = broader_corroboration
 
 EXPANDED_FEEDS = {
-    'Nigeria - National & States': [
-        'https://rss.punchng.com/v1/category/latest_news',
-        'https://thereporter.com.ng/rss/category/news',
-    ],
-    'Nigeria - Law & Justice': [
-        'https://news.google.com/rss/search?q=Nigeria+law+justice+court+when:7d&hl=en-NG&gl=NG&ceid=NG:en',
-        'https://thereporter.com.ng/rss/category/news',
-    ],
-    'Nigeria - Energy & Power': [
-        'https://news.google.com/rss/search?q=Nigeria+energy+power+electricity+oil+gas+when:7d&hl=en-NG&gl=NG&ceid=NG:en',
-        'https://rss.punchng.com/v1/category/business',
-    ],
-    'Nigeria - Transport & Infrastructure': [
-        'https://news.google.com/rss/search?q=Nigeria+transport+infrastructure+road+rail+airport+when:7d&hl=en-NG&gl=NG&ceid=NG:en',
-        'https://rss.punchng.com/v1/category/latest_news',
-    ],
-    'Nigeria - Environment & Climate': [
-        'https://news.google.com/rss/search?q=Nigeria+environment+climate+flood+when:7d&hl=en-NG&gl=NG&ceid=NG:en',
-        'https://thereporter.com.ng/rss/category/news',
-    ],
-    'Nigeria - Jobs & Labour': [
-        'https://news.google.com/rss/search?q=Nigeria+jobs+labour+employment+when:7d&hl=en-NG&gl=NG&ceid=NG:en',
-        'https://rss.punchng.com/v1/category/business',
-    ],
-    'Nigeria - Finance & Markets': [
-        'https://thereporter.com.ng/rss/category/finance-101',
-        'https://rss.punchng.com/v1/category/business',
-    ],
-    'Nigeria - Culture & Heritage': [
-        'https://news.google.com/rss/search?q=Nigeria+culture+heritage+arts+when:7d&hl=en-NG&gl=NG&ceid=NG:en',
-        'https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle',
-    ],
-    'Nigeria - Tourism & Travel': [
-        'https://news.google.com/rss/search?q=Nigeria+tourism+travel+when:7d&hl=en-NG&gl=NG&ceid=NG:en',
-        'https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle',
-    ],
-    'Nigeria - Religion & Interfaith': [
-        'https://news.google.com/rss/search?q=Nigeria+religion+interfaith+faith+when:7d&hl=en-NG&gl=NG&ceid=NG:en',
-        'https://rss.punchng.com/v1/category/latest_news',
-    ],
-    'Nigeria - Youth & Society': [
-        'https://news.google.com/rss/search?q=Nigeria+youth+society+community+when:7d&hl=en-NG&gl=NG&ceid=NG:en',
-        'https://thereporter.com.ng/rss/category/news',
-    ],
-    'Nigeria - Real Estate & Housing': [
-        'https://news.google.com/rss/search?q=Nigeria+real+estate+housing+property+when:7d&hl=en-NG&gl=NG&ceid=NG:en',
-        'https://rss.punchng.com/v1/category/business',
-    ],
-    'Nigeria - Food & Consumer': [
-        'https://news.google.com/rss/search?q=Nigeria+food+prices+consumer+when:7d&hl=en-NG&gl=NG&ceid=NG:en',
-        'https://rss.punchng.com/v1/category/business',
-    ],
+    'Nigeria - National & States': ['https://rss.punchng.com/v1/category/latest_news', 'https://thereporter.com.ng/rss/category/news'],
+    'Nigeria - Law & Justice': ['https://news.google.com/rss/search?q=Nigeria+law+justice+court+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://thereporter.com.ng/rss/category/news'],
+    'Nigeria - Energy & Power': ['https://news.google.com/rss/search?q=Nigeria+energy+power+electricity+oil+gas+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://rss.punchng.com/v1/category/business'],
+    'Nigeria - Transport & Infrastructure': ['https://news.google.com/rss/search?q=Nigeria+transport+infrastructure+road+rail+airport+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://rss.punchng.com/v1/category/latest_news'],
+    'Nigeria - Environment & Climate': ['https://news.google.com/rss/search?q=Nigeria+environment+climate+flood+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://thereporter.com.ng/rss/category/news'],
+    'Nigeria - Jobs & Labour': ['https://news.google.com/rss/search?q=Nigeria+jobs+labour+employment+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://rss.punchng.com/v1/category/business'],
+    'Nigeria - Finance & Markets': ['https://thereporter.com.ng/rss/category/finance-101', 'https://rss.punchng.com/v1/category/business'],
+    'Nigeria - Culture & Heritage': ['https://news.google.com/rss/search?q=Nigeria+culture+heritage+arts+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle'],
+    'Nigeria - Tourism & Travel': ['https://news.google.com/rss/search?q=Nigeria+tourism+travel+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle'],
+    'Nigeria - Religion & Interfaith': ['https://news.google.com/rss/search?q=Nigeria+religion+interfaith+faith+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://rss.punchng.com/v1/category/latest_news'],
+    'Nigeria - Youth & Society': ['https://news.google.com/rss/search?q=Nigeria+youth+society+community+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://thereporter.com.ng/rss/category/news'],
+    'Nigeria - Real Estate & Housing': ['https://news.google.com/rss/search?q=Nigeria+real+estate+housing+property+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://rss.punchng.com/v1/category/business'],
+    'Nigeria - Food & Consumer': ['https://news.google.com/rss/search?q=Nigeria+food+prices+consumer+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://rss.punchng.com/v1/category/business'],
 }
-
 ai_newsroom.FEEDS.update(EXPANDED_FEEDS)
 
 
@@ -127,7 +87,6 @@ def sanitize_with_fallback(html: str, sources=None) -> str:
         if links:
             cleaned += '<p><strong>Sources</strong></p><ul>' + ''.join(links) + '</ul>'
     return cleaned
-
 
 ai_newsroom.sanitize_body_html = sanitize_with_fallback
 
