@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-16T08:52:42.410214+00:00",
-  "finished_utc": "2026-09-16T08:54:26.007090+00:00",
+  "started_utc": "2026-09-16T08:56:50.538512+00:00",
+  "finished_utc": "2026-09-16T08:58:22.644588+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -41,24 +41,24 @@
   "held_or_rejected": 19,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided source records do not contain at least two different publisher domains materially supporting the same central event.",
-    "Sufficient source corroboration from multiple domains regarding the RMAFC chief praising Abia State governance.",
-    "None of the supplied source records share a central event corroborated by at least two different publisher domains.",
-    "The source records do not contain at least two different publisher domains materially corroborating the same central event.",
-    "The provided source records do not contain at least two different publisher domains reporting on the same central event. The political story has only one source (thereporter.com.ng), and the real estate stories cover general commentary across different headlines rather than a single corroborated event with multiple distinct sources.",
-    "The source records cover completely different, unrelated events (Abia PDP primary crisis, Abuja rental crisis, a drug rehabilitation project, and April 2026 food prices). There are not at least two different publisher domains materially supporting the same central event.",
-    "The source records discuss different events (APC zoning in Abia vs. RMAFC praising Governor Alex Otti). There are not at least two different publisher domains materially supporting the exact same central event.",
     "The provided source records do not contain at least two different publisher domains materially corroborating the same central event.",
-    "The provided source records discuss four completely different, unrelated topics (Bayelsa politics, Lagos heritage preservation, national transportation integration, and unemployment). There are not at least two different publisher domains supporting the same central event as required by the strict rules.",
-    "The provided source records discuss completely different, unrelated topics (Seriake Dickson's political plans, national rail expansion, Kuwait's labor rules, and unemployment in Nigeria). There are no two distinct publisher domains reporting on the same central event, which fails the strict multi-source corroboration rule.",
-    "No single central event is materially corroborated by at least two different publisher domains in the provided sources.",
-    "Only a single source domain supports the Nigeria politics story, and the other sources cover international news about the US and Israel which falls outside the Nigeria-first mandate.",
-    "The source records refer to different events (one about Abia State teachers and another about the RMAFC chief visiting Governor Alex Otti). There are no two distinct publisher domains covering the exact same central event.",
-    "The provided source records discuss different events (Governor Otti receiving a JAMB scorer versus the RMAFC chief praising Governor Otti). There are no two distinct publisher domains covering the exact same central event.",
-    "The provided source records discuss four completely unrelated events across different states (Abia, Anambra, and Ondo) with no single central event corroborated by at least two different publisher domains.",
-    "No single event is materially corroborated by at least two different publisher domains in the provided source records.",
-    "No single event is supported by at least two different publisher domains with material corroboration. The provided sources cover unrelated topics (Nigerian federal education allowances, UK inflation, and US arms deals).",
-    "Sufficient source records from Punch NG corroborate the SIMS and Samsung partnership anniversary event.",
-    "Insufficient corroborating source records for a single central event. Only one source addresses the Dangote Refinery price reduction, while other sources cover entirely unrelated topics like food prices, unemployment, and religion."
+    "Sufficient source records from multiple publisher domains confirm the RMAFC Chairman's remarks regarding Abia State governance under Governor Alex Otti.",
+    "The source records do not contain at least two different publisher domains reporting on the same central event, as required by the strict rules.",
+    "Only one source record was provided for each distinct news event, failing the requirement that at least two different publisher domains must materially support the same central event.",
+    "The supplied source records pertain to four entirely different and unrelated stories with no overlap in publisher domains or central events, failing the strict requirement that at least two different publisher domains must materially support the same central event.",
+    "The source records discuss different events (the APC zoning its governorship ticket in Abia and the RMAFC chief praising Governor Alex Otti). There are no two distinct publisher domains covering the exact same central event with material corroboration.",
+    "The provided source records do not contain at least two different publisher domains materially supporting the same central event. The political story is from a single domain, while the youth and environment stories cover different topics from different sources.",
+    "The provided source records do not contain at least two different publisher domains reporting on the same central event.",
+    "The provided source records discuss completely different, unrelated events without at least two source domains corroborating the same central story.",
+    "None of the provided source records share at least two different publisher domains materially corroborating the same central event.",
+    "The provided sources do not contain at least two different publisher domains materially supporting the same central Nigerian story required by our Nigeria-first digital newsroom policy.",
+    "The provided source records cover different events (Governor Otti charging new teachers versus the RMAFC chief praising Governor Otti). There are no two distinct source domains materially supporting the same central event.",
+    "The provided source records cover completely different topics (one about Governor Otti receiving a top JAMB scorer, and the others about an RMAFC chief praising Governor Otti). There are no two distinct publisher domains reporting on the exact same central event with material corroboration.",
+    "The provided source records discuss completely unrelated events from different states and sectors, failing the requirement that at least two different publisher domains must materially support the same central event.",
+    "Insufficient corroborating sources for any single event across at least two different publisher domains.",
+    "No single event is supported by at least two different publisher domains with material corroboration. The provided sources cover unrelated topics (Nigerian federal education allowances, UK inflation, and US arms sales to Israel) without overlapping corroboration.",
+    "The source records cover completely different events with no single event corroborated by at least two distinct publisher domains.",
+    "Only one source record relates to the Dangote Refinery price reduction, while the other provided records cover entirely unrelated topics such as general food prices, unemployment, and religion. At least two different publisher domains must materially support the same central event to form an article.",
+    "The provided sources do not contain at least two independent publisher domains materially corroborating the same central event."
   ]
 }
