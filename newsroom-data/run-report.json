@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-16T02:30:20.875324+00:00",
-  "finished_utc": "2026-09-16T02:32:50.213134+00:00",
+  "started_utc": "2026-09-16T08:52:42.410214+00:00",
+  "finished_utc": "2026-09-16T08:54:26.007090+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 404: Not Found"
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -34,32 +34,31 @@
     }
   ],
   "total_items": 636,
-  "fresh_items": 632,
+  "fresh_items": 633,
   "corroborated_candidates": 20,
   "ai_attempts": 20,
-  "ai_failures": 0,
-  "held_or_rejected": 20,
+  "ai_failures": 1,
+  "held_or_rejected": 19,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided source records cover distinct, unrelated events in Lagos without at least two source domains materializing the same central event.",
-    "Although multiple sources mention justice-related topics in Nigeria, they discuss entirely different events and themes—ranging from Governor Douye Diri's comments on true federalism in <a href=\"https://thereporter.com.ng/diri-says-justice-equity-and-fairness-key-to-nigerias-democracy\">The Reporter</a> to separate reports on the cost of justice, the Legal Aid Board, and rape law enforcement—failing to materially corroborate a single central event.",
-    "The supplied source records focus exclusively on international events in Malawi, Indonesia, and Australia, with no Nigeria-first or public-interest stories relevant to the C. O. Eric AI Newsroom mandate.",
-    "Multiple sources analyze how inadequate transport infrastructure hampers economic growth in Nigeria and why fixing the system is vital for national development.",
-    "The provided source records discuss entirely different topics (healthcare funding by pension funds, public-private partnerships for infrastructure, and climate action in transportation) and lack at least two different publisher domains materially supporting the same central event.",
-    "The provided source records discuss completely unrelated topics (an advocacy group warning youths against drugs, the NSE hailing the Azikel Refinery, and a group urging intervention regarding a Bayelsa council chair). There are no two distinct sources covering the same central event to corroborate.",
-    "The supplied source records discuss two completely different events from different domains without cross-material corroboration of a single central event.",
-    "The supplied source records discuss two completely unrelated topics in Lagos (parking fee defaults and state police plans) without two different publisher domains materially corroborating the same central event.",
-    "The source records refer to two completely different topics (Lagos budget and Lagos state police) without at least two independent domains covering the same central event.",
-    "The provided source records discuss international weather and consumer technology topics (Atlantic hurricane season and Boox Palma 3 e-reader) and do not contain any Nigeria-focused stories corroborated by at least two different publisher domains.",
-    "The provided source records discuss international technology and weather topics (Boox Palma 3 and Atlantic hurricane season) and do not contain any Nigeria-focused stories corroborated by at least two publisher domains.",
-    "The provided source records discuss the return of the New World screwworm in the United States and tracking systems by UC San Diego and the USDA. As the C. O. Eric AI Newsroom prioritizes Nigeria-first stories across relevant public-interest sectors, this international science news does not meet our geographic focus criteria.",
-    "The source records concern an agricultural and animal health issue in the United States involving the New World screwworm. This does not meet the strict Nigeria-first criteria required for the C. O. Eric AI Newsroom.",
-    "The provided source records discuss international video game releases (Nintendo Switch 2, Diablo 5, StarCraft) and do not contain any Nigeria-first news stories or public-interest events relevant to the C. O. Eric AI Newsroom mandate.",
-    "The source records concern international entertainment and gaming news regarding Grand Theft Auto 6, which falls outside the Nigeria-first focus required for the C. O. Eric AI Newsroom.",
-    "The provided sources focus on international video game crossovers and unannounced gaming projects, which do not meet the Nigeria-first editorial focus of the C. O. Eric AI Newsroom.",
-    "The provided source records discuss international gaming updates and do not meet the Nigeria-first criteria required for publication.",
-    "The provided source records discuss international gaming topics (Blizzard, World of Warcraft, Diablo) and do not contain any Nigeria-first stories across politics, economy, security, or other public-interest sectors relevant to the C.O. Eric AI Newsroom mandate. Furthermore, the two sources cover completely different gaming topics and do not materially corroborate the same central event.",
-    "The provided source records discuss international video game developments (Injustice 3 playtests and an Apex Legends crossover) and do not contain any Nigeria-first stories across politics, economy, security, or other local public-interest sectors required by our editorial mandate.",
-    "The provided source records discuss international gaming news (GTA 6 cast) and do not pertain to Nigeria-first stories across politics, economy, security, or other mandated public-interest sectors for the C. O. Eric AI Newsroom."
+    "The provided source records do not contain at least two different publisher domains materially supporting the same central event.",
+    "Sufficient source corroboration from multiple domains regarding the RMAFC chief praising Abia State governance.",
+    "None of the supplied source records share a central event corroborated by at least two different publisher domains.",
+    "The source records do not contain at least two different publisher domains materially corroborating the same central event.",
+    "The provided source records do not contain at least two different publisher domains reporting on the same central event. The political story has only one source (thereporter.com.ng), and the real estate stories cover general commentary across different headlines rather than a single corroborated event with multiple distinct sources.",
+    "The source records cover completely different, unrelated events (Abia PDP primary crisis, Abuja rental crisis, a drug rehabilitation project, and April 2026 food prices). There are not at least two different publisher domains materially supporting the same central event.",
+    "The source records discuss different events (APC zoning in Abia vs. RMAFC praising Governor Alex Otti). There are not at least two different publisher domains materially supporting the exact same central event.",
+    "The provided source records do not contain at least two different publisher domains materially corroborating the same central event.",
+    "The provided source records discuss four completely different, unrelated topics (Bayelsa politics, Lagos heritage preservation, national transportation integration, and unemployment). There are not at least two different publisher domains supporting the same central event as required by the strict rules.",
+    "The provided source records discuss completely different, unrelated topics (Seriake Dickson's political plans, national rail expansion, Kuwait's labor rules, and unemployment in Nigeria). There are no two distinct publisher domains reporting on the same central event, which fails the strict multi-source corroboration rule.",
+    "No single central event is materially corroborated by at least two different publisher domains in the provided sources.",
+    "Only a single source domain supports the Nigeria politics story, and the other sources cover international news about the US and Israel which falls outside the Nigeria-first mandate.",
+    "The source records refer to different events (one about Abia State teachers and another about the RMAFC chief visiting Governor Alex Otti). There are no two distinct publisher domains covering the exact same central event.",
+    "The provided source records discuss different events (Governor Otti receiving a JAMB scorer versus the RMAFC chief praising Governor Otti). There are no two distinct publisher domains covering the exact same central event.",
+    "The provided source records discuss four completely unrelated events across different states (Abia, Anambra, and Ondo) with no single central event corroborated by at least two different publisher domains.",
+    "No single event is materially corroborated by at least two different publisher domains in the provided source records.",
+    "No single event is supported by at least two different publisher domains with material corroboration. The provided sources cover unrelated topics (Nigerian federal education allowances, UK inflation, and US arms deals).",
+    "Sufficient source records from Punch NG corroborate the SIMS and Samsung partnership anniversary event.",
+    "Insufficient corroborating source records for a single central event. Only one source addresses the Dangote Refinery price reduction, while other sources cover entirely unrelated topics like food prices, unemployment, and religion."
   ]
 }
