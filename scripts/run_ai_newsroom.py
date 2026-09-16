@@ -7,11 +7,44 @@ from pathlib import Path
 import ai_newsroom
 
 _original_sanitize = ai_newsroom.sanitize_body_html
+_original_find_corroboration = ai_newsroom.find_corroboration
 
-# Add a wider Nigeria-first beat map without weakening the existing
-# two-publisher corroboration gate. Google News RSS is used only for beats
+# The Nigeria expansion uses different editorial labels for the same event.
+# Make the corroboration matcher Nigeria-aware while keeping the requirement
+# for genuinely different publisher domains and an AI safety/editorial gate.
+NIGERIA_CATEGORIES = {
+    'Nigeria Politics', 'Education', 'Business & Economy', 'Security & Crime',
+    'Health', 'Agriculture'
+}
+
+
+def nigeria_category(category):
+    return category.startswith('Nigeria ') or category in NIGERIA_CATEGORIES
+
+
+def broader_corroboration(item, all_items):
+    matches = []
+    for other in all_items:
+        if other['url'] == item['url'] or other['domain'] == item['domain']:
+            continue
+        same_category = other['category'] == item['category']
+        both_nigeria = nigeria_category(item['category']) and nigeria_category(other['category'])
+        if not same_category and not both_nigeria:
+            continue
+        # The AI receives the candidate and its corroborators, so allow a
+        # slightly wider lexical match to catch differently worded reporting.
+        score = ai_newsroom.similarity(item, other)
+        if score >= 0.12:
+            matches.append((score, other))
+    matches.sort(key=lambda pair: pair[0], reverse=True)
+    return [other for _, other in matches[:3]]
+
+
+ai_newsroom.find_corroboration = broader_corroboration
+
+# Add a wider Nigeria-first beat map. Google News RSS is used only for beats
 # where a stable dedicated Nigerian RSS pair is not available; the feed still
-# resolves to the original publisher URLs that the article cites.
+# supplies the original publisher URL in the source record.
 EXPANDED_FEEDS = {
     'Nigeria - National & States': [
         'https://rss.punchng.com/v1/category/latest_news',
@@ -67,8 +100,6 @@ EXPANDED_FEEDS = {
     ],
 }
 
-# Keep the original international/technology/sports/anime beats and add the
-# expanded Nigeria beats alongside them.
 ai_newsroom.FEEDS.update(EXPANDED_FEEDS)
 
 
