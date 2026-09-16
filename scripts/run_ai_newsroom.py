@@ -54,7 +54,6 @@ def broader_corroboration(item, all_items):
     matches.sort(key=lambda other: ai_newsroom.similarity(item, other), reverse=True)
     return matches[:3]
 
-
 ai_newsroom.find_corroboration = broader_corroboration
 
 EXPANDED_FEEDS = {
