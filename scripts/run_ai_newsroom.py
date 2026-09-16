@@ -48,11 +48,11 @@ def broader_corroboration(item, all_items):
         both_nigeria = nigeria_category(item['category']) and nigeria_category(other['category'])
         if not same_category and not both_nigeria:
             continue
-        score = ai_newsroom.similarity(item, other)
-        if score >= 0.10:
-            matches.append((score, other))
-    matches.sort(key=lambda pair: pair[0], reverse=True)
-    return [other for _, other in matches[:3]]
+        if not ai_newsroom.event_match(item, other):
+            continue
+        matches.append(other)
+    matches.sort(key=lambda other: ai_newsroom.similarity(item, other), reverse=True)
+    return matches[:3]
 
 
 ai_newsroom.find_corroboration = broader_corroboration
@@ -130,8 +130,6 @@ def sanitize_with_fallback(html: str, sources=None) -> str:
 
 ai_newsroom.sanitize_body_html = sanitize_with_fallback
 
-
-# Keep the generated index/categories/SEO normalization from the existing wrapper.
 
 def normalize_and_seo():
     ai_newsroom.normalize_index_categories()
