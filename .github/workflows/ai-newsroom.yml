@@ -1,5 +1,6 @@
 name: C. O. Eric AI Newsroom
 
+# Verified newsroom pipeline: sanitizer compatibility fix is deployed.
 on:
   push:
     paths:
