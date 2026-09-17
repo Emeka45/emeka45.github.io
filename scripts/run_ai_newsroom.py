@@ -108,3 +108,5 @@ def normalize_and_seo():
 if __name__ == '__main__':
     ai_newsroom.main()
     normalize_and_seo()
+
+# Fresh-run trigger: execute the corrected sanitizer/corroboration pipeline.
