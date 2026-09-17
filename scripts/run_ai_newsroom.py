@@ -101,8 +101,10 @@ ai_newsroom.sanitize_body_html = sanitize_with_fallback
 
 
 def normalize_and_seo():
-    ai_newsroom.normalize_index_categories()
-    ai_newsroom.apply_cloudflare_seo('https://emeka45-github-io.pages.dev/news')
+    # Keep post-processing limited to APIs that actually exist in ai_newsroom.py.
+    # update_index() already runs inside ai_newsroom.main().
+    if hasattr(ai_newsroom, 'apply_cloudflare_seo'):
+        ai_newsroom.apply_cloudflare_seo('https://emeka45-github-io.pages.dev/news')
 
 
 if __name__ == '__main__':
