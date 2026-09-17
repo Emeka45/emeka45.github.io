@@ -9,6 +9,7 @@ on:
       - 'scripts/ai_newsroom.py'
       - 'scripts/run_ai_newsroom.py'
       - 'scripts/generate_news_images.py'
+      - 'scripts/repair_news_images.py'
       - '.github/workflows/ai-newsroom.yml'
   schedule:
     - cron: '0 */4 * * *'
@@ -35,6 +36,8 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/generate_news_images.py
+      - name: Repair full article image paths
+        run: python scripts/repair_news_images.py
       - name: Show newsroom diagnostics
         if: always()
         run: |
