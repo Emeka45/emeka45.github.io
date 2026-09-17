@@ -8,6 +8,7 @@ on:
     paths:
       - 'scripts/ai_newsroom.py'
       - 'scripts/run_ai_newsroom.py'
+      - 'scripts/expand_existing_news.py'
       - 'scripts/generate_news_images.py'
       - 'scripts/repair_news_images.py'
       - '.github/workflows/ai-newsroom.yml'
@@ -32,6 +33,10 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/run_ai_newsroom.py
+      - name: Expand existing short news articles
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/expand_existing_news.py
       - name: Generate missing story images with Gemini
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
