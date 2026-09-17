@@ -1,67 +1,86 @@
 {
-  "finished_utc": "2026-09-17T20:07:18.330967+00:00",
+  "finished_utc": "2026-09-17T20:12:56.606423+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
   "missing_before_run": 9,
   "attempted": 9,
   "generated": [],
-  "openverse_photos": [],
-  "fallbacks": [
+  "source_photos": [
     {
       "article": "2026-09-17-blood-of-dawnwalker-sequel-may-drop-distinctive-time-mechanic-be0e75b7c0.html",
-      "image": "news/images/2026-09-17-blood-of-dawnwalker-sequel-may-drop-distinctive-time-mechanic-be0e75b7c0.svg",
-      "bytes": 1533,
-      "reason": "AI image and real-photo fallback unavailable"
+      "image": "news/images/2026-09-17-blood-of-dawnwalker-sequel-may-drop-distinctive-time-mechanic-be0e75b7c0-source.jpg",
+      "bytes": 172872,
+      "provider": "Original news source",
+      "source_url": "https://www.polygon.com/blood-of-dawnwalker-vampire-rpg-sequel-time-mechanic/",
+      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/the-blood-of-dawnwalker-best-skills-1.jpg?w=1600&h=900&fit=crop"
     },
     {
       "article": "2026-09-15-carney-welcomes-international-leaders-to-canada-amid-economic-and-defense-talks-ba4c86683f.html",
-      "image": "news/images/2026-09-15-carney-welcomes-international-leaders-to-canada-amid-economic-and-defense-talks-ba4c86683f.svg",
-      "bytes": 1554,
-      "reason": "AI image and real-photo fallback unavailable"
+      "image": "news/images/2026-09-15-carney-welcomes-international-leaders-to-canada-amid-economic-and-defense-talks-ba4c86683f-source.jpg",
+      "bytes": 109376,
+      "provider": "Original news source",
+      "source_url": "https://www.theguardian.com/world/2026/sep/10/zelenskyy-canada-visit",
+      "image_url": "https://i.guim.co.uk/img/media/be7c2941850f3cf0d37436c968f44745b159e3aa/38_0_4431_3544/master/4431.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=3186204d1e40eca817c358dfb1ed95d4"
     },
     {
       "article": "2026-09-14-valve-opens-reservations-for-steam-frame-standalone-vr-headset-d8b7bf1b72.html",
-      "image": "news/images/2026-09-14-valve-opens-reservations-for-steam-frame-standalone-vr-headset-d8b7bf1b72.svg",
-      "bytes": 1532,
-      "reason": "AI image and real-photo fallback unavailable"
+      "image": "news/images/2026-09-14-valve-opens-reservations-for-steam-frame-standalone-vr-headset-d8b7bf1b72-source.jpg",
+      "bytes": 113470,
+      "provider": "Original news source",
+      "source_url": "https://www.polygon.com/steam-machine-valve-vr-headset-price-availability-how-to-preorder/",
+      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/11/valve-steam-frame-impressions-roundup-2.jpg?w=1600&h=900&fit=crop"
     },
     {
       "article": "2026-09-14-sony-intervenes-to-halt-the-last-of-us-part-2-multiplayer-mod-fdb6076371.html",
-      "image": "news/images/2026-09-14-sony-intervenes-to-halt-the-last-of-us-part-2-multiplayer-mod-fdb6076371.svg",
-      "bytes": 1525,
-      "reason": "AI image and real-photo fallback unavailable"
+      "image": "news/images/2026-09-14-sony-intervenes-to-halt-the-last-of-us-part-2-multiplayer-mod-fdb6076371-source.jpg",
+      "bytes": 90670,
+      "provider": "Original news source",
+      "source_url": "https://www.polygon.com/last-of-us-2-multiplayer-mod-sony-cancel/",
+      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/05/the-last-of-us-part-2-ellie-edit.jpg?w=1600&h=900&fit=crop"
     },
     {
       "article": "2026-09-14-sega-and-netflix-team-up-for-crazy-taxi-film-and-new-sonic-projects-9b6d78a53d.html",
-      "image": "news/images/2026-09-14-sega-and-netflix-team-up-for-crazy-taxi-film-and-new-sonic-projects-9b6d78a53d.svg",
-      "bytes": 1541,
-      "reason": "AI image and real-photo fallback unavailable"
+      "image": "news/images/2026-09-14-sega-and-netflix-team-up-for-crazy-taxi-film-and-new-sonic-projects-9b6d78a53d-source.jpg",
+      "bytes": 229272,
+      "provider": "Original news source",
+      "source_url": "https://www.polygon.com/crazy-taxi-movie-announced-sega-netflix-sonic-stranger-than-fiction/",
+      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/06/ss_93b5f62cb675f6473f28767181c29520842a850d-1920x1080.jpg?w=1600&h=900&fit=crop"
     },
     {
       "article": "2026-09-14-lies-of-p-publisher-trademarks-mysterious-wonders-of-o-d82474c860.html",
-      "image": "news/images/2026-09-14-lies-of-p-publisher-trademarks-mysterious-wonders-of-o-d82474c860.svg",
-      "bytes": 1507,
-      "reason": "AI image and real-photo fallback unavailable"
+      "image": "news/images/2026-09-14-lies-of-p-publisher-trademarks-mysterious-wonders-of-o-d82474c860-source.jpg",
+      "bytes": 640679,
+      "provider": "Original news source",
+      "source_url": "https://www.eurogamer.net/what-comes-after-lies-of-p-it-looks-like-it-might-be-wonders-of-o-according-to-a-new-trademark",
+      "image_url": "https://assetsio.gnwcdn.com/Lies-of-P_-Overture---Story-Trailer-1-29-screenshot.png?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
     },
     {
       "article": "2026-09-14-indonesian-ferry-capsizes-in-java-sea-leaving-six-dead-and-130-missing-c913dff137.html",
-      "image": "news/images/2026-09-14-indonesian-ferry-capsizes-in-java-sea-leaving-six-dead-and-130-missing-c913dff137.svg",
-      "bytes": 1488,
-      "reason": "AI image and real-photo fallback unavailable"
+      "image": "news/images/2026-09-14-indonesian-ferry-capsizes-in-java-sea-leaving-six-dead-and-130-missing-c913dff137-source.jpg",
+      "bytes": 145168,
+      "provider": "Original news source",
+      "source_url": "https://www.theguardian.com/world/2026/sep/13/indonesian-rescue-crews-searching-for-140-people-after-ferry-hit-bad-weather",
+      "image_url": "https://i.guim.co.uk/img/media/edeadb7420f4029a91f616bab9f41557fb8f805e/58_0_3780_3024/master/3780.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9c758b62f3b3ba5a96eebbc9d952c340"
     },
     {
       "article": "2026-09-14-diablo-4-season-15-launches-alongside-nintendo-switch-2-port-and-franchise-anniversary-86719857bd.html",
-      "image": "news/images/2026-09-14-diablo-4-season-15-launches-alongside-nintendo-switch-2-port-and-franchise-anniversary-86719857bd.svg",
-      "bytes": 1577,
-      "reason": "AI image and real-photo fallback unavailable"
+      "image": "news/images/2026-09-14-diablo-4-season-15-launches-alongside-nintendo-switch-2-port-and-franchise-anniversary-86719857bd-source.jpg",
+      "bytes": 82108,
+      "provider": "Original news source",
+      "source_url": "https://www.eurogamer.net/diablo-4-season-of-hells-legacy-switch-2-amazon-class",
+      "image_url": "https://assetsio.gnwcdn.com/diablo-4-switch-2_IpuO7Y4.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
     },
     {
       "article": "2026-09-14-bali-authorities-investigate-deaths-of-australian-man-and-two-children-96fde2cfbd.html",
-      "image": "news/images/2026-09-14-bali-authorities-investigate-deaths-of-australian-man-and-two-children-96fde2cfbd.svg",
-      "bytes": 1526,
-      "reason": "AI image and real-photo fallback unavailable"
+      "image": "news/images/2026-09-14-bali-authorities-investigate-deaths-of-australian-man-and-two-children-96fde2cfbd-source.jpg",
+      "bytes": 103291,
+      "provider": "Original news source",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckgwzlwglldo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/26c0/live/41b45e90-b009-11f1-9713-5de61387c384.jpg"
     }
   ],
+  "openverse_photos": [],
+  "fallbacks": [],
   "failures": [],
   "remaining_missing_after_run": 0
 }
