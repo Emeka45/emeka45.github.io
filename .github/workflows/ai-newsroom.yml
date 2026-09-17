@@ -2,6 +2,7 @@ name: C. O. Eric AI Newsroom
 
 # Verified newsroom pipeline: sanitizer compatibility fix is deployed.
 # Trigger refresh to ensure the latest main-branch newsroom code is executed.
+# Manual verification trigger: run the current image-source pipeline now.
 on:
   push:
     paths:
@@ -52,7 +53,7 @@ jobs:
           echo '=== GENERATED NEWS ==='
           find news -maxdepth 1 -type f -name '*.html' -print | sort || true
           echo '=== STORY IMAGES ==='
-          find news/images -maxdepth 1 -type f -name '*.png' -print | sort || true
+          find news/images -maxdepth 1 -type f \( -name '*.png' -o -name '*.jpg' -o -name '*.jpeg' -o -name '*.webp' \) -print | sort || true
       - name: Publish generated articles, images and diagnostics
         run: |
           git config user.name 'C. O. Eric AI Newsroom'
