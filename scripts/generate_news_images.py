@@ -8,6 +8,7 @@ import os
 import re
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -41,42 +42,36 @@ def image_name(path: Path) -> str:
     return f"{path.stem}.png"
 
 
+def photo_name(path: Path) -> str:
+    return f"{path.stem}.jpg"
+
+
 def fallback_name(path: Path) -> str:
     return f"{path.stem}.svg"
 
 
 def generate_fallback_svg(title: str, summary: str, category: str) -> bytes:
-    """Create a lightweight story-specific editorial illustration when image API quota is unavailable."""
+    """Create a last-resort story-specific illustration when photo and AI generation are unavailable."""
     safe_title = html.escape(title[:105])
     safe_summary = html.escape(summary[:180])
     safe_category = html.escape(category.upper()[:24])
     palette = {
-        "gaming": (91, 50, 214, 255),
-        "anime": (236, 72, 153, 255),
-        "technology": (14, 116, 144, 255),
-        "ai": (124, 58, 237, 255),
-        "science": (5, 150, 105, 255),
-        "world": (37, 99, 235, 255),
-        "nigeria politics": (0, 92, 76, 255),
-        "religion & faith": (146, 94, 24, 255),
-        "education": (37, 99, 235, 255),
-        "business & economy": (15, 118, 110, 255),
-        "security & crime": (127, 29, 29, 255),
-        "health": (5, 150, 105, 255),
-        "agriculture": (34, 120, 50, 255),
-        "sports": (15, 100, 160, 255),
-        "entertainment & lifestyle": (180, 65, 120, 255),
+        "gaming": (91, 50, 214), "anime": (236, 72, 153), "technology": (14, 116, 144),
+        "ai": (124, 58, 237), "science": (5, 150, 105), "world": (37, 99, 235),
+        "nigeria politics": (0, 92, 76), "religion & faith": (146, 94, 24), "education": (37, 99, 235),
+        "business & economy": (15, 118, 110), "security & crime": (127, 29, 29), "health": (5, 150, 105),
+        "agriculture": (34, 120, 50), "sports": (15, 100, 160), "entertainment & lifestyle": (180, 65, 120),
     }
-    r, g, b, _ = palette.get(category.strip().lower(), (17, 24, 39, 255))
+    r, g, b = palette.get(category.strip().lower(), (17, 24, 39))
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="rgb({r},{g},{b})"/><stop offset="1" stop-color="#111827"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="32"/></filter></defs>
-<rect width="1600" height="900" fill="url(#bg)"/><circle cx="1280" cy="180" r="240" fill="#fff" opacity=".10" filter="url(#glow)"/><circle cx="280" cy="760" r="300" fill="#fff" opacity=".06"/>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="rgb({r},{g},{b})"/><stop offset="1" stop-color="#111827"/></linearGradient></defs>
+<rect width="1600" height="900" fill="url(#bg)"/><circle cx="1280" cy="180" r="240" fill="#fff" opacity=".10"/><circle cx="280" cy="760" r="300" fill="#fff" opacity=".06"/>
 <path d="M0 710 C330 590 480 820 820 690 S1270 500 1600 620 V900 H0Z" fill="#000" opacity=".22"/>
 <rect x="92" y="82" width="270" height="54" rx="27" fill="#fff" opacity=".94"/><text x="227" y="118" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#111827">C. O. ERIC NEWSROOM</text>
 <text x="100" y="650" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="800" fill="#fff" opacity=".85">{safe_category}</text>
 <text id="t" x="100" y="710" font-family="Arial,Helvetica,sans-serif" font-size="48" font-weight="800" fill="#fff">{safe_title}</text>
 <text id="d" x="100" y="765" font-family="Arial,Helvetica,sans-serif" font-size="24" fill="#fff" opacity=".78">{safe_summary}</text>
-<text x="100" y="838" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#fff" opacity=".55">Editorial artwork · automatically generated</text>
+<text x="100" y="838" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#fff" opacity=".55">Editorial fallback artwork</text>
 </svg>'''
     return svg.encode("utf-8")
 
@@ -130,13 +125,39 @@ Visual requirements:
     raise last_error
 
 
-def add_image_to_article(raw: str, title: str, relative_image: str, is_fallback: bool = False) -> str:
+def search_openverse_photo(title: str, category: str):
+    """Find a reusable real photo as a fallback when Gemini image generation is unavailable."""
+    query = urllib.parse.quote((title + " " + category)[:180])
+    endpoint = f"https://api.openverse.org/v1/images/?q={query}&page_size=5"
+    request = urllib.request.Request(endpoint, headers={"User-Agent": "COEricAI-Newsroom/2.0"})
+    with urllib.request.urlopen(request, timeout=25) as response:
+        data = json.loads(response.read())
+    for result in data.get("results", []):
+        image_url = result.get("thumbnail") or result.get("url")
+        if not image_url or not image_url.startswith("http"):
+            continue
+        try:
+            image_request = urllib.request.Request(image_url, headers={"User-Agent": "COEricAI-Newsroom/2.0"})
+            with urllib.request.urlopen(image_request, timeout=25) as image_response:
+                image = image_response.read()
+            if len(image) > 10000:
+                return image, {
+                    "provider": "Openverse",
+                    "creator": result.get("creator") or "Unknown creator",
+                    "license": result.get("license") or "Unknown license",
+                    "source_url": result.get("foreign_landing_url") or result.get("url") or image_url,
+                }
+        except Exception:
+            continue
+    raise RuntimeError("Openverse returned no usable photo")
+
+
+def add_image_to_article(raw: str, title: str, relative_image: str, caption: str) -> str:
     escaped_title = html.escape(title, quote=True)
     image_tag = f'<meta property="og:image" content="https://emeka45-github-io.pages.dev/{relative_image}"><meta name="twitter:card" content="summary_large_image">'
     if 'property="og:image"' not in raw:
         raw = raw.replace("</title>", "</title>" + image_tag, 1)
-    caption = "Editorial artwork · automatic fallback while AI image generation is unavailable." if is_fallback else "AI-generated editorial illustration."
-    hero = f'<figure class="news-hero-image" style="margin:1.25rem 0 1.5rem;"><img src="../{relative_image}" alt="{escaped_title}" loading="eager" decoding="async" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:16px;"><figcaption style="margin-top:.5rem;font-size:.85rem;opacity:.7;">{caption}</figcaption></figure>'
+    hero = f'<figure class="news-hero-image" style="margin:1.25rem 0 1.5rem;"><img src="../{relative_image}" alt="{escaped_title}" loading="eager" decoding="async" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:16px;"><figcaption style="margin-top:.5rem;font-size:.85rem;opacity:.7;">{html.escape(caption)}</figcaption></figure>'
     if "news-hero-image" not in raw:
         raw = raw.replace("</h1>", "</h1>" + hero, 1)
     return raw
@@ -153,8 +174,9 @@ def update_index():
             if not title_match:
                 continue
             title = clean_text(title_match.group(1)); summary = clean_text(summary_match.group(1)) if summary_match else ""; category = clean_text(category_match.group(1)) if category_match else "News"
-            png = IMAGES / image_name(path); svg = IMAGES / fallback_name(path)
-            image = f"news/images/{png.name}" if png.exists() else (f"news/images/{svg.name}" if svg.exists() else "news/images/story-default.svg")
+            candidates = [IMAGES / f"{path.stem}.png", IMAGES / f"{path.stem}.jpg", IMAGES / f"{path.stem}.jpeg", IMAGES / f"{path.stem}.webp", IMAGES / f"{path.stem}.svg"]
+            existing = next((p for p in candidates if p.exists() and p.stat().st_size > 1000), None)
+            image = f"news/images/{existing.name}" if existing else "news/images/story-default.svg"
             items.append({"file": path.name, "title": title, "summary": summary, "category": category, "date": dt.datetime.fromtimestamp(path.stat().st_mtime, dt.timezone.utc).strftime("%d %b %Y"), "image": image})
         except Exception as exc:
             print("Index skipped", path, exc)
@@ -171,33 +193,45 @@ def main():
     for path in sorted(NEWS.glob("*.html"), reverse=True):
         if path.name.startswith("index"):
             continue
-        target = IMAGES / image_name(path); fallback = IMAGES / fallback_name(path)
-        if (target.exists() and target.stat().st_size > 1000) or (fallback.exists() and fallback.stat().st_size > 1000):
+        visual_files = [IMAGES / image_name(path), IMAGES / photo_name(path), IMAGES / fallback_name(path)]
+        if any(p.exists() and p.stat().st_size > 1000 for p in visual_files):
             continue
         data = story_data(path)
         if data:
-            missing.append((path, target, fallback, data))
+            missing.append((path, data))
     selected = missing[:MAX_IMAGES_PER_RUN]
-    generated, fallbacks, failures = [], [], []
-    for path, target, fallback, (raw, title, summary, category) in selected:
+    generated, photos, fallbacks, failures = [], [], [], []
+    for path, (raw, title, summary, category) in selected:
         try:
             print("Generating AI image for:", title)
             image = generate_image(title, summary, category, api_key)
+            target = IMAGES / image_name(path)
             target.write_bytes(image)
-            path.write_text(add_image_to_article(raw, title, f"images/{target.name}"), encoding="utf-8")
+            path.write_text(add_image_to_article(raw, title, f"images/{target.name}", "AI-generated editorial illustration."), encoding="utf-8")
             generated.append({"article": path.name, "image": str(target.relative_to(ROOT)), "bytes": len(image)})
         except Exception as exc:
             message = str(exc)
             print("AI IMAGE FAILED:", path.name, message)
+            try:
+                image, meta = search_openverse_photo(title, category)
+                target = IMAGES / photo_name(path)
+                target.write_bytes(image)
+                caption = f"Illustrative photo via Openverse · {meta['creator']} · {meta['license']}"
+                path.write_text(add_image_to_article(raw, title, f"images/{target.name}", caption), encoding="utf-8")
+                photos.append({"article": path.name, "image": str(target.relative_to(ROOT)), "bytes": len(image), **meta})
+                continue
+            except Exception as photo_exc:
+                print("REAL PHOTO FALLBACK FAILED:", path.name, str(photo_exc))
             if "HTTP 429" in message or "RESOURCE_EXHAUSTED" in message or "quota" in message.lower():
                 svg = generate_fallback_svg(title, summary, category)
+                fallback = IMAGES / fallback_name(path)
                 fallback.write_bytes(svg)
-                path.write_text(add_image_to_article(raw, title, f"images/{fallback.name}", True), encoding="utf-8")
-                fallbacks.append({"article": path.name, "image": str(fallback.relative_to(ROOT)), "bytes": len(svg), "reason": "Gemini image quota unavailable"})
+                path.write_text(add_image_to_article(raw, title, f"images/{fallback.name}", "Editorial fallback artwork while AI and photo services are unavailable."), encoding="utf-8")
+                fallbacks.append({"article": path.name, "image": str(fallback.relative_to(ROOT)), "bytes": len(svg), "reason": "AI image and real-photo fallback unavailable"})
             else:
                 failures.append({"article": path.name, "error": message})
     update_index()
-    report = {"finished_utc": dt.datetime.now(dt.timezone.utc).isoformat(), "model": MODEL, "max_images_per_run": MAX_IMAGES_PER_RUN, "missing_before_run": len(missing), "attempted": len(selected), "generated": generated, "fallbacks": fallbacks, "failures": failures, "remaining_missing_after_run": max(0, len(missing) - len(generated) - len(fallbacks))}
+    report = {"finished_utc": dt.datetime.now(dt.timezone.utc).isoformat(), "model": MODEL, "max_images_per_run": MAX_IMAGES_PER_RUN, "missing_before_run": len(missing), "attempted": len(selected), "generated": generated, "openverse_photos": photos, "fallbacks": fallbacks, "failures": failures, "remaining_missing_after_run": max(0, len(missing) - len(generated) - len(photos) - len(fallbacks))}
     REPORT.parent.mkdir(parents=True, exist_ok=True)
     REPORT.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
