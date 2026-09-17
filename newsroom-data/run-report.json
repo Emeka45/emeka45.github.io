@@ -1,11 +1,11 @@
 {
-  "started_utc": "2026-09-17T20:17:10.144489+00:00",
-  "finished_utc": "2026-09-17T20:19:08.792672+00:00",
+  "started_utc": "2026-09-17T20:30:12.604181+00:00",
+  "finished_utc": "2026-09-17T20:32:13.187247+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
-  "feed_success_count": 52,
-  "feed_failure_count": 4,
+  "feed_success_count": 51,
+  "feed_failure_count": 5,
   "feed_failures": [
     {
       "category": "Religion & Faith",
@@ -18,6 +18,11 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     },
     {
+      "category": "Nigeria - Finance & Markets",
+      "url": "https://rss.punchng.com/v1/category/business",
+      "error": "<urlopen error [Errno 104] Connection reset by peer>"
+    },
+    {
       "category": "Nigeria - Culture & Heritage",
       "url": "https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle",
       "error": "not well-formed (invalid token): line 11, column 61"
@@ -28,32 +33,31 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 623,
-  "fresh_items": 623,
+  "total_items": 624,
+  "fresh_items": 624,
   "corroborated_candidates": 20,
   "ai_attempts": 20,
-  "ai_failures": 1,
-  "held_or_rejected": 19,
+  "ai_failures": 2,
+  "held_or_rejected": 18,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided source records do not contain at least two different publisher domains corroborating the same specific event. While there are multiple records from punchng.com, there is no second independent publisher confirming the same event (the reporter.com.ng article discusses a different aspect involving the NDC digital membership portal).",
-    "Two independent publisher domains (techeconomy and technext.ng) materially corroborate the central event that Nigeria's inflation fell to 15.39% in August as food prices eased.",
-    "The provided source records do not contain at least two different publisher domains corroborating the same central event.",
-    "The provided source records do not contain at least two different publisher domains materially corroborating the same central event. The sources cover different topics such as Senator Seriake Dickson's comments on the 2027 elections across different outlets, an IPCR call for peace, and a women's group urging intervention on a council chair suspension, but lack sufficient direct event-level overlap under the strict rules.",
-    "The provided source records discuss different topics or separate statements by Senator Seriake Dickson and various groups, lacking at least two publisher domains that materially corroborate the exact same central event or announcement.",
-    "The source records from punchng.com provide multiple identical entries corroborating Senator Seriake Dickson's call for President Tinubu and security agencies to reduce political tension ahead of the 2027 general elections.",
-    "The provided source records cover completely unrelated topics and events across different domains, failing to meet the strict requirement that at least two different sources must materially corroborate the same central event.",
-    "The provided source records do not contain at least two different publisher domains corroborating the same central event. The Punch source is duplicated, and TheCable source covers an entirely different topic regarding dissent.",
-    "The provided sources cover completely different, unrelated events (a murder case, a custody case involving KC Luxury, a climate policy recommendation, and a court appeal regarding an Asokoro property). There are no at least two publisher domains materially corroborating the same central event.",
-    "The provided source records cover distinct, unrelated events from different domains without at least two publisher domains materially corroborating the same central event.",
-    "Multiple reliable sources corroborate the sentencing of a South African woman to 25 years in prison for drug trafficking into Nigeria.",
-    "Multiple publisher domains materially corroborate the sentencing of a South African woman to 25 years in prison for importing 5.75kg of heroin into Nigeria.",
-    "Multiple reputable sources corroborate the sentencing of a South African woman to 25 years in prison for importing 5.75kg of heroin into Nigeria.",
-    "The provided source records cover four entirely different and unrelated topics (U.S.-based Nigerian lawyers suspended, a Nigerian job-seeker in a war, Leadway's new product for inbound visitors, and a group decrying flooding in Abuja). There are no two sources that materially corroborate the same central event.",
-    "The provided source records discuss completely different events, courts, and individuals (such as a kidnapping case in Edo, KC Luxury in Lagos, a climate policy report, and an appeal by Al-Mustapha), meaning there are no two sources covering the same central event to provide the required corroboration.",
-    "The provided source records discuss entirely different legal news stories in Nigeria (such as a Lagos magistrates' law clarification, a court case involving KC Luxury, a lawyer's advocacy for magistrate welfare, and an appeal ruling involving Al-Mustapha). There are no two sources that materially corroborate the same central event.",
-    "The provided source records cover distinct topics (Judicial Amendment Bills in Delta, youth commentary, inflation statistics, and Lagos magistrates' law) with no two independent publisher domains corroborating the exact same central event.",
-    "Multiple records from Punch NG provide identical coverage of Senator Seriake Dickson's call for political de-escalation ahead of 2027.",
-    "The provided source records cover completely different topics, ranging from wind energy and transport networks to agricultural productivity and gas futures, with no two sources corroborating the same central event."
+    "The provided source records do not contain at least two different publisher domains corroborating the exact same central event or announcement. While punchng.com has multiple entries regarding Senator Seriake Dickson's call to de-escalate political tension, there is no second independent publisher domain covering that specific event (thereporter.com.ng covers a different topic about an NDC digital membership portal and citizens being hungry for change).",
+    "Multiple publisher domains (techeconomy and technext.ng) materially corroborate the central event that Nigeria's inflation fell to 15.39% in August due to easing food prices.",
+    "The provided source records do not contain at least two different publisher domains materially corroborating the same central event.",
+    "The provided source records discuss different topics such as Senator Seriake Dickson's comments on political tensions and citizens' sentiment ahead of 2027, the IPCR's call for peace investments, and a group's petition regarding a local government chair in Bayelsa State. There are no two sources from different publisher domains materially corroborating the same central event.",
+    "The provided sources discuss different topics or lack sufficient multi-publisher corroboration on a single central event.",
+    "Multiple sources from punchng.com corroborate Senator Seriake Dickson's call for President Tinubu and security agencies to reduce political tension ahead of the 2027 general elections.",
+    "The provided source records cover completely different, unrelated legal stories with no two sources corroborating the same central event.",
+    "The provided source records cover completely different stories with no overlapping events or central topics required for corroboration.",
+    "Only a single unique source domain (punchng.com) provides the story about the Cross River State Police Command warning against attacks on officers, while TheCable article covers an entirely different topic on state dissent. There are no two distinct publisher domains corroborating the same central event.",
+    "The provided source records cover completely different stories and events without any two publisher domains corroborating the same central event.",
+    "The provided source records cover completely different news events without any two publisher domains corroborating the same central story.",
+    "Multiple sources corroborate the sentencing of a South African woman to 25 years in prison for drug trafficking into Nigeria.",
+    "Multiple reliable sources corroborate the sentencing of a South African woman to 25 years in prison for importing 5.75kg of heroin into Nigeria.",
+    "Multiple reliable sources corroborate the sentencing of a South African woman to 25 years in prison for importing 5.75kg of heroin into Nigeria.",
+    "The supplied source records discuss four completely different, unrelated topics (suspended U.S.-based Nigerian lawyers, a job-seeker in a war, a new Leadway product, and flooding in Abuja) with no two sources covering the same central event.",
+    "Multiple reputable sources corroborate the sentencing of a South African woman to 25 years in prison for importing 5.75kg of heroin.",
+    "The provided source records cover completely different stories and events without any two publisher domains materially corroborating the same central event.",
+    "The provided source records discuss entirely different legal matters in Nigeria (Lagos Magistrates' Law amendments, KC Luxury custody, lawyer seeking better welfare for magistrates, and an Al-Mustapha property appeal). There are no two distinct sources corroborating the same central event."
   ]
 }
