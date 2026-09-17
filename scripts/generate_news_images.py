@@ -51,7 +51,6 @@ def fallback_name(path: Path) -> str:
 
 
 def generate_fallback_svg(title: str, summary: str, category: str) -> bytes:
-    """Create a last-resort story-specific illustration when photo and AI generation are unavailable."""
     safe_title = html.escape(title[:105])
     safe_summary = html.escape(summary[:180])
     safe_category = html.escape(category.upper()[:24])
@@ -68,8 +67,8 @@ def generate_fallback_svg(title: str, summary: str, category: str) -> bytes:
 <rect width="1600" height="900" fill="url(#bg)"/><circle cx="1280" cy="180" r="240" fill="#fff" opacity=".10"/><circle cx="280" cy="760" r="300" fill="#fff" opacity=".06"/>
 <path d="M0 710 C330 590 480 820 820 690 S1270 500 1600 620 V900 H0Z" fill="#000" opacity=".22"/>
 <rect x="92" y="82" width="270" height="54" rx="27" fill="#fff" opacity=".94"/><text x="227" y="118" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#111827">C. O. ERIC NEWSROOM</text>
-<text x="100" y="650" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="800" fill="#fff" opacity=".85">{safe_category}</text>
-<text id="t" x="100" y="710" font-family="Arial,Helvetica,sans-serif" font-size="48" font-weight="800" fill="#fff">{safe_title}</text>
+<text id="t" x="100" y="650" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="800" fill="#fff" opacity=".85">{safe_category}</text>
+<text x="100" y="710" font-family="Arial,Helvetica,sans-serif" font-size="48" font-weight="800" fill="#fff">{safe_title}</text>
 <text id="d" x="100" y="765" font-family="Arial,Helvetica,sans-serif" font-size="24" fill="#fff" opacity=".78">{safe_summary}</text>
 <text x="100" y="838" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#fff" opacity=".55">Editorial fallback artwork</text>
 </svg>'''
@@ -126,9 +125,8 @@ Visual requirements:
 
 
 def search_openverse_photo(title: str, category: str):
-    """Find a reusable real photo as a fallback when Gemini image generation is unavailable."""
     query = urllib.parse.quote((title + " " + category)[:180])
-    endpoint = f"https://api.openverse.org/v1/images/?q={query}&page_size=5"
+    endpoint = f"https://api.openverse.org/v1/images/?q={query}&page_size=8"
     request = urllib.request.Request(endpoint, headers={"User-Agent": "COEricAI-Newsroom/2.0"})
     with urllib.request.urlopen(request, timeout=25) as response:
         data = json.loads(response.read())
@@ -160,6 +158,8 @@ def add_image_to_article(raw: str, title: str, relative_image: str, caption: str
     hero = f'<figure class="news-hero-image" style="margin:1.25rem 0 1.5rem;"><img src="../{relative_image}" alt="{escaped_title}" loading="eager" decoding="async" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:16px;"><figcaption style="margin-top:.5rem;font-size:.85rem;opacity:.7;">{html.escape(caption)}</figcaption></figure>'
     if "news-hero-image" not in raw:
         raw = raw.replace("</h1>", "</h1>" + hero, 1)
+    else:
+        raw = re.sub(r'(<figure class="news-hero-image".*?</figure>)', hero, raw, count=1, flags=re.S)
     return raw
 
 
@@ -193,8 +193,10 @@ def main():
     for path in sorted(NEWS.glob("*.html"), reverse=True):
         if path.name.startswith("index"):
             continue
-        visual_files = [IMAGES / image_name(path), IMAGES / photo_name(path), IMAGES / fallback_name(path)]
-        if any(p.exists() and p.stat().st_size > 1000 for p in visual_files):
+        # Real raster images are considered complete. SVG files are deliberately
+        # treated as replaceable fallback artwork so old blue/purple cards can be upgraded.
+        real_files = [IMAGES / image_name(path), IMAGES / photo_name(path), IMAGES / f"{path.stem}.jpeg", IMAGES / f"{path.stem}.webp"]
+        if any(p.exists() and p.stat().st_size > 10000 for p in real_files):
             continue
         data = story_data(path)
         if data:
