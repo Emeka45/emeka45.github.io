@@ -28,11 +28,12 @@ def repair_article(path: Path) -> bool:
         return False
 
     relative = f"news/images/{image.name}"
-    article_src = f"../news/images/{image.name}"
+    # Article files live inside /news/, so the correct relative image URL is
+    # images/<file>, not ../news/images/<file> (which becomes /news/news/images/).
+    article_src = f"images/{image.name}"
     absolute = f"{SITE}/{relative}"
     title = html.escape(re.sub(r"<[^>]+>", "", title_match.group(1)), quote=True)
 
-    # Replace any stale/wrong Open Graph image, or add one if absent.
     og = f'<meta property="og:image" content="{absolute}">'
     if re.search(r'<meta[^>]+property=["\']og:image["\'][^>]*>', raw, re.I):
         raw = re.sub(r'<meta[^>]+property=["\']og:image["\'][^>]*>', og, raw, count=1, flags=re.I)
@@ -46,7 +47,7 @@ def repair_article(path: Path) -> bool:
         raw = raw.replace("</h1>", f"</h1>{hero}", 1)
 
     path.write_text(raw, encoding="utf-8")
-    print("REPAIRED IMAGE:", path.name, "->", relative)
+    print("REPAIRED IMAGE:", path.name, "->", article_src)
     return True
 
 
