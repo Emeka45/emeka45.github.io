@@ -1,6 +1,7 @@
 name: C. O. Eric AI Newsroom
 
 # Verified newsroom pipeline: sanitizer compatibility fix is deployed.
+# Trigger refresh to ensure the latest main-branch newsroom code is executed.
 on:
   push:
     paths:
