@@ -26,7 +26,7 @@ def source_domain(item: dict) -> str:
     if host in {'news.google.com', 'google.com'}:
         source = item.get('source') or item.get('publisher') or item.get('source_name')
         if source:
-            return re.sub(r'[^a-z0-9.-]+', '-', source.lower()).strip('-')
+            return re.sub(r'[^a-z0-9.-]+', '-', str(source).lower()).strip('-')
     return host
 
 
@@ -43,8 +43,8 @@ def broader_corroboration(item, all_items):
         other = enrich_source_identity(other_raw)
         if other['url'] == item['url'] or other['domain'] == item['domain']:
             continue
-        same_category = other['category'] == item['category']
-        both_nigeria = nigeria_category(item['category']) and nigeria_category(other['category'])
+        same_category = other.get('category') == item.get('category')
+        both_nigeria = nigeria_category(item.get('category', '')) and nigeria_category(other.get('category', ''))
         if not same_category and not both_nigeria:
             continue
         if not ai_newsroom.event_match(item, other):
@@ -73,12 +73,23 @@ EXPANDED_FEEDS = {
 ai_newsroom.FEEDS.update(EXPANDED_FEEDS)
 
 
+def _source_parts(sources):
+    normalized = []
+    for source in sources or []:
+        if isinstance(source, str):
+            normalized.append({'url': source, 'title': source})
+        elif isinstance(source, dict):
+            normalized.append(source)
+    return normalized
+
+
 def sanitize_with_fallback(html: str, sources=None) -> str:
-    allowed_urls = [source.get('url', '') for source in (sources or []) if source.get('url')]
+    source_records = _source_parts(sources)
+    allowed_urls = [source.get('url', '') for source in source_records if source.get('url')]
     cleaned = _original_sanitize(html, allowed_urls)
-    if sources and 'Source:' not in cleaned:
+    if source_records and 'Source:' not in cleaned:
         links = []
-        for source in sources[:3]:
+        for source in source_records[:3]:
             title = source.get('title') or source.get('name') or 'Source'
             url = source.get('url', '#')
             links.append(f'<li><a href="{url}" rel="noopener noreferrer">{title}</a></li>')
