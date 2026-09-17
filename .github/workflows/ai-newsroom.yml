@@ -66,5 +66,10 @@ jobs:
             echo 'No newsroom changes to publish.'
           else
             git commit -m 'AI newsroom: publish stories and generated images'
-            git push
+            # Another newsroom/manual commit can land while Gemini is running.
+            # Rebase onto the latest main before pushing so a valid run does not
+            # fail merely because the branch moved during generation.
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
           fi
