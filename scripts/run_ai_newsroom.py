@@ -53,6 +53,7 @@ def broader_corroboration(item, all_items):
     matches.sort(key=lambda other: ai_newsroom.similarity(item, other), reverse=True)
     return matches[:3]
 
+
 ai_newsroom.find_corroboration = broader_corroboration
 
 EXPANDED_FEEDS = {
@@ -97,12 +98,12 @@ def sanitize_with_fallback(html: str, sources=None) -> str:
             cleaned += '<p><strong>Sources</strong></p><ul>' + ''.join(links) + '</ul>'
     return cleaned
 
+
 ai_newsroom.sanitize_body_html = sanitize_with_fallback
 
 
 def normalize_and_seo():
-    # Keep post-processing limited to APIs that actually exist in ai_newsroom.py.
-    # update_index() already runs inside ai_newsroom.main().
+    # No dependency on a removed normalize_index_categories() API.
     if hasattr(ai_newsroom, 'apply_cloudflare_seo'):
         ai_newsroom.apply_cloudflare_seo('https://emeka45-github-io.pages.dev/news')
 
@@ -110,5 +111,3 @@ def normalize_and_seo():
 if __name__ == '__main__':
     ai_newsroom.main()
     normalize_and_seo()
-
-# Fresh-run trigger: execute the corrected sanitizer/corroboration pipeline.
