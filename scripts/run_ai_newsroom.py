@@ -1,6 +1,12 @@
 from __future__ import annotations
 
+import json
+import os
 import re
+import time
+import urllib.error
+import urllib.parse
+import urllib.request
 from urllib.parse import urlparse
 
 import ai_newsroom
@@ -100,6 +106,89 @@ def sanitize_with_fallback(html: str, sources=None) -> str:
 
 
 ai_newsroom.sanitize_body_html = sanitize_with_fallback
+
+
+def detailed_ask_ai(sources):
+    """Generate a substantive, source-grounded report while preserving the newsroom's safety gate."""
+    key = os.environ.get('GEMINI_API_KEY')
+    if not key:
+        raise RuntimeError('GEMINI_API_KEY is missing')
+
+    prompt = '''You are the C. O. Eric AI Newsroom, a professional Nigeria-first digital newsroom.
+Create a detailed, original news report ONLY when the supplied source records materially corroborate the same central event.
+
+ARTICLE LENGTH AND DEPTH:
+- Write a substantial report, normally about 600-1000 words when the available evidence supports that length.
+- For a smaller story, use about 400-600 words rather than padding it with repetition.
+- Never invent information just to reach a word count.
+- Use multiple paragraphs, not one giant block.
+- Start with a clear news lead explaining what happened and why it matters.
+- Add factual context and relevant background that can be supported by the supplied sources.
+- Explain important details, developments, statements, decisions, figures, dates, locations, or consequences when the sources provide them.
+- End with what is known about the next step or what remains unresolved, if the sources support that.
+- Use useful section headings when appropriate, especially for longer reports.
+
+STRICT EVIDENCE RULES:
+- At least two different publisher domains must materially support the same central event.
+- Never treat two stories as corroboration merely because they mention the same person, place, company, government, or broad topic.
+- The sources must overlap on the actual event, announcement, incident, transaction, study, decision, or development.
+- Use only facts that are supported by the supplied source records.
+- Do not invent facts, quotes, statistics, dates, people, places, reactions, or URLs.
+- Do not fabricate quotes. If a source provides a quote, paraphrase it unless an exact short quotation is clearly necessary.
+- Do not copy or lightly rewrite source wording. Write an original synthesis.
+- Clearly distinguish confirmed facts from analysis or uncertainty.
+- Do not turn speculation into fact.
+- No sexually explicit or pornographic content. No graphic gore.
+- Treat religious subjects neutrally and respectfully.
+- For political stories, report positions and documented actions neutrally without endorsements or persuasion.
+
+LINKING RULES:
+- body_html MUST contain useful inline hyperlinks to supplied source URLs where relevant.
+- Every href in body_html MUST exactly match one of the supplied source URLs.
+- Do not create links to unsupplied pages.
+
+HTML RULES:
+- body_html should contain readable paragraphs using <p> tags.
+- Use <h2> for useful subheadings when the story is long enough to benefit from them.
+- Use <ul>/<li> only when a factual list genuinely improves readability.
+- Do not include <html>, <head>, <body>, <script>, <style>, <img>, or form elements.
+
+Return ONLY valid JSON with this schema:
+{"publish":true|false,"reason":"...","category":"...","title":"...","summary":"...","body_html":"...","sources":[{"name":"...","url":"..."}],"confidence":0-100}
+
+SOURCE RECORDS:
+''' + json.dumps(sources, ensure_ascii=False)
+
+    endpoint = 'https://generativelanguage.googleapis.com/v1beta/models/' + ai_newsroom.AI_MODEL + ':generateContent?key=' + urllib.parse.quote(key)
+    payload = {
+        'contents': [{'parts': [{'text': prompt}]}],
+        'generationConfig': {'responseMimeType': 'application/json'}
+    }
+    body = json.dumps(payload).encode()
+    last_error = None
+    for attempt in range(3):
+        req = urllib.request.Request(endpoint, data=body, headers={'Content-Type': 'application/json'}, method='POST')
+        try:
+            with urllib.request.urlopen(req, timeout=90) as r:
+                data = json.loads(r.read())
+            return json.loads(data['candidates'][0]['content']['parts'][0]['text'])
+        except urllib.error.HTTPError as exc:
+            last_error = exc
+            if exc.code not in (429, 500, 502, 503, 504):
+                raise
+            retry_after = exc.headers.get('Retry-After')
+            try:
+                delay = max(8, min(60, int(retry_after))) if retry_after else 8 * (2 ** attempt)
+            except ValueError:
+                delay = 8 * (2 ** attempt)
+            print(f'Detailed AI transient HTTP {exc.code}; retrying in {delay}s (attempt {attempt + 1}/3)')
+            time.sleep(delay)
+    raise last_error
+
+
+# Replace only the writing layer; the existing newsroom's feed collection,
+# corroboration, safety checks, sanitization and publishing flow remain in use.
+ai_newsroom.ask_ai = detailed_ask_ai
 
 
 def normalize_and_seo():
