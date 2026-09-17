@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-17T20:11:19.036048+00:00",
-  "finished_utc": "2026-09-17T20:12:47.967764+00:00",
+  "started_utc": "2026-09-17T20:17:10.144489+00:00",
+  "finished_utc": "2026-09-17T20:19:08.792672+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 404: Not Found"
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -32,29 +32,28 @@
   "fresh_items": 623,
   "corroborated_candidates": 20,
   "ai_attempts": 20,
-  "ai_failures": 0,
-  "held_or_rejected": 20,
+  "ai_failures": 1,
+  "held_or_rejected": 19,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided source records do not contain at least two different publisher domains reporting on the same central event. While there are multiple records from punchng.com, there is no second independent publisher domain covering the exact same development (the other domain mentions a different topic regarding digital membership portals and general statements about 2027).",
-    "Two independent publishers, techeconomy.ng and technext24.com, corroborate that Nigeria's inflation fell to 15.39% in August as food prices eased.",
-    "The provided source records do not contain at least two different publisher domains reporting on the same central event. The sources cover unrelated topics including a security contract defense, a call to douse political tension by a senator, and remarks by the First Lady.",
-    "The provided sources discuss different topics (Senator Seriake Dickson's comments on the 2027 elections across various outlets, an IPCR call for peace, and a women's group urging intervention on a local council matter in Bayelsa), lacking the required multi-publisher corroboration of the exact same central event.",
-    "The provided source records discuss different economic challenges and commentary without at least two independent sources materially corroborating the exact same central event or announcement.",
-    "The provided source records discuss different topics or mention Senator Seriake Dickson in separate contexts without at least two independent publisher domains materially corroborating the exact same central event or announcement.",
-    "The provided source records discuss related economic topics such as inflation, food prices, and fuel costs, but they do not materially corroborate the same specific central event or announcement.",
-    "The source records from punchng.com provide material corroboration regarding Senator Seriake Dickson's call for President Tinubu and security agencies to reduce political tension ahead of 2027.",
-    "The provided source records discuss four completely different legal stories involving separate individuals, courts, and events (ECOWAS Court, KC Luxury in Lagos, Al-Mustapha's appeal, and a murder remand case). There are no two sources that materially corroborate the same central event.",
-    "The provided source records cover completely different topics, events, and individuals (such as Al-Mustapha's legal appeal, a governor requesting an appeal court division, youth commentary, and a job-seeker story). There are no two sources that corroborate the same central event.",
-    "The provided source records do not contain at least two different publisher domains materially corroborating the same central event. The Punch source is duplicated, and TheCable source discusses an entirely different topic regarding dissent under Tinubu.",
-    "The provided source records cover distinct, unrelated events (a court remanding a man in Lagos, climate policy recommendations, and an ECOWAS Court announcement) with no two sources corroborating the same central event.",
-    "The provided source records cover completely different, unrelated events (such as a court remanding a suspect in Lagos, a murder case, an Edo kidnapping case, and an NHRC climate change policy appeal) with no two sources corroborating the same central event.",
+    "The provided source records do not contain at least two different publisher domains corroborating the same specific event. While there are multiple records from punchng.com, there is no second independent publisher confirming the same event (the reporter.com.ng article discusses a different aspect involving the NDC digital membership portal).",
+    "Two independent publisher domains (techeconomy and technext.ng) materially corroborate the central event that Nigeria's inflation fell to 15.39% in August as food prices eased.",
+    "The provided source records do not contain at least two different publisher domains corroborating the same central event.",
+    "The provided source records do not contain at least two different publisher domains materially corroborating the same central event. The sources cover different topics such as Senator Seriake Dickson's comments on the 2027 elections across different outlets, an IPCR call for peace, and a women's group urging intervention on a council chair suspension, but lack sufficient direct event-level overlap under the strict rules.",
+    "The provided source records discuss different topics or separate statements by Senator Seriake Dickson and various groups, lacking at least two publisher domains that materially corroborate the exact same central event or announcement.",
+    "The source records from punchng.com provide multiple identical entries corroborating Senator Seriake Dickson's call for President Tinubu and security agencies to reduce political tension ahead of the 2027 general elections.",
+    "The provided source records cover completely unrelated topics and events across different domains, failing to meet the strict requirement that at least two different sources must materially corroborate the same central event.",
+    "The provided source records do not contain at least two different publisher domains corroborating the same central event. The Punch source is duplicated, and TheCable source covers an entirely different topic regarding dissent.",
+    "The provided sources cover completely different, unrelated events (a murder case, a custody case involving KC Luxury, a climate policy recommendation, and a court appeal regarding an Asokoro property). There are no at least two publisher domains materially corroborating the same central event.",
+    "The provided source records cover distinct, unrelated events from different domains without at least two publisher domains materially corroborating the same central event.",
     "Multiple reliable sources corroborate the sentencing of a South African woman to 25 years in prison for drug trafficking into Nigeria.",
-    "Multiple reliable sources corroborate the sentencing of a South African woman to 25 years in prison for importing heroin into Nigeria.",
-    "Multiple independent sources corroborate the sentencing of a South African woman to 25 years in prison for importing 5.75kg of heroin.",
-    "The provided source records cover completely different stories and events (suspension of U.S.-based Nigerian lawyers, a job-seeker in a war, a Leadway travel product, and statements on real estate money laundering) without at least two publisher domains materially corroborating the same central event.",
-    "Multiple reputable news sources corroborate the sentencing of a South African woman to 25 years in prison for importing 5.75kg of heroin.",
-    "The provided source records cover completely different news events and stories without any two sources materially corroborating the same central event.",
-    "The provided source records discuss completely different events, ranging from a court remanding a man in Edo State, a Lagos court keeping KC Luxury in custody, calls for human rights in Nigeria's climate policy, and the ECOWAS Court reaffirming its role. There are no two sources covering the same central event to satisfy the corroboration requirement."
+    "Multiple publisher domains materially corroborate the sentencing of a South African woman to 25 years in prison for importing 5.75kg of heroin into Nigeria.",
+    "Multiple reputable sources corroborate the sentencing of a South African woman to 25 years in prison for importing 5.75kg of heroin into Nigeria.",
+    "The provided source records cover four entirely different and unrelated topics (U.S.-based Nigerian lawyers suspended, a Nigerian job-seeker in a war, Leadway's new product for inbound visitors, and a group decrying flooding in Abuja). There are no two sources that materially corroborate the same central event.",
+    "The provided source records discuss completely different events, courts, and individuals (such as a kidnapping case in Edo, KC Luxury in Lagos, a climate policy report, and an appeal by Al-Mustapha), meaning there are no two sources covering the same central event to provide the required corroboration.",
+    "The provided source records discuss entirely different legal news stories in Nigeria (such as a Lagos magistrates' law clarification, a court case involving KC Luxury, a lawyer's advocacy for magistrate welfare, and an appeal ruling involving Al-Mustapha). There are no two sources that materially corroborate the same central event.",
+    "The provided source records cover distinct topics (Judicial Amendment Bills in Delta, youth commentary, inflation statistics, and Lagos magistrates' law) with no two independent publisher domains corroborating the exact same central event.",
+    "Multiple records from Punch NG provide identical coverage of Senator Seriake Dickson's call for political de-escalation ahead of 2027.",
+    "The provided source records cover completely different topics, ranging from wind energy and transport networks to agricultural productivity and gas futures, with no two sources corroborating the same central event."
   ]
 }
