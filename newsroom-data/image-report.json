@@ -1,18 +1,12 @@
 {
-  "finished_utc": "2026-09-17T19:46:21.781642+00:00",
+  "finished_utc": "2026-09-17T19:54:31.651204+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 1,
-  "attempted": 1,
+  "missing_before_run": 0,
+  "attempted": 0,
   "generated": [],
-  "fallbacks": [
-    {
-      "article": "2026-09-17-blood-of-dawnwalker-sequel-may-drop-distinctive-time-mechanic-be0e75b7c0.html",
-      "image": "news/images/2026-09-17-blood-of-dawnwalker-sequel-may-drop-distinctive-time-mechanic-be0e75b7c0.svg",
-      "bytes": 1633,
-      "reason": "Gemini image quota unavailable"
-    }
-  ],
+  "openverse_photos": [],
+  "fallbacks": [],
   "failures": [],
   "remaining_missing_after_run": 0
 }
