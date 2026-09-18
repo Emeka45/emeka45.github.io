@@ -20,14 +20,13 @@
 </head>
 <body>
 <div class="top"><div class="wrap"><span>Movies · Gaming · Anime · Technology · Entertainment</span><a href="index.html">C. O. Eric</a></div></div>
-<nav class="nav"><div class="wrap navin"><a class="brand" href="index.html">C. O. <span>Eric</span> Video Hub</a><div class="links"><a href="#latest">Latest</a><a href="#gaming">Gaming</a><a href="#movies">Movies & TV</a><a href="#anime">Anime</a><a href="newsroom.html">Newsroom</a><a href="index.html">Main site</a></div></div></nav>
+<nav class="nav"><div class="wrap navin"><a class="brand" href="index.html">C. O. <span>Eric</span> Video Hub</a><div class="links" id="nav-links"><a href="#latest">Latest</a><a href="newsroom.html">Newsroom</a><a href="index.html">Main site</a></div></div></nav>
 <header class="wrap hero"><div class="eyebrow"><span class="dot"></span> C. O. ERIC VIDEO HUB</div><h1>Watch what people are <span class="gradient">talking about.</span></h1><p>Fresh videos from trusted official and authorized channels, automatically collected by the AI newsroom. We embed the original YouTube videos rather than re-uploading copyrighted footage.</p><div class="pills"><span class="pill">🎬 Movie & TV</span><span class="pill">🎮 Gaming</span><span class="pill">🍿 Anime</span><span class="pill">🤖 Technology</span><span class="pill">🎵 Entertainment</span></div></header>
 <div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2020382054968819" data-ad-slot="4606984442" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
 <main>
 <section class="section" id="latest"><div class="wrap"><div class="sectionhead"><div><h2>Latest videos</h2><p id="status">Loading the latest videos…</p></div></div><div class="grid" id="latest-grid"><div class="empty">Loading Video Hub…</div></div></div></section>
-<section class="section" id="gaming"><div class="wrap"><div class="sectionhead"><div><h2>Gaming video desk</h2><p>Trailers, gameplay reveals and major game announcements.</p></div></div><div class="grid" id="gaming-grid"><div class="empty">Loading gaming videos…</div></div></div></section>
-<section class="section" id="movies"><div class="wrap"><div class="sectionhead"><div><h2>Movies & TV</h2><p>Official trailers, teasers and entertainment announcements.</p></div></div><div class="grid" id="movies-grid"><div class="empty">Loading movie and TV videos…</div></div></div></section>
-<section class="section" id="anime"><div class="wrap"><div class="sectionhead"><div><h2>Anime video desk</h2><p>Official anime trailers, announcements and promotional videos.</p></div></div><div class="grid" id="anime-grid"><div class="empty">Loading anime videos…</div></div><div class="note"><strong>Editorial standard:</strong> automatic entries come only from the trusted source list. The site embeds the original YouTube video and links back to YouTube.</div></div></section>
+<div id="category-sections"></div>
+<section class="section"><div class="wrap"><div class="note"><strong>Editorial standard:</strong> automatic entries come only from the trusted source list. The site embeds the original YouTube video and links back to YouTube.</div></div></section>
 </main>
 <footer class="footer"><div class="wrap footerin"><span>© C. O. Eric · Video Hub</span><span><a href="index.html">Main site</a> · <a href="newsroom.html">Newsroom</a> · <a href="privacy.html">Privacy</a></span></div></footer>
 <script>
@@ -40,16 +39,24 @@ function card(v){
 }
 function render(id,list){
   const el=document.getElementById(id);
-  el.innerHTML=list.length?list.map(card).join(""):'<div class="empty">No new videos in this section yet.</div>';
+  el.innerHTML=list.length?list.map(card).join(""):'<div class="empty">No videos in this section yet.</div>';
+}
+function slug(v){return String(v).toLowerCase().trim().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"category"}
+function buildCategorySections(sorted){
+  const groups=new Map();
+  sorted.forEach(v=>{const key=String(v.category||"Other").trim()||"Other";if(!groups.has(key))groups.set(key,[]);groups.get(key).push(v)});
+  const preferred=["Gaming","Movies & TV","Anime","Technology","Entertainment","AI","Science","Sports"];
+  const cats=[...groups.keys()].sort((a,b)=>{const ai=preferred.indexOf(a),bi=preferred.indexOf(b);if(ai>=0||bi>=0)return (ai<0?999:ai)-(bi<0?999:bi);return a.localeCompare(b)});
+  const root=document.getElementById("category-sections");
+  const nav=document.getElementById("nav-links");
+  cats.forEach(cat=>{const id="cat-"+slug(cat);const section=document.createElement("section");section.className="section";section.id=id;section.innerHTML='<div class="wrap"><div class="sectionhead"><div><h2>'+esc(cat)+'</h2><p>Latest videos in '+esc(cat)+'.</p></div></div><div class="grid" id="'+id+'-grid"></div></div>';root.appendChild(section);const link=document.createElement("a");link.href="#"+id;link.textContent=cat;nav.insertBefore(link,nav.querySelector('a[href="newsroom.html"]'));render(id+"-grid",groups.get(cat).slice(0,20))})
 }
 fetch("videos/index.json?ts="+Date.now(),{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error("Video data unavailable");return r.json()}).then(data=>{
   const videos=Array.isArray(data.videos)?data.videos:[];
-  const sorted=[...videos].sort((a,b)=>new Date(b.published_at||0)-new Date(a.published_at||0));
+  const sorted=[...videos].sort((a,b)=>new Date(b.published_at||0)-new Date(a.published_at||0);
   render("latest-grid",sorted.slice(0,20));
-  render("gaming-grid",sorted.filter(v=>v.category==="Gaming").slice(0,20));
-  render("movies-grid",sorted.filter(v=>v.category==="Movies & TV").slice(0,20));
-  render("anime-grid",sorted.filter(v=>v.category==="Anime").slice(0,20));
-  document.getElementById("status").textContent=videos.length+" videos in the hub · automatically refreshed by the AI newsroom.";
+  buildCategorySections(sorted);
+  document.getElementById("status").textContent=videos.length+" videos in the hub · categories are generated from the live video data.";
 }).catch(err=>{
   document.getElementById("status").textContent="The Video Hub data is temporarily unavailable.";
   document.getElementById("latest-grid").innerHTML='<div class="empty">Video data could not be loaded. Please try again shortly.</div>';
