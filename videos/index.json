@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T18:37:03.756912+00:00",
+  "updated_at": "2026-09-18T18:47:30.944705+00:00",
   "videos": [
     {
       "video_id": "0V8yi_0V1CQ",
@@ -954,6 +954,22 @@
       "published_by_pipeline_at": "2026-09-18T18:29:00.317340+00:00"
     },
     {
+      "video_id": "skgNiWJBthk",
+      "title": "Madden Championship Series Q&A",
+      "category": "Gaming",
+      "channel": "Electronic Arts",
+      "channel_id": "UCIHBybdoneVVpaQK7xMz1ww",
+      "channel_url": "https://www.youtube.com/channel/UCIHBybdoneVVpaQK7xMz1ww",
+      "url": "https://www.youtube.com/shorts/skgNiWJBthk",
+      "embed_url": "https://www.youtube-nocookie.com/embed/skgNiWJBthk",
+      "thumbnail": "https://i.ytimg.com/vi/skgNiWJBthk/hqdefault.jpg",
+      "published_at": "2026-03-03T14:11:10+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Watch the Electronic Arts gaming video featuring a question and answer session for the Madden Championship Series.",
+      "published_by_pipeline_at": "2026-09-18T18:47:30.365450+00:00"
+    },
+    {
       "video_id": "eT5Ecm99O5Y",
       "title": "Battlefield 6: Official Launch Live Action Trailer",
       "category": "Gaming",
@@ -968,6 +984,22 @@
       "is_short": false,
       "description": "Electronic Arts presents a gaming video featuring the official launch live action trailer for Battlefield 6, showcasing content directly related to the title.",
       "published_by_pipeline_at": "2026-09-18T18:28:50.382247+00:00"
+    },
+    {
+      "video_id": "mJsTj-iZFjE",
+      "title": "Split Fiction | Almost Forgot this was the whole point",
+      "category": "Gaming",
+      "channel": "Electronic Arts",
+      "channel_id": "UCIHBybdoneVVpaQK7xMz1ww",
+      "channel_url": "https://www.youtube.com/channel/UCIHBybdoneVVpaQK7xMz1ww",
+      "url": "https://www.youtube.com/shorts/mJsTj-iZFjE",
+      "embed_url": "https://www.youtube-nocookie.com/embed/mJsTj-iZFjE",
+      "thumbnail": "https://i.ytimg.com/vi/mJsTj-iZFjE/hqdefault.jpg",
+      "published_at": "2025-07-10T17:01:08+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "In this gaming video by Electronic Arts titled Split Fiction, the channel explores how they almost forgot this was the whole point.",
+      "published_by_pipeline_at": "2026-09-18T18:47:30.944639+00:00"
     },
     {
       "video_id": "rgGkgrNvIUc",
