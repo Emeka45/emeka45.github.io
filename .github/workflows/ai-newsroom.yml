@@ -51,6 +51,8 @@ jobs:
         run: python scripts/generate_news_images.py
       - name: Repair full article image paths
         run: python scripts/repair_news_images.py
+      - name: Upgrade news SEO metadata
+        run: python scripts/upgrade_news_seo.py
       - name: Update automatic Video Hub
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
