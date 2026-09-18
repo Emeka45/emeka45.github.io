@@ -1,0 +1,72 @@
+{
+  "finished_utc": "2026-09-18T02:44:34.628508+00:00",
+  "max_new_videos_per_run": 20,
+  "channels_configured": 15,
+  "channels_with_errors": [
+    {
+      "channel": "PlayStation",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "Xbox",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "Nintendo of America",
+      "error": "Could not resolve channel ID"
+    },
+    {
+      "channel": "Ubisoft",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "channel": "Bandai Namco Entertainment America",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "Electronic Arts",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "Warner Bros. Pictures",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "channel": "Marvel Entertainment",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "Universal Pictures",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "Netflix",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "Crunchyroll",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "Toei Animation",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "MAPPA",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "Disney",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "channel": "DC",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "discovered": 0,
+  "published": 0,
+  "duplicates_skipped": 0,
+  "total_stored": 2,
+  "published_video_ids": []
+}

@@ -1,20 +1,6 @@
 {
-  "updated_at": null,
+  "updated_at": "2026-09-18T02:44:34.628261+00:00",
   "videos": [
-    {
-      "video_id": "VQRLujxTm3c",
-      "title": "Grand Theft Auto VI — Trailer 2",
-      "category": "Gaming",
-      "channel": "Rockstar Games",
-      "channel_id": "",
-      "channel_url": "https://www.youtube.com/@RockstarGames",
-      "url": "https://www.youtube.com/watch?v=VQRLujxTm3c",
-      "embed_url": "https://www.youtube-nocookie.com/embed/VQRLujxTm3c",
-      "thumbnail": "https://i.ytimg.com/vi/VQRLujxTm3c/hqdefault.jpg",
-      "published_at": "2023-12-04T00:00:00Z",
-      "source": "Existing Video Hub feature",
-      "description": "One of gaming's biggest trailers, presented through the original YouTube player."
-    },
     {
       "video_id": "Ox8ZLF3TnZk",
       "title": "Superman — Official Trailer",
@@ -28,6 +14,20 @@
       "published_at": "2024-12-19T00:00:00Z",
       "source": "Existing Video Hub feature",
       "description": "A featured superhero trailer presented through the original YouTube player."
+    },
+    {
+      "video_id": "VQRLujxTm3c",
+      "title": "Grand Theft Auto VI — Trailer 2",
+      "category": "Gaming",
+      "channel": "Rockstar Games",
+      "channel_id": "",
+      "channel_url": "https://www.youtube.com/@RockstarGames",
+      "url": "https://www.youtube.com/watch?v=VQRLujxTm3c",
+      "embed_url": "https://www.youtube-nocookie.com/embed/VQRLujxTm3c",
+      "thumbnail": "https://i.ytimg.com/vi/VQRLujxTm3c/hqdefault.jpg",
+      "published_at": "2023-12-04T00:00:00Z",
+      "source": "Existing Video Hub feature",
+      "description": "One of gaming's biggest trailers, presented through the original YouTube player."
     }
   ]
 }
