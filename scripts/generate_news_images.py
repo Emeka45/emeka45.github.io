@@ -103,7 +103,17 @@ def extract_source_urls(raw: str):
     for match in re.findall(r'href=["\'](https?://[^"\']+)["\']', raw, re.I):
         url = html.unescape(match)
         host = urllib.parse.urlparse(url).netloc.lower()
-        if host and host not in {"emeka45.github.io", "emeka45-github-io.pages.dev"} and url not in urls:
+        # Google News is an aggregator, not the publisher's image host. Its
+        # og:image can be generic Google/News artwork, which is exactly the
+        # misleading image seen on some newsroom cards.
+        blocked_hosts = {
+            "news.google.com",
+            "google.com",
+            "www.google.com",
+            "emeka45.github.io",
+            "emeka45-github-io.pages.dev",
+        }
+        if host and host not in blocked_hosts and url not in urls:
             urls.append(url)
     return urls[:8]
 
