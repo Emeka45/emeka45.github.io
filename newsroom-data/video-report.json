@@ -1,7 +1,25 @@
 {
-  "finished_utc": "2026-09-18T02:44:34.628508+00:00",
+  "finished_utc": "2026-09-18T03:37:08.097152+00:00",
   "max_new_videos_per_run": 20,
   "channels_configured": 15,
+  "channels_resolved": 0,
+  "resolver_methods": {
+    "PlayStation": "wikidata",
+    "Xbox": "wikidata",
+    "Nintendo of America": "wikidata",
+    "Ubisoft": "wikidata",
+    "Bandai Namco Entertainment America": "unresolved",
+    "Electronic Arts": "wikidata",
+    "Warner Bros. Pictures": "wikidata",
+    "Marvel Entertainment": "unresolved",
+    "Universal Pictures": "wikidata",
+    "Netflix": "wikidata",
+    "Crunchyroll": "wikidata",
+    "Toei Animation": "wikidata",
+    "MAPPA": "wikidata",
+    "Disney": "wikidata",
+    "DC": "wikidata"
+  },
   "channels_with_errors": [
     {
       "channel": "PlayStation",
@@ -13,15 +31,15 @@
     },
     {
       "channel": "Nintendo of America",
-      "error": "Could not resolve channel ID"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "channel": "Ubisoft",
-      "error": "HTTP Error 500: Internal Server Error"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "channel": "Bandai Namco Entertainment America",
-      "error": "HTTP Error 404: Not Found"
+      "error": "Could not resolve stable YouTube channel ID"
     },
     {
       "channel": "Electronic Arts",
@@ -29,11 +47,11 @@
     },
     {
       "channel": "Warner Bros. Pictures",
-      "error": "HTTP Error 500: Internal Server Error"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "channel": "Marvel Entertainment",
-      "error": "HTTP Error 404: Not Found"
+      "error": "Could not resolve stable YouTube channel ID"
     },
     {
       "channel": "Universal Pictures",
@@ -57,7 +75,7 @@
     },
     {
       "channel": "Disney",
-      "error": "HTTP Error 500: Internal Server Error"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "channel": "DC",
