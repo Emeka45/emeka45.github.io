@@ -1,8 +1,6 @@
 name: C. O. Eric AI Newsroom
 
-# Verified newsroom pipeline: sanitizer compatibility fix is deployed.
-# Trigger refresh to ensure the latest main-branch newsroom code is executed.
-# Manual verification trigger: run the current image-source pipeline now.
+# Verified newsroom + automatic Video Hub pipeline.
 on:
   push:
     paths:
@@ -11,6 +9,10 @@ on:
       - 'scripts/expand_existing_news.py'
       - 'scripts/generate_news_images.py'
       - 'scripts/repair_news_images.py'
+      - 'scripts/update_video_hub.py'
+      - 'video_sources.json'
+      - 'videos/index.json'
+      - 'videos.html'
       - '.github/workflows/ai-newsroom.yml'
   schedule:
     - cron: '0 */4 * * *'
@@ -43,37 +45,28 @@ jobs:
         run: python scripts/generate_news_images.py
       - name: Repair full article image paths
         run: python scripts/repair_news_images.py
-      - name: Show newsroom diagnostics
+      - name: Update automatic Video Hub
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/update_video_hub.py
+      - name: Show newsroom and video diagnostics
         if: always()
         run: |
           echo '=== NEWSROOM DIAGNOSTICS ==='
-          if [ -f newsroom-data/run-report.json ]; then
-            cat newsroom-data/run-report.json
-          else
-            echo 'No run-report.json was generated.'
-          fi
+          if [ -f newsroom-data/run-report.json ]; then cat newsroom-data/run-report.json; else echo 'No run-report.json was generated.'; fi
           echo '=== IMAGE DIAGNOSTICS ==='
-          if [ -f newsroom-data/image-report.json ]; then
-            cat newsroom-data/image-report.json
-          else
-            echo 'No image-report.json was generated.'
-          fi
-          echo '=== GENERATED NEWS ==='
-          find news -maxdepth 1 -type f -name '*.html' -print | sort || true
-          echo '=== STORY IMAGES ==='
-          find news/images -maxdepth 1 -type f \( -name '*.png' -o -name '*.jpg' -o -name '*.jpeg' -o -name '*.webp' \) -print | sort || true
-      - name: Publish generated articles, images and diagnostics
+          if [ -f newsroom-data/image-report.json ]; then cat newsroom-data/image-report.json; else echo 'No image-report.json was generated.'; fi
+          echo '=== VIDEO DIAGNOSTICS ==='
+          if [ -f newsroom-data/video-report.json ]; then cat newsroom-data/video-report.json; else echo 'No video-report.json was generated.'; fi
+      - name: Publish generated articles, images, videos and diagnostics
         run: |
           git config user.name 'C. O. Eric AI Newsroom'
           git config user.email 'actions@users.noreply.github.com'
-          git add news/ newsroom-data/
+          git add news/ newsroom-data/ videos/
           if git diff --cached --quiet; then
-            echo 'No newsroom changes to publish.'
+            echo 'No newsroom or Video Hub changes to publish.'
           else
-            git commit -m 'AI newsroom: publish stories and generated images'
-            # Another newsroom/manual commit can land while Gemini is running.
-            # Rebase onto the latest main before pushing so a valid run does not
-            # fail merely because the branch moved during generation.
+            git commit -m 'AI newsroom: publish stories, images and videos'
             git fetch origin main
             git rebase origin/main
             git push origin HEAD:main
