@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """Discover recent videos from curated YouTube channels and update the Video Hub.
 
-Channel discovery no longer scrapes YouTube channel HTML. It uses stable YouTube
-channel IDs when supplied, an optional YouTube Data API key when available, and
-Wikidata's public API as a no-key fallback to resolve curated channel names.
-Only channels explicitly listed in video_sources.json are eligible for publishing.
+Channel discovery uses stable YouTube channel IDs, optional YouTube Data API
+resolution, and Wikidata as a no-key fallback. The selection pipeline favors
+full-length videos, trailers, announcements and launches over Shorts.
 """
 
 from __future__ import annotations
@@ -24,7 +23,8 @@ INDEX_FILE = ROOT / "videos" / "index.json"
 REPORT_FILE = ROOT / "newsroom-data" / "video-report.json"
 MAX_NEW_VIDEOS = 20
 MAX_PER_CHANNEL = 5
-USER_AGENT = "C-O-Eric-Video-Hub/1.1 (+https://emeka45-github-io.pages.dev/videos.html)"
+MAX_SHORTS_PER_RUN = 6
+USER_AGENT = "C-O-Eric-Video-Hub/1.2 (+https://emeka45-github-io.pages.dev/videos.html)"
 ATOM = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015"}
 
 
@@ -41,13 +41,6 @@ def fetch(url: str, timeout: int = 20) -> bytes:
 
 
 def resolve_channel_id(source: dict) -> tuple[str | None, str]:
-    """Resolve a stable channel ID without scraping YouTube HTML.
-
-    Priority:
-    1. Explicit channel_id in the curated source list.
-    2. YouTube Data API if YOUTUBE_API_KEY is configured.
-    3. Wikidata public API using the curated channel name.
-    """
     explicit = str(source.get("channel_id", "")).strip()
     if explicit.startswith("UC"):
         return explicit, "configured"
@@ -65,7 +58,6 @@ def resolve_channel_id(source: dict) -> tuple[str | None, str]:
         except Exception:
             pass
 
-    # No-key fallback: Wikidata exposes YouTube channel IDs as property P2397.
     search_q = urllib.parse.urlencode(
         {
             "action": "wbsearchentities",
@@ -81,7 +73,9 @@ def resolve_channel_id(source: dict) -> tuple[str | None, str]:
             qid = result.get("id", "")
             if not qid.startswith("Q"):
                 continue
-            entity = json.loads(fetch(f"https://www.wikidata.org/wiki/Special:EntityData/{qid}.json").decode())
+            entity = json.loads(
+                fetch(f"https://www.wikidata.org/wiki/Special:EntityData/{qid}.json").decode()
+            )
             claims = entity.get("entities", {}).get(qid, {}).get("claims", {}).get("P2397", [])
             for claim in claims:
                 value = claim.get("mainsnak", {}).get("datavalue", {}).get("value")
@@ -108,10 +102,26 @@ def parse_feed(channel_id: str, source: dict) -> list[dict]:
         )
         if not video_id or not title or not link:
             continue
+
+        is_short = "/shorts/" in link.lower()
+        clean_title = html.unescape(title)
+        title_lower = clean_title.lower()
+        priority = 0
+        if not is_short:
+            priority += 100
+        if any(term in title_lower for term in (
+            "official trailer", "official teaser", "launch trailer", "announcement trailer",
+            "release date", "first look", "official announcement", "gameplay trailer",
+            "teaser trailer", "reveal trailer"
+        )):
+            priority += 30
+        if any(term in title_lower for term in ("trailer", "teaser", "announcement", "launch", "reveal")):
+            priority += 10
+
         entries.append(
             {
                 "video_id": video_id,
-                "title": html.unescape(title),
+                "title": clean_title,
                 "category": source["category"],
                 "channel": source["name"],
                 "channel_id": channel_id,
@@ -121,6 +131,8 @@ def parse_feed(channel_id: str, source: dict) -> list[dict]:
                 "thumbnail": f"https://i.ytimg.com/vi/{video_id}/hqdefault.jpg",
                 "published_at": published or updated,
                 "source": "YouTube channel feed",
+                "is_short": is_short,
+                "selection_priority": priority,
             }
         )
     return entries
@@ -135,8 +147,8 @@ def parse_iso(value: str) -> datetime:
 
 def fallback_description(item: dict) -> str:
     return (
-        f'{item["channel"]} has published a new {item["category"].lower()} video: '
-        f'“{item["title"]}”. Watch the original video on YouTube.'
+        f'{item["channel"]} — {item["title"]}. '
+        "Watch the original video on YouTube."
     )
 
 
@@ -147,8 +159,10 @@ def ai_description(item: dict) -> str:
 
     prompt = (
         "Write one concise editorial description for a website video card. "
-        "Use only the supplied title, channel and category. Do not invent plot details, "
-        "release dates, quotes, claims or facts. 25-45 words. Return plain text only.\n"
+        "You may ONLY paraphrase information explicitly present in the video title, "
+        "channel name and category. Do not infer plot, gameplay, characters, dates, "
+        "release status, opinions, quotes or other facts. If the title gives little "
+        "information, keep the description simple. 15-30 words. Return plain text only.\n"
         f'Category: {item["category"]}\nChannel: {item["channel"]}\nTitle: {item["title"]}'
     )
     body = json.dumps({"contents": [{"parts": [{"text": prompt}]}]}).encode()
@@ -205,22 +219,34 @@ def main() -> None:
         except Exception as exc:
             channel_errors.append({"channel": source["name"], "error": str(exc)})
 
-    discovered.sort(key=lambda v: parse_iso(v["published_at"]), reverse=True)
+    discovered.sort(
+        key=lambda v: (v.get("selection_priority", 0), parse_iso(v["published_at"])),
+        reverse=True,
+    )
+
     selected = []
     selected_ids = set()
     duplicates_skipped = 0
+    shorts_selected = 0
+
     for item in discovered:
         if item["video_id"] in existing or item["video_id"] in selected_ids:
             duplicates_skipped += 1
             continue
+        if item.get("is_short") and shorts_selected >= MAX_SHORTS_PER_RUN:
+            continue
         selected.append(item)
         selected_ids.add(item["video_id"])
+        if item.get("is_short"):
+            shorts_selected += 1
         if len(selected) >= MAX_NEW_VIDEOS:
             break
 
     for item in selected:
         item["description"] = ai_description(item)
         item["published_by_pipeline_at"] = datetime.now(timezone.utc).isoformat()
+        # Internal selection metadata is useful for diagnostics but unnecessary in the UI.
+        item.pop("selection_priority", None)
 
     videos.extend(selected)
     videos.sort(key=lambda v: parse_iso(v.get("published_at", "")), reverse=True)
@@ -234,12 +260,14 @@ def main() -> None:
     report = {
         "finished_utc": datetime.now(timezone.utc).isoformat(),
         "max_new_videos_per_run": MAX_NEW_VIDEOS,
+        "max_shorts_per_run": MAX_SHORTS_PER_RUN,
         "channels_configured": len(config),
         "channels_resolved": len(config) - len(channel_errors),
         "resolver_methods": resolver_methods,
         "channels_with_errors": channel_errors,
         "discovered": len(discovered),
         "published": len(selected),
+        "shorts_published": shorts_selected,
         "duplicates_skipped": duplicates_skipped,
         "total_stored": len(videos),
         "published_video_ids": [x["video_id"] for x in selected],
