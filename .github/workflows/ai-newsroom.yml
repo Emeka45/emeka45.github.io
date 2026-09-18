@@ -76,6 +76,21 @@ jobs:
           else
             git commit -m 'AI newsroom: publish stories, images and videos'
             git fetch origin main
-            git rebase origin/main
+            # A human/other automation may update the same generated story while
+            # this run is processing. During rebase, keep the current main version
+            # for conflicts so an image/editorial fix is never overwritten.
+            if ! git rebase origin/main; then
+              conflicts="$(git diff --name-only --diff-filter=U || true)"
+              if [ -n "$conflicts" ]; then
+                echo "Rebase conflicts detected; preserving current main versions:"
+                echo "$conflicts"
+                git checkout --ours -- $conflicts
+                git add $conflicts
+                GIT_EDITOR=true git rebase --continue
+              else
+                git rebase --abort
+                exit 1
+              fi
+            fi
             git push origin HEAD:main
           fi
