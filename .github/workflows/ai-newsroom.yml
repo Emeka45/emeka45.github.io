@@ -45,7 +45,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/expand_existing_news.py
-      - name: Upgrade news SEO metadata\n        run: python scripts/upgrade_news_seo.py\n      - name: Generate missing story images with Gemini
+      - name: Generate missing story images with Gemini
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/generate_news_images.py
