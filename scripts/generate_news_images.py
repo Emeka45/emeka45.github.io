@@ -239,7 +239,7 @@ def main():
     for path in sorted(NEWS.glob("*.html"), reverse=True):
         if path.name.startswith("index"):
             continue
-        real_files = [IMAGES / image_name(path), IMAGES / photo_name(path), IMAGES / f"{path.stem}.jpeg", IMAGES / f"{path.stem}.webp", IMAGES / source_photo_name(path)]
+        real_files = [IMAGES / image_name(path), IMAGES / photo_name(path), IMAGES / f"{path.stem}.jpeg", IMAGES / f"{path.stem}.webp", IMAGES / source_photo_name(path), IMAGES / fallback_name(path)]
         raw = path.read_text(encoding="utf-8")
         # A previous run could have saved a Google-hosted image as a "-source.jpg".
         # Remove it and force this story back through the safe image pipeline.
