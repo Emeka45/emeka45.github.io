@@ -53,7 +53,7 @@ function buildCategorySections(sorted){
 }
 fetch("videos/index.json?ts="+Date.now(),{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error("Video data unavailable");return r.json()}).then(data=>{
   const videos=Array.isArray(data.videos)?data.videos:[];
-  const sorted=[...videos].sort((a,b)=>new Date(b.published_at||0)-new Date(a.published_at||0);
+  const sorted=[...videos].sort((a,b)=>new Date(b.published_at||0)-new Date(a.published_at||0));
   render("latest-grid",sorted.slice(0,20));
   buildCategorySections(sorted);
   document.getElementById("status").textContent=videos.length+" videos in the hub · categories are generated from the live video data.";
