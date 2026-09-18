@@ -19,8 +19,6 @@ on:
       - 'scripts/repair_news_images.py'
       - 'scripts/update_video_hub.py'
       - 'video_sources.json'
-      - 'videos/index.json'
-      - 'videos.html'
       - '.github/workflows/ai-newsroom.yml'
   schedule:
     - cron: '0 */4 * * *'
