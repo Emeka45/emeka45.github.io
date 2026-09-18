@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-09-18T18:47:30.944705+00:00",
+  "updated_at": "2026-09-18T19:01:04.948225+00:00",
   "videos": [
+    {
+      "video_id": "7rpsTxtoIbk",
+      "title": "New Google Chrome Themes with the DC Super Hero Collection | DC",
+      "category": "Movies & TV",
+      "channel": "DC",
+      "channel_id": "UCiifkYAs_bq1pt_zbNAzYGg",
+      "channel_url": "https://www.youtube.com/channel/UCiifkYAs_bq1pt_zbNAzYGg",
+      "url": "https://www.youtube.com/shorts/7rpsTxtoIbk",
+      "embed_url": "https://www.youtube-nocookie.com/embed/7rpsTxtoIbk",
+      "thumbnail": "https://i.ytimg.com/vi/7rpsTxtoIbk/hqdefault.jpg",
+      "published_at": "2026-09-18T18:43:05+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "DC presents new Google Chrome themes featuring the DC Super Hero Collection in this Movies and TV video.",
+      "published_by_pipeline_at": "2026-09-18T19:01:04.948134+00:00"
+    },
     {
       "video_id": "0V8yi_0V1CQ",
       "title": "Tokyo Game Show 2026 Highlights & More | This Week on XBOX",
