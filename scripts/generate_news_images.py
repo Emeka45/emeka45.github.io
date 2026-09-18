@@ -176,15 +176,37 @@ def search_openverse_photo(title: str, category: str):
 
 def add_image_to_article(raw: str, title: str, relative_image: str, caption: str) -> str:
     escaped_title = html.escape(title, quote=True)
-    image_tag = f'<meta property="og:image" content="https://emeka45-github-io.pages.dev/{relative_image}"><meta name="twitter:card" content="summary_large_image">'
-    if 'property="og:image"' not in raw:
-        raw = raw.replace("</title>", "</title>" + image_tag, 1)
+    absolute_image = f"https://emeka45-github-io.pages.dev/{relative_image}"
+    # Always replace the previous OG image so stale Google/News artwork cannot survive.
+    og_tag = f'<meta property="og:image" content="{absolute_image}">'
+    if re.search(r'<meta[^>]+property=["\']og:image["\'][^>]*>', raw, re.I):
+        raw = re.sub(r'<meta[^>]+property=["\']og:image["\'][^>]*>', og_tag, raw, count=1, flags=re.I)
+    else:
+        raw = raw.replace("</title>", "</title>" + og_tag, 1)
+    twitter_tag = f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{absolute_image}">'
+    if re.search(r'<meta[^>]+name=["\']twitter:card["\'][^>]*>', raw, re.I):
+        raw = re.sub(r'<meta[^>]+name=["\']twitter:card["\'][^>]*>', twitter_tag, raw, count=1, flags=re.I)
+    else:
+        raw = raw.replace(og_tag, og_tag + twitter_tag, 1)
     hero = f'<figure class="news-hero-image" style="margin:1.25rem 0 1.5rem;"><img src="../{relative_image}" alt="{escaped_title}" loading="eager" decoding="async" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:16px;"><figcaption style="margin-top:.5rem;font-size:.85rem;opacity:.7;">{html.escape(caption)}</figcaption></figure>'
     if "news-hero-image" not in raw:
         raw = raw.replace("</h1>", "</h1>" + hero, 1)
     else:
         raw = re.sub(r'(<figure class="news-hero-image".*?</figure>)', hero, raw, count=1, flags=re.S)
     return raw
+
+
+def is_google_image_url(url: str) -> bool:
+    try:
+        host = urllib.parse.urlparse(html.unescape(url or "")).netloc.lower()
+    except Exception:
+        return False
+    return host in {"news.google.com", "google.com", "www.google.com"} or host.endswith(".googleusercontent.com")
+
+
+def current_article_image_is_invalid(raw: str) -> bool:
+    match = re.search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']', raw, re.I)
+    return bool(match and is_google_image_url(match.group(1)))
 
 
 def update_index():
@@ -218,8 +240,20 @@ def main():
         if path.name.startswith("index"):
             continue
         real_files = [IMAGES / image_name(path), IMAGES / photo_name(path), IMAGES / f"{path.stem}.jpeg", IMAGES / f"{path.stem}.webp", IMAGES / source_photo_name(path)]
-        if any(p.exists() and p.stat().st_size > 10000 for p in real_files):
-            continue
+        raw = path.read_text(encoding="utf-8")
+        # A previous run could have saved a Google-hosted image as a "-source.jpg".
+        # Remove it and force this story back through the safe image pipeline.
+        if current_article_image_is_invalid(raw):
+            stale = IMAGES / source_photo_name(path)
+            if stale.exists():
+                try:
+                    stale.unlink()
+                    print("REMOVED STALE GOOGLE IMAGE:", stale)
+                except OSError as exc:
+                    print("COULD NOT REMOVE STALE GOOGLE IMAGE:", stale, exc)
+        else:
+            if any(p.exists() and p.stat().st_size > 10000 for p in real_files):
+                continue
         data = story_data(path)
         if data:
             missing.append((path, data))
