@@ -1,0 +1,17 @@
+[
+  {"handle":"@PlayStation","category":"Gaming","name":"PlayStation"},
+  {"handle":"@Xbox","category":"Gaming","name":"Xbox"},
+  {"handle":"@NintendoAmerica","category":"Gaming","name":"Nintendo of America"},
+  {"handle":"@Ubisoft","category":"Gaming","name":"Ubisoft"},
+  {"handle":"@BandaiNamcoEntertainmentAmerica","category":"Gaming","name":"Bandai Namco Entertainment America"},
+  {"handle":"@EA","category":"Gaming","name":"Electronic Arts"},
+  {"handle":"@WarnerBrosPictures","category":"Movies & TV","name":"Warner Bros. Pictures"},
+  {"handle":"@Marvel","category":"Movies & TV","name":"Marvel Entertainment"},
+  {"handle":"@UniversalPictures","category":"Movies & TV","name":"Universal Pictures"},
+  {"handle":"@Netflix","category":"Movies & TV","name":"Netflix"},
+  {"handle":"@Crunchyroll","category":"Anime","name":"Crunchyroll"},
+  {"handle":"@ToeiAnimation","category":"Anime","name":"Toei Animation"},
+  {"handle":"@mappachannel","category":"Anime","name":"MAPPA"},
+  {"handle":"@Disney","category":"Movies & TV","name":"Disney"},
+  {"handle":"@DC","category":"Movies & TV","name":"DC"}
+]
