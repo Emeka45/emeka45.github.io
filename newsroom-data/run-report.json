@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-18T03:34:54.476680+00:00",
-  "finished_utc": "2026-09-18T03:36:41.142974+00:00",
+  "started_utc": "2026-09-18T08:37:05.296167+00:00",
+  "finished_utc": "2026-09-18T08:38:49.932442+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 404: Not Found"
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -36,25 +36,25 @@
   "held_or_rejected": 20,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided sources do not contain at least two publisher domains covering the same central event. While there are multiple sources, they cover completely different topics (Dangote refinery price reduction, inflation figures, and petrol prices nearing N1,500/litre), meaning there is no material corroboration.",
-    "The provided source records do not contain at least two different publisher domains materially supporting the same central event. The sources cover entirely different topics: judicial decisions/voters' mandates and human rights in climate policy.",
-    "The provided source records discuss entirely different topics and events, such as Chidi Odinkalu's comments on the 'wasted votes' doctrine in Punch Nigeria, human rights in climate policy mentioned in Google News RSS items, and judicial reforms for the 2027 elections in The Guardian. There is no single central event corroborated by at least two different publisher domains.",
-    "The provided source records cover completely unrelated legal stories in Nigeria (ECOWAS Court, KC Luxury in Lagos, an appeal by Al-Mustapha regarding an Asokoro property, and a murder case involving a nephew and niece). There are no at least two source records that materially corroborate the same central event.",
-    "The provided source records cover completely different, unrelated events (an appeal court ruling involving Al-Mustapha in Asokoro, an opinion piece on Nigerian youths, an Ogun governor requesting an Abeokuta Appeal Court division, and an ECOWAS Court journalist training workshop). There are no two sources that materially corroborate the same central event.",
-    "The provided source records cover completely different and unrelated events, failing to provide at least two publisher domains that materially support the same central event as required by the strict evidence rules.",
-    "The provided source records cover completely different, unrelated events (court cases involving different individuals and charges, and a human rights/climate change policy report) without any overlap on a central event supported by at least two different publisher domains.",
-    "Multiple reputable Nigerian news sources corroborate the sentencing of a South African woman to 25 years in prison for importing 5.75kg of heroin.",
+    "The provided source records discuss entirely different events and topics (Dangote Refinery price reductions, Nigeria inflation figures from different sources, and crude oil prices/petrol surges) with no two independent domains corroborating the same specific central event.",
+    "The provided source records discuss completely different events across different states (Kaduna State University strike suspension versus Bayelsa State government vehicle presentation). There are no two source records that materially corroborate the same central event.",
+    "The provided source records discuss completely different events, topics, and domains (such as export figures, youth policy, and tourism projections) with no overlapping central event. Therefore, no multi-source corroboration exists to produce a valid news report under the strict evidence rules.",
+    "The provided source records contain only one story with multiple domains (Punch Nigeria on KASU lecturers suspending their strike) and another story covering Bayelsa Medical University from a single domain. There are no two distinct publisher domains corroborating the same central event.",
+    "The supplied source records cover completely different topics (export figures, youth policy, and tourism projections) without any overlapping central event supported by at least two publisher domains.",
+    "Only one unique source/domain combination provides the story about KASU lecturers, failing the cross-domain corroboration rule.",
+    "The provided source records cover completely different, unrelated events in Nigeria (an ECOWAS Court role reaffirmation, a Lagos court case involving KC Luxury, a court remanding a man for killing his nephew and niece, and a South African woman jailed for heroin importation). There are no two sources covering the same central event, so a collaborative news report cannot be generated under the strict evidence rules.",
+    "The provided source records cover completely different law and justice topics across Nigeria (such as Al-Mustapha's appeal on an Asokoro property, the Ogun Governor seeking an Appeal Court division, critiques of the judiciary by various figures, and state actions under Tinubu), with no two sources materially corroborating the same central event.",
+    "The supplied source records discuss completely unrelated events across different domains (a murder case in Lagos/Nigeria, an environmental policy recommendation, and an ECOWAS court statement), meaning there is no single central event corroborated by multiple sources.",
+    "The provided source records cover completely different and unrelated events across Nigeria (a court case involving KC Luxury, a murder case of a nephew and niece, an Edo kidnapping and armed robbery case, and an NHRC climate policy urge). There are no two sources covering the same central event, so a collaborative news report cannot be produced under the strict evidence rules.",
+    "Multiple reliable source domains materially corroborate the sentencing of a South African woman to 25 years imprisonment for importing heroin into Nigeria.",
+    "Multiple reliable sources corroborate the sentencing of a South African woman to 25 years imprisonment in Nigeria for heroin importation.",
+    "The provided source records cover completely different, unrelated events (such as suspended US-based Nigerian lawyers, a Nigerian job-seeker in a war, money laundering in real estate, and flooding in Abuja). There are no two sources covering the same central event to provide the required material corroboration.",
+    "Multiple reputable sources corroborate the sentencing of a South African woman to 25 years in prison by an Abuja court for importing 5.75kg of heroin.",
     "Multiple reliable sources corroborate the sentencing of a South African woman to 25 years in prison for importing 5.75kg of heroin into Nigeria.",
-    "The supplied source records cover four completely different topics and lack the required dual-source corroboration for a single central event.",
-    "The provided source records cover completely different topics and events (judicial reforms for 2027, agricultural land policy in Gombe, ECOWAS Court role, and youth voices in nutrition policy), lacking the required minimum of two sources corroborating the same central event.",
-    "Multiple reputable sources (Channels Television, Vanguard News, Sahara Reporters, Daily Post Nigeria) corroborate the sentencing of a South African woman to 25 years in prison for importing 5.75kg of heroin into Nigeria.",
-    "The provided source records cover completely different, unrelated events (an ECOWAS Court training for journalists, a court ruling on an Al-Mustapha property appeal, a murder case remand, and a Lagos court custody case). There are no two source domains covering the same central event to fulfill the mandatory corroboration rule.",
-    "The provided source records cover completely different topics and events (an Edo court case, a Lagos court case regarding KC Luxury, climate policy recommendations, and an ECOWAS Court journalist training workshop). There is no single central event corroborated by at least two different publisher domains.",
-    "Multiple reputable sources corroborate the sentencing of a South African woman to 25 years in prison for importing heroin into Nigeria.",
-    "The provided source records cover completely different, unrelated legal and judicial stories across Nigeria (such as Ogun State seeking an appeal court division, an appeal ruling involving Al-Mustapha, a Lagos court case regarding KC Luxury, and a separate murder remand case). There are no two sources covering the same central event, so a corroborated news report cannot be generated.",
-    "The provided source records cover completely different topics, such as fossil fuels in Nigeria and Ghana, off-grid solar for small businesses, the NESG warning on raw-material traps, and Gastech 2026. There are no two sources that materially corroborate the same central event.",
-    "The provided source records cover completely different topics and events (stalled wind farm, integrated transport network, FAO women farmers productivity gap, and Gastech 2026), meaning there are not at least two different publisher domains materially supporting the same central event.",
-    "The provided source records discuss different and unrelated topics without multiple independent publisher domains materially corroborating the same central event.",
-    "Multiple reputable sources report on the rising electricity costs in Nigeria and how this is pushing individuals and small businesses toward solar energy solutions, supported by significant investments such as mini-grid developments."
+    "The provided source records cover completely different, unrelated events across various domains (judicial reforms for 2027, agricultural land policy in Gombe, the ECOWAS Court, and youth voice in nutrition policy). There are no two sources that materially corroborate the same central event.",
+    "The provided source records cover completely unrelated legal stories (Ogun State appeal court division, KC Luxury in custody in Lagos, Al-Mustapha losing an appeal on an Asokoro property, and a man remanded for killing his nephew and niece). There are no two different publisher domains materially supporting the same central event, so no comprehensive multi-source news report can be generated under the strict evidence rules.",
+    "The provided source records cover completely unrelated stories (court cases in Edo and Lagos, climate policy advocacy, and the ECOWAS Court), meaning there is no single central event corroborated by at least two different publisher domains.",
+    "Multiple publisher domains corroborate the sentencing of a South African woman to 25 years imprisonment for trafficking heroin into Nigeria.",
+    "Although multiple sources reference the same story about KASU lecturers suspending their strike, they all originate from the exact same publisher domain (punchng.com), lacking the required multi-domain corroboration from at least two different publisher domains."
   ]
 }
