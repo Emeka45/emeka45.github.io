@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-18T21:21:59.941745+00:00",
-  "finished_utc": "2026-09-18T21:32:10.484263+00:00",
+  "started_utc": "2026-09-18T22:27:09.593737+00:00",
+  "finished_utc": "2026-09-18T22:43:10.641472+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
@@ -28,25 +28,17 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 628,
-  "fresh_items": 627,
+  "total_items": 627,
+  "fresh_items": 626,
   "corroborated_candidates": 20,
   "ai_attempts": 20,
-  "ai_failures": 8,
-  "held_or_rejected": 12,
+  "ai_failures": 16,
+  "held_or_rejected": 4,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided sources cover completely different events (ambassador postings vs. a meeting with a French tycoon in Paris) and do not contain two different publisher domains materially supporting the same central event.",
-    "The provided source records discuss different events (Governor Otti receiving a top JAMB scorer versus the Abia First Lady supporting sickle cell and albinism communities) and lack multiple publisher domains corroborating the same central event.",
-    "Two independent publisher domains (techeconomy and technext24.com) materially corroborate the central event that Nigeria's inflation fell to 15.39% in August as food prices eased.",
-    "The provided source records discuss entirely different topics (President Tinubu meeting a French tycoon regarding the creative economy, the National Theatre targeting Northern Nigeria, and the posting of 65 ambassadors), with no single central event corroborated by at least two distinct publisher domains.",
-    "The provided source records discuss completely different events (one about a data commission warning regarding traffic rule text messages from punchng.com, and another about a US warning against AI-edited passport photos from thereporter.com.ng). There are no two sources that materially corroborate the same central event.",
-    "The supplied source records do not contain at least two different publisher domains materially supporting the same central event. Each source covers a completely different topic (Tinubu meeting Vincent Bolloré, the orange economy, Tinubu posting 65 ambassadors, and the National Theatre targeting Northern Nigeria).",
-    "The supplied source records discuss entirely distinct events (US visa photo AI warning versus Nigeria Data Protection Commission traffic scam warning) and lack multiple publisher domains corroborating the same central event.",
-    "The supplied source records discuss completely unrelated events across different courts and legal matters in Nigeria (ECOWAS Court, KC Luxury custody in Lagos, an appeal by Al-Mustapha regarding an Asokoro property, and a court remanding a man accused of killing his nephew and niece). There is no single central event corroborated by multiple sources.",
-    "The provided source records discuss completely unrelated topics (Al-Mustapha's legal appeal over an Asokoro property, youth advocacy, Ogun State's request for an Appeal Court division, and a Nigerian job-seeker in a war zone). There are no two sources that materially corroborate the same central event, failing the strict evidence rules.",
-    "The provided source records cover completely different, unrelated events (custody of KC Luxury, a murder case of nephew and niece, kidnapping and armed robbery in Edo, and an NHRC climate policy urge). There are no two sources that materially corroborate the same central event.",
-    "Multiple independent sources corroborate the sentencing of a South African woman to 25 years in prison by a court in Nigeria for importing 5.75kg of heroin.",
-    "The provided source records cover completely different, unrelated events (suspended US-based Nigerian lawyers, a job-seeker in a war, real estate money laundering, and a women's heritage partnership). There are no two sources that corroborate the same central event."
+    "The provided source records discuss different events (ambassador postings vs. a meeting with a French tycoon in Paris) from different publisher domains without meeting the requirement of at least two different publisher domains materially supporting the exact same central event.",
+    "The provided source records cover completely different events—one concerning a warning from the Nigeria Data Protection Commission about malicious traffic rule messages, and the others concerning a warning from the US Mission in Nigeria about AI-edited passport photos. Because there are no two sources that materially corroborate the same central event, a combined news report cannot be generated under the strict evidence rules.",
+    "The provided source records cover completely different events (a warning from the Nigeria Data Protection Commission about malicious electronic messages versus a warning from the US Mission in Nigeria regarding AI-edited passport photos for visa applications). There are no two distinct publisher domains reporting on the same central event, so the strict evidence rules for corroboration are not met.",
+    "The provided source records discuss completely different events, such as an Ogun Governor seeking an Appeal Court division, an Al-Mustapha property appeal ruling, a Lagos court case involving KC Luxury, and a separate court remanding a man accused of killing his nephew and niece. There is no central event corroborated by at least two different publisher domains."
   ]
 }
