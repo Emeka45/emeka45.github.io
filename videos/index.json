@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-09-18T20:03:01.005561+00:00",
+  "updated_at": "2026-09-18T20:12:06.279621+00:00",
   "videos": [
+    {
+      "video_id": "FHnm-RLfHWQ",
+      "title": "Fortnite x KINGDOM HEARTS – Reveal Trailer – Nintendo Switch 2",
+      "category": "Gaming",
+      "channel": "Nintendo of America",
+      "channel_id": "UCGIY_O-8vW4rfX98KlMkvRg",
+      "channel_url": "https://www.youtube.com/channel/UCGIY_O-8vW4rfX98KlMkvRg",
+      "url": "https://www.youtube.com/watch?v=FHnm-RLfHWQ",
+      "embed_url": "https://www.youtube-nocookie.com/embed/FHnm-RLfHWQ",
+      "thumbnail": "https://i.ytimg.com/vi/FHnm-RLfHWQ/hqdefault.jpg",
+      "published_at": "2026-09-18T19:59:26+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Nintendo of America shares the Fortnite x KINGDOM HEARTS reveal trailer for Nintendo Switch 2 in this gaming video.",
+      "published_by_pipeline_at": "2026-09-18T20:12:06.279556+00:00"
+    },
     {
       "video_id": "HkccdFD2jCk",
       "title": "Bloomwalker - Official Trailer | Wishlist Now!",
