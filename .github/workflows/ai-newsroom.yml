@@ -4,13 +4,6 @@ name: C. O. Eric AI Newsroom
 on:
   push:
     paths:
-      - 'scripts/ai_newsroom.py'
-      - 'scripts/run_ai_newsroom.py'
-      - 'scripts/expand_existing_news.py'
-      - 'scripts/generate_news_images.py'
-      - 'scripts/repair_news_images.py'
-      - 'scripts/update_video_hub.py'
-      - 'video_sources.json'
       # Root-level website pages/assets that should trigger the pipeline when edited.
       # Broad root patterns do not match generated files inside news/, videos/ or newsroom-data/.
       - '*.html'
@@ -18,6 +11,7 @@ on:
       - '*.js'
       - '*.xml'
       - '*.json'
+      # Newsroom/video source and generator code.
       - 'scripts/ai_newsroom.py'
       - 'scripts/run_ai_newsroom.py'
       - 'scripts/expand_existing_news.py'
