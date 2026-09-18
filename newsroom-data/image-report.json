@@ -1,11 +1,28 @@
 {
-  "finished_utc": "2026-09-18T08:39:06.432726+00:00",
+  "finished_utc": "2026-09-18T15:31:45.327063+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 0,
-  "attempted": 0,
+  "missing_before_run": 2,
+  "attempted": 2,
   "generated": [],
-  "source_photos": [],
+  "source_photos": [
+    {
+      "article": "2026-09-18-south-african-woman-sentenced-to-prison-in-nigeria-for-heroin-trafficking-as-actionsa-prai-6c82bff1d7.html",
+      "image": "news/images/2026-09-18-south-african-woman-sentenced-to-prison-in-nigeria-for-heroin-trafficking-as-actionsa-prai-6c82bff1d7-source.jpg",
+      "bytes": 18288,
+      "provider": "Original news source",
+      "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxORXl4RU5MMkZrOUp5U3hRWDFWUG5qTUpRaUxoR2dzSHNadGt2bWlzQnI5Y3FWMV9aamNEeTI0a2pEY2s1Wk4tT0VDVDBzMnlPOXRrckJrRTk1SVNWZXI3M2ZUQjVfU3dGa1EzcW9HMUthUEJCS0d4S2syMExwUjVVSmRBMWFVNmd2NVRxOWhmTUtaZFNTN0ZDaHRTYmE2MzBURzdqdVpOczlpNFdWTUVYLWp0d0hKMGg5cnFr?oc=5",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+    },
+    {
+      "article": "2026-09-18-south-african-woman-sentenced-to-25-years-imprisonment-for-trafficking-5-75kg-of-heroin-in-d7387e2f7e.html",
+      "image": "news/images/2026-09-18-south-african-woman-sentenced-to-25-years-imprisonment-for-trafficking-5-75kg-of-heroin-in-d7387e2f7e-source.jpg",
+      "bytes": 18288,
+      "provider": "Original news source",
+      "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxORXl4RU5MMkZrOUp5U3hRWDFWUG5qTUpRaUxoR2dzSHNadGt2bWlzQnI5Y3FWMV9aamNEeTI0a2pEY2s1Wk4tT0VDVDBzMnlPOXRrckJrRTk1SVNWZXI3M2ZUQjVfU3dGa1EzcW9HMUthUEJCS0d4S2syMExwUjVVSmRBMWFVNmd2NVRxOWhmTUtaZFNTN0ZDaHRTYmE2MzBURzdqdVpOczlpNFdWTUVYLWp0d0hKMGg5cnFr?oc=5",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+    }
+  ],
   "openverse_photos": [],
   "fallbacks": [],
   "failures": [],
