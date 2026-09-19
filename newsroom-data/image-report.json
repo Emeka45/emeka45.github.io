@@ -1,11 +1,76 @@
 {
-  "finished_utc": "2026-09-19T12:28:14.924439+00:00",
+  "finished_utc": "2026-09-19T18:35:31.114941+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 0,
-  "attempted": 0,
+  "missing_before_run": 8,
+  "attempted": 8,
   "generated": [],
-  "source_photos": [],
+  "source_photos": [
+    {
+      "article": "2026-09-19-federal-government-suspends-nscdc-officers-following-37-deaths-in-niger-custody-b0d100fa5e.html",
+      "image": "news/images/2026-09-19-federal-government-suspends-nscdc-officers-following-37-deaths-in-niger-custody-b0d100fa5e-source.jpg",
+      "bytes": 25998,
+      "provider": "Original news source",
+      "source_url": "https://punchng.com/apm-condemns-death-of-37-in-nscdc-custody-demands-transparent-probe/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://punchng.com/wp-content/uploads/2026/07/APM-2_1783349928-1048x630.webp"
+    },
+    {
+      "article": "2026-09-19-federal-government-suspends-nscdc-officers-following-37-custodial-deaths-in-niger-state-608944d391.html",
+      "image": "news/images/2026-09-19-federal-government-suspends-nscdc-officers-following-37-custodial-deaths-in-niger-state-608944d391-source.jpg",
+      "bytes": 2065364,
+      "provider": "Original news source",
+      "source_url": "https://thereporter.com.ng/fg-suspends-20-nscdc-officers-sets-up-panel-over-37-deaths-in-custody-meta-title-fg-suspends-20-nscdc-officers-over-37-deaths-in-custody",
+      "image_url": "https://cdn.vanguardngr.com/wp-content/uploads/2024/02/image-757-e1734157984737.png"
+    },
+    {
+      "article": "2026-09-19-federal-government-suspends-20-nscdc-officers-over-custodial-deaths-of-37-suspected-miners-c49a3c9963.html",
+      "image": "news/images/2026-09-19-federal-government-suspends-20-nscdc-officers-over-custodial-deaths-of-37-suspected-miners-c49a3c9963-source.jpg",
+      "bytes": 25998,
+      "provider": "Original news source",
+      "source_url": "https://punchng.com/apm-condemns-death-of-37-in-nscdc-custody-demands-transparent-probe/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://punchng.com/wp-content/uploads/2026/07/APM-2_1783349928-1048x630.webp"
+    },
+    {
+      "article": "2026-09-19-federal-government-suspends-20-nscdc-officers-following-37-custodial-deaths-in-niger-state-c9d321614b.html",
+      "image": "news/images/2026-09-19-federal-government-suspends-20-nscdc-officers-following-37-custodial-deaths-in-niger-state-c9d321614b-source.jpg",
+      "bytes": 2065364,
+      "provider": "Original news source",
+      "source_url": "https://thereporter.com.ng/fg-suspends-20-nscdc-officers-sets-up-panel-over-37-deaths-in-custody-meta-title-fg-suspends-20-nscdc-officers-over-37-deaths-in-custody",
+      "image_url": "https://cdn.vanguardngr.com/wp-content/uploads/2024/02/image-757-e1734157984737.png"
+    },
+    {
+      "article": "2026-09-19-bayelsa-political-landscape-shifts-as-apc-asserts-grassroots-strength-amid-pdp-defections-0857418837.html",
+      "image": "news/images/2026-09-19-bayelsa-political-landscape-shifts-as-apc-asserts-grassroots-strength-amid-pdp-defections-0857418837-source.jpg",
+      "bytes": 15838,
+      "provider": "Original news source",
+      "source_url": "https://thereporter.com.ng/bayelsa-apc-supporters-defect-to-pdp-in-ogbia-ahead-of-2027-elections",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3HFNSGg0FJYlPUQXiWvgAwVRVPbQwieBUN0GHDHj-lVnk9hbCMeyZoNk&s=10"
+    },
+    {
+      "article": "2026-09-19-bayelsa-apc-expresses-confidence-in-grassroots-structures-ahead-of-2027-elections-a506925f95.html",
+      "image": "news/images/2026-09-19-bayelsa-apc-expresses-confidence-in-grassroots-structures-ahead-of-2027-elections-a506925f95-source.jpg",
+      "bytes": 54438,
+      "provider": "Original news source",
+      "source_url": "https://thereporter.com.ng/bayelsa-apc-dismisses-rainbow-coalition-backs-tinubu-for-2027",
+      "image_url": "https://www.naijanews.com/wp-content/uploads/2026/09/FCT-MInister-Nyesom-Wike-and-APC-1536x864.png.webp"
+    },
+    {
+      "article": "2026-09-19-bayelsa-apc-expresses-confidence-in-grassroots-strength-ahead-of-2027-general-elections-f308f506ff.html",
+      "image": "news/images/2026-09-19-bayelsa-apc-expresses-confidence-in-grassroots-strength-ahead-of-2027-general-elections-f308f506ff-source.jpg",
+      "bytes": 54438,
+      "provider": "Original news source",
+      "source_url": "https://thereporter.com.ng/bayelsa-apc-dismisses-rainbow-coalition-backs-tinubu-for-2027",
+      "image_url": "https://www.naijanews.com/wp-content/uploads/2026/09/FCT-MInister-Nyesom-Wike-and-APC-1536x864.png.webp"
+    },
+    {
+      "article": "2026-09-19-atiku-calls-on-president-tinubu-to-intervene-and-lower-petrol-and-diesel-prices-a03bd5c064.html",
+      "image": "news/images/2026-09-19-atiku-calls-on-president-tinubu-to-intervene-and-lower-petrol-and-diesel-prices-a03bd5c064-source.jpg",
+      "bytes": 272432,
+      "provider": "Original news source",
+      "source_url": "https://thereporter.com.ng/atiku-urges-tinubu-to-adopt-proposal-to-reduce-petrol-prices",
+      "image_url": "https://cdn.vanguardngr.com/wp-content/uploads/2026/08/Screenshot-2026-08-27-053142.png"
+    }
+  ],
   "openverse_photos": [],
   "fallbacks": [],
   "failures": [],
