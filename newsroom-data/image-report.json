@@ -1,20 +1,11 @@
 {
-  "finished_utc": "2026-09-19T23:08:43.871287+00:00",
+  "finished_utc": "2026-09-19T23:28:53.007892+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 1,
-  "attempted": 1,
+  "missing_before_run": 0,
+  "attempted": 0,
   "generated": [],
-  "source_photos": [
-    {
-      "article": "2026-09-19-atiku-appeals-to-tinubu-to-intervene-in-oil-sector-lower-petrol-and-diesel-prices-60e14c48b9.html",
-      "image": "news/images/2026-09-19-atiku-appeals-to-tinubu-to-intervene-in-oil-sector-lower-petrol-and-diesel-prices-60e14c48b9-source.jpg",
-      "bytes": 272432,
-      "provider": "Original news source",
-      "source_url": "https://thereporter.com.ng/atiku-urges-tinubu-to-adopt-proposal-to-reduce-petrol-prices",
-      "image_url": "https://cdn.vanguardngr.com/wp-content/uploads/2026/08/Screenshot-2026-08-27-053142.png"
-    }
-  ],
+  "source_photos": [],
   "openverse_photos": [],
   "fallbacks": [],
   "failures": [],
