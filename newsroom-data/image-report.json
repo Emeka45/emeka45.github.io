@@ -1,79 +1,21 @@
 {
-  "finished_utc": "2026-09-19T22:20:20.281054+00:00",
+  "finished_utc": "2026-09-19T23:08:43.871287+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 8,
-  "attempted": 8,
+  "missing_before_run": 1,
+  "attempted": 1,
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-09-19-jehovah-s-witnesses-announce-adjustments-to-blood-transfusion-guidelines-a0e67c226a.html",
-      "image": "news/images/2026-09-19-jehovah-s-witnesses-announce-adjustments-to-blood-transfusion-guidelines-a0e67c226a-source.jpg",
-      "bytes": 90416,
+      "article": "2026-09-19-atiku-appeals-to-tinubu-to-intervene-in-oil-sector-lower-petrol-and-diesel-prices-60e14c48b9.html",
+      "image": "news/images/2026-09-19-atiku-appeals-to-tinubu-to-intervene-in-oil-sector-lower-petrol-and-diesel-prices-60e14c48b9-source.jpg",
+      "bytes": 272432,
       "provider": "Original news source",
-      "source_url": "https://thereporter.com.ng/jehovahs-witnesses-adjust-blood-transfusion-policy",
-      "image_url": "https://thereporter.com.ng/uploads/images/202609/image_870x580_6aae9017c1fdb.jpg"
-    },
-    {
-      "article": "2026-09-19-federal-government-suspends-nscdc-officers-over-custody-deaths-of-37-suspected-miners-in-n-41bb5469e4.html",
-      "image": "news/images/2026-09-19-federal-government-suspends-nscdc-officers-over-custody-deaths-of-37-suspected-miners-in-n-41bb5469e4-source.jpg",
-      "bytes": 29448,
-      "provider": "Original news source",
-      "source_url": "https://punchng.com/nba-wants-owners-financiers-of-niger-illegal-mining-probed2/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://punchng.com/wp-content/uploads/2026/07/NBA-1_1784462411.webp"
-    },
-    {
-      "article": "2026-09-19-federal-government-suspends-nscdc-officers-following-deaths-of-37-suspected-miners-in-nige-5f11b8b706.html",
-      "image": "news/images/2026-09-19-federal-government-suspends-nscdc-officers-following-deaths-of-37-suspected-miners-in-nige-5f11b8b706-source.jpg",
-      "bytes": 2065364,
-      "provider": "Original news source",
-      "source_url": "https://thereporter.com.ng/fg-suspends-20-nscdc-officers-sets-up-panel-over-37-deaths-in-custody-meta-title-fg-suspends-20-nscdc-officers-over-37-deaths-in-custody",
-      "image_url": "https://cdn.vanguardngr.com/wp-content/uploads/2024/02/image-757-e1734157984737.png"
-    },
-    {
-      "article": "2026-09-19-federal-government-suspends-20-nscdc-officers-sets-up-panel-over-37-deaths-in-niger-custod-34eb0be32b.html",
-      "image": "news/images/2026-09-19-federal-government-suspends-20-nscdc-officers-sets-up-panel-over-37-deaths-in-niger-custod-34eb0be32b-source.jpg",
-      "bytes": 2065364,
-      "provider": "Original news source",
-      "source_url": "https://thereporter.com.ng/fg-suspends-20-nscdc-officers-sets-up-panel-over-37-deaths-in-custody-meta-title-fg-suspends-20-nscdc-officers-over-37-deaths-in-custody",
-      "image_url": "https://cdn.vanguardngr.com/wp-content/uploads/2024/02/image-757-e1734157984737.png"
-    },
-    {
-      "article": "2026-09-19-federal-government-suspends-20-nscdc-officers-over-deaths-of-37-miners-in-custody-as-prp-d-7e59e5e7f9.html",
-      "image": "news/images/2026-09-19-federal-government-suspends-20-nscdc-officers-over-deaths-of-37-miners-in-custody-as-prp-d-7e59e5e7f9-source.jpg",
-      "bytes": 2065364,
-      "provider": "Original news source",
-      "source_url": "https://thereporter.com.ng/fg-suspends-20-nscdc-officers-sets-up-panel-over-37-deaths-in-custody-meta-title-fg-suspends-20-nscdc-officers-over-37-deaths-in-custody",
-      "image_url": "https://cdn.vanguardngr.com/wp-content/uploads/2024/02/image-757-e1734157984737.png"
-    },
-    {
-      "article": "2026-09-19-federal-government-suspends-20-nscdc-officers-over-deaths-of-37-miners-in-custody-as-prp-d-7ddf7fb9e9.html",
-      "image": "news/images/2026-09-19-federal-government-suspends-20-nscdc-officers-over-deaths-of-37-miners-in-custody-as-prp-d-7ddf7fb9e9-source.jpg",
-      "bytes": 21416,
-      "provider": "Original news source",
-      "source_url": "https://punchng.com/niger-miners-deaths-prp-demands-justice-inquiry/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/09/19215207/images_1789851127.webp"
-    },
-    {
-      "article": "2026-09-19-federal-government-suspends-20-nscdc-officers-as-nba-investigates-deaths-of-37-miners-in-n-c861a3c2fe.html",
-      "image": "news/images/2026-09-19-federal-government-suspends-20-nscdc-officers-as-nba-investigates-deaths-of-37-miners-in-n-c861a3c2fe-source.jpg",
-      "bytes": 2065364,
-      "provider": "Original news source",
-      "source_url": "https://thereporter.com.ng/fg-suspends-20-nscdc-officers-sets-up-panel-over-37-deaths-in-custody-meta-title-fg-suspends-20-nscdc-officers-over-37-deaths-in-custody",
-      "image_url": "https://cdn.vanguardngr.com/wp-content/uploads/2024/02/image-757-e1734157984737.png"
+      "source_url": "https://thereporter.com.ng/atiku-urges-tinubu-to-adopt-proposal-to-reduce-petrol-prices",
+      "image_url": "https://cdn.vanguardngr.com/wp-content/uploads/2026/08/Screenshot-2026-08-27-053142.png"
     }
   ],
-  "openverse_photos": [
-    {
-      "article": "2026-09-19-nigeria-records-inflation-drop-to-15-39-in-august-as-food-prices-ease-5158cf9772.html",
-      "image": "news/images/2026-09-19-nigeria-records-inflation-drop-to-15-39-in-august-as-food-prices-ease-5158cf9772.jpg",
-      "bytes": 106123,
-      "provider": "Openverse",
-      "creator": "Matt@PEK",
-      "license": "by-nc-sa",
-      "source_url": "https://www.flickr.com/photos/21065622@N08/22333096725"
-    }
-  ],
+  "openverse_photos": [],
   "fallbacks": [],
   "failures": [],
   "remaining_missing_after_run": 0
