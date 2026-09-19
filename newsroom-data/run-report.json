@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-18T22:27:09.593737+00:00",
-  "finished_utc": "2026-09-18T22:43:10.641472+00:00",
+  "started_utc": "2026-09-19T04:19:53.199059+00:00",
+  "finished_utc": "2026-09-19T04:34:02.533536+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
@@ -30,15 +30,17 @@
   ],
   "total_items": 627,
   "fresh_items": 626,
-  "corroborated_candidates": 20,
-  "ai_attempts": 20,
-  "ai_failures": 16,
+  "corroborated_candidates": 18,
+  "ai_attempts": 18,
+  "ai_failures": 14,
   "held_or_rejected": 4,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided source records discuss different events (ambassador postings vs. a meeting with a French tycoon in Paris) from different publisher domains without meeting the requirement of at least two different publisher domains materially supporting the exact same central event.",
-    "The provided source records cover completely different events—one concerning a warning from the Nigeria Data Protection Commission about malicious traffic rule messages, and the others concerning a warning from the US Mission in Nigeria about AI-edited passport photos. Because there are no two sources that materially corroborate the same central event, a combined news report cannot be generated under the strict evidence rules.",
-    "The provided source records cover completely different events (a warning from the Nigeria Data Protection Commission about malicious electronic messages versus a warning from the US Mission in Nigeria regarding AI-edited passport photos for visa applications). There are no two distinct publisher domains reporting on the same central event, so the strict evidence rules for corroboration are not met.",
-    "The provided source records discuss completely different events, such as an Ogun Governor seeking an Appeal Court division, an Al-Mustapha property appeal ruling, a Lagos court case involving KC Luxury, and a separate court remanding a man accused of killing his nephew and niece. There is no central event corroborated by at least two different publisher domains."
+    "The provided source records cover distinct events (ambassador postings, low-key 66th Independence Day celebration, and the death of Bamanga Tukur) without two or more source domains corroborating the exact same central event.",
+    "The provided source records do not contain at least two different publisher domains materially corroborating the same central event. While there are multiple sources for a drop in Nigeria's inflation rate, and separate mentions of Dangote refinery, they do not constitute multiple matching sources for the exact same unique event.",
+    "blocked source content",
+    "blocked source content",
+    "The provided source records cover completely unrelated events (ECOWAS court statement, an appeal loss by Al-Mustapha, a murder case remand, and a drug conviction of a South African woman). There are no two sources that materially corroborate the same central event.",
+    "The provided source records cover completely different, unrelated stories (a murder case reported by Premium Times, a climate policy story, an ECOWAS court statement, and an Ogun governor appeal court request) with no two sources corroborating the same central event."
   ]
 }
