@@ -1,0 +1,173 @@
+{
+  "purpose": "Editorial topic map for the C. O. Eric AI Newsroom. Use these as recurring coverage areas; publish current stories only after source and safety checks.",
+  "updated": "2026-09-20",
+  "topics": [
+    {
+      "name": "World Religion",
+      "coverage": [
+        "Christianity",
+        "Islam",
+        "Judaism",
+        "Hinduism",
+        "Buddhism",
+        "Sikhism",
+        "Bahá’í",
+        "Jainism",
+        "Shinto",
+        "Taoism",
+        "interfaith relations",
+        "religious freedom",
+        "faith communities",
+        "religion and society"
+      ]
+    },
+    {
+      "name": "World Politics",
+      "coverage": [
+        "governments",
+        "elections",
+        "diplomacy",
+        "international relations",
+        "public policy",
+        "legislation",
+        "political institutions",
+        "multilateral organisations"
+      ]
+    },
+    {
+      "name": "Technology & Innovation",
+      "coverage": [
+        "AI",
+        "robotics",
+        "software",
+        "consumer technology",
+        "cybersecurity",
+        "space technology",
+        "semiconductors",
+        "biotechnology",
+        "clean technology",
+        "research breakthroughs",
+        "startups"
+      ]
+    },
+    {
+      "name": "World Business",
+      "coverage": [
+        "companies",
+        "markets",
+        "corporate news",
+        "entrepreneurship",
+        "trade",
+        "banking",
+        "finance",
+        "investment",
+        "industry"
+      ]
+    },
+    {
+      "name": "Global Economy",
+      "coverage": [
+        "inflation",
+        "interest rates",
+        "employment",
+        "GDP",
+        "currencies",
+        "commodities",
+        "global trade",
+        "debt",
+        "development",
+        "cost of living"
+      ]
+    },
+    {
+      "name": "World Conflicts & War",
+      "coverage": [
+        "armed conflicts",
+        "ceasefires",
+        "peace talks",
+        "humanitarian impact",
+        "security",
+        "defence",
+        "displacement"
+      ],
+      "editorial_note": "Use careful, sourced reporting; distinguish confirmed facts from claims and avoid graphic imagery."
+    },
+    {
+      "name": "Sports",
+      "coverage": [
+        "football",
+        "basketball",
+        "tennis",
+        "athletics",
+        "boxing",
+        "motorsport",
+        "cricket",
+        "rugby",
+        "major international competitions",
+        "women's sports"
+      ]
+    },
+    {
+      "name": "Medical Health",
+      "coverage": [
+        "public health",
+        "medicine",
+        "clinical research",
+        "vaccines",
+        "disease outbreaks",
+        "medical devices",
+        "healthcare systems",
+        "mental health",
+        "nutrition",
+        "health technology"
+      ],
+      "editorial_note": "Do not present medical claims as personal medical advice. Prefer primary research, health agencies and established medical reporting."
+    },
+    {
+      "name": "Spiritual Health",
+      "coverage": [
+        "spiritual wellbeing",
+        "faith and wellbeing",
+        "meditation",
+        "mindfulness",
+        "meaning and purpose",
+        "community support",
+        "religious approaches to wellbeing"
+      ],
+      "editorial_note": "Clearly distinguish spiritual practices, beliefs and lived experience from medically established evidence; avoid unsupported treatment claims."
+    },
+    {
+      "name": "Science & Environment",
+      "coverage": [
+        "climate",
+        "environment",
+        "energy",
+        "biology",
+        "physics",
+        "earth science",
+        "space",
+        "scientific discoveries"
+      ]
+    },
+    {
+      "name": "Gaming & Anime",
+      "coverage": [
+        "video games",
+        "game releases",
+        "esports",
+        "anime",
+        "manga",
+        "donghua",
+        "industry news"
+      ]
+    }
+  ],
+  "editorial_rules": [
+    "Prioritize recent, verifiable reporting.",
+    "Cross-check consequential claims with more than one credible source where practical.",
+    "Attribute disputed claims rather than presenting them as established facts.",
+    "Do not invent quotes, statistics, events or sources.",
+    "For health stories, separate research findings from medical advice.",
+    "For religion stories, cover multiple faith traditions respectfully and avoid treating beliefs as scientific facts."
+  ]
+}
