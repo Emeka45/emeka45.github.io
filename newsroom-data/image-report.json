@@ -1,11 +1,44 @@
 {
-  "finished_utc": "2026-09-20T18:42:10.553920+00:00",
+  "finished_utc": "2026-09-20T22:22:36.737307+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 0,
-  "attempted": 0,
+  "missing_before_run": 4,
+  "attempted": 4,
   "generated": [],
-  "source_photos": [],
+  "source_photos": [
+    {
+      "article": "2026-09-20-federal-government-suspends-nscdc-officers-arrests-more-personnel-over-niger-miners-deaths-ded6eba72d.html",
+      "image": "news/images/2026-09-20-federal-government-suspends-nscdc-officers-arrests-more-personnel-over-niger-miners-deaths-ded6eba72d-source.jpg",
+      "bytes": 76572,
+      "provider": "Original news source",
+      "source_url": "https://punchng.com/nscdc-arrests-three-more-officers-over-niger-miners-deaths/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://punchng.com/wp-content/uploads/2026/08/unnamed-27_1785658945.webp"
+    },
+    {
+      "article": "2026-09-20-federal-government-suspends-20-nscdc-officers-over-custodial-deaths-of-37-miners-in-niger--1af06490d9.html",
+      "image": "news/images/2026-09-20-federal-government-suspends-20-nscdc-officers-over-custodial-deaths-of-37-miners-in-niger--1af06490d9-source.jpg",
+      "bytes": 2065364,
+      "provider": "Original news source",
+      "source_url": "https://thereporter.com.ng/fg-suspends-20-nscdc-officers-sets-up-panel-over-37-deaths-in-custody-meta-title-fg-suspends-20-nscdc-officers-over-37-deaths-in-custody",
+      "image_url": "https://cdn.vanguardngr.com/wp-content/uploads/2024/02/image-757-e1734157984737.png"
+    },
+    {
+      "article": "2026-09-20-federal-government-suspends-20-nscdc-officers-over-37-custodial-deaths-in-niger-state-d2856e6970.html",
+      "image": "news/images/2026-09-20-federal-government-suspends-20-nscdc-officers-over-37-custodial-deaths-in-niger-state-d2856e6970-source.jpg",
+      "bytes": 2065364,
+      "provider": "Original news source",
+      "source_url": "https://thereporter.com.ng/fg-suspends-20-nscdc-officers-sets-up-panel-over-37-deaths-in-custody-meta-title-fg-suspends-20-nscdc-officers-over-37-deaths-in-custody",
+      "image_url": "https://cdn.vanguardngr.com/wp-content/uploads/2024/02/image-757-e1734157984737.png"
+    },
+    {
+      "article": "2026-09-20-federal-government-and-nscdc-take-action-officers-suspended-and-arrested-over-niger-miners-76a6422705.html",
+      "image": "news/images/2026-09-20-federal-government-and-nscdc-take-action-officers-suspended-and-arrested-over-niger-miners-76a6422705-source.jpg",
+      "bytes": 2065364,
+      "provider": "Original news source",
+      "source_url": "https://thereporter.com.ng/fg-suspends-20-nscdc-officers-sets-up-panel-over-37-deaths-in-custody-meta-title-fg-suspends-20-nscdc-officers-over-37-deaths-in-custody",
+      "image_url": "https://cdn.vanguardngr.com/wp-content/uploads/2024/02/image-757-e1734157984737.png"
+    }
+  ],
   "openverse_photos": [],
   "fallbacks": [],
   "failures": [],
