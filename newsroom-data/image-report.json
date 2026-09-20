@@ -1,20 +1,11 @@
 {
-  "finished_utc": "2026-09-20T18:06:11.113938+00:00",
+  "finished_utc": "2026-09-20T18:15:14.669042+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 1,
-  "attempted": 1,
+  "missing_before_run": 0,
+  "attempted": 0,
   "generated": [],
-  "source_photos": [
-    {
-      "article": "2026-09-20-federal-government-suspends-20-nscdc-officers-over-deaths-of-37-suspected-miners-in-niger--66831318b2.html",
-      "image": "news/images/2026-09-20-federal-government-suspends-20-nscdc-officers-over-deaths-of-37-suspected-miners-in-niger--66831318b2-source.jpg",
-      "bytes": 2065364,
-      "provider": "Original news source",
-      "source_url": "https://thereporter.com.ng/fg-suspends-20-nscdc-officers-sets-up-panel-over-37-deaths-in-custody-meta-title-fg-suspends-20-nscdc-officers-over-37-deaths-in-custody",
-      "image_url": "https://cdn.vanguardngr.com/wp-content/uploads/2024/02/image-757-e1734157984737.png"
-    }
-  ],
+  "source_photos": [],
   "openverse_photos": [],
   "fallbacks": [],
   "failures": [],
