@@ -1,28 +1,11 @@
 {
-  "finished_utc": "2026-09-20T16:01:54.946124+00:00",
+  "finished_utc": "2026-09-20T16:08:03.388735+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 2,
-  "attempted": 2,
+  "missing_before_run": 0,
+  "attempted": 0,
   "generated": [],
-  "source_photos": [
-    {
-      "article": "2026-09-20-nigeria-prepares-for-66th-independence-as-tinubu-plans-broadcast-and-assigns-unga-delegati-2e534cd561.html",
-      "image": "news/images/2026-09-20-nigeria-prepares-for-66th-independence-as-tinubu-plans-broadcast-and-assigns-unga-delegati-2e534cd561-source.jpg",
-      "bytes": 28992,
-      "provider": "Original news source",
-      "source_url": "https://thereporter.com.ng/nigerias-66th-independence-tinubu-to-address-nigerians-october-1",
-      "image_url": "https://cdn.thesun.ng/wp-content/uploads/2026/09/801786199_1343623344519597_7623966282450390772_n.jpg"
-    },
-    {
-      "article": "2026-09-20-apc-challenges-atiku-to-clarify-petrol-subsidy-proposal-as-cost-of-living-debate-intensifi-21831f5be0.html",
-      "image": "news/images/2026-09-20-apc-challenges-atiku-to-clarify-petrol-subsidy-proposal-as-cost-of-living-debate-intensifi-21831f5be0-source.jpg",
-      "bytes": 46960,
-      "provider": "Original news source",
-      "source_url": "https://punchng.com/2027-explain-how-fuel-subsidy-plan-will-work-apc-tells-atiku/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://punchng.com/wp-content/uploads/2026/06/Former-Vice-President-and-presidential-candidate-of-the-African-Democratic-Congress-Atiku-Abubakar-1000x630.webp"
-    }
-  ],
+  "source_photos": [],
   "openverse_photos": [],
   "fallbacks": [],
   "failures": [],
