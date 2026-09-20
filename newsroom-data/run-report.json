@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-19T23:24:36.028765+00:00",
-  "finished_utc": "2026-09-19T23:27:20.878692+00:00",
+  "started_utc": "2026-09-20T04:38:20.746738+00:00",
+  "finished_utc": "2026-09-20T04:40:00.337683+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -33,32 +33,31 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 637,
-  "fresh_items": 611,
+  "total_items": 638,
+  "fresh_items": 623,
   "corroborated_candidates": 20,
   "ai_attempts": 20,
-  "ai_failures": 1,
-  "held_or_rejected": 19,
-  "published_count": 0,
+  "ai_failures": 0,
+  "held_or_rejected": 18,
+  "published_count": 2,
   "rejection_reasons": [
-    "The provided source records do not contain at least two different publisher domains materially corroborating the same central event. The sources cover entirely different topics: one relates to the posting of 65 ambassadors by President Bola Tinubu (thereporter.com.ng), while the other focuses on a legal victory in Paris regarding the Mambilla project and tributes (punchng.com).",
-    "The provided source records discuss entirely different topics (President Tinubu's trip to Paris and legal victory regarding the Mambilla project, the posting of ambassadors, and Nigeria's 66th Independence anniversary address) with no single central event corroborated by at least two different publisher domains.",
-    "The provided source records discuss entirely different events and topics (President Tinubu's trip to Paris and the Mambilla project, the posting of 65 ambassadors, and Nigeria's 66th Independence Day plans). There are no two sources that materially corroborate the same central event to fulfill the strict evidence rules.",
-    "The provided source records do not contain at least two different publisher domains materially supporting the same central event. While there are multiple sources, they discuss entirely different topics (Independence Day plans, a UK art exhibition, and legal victory over the Mambilla project in Paris).",
-    "The provided source records cover completely different, unrelated events (such as an appeal regarding an Asokoro property, commentary on Nigerian youth, a request for an appeal court division in Ogun, and a court ruling on a political party's deregistration). There is no single central event corroborated by at least two different publisher domains to form a cohesive news report.",
-    "The provided source records cover completely different, unrelated events (Ogun governor appeal court request, Al-Mustapha property appeal loss, NDC deregistration reversal, and a Lagos court case involving KC Luxury). There are no two sources covering the same central event, so a corroborated news report cannot be generated.",
-    "The supplied source records cover distinct, unrelated events within the Nigerian judiciary (such as criticisms of election outcomes, a specific political party deregistration case, and a governor's request for an appeal court division). There are no two sources that materially corroborate the same central event.",
-    "The provided source records cover completely different topics, opinions, and independent news events (such as a court case regarding KC Luxury, an opinion piece on Nigeria's energy sector, an NHRC climate change policy call, and an opinion piece on rainfall as a governance test) with no two sources corroborating the same central event.",
-    "Multiple reliable sources corroborate the conviction and 25-year sentencing of a South African woman in an Abuja court for importing 5.75kg of heroin.",
-    "Multiple reputable Nigerian news sources corroborate the conviction and sentencing of a South African woman to 25 years in prison for importing 5.75kg of heroin.",
-    "The provided source records discuss completely different events and topics—such as pre-trial custody deaths in Niger State, KC Luxury in a Lagos court, FG and UNESCO career guidance, and NBA investigations into illegal mining—with no two domains corroborating the same central event.",
-    "The provided source records cover four completely different and unrelated legal stories in Nigeria (LASU Law Clinic renovation, KC Luxury custody in Lagos, Al-Mustapha's appeal loss, and the Ogun Governor seeking an Appeal Court division). There is no single central event corroborated by at least two different publisher domains.",
-    "Multiple reliable sources corroborate the sentencing of a South African woman to 25 years imprisonment in Nigeria for drug trafficking involving 5.75kg of heroin.",
-    "The provided source records cover completely different, unrelated events (HIV patient reality show ruling, KC Luxury custody in Lagos, Ogun Governor seeking an Appeal Court division, and an Appeal Court overturning a Lokoja ruling regarding NDC registration). There are no two sources that materially corroborate the same central event.",
-    "The provided source records discuss different events (Court of Appeal overturning a Lokoja ruling for the NDC registration vs. Al-Mustapha losing an appeal on an Asokoro property vs. Ogun Governor seeking an Abeokuta Appeal Court division). There are no two sources covering the exact same central event to provide the required corroboration.",
-    "Two independent sources corroborate the Court of Appeal's 2-1 decision overturning a previous ruling and restoring the registration of the National Democratic Congress (NDC).",
-    "The provided source records do not contain at least two independent publisher domains materially corroborating the same central event. Each record pertains to completely different topics (independence anniversary plans, an art exhibition in the UK, and legal/tribute matters from Paris), failing the strict evidence rules.",
-    "The provided source records do not contain at least two different publisher domains materially corroborating the same central event. The sources cover different topics or are general reference materials without a shared specific event.",
-    "The provided source records cover completely different topics (energy transition, inflation, drug trafficking court case, and power theft) with no two sources corroborating the same central event."
+    "The provided source records cover completely different stories and geographical locations (Abia State governorship consultation vs. Kwara State NDC governorship candidate statements for 2027) with no single central event corroborated by at least two different publisher domains.",
+    "The provided source records discuss completely different events and political developments (Kingsley Chinda's defection in Rivers State versus Prof. Abdulmumin Ajia's statements in Kwara State) with no two publisher domains corroborating the same central event.",
+    "The supplied source records discuss completely different political figures, states, and events (– John Okiyi Kalu discussing the PDP in Abia State versus Prof. Abdulmumin Ajia discussing the NDC in Kwara State). There are no two sources that materially corroborate the same central event.",
+    "The provided source records do not contain at least two different publisher domains materially supporting the same central event. While multiple sources mention the NDC and 2027, the punchng.com article discusses Peter Obi winning Lagos, whereas the thereporter.com.ng article discusses Seriake Dickson ruling out a presidential bid to focus on building the NDC. They cover distinct events.",
+    "The provided source records discuss entirely different political events and individuals across different states (Kwara, Abia, and Bayelsa), with no two sources corroborating the same central event.",
+    "The supplied source records discuss completely different topics (Abuja Disco and power supply, Abuja's green status, gas-to-power push, and a commentary on the First Lady and a Qur'anic champion) with no two sources corroborating the same central event.",
+    "The provided source records discuss completely different events, states, and politicians (Kwara State NDC candidate, Abia State APC consultations, and Bayelsa State PDP ticket rules), failing the strict requirement that at least two different publisher domains must materially support the same central event.",
+    "The provided source records cover completely unrelated topics (Abuja Disco MD interview, Abuja's green status, gas-to-power push, and a commentary piece) without multiple sources corroborating the same central event.",
+    "There are no multiple source records materially corroborating the same central event. The sources cover entirely different political stories (Bayelsa PDP ticket versus Kwara NDC governorship candidate Prof. Abdulmumin Ajia) across different states.",
+    "The supplied source records discuss completely unrelated events across different domains (e.g., Al-Mustapha's appeal regarding an Asokoro property, youth issues, Ogun Governor seeking an appeal court division, and an appeal court overturning a Lokoja ruling regarding NDC registration). There is no single central event corroborated by at least two different publisher domains.",
+    "The supplied source records cover completely different, unrelated events (Ogun governor seeking an appeal court division, Al-Mustapha losing a property appeal, criticisms of the judiciary regarding election winners, and a South African woman jailed for drug importation). There is no central event corroborated by at least two different publisher domains.",
+    "The provided source records discuss entirely different events, ranging from criticisms of the judiciary's role in election outcomes, calls for justice and accountability by Governor Abiodun along with a request for an Abeokuta Appeal Court Division, and an unrelated Court of Appeal ruling concerning the NDC registration. There is no single central event corroborated by at least two different publisher domains.",
+    "Multiple reputable sources corroborate the sentencing of a South African woman to 25 years imprisonment in Nigeria for importing 5.75kg of heroin.",
+    "Multiple reliable sources corroborate the sentencing of a South African woman to 25 years in prison by a court in Nigeria for importing 5.75kg of heroin.",
+    "Multiple reliable sources (Sahara Reporters, The Whistler Newspaper, Daily Post Nigeria, and Channels Television) corroborate the sentencing of a South African woman to 25 years in prison for importing heroin into Nigeria.",
+    "The provided source records discuss four completely unrelated news stories covering different legal events across Nigeria (LASU Law Clinic renovation, an appeal loss by Al-Mustapha, an appeal court division request in Ogun, and a court ruling on an HIV patient). Because there are no two sources covering the same central event, a corroborative news report cannot be generated.",
+    "Multiple reliable sources corroborate the sentencing of a South African woman to 25 years imprisonment in Nigeria for importing heroin.",
+    "The provided sources cover completely different topics and events (Mambilla power legal victory, gas-to-power industry costs, youth policy, and tourism projections) with no two sources corroborating the same central event."
   ]
 }
