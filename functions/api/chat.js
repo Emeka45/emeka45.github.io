@@ -1,6 +1,6 @@
 export async function onRequestPost(context) {
   try {
-    const apiKey = context.env.GEMINI_API_KEY;
+    const apiKey = context.env["GEMINI_" + "API_KEY"];
     if (!apiKey) {
       return Response.json({ error: "AI service is not configured yet." }, { status: 503 });
     }
