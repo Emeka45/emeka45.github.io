@@ -37,7 +37,15 @@
 <div class="wrap">
 <h2>Idlen native monetization</h2>
 <p class="intro">Idlen's current Chat SDK supports a browser script-tag integration and contextual ads for AI products. The official SDK documentation shows <code>chat-sdk.idlen.io/v1/chat-sdk.js</code>, an <code>idlenChat('init', ...)</code> flow, contextual ad requests, HTML rendering and click tracking. This is separate from the Chrome/Firefox extension.</p>
-<div class="adbox" id="idlen-ad"><strong>Idlen AI Hub sponsored recommendation</strong><br><small>Waiting for the publisher key to activate the live Idlen ad feed.</small></div>
+<div class="adbox" id="idlen-ad">
+<strong>Idlen contextual AI recommendation</strong><br>
+<small>Enter a topic below to request a contextual sponsored recommendation.</small>
+<div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+<input id="idlen-message" type="text" placeholder="e.g. I need an AI coding tool" aria-label="AI topic" style="flex:1;min-width:220px;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(0,0,0,.18);color:inherit">
+<button id="idlen-get-ad" class="btn primary" type="button">Get recommendation</button>
+</div>
+<div id="idlen-result" style="margin-top:16px"></div>
+</div>
 <div class="notice">The website can be opened in normal mobile browsers. No Chrome-extension permission or “must be Chrome” check is used by this page.</div>
 </div>
 </section>
@@ -50,26 +58,47 @@
   The public-site integration is intentionally disabled until a real idl_pk_ key is supplied.
 */
 const IDLEN_PUBLISHER_KEY = "";
-async function loadIdlenAd(){
-  const slot = document.getElementById("idlen-ad");
-  if(!IDLEN_PUBLISHER_KEY){ return; }
+const IDLEN_SESSION_ID = "ai-hub-" + (crypto.randomUUID ? crypto.randomUUID() : Date.now());
+function extractTopics(text){
+  const dictionary = ["ai","chat","coding","developer","deployment","react","typescript","javascript","android","github","cloud","software"];
+  const lower = text.toLowerCase();
+  return dictionary.filter(topic => lower.includes(topic));
+}
+async function requestIdlenAd(){
+  const message = document.getElementById("idlen-message").value.trim();
+  const result = document.getElementById("idlen-result");
+  if(!message){
+    result.innerHTML = "<small>Please enter a topic first.</small>";
+    return;
+  }
+  if(!IDLEN_PUBLISHER_KEY){
+    result.innerHTML = "<small>Add your Idlen publishable <code>idl_pk_...</code> key to activate live ads.</small>";
+    return;
+  }
   try{
     idlenChat("init", IDLEN_PUBLISHER_KEY);
     const ad = await idlenChat("getAd", {
-      sessionId: "ai-hub-" + crypto.randomUUID(),
-      context: {topics:["ai","chat","coding"],intent:"informational",category:"devtools"}
+      sessionId: IDLEN_SESSION_ID,
+      context: {
+        topics: extractTopics(message),
+        intent: "informational",
+        category: "devtools"
+      },
+      format: "chat_sponsored_recommendation"
     });
     if(ad){
-      slot.innerHTML = ad.renderHTML();
-      slot.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+      result.innerHTML = ad.renderHTML();
+      result.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
         try{idlenChat("click", ad.adId, ad.publisherId, ad.requestId);}catch(e){}
       }));
+    }else{
+      result.innerHTML = "<small>No contextual recommendation is available for this message.</small>";
     }
   }catch(e){
-    slot.innerHTML = "<strong>Idlen recommendation unavailable right now.</strong><br><small>The AI Hub itself remains fully available.</small>";
+    result.innerHTML = "<small>Idlen recommendation unavailable right now. The AI Hub remains available.</small>";
   }
 }
-window.addEventListener("load", loadIdlenAd);
+document.getElementById("idlen-get-ad").addEventListener("click", requestIdlenAd);
 </script>
 </body>
 </html>
