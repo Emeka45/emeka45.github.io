@@ -3,102 +3,67 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="C. O. Eric AI Hub — access AI tools and an Idlen-powered contextual AI monetization surface without a browser extension.">
+<meta name="description" content="C. O. Eric AI — chat with AI directly inside the website.">
 <meta name="theme-color" content="#08060f">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://emeka45-github-io.pages.dev/ai.html">
 <title>AI Hub — C. O. Eric</title>
 <style>
-:root{--bg:#08060f;--panel:#110d1c;--text:#faf8ff;--muted:#b9b2c9;--accent:#9b6cff;--accent2:#d19cff;--line:rgba(255,255,255,.10);--max:1120px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 85% -5%,rgba(124,58,237,.30),transparent 34%),linear-gradient(180deg,#08060f,#0b0812 55%,#08060f);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),92%);margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0}.brand{display:flex;align-items:center;gap:10px;font-weight:850}.mark{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent2));font-weight:950}.back{color:#d6c4ff;font-weight:750}.hero{padding:76px 0 46px}.eyebrow{display:inline-flex;padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(155,108,255,.08);color:#dfd1ff;font-size:.82rem;font-weight:700}.hero h1{font-size:clamp(3rem,8vw,6rem);line-height:.94;letter-spacing:-.065em;margin:22px 0}.gradient{background:linear-gradient(105deg,#fff 15%,#e0c5ff 52%,#a777ff 90%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:var(--muted);max-width:760px;font-size:1.1rem}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:22px 0 60px}.card{padding:25px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.018))}.icon{font-size:1.6rem;margin-bottom:14px}.card h2{font-size:1.2rem;margin:0 0 8px}.card p{color:var(--muted);margin:0 0 18px}.btn{display:inline-flex;padding:10px 15px;border-radius:12px;border:1px solid var(--line);font-weight:750}.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));border:0}.section{padding:30px 0 70px;border-top:1px solid var(--line)}.section h2{font-size:2rem;margin:0 0 8px}.intro{color:var(--muted);max-width:760px}.adbox{min-height:110px;margin-top:20px;padding:22px;border:1px dashed rgba(190,160,255,.28);border-radius:20px;background:rgba(155,108,255,.045)}.adbox small{color:#9e95ae}.notice{margin-top:18px;padding:14px 16px;border-radius:14px;background:rgba(255,255,255,.04);color:var(--muted);font-size:.9rem}.footer{padding:30px 0 50px;color:var(--muted);font-size:.88rem}@media(max-width:800px){.grid{grid-template-columns:1fr}.hero{padding-top:55px}}
+:root{--bg:#08060f;--panel:#110d1c;--text:#faf8ff;--muted:#b9b2c9;--accent:#9b6cff;--accent2:#d19cff;--line:rgba(255,255,255,.10);--max:900px}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 85% -5%,rgba(124,58,237,.30),transparent 34%),linear-gradient(180deg,#08060f,#0b0812 55%,#08060f);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6}.wrap{width:min(var(--max),92%);margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0}.brand{display:flex;align-items:center;gap:10px;font-weight:850}.mark{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent2));font-weight:950}.back{color:#d6c4ff;font-weight:750}.hero{padding:62px 0 28px}.eyebrow{display:inline-flex;padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(155,108,255,.08);color:#dfd1ff;font-size:.82rem;font-weight:700}.hero h1{font-size:clamp(3rem,8vw,6rem);line-height:.94;letter-spacing:-.065em;margin:22px 0}.gradient{background:linear-gradient(105deg,#fff 15%,#e0c5ff 52%,#a777ff 90%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:var(--muted);max-width:760px;font-size:1.08rem}.chat{margin:18px 0 70px;border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.035);overflow:hidden}.messages{min-height:360px;max-height:58vh;overflow:auto;padding:22px}.msg{display:flex;margin:0 0 16px}.bubble{max-width:86%;padding:13px 16px;border-radius:18px;white-space:pre-wrap;overflow-wrap:anywhere}.assistant .bubble{background:rgba(255,255,255,.055);border:1px solid var(--line)}.user{justify-content:flex-end}.user .bubble{background:linear-gradient(135deg,var(--accent),var(--accent2));}.composer{display:flex;gap:10px;padding:14px;border-top:1px solid var(--line);background:rgba(0,0,0,.12)}textarea{flex:1;resize:none;min-height:52px;max-height:140px;padding:13px 14px;border-radius:14px;border:1px solid var(--line);background:rgba(0,0,0,.20);color:var(--text);font:inherit;outline:none}.btn{border:0;border-radius:14px;padding:12px 18px;font-weight:800;cursor:pointer;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff}.btn:disabled{opacity:.55;cursor:not-allowed}.status{padding:0 22px 14px;color:var(--muted);font-size:.84rem}.sponsored{margin:8px 0 18px}.sponsored>div{max-width:86%}.notice{margin:0 0 50px;padding:14px 16px;border-radius:14px;background:rgba(255,255,255,.04);color:var(--muted);font-size:.88rem}.footer{padding:30px 0 50px;color:var(--muted);font-size:.88rem}@media(max-width:650px){.composer{align-items:stretch}.btn{padding:11px 14px}.bubble{max-width:94%}}
 </style>
-<!-- Official Idlen Chat SDK browser integration. It does not require a Chrome extension. -->
 <script src="https://chat-sdk.idlen.io/v1/chat-sdk.js"></script>
 </head>
 <body>
-<header class="wrap nav"><a class="brand" href="index.html"><span class="mark">U</span><span>C. O. Eric AI Hub</span></a><a class="back" href="index.html">← Home</a></header>
+<header class="wrap nav"><a class="brand" href="index.html"><span class="mark">U</span><span>C. O. Eric AI</span></a><a class="back" href="index.html">← Home</a></header>
 <main>
 <section class="wrap hero">
-<span class="eyebrow">AI HUB · WEB NATIVE</span>
-<h1>AI tools, <span class="gradient">one place.</span></h1>
-<p>Use the AI services you already know, discover developer-focused tools, and keep everything accessible from the C. O. Eric website. This page uses Idlen's official web Chat SDK integration—not the Idlen browser extension.</p>
+<span class="eyebrow">AI · BUILT INTO THE WEBSITE</span>
+<h1>Ask AI, <span class="gradient">right here.</span></h1>
+<p>Chat with AI without leaving the C. O. Eric website. Your conversation stays in this page instead of opening another AI app or browser tab.</p>
 </section>
-<section class="wrap">
-<div class="grid">
-<article class="card"><div class="icon">✦</div><h2>ChatGPT</h2><p>Open ChatGPT directly from the AI Hub.</p><a class="btn primary" href="https://chatgpt.com/" target="_blank" rel="noopener">Open ChatGPT →</a></article>
-<article class="card"><div class="icon">◈</div><h2>Gemini</h2><p>Google's AI assistant for chat, research and creation.</p><a class="btn primary" href="https://gemini.google.com/" target="_blank" rel="noopener">Open Gemini →</a></article>
-<article class="card"><div class="icon">◆</div><h2>Claude</h2><p>Anthropic's AI assistant for writing, analysis and coding.</p><a class="btn primary" href="https://claude.ai/" target="_blank" rel="noopener">Open Claude →</a></article>
-<article class="card"><div class="icon">⌘</div><h2>Microsoft Copilot</h2><p>AI assistance for everyday questions and productivity.</p><a class="btn primary" href="https://copilot.microsoft.com/" target="_blank" rel="noopener">Open Copilot →</a></article>
-<article class="card"><div class="icon">⌁</div><h2>DeepSeek</h2><p>AI chat with a strong focus on reasoning and coding.</p><a class="btn primary" href="https://chat.deepseek.com/" target="_blank" rel="noopener">Open DeepSeek →</a></article>
-<article class="card"><div class="icon">⚡</div><h2>AI coding tools</h2><p>Explore AI-first coding products supported by Idlen's ecosystem.</p><a class="btn primary" href="https://www.idlen.io/integrations/" target="_blank" rel="noopener">Explore integrations →</a></article>
+<section class="wrap chat" aria-label="AI chat">
+<div id="messages" class="messages">
+<div class="msg assistant"><div class="bubble">Hello! I'm your C. O. Eric AI assistant. Ask me anything to get started.</div></div>
 </div>
+<div id="status" class="status" aria-live="polite"></div>
+<form id="composer" class="composer">
+<textarea id="prompt" placeholder="Ask anything…" aria-label="Message" rows="1"></textarea>
+<button id="send" class="btn" type="submit">Send</button>
+</form>
 </section>
-<section class="section">
-<div class="wrap">
-<h2>Idlen native monetization</h2>
-<p class="intro">Idlen's current Chat SDK supports a browser script-tag integration and contextual ads for AI products. The official SDK documentation shows <code>chat-sdk.idlen.io/v1/chat-sdk.js</code>, an <code>idlenChat('init', ...)</code> flow, contextual ad requests, HTML rendering and click tracking. This is separate from the Chrome/Firefox extension.</p>
-<div class="adbox" id="idlen-ad">
-<strong>Idlen contextual AI recommendation</strong><br>
-<small>Enter a topic below to request a contextual sponsored recommendation.</small>
-<div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
-<input id="idlen-message" type="text" placeholder="e.g. I need an AI coding tool" aria-label="AI topic" style="flex:1;min-width:220px;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(0,0,0,.18);color:inherit">
-<button id="idlen-get-ad" class="btn primary" type="button">Get recommendation</button>
-</div>
-<div id="idlen-result" style="margin-top:16px"></div>
-</div>
-<div class="notice">The website can be opened in normal mobile browsers. No Chrome-extension permission or “must be Chrome” check is used by this page.</div>
-</div>
-</section>
+<section class="wrap notice">AI responses are generated through the site's AI service. Sponsored recommendations may appear separately beneath an AI response.</section>
 </main>
 <footer class="wrap footer">© 2026 C. O. Eric · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></footer>
 <script>
-/*
-  Official Idlen Chat SDK browser integration.
-  The Idlen publisher key is configured for the public-site contextual ad integration.
-  This uses the publishable idl_pk_ key only; secret keys must remain server-side.
-*/
-const IDLEN_PUBLISHER_KEY = "idl_pk_f0b2a39d0366f52b0809a205aaf5df45577ebc0986e3c6f6b0126f8cf0037911";
-const IDLEN_SESSION_ID = "ai-hub-" + (crypto.randomUUID ? crypto.randomUUID() : Date.now());
-function extractTopics(text){
-  const dictionary = ["ai","chat","coding","developer","deployment","react","typescript","javascript","android","github","cloud","software"];
-  const lower = text.toLowerCase();
-  return dictionary.filter(topic => lower.includes(topic));
+const messagesEl=document.getElementById("messages"),promptEl=document.getElementById("prompt"),sendEl=document.getElementById("send"),statusEl=document.getElementById("status");
+const history=[];
+const IDLEN_PUBLISHER_KEY="idl_pk_f0b2a39d0366f52b0809a205aaf5df45577ebc0986e3c6f6b0126f8cf0037911";
+const sessionId="ai-site-"+(crypto.randomUUID?crypto.randomUUID():Date.now());
+function addMessage(role,text){const row=document.createElement("div");row.className="msg "+role;const b=document.createElement("div");b.className="bubble";b.textContent=text;row.appendChild(b);messagesEl.appendChild(row);messagesEl.scrollTop=messagesEl.scrollHeight;return b}
+async function showIdlen(text){
+ try{
+  if(!IDLEN_PUBLISHER_KEY||typeof idlenChat!=="function")return;
+  idlenChat("init",IDLEN_PUBLISHER_KEY);
+  const ad=await idlenChat("getAd",{sessionId,context:{rawText:text,intent:"informational",category:"ai_chat"},format:"chat_sponsored_recommendation"});
+  if(!ad)return;
+  const row=document.createElement("div");row.className="msg sponsored";
+  const box=document.createElement("div");box.innerHTML=ad.renderHTML();row.appendChild(box);messagesEl.appendChild(row);
+  box.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{try{idlenChat("click",ad.adId,ad.publisherId,ad.requestId)}catch(e){}}));
+  messagesEl.scrollTop=messagesEl.scrollHeight;
+ }catch(e){}
 }
-async function requestIdlenAd(){
-  const message = document.getElementById("idlen-message").value.trim();
-  const result = document.getElementById("idlen-result");
-  if(!message){
-    result.innerHTML = "<small>Please enter a topic first.</small>";
-    return;
-  }
-  if(!IDLEN_PUBLISHER_KEY){
-    result.innerHTML = "<small>Add your Idlen publishable <code>idl_pk_...</code> key to activate live ads.</small>";
-    return;
-  }
-  try{
-    idlenChat("init", IDLEN_PUBLISHER_KEY);
-    const ad = await idlenChat("getAd", {
-      sessionId: IDLEN_SESSION_ID,
-      context: {
-        topics: extractTopics(message),
-        intent: "informational",
-        category: "devtools"
-      },
-      format: "chat_sponsored_recommendation"
-    });
-    if(ad){
-      result.innerHTML = ad.renderHTML();
-      result.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
-        try{idlenChat("click", ad.adId, ad.publisherId, ad.requestId);}catch(e){}
-      }));
-    }else{
-      result.innerHTML = "<small>No contextual recommendation is available for this message.</small>";
-    }
-  }catch(e){
-    result.innerHTML = "<small>Idlen recommendation unavailable right now. The AI Hub remains available.</small>";
-  }
+async function sendMessage(){
+ const text=promptEl.value.trim();if(!text)return;
+ addMessage("user",text);history.push({role:"user",text});promptEl.value="";sendEl.disabled=true;statusEl.textContent="Thinking…";
+ try{
+  const r=await fetch("/api/chat",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({messages:history.slice(-12)})});
+  const data=await r.json();if(!r.ok)throw new Error(data.error||"AI service unavailable");
+  addMessage("assistant",data.text);history.push({role:"assistant",text:data.text});statusEl.textContent="";await showIdlen(data.text);
+ }catch(e){addMessage("assistant","I couldn't reach the AI service right now. Please try again in a moment.");statusEl.textContent="";}
+ finally{sendEl.disabled=false;promptEl.focus()}
 }
-document.getElementById("idlen-get-ad").addEventListener("click", requestIdlenAd);
+document.getElementById("composer").addEventListener("submit",e=>{e.preventDefault();sendMessage()});
+promptEl.addEventListener("keydown",e=>{if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();sendMessage()}});
 </script>
-</body>
-</html>
+</body></html>
