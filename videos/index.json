@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-09-21T16:27:40.903529+00:00",
+  "updated_at": "2026-09-21T17:00:57.861819+00:00",
   "videos": [
+    {
+      "video_id": "HlR1ejxE7wg",
+      "title": "Other Mommy | Other Mommy Is...",
+      "category": "Movies & TV",
+      "channel": "Universal Pictures",
+      "channel_id": "UCq0OueAsdxH6b8nyAspwViw",
+      "channel_url": "https://www.youtube.com/channel/UCq0OueAsdxH6b8nyAspwViw",
+      "url": "https://www.youtube.com/watch?v=HlR1ejxE7wg",
+      "embed_url": "https://www.youtube-nocookie.com/embed/HlR1ejxE7wg",
+      "thumbnail": "https://i.ytimg.com/vi/HlR1ejxE7wg/hqdefault.jpg",
+      "published_at": "2026-09-21T16:34:00+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Universal Pictures — Other Mommy | Other Mommy Is.... Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-09-21T17:00:56.797709+00:00"
+    },
     {
       "video_id": "rb36KAQXIqw",
       "title": "Who Is Martin Mull? | Official Trailer | Netflix",
@@ -1544,22 +1560,6 @@
       "is_short": true,
       "description": "Watch the Electronic Arts gaming video featuring a question and answer session for the Madden Championship Series.",
       "published_by_pipeline_at": "2026-09-18T18:47:30.365450+00:00"
-    },
-    {
-      "video_id": "eT5Ecm99O5Y",
-      "title": "Battlefield 6: Official Launch Live Action Trailer",
-      "category": "Gaming",
-      "channel": "Electronic Arts",
-      "channel_id": "UCIHBybdoneVVpaQK7xMz1ww",
-      "channel_url": "https://www.youtube.com/channel/UCIHBybdoneVVpaQK7xMz1ww",
-      "url": "https://www.youtube.com/watch?v=eT5Ecm99O5Y",
-      "embed_url": "https://www.youtube-nocookie.com/embed/eT5Ecm99O5Y",
-      "thumbnail": "https://i.ytimg.com/vi/eT5Ecm99O5Y/hqdefault.jpg",
-      "published_at": "2025-09-28T15:02:06+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Electronic Arts presents a gaming video featuring the official launch live action trailer for Battlefield 6, showcasing content directly related to the title.",
-      "published_by_pipeline_at": "2026-09-18T18:28:50.382247+00:00"
     }
   ]
 }
