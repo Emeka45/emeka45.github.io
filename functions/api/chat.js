@@ -1,6 +1,7 @@
 export async function onRequestPost(context) {
   try {
     const body = await context.request.json();
+    // Production AI endpoint: secrets are read only from Cloudflare Pages Function bindings.
     const provider = ["coeric","gemini","openai","anthropic","deepseek"].includes(body.provider) ? body.provider : "coeric";
     const messages = Array.isArray(body.messages) ? body.messages.slice(-12) : [];
     const clean = messages.filter(m => m && (m.role === "user" || m.role === "assistant") && typeof m.text === "string").map(m => ({role:m.role,text:m.text.slice(0,6000)}));
@@ -51,6 +52,7 @@ export async function onRequestPost(context) {
       return Response.json({text,provider:"DeepSeek"});
     }
   } catch (error) {
-    return Response.json({error:"Unable to reach the selected AI service."},{status:500});
+    const detail = error instanceof Error ? error.message : "Unknown server error";
+    return Response.json({error:"Unable to reach the selected AI service.",detail},{status:500});
   }
 }
