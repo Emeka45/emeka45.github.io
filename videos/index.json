@@ -1,6 +1,38 @@
 {
-  "updated_at": "2026-09-21T15:22:19.805987+00:00",
+  "updated_at": "2026-09-21T16:27:40.903529+00:00",
   "videos": [
+    {
+      "video_id": "rb36KAQXIqw",
+      "title": "Who Is Martin Mull? | Official Trailer | Netflix",
+      "category": "Movies & TV",
+      "channel": "Netflix",
+      "channel_id": "UCWOA1ZGywLbqmigxE4Qlvuw",
+      "channel_url": "https://www.youtube.com/channel/UCWOA1ZGywLbqmigxE4Qlvuw",
+      "url": "https://www.youtube.com/watch?v=rb36KAQXIqw",
+      "embed_url": "https://www.youtube-nocookie.com/embed/rb36KAQXIqw",
+      "thumbnail": "https://i.ytimg.com/vi/rb36KAQXIqw/hqdefault.jpg",
+      "published_at": "2026-09-21T16:00:00+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Netflix — Who Is Martin Mull? | Official Trailer | Netflix. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-09-21T16:26:15.854513+00:00"
+    },
+    {
+      "video_id": "CgJzTVnNxn4",
+      "title": "Repost Tom Cruise | We had so much fun creating DIGGER together with Iñárritu.",
+      "category": "Movies & TV",
+      "channel": "Warner Bros. Pictures",
+      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
+      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
+      "url": "https://www.youtube.com/shorts/CgJzTVnNxn4",
+      "embed_url": "https://www.youtube-nocookie.com/embed/CgJzTVnNxn4",
+      "thumbnail": "https://i.ytimg.com/vi/CgJzTVnNxn4/hqdefault.jpg",
+      "published_at": "2026-09-21T15:12:05+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Warner Bros. Pictures — Repost Tom Cruise | We had so much fun creating DIGGER together with Iñárritu.. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-09-21T16:27:40.903437+00:00"
+    },
     {
       "video_id": "EMnKyoOEGS0",
       "title": "Trails in the Sky 2nd Chapter – Launch Trailer – Nintendo Switch 2",
@@ -1528,38 +1560,6 @@
       "is_short": false,
       "description": "Electronic Arts presents a gaming video featuring the official launch live action trailer for Battlefield 6, showcasing content directly related to the title.",
       "published_by_pipeline_at": "2026-09-18T18:28:50.382247+00:00"
-    },
-    {
-      "video_id": "mJsTj-iZFjE",
-      "title": "Split Fiction | Almost Forgot this was the whole point",
-      "category": "Gaming",
-      "channel": "Electronic Arts",
-      "channel_id": "UCIHBybdoneVVpaQK7xMz1ww",
-      "channel_url": "https://www.youtube.com/channel/UCIHBybdoneVVpaQK7xMz1ww",
-      "url": "https://www.youtube.com/shorts/mJsTj-iZFjE",
-      "embed_url": "https://www.youtube-nocookie.com/embed/mJsTj-iZFjE",
-      "thumbnail": "https://i.ytimg.com/vi/mJsTj-iZFjE/hqdefault.jpg",
-      "published_at": "2025-07-10T17:01:08+00:00",
-      "source": "YouTube channel feed",
-      "is_short": true,
-      "description": "In this gaming video by Electronic Arts titled Split Fiction, the channel explores how they almost forgot this was the whole point.",
-      "published_by_pipeline_at": "2026-09-18T18:47:30.944639+00:00"
-    },
-    {
-      "video_id": "rgGkgrNvIUc",
-      "title": "Play Split Fiction on Nintendo Switch 2!",
-      "category": "Gaming",
-      "channel": "Electronic Arts",
-      "channel_id": "UCIHBybdoneVVpaQK7xMz1ww",
-      "channel_url": "https://www.youtube.com/channel/UCIHBybdoneVVpaQK7xMz1ww",
-      "url": "https://www.youtube.com/watch?v=rgGkgrNvIUc",
-      "embed_url": "https://www.youtube-nocookie.com/embed/rgGkgrNvIUc",
-      "thumbnail": "https://i.ytimg.com/vi/rgGkgrNvIUc/hqdefault.jpg",
-      "published_at": "2025-06-05T16:01:17+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Electronic Arts — Play Split Fiction on Nintendo Switch 2!. Watch the original video on YouTube.",
-      "published_by_pipeline_at": "2026-09-18T18:29:00.433681+00:00"
     }
   ]
 }
