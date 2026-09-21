@@ -1,6 +1,7 @@
 name: C. O. Eric AI Newsroom
 
 # Verified newsroom + automatic Video Hub pipeline.
+# Manual build trigger: 2026-09-21
 on:
   push:
     paths:
