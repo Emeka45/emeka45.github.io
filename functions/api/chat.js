@@ -11,9 +11,14 @@ export async function onRequestPost(context) {
     if (provider === "coeric" || provider === "gemini") {
       const key = context.env["GEMINI_"+"API_KEY"];
       if (!key) return Response.json({error:"Gemini AI is not configured yet."},{status:503});
-      const response = await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent",{method:"POST",headers:{"Content-Type":"application/json","x-goog-api-key":key},body:JSON.stringify({systemInstruction:{parts:[{text:systemText}]},contents:clean.map(m=>({role:m.role==="assistant"?"model":"user",parts:[{text:m.text}]}))})});
-      const data=await response.json();
-      if(!response.ok)return Response.json({error:data?.error?.message||"Gemini returned an error."},{status:502});
+      const payload={systemInstruction:{parts:[{text:systemText}]},contents:clean.map(m=>({role:m.role==="assistant"?"model":"user",parts:[{text:m.text}]}))};
+      let response=await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent",{method:"POST",headers:{"Content-Type":"application/json","x-goog-api-key":key},body:JSON.stringify(payload)});
+      let data=await response.json();
+      if(!response.ok && (response.status===429 || response.status===503)) {
+        response=await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-3.7-flash:generateContent",{method:"POST",headers:{"Content-Type":"application/json","x-goog-api-key":key},body:JSON.stringify(payload)});
+        data=await response.json();
+      }
+      if(!response.ok)return Response.json({error:data?.error?.message||"Gemini is temporarily busy. Please try again."},{status:502});
       const text=data?.candidates?.[0]?.content?.parts?.map(p=>p.text||"").join("").trim();
       if(!text)return Response.json({error:"Gemini returned no text."},{status:502});
       return Response.json({text,provider:provider==="coeric"?"C. O. Eric AI":"Gemini"});
