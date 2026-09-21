@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-21T03:54:30.207820+00:00",
-  "finished_utc": "2026-09-21T03:59:51.967136+00:00",
+  "started_utc": "2026-09-21T04:18:09.450719+00:00",
+  "finished_utc": "2026-09-21T04:37:23.494789+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 404: Not Found"
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -33,29 +33,12 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 636,
-  "fresh_items": 617,
+  "total_items": 637,
+  "fresh_items": 618,
   "corroborated_candidates": 20,
   "ai_attempts": 20,
-  "ai_failures": 4,
-  "held_or_rejected": 16,
+  "ai_failures": 20,
+  "held_or_rejected": 0,
   "published_count": 0,
-  "rejection_reasons": [
-    "The provided source records do not contain at least two different publisher domains corroborating the same central event. The sources cover entirely unrelated topics (AdvoKC Foundation pressing President Tinubu on the Federal Audit Service Bill versus President Tinubu addressing Nigerians for the 66th Independence Anniversary).",
-    "The provided source records cover completely different gaming topics without two or more sources corroborating the same central event, making a synthesized news report impossible.",
-    "The provided source records do not contain at least two different publisher domains materially supporting the same central event. The Punch article discusses the Federal Audit Service Bill, while The Reporter articles discuss Nigeria's 66th Independence Anniversary address by President Tinubu. Therefore, the strict evidence rules for cross-corroboration are not met.",
-    "The supplied source records discuss four completely unrelated topics in Nigerian law and justice (ECOWAS Court, an appeal by Al-Mustapha, judicial reforms for 2027, and the revamp of the LASU Law Clinic). Because there are no two sources that materially corroborate the same central event, a reliable, evidence-based news report cannot be produced.",
-    "The provided source records cover completely unrelated events and do not share at least two publisher domains materially supporting the same central event.",
-    "Multiple reputable sources (TheCable, TVC News, THISDAYLIVE) materially corroborate the Court of Appeal's judgment regarding the National Democratic Congress (NDC) deregistration case.",
-    "The supplied source records discuss completely different events and legal stories across Nigeria, ranging from a university law clinic revamp, an appellate court property ruling, an ECOWAS court statement, and a gubernatorial request for an Appeal Court division. There are no two sources covering the same central event, so a detailed corroborative news report cannot be generated.",
-    "Multiple reputable news sources corroborate the conviction and 25-year sentencing of a South African woman for importing heroin into Nigeria.",
-    "The source records from TVC News and TheCable materially corroborate the same central event: the Court of Appeal's judgment regarding the deregistration of the NDC political party.",
-    "The provided sources discuss completely different events and statements by different governors (Ogun State Governor Abiodun and Bayelsa State Governor Diri) in different contexts, lacking two different publisher domains corroborating the same central event.",
-    "The source records refer to multiple different legal cases (such as the NDC deregistration case covered by TVC News, THISDAYLIVE, and TheCable, versus an unrelated property case involving Al-Mustapha covered by Independent Newspaper Nigeria). While three sources corroborate the NDC appellate court decision, the instructions state that multiple publisher domains must materially support the same central event, but here we do not have an independent multi-source verification meeting all criteria for a standalone substantial story beyond the raw headlines without more uniform underlying text. Waiting for richer source data.",
-    "The provided source records discuss four completely unrelated news events across different domains and topics in Nigeria (an HIV patient court ruling, the ECOWAS Court, an Appeal Court division in Ogun, and an Al-Mustapha property appeal). There are no two sources covering the same central event, so a corroborated news report cannot be produced.",
-    "Two independent sources report on the projection that Nigeria's tourism sector could reach $100 billion by 2030, supported by the Federal Government and tourism associations leveraging cultural diversity.",
-    "The provided source records cover distinct topics (gas-to-power industry push, Abuja industrial cluster power target, a firm investing $5m on a mini-grid, and inflation slowing down). There are no two different sources that materially corroborate the same central event.",
-    "The provided source records cover completely different topics and events without any two publisher domains corroborating the same central event, violating the strict evidence rules.",
-    "The supplied source records discuss completely different topics (power/industrial future, climate policy and human rights, electric vehicles, and Abuja's green status) with no two sources corroborating the same central event."
-  ]
+  "rejection_reasons": []
 }
