@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-21T16:30:34.645975+00:00",
-  "finished_utc": "2026-09-21T16:48:11.392094+00:00",
+  "started_utc": "2026-09-21T18:21:42.761208+00:00",
+  "finished_utc": "2026-09-21T18:39:34.366990+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
@@ -37,12 +37,11 @@
   "fresh_items": 620,
   "corroborated_candidates": 20,
   "ai_attempts": 20,
-  "ai_failures": 17,
-  "held_or_rejected": 3,
+  "ai_failures": 18,
+  "held_or_rejected": 2,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided sources do not contain at least two different publisher domains materially corroborating the same central event. The Punch articles cover Wike's defense of a rainbow coalition and President Tinubu's 2027 re-election, while The Reporter article focuses on Wike mocking the opposition regarding primary election crises.",
-    "The provided sources cover completely different stories and events (Udengs Eradiri defending the Tompolo security contract, President Tinubu celebrating Chief Samuel Falae at 88, and Nyesom Wike discussing the rainbow coalition and the 2027 election). There are no two independent sources corroborating the same central event.",
-    "The provided sources discuss completely different topics and do not corroborate the same central event. While two sources mention a 'Rainbow Coalition' or President Tinubu's 2027 re-election, they do not describe the same specific event or mutual occurrence, failing the strict evidence rules for cross-publisher corroboration."
+    "The provided source records cover distinct events involving President Bola Ahmed Tinubu—such as ambassadorial postings, a European vacation extension, and warnings to the police regarding the 2027 elections—without any single central event corroborated by at least two different publisher domains.",
+    "The provided source records cover completely different events and lack the necessary cross-domain corroboration for a single central event. One source discusses an alleged appointment of AIG Tunji Disu as IGP, while the other sources discuss President Tinubu warning the police against partisan conduct ahead of 2027."
   ]
 }
