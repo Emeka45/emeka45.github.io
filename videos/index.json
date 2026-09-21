@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-09-21T18:52:27.224314+00:00",
+  "updated_at": "2026-09-21T19:23:55.396365+00:00",
   "videos": [
+    {
+      "video_id": "62u0ZbE5MiE",
+      "title": "Get out of here, summer | 🎬 Back to the Future Franchise",
+      "category": "Movies & TV",
+      "channel": "Universal Pictures",
+      "channel_id": "UCq0OueAsdxH6b8nyAspwViw",
+      "channel_url": "https://www.youtube.com/channel/UCq0OueAsdxH6b8nyAspwViw",
+      "url": "https://www.youtube.com/shorts/62u0ZbE5MiE",
+      "embed_url": "https://www.youtube-nocookie.com/embed/62u0ZbE5MiE",
+      "thumbnail": "https://i.ytimg.com/vi/62u0ZbE5MiE/hqdefault.jpg",
+      "published_at": "2026-09-21T19:00:39+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Universal Pictures — Get out of here, summer | 🎬 Back to the Future Franchise. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-09-21T19:23:55.149002+00:00"
+    },
     {
       "video_id": "Mq813IDwLYY",
       "title": "Forgotten Island | Behind The Music",
@@ -1544,22 +1560,6 @@
       "is_short": false,
       "description": "Toei Animation shares the fifth teaser PV for the anime titled \"楽園追放 心のレゾナンス,\" scheduled for release on November 13.",
       "published_by_pipeline_at": "2026-09-18T18:29:00.086673+00:00"
-    },
-    {
-      "video_id": "l_yujzqjp0M",
-      "title": "MAPPA 15th Anniversary Movie｜PEOPLE 1「生活」",
-      "category": "Anime",
-      "channel": "MAPPA",
-      "channel_id": "UCjfAEJZdfbIjVHdo5yODfyQ",
-      "channel_url": "https://www.youtube.com/channel/UCjfAEJZdfbIjVHdo5yODfyQ",
-      "url": "https://www.youtube.com/watch?v=l_yujzqjp0M",
-      "embed_url": "https://www.youtube-nocookie.com/embed/l_yujzqjp0M",
-      "thumbnail": "https://i.ytimg.com/vi/l_yujzqjp0M/hqdefault.jpg",
-      "published_at": "2026-06-19T12:49:48+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "MAPPA — MAPPA 15th Anniversary Movie｜PEOPLE 1「生活」. Watch the original video on YouTube.",
-      "published_by_pipeline_at": "2026-09-18T18:29:00.196819+00:00"
     }
   ]
 }

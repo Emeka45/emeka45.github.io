@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-21T18:21:42.761208+00:00",
-  "finished_utc": "2026-09-21T18:39:34.366990+00:00",
+  "started_utc": "2026-09-21T18:53:41.346822+00:00",
+  "finished_utc": "2026-09-21T19:11:09.562636+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
@@ -33,15 +33,16 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 641,
-  "fresh_items": 620,
+  "total_items": 642,
+  "fresh_items": 621,
   "corroborated_candidates": 20,
   "ai_attempts": 20,
-  "ai_failures": 18,
-  "held_or_rejected": 2,
+  "ai_failures": 17,
+  "held_or_rejected": 3,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided source records cover distinct events involving President Bola Ahmed Tinubu—such as ambassadorial postings, a European vacation extension, and warnings to the police regarding the 2027 elections—without any single central event corroborated by at least two different publisher domains.",
-    "The provided source records cover completely different events and lack the necessary cross-domain corroboration for a single central event. One source discusses an alleged appointment of AIG Tunji Disu as IGP, while the other sources discuss President Tinubu warning the police against partisan conduct ahead of 2027."
+    "The provided source records cover completely different stories and events (one about Eric Opah in Abia State and another about Governor Seyi Makinde in Oyo State). There are no two distinct publisher domains corroborating the same central event.",
+    "The provided source records do not contain at least two different publisher domains materially corroborating the same central event. Each news item covers a completely different topic (police warning, IGP change, IPCR peace call, and ambassador postings).",
+    "The provided source records discuss four completely unrelated events: the revamping of the LASU Law Clinic, a statement by the ECOWAS Court President, an appeal loss by Al-Mustapha regarding an Asokoro property, and the conviction of a South African woman for drug trafficking. There are no two sources covering the same central event."
   ]
 }
