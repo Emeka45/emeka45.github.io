@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-21T11:21:45.573160+00:00",
-  "finished_utc": "2026-09-21T11:23:24.894614+00:00",
+  "started_utc": "2026-09-21T11:27:58.923909+00:00",
+  "finished_utc": "2026-09-21T11:29:54.338441+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 404: Not Found"
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -33,31 +33,33 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 638,
-  "fresh_items": 618,
+  "total_items": 637,
+  "fresh_items": 613,
   "corroborated_candidates": 20,
   "ai_attempts": 20,
   "ai_failures": 0,
-  "held_or_rejected": 18,
-  "published_count": 2,
+  "held_or_rejected": 20,
+  "published_count": 0,
   "rejection_reasons": [
-    "The provided sources do not contain at least two different publisher domains materially supporting the same central event. The Punch source is duplicated, and the Reporter source covers an entirely different topic (Abia politics).",
-    "The provided source records discuss completely different events in different states (an army rescue of a lieutenant colonel in Enugu versus troops rescuing kidnapped victims and arresting Lakurawa members in Sokoto). There are no two publisher domains corroborating the same central event, violating the strict evidence rules.",
-    "Only one distinct story source is available for the Sokoto military operation, and the other source covers a completely different regional security initiative in Ogun, Oyo, and Lagos. There are not two different publisher domains corroborating the same central event.",
-    "The provided source records discuss different video game reviews and a television streaming article without sufficient overlapping corroboration of a single central news event across multiple independent domains.",
-    "The provided sources cover completely different events (one about the 2026 Isese Day declaration in Lagos and another about a flood evacuation order). There are no two publisher domains corroborating the same central event.",
-    "The provided source records cover completely different, unrelated events (ECOWAS court role, an Al-Mustapha court appeal in Asokoro, judicial reforms for 2027, and a South African woman jailed for drug trafficking). There is no single central event corroborated by at least two different publisher domains.",
-    "The provided source records cover completely different topics, ranging from an appeal regarding an Asokoro property in Independent Newspaper Nigeria, a commentary on Nigerian youths in The Nation Newspaper, a governor seeking an Appeal Court division in Ogun State via Voice of Nigeria, and an ECOWAS Court training announcement. There are no two sources that materially corroborate the same central event.",
-    "The provided source records discuss entirely different events involving the Nigerian judiciary (such as criticisms of election outcomes, a governor requesting an appeal court division, and a specific property appeal ruling). There is no single central event corroborated by at least two different publisher domains.",
-    "Multiple reputable news sources corroborate the sentencing of a South African woman to 25 years in prison for trafficking 5.75kg of heroin into Nigeria.",
-    "The provided source records do not contain at least two different publisher domains materially supporting the same central event. Only one source addresses the specific incident regarding the suspension of NSCDC officers over custody deaths in Niger State, while the other sources cover entirely different topics such as judicial accountability, career guidance, and general pre-trial custody commentary.",
-    "The provided sources cover completely different topics involving Ogun State Governor Dapo Abiodun (such as the judiciary budget, a lawyer's statement about standing surety for Sunday Igboho, and judicial tasks), failing to provide two or more domain sources that materially corroborate the same central event.",
-    "Multiple reputable sources (The Whistler, Daily Post, Channels Television, Vanguard) corroborate the sentencing of a South African woman to 25 years imprisonment for heroin trafficking into Nigeria.",
-    "The provided sources cover four completely unrelated events:\n1. The revamp of the LASU Law Clinic in honour of retired Supreme Court judge Oguntade (<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxQdEk1UERhWmR6a1EzUE5oOFdDS2JjVDNGbkpCTXl3SF9QZTg2Z1dQZ1dFQTB1X2JMWDdoSk9uQlVoazNvSkdsUEZuQnNOLXlNUkpCdWhPVk9FX1VSXzJWY0ROY2h5UThWYXhWSm9PUzNTZkFwN2t4V2pNbjlCcjM3aXFWZDRYdlZNbXRIdzd3TGw?oc=5\">The Sun Nigeria</a>).\n2. ECOWAS Court training journalists on court reporting (<a href=\"https://news.google.com/rss/articles/CBMifEFVX3lxTE42ODZ6Qlhya0NvYVF3bXlwbEdibC1LSGZKQy1OaVRtdTJ2VFNPdWRKZVVqeTVXdEl1VlBDOE9ZdDhPOHRVSjJtcjM4TzVWMk5UNWJfV0lYWk5QUnJGbGU3VVUydmhmd3RSQjVUeHhMNnJRYXBBa253YWsxSmo?oc=5\">Voice of Nigeria</a>).\n3. Al-Mustapha losing an appeal on an Asokoro property at the Court of Appeal (<a href=\"https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTEVROS1BTVJEdlVkNlM2MXp5RUdqNmpLYXZfTnZwV1UtYmU1Qk8wZDFOM0g1ajJySDg4WTFUNF9EYmp0UGtQaW1FTjc5TllqdkFZN3RCZXotRENnUHdHY3o1VkNDWG5jZFA5SFNCdHJPT1c0XzFyd241RllzMXczRkFjdWRVaXVheVZRNVNHUFc0X0tBclYxY25GOFd0TV83ejU3Nk5ZSHlUUktpa29YSWtyc0oyTENhZnBjYjFtLVpWcjA?oc=5\">Independent Newspaper Nigeria</a>).\n4. ECOWAS Court reaffirming its role as a principal judicial organ (<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxOS195N0lhLXdtanBERVhBLUtHOFF1NDFBWEZ3ZlpxdTBWcGZ2MTVnYXRfejgySzRqMVFsSTlDM29tNlhLb3NIYlVmTmdhdk1QTEZQVlM3Mnh6TG82WTdiUzFrN0FCN0pPVDItUFpTa3d1U1MzWEZVejM5YW1VTjBkOQ?oc=5\">Voice of Nigeria</a>).\n\nBecause there are not at least two different publisher domains materially supporting the same central event, a combined news report cannot be generated under the strict evidence rules.",
-    "Multiple reliable sources corroborate the sentencing of a South African woman to 25 years in prison for importing 5.75kg of heroin into Nigeria.",
-    "The source records provide matching coverage regarding Ogun State Governor Dapo Abiodun acting as a surety for activist Sunday Igboho's return to Nigeria.",
-    "The provided source records cover completely different topics and events, such as Ogun State Governor Abiodun's comments and budget for the judiciary, Bayelsa State Governor Diri's statements on Nigeria's democracy, and various figures criticizing the judiciary over election outcomes. There are no two sources materially corroborating the same central event.",
-    "The provided source records discuss four completely unrelated stories: an ECOWAS court training, a court appeal by Al-Mustapha regarding an Asokoro property, the sentencing of a South African woman for drug trafficking, and the revamp of the LASU Law Clinic. Because there are no two sources corroborating the same central event, a news report cannot be generated under the strict evidence rules.",
-    "The provided source records cover completely different, unrelated events (such as a court ruling on an HIV patient and a reality show, ECOWAS court news, and an appeal court division request in Ogun State) with no two sources corroborating the same central event."
+    "The provided source records do not contain at least two different publisher domains materially supporting the same central event. The Punch articles cover the death of former Kogi State Governor Ibrahim Idris and Murtala Ajaka's reaction, while the Reporter article covers an unrelated political consultation in Abia State by Eric Opah.",
+    "The provided source records discuss completely different events in different locations (– an army rescue operation in Enugu involving a lieutenant colonel, and joint task force operations in Sokoto involving 23 rescued victims and suspected Lakurawa terrorists). There are no two sources that corroborate the same central event.",
+    "There are not at least two different publisher domains that materially support the same central event. Only one distinct news event ('Soldiers rescue 23 kidnapped victims... in Sokoto') has a valid source domain (punchng.com), while the other source covers an entirely different regional security initiative in Ogun, Oyo, and Lagos.",
+    "The provided sources discuss different video games and articles (“Silent Hill: Townfall” vs “Silent Hill f” vs an unrelated TV streaming article), and fail to provide at least two different publisher domains materially supporting the exact same central event or release.",
+    "The provided source records cover completely different independent events (the 2026 Isese Day declaration in Lagos by The Reporter versus the flood evacuation order by Punch). There are not at least two different publisher domains materially supporting the same central event.",
+    "The provided source records cover completely different, unrelated events (an ECOWAS court role reaffirmation, an appeal loss regarding an Asokoro property, judicial reform demands for 2027, and a South African woman jailed for heroin importation). There are no two sources that materially corroborate the same central event.",
+    "The provided source records cover completely different and unrelated stories (Al-Mustapha's appeal, Nigerian youth commentary, Ogun State governor seeking an Appeal Court division, and an ECOWAS Court training for journalists). There is no single central event corroborated by at least two different publisher domains.",
+    "The provided sources cover entirely different stories (judiciary criticisms, Ogun State governor's appeal, Al-Mustapha's court case) without at least two publisher domains materially corroborating the same central event.",
+    "Multiple reputable news sources corroborate the sentencing of a South African woman to 25 years imprisonment in Nigeria for drug trafficking involving 5.75kg of heroin.",
+    "The provided source records cover distinct, unrelated stories (pre-trial custody commentary, judiciary remarks in Ogun, FG-UNESCO career guidance, and an NSCDC suspension in Niger State). There are no overlapping events corroborated by at least two different publisher domains to form a detailed, original news report.",
+    "The provided source records discuss different events involving Ogun State Governor Dapo Abiodun (such as a judiciary budget, a call for judicial accountability, and a claim by a lawyer that he stood surety for Sunday Igboho). They do not materially corroborate the same central event as required by the strict evidence rules.",
+    "Multiple independent sources corroborate the sentencing of a South African woman to 25 years in prison for importing 5.75kg of heroin into Nigeria.",
+    "The provided source records discuss four completely unrelated events: the revamping of the LASU Law Clinic, an ECOWAS Court training for journalists, Al-Mustapha's appeal loss regarding an Asokoro property, and an ECOWAS Court statement on its judicial role. Because there are no two sources covering the same central event, a valid collaborative news report cannot be produced under the strict evidence rules.",
+    "Multiple reliable sources corroborate the sentencing of a South African woman to 25 years imprisonment in Nigeria for drug trafficking involving 5.75kg of heroin.",
+    "The source records provide sufficient, corroborating details from multiple domains regarding Ogun State Governor Dapo Abiodun standing as surety for activist Sunday Igboho.",
+    "The provided source records cover completely unrelated stories and different individuals (Governor Abiodun discussing the Ogun judiciary budget, Governor Douye Diri speaking on national democracy, and independent commentators criticizing judicial election rulings). There are no two publisher domains materially corroborating the same central event.",
+    "The provided source records cover completely different news events with no overlapping central event supported by at least two different publisher domains.",
+    "The supplied source records discuss completely unrelated events—such as a court ruling on an HIV patient and a reality show reported by <a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxNNl9fd29JVzg5M0JFd1JHV3R4dUtNSTdVZVVpWHRlY1lpdlFuSnRpNl9UVmlKN3RIUml4Y3J6TE9sMWpSZ1NXcmxHM05aM0dubEZCa3ZmU0d5VmVocE4yMmJsaWJ4S1F1ejNnWEg4VWhJWWJEUi1kYWpjcThFN0k3Z0JqR2hBUVNvc2pESGFHNWhTTTZuZ2dPb3RRT0R5VG1mTG43d3ptODQ5aS10?oc=5\">The Guardian Nigeria News</a>, ECOWAS Court training and role updates reported by <a href=\"https://news.google.com/rss/articles/CBMifEFVX3lxTE42ODZ6Qlhya0NvYVF3bXlwbEdibC1LSGZKQy1OaVRtdTJ2VFNPdWRKZVVqeTVXdEl1VlBDOE9ZdDhPOHRVSjJtcjM4TzVWMk5UNWJfV0lYWk5QUnJGbGU3VVUydmhmd3RSQjVUeHhMNnJRYXBBa253YWsxSmo?oc=5\">Voice of Nigeria</a> and <a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxOS195N0lhLXdtanBERVhBLUtHOFF1NDFBWEZ3ZlpxdTBWcGZ2MTVnYXRfejgySzRqMVFsSTlDM29tNlhLb3NIYlVmTmdhdk1QTEZQVlM3Mnh6TG82WTdiUzFrN0FCN0pPVDItUFpTa3d1U1MzWEZVejM5YW1VTjBkOQ?oc=5\">Voice of Nigeria</a>, and an appeal court division request by the Ogun Governor reported by <a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTE1KbEd3VWxMalNCVXdUWlN1eWdKcExDZVRud1VHVVBlTm1TeDRETmF1WVhGTl9pN05RTnZXWGk3M0oyU0hkajl0RWNNWkdJYk1jUmVYV2dqbmI0a3YtdUVRM1dsVnVqZ3FnV1g0VUJnV2FCdE8zbGJTRA?oc=5\">Voice of Nigeria</a>. Because there is no single central event corroborated by at least two different publisher domains, no news report can be generated under the strict evidence rules.",
+    "The provided source records discuss completely different events in Lagos State: one source covers the declaration of a work-free day for the 2026 Ìṣẹ̀ṣe Day festival, while the other sources cover a flood evacuation order following a NiHSA alert. Because there are no two different publisher domains corroborating the same central event, a combined news report cannot be generated under the strict evidence rules.",
+    "The supplied sources cover different, unrelated topics (energy/power, inflation, opinion pieces) without at least two sources materially corroborating the same central event."
   ]
 }
