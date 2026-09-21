@@ -48,14 +48,16 @@
 <footer class="wrap footer">© 2026 C. O. Eric · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></footer>
 <script>
 const messagesEl=document.getElementById("messages"),promptEl=document.getElementById("prompt"),sendEl=document.getElementById("send"),statusEl=document.getElementById("status");
-const history=[];let selectedProvider="coeric";
+const history=[];let selectedProvider="coeric";let idlenInitialized=false;
 const IDLEN_PUBLISHER_KEY="idl_pk_"+"f0b2a39d0366f52b0809a205aaf5df45577ebc0986e3c6f6b0126f8cf0037911";
 const sessionId="ai-site-"+(crypto.randomUUID?crypto.randomUUID():Date.now());
-function addMessage(role,text){const row=document.createElement("div");row.className="msg "+role;const b=document.createElement("div");b.className="bubble";b.textContent=text;row.appendChild(b);messagesEl.appendChild(row);messagesEl.scrollTop=messagesEl.scrollHeight;return b}
+function escapeHTML(text){return text.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function formatAIText(text){let s=escapeHTML(text);s=s.replace(/\`\`\`([\\s\\S]*?)\`\`\`/g,"<pre><code>$1</code></pre>");s=s.replace(/\`([^\`]+)\`/g,"<code>$1</code>");s=s.replace(/\\*\\*([^*]+)\\*\\*/g,"<strong>$1</strong>");s=s.replace(/(^|[\\s(])\\*([^*\\n]+)\\*(?=[\\s).,!?:;]|$)/g,"$1<em>$2</em>");return s.replace(/\\n/g,"<br>")}
+function addMessage(role,text){const row=document.createElement("div");row.className="msg "+role;const b=document.createElement("div");b.className="bubble";if(role==="assistant")b.innerHTML=formatAIText(text);else b.textContent=text;row.appendChild(b);messagesEl.appendChild(row);messagesEl.scrollTop=messagesEl.scrollHeight;return b}
 async function showIdlen(text){
  try{
   if(!IDLEN_PUBLISHER_KEY||typeof idlenChat!=="function")return;
-  idlenChat("init",IDLEN_PUBLISHER_KEY);
+  if(!idlenInitialized){idlenChat("init",IDLEN_PUBLISHER_KEY);idlenInitialized=true;}
   const ad=await idlenChat("getAd",{sessionId,context:{rawText:text,intent:"informational",category:"ai_chat"},format:"chat_sponsored_recommendation"});
   if(!ad)return;
   const row=document.createElement("div");row.className="msg sponsored";
@@ -65,7 +67,6 @@ async function showIdlen(text){
  }catch(e){}
 }
 document.querySelectorAll(".provider").forEach(button=>button.addEventListener("click",()=>{selectedProvider=button.dataset.provider;document.querySelectorAll(".provider").forEach(b=>b.classList.toggle("active",b===button));const name=button.querySelector("b").textContent;document.getElementById("providerStatus").textContent=name;statusEl.textContent="";promptEl.focus()}));
-document.querySelectorAll(".provider").forEach(button=>button.addEventListener("click",()=>{selectedProvider=button.dataset.provider;document.querySelectorAll(".provider").forEach(b=>b.classList.toggle("active",b===button));document.getElementById("providerStatus").textContent=button.querySelector("b").textContent;statusEl.textContent="";promptEl.focus()}));
 async function sendMessage(){
  const text=promptEl.value.trim();if(!text)return;
  addMessage("user",text);history.push({role:"user",text});promptEl.value="";sendEl.disabled=true;statusEl.textContent="Thinking…";
