@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-21T04:18:09.450719+00:00",
-  "finished_utc": "2026-09-21T04:37:23.494789+00:00",
+  "started_utc": "2026-09-21T05:02:18.179479+00:00",
+  "finished_utc": "2026-09-21T05:21:33.304657+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "category": "Entertainment & Lifestyle",
