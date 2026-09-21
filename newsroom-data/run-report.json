@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-21T18:53:41.346822+00:00",
-  "finished_utc": "2026-09-21T19:11:09.562636+00:00",
+  "started_utc": "2026-09-21T20:22:30.201942+00:00",
+  "finished_utc": "2026-09-21T20:41:49.190937+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
@@ -33,16 +33,12 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 642,
-  "fresh_items": 621,
+  "total_items": 641,
+  "fresh_items": 620,
   "corroborated_candidates": 20,
   "ai_attempts": 20,
-  "ai_failures": 17,
-  "held_or_rejected": 3,
+  "ai_failures": 20,
+  "held_or_rejected": 0,
   "published_count": 0,
-  "rejection_reasons": [
-    "The provided source records cover completely different stories and events (one about Eric Opah in Abia State and another about Governor Seyi Makinde in Oyo State). There are no two distinct publisher domains corroborating the same central event.",
-    "The provided source records do not contain at least two different publisher domains materially corroborating the same central event. Each news item covers a completely different topic (police warning, IGP change, IPCR peace call, and ambassador postings).",
-    "The provided source records discuss four completely unrelated events: the revamping of the LASU Law Clinic, a statement by the ECOWAS Court President, an appeal loss by Al-Mustapha regarding an Asokoro property, and the conviction of a South African woman for drug trafficking. There are no two sources covering the same central event."
-  ]
+  "rejection_reasons": []
 }
