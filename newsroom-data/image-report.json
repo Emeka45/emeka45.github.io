@@ -1,11 +1,28 @@
 {
-  "finished_utc": "2026-09-21T08:31:29.514972+00:00",
+  "finished_utc": "2026-09-21T11:25:25.334548+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 0,
-  "attempted": 0,
+  "missing_before_run": 2,
+  "attempted": 2,
   "generated": [],
-  "source_photos": [],
+  "source_photos": [
+    {
+      "article": "2026-09-21-lagos-state-orders-immediate-relocation-of-residents-in-flood-prone-areas-following-nihsa--32373fbf50.html",
+      "image": "news/images/2026-09-21-lagos-state-orders-immediate-relocation-of-residents-in-flood-prone-areas-following-nihsa--32373fbf50-source.jpg",
+      "bytes": 17844,
+      "provider": "Original news source",
+      "source_url": "https://punchng.com/lagos-orders-evacuation-of-residents-in-flood-prone-communities/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/2026/08/Tokunbo_1786911789.webp"
+    },
+    {
+      "article": "2026-09-21-lagos-state-government-orders-residents-in-flood-prone-areas-to-relocate-following-nihsa-a-5b7274cc89.html",
+      "image": "news/images/2026-09-21-lagos-state-government-orders-residents-in-flood-prone-areas-to-relocate-following-nihsa-a-5b7274cc89-source.jpg",
+      "bytes": 17844,
+      "provider": "Original news source",
+      "source_url": "https://punchng.com/lagos-orders-evacuation-of-residents-in-flood-prone-communities/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/2026/08/Tokunbo_1786911789.webp"
+    }
+  ],
   "openverse_photos": [],
   "fallbacks": [],
   "failures": [],
