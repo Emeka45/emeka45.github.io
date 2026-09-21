@@ -1,11 +1,20 @@
 {
-  "finished_utc": "2026-09-21T11:30:45.505714+00:00",
+  "finished_utc": "2026-09-21T15:20:15.526656+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 0,
-  "attempted": 0,
+  "missing_before_run": 1,
+  "attempted": 1,
   "generated": [],
-  "source_photos": [],
+  "source_photos": [
+    {
+      "article": "2026-09-21-silent-hill-townfall-receives-mixed-to-warm-critical-reception-as-reviewers-weigh-bold-cre-24b8948631.html",
+      "image": "news/images/2026-09-21-silent-hill-townfall-receives-mixed-to-warm-critical-reception-as-reviewers-weigh-bold-cre-24b8948631-source.jpg",
+      "bytes": 54367,
+      "provider": "Original news source",
+      "source_url": "https://www.eurogamer.net/silent-hill-townfall-review",
+      "image_url": "https://assetsio.gnwcdn.com/silent-hill-townfall-header.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
+    }
+  ],
   "openverse_photos": [],
   "fallbacks": [],
   "failures": [],
