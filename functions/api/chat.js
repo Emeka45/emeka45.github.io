@@ -12,13 +12,12 @@ export async function onRequestPost(context) {
       const key = context.env["GEMINI_"+"API_KEY"];
       if (!key) return Response.json({error:"Gemini AI is not configured yet."},{status:503});
       const payload={systemInstruction:{parts:[{text:systemText}]},contents:clean.map(m=>({role:m.role==="assistant"?"model":"user",parts:[{text:m.text}]}))};
-      let response=await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent",{method:"POST",headers:{"Content-Type":"application/json","x-goog-api-key":key},body:JSON.stringify(payload)});
-      let data=await response.json();
-      if(!response.ok && (response.status===429 || response.status===503)) {
-        response=await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-3.7-flash:generateContent",{method:"POST",headers:{"Content-Type":"application/json","x-goog-api-key":key},body:JSON.stringify(payload)});
-        data=await response.json();
-      }
-      if(!response.ok)return Response.json({error:data?.error?.message||"Gemini is temporarily busy. Please try again."},{status:502});
+      const callGemini=async(model)=>{const r=await fetch("https://generativelanguage.googleapis.com/v1beta/models/"+model+":generateContent",{method:"POST",headers:{"Content-Type":"application/json","x-goog-api-key":key},body:JSON.stringify(payload)});const d=await r.json();return {response:r,data:d};};
+      let result=await callGemini("gemini-3.8-flash");
+      if(!result.response.ok && (result.response.status===429 || result.response.status===503)){await new Promise(resolve=>setTimeout(resolve,1200));result=await callGemini("gemini-3.8-flash");}
+      if(!result.response.ok && (result.response.status===429 || result.response.status===503)){result=await callGemini("gemini-3.6-flash");}
+      const response=result.response;const data=result.data;
+      if(!response.ok)return Response.json({error:"The AI service is temporarily busy. Please try again in a moment."},{status:502});
       const text=data?.candidates?.[0]?.content?.parts?.map(p=>p.text||"").join("").trim();
       if(!text)return Response.json({error:"Gemini returned no text."},{status:502});
       return Response.json({text,provider:provider==="coeric"?"C. O. Eric AI":"Gemini"});
