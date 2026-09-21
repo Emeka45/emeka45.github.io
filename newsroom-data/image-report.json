@@ -1,11 +1,28 @@
 {
-  "finished_utc": "2026-09-21T05:34:05.172782+00:00",
+  "finished_utc": "2026-09-21T08:19:49.823969+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 0,
-  "attempted": 0,
+  "missing_before_run": 2,
+  "attempted": 2,
   "generated": [],
-  "source_photos": [],
+  "source_photos": [
+    {
+      "article": "2026-09-21-former-sydney-police-officer-goes-on-trial-for-alleged-double-murder-e3c789431e.html",
+      "image": "news/images/2026-09-21-former-sydney-police-officer-goes-on-trial-for-alleged-double-murder-e3c789431e-source.jpg",
+      "bytes": 40372,
+      "provider": "Original news source",
+      "source_url": "https://www.theguardian.com/australia-news/2026/sep/21/beau-lamarre-condon-double-murder-trial-obsessed-with-jesse-baird-before-shooting-court-hears-ntwnfb",
+      "image_url": "https://i.guim.co.uk/img/media/b302b0f5fea9a0bf280d7dd5a7c4c992b40d2639/205_0_3097_2480/master/3097.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=d5c674a4715e79e705135918fce5aef6"
+    },
+    {
+      "article": "2026-09-21-former-nsw-police-officer-goes-on-trial-in-sydney-for-alleged-double-murder-ba98e88e63.html",
+      "image": "news/images/2026-09-21-former-nsw-police-officer-goes-on-trial-in-sydney-for-alleged-double-murder-ba98e88e63-source.jpg",
+      "bytes": 40372,
+      "provider": "Original news source",
+      "source_url": "https://www.theguardian.com/australia-news/2026/sep/21/beau-lamarre-condon-double-murder-trial-obsessed-with-jesse-baird-before-shooting-court-hears-ntwnfb",
+      "image_url": "https://i.guim.co.uk/img/media/b302b0f5fea9a0bf280d7dd5a7c4c992b40d2639/205_0_3097_2480/master/3097.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=d5c674a4715e79e705135918fce5aef6"
+    }
+  ],
   "openverse_photos": [],
   "fallbacks": [],
   "failures": [],

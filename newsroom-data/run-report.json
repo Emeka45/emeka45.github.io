@@ -1,11 +1,11 @@
 {
-  "started_utc": "2026-09-21T05:02:18.179479+00:00",
-  "finished_utc": "2026-09-21T05:21:33.304657+00:00",
+  "started_utc": "2026-09-21T08:15:24.458818+00:00",
+  "finished_utc": "2026-09-21T08:18:11.663381+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
-  "feed_success_count": 51,
-  "feed_failure_count": 5,
+  "feed_success_count": 40,
+  "feed_failure_count": 16,
   "feed_failures": [
     {
       "category": "Religion & Faith",
@@ -18,9 +18,39 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     },
     {
+      "category": "Nigeria - Law & Justice",
+      "url": "https://news.google.com/rss/search?q=Nigeria+law+justice+court+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "category": "Nigeria - Energy & Power",
+      "url": "https://news.google.com/rss/search?q=Nigeria+energy+power+electricity+oil+gas+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "category": "Nigeria - Transport & Infrastructure",
+      "url": "https://news.google.com/rss/search?q=Nigeria+transport+infrastructure+road+rail+airport+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "category": "Nigeria - Environment & Climate",
+      "url": "https://news.google.com/rss/search?q=Nigeria+environment+climate+flood+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "category": "Nigeria - Jobs & Labour",
+      "url": "https://news.google.com/rss/search?q=Nigeria+jobs+labour+employment+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
       "category": "Nigeria - Finance & Markets",
       "url": "https://thereporter.com.ng/rss/category/finance-101",
       "error": "not well-formed (invalid token): line 36, column 294"
+    },
+    {
+      "category": "Nigeria - Culture & Heritage",
+      "url": "https://news.google.com/rss/search?q=Nigeria+culture+heritage+arts+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "category": "Nigeria - Culture & Heritage",
@@ -29,16 +59,60 @@
     },
     {
       "category": "Nigeria - Tourism & Travel",
+      "url": "https://news.google.com/rss/search?q=Nigeria+tourism+travel+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "category": "Nigeria - Tourism & Travel",
       "url": "https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle",
       "error": "not well-formed (invalid token): line 11, column 61"
+    },
+    {
+      "category": "Nigeria - Religion & Interfaith",
+      "url": "https://news.google.com/rss/search?q=Nigeria+religion+interfaith+faith+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "category": "Nigeria - Youth & Society",
+      "url": "https://news.google.com/rss/search?q=Nigeria+youth+society+community+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "category": "Nigeria - Real Estate & Housing",
+      "url": "https://news.google.com/rss/search?q=Nigeria+real+estate+housing+property+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "category": "Nigeria - Food & Consumer",
+      "url": "https://news.google.com/rss/search?q=Nigeria+food+prices+consumer+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
     }
   ],
-  "total_items": 637,
-  "fresh_items": 618,
+  "total_items": 443,
+  "fresh_items": 426,
   "corroborated_candidates": 20,
   "ai_attempts": 20,
-  "ai_failures": 20,
-  "held_or_rejected": 0,
-  "published_count": 0,
-  "rejection_reasons": []
+  "ai_failures": 0,
+  "held_or_rejected": 18,
+  "published_count": 2,
+  "rejection_reasons": [
+    "The source records include multiple overlapping reports from different domains about Governor Dapo Abiodun receiving 5,000 PDP defectors into the APC in Ogun State.",
+    "The provided source records do not contain at least two different publisher domains materially supporting the same central event. While there are multiple records about President Tinubu celebrating his wife, they all originate from the exact same URL and domain (punchng.com), and the other source covers an entirely different topic (the Tantita Security Services contract). Therefore, corroboration is lacking.",
+    "The supplied sources discuss entirely different events (President Tinubu celebrating his wife's birthday versus preparations for Nigeria's independence anniversary). There are not at least two different publisher domains materially supporting the same central event.",
+    "The provided sources discuss completely different events: one is about President Tinubu celebrating his wife's 66th birthday, while the other is about preparations for Nigeria's 66th Independence Anniversary. There are no two sources that materially corroborate the same central event.",
+    "The provided source records do not contain at least two different publisher domains materially supporting the same central event. The Punch source is about President Tinubu celebrating his wife's birthday, while The Reporter sources (appearing multiple times) are about a presidential address for Nigeria's independence anniversary.",
+    "The supplied source records discuss completely different events (President Tinubu celebrating his wife's birthday versus preparations for Nigeria's independence anniversary). There are no two distinct publisher domains materially corroborating the same central event.",
+    "The provided source records discuss different articles and topics (two distinct reviews of 'Silent Hill: Townfall' from Eurogamer and Polygon, plus an unrelated piece about a streaming sci-fi series). They do not materially corroborate a single central news event meeting the strict evidence rules.",
+    "The supplied source records discuss three completely different and unrelated events:\n1. An 82-year-old man dying after a beach fight in Greece (BBC).\n2. An Australian man pleading not guilty to the murder of a Thai teenager in Pattaya (The Guardian).\n3. A complainant being withdrawn from the Alan Jones trial in Sydney (The Guardian).\n\nNone of the sources share a central event or corroborate one another, making it impossible to produce a valid news report under the strict evidence rules.",
+    "The provided source records discuss two completely different political events in different states (Ogun State and Bayelsa State) with no overlapping central event or multi-source corroboration.",
+    "The provided sources are individual opinion reviews of a video game ('Silent Hill: Townfall') from different domains (Polygon and Eurogamer) rather than two independent sources materially corroborating the same hard news event, announcement, or factual development.",
+    "The provided source records discuss completely different entertainment topics (one is about a J.J. Abrams sci-fi television series on Polygon, and the other is a video game review for Silent Hill: Townfall on Eurogamer). There is no overlapping central event, announcement, or development corroborated by at least two different publisher domains.",
+    "The provided source records discuss completely unrelated events—one is about Ethiopian rebel groups forming an alliance (BBC) and the other is a live news feed from Australia regarding politics and cost-of-living policies (The Guardian). There are no two sources that materially corroborate the same central event as required by the strict evidence rules.",
+    "The provided sources cover completely different events (a drone attack on Moscow and a prison cell tragedy in Minna, Nigeria) and therefore do not provide the necessary dual-source corroboration for a single central event.",
+    "The provided source records discuss two completely different topics: one about Donald Trump announcing an AI Force and AI tsar, and the other about South Korea refusing to send military support to a US war in Iran. There are no two sources that materially corroborate the same central event.",
+    "The provided sources cover completely different events (one about a tragic incident in Minna, Nigeria involving illegal goldminers, and another about a drone attack on Moscow). There are not at least two different publisher domains materially supporting the same central event.",
+    "The provided source records describe two entirely different events in different countries (an Australian man pleading not guilty to murder in Thailand, and an 82-year-old man dying after a beach fight in Greece). They do not corroborate the same central event, so a combined news report cannot be generated.",
+    "The provided source records discuss two completely different events (South Korea's military deployment stance regarding Iran and Donald Trump's announcement of an 'AI Force'). They do not materially corroborate the same central event from at least two different publisher domains.",
+    "The provided source records discuss completely unrelated topics (Australian politics and an Ethiopian rebel alliance) and do not materially corroborate the same central event from at least two different publisher domains."
+  ]
 }
