@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-22T04:32:57.656076+00:00",
-  "finished_utc": "2026-09-22T04:50:40.832637+00:00",
+  "started_utc": "2026-09-22T13:19:43.796647+00:00",
+  "finished_utc": "2026-09-22T13:26:38.504760+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
@@ -33,16 +33,33 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 639,
-  "fresh_items": 618,
+  "total_items": 641,
+  "fresh_items": 621,
   "corroborated_candidates": 20,
   "ai_attempts": 20,
-  "ai_failures": 17,
-  "held_or_rejected": 3,
+  "ai_failures": 0,
+  "held_or_rejected": 20,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided source records discuss entirely different political events and states (Abia, Anambra, and a general peace call by IPCR), lacking the required minimum of two publisher domains materially supporting the same central event.",
-    "The provided source records discuss entirely different political events and states (Abia State PDP statements versus an APC and APGA disagreement in Anambra State). There are no two publisher domains materially corroborating the same central event.",
-    "The provided source records cover distinct and unrelated topics — such as the ECOWAS Court's role and critical crossroads reported by Voice of Nigeria and the News Agency of Nigeria, a commentary on justice by The Guardian, and a property appeal ruling involving Al-Mustapha by Independent Newspaper Nigeria — and do not materially corroborate a single central event."
+    "Only one independent publisher domain provides coverage for each distinct story event, failing the requirement that at least two different publisher domains must materially support the same central event.",
+    "The provided articles do not materially corroborate the same central event; instead, they discuss completely different topics involving the ECOWAS Court and general legal commentary without sharing a common news development.",
+    "Multiple reliable sources from the provided records materially corroborate recent statements and announcements concerning the ECOWAS Court of Justice, including its assessment of its current operational standing, its upcoming international conference, and training initiatives.",
+    "The provided source records discuss entirely different topics and events (judicial bureaucracy/vigilante justice, AI in the justice system, pre-trial custody deaths in Niger, and a FG/UNESCO career guidance initiative), lacking at least two sources that materially corroborate the same central event.",
+    "The supplied source records discuss completely different events and legal stories (Al-Mustapha's appeal, the ECOWAS Court status, and the LASU Law Clinic revamp). There are no two different publisher domains materially supporting the same central event.",
+    "The provided source records cover completely different topics and events (AI in the justice system, judicial bureaucracy and vigilante redress, pre-trial custody deaths in Niger state, and FG/UNESCO career guidance initiatives), with no two sources corroborating the same central event.",
+    "Multiple reliable sources corroborate the sentencing of a South African woman to 25 years in prison for importing 5.75kg of heroin into Nigeria.",
+    "The supplied source records discuss completely different, unrelated events (LASU Law Clinic revamp, ECOWAS Court status, and an Al-Mustapha property appeal). There are no two sources covering the same central event, so a corroborated news report cannot be generated under the strict evidence rules.",
+    "The provided source records cover completely different topics, ranging from pre-trial custody deaths in Niger, judicial bureaucracy and the vigilante redress system, AI safeguards in the justice system, to FG and UNESCO strengthening career guidance. There are no two sources that materially corroborate the same central event.",
+    "The provided source records discuss different events (ECOWAS Court announcements and a NAEC energy conference) without sufficient material overlap on a single central event supported by at least two domains.",
+    "The provided source records cover completely different topics, events, and domains without any two sources corroborating the same central event.",
+    "The provided source records discuss different events concerning the ECOWAS Court—such as training journalists, reaffirming its role, being at a critical crossroads, and planning a 2026 conference—without two different publisher domains materially corroborating the exact same central event.",
+    "The provided source records cover completely different, unrelated events across various domains (such as judiciary retirement age in Lagos, infrastructure business plans, Nigeria's energy transition plan, and tree planting in Lagos). There are no two sources that corroborate the same central event, violating the strict evidence rules.",
+    "The provided source records cover distinct, unrelated events (such as a court ruling on an HIV patient and various announcements regarding the ECOWAS Court by different publishers). There are no two distinct publisher domains materially corroborating the exact same central event.",
+    "Although there are multiple articles about energy and gas in Nigeria, they discuss completely different initiatives, entities, and announcements (e.g., a broad gas-to-power industry push, HBSAN integrated energy system, and a specific AfricaGTC-Dutch firm partnership for flared gas). They do not corroborate the same central event as required by the strict evidence rules.",
+    "The supplied source records cover four completely distinct topics with no overlapping events or central news development connecting them. Therefore, no multi-source corroboration exists for any single story.",
+    "Multiple independent sources corroborate calls for integrating Nigeria's oil and power sectors, specifically highlighting initiatives by the Hydrocarbon Business Services Association of Nigeria (HBSAN) to drive investment and reduce operational costs.",
+    "The provided source records cover distinct, unrelated topics such as Gastech 2026, a gas-to-LPG project by AfricaGTC and a Dutch firm, Dangote's power investments, and federal urban infrastructure planning. Since there are no two sources that corroborate the same central event, a news report cannot be generated under the strict evidence rules.",
+    "The provided source records cover completely different topics, events, and domains without two or more sources corroborating the same central event.",
+    "The supplied source records discuss completely unrelated topics (Nigeria economic roadmap, electric vehicles in Nigeria, multimodal logistics, and West African hotels). There are no two different publisher domains that materially support the same central event."
   ]
 }

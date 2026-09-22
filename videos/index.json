@@ -1,6 +1,38 @@
 {
-  "updated_at": "2026-09-22T05:04:24.884234+00:00",
+  "updated_at": "2026-09-22T13:34:28.042627+00:00",
   "videos": [
+    {
+      "video_id": "Yr0aquRZvdY",
+      "title": "Well Dweller – Launch Trailer – Nintendo Switch",
+      "category": "Gaming",
+      "channel": "Nintendo of America",
+      "channel_id": "UCGIY_O-8vW4rfX98KlMkvRg",
+      "channel_url": "https://www.youtube.com/channel/UCGIY_O-8vW4rfX98KlMkvRg",
+      "url": "https://www.youtube.com/watch?v=Yr0aquRZvdY",
+      "embed_url": "https://www.youtube-nocookie.com/embed/Yr0aquRZvdY",
+      "thumbnail": "https://i.ytimg.com/vi/Yr0aquRZvdY/hqdefault.jpg",
+      "published_at": "2026-09-22T13:00:28+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Nintendo of America — Well Dweller – Launch Trailer – Nintendo Switch. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-09-22T13:32:09.392346+00:00"
+    },
+    {
+      "video_id": "n-2K5EFeODo",
+      "title": "Quarantine Zone: Miami Zero Update | Announcement Trailer",
+      "category": "Gaming",
+      "channel": "Xbox",
+      "channel_id": "UCjBp_7RuDBUYbd1LegWEJ8g",
+      "channel_url": "https://www.youtube.com/channel/UCjBp_7RuDBUYbd1LegWEJ8g",
+      "url": "https://www.youtube.com/watch?v=n-2K5EFeODo",
+      "embed_url": "https://www.youtube-nocookie.com/embed/n-2K5EFeODo",
+      "thumbnail": "https://i.ytimg.com/vi/n-2K5EFeODo/hqdefault.jpg",
+      "published_at": "2026-09-21T23:49:02+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Xbox presents an announcement trailer for the Quarantine Zone: Miami Zero Update, showcasing new game content in this gaming video.",
+      "published_by_pipeline_at": "2026-09-22T13:32:27.858581+00:00"
+    },
     {
       "video_id": "62u0ZbE5MiE",
       "title": "Get out of here, summer | 🎬 Back to the Future Franchise",
@@ -1528,38 +1560,6 @@
       "is_short": false,
       "description": "Toei Animation — ゲーム『楽園追放 -The Stellar Angel-』ティザーPV｜2026年8月21日公開. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-09-18T18:28:58.731965+00:00"
-    },
-    {
-      "video_id": "uQGGrOq5Qew",
-      "title": "東映アニメーション70周年記念スペシャルムービー　/　Special Movie Commemorating 70th Anniversary of Toei Animation",
-      "category": "Anime",
-      "channel": "Toei Animation",
-      "channel_id": "UCLhgIX2L5ZCaWdlaxR_oTAg",
-      "channel_url": "https://www.youtube.com/channel/UCLhgIX2L5ZCaWdlaxR_oTAg",
-      "url": "https://www.youtube.com/watch?v=uQGGrOq5Qew",
-      "embed_url": "https://www.youtube-nocookie.com/embed/uQGGrOq5Qew",
-      "thumbnail": "https://i.ytimg.com/vi/uQGGrOq5Qew/hqdefault.jpg",
-      "published_at": "2026-07-31T01:00:05+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Toei Animation presents a special commemorative movie celebrating the 70th anniversary of Toei Animation, featured within the anime category on their official channel.",
-      "published_by_pipeline_at": "2026-09-18T18:28:59.364269+00:00"
-    },
-    {
-      "video_id": "vHrQkINUAbk",
-      "title": "『楽園追放 心のレゾナンス』第五弾ティザーPV【11.13公開】",
-      "category": "Anime",
-      "channel": "Toei Animation",
-      "channel_id": "UCLhgIX2L5ZCaWdlaxR_oTAg",
-      "channel_url": "https://www.youtube.com/channel/UCLhgIX2L5ZCaWdlaxR_oTAg",
-      "url": "https://www.youtube.com/watch?v=vHrQkINUAbk",
-      "embed_url": "https://www.youtube-nocookie.com/embed/vHrQkINUAbk",
-      "thumbnail": "https://i.ytimg.com/vi/vHrQkINUAbk/hqdefault.jpg",
-      "published_at": "2026-07-22T11:45:08+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Toei Animation shares the fifth teaser PV for the anime titled \"楽園追放 心のレゾナンス,\" scheduled for release on November 13.",
-      "published_by_pipeline_at": "2026-09-18T18:29:00.086673+00:00"
     }
   ]
 }
