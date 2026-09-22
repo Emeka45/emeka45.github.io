@@ -52,7 +52,7 @@ const history=[];let selectedProvider="coeric";let idlenInitialized=false;
 const IDLEN_PUBLISHER_KEY="idl_pk_"+"f0b2a39d0366f52b0809a205aaf5df45577ebc0986e3c6f6b0126f8cf0037911";
 const sessionId="ai-site-"+(crypto.randomUUID?crypto.randomUUID():Date.now());
 function escapeHTML(text){return text.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
-function formatAIText(text){let s=escapeHTML(text);s=s.replace(/\`\`\`([\\s\\S]*?)\`\`\`/g,"<pre><code>$1</code></pre>");s=s.replace(/\`([^\`]+)\`/g,"<code>$1</code>");s=s.replace(/\\*\\*([^*]+)\\*\\*/g,"<strong>$1</strong>");s=s.replace(/(^|[\\s(])\\*([^*\\n]+)\\*(?=[\\s).,!?:;]|$)/g,"$1<em>$2</em>");return s.replace(/\\n/g,"<br>")}
+function formatAIText(text){let normalized=String(text).replace(/<\\s*strong\\s*>/gi,"**").replace(/<\\s*\\/\\s*strong\\s*>/gi,"**").replace(/<\\s*em\\s*>/gi,"*").replace(/<\\s*\\/\\s*em\\s*>/gi,"*").replace(/<\\s*br\\s*\\/?\\s*>/gi,"\\n").replace(/<\\s*\\/?\\s*(?:p|div)\\s*>/gi,"\\n").replace(/<[^>]*>/g,"");let s=escapeHTML(normalized);s=s.replace(/```([\\s\\S]*?)```/g,"<pre><code>$1</code></pre>");s=s.replace(/`([^`]+)`/g,"<code>$1</code>");s=s.replace(/\\*\\*([^*]+)\\*\\*/g,"<strong>$1</strong>");s=s.replace(/(^|[\\s(])\\*([^*\\n]+)\\*(?=[\\s).,!?:;]|$)/g,"$1<em>$2</em>");return s.replace(/\\n/g,"<br>")}
 function addMessage(role,text){const row=document.createElement("div");row.className="msg "+role;const b=document.createElement("div");b.className="bubble";if(role==="assistant")b.innerHTML=formatAIText(text);else b.textContent=text;row.appendChild(b);messagesEl.appendChild(row);messagesEl.scrollTop=messagesEl.scrollHeight;return b}
 async function showIdlen(text){
  try{
