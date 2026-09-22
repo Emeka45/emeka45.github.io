@@ -34,7 +34,20 @@
 <article class="card"><h3>Technology</h3><p>Software, data, AI, product, IT support, cybersecurity and technical roles.</p></article>
 <article class="card"><h3>Healthcare & NGO</h3><p>Healthcare, development, NGO and humanitarian opportunities.</p></article>
 </div></div></section>
-<section class="section"><div class="wrap"><div class="notice"><strong>Future daily updates:</strong> this hub is structured for verified job updates with employer, role, location, work type, requirements, deadline and original application link. C. O. Eric will not fabricate vacancies or guarantee that an external listing remains open; always verify the vacancy at the source before applying.</div></div></section></main>
+<section class="section" id="live-updates"><div class="wrap"><h2>🆕 Latest job updates</h2><p class="intro">Automatically refreshed from the configured job sources. Apply through the original listing and verify that it is still open.</p><div id="jobUpdates" class="grid"><article class="card"><p>Loading latest jobs…</p></article></div></div></section><section class="section"><div class="wrap"><div class="notice"><strong>Future daily updates:</strong> this hub is structured for verified job updates with employer, role, location, work type, requirements, deadline and original application link. C. O. Eric will not fabricate vacancies or guarantee that an external listing remains open; always verify the vacancy at the source before applying.</div></div></section></main>
 <footer class="wrap footer"><span>© 2026 C. O. Eric.</span><span><a href="index.html">Home</a> · <a href="academic.html">Academic Hub</a> · <a href="contact.html">Contact</a></span></footer>
 <script>const q=document.getElementById('search');q.addEventListener('input',()=>{const t=q.value.toLowerCase().trim();document.querySelectorAll('.card').forEach(c=>c.style.display=!t||c.innerText.toLowerCase().includes(t)?'block':'none')});</script>
-</body></html>
+<script>
+async function loadUpdates(){
+ try{
+  const r=await fetch('academic-jobs-data/updates.json',{cache:'no-store'}); if(!r.ok) throw new Error();
+  const data=await r.json(); const items=data.updates||[];
+  const target=document.getElementById('jobUpdates');
+  const filtered=items.filter(x=>x.kind==='jobs').slice(0,12);
+  target.innerHTML=filtered.length?filtered.map(x=>`<article class="card"><span class="tag">JOB</span><h3>${escapeHtml(x.title)}</h3><p>${escapeHtml(x.summary)}</p>${x.location?'<p><strong>Location:</strong> '+escapeHtml(x.location)+'</p>':''}${x.work_type?'<p><strong>Work type:</strong> '+escapeHtml(x.work_type)+'</p>':''}<a class="go" href="${safeUrl(x.original_link||x.source_url)}" target="_blank" rel="noopener">Original listing/source →</a></article>`).join(''):'<article class="card"><p>No new job updates were generated in the latest run.</p></article>';
+ }catch(e){document.getElementById('jobUpdates').innerHTML='<article class="card"><p>Latest jobs are temporarily unavailable. Use the job sources above.</p></article>'}
+}
+function escapeHtml(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function safeUrl(u){try{const x=new URL(u,location.href);return /^https?:$/.test(x.protocol)?x.href:'#'}catch{return '#'}}
+loadUpdates();
+</script></body></html>
