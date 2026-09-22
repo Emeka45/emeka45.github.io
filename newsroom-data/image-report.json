@@ -1,11 +1,20 @@
 {
-  "finished_utc": "2026-09-22T22:54:27.973903+00:00",
+  "finished_utc": "2026-09-22T23:07:26.238748+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 0,
-  "attempted": 0,
+  "missing_before_run": 1,
+  "attempted": 1,
   "generated": [],
-  "source_photos": [],
+  "source_photos": [
+    {
+      "article": "2026-09-22-political-realignment-ahead-of-2027-ndc-gains-momentum-as-leaders-outline-strategy-9e7857bb1f.html",
+      "image": "news/images/2026-09-22-political-realignment-ahead-of-2027-ndc-gains-momentum-as-leaders-outline-strategy-9e7857bb1f-source.jpg",
+      "bytes": 32690,
+      "provider": "Original news source",
+      "source_url": "https://punchng.com/ndc-gains-ex-sgf-babachir-mobilises-polling-agents/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://punchng.com/wp-content/uploads/2026/07/A-former-Secretary-to-the-Government-of-the-Federation-Babachir-Lawal_1783420826.webp"
+    }
+  ],
   "openverse_photos": [],
   "fallbacks": [],
   "failures": [],
