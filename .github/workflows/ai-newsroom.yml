@@ -19,6 +19,8 @@ on:
       - 'scripts/generate_news_images.py'
       - 'scripts/repair_news_images.py'
       - 'scripts/update_video_hub.py'
+      - 'scripts/update_academic_jobs.py'
+      - 'academic-jobs-data/**'
       - 'video_sources.json'
       - '.github/workflows/ai-newsroom.yml'
   schedule:
@@ -58,6 +60,10 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/update_video_hub.py
+      - name: Update Academic & Jobs Hub
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/update_academic_jobs.py
       - name: Show newsroom and video diagnostics
         if: always()
         run: |
@@ -71,7 +77,7 @@ jobs:
         run: |
           git config user.name 'C. O. Eric AI Newsroom'
           git config user.email 'actions@users.noreply.github.com'
-          git add news/ newsroom-data/ videos/
+          git add news/ newsroom-data/ videos/ academic-jobs-data/
           if git diff --cached --quiet; then
             echo 'No newsroom or Video Hub changes to publish.'
           else
