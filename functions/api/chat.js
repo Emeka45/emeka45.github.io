@@ -14,7 +14,7 @@ export async function onRequestPost(context) {
     }
 
     if (provider === "coeric" || provider === "gemini") {
-      const key = context.env["GEMINI_"+"API_KEY"];
+      const key = context.env["GEMINI_"+"API_KEY"] || context.env["GOOGLE_"+"API_KEY"];
       if (!key) return Response.json({error:"Gemini AI is not configured yet."},{status:503});
       const payload={systemInstruction:{parts:[{text:systemText}]},contents:clean.map(m=>({role:m.role==="assistant"?"model":"user",parts:[{text:m.text}]}))};
       const callGemini=async(model)=>{const r=await fetch("https://generativelanguage.googleapis.com/v1beta/models/"+model+":generateContent",{method:"POST",headers:{"Content-Type":"application/json","x-goog-api-key":key},body:JSON.stringify(payload)});let d=null;try{d=await r.json()}catch{}return {response:r,data:d};};
@@ -22,7 +22,13 @@ export async function onRequestPost(context) {
       if(!result.response.ok && (result.response.status===429 || result.response.status===503)){await new Promise(resolve=>setTimeout(resolve,1200));result=await callGemini("gemini-3.8-flash");}
       if(!result.response.ok && (result.response.status===429 || result.response.status===503)){result=await callGemini("gemini-3.6-flash");}
       const response=result.response;const data=result.data;
-      if(!response.ok)return Response.json({error:"The AI service is temporarily busy. Please try again in a moment."},{status:502});
+      if(!response.ok){
+        const status=response.status;
+        if(status===401||status===403)return Response.json({error:"Gemini rejected the API key. Check the Gemini API key configured in Cloudflare Pages."},{status:502});
+        if(status===404)return Response.json({error:"The configured Gemini model is unavailable. Please redeploy the AI service with a supported Gemini model."},{status:502});
+        if(status===429)return Response.json({error:"Gemini rate limit reached. Please wait a moment and try again."},{status:429});
+        return Response.json({error:"Gemini could not complete the request right now. Please try again in a moment."},{status:502});
+      }
       const text=data?.candidates?.[0]?.content?.parts?.map(p=>p.text||"").join("").trim();
       if(!text)return Response.json({error:"Gemini returned no text."},{status:502});
       return Response.json({text,provider:provider==="coeric"?"C. O. Eric Universal AI":"Gemini"});
