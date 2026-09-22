@@ -34,7 +34,20 @@
 <article class="card"><h3>DOAB</h3><p>Discover open-access academic books.</p><a class="go" href="https://www.doabooks.org/" target="_blank" rel="noopener">Browse books →</a></article>
 <article class="card"><h3>Academic & research directory</h3><p>More scholarly resources are available through the Books & eBooks directory.</p><a class="go" href="books-ebooks.html">Open Books & eBooks →</a></article>
 </div></div></section>
-<section class="section"><div class="wrap"><div class="notice"><strong>Important:</strong> Dates, fees, eligibility rules and admission requirements can change. C. O. Eric is a discovery hub, not the examination body, university or scholarship sponsor. Confirm current information at the linked official source before paying or submitting an application.</div></div></section></main>
+<section class="section" id="live-updates"><div class="wrap"><h2>🆕 Latest verified academic updates</h2><p class="intro">Automatically refreshed from the official education sources listed below. Check the original source before acting.</p><div id="academicUpdates" class="grid"><article class="card"><p>Loading latest updates…</p></article></div></div></section><section class="section"><div class="wrap"><div class="notice"><strong>Important:</strong> Dates, fees, eligibility rules and admission requirements can change. C. O. Eric is a discovery hub, not the examination body, university or scholarship sponsor. Confirm current information at the linked official source before paying or submitting an application.</div></div></section></main>
 <footer class="wrap footer"><span>© 2026 C. O. Eric.</span><span><a href="index.html">Home</a> · <a href="jobs.html">Jobs Hub</a> · <a href="contact.html">Contact</a></span></footer>
 <script>const q=document.getElementById('search');q.addEventListener('input',()=>{const t=q.value.toLowerCase().trim();document.querySelectorAll('.card').forEach(c=>c.style.display=!t||c.innerText.toLowerCase().includes(t)?'block':'none')});</script>
-</body></html>
+<script>
+async function loadUpdates(){
+ try{
+  const r=await fetch('academic-jobs-data/updates.json',{cache:'no-store'}); if(!r.ok) throw new Error();
+  const data=await r.json(); const items=data.updates||[];
+  const target=document.getElementById('academicUpdates');
+  const filtered=items.filter(x=>x.kind==='academic').slice(0,12);
+  target.innerHTML=filtered.length?filtered.map(x=>`<article class="card"><span class="tag">ACADEMIC</span><h3>${escapeHtml(x.title)}</h3><p>${escapeHtml(x.summary)}</p>${x.deadline?'<p><strong>Deadline:</strong> '+escapeHtml(x.deadline)+'</p>':''}<a class="go" href="${safeUrl(x.original_link||x.source_url)}" target="_blank" rel="noopener">Original source →</a></article>`).join(''):'<article class="card"><p>No new verified academic updates were generated in the latest run.</p></article>';
+ }catch(e){document.getElementById('academicUpdates').innerHTML='<article class="card"><p>Latest updates are temporarily unavailable. Use the official resource links above.</p></article>'}
+}
+function escapeHtml(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function safeUrl(u){try{const x=new URL(u,location.href);return /^https?:$/.test(x.protocol)?x.href:'#'}catch{return '#'}}
+loadUpdates();
+</script></body></html>
