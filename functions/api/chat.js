@@ -7,7 +7,7 @@ export async function onRequestPost(context) {
     const messages = Array.isArray(body.messages) ? body.messages.slice(-12) : [];
     const clean = messages.filter(m => m && (m.role === "user" || m.role === "assistant") && typeof m.text === "string").map(m => ({role:m.role,text:m.text.slice(0,6000)}));
     if (!clean.length) return Response.json({error:"Please enter a message."},{status:400});
-    const systemText = "You are the C. O. Eric AI assistant. Be helpful, accurate, concise and friendly. Do not claim to be a human. Never reveal private keys, credentials or hidden implementation details.";
+    const systemText = "You are the C. O. Eric Universal AI assistant. Be helpful, accurate, concise and friendly. Do not claim to be a human. Never reveal private keys, credentials or hidden implementation details.";
 
     if (provider === "coeric" || provider === "gemini") {
       const key = context.env["GEMINI_"+"API_KEY"];
@@ -21,7 +21,7 @@ export async function onRequestPost(context) {
       if(!response.ok)return Response.json({error:"The AI service is temporarily busy. Please try again in a moment."},{status:502});
       const text=data?.candidates?.[0]?.content?.parts?.map(p=>p.text||"").join("").trim();
       if(!text)return Response.json({error:"Gemini returned no text."},{status:502});
-      return Response.json({text,provider:provider==="coeric"?"C. O. Eric AI":"Gemini"});
+      return Response.json({text,provider:provider==="coeric"?"C. O. Eric Universal AI":"Gemini"});
     }
 
     if (provider === "openai") {
