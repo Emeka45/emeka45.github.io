@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-09-22T19:44:32.966167+00:00",
+  "updated_at": "2026-09-22T22:54:51.526527+00:00",
   "videos": [
+    {
+      "video_id": "HmIdzplCp-o",
+      "title": "Middle-earth: Shadow Bundle – Pre-order Trailer – Nintendo Switch 2",
+      "category": "Gaming",
+      "channel": "Nintendo of America",
+      "channel_id": "UCGIY_O-8vW4rfX98KlMkvRg",
+      "channel_url": "https://www.youtube.com/channel/UCGIY_O-8vW4rfX98KlMkvRg",
+      "url": "https://www.youtube.com/watch?v=HmIdzplCp-o",
+      "embed_url": "https://www.youtube-nocookie.com/embed/HmIdzplCp-o",
+      "thumbnail": "https://i.ytimg.com/vi/HmIdzplCp-o/hqdefault.jpg",
+      "published_at": "2026-09-22T20:00:34+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Nintendo of America presents a pre-order trailer for the Middle-earth: Shadow Bundle on Nintendo Switch 2 in this gaming video.",
+      "published_by_pipeline_at": "2026-09-22T22:54:37.339566+00:00"
+    },
     {
       "video_id": "kunlgv9OPME",
       "title": "Bridesmaids | The Moment Dress Shopping Turns Disastrous",
@@ -1544,22 +1560,6 @@
       "source": "YouTube channel feed",
       "description": "Disney has published a new movies & tv video: “Hoofdstuk 98 - The Lion King (De Leeuwenkoning)”. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-09-18T15:32:06.203340+00:00"
-    },
-    {
-      "video_id": "TSuF90p7djU",
-      "title": "Hoofdstuk 121 - The Lion King (De Leeuwenkoning)",
-      "category": "Movies & TV",
-      "channel": "Disney",
-      "channel_id": "UC0L4FNvqduCM49XPjb8dZHQ",
-      "channel_url": "https://www.youtube.com/channel/UC0L4FNvqduCM49XPjb8dZHQ",
-      "url": "https://www.youtube.com/watch?v=TSuF90p7djU",
-      "embed_url": "https://www.youtube-nocookie.com/embed/TSuF90p7djU",
-      "thumbnail": "https://i.ytimg.com/vi/TSuF90p7djU/hqdefault.jpg",
-      "published_at": "2026-09-14T10:05:13+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Watch Chapter 121 of The Lion King (De Leeuwenkoning) in this official video upload from the Disney Movies & TV channel.",
-      "published_by_pipeline_at": "2026-09-18T18:28:56.605652+00:00"
     }
   ]
 }
