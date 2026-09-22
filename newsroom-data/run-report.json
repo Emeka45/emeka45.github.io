@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-22T14:13:47.066297+00:00",
-  "finished_utc": "2026-09-22T14:38:26.981051+00:00",
+  "started_utc": "2026-09-22T16:18:21.372563+00:00",
+  "finished_utc": "2026-09-22T16:32:11.566005+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -37,21 +37,25 @@
   "fresh_items": 622,
   "corroborated_candidates": 20,
   "ai_attempts": 20,
-  "ai_failures": 8,
-  "held_or_rejected": 12,
-  "published_count": 0,
+  "ai_failures": 0,
+  "held_or_rejected": 16,
+  "published_count": 4,
   "rejection_reasons": [
-    "Only one unique publisher domain covers the Ondo State Ministry of Education story, failing the strict requirement for at least two different publisher domains to corroborate the central event.",
-    "The provided sources do not contain at least two different publisher domains that materially corroborate the same central event. While there are multiple sources, they cover completely different topics (CBN interest rate cut, inflation rates, and opinion on youth/policy) without multiple sources verifying the exact same specific event or announcement.",
-    "The provided source records mention various activities and statements regarding the ECOWAS Court (such as its current crossroads status, reaffirming its role, holding a 2026 conference, and training journalists), but they do not materially corroborate a single central event. Each headline and source points to different announcements or distinct topics.",
-    "The provided source records discuss completely unrelated legal and judicial topics in Nigeria—ranging from a property appeal case involving Al-Mustapha, commentary on state dissent under the Tinubu administration, criticisms of the judiciary regarding election winners by various public figures, and the revamping of the LASU Law Clinic. Because there are no two sources that materially corroborate the same central event, a news report cannot be generated.",
-    "The supplied source records cover completely different topics and events (AI in the justice system, judicial bureaucracy, pre-trial custody deaths in Niger state, and FG/UNESCO career guidance). There is no single central event corroborated by at least two different publisher domains.",
-    "Multiple reputable sources (Daily Post Nigeria, The Whistler Newspaper, and channelstv.com) corroborate the same central judicial event involving the sentencing of a South African woman to 25 years imprisonment for importing 5.75kg of heroin into Nigeria.",
-    "The provided source records cover completely different stories (LASU Law Clinic revamp versus various statements and announcements regarding the ECOWAS Court from different outlets). There are no two distinct publisher domains covering the same central event.",
-    "The provided source records cover completely different topics, such as pre-trial custody deaths in Niger, judicial bureaucracy versus vigilante redress, the demands for guardrails on AI in Nigeria's justice system, and FG-UNESCO career guidance initiatives. There are no two sources that materially corroborate the same central event.",
-    "Multiple reputable sources corroborate the sentencing of a South African woman to 25 years imprisonment for importing heroin into Nigeria.",
-    "The provided source records cover completely different topics, domains, and events without any mutual corroboration. Therefore, no detailed original news report can be generated under the strict evidence rules.",
-    "The provided source records cover completely different topics, events, and subjects (judicial reforms for 2027, ECOWAS Court, AI in Nigeria's justice system, and Africa's travel market). There are no two distinct sources that materially corroborate the same central event.",
-    "The provided source records cover distinct topics (gas-to-power industry costs, China-Nigeria fashion cooperation, HBSAN integrated energy systems, and AfricaGTC/Dutch firm flared gas project) without at least two different publisher domains materially supporting the exact same central event."
+    "The provided sources cover completely different events (Nyesom Wike mocking the opposition vs. Governor Seyi Makinde refuting Wike's claims about the Ibadan airport funds). There are not at least two different publisher domains materially supporting the same central event.",
+    "The provided sources do not contain at least two different publisher domains materially corroborating the same central event. The Punch source discusses Babachir Lawal joining the Nigeria Democratic Congress, while the Reporter source discusses political tensions and Seriake Dickson's defection in Bayelsa State. Therefore, sufficient corroboration is missing.",
+    "The provided sources discuss completely different topics (Seriake Dickson ruling out a presidential bid versus Babachir Lawal joining the NDC) and do not materially corroborate the same central event across at least two different publisher domains.",
+    "The provided sources cover completely different events (one about Udengs Eradiri defending the Tantita Security Services contract, and the others about President Tinubu celebrating former Katsina governor Ibrahim Shema at 69). There are no two publisher domains materially supporting the same central event as required by the strict evidence rules.",
+    "The provided source records cover distinct, unrelated events (Tinubu celebrating a former governor, an ex-IYC president defending a security contract, and Atiku urging Tinubu to reduce petrol prices). There are no two sources that materially corroborate the same central event as required by the strict evidence rules.",
+    "The supplied source records do not contain at least two different publisher domains materially supporting the same central event. The sources cover entirely different topics: President Tinubu celebrating King Sunny Ade's birthday (with two distinct sources) and Atiku Abubakar urging Tinubu to adopt a petrol price reduction proposal (with only one unique source domain, thereporter.com.ng).",
+    "The provided sources do not focus on a Nigeria-first angle or local developments, failing to meet the core operational mandate of the C. O. Eric AI Newsroom.",
+    "The supplied source records discuss completely different events and topics (Tinubu celebrating Shema, a defense of Tompolo's security contract, and Atiku urging Tinubu to reduce petrol prices). There are no two sources that materially corroborate the same central event.",
+    "The supplied sources do not provide at least two different publisher domains materially supporting the same central event. The sources cover different topics, including President Tinubu's birthday wishes to King Sunny Ade and Atiku Abubakar's proposal regarding petrol prices, with no overlapping event.",
+    "The provided source records cover distinct and unrelated stories, failing to meet the strict evidence rule requiring at least two different publisher domains to materially support the same central event.",
+    "The provided source records discuss completely unrelated events across different domains, such as the ECOWAS Court statements and a separate Nigerian court ruling involving Al-Mustapha. There are no two publisher domains materially corroborating the same central event.",
+    "The provided source records cover distinct, unrelated topics—such as judicial bureaucracy, artificial intelligence in the justice system, pre-trial custody deaths in Niger, and a federal government/UNESCO career guidance initiative—with no two sources corroborating the same central event.",
+    "The provided source records discuss completely different events, such as a court ruling on a property case, the ECOWAS Court president's remarks on the court's status, the revamp of a law clinic, and a statement by the ECOWAS Court reaffirming its role. There are no two sources that materially corroborate the same central event.",
+    "The provided source records cover completely different topics, events, and domains (artificial intelligence in the justice system, judicial bureaucracy versus vigilante redress, pre-trial custody deaths, and federal government/UNESCO career guidance initiatives). There are no two independent sources corroborating the same central event, so a detailed news report cannot be produced under the strict evidence rules.",
+    "Multiple reputable sources (Daily Post Nigeria, The Whistler Newspaper, and Channels Television) corroborate the sentencing of a South African woman to 25 years in prison for importing 5.75kg of heroin into Nigeria.",
+    "The provided sources cover completely different stories (LASU Law Clinic revamp, ECOWAS Court statements, and an Al-Mustapha court appeal) without at least two sources corroborating the same central event."
   ]
 }
