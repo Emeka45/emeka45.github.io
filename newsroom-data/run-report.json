@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-21T20:22:30.201942+00:00",
-  "finished_utc": "2026-09-21T20:41:49.190937+00:00",
+  "started_utc": "2026-09-22T02:55:21.388938+00:00",
+  "finished_utc": "2026-09-22T03:12:42.044242+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
@@ -37,8 +37,12 @@
   "fresh_items": 620,
   "corroborated_candidates": 20,
   "ai_attempts": 20,
-  "ai_failures": 20,
-  "held_or_rejected": 0,
+  "ai_failures": 17,
+  "held_or_rejected": 3,
   "published_count": 0,
-  "rejection_reasons": []
+  "rejection_reasons": [
+    "The provided sources discuss completely different political events and states (Abia, Anambra, and a general call by IPCR), lacking the necessary multi-source corroboration on a single central event.",
+    "The provided source records discuss entirely different political events and states (Abia State PDP versus Anambra State APC and APGA), failing to provide at least two different publisher domains that materially support the same central event.",
+    "Multiple reputable Nigerian news sources corroborate the conviction and sentencing of a South African woman to 25 years in prison for importing heroin into Nigeria."
+  ]
 }
