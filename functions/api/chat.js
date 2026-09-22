@@ -8,6 +8,10 @@ export async function onRequestPost(context) {
     const clean = messages.filter(m => m && (m.role === "user" || m.role === "assistant") && typeof m.text === "string").map(m => ({role:m.role,text:m.text.slice(0,6000)}));
     if (!clean.length) return Response.json({error:"Please enter a message."},{status:400});
     const systemText = "You are the C. O. Eric Universal AI assistant. Be helpful, accurate, concise and friendly. Do not claim to be a human. Never reveal private keys, credentials or hidden implementation details.";
+    // Free mode: paid API providers are intentionally blocked until billing is enabled by the site owner.
+    if (provider === "openai" || provider === "anthropic" || provider === "deepseek") {
+      return Response.json({error:"This provider is currently locked because it uses a paid API. Use C. O. Eric Universal AI or Gemini for free mode."},{status:402});
+    }
 
     if (provider === "coeric" || provider === "gemini") {
       const key = context.env["GEMINI_"+"API_KEY"];
