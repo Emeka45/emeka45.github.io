@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-22T02:55:21.388938+00:00",
-  "finished_utc": "2026-09-22T03:12:42.044242+00:00",
+  "started_utc": "2026-09-22T04:32:57.656076+00:00",
+  "finished_utc": "2026-09-22T04:50:40.832637+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
@@ -33,16 +33,16 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 641,
-  "fresh_items": 620,
+  "total_items": 639,
+  "fresh_items": 618,
   "corroborated_candidates": 20,
   "ai_attempts": 20,
   "ai_failures": 17,
   "held_or_rejected": 3,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided sources discuss completely different political events and states (Abia, Anambra, and a general call by IPCR), lacking the necessary multi-source corroboration on a single central event.",
-    "The provided source records discuss entirely different political events and states (Abia State PDP versus Anambra State APC and APGA), failing to provide at least two different publisher domains that materially support the same central event.",
-    "Multiple reputable Nigerian news sources corroborate the conviction and sentencing of a South African woman to 25 years in prison for importing heroin into Nigeria."
+    "The provided source records discuss entirely different political events and states (Abia, Anambra, and a general peace call by IPCR), lacking the required minimum of two publisher domains materially supporting the same central event.",
+    "The provided source records discuss entirely different political events and states (Abia State PDP statements versus an APC and APGA disagreement in Anambra State). There are no two publisher domains materially corroborating the same central event.",
+    "The provided source records cover distinct and unrelated topics — such as the ECOWAS Court's role and critical crossroads reported by Voice of Nigeria and the News Agency of Nigeria, a commentary on justice by The Guardian, and a property appeal ruling involving Al-Mustapha by Independent Newspaper Nigeria — and do not materially corroborate a single central event."
   ]
 }

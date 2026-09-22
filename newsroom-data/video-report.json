@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-09-22T03:25:29.342121+00:00",
+  "finished_utc": "2026-09-22T05:04:24.886200+00:00",
   "max_new_videos_per_run": 20,
   "max_shorts_per_run": 6,
   "channels_configured": 15,
@@ -64,7 +64,7 @@
     },
     {
       "channel": "Crunchyroll",
-      "error": "HTTP Error 500: Internal Server Error"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "channel": "Toei Animation",
