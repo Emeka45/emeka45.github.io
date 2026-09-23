@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-22T23:08:35.161776+00:00",
-  "finished_utc": "2026-09-22T23:11:21.808324+00:00",
+  "started_utc": "2026-09-23T00:06:42.285402+00:00",
+  "finished_utc": "2026-09-23T00:25:59.026284+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
@@ -34,27 +34,11 @@
     }
   ],
   "total_items": 640,
-  "fresh_items": 618,
+  "fresh_items": 621,
   "corroborated_candidates": 20,
   "ai_attempts": 20,
-  "ai_failures": 1,
-  "held_or_rejected": 15,
-  "published_count": 4,
-  "rejection_reasons": [
-    "The source records from punchng.com and thereporter.com.ng discuss different topics (Wike's comments on opposition primaries versus Makinde refuting Wike's claim about Ibadan airport funding). Wait, let me examine the domains and stories. Actually, punchng.com has 'FG didn't fund Ibadan airport with N50bn — Makinde', but there is only one domain supporting that specific story (punchng.com is repeated, but it's the same domain). Wait, let's check the source records: thereporter.com.ng talks about Wike mocking the opposition. Punchng.com talks about Makinde refuting Wike's claim about Ibadan airport funding. Do they corroborate the same central event? No, they are separate events involving Nyesom Wike. Therefore, there are no two different publisher domains materially supporting the same central event.",
-    "The supplied sources do not sufficiently corroborate the same central event across at least two different publisher domains with matching core facts. While multiple sources mention the NDC and political movements, one source focuses on Bayelsa State and former Governor Seriake Dickson, while the other discusses former SGF Babachir Lawal joining the NDC and backing a Peter Obi and Rabiu Kwankwaso ticket. These are distinct political developments rather than the same event.",
-    "The provided sources do not materially corroborate the same central event. While they mention the Nigeria Democratic Congress (NDC), one source discusses Seriake Dickson ruling out a 2027 presidential bid to focus on building the party (https://thereporter.com.ng/seriake-dickson-rules-out-2027-presidential-bid-focuses-on-building-ndc), whereas the other sources discuss the NDC awaiting Peter Obi and Rabiu Kwankwaso's picks for a campaign council (https://punchng.com/2027-ndc-awaits-obi-kwankwasos-picks-for-campaign-council/?utm_source=rss.punchng.com&utm_medium=web). These are distinct developments and political stories.",
-    "The supplied sources do not provide at least two different publisher domains materially supporting the same central event. The Punch source discusses Atiku citing an SBM survey regarding a fuel subsidy proposal, while The Reporter sources focus on a general call for Tinubu to adopt a proposal to reduce petrol prices without overlapping details that corroborate a specific shared event.",
-    "The provided source records discuss entirely different legal news stories (ECOWAS Court statements, judicial bureaucracy, and an Al-Mustapha property appeal). There are no two sources that materially corroborate the same central event.",
-    "Although there are multiple articles about Nigeria's law and justice system, they discuss completely different topics (judicial bureaucracy versus AI guardrails in the justice system versus pre-trial custody deaths in Niger State), meaning there is no material corroboration of the same central event across at least two publisher domains.",
-    "The provided source records cover completely different, unrelated events (Al-Mustapha's appeal, a revamped law clinic at LASU, and ECOWAS Court announcements), lacking the required multi-source corroboration of a single central event.",
-    "The provided source records cover completely different topics, events, and domains (AI in the justice system, judicial bureaucracy, pre-trial custody deaths, and FG/UNESCO career guidance). There is no single central event corroborated by at least two different publisher domains.",
-    "Multiple reliable sources corroborate the sentencing of a South African woman to 25 years in prison for importing 5.75kg of heroin into Nigeria.",
-    "The provided source records cover completely different, unrelated legal stories across Nigeria and West Africa (such as a LASU Law clinic revamp, an Al-Mustapha Court of Appeal ruling, and ECOWAS Court announcements). There are no two sources covering the same central event to satisfy the strict corroboration rule.",
-    "The provided source records cover completely different topics, such as pre-trial custody deaths in Niger, judicial bureaucracy and vigilante redress, AI in Nigeria's justice system, and a federal government/UNESCO career guidance initiative. There are no two different publisher domains materially supporting the same central event.",
-    "Multiple reliable sources corroborate the sentencing of a South African woman to 25 years in prison for importing 5.75kg of heroin into Nigeria.",
-    "The supplied source records discuss four completely unrelated topics across different domains (ECOWAS Court conferences/status, NAFEST 2026 in Enugu, and an Appeal Court ruling regarding Al-Mustapha). There are no two sources that materially corroborate the same central event to satisfy the strict evidence rules.",
-    "The supplied source records discuss completely different events and topics (2027 judicial reforms for voters' mandates, the ECOWAS Court, AI in Nigeria's justice system, and a subnational climate finance workshop in Delta State) without any two sources materially corroborating the same central event.",
-    "The provided source records cover completely different topics, domains, and events (such as the Lagos judiciary retirement age, Nigerian infrastructure business plans, the energy transition plan, and tree planting in Lagos). None of the sources materially corroborate the same central event, so a collaborative news report cannot be generated under the strict evidence rules."
-  ]
+  "ai_failures": 20,
+  "held_or_rejected": 0,
+  "published_count": 0,
+  "rejection_reasons": []
 }
