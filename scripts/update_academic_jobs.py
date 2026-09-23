@@ -6,6 +6,8 @@ import os
 import re
 import urllib.parse
 import urllib.request
+import random
+import time
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -71,13 +73,42 @@ SOURCE RECORDS:
     payload={"contents":[{"parts":[{"text":prompt+json.dumps([{k:v for k,v in r.items() if k!="raw"} for r in records],ensure_ascii=False)}]}],
              "generationConfig":{"responseMimeType":"application/json"}}
     endpoint="https://generativelanguage.googleapis.com/v1beta/models/"+MODEL+":generateContent?key="+urllib.parse.quote(key)
-    req=urllib.request.Request(endpoint,data=json.dumps(payload).encode(),headers={"Content-Type":"application/json"},method="POST")
-    with urllib.request.urlopen(req,timeout=90) as r:
-        data=json.loads(r.read())
-    return json.loads(data["candidates"][0]["content"]["parts"][0]["text"])
+    body=json.dumps(payload).encode()
+    headers={"Content-Type":"application/json"}
+    max_retries=4
+    for attempt in range(max_retries + 1):
+        req=urllib.request.Request(endpoint,data=body,headers=headers,method="POST")
+        try:
+            with urllib.request.urlopen(req,timeout=90) as r:
+                data=json.loads(r.read())
+            return json.loads(data["candidates"][0]["content"]["parts"][0]["text"])
+        except urllib.error.HTTPError as e:
+            if e.code not in (408, 429, 500, 502, 503, 504) or attempt >= max_retries:
+                raise
+            retry_after=e.headers.get("Retry-After")
+            try:
+                delay=float(retry_after) if retry_after else 2 ** attempt
+            except (TypeError, ValueError):
+                delay=2 ** attempt
+            delay=min(60.0, delay + random.uniform(0, 1))
+            print(f"Gemini returned HTTP {e.code}; retrying in {delay:.1f}s (attempt {attempt + 1}/{max_retries})")
+            time.sleep(delay)
 
 records=[source_record(s) for s in SOURCES]
-result=ask_ai(records)
+try:
+    result=ask_ai(records)
+except urllib.error.HTTPError as e:
+    if e.code not in (408, 429, 500, 502, 503, 504):
+        raise
+    print(f"Gemini unavailable after retries (HTTP {e.code}); preserving existing academic/jobs data.")
+    if OUT.exists():
+        try:
+            previous=json.loads(OUT.read_text(encoding="utf-8"))
+            result={"updates":previous.get("updates",[])}
+        except (OSError, json.JSONDecodeError):
+            result={"updates":[]}
+    else:
+        result={"updates":[]}
 updates=[]
 for item in result.get("updates",[])[:20]:
     if item.get("kind") not in ("academic","jobs") or not item.get("title") or not item.get("summary"): continue
