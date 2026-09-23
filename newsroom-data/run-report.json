@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-23T00:06:42.285402+00:00",
-  "finished_utc": "2026-09-23T00:25:59.026284+00:00",
+  "started_utc": "2026-09-23T04:29:01.574117+00:00",
+  "finished_utc": "2026-09-23T04:44:29.858497+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
@@ -37,8 +37,14 @@
   "fresh_items": 621,
   "corroborated_candidates": 20,
   "ai_attempts": 20,
-  "ai_failures": 20,
-  "held_or_rejected": 0,
+  "ai_failures": 15,
+  "held_or_rejected": 5,
   "published_count": 0,
-  "rejection_reasons": []
+  "rejection_reasons": [
+    "The provided sources cover completely different events and topics (ECOWAS Court statements, an opinion piece on justice and vigilante systems, and a drug conviction of a South African woman in Nigeria). There are no two sources that materially corroborate the same central event.",
+    "The supplied source records discuss completely different events, such as the ECOWAS Court statements and a drug conviction of a South African woman in Nigeria. There is no multi-source corroboration of a single central event.",
+    "The supplied sources cover completely different events and topics (judicial bureaucracy/vigilante redress, AI in Nigeria's justice system, pre-trial custody deaths in Niger state, and FG/UNESCO career guidance). There is no central event corroborated by at least two different domains.",
+    "The provided sources cover distinct topics (AI in the justice system, human rights, judicial bureaucracy, and career guidance) without any overlapping central event supported by at least two different publisher domains.",
+    "The provided source records cover completely different topics (Britannica encyclopedia overview, Federal Government moves on the National Care Economy, creative economy infrastructure, and tourism/creative economy opportunities) with no single central event corroborated by at least two different publisher domains."
+  ]
 }
