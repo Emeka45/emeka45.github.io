@@ -1,9 +1,9 @@
 {
-  "finished_utc": "2026-09-23T05:06:52.124416+00:00",
+  "finished_utc": "2026-09-23T16:36:57.119025+00:00",
   "max_new_videos_per_run": 20,
   "max_shorts_per_run": 6,
   "channels_configured": 15,
-  "channels_resolved": 0,
+  "channels_resolved": 13,
   "resolver_methods": {
     "PlayStation": "wikidata",
     "Xbox": "wikidata",
@@ -23,70 +23,39 @@
   },
   "channels_with_errors": [
     {
-      "channel": "PlayStation",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Xbox",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Nintendo of America",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Ubisoft",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
       "channel": "Bandai Namco Entertainment America",
       "error": "Could not resolve stable YouTube channel ID"
     },
     {
-      "channel": "Electronic Arts",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Warner Bros. Pictures",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
       "channel": "Marvel Entertainment",
       "error": "Could not resolve stable YouTube channel ID"
-    },
-    {
-      "channel": "Universal Pictures",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Netflix",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Crunchyroll",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Toei Animation",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "MAPPA",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Disney",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "DC",
-      "error": "HTTP Error 404: Not Found"
     }
   ],
-  "discovered": 0,
-  "published": 0,
+  "discovered": 65,
+  "published": 20,
   "shorts_published": 0,
-  "duplicates_skipped": 0,
+  "duplicates_skipped": 20,
   "total_stored": 100,
-  "published_video_ids": []
+  "published_video_ids": [
+    "F4i_uE4CJZs",
+    "VL-xjzQFWsY",
+    "cW8PaAhqqvU",
+    "s8cP1Vt5US8",
+    "-rlmVW6Qgjg",
+    "3uLb6c-4ni0",
+    "CFgEL7ei8VE",
+    "eT5Ecm99O5Y",
+    "CBaTBLR40iY",
+    "t83IuPT4eQk",
+    "9ayPFO9cbpE",
+    "8sCIfTBdqLs",
+    "ypMMuVQ-Sbg",
+    "BFNSnek1v0Y",
+    "0ExAS1lmMJg",
+    "Y9fjPCXQeNU",
+    "uQGGrOq5Qew",
+    "vHrQkINUAbk",
+    "l_yujzqjp0M",
+    "79vTeZzLmcY"
+  ]
 }
