@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-23T19:08:15.074678+00:00",
-  "finished_utc": "2026-09-23T19:24:57.333010+00:00",
+  "started_utc": "2026-09-23T22:52:22.569007+00:00",
+  "finished_utc": "2026-09-23T23:08:08.471022+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
@@ -33,16 +33,17 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 639,
-  "fresh_items": 620,
+  "total_items": 641,
+  "fresh_items": 622,
   "corroborated_candidates": 20,
   "ai_attempts": 20,
-  "ai_failures": 17,
-  "held_or_rejected": 3,
+  "ai_failures": 16,
+  "held_or_rejected": 4,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided source records cover completely different, unrelated events across different states (Governor Otti receiving a top JAMB scorer in Abia State versus Governor Oyebanji pledging to boost commerce in Ekiti State). There are no two publisher domains that materially support the same central event to satisfy the strict evidence rules.",
-    "The provided source records do not contain at least two different publisher domains materially corroborating the same central event. Only one domain (punchng.com) reports on the toddler abuse arrest, while the other domain (thereporter.com.ng) covers an entirely different topic about state police.",
-    "The provided source records discuss different events in different states (Lagos toddler abuse arrest versus Abia child abuse arraignment, plus a separate statement by Sanwo-Olu on state police). There are no two distinct publisher domains corroborating the same central event."
+    "The provided source records cover completely unrelated topics (an education story about Governor Otti receiving a JAMB scorer in Abia State, and sports stories about Kylian Mbappé targeting the Ballon d'Or). There are no two distinct publisher domains reporting on the same central event, failing the strict evidence and corroboration rules.",
+    "The provided source records cover distinct topics (NESG on education, housing market growth, and IMF on the developing-world job market) without sufficient multi-source corroboration on a single central event.",
+    "The provided source records discuss entirely different topics within Nigeria's law and justice sector—ranging from artificial intelligence in the justice system, human rights, judicial bureaucracy, to mob justice—without at least two sources materially corroborating the same central event.",
+    "The provided source records cover completely different, unrelated topics with no two sources corroborating the same central event."
   ]
 }

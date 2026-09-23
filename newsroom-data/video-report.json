@@ -1,14 +1,14 @@
 {
-  "finished_utc": "2026-09-23T19:47:18.512548+00:00",
+  "finished_utc": "2026-09-23T23:30:27.883754+00:00",
   "max_new_videos_per_run": 20,
   "max_shorts_per_run": 6,
   "channels_configured": 15,
-  "channels_resolved": 11,
+  "channels_resolved": 13,
   "resolver_methods": {
     "PlayStation": "wikidata",
     "Xbox": "wikidata",
-    "Nintendo of America": "unresolved",
-    "Ubisoft": "unresolved",
+    "Nintendo of America": "wikidata",
+    "Ubisoft": "wikidata",
     "Bandai Namco Entertainment America": "unresolved",
     "Electronic Arts": "wikidata",
     "Warner Bros. Pictures": "wikidata",
@@ -23,14 +23,6 @@
   },
   "channels_with_errors": [
     {
-      "channel": "Nintendo of America",
-      "error": "Could not resolve stable YouTube channel ID"
-    },
-    {
-      "channel": "Ubisoft",
-      "error": "Could not resolve stable YouTube channel ID"
-    },
-    {
       "channel": "Bandai Namco Entertainment America",
       "error": "Could not resolve stable YouTube channel ID"
     },
@@ -39,31 +31,31 @@
       "error": "Could not resolve stable YouTube channel ID"
     }
   ],
-  "discovered": 55,
+  "discovered": 65,
   "published": 20,
   "shorts_published": 0,
-  "duplicates_skipped": 16,
+  "duplicates_skipped": 15,
   "total_stored": 100,
   "published_video_ids": [
-    "qOdkuYLa8MU",
-    "XzaKv3pFuNA",
-    "mW9LrMndX10",
-    "ceXtysSad8c",
-    "lv7OKDfDI_c",
+    "uy7V_CQWExo",
+    "MBh5sse6wB4",
+    "43XIHLA1slY",
     "s8cP1Vt5US8",
+    "RZLiR7EmvCs",
     "3uLb6c-4ni0",
     "CFgEL7ei8VE",
     "eT5Ecm99O5Y",
+    "7ra4AO25ZuQ",
+    "UtFcNbnG_Fw",
+    "MxZaIoM4-KI",
+    "S0XD9OeTotE",
+    "jf42zl0JqrE",
+    "D2xrcoQ__f0",
+    "4sUA41V9670",
     "BFNSnek1v0Y",
     "0ExAS1lmMJg",
     "Y9fjPCXQeNU",
     "uQGGrOq5Qew",
-    "vHrQkINUAbk",
-    "l_yujzqjp0M",
-    "79vTeZzLmcY",
-    "rgGkgrNvIUc",
-    "g9TXe-eryes",
-    "JkHDjMWK7bs",
-    "mSYtGLdl9kg"
+    "vHrQkINUAbk"
   ]
 }
