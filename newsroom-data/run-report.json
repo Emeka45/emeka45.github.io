@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-23T15:57:55.939036+00:00",
-  "finished_utc": "2026-09-23T16:16:26.373017+00:00",
+  "started_utc": "2026-09-23T19:08:15.074678+00:00",
+  "finished_utc": "2026-09-23T19:24:57.333010+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 20,
   "feed_count": 56,
@@ -33,24 +33,16 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 641,
-  "fresh_items": 622,
+  "total_items": 639,
+  "fresh_items": 620,
   "corroborated_candidates": 20,
   "ai_attempts": 20,
-  "ai_failures": 9,
-  "held_or_rejected": 11,
+  "ai_failures": 17,
+  "held_or_rejected": 3,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided source records do not contain at least two different publisher domains materially supporting the same central event. The sources cover entirely different topics (Eric Opah's consultation in Abia versus Kwara PDP appointing a campaign DG for 2027).",
-    "The provided sources do not describe the same central event. One source covers a localized police operation in Bayelsa arresting 26 suspects and recovering a specific Toyota Hiace bus, while the other source covers a nationwide police operation between September 12 and 18, 2026, involving 177 arrests and 52 recovered vehicles. There is no material corroboration of the exact same event across multiple domains.",
-    "The provided source records do not contain at least two different publisher domains reporting on the same central event. The Punch source is about Ogun State and the circular economy, while The Reporter source is about Atiku Abubakar urging President Tinubu to reduce petrol prices. There is no material overlap between these distinct stories.",
-    "Although multiple sources discuss different economic sectors in Nigeria, no two sources materially corroborate the same central event, announcement, or transaction as required by the strict evidence rules.",
-    "Two reliable sources (Daily Post and Channels Television) corroborate the sentencing of a South African woman to 25 years in prison for importing 5.75kg of heroin into Nigeria.",
-    "The provided source records cover completely different topics and events, such as the revamping of the LASU Law Clinic in honour of Justice Oguntade and various separate announcements regarding the ECOWAS Court. Because there are no two sources covering the exact same central event, a corroborative news report cannot be produced under the strict evidence rules.",
-    "The provided source records discuss entirely different topics and events within Nigeria's law and justice sector (pre-trial custody deaths in Niger, judicial bureaucracy versus vigilante justice, mob justice, and AI in the justice system) without materially corroborating the same central event.",
-    "The provided source records discuss entirely different topics within Nigeria's law and justice sector—ranging from mob justice and judicial bureaucracy to artificial intelligence safeguards in the courts and pre-trial custody deaths in Niger State. Because there are no two sources that materially corroborate the same central event, a combined news report cannot be generated.",
-    "The source records discuss entirely different events, ranging from the ECOWAS Court planning a conference in Senegal, addressing critical crossroads, and training journalists, to the NCAC and Enugu hosting NAFEST 2026. There are no two sources covering the same central event.",
-    "The provided source records cover distinct announcements and events related to the ECOWAS Court (training journalists, reaffirming its role, presidential statements on critical crossroads, and planning a 2026 conference in Senegal) without at least two sources materially corroborating the same central event.",
-    "The provided source records cover completely different, unrelated events (judicial reforms for 2027 elections, ECOWAS Court, AI in Nigeria's justice system, and Delta climate finance). There are no two sources that materially corroborate the same central event."
+    "The provided source records cover completely different, unrelated events across different states (Governor Otti receiving a top JAMB scorer in Abia State versus Governor Oyebanji pledging to boost commerce in Ekiti State). There are no two publisher domains that materially support the same central event to satisfy the strict evidence rules.",
+    "The provided source records do not contain at least two different publisher domains materially corroborating the same central event. Only one domain (punchng.com) reports on the toddler abuse arrest, while the other domain (thereporter.com.ng) covers an entirely different topic about state police.",
+    "The provided source records discuss different events in different states (Lagos toddler abuse arrest versus Abia child abuse arraignment, plus a separate statement by Sanwo-Olu on state police). There are no two distinct publisher domains corroborating the same central event."
   ]
 }
