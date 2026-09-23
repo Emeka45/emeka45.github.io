@@ -15,7 +15,7 @@ export async function onRequestPost(context) {
 
     if (provider === "coeric" || provider === "gemini") {
       const key = context.env["GEMINI_"+"API_KEY"] || context.env["GOOGLE_"+"API_KEY"];
-      if (!key) return Response.json({error:"Gemini AI is not configured yet."},{status:503});
+      if (!key) return Response.json({error:"Gemini AI is not configured on the live Cloudflare backend. Add the encrypted GEMINI_API_KEY secret to the Production environment, then redeploy the Pages project."},{status:503});
       const payload={systemInstruction:{parts:[{text:systemText}]},contents:clean.map(m=>({role:m.role==="assistant"?"model":"user",parts:[{text:m.text}]}))};
       const callGemini=async(model)=>{const r=await fetch("https://generativelanguage.googleapis.com/v1beta/models/"+model+":generateContent",{method:"POST",headers:{"Content-Type":"application/json","x-goog-api-key":key},body:JSON.stringify(payload)});let d=null;try{d=await r.json()}catch{}return {response:r,data:d};};
       let result=await callGemini("gemini-3.8-flash");
