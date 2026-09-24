@@ -212,7 +212,7 @@ function render(){
     const list=courses.filter(c=>!q||(name+" "+c+" "+noteFor(c,name)).toLowerCase().includes(q));
     if(!list.length)return "";
     return '<section class="discipline"><h2>'+name+'</h2><p>Programme overview plus a Year 1 through final-year study roadmap. The roadmap is a study guide; exact course codes, titles, credit units and semester placement must follow the university handbook.</p><div class="grid">'+
-      list.map(c=>'<article class="card"><span class="tag">'+name.toUpperCase()+'</span><h3>'+c+'</h3><p>'+noteFor(c,name)+'</p><div class="roadmap">'+roadmap(c,name,l)+'</div><ul><li>Use your university's current handbook for the exact semester course list.</li><li>Study NUC core requirements together with your university's approved additions.</li><li>Practise with past questions, projects, practical work and relevant professional standards.</li></ul></article>').join("")+
+      list.map(c=>'<article class="card"><span class="tag">'+name.toUpperCase()+'</span><h3>'+c+'</h3><p>'+noteFor(c,name)+'</p><a class="ccmas-link" href="'+(ccmasSources[name]||"https://www.nuc.edu.ng/ccmas/")+'" target="_blank" rel="noopener">📘 Open official NUC CCMAS for '+name+'</a><div class="roadmap">'+roadmap(c,name,l)+'</div><ul><li>Use your university's current handbook for the exact semester course list.</li><li>Study NUC core requirements together with your university's approved additions.</li><li>Practise with past questions, projects, practical work and relevant professional standards.</li></ul></article>').join("")+
       '</div></section>';
   }).join("")||'<article class="card"><p>No programme matches your search.</p></article>';
 }
