@@ -17,6 +17,11 @@ def text(value: str) -> str:
     return html.unescape(re.sub(r"<[^>]+>", " ", value or "")).strip()
 
 
+def clean_category(value: str) -> str:
+    value = text(value)
+    return re.sub(r"^←\\s*C\\. O\\. Eric Newsroom\\s*", "", value, flags=re.I).strip() or "News"
+
+
 def iso_from_visible_date(raw: str, fallback: dt.datetime) -> str:
     match = re.search(r"<p>(?:[^<]+) · (\d{2}) (\w{3}) (\d{4})</p>", raw, re.I)
     if match:
@@ -76,7 +81,7 @@ def rebuild_index() -> None:
                 "file": path.name,
                 "title": text(title_m.group(1)) if title_m else path.stem,
                 "summary": text(summary_m.group(1)) if summary_m else "",
-                "category": text(category_m.group(1)) if category_m else "News",
+                "category": clean_category(category_m.group(1)) if category_m else "News",
                 "date": dt.datetime.fromisoformat(schema["datePublished"].replace("Z", "+00:00")).strftime("%d %b %Y"),
             }
             image_m = re.search(r"<meta[^>]+property=[\"']og:image[\"'][^>]+content=[\"']([^\"']+)[\"']", raw, re.I)
