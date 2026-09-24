@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T10:26:49.861924+00:00",
+  "updated_at": "2026-09-24T11:18:09.508803+00:00",
   "videos": [
     {
       "video_id": "z-IhectxDvY",
@@ -338,6 +338,22 @@
       "published_by_pipeline_at": "2026-09-23T19:47:16.693030+00:00"
     },
     {
+      "video_id": "tHRcgzSSsI8",
+      "title": "Strike while the iron’s hot. #DiggerMovie",
+      "category": "Movies & TV",
+      "channel": "Warner Bros. Pictures",
+      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
+      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
+      "url": "https://www.youtube.com/shorts/tHRcgzSSsI8",
+      "embed_url": "https://www.youtube-nocookie.com/embed/tHRcgzSSsI8",
+      "thumbnail": "https://i.ytimg.com/vi/tHRcgzSSsI8/hqdefault.jpg",
+      "published_at": "2026-09-23T17:32:10+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Warner Bros. Pictures — Strike while the iron’s hot. #DiggerMovie. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-09-24T11:18:09.367231+00:00"
+    },
+    {
       "video_id": "lv7OKDfDI_c",
       "title": "Demeo x Dungeons & Dragons: Battlemarked XBOX Launch Trailer",
       "category": "Gaming",
@@ -352,6 +368,22 @@
       "is_short": false,
       "description": "Xbox — Demeo x Dungeons & Dragons: Battlemarked XBOX Launch Trailer. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-09-23T19:47:16.808222+00:00"
+    },
+    {
+      "video_id": "EwJBTv_Zny0",
+      "title": "Ah, the joys of showering in the dorms | 🎬 Pitch Perfect (2012)",
+      "category": "Movies & TV",
+      "channel": "Universal Pictures",
+      "channel_id": "UCq0OueAsdxH6b8nyAspwViw",
+      "channel_url": "https://www.youtube.com/channel/UCq0OueAsdxH6b8nyAspwViw",
+      "url": "https://www.youtube.com/shorts/EwJBTv_Zny0",
+      "embed_url": "https://www.youtube-nocookie.com/embed/EwJBTv_Zny0",
+      "thumbnail": "https://i.ytimg.com/vi/EwJBTv_Zny0/hqdefault.jpg",
+      "published_at": "2026-09-23T17:00:58+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Universal Pictures — Ah, the joys of showering in the dorms | 🎬 Pitch Perfect (2012). Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-09-24T11:18:09.508705+00:00"
     },
     {
       "video_id": "-rlmVW6Qgjg",
@@ -1561,36 +1593,6 @@
       "source": "YouTube channel feed",
       "description": "Universal Pictures shares a fun Movies & TV short featuring a memorable moment from *Neighbors*, highlighting camaraderie and humor in this engaging clip titled \"I Love You Man\" 👊.",
       "published_by_pipeline_at": "2026-09-18T08:39:16.538673+00:00"
-    },
-    {
-      "video_id": "srleaPsE_W0",
-      "title": "Ain’t Maggie sweet? DIGGER – only in theaters October 2. #DiggerMovie",
-      "category": "Movies & TV",
-      "channel": "Warner Bros. Pictures",
-      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
-      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
-      "url": "https://www.youtube.com/shorts/srleaPsE_W0",
-      "embed_url": "https://www.youtube-nocookie.com/embed/srleaPsE_W0",
-      "thumbnail": "https://i.ytimg.com/vi/srleaPsE_W0/hqdefault.jpg",
-      "published_at": "2026-09-17T21:00:01+00:00",
-      "source": "YouTube channel feed",
-      "description": "Warner Bros. Pictures shares a promotional video for the movie DIGGER, featuring Maggie and highlighting its theatrical release on October 2, in this clip from the Movies & TV category.",
-      "published_by_pipeline_at": "2026-09-18T08:39:17.191073+00:00"
-    },
-    {
-      "video_id": "HKHkVbRiQEk",
-      "title": "If you need her, she’s with her sister! #PracticalMagic2",
-      "category": "Movies & TV",
-      "channel": "Warner Bros. Pictures",
-      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
-      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
-      "url": "https://www.youtube.com/shorts/HKHkVbRiQEk",
-      "embed_url": "https://www.youtube-nocookie.com/embed/HKHkVbRiQEk",
-      "thumbnail": "https://i.ytimg.com/vi/HKHkVbRiQEk/hqdefault.jpg",
-      "published_at": "2026-09-17T20:30:04+00:00",
-      "source": "YouTube channel feed",
-      "description": "Warner Bros. Pictures shares a look at Practical Magic 2 in this Movies & TV video, highlighting the beloved characters and their enduring bond as the magical story continues.",
-      "published_by_pipeline_at": "2026-09-18T08:39:17.907503+00:00"
     }
   ]
 }

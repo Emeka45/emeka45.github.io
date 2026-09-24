@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-24T10:22:58.598435+00:00",
-  "finished_utc": "2026-09-24T10:26:27.738676+00:00",
+  "started_utc": "2026-09-24T11:12:55.779879+00:00",
+  "finished_utc": "2026-09-24T11:17:12.601478+00:00",
   "model": "gemini-3.6-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 404: Not Found"
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -33,14 +33,12 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 642,
-  "fresh_items": 622,
+  "total_items": 641,
+  "fresh_items": 621,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 3,
-  "held_or_rejected": 1,
+  "ai_failures": 4,
+  "held_or_rejected": 0,
   "published_count": 0,
-  "rejection_reasons": [
-    "The provided source records do not materially corroborate a single central event. The sources cover entirely separate developments and opinion subjects within the Nigerian justice sector, including AI regulation in courts, mob violence, judicial bureaucracy, and pre-trial custody conditions. Without at least two publisher domains covering the same specific event, an article cannot be published."
-  ]
+  "rejection_reasons": []
 }
