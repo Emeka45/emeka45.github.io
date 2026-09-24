@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T09:09:35.873010+00:00",
+  "updated_at": "2026-09-24T10:26:49.861924+00:00",
   "videos": [
     {
       "video_id": "z-IhectxDvY",
@@ -256,6 +256,38 @@
       "is_short": false,
       "description": "Xbox — Age of Empires II: Definitive Edition - The Viking Sagas | Launch Trailer. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-09-23T19:47:16.445873+00:00"
+    },
+    {
+      "video_id": "0ZkuX7ptrtc",
+      "title": "The Dress Testing Disaster 🤢 #Bridesmaids #Shorts",
+      "category": "Movies & TV",
+      "channel": "Universal Pictures",
+      "channel_id": "UCq0OueAsdxH6b8nyAspwViw",
+      "channel_url": "https://www.youtube.com/channel/UCq0OueAsdxH6b8nyAspwViw",
+      "url": "https://www.youtube.com/shorts/0ZkuX7ptrtc",
+      "embed_url": "https://www.youtube-nocookie.com/embed/0ZkuX7ptrtc",
+      "thumbnail": "https://i.ytimg.com/vi/0ZkuX7ptrtc/hqdefault.jpg",
+      "published_at": "2026-09-23T19:00:01+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Universal Pictures presents a short clip from Bridesmaids titled The Dress Testing Disaster, featuring a dress testing scene from the Movies and TV category.",
+      "published_by_pipeline_at": "2026-09-24T10:26:49.739058+00:00"
+    },
+    {
+      "video_id": "Jcse5j2ILaY",
+      "title": "He just has one of those faces. Search Clayface for more — only in theaters October 23.",
+      "category": "Movies & TV",
+      "channel": "Warner Bros. Pictures",
+      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
+      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
+      "url": "https://www.youtube.com/shorts/Jcse5j2ILaY",
+      "embed_url": "https://www.youtube-nocookie.com/embed/Jcse5j2ILaY",
+      "thumbnail": "https://i.ytimg.com/vi/Jcse5j2ILaY/hqdefault.jpg",
+      "published_at": "2026-09-23T18:30:45+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Warner Bros. Pictures — He just has one of those faces. Search Clayface for more — only in theaters October 23.. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-09-24T10:26:49.861827+00:00"
     },
     {
       "video_id": "mW9LrMndX10",
@@ -1559,36 +1591,6 @@
       "source": "YouTube channel feed",
       "description": "Warner Bros. Pictures shares a look at Practical Magic 2 in this Movies & TV video, highlighting the beloved characters and their enduring bond as the magical story continues.",
       "published_by_pipeline_at": "2026-09-18T08:39:17.907503+00:00"
-    },
-    {
-      "video_id": "T-QJEs7fS1U",
-      "title": "Overwatch w/Devs: Doctrine, Grimsvötn, Reworks, and More | Official XBOX Podcast",
-      "category": "Gaming",
-      "channel": "Xbox",
-      "channel_id": "UCjBp_7RuDBUYbd1LegWEJ8g",
-      "channel_url": "https://www.youtube.com/channel/UCjBp_7RuDBUYbd1LegWEJ8g",
-      "url": "https://www.youtube.com/watch?v=T-QJEs7fS1U",
-      "embed_url": "https://www.youtube-nocookie.com/embed/T-QJEs7fS1U",
-      "thumbnail": "https://i.ytimg.com/vi/T-QJEs7fS1U/hqdefault.jpg",
-      "published_at": "2026-09-17T20:00:22+00:00",
-      "source": "YouTube channel feed",
-      "description": "Join the official Xbox Podcast for an in-depth gaming discussion featuring developers. Tune in as the team breaks down the latest Overwatch updates, including Doctrine, Grimsvötn, hero reworks, and much more.",
-      "published_by_pipeline_at": "2026-09-18T08:39:18.452037+00:00"
-    },
-    {
-      "video_id": "uqMuRSvQTRU",
-      "title": "DRAGON QUEST Monsters: The Withered World - Gameplay Overview Trailer",
-      "category": "Gaming",
-      "channel": "Xbox",
-      "channel_id": "UCjBp_7RuDBUYbd1LegWEJ8g",
-      "channel_url": "https://www.youtube.com/channel/UCjBp_7RuDBUYbd1LegWEJ8g",
-      "url": "https://www.youtube.com/watch?v=uqMuRSvQTRU",
-      "embed_url": "https://www.youtube-nocookie.com/embed/uqMuRSvQTRU",
-      "thumbnail": "https://i.ytimg.com/vi/uqMuRSvQTRU/hqdefault.jpg",
-      "published_at": "2026-09-17T19:35:04+00:00",
-      "source": "YouTube channel feed",
-      "description": "Watch the gameplay overview trailer for DRAGON QUEST Monsters: The Withered World, presented by Xbox in the gaming category, showcasing core features and mechanics from the upcoming title.",
-      "published_by_pipeline_at": "2026-09-18T08:39:19.055057+00:00"
     }
   ]
 }
