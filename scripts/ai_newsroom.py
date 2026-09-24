@@ -206,6 +206,11 @@ def slug(text):
     return re.sub(r'[^a-z0-9]+', '-', text.lower()).strip('-')[:90] or 'story'
 
 
+def clean_category(value):
+    value = html.unescape(re.sub('<[^>]+>', '', value or '')).strip()
+    return re.sub(r'^←\\s*C\\. O\\. Eric Newsroom\\s*', '', value, flags=re.I).strip() or 'News'
+
+
 def update_index():
     items = []
     for p in NEWS.glob('*.html'):
@@ -218,7 +223,11 @@ def update_index():
         except Exception:
             continue
     items.sort(key=lambda x: x['file'], reverse=True)
-    INDEX.write_text(json.dumps(items[:100], ensure_ascii=False, indent=2), encoding='utf-8')
+    unique = []
+    for item in items:
+        if not any(event_match(item, old) for old in unique):
+            unique.append(item)
+    INDEX.write_text(json.dumps(unique[:100], ensure_ascii=False, indent=2), encoding='utf-8')
 
 
 def publish(article):
@@ -295,16 +304,26 @@ def main():
         returned_urls = {s.get('url') for s in srcs if isinstance(s, dict)}
         domains = {urllib.parse.urlparse(u).netloc.lower().removeprefix('www.') for u in returned_urls if u}
         body_link_valid = bool(body_links) and set(body_links).issubset(supplied_urls)
+        existing_duplicate = False
+        for existing_path in NEWS.glob('*.html'):
+            try:
+                existing_raw = existing_path.read_text(encoding='utf-8')
+                existing_title = re.search(r'<h1>(.*?)</h1>', existing_raw, re.S | re.I)
+                if existing_title and similarity({'title': article.get('title',''), 'summary': article.get('summary','')}, {'title': re.sub('<[^>]+>', ' ', existing_title.group(1)), 'summary': ''}) >= 0.72:
+                    existing_duplicate = True
+                    break
+            except Exception:
+                pass
         valid = article.get('publish') is True and article.get('confidence', 0) >= 85 and len(srcs) >= 2 and len(domains) >= 2 and returned_urls.issubset(supplied_urls) and body_link_valid and not contains_blocked(text)
 
-        if valid:
+        if valid and not existing_duplicate:
             print('PUBLISHED', publish(article))
             published_count += 1
-            state['seen'].append(item['url'])
+            state['seen'].extend(s['url'] for s in sources if s.get('url'))
         else:
             held_count += 1
-            reason = article.get('reason', 'quality/link safety gate failed')
-            if not body_link_valid:
+            reason = 'duplicate of an existing newsroom story' if existing_duplicate else article.get('reason', 'quality/link safety gate failed')
+            if not existing_duplicate and not body_link_valid:
                 reason = 'article did not contain a valid inline link to a supplied source'
             rejection_reasons.append(reason)
             print('HELD/REJECTED:', reason)
