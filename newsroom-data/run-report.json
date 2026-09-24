@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-24T18:52:30.879185+00:00",
-  "finished_utc": "2026-09-24T18:56:20.566331+00:00",
+  "started_utc": "2026-09-24T21:12:44.144753+00:00",
+  "finished_utc": "2026-09-24T21:17:15.142273+00:00",
   "model": "gemini-3.6-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -33,14 +33,12 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 644,
+  "total_items": 643,
   "fresh_items": 626,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 3,
-  "held_or_rejected": 1,
+  "ai_failures": 4,
+  "held_or_rejected": 0,
   "published_count": 0,
-  "rejection_reasons": [
-    "Insufficient corroboration across multiple distinct publisher domains. The provided sources cover different events without at least two independent domains corroborating the same central event."
-  ]
+  "rejection_reasons": []
 }

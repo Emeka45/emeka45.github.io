@@ -1,6 +1,38 @@
 {
-  "updated_at": "2026-09-24T18:57:55.528249+00:00",
+  "updated_at": "2026-09-24T21:17:33.420065+00:00",
   "videos": [
+    {
+      "video_id": "CHobAJa8pQY",
+      "title": "Questionin’ it all. #DiggerMovie",
+      "category": "Movies & TV",
+      "channel": "Warner Bros. Pictures",
+      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
+      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
+      "url": "https://www.youtube.com/shorts/CHobAJa8pQY",
+      "embed_url": "https://www.youtube-nocookie.com/embed/CHobAJa8pQY",
+      "thumbnail": "https://i.ytimg.com/vi/CHobAJa8pQY/hqdefault.jpg",
+      "published_at": "2026-09-24T21:00:19+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Warner Bros. Pictures — Questionin’ it all. #DiggerMovie. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-09-24T21:17:33.331906+00:00"
+    },
+    {
+      "video_id": "ZCj56xJStjU",
+      "title": "Searchin’ for the truth. #DiggerMovie",
+      "category": "Movies & TV",
+      "channel": "Warner Bros. Pictures",
+      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
+      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
+      "url": "https://www.youtube.com/shorts/ZCj56xJStjU",
+      "embed_url": "https://www.youtube-nocookie.com/embed/ZCj56xJStjU",
+      "thumbnail": "https://i.ytimg.com/vi/ZCj56xJStjU/hqdefault.jpg",
+      "published_at": "2026-09-24T20:02:43+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Warner Bros. Pictures — Searchin’ for the truth. #DiggerMovie. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-09-24T21:17:33.419968+00:00"
+    },
     {
       "video_id": "ZptzNZ29jLA",
       "title": "Forgotten Island | Sophia Laforteza",
@@ -1568,38 +1600,6 @@
       "is_short": true,
       "description": "Warner Bros. Pictures — You want him to dig. You need him to dig. DIGGER – only in theaters October 2. #DiggerMovie. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-09-18T18:37:02.137219+00:00"
-    },
-    {
-      "video_id": "rcY9DVlh87Q",
-      "title": "Thank you for bringing our characters to life! ✨",
-      "category": "Gaming",
-      "channel": "Ubisoft",
-      "channel_id": "UCBMvc6jvuTxH6TNo9ThpYjg",
-      "channel_url": "https://www.youtube.com/channel/UCBMvc6jvuTxH6TNo9ThpYjg",
-      "url": "https://www.youtube.com/shorts/rcY9DVlh87Q",
-      "embed_url": "https://www.youtube-nocookie.com/embed/rcY9DVlh87Q",
-      "thumbnail": "https://i.ytimg.com/vi/rcY9DVlh87Q/hqdefault.jpg",
-      "published_at": "2026-09-18T18:00:23+00:00",
-      "source": "YouTube channel feed",
-      "is_short": true,
-      "description": "Ubisoft — Thank you for bringing our characters to life! ✨. Watch the original video on YouTube.",
-      "published_by_pipeline_at": "2026-09-18T18:37:02.265456+00:00"
-    },
-    {
-      "video_id": "GZpK6IwZyfM",
-      "title": "🔴 LIVE: binging Batman: The Animated Series 🍿 + TRIVIA | Batman Day 2026 | DC",
-      "category": "Movies & TV",
-      "channel": "DC",
-      "channel_id": "UCiifkYAs_bq1pt_zbNAzYGg",
-      "channel_url": "https://www.youtube.com/channel/UCiifkYAs_bq1pt_zbNAzYGg",
-      "url": "https://www.youtube.com/watch?v=GZpK6IwZyfM",
-      "embed_url": "https://www.youtube-nocookie.com/embed/GZpK6IwZyfM",
-      "thumbnail": "https://i.ytimg.com/vi/GZpK6IwZyfM/hqdefault.jpg",
-      "published_at": "2026-09-18T17:47:46+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Watch a live stream featuring a binge of Batman: The Animated Series alongside trivia for Batman Day 2026, presented by the channel DC in Movies and TV.",
-      "published_by_pipeline_at": "2026-09-18T18:28:55.471065+00:00"
     }
   ]
 }
