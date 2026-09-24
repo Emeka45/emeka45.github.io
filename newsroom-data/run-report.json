@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-24T04:52:06.327293+00:00",
-  "finished_utc": "2026-09-24T04:55:30.619416+00:00",
+  "started_utc": "2026-09-24T08:47:52.474291+00:00",
+  "finished_utc": "2026-09-24T08:50:55.117843+00:00",
   "model": "gemini-3.6-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -33,15 +33,15 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 641,
-  "fresh_items": 622,
+  "total_items": 642,
+  "fresh_items": 623,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
   "ai_failures": 2,
   "held_or_rejected": 2,
   "published_count": 0,
   "rejection_reasons": [
-    "The supplied sources do not share corroborating coverage from at least two independent publisher domains regarding the same central event. One domain reports on Seriake Dickson ruling out a 2027 presidential bid, while another domain reports on the Obi-Kwankwaso Movement's refusal to merge structures into the Nigeria Democratic Congress.",
-    "The story is materially corroborated across multiple independent media sources, confirming EFCC Chairman Ola Olukoyede's engagement with religious leaders at a NIREC meeting in Abuja."
+    "Insufficient multi-domain corroboration. The provided sources discuss distinct events (a statement on the status of the ECOWAS Court, an announcement regarding a 2026 ECOWAS conference in Senegal, a drug trafficking conviction, and a university law clinic renovation) without at least two independent publisher domains materially supporting the exact same central event.",
+    "The provided source records discuss disparate feature topics and issues within the broader Nigerian justice system (including AI guardrails, pre-trial custody deaths, and mob justice) rather than materially corroborating a single specific central event, incident, or announcement across multiple publisher domains."
   ]
 }

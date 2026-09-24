@@ -1,6 +1,38 @@
 {
-  "updated_at": "2026-09-24T04:55:45.678041+00:00",
+  "updated_at": "2026-09-24T08:51:39.078551+00:00",
   "videos": [
+    {
+      "video_id": "z-IhectxDvY",
+      "title": "Rocket League – Season 24 Trailer – Nintendo Switch",
+      "category": "Gaming",
+      "channel": "Nintendo of America",
+      "channel_id": "UCGIY_O-8vW4rfX98KlMkvRg",
+      "channel_url": "https://www.youtube.com/channel/UCGIY_O-8vW4rfX98KlMkvRg",
+      "url": "https://www.youtube.com/watch?v=z-IhectxDvY",
+      "embed_url": "https://www.youtube-nocookie.com/embed/z-IhectxDvY",
+      "thumbnail": "https://i.ytimg.com/vi/z-IhectxDvY/hqdefault.jpg",
+      "published_at": "2026-09-24T00:00:12+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Watch the Season 24 trailer for Rocket League on Nintendo Switch, presented by Nintendo of America in this gaming video.",
+      "published_by_pipeline_at": "2026-09-24T08:51:08.105368+00:00"
+    },
+    {
+      "video_id": "z32bAplpqB4",
+      "title": "Nomori Launch Trailer",
+      "category": "Gaming",
+      "channel": "Xbox",
+      "channel_id": "UCjBp_7RuDBUYbd1LegWEJ8g",
+      "channel_url": "https://www.youtube.com/channel/UCjBp_7RuDBUYbd1LegWEJ8g",
+      "url": "https://www.youtube.com/watch?v=z32bAplpqB4",
+      "embed_url": "https://www.youtube-nocookie.com/embed/z32bAplpqB4",
+      "thumbnail": "https://i.ytimg.com/vi/z32bAplpqB4/hqdefault.jpg",
+      "published_at": "2026-09-23T23:57:48+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Watch the official launch trailer for Nomori, a gaming video presented by Xbox, showcasing footage from the title.",
+      "published_by_pipeline_at": "2026-09-24T08:51:06.823700+00:00"
+    },
     {
       "video_id": "uy7V_CQWExo",
       "title": "Wuthering Waves Version 3.7 Official Trailer",
@@ -1555,36 +1587,6 @@
       "source": "YouTube channel feed",
       "description": "Xbox has published a new gaming video: “CONTROL Resonant | Launch Trailer”. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-09-18T08:39:19.837784+00:00"
-    },
-    {
-      "video_id": "sdfTN9Ofrus",
-      "title": "Neighbors | Mac and Teddy Model Outside Abercrombie and Finch",
-      "category": "Movies & TV",
-      "channel": "Universal Pictures",
-      "channel_id": "UCq0OueAsdxH6b8nyAspwViw",
-      "channel_url": "https://www.youtube.com/channel/UCq0OueAsdxH6b8nyAspwViw",
-      "url": "https://www.youtube.com/watch?v=sdfTN9Ofrus",
-      "embed_url": "https://www.youtube-nocookie.com/embed/sdfTN9Ofrus",
-      "thumbnail": "https://i.ytimg.com/vi/sdfTN9Ofrus/hqdefault.jpg",
-      "published_at": "2026-09-17T19:00:37+00:00",
-      "source": "YouTube channel feed",
-      "description": "Universal Pictures shares a clip from the Movies & TV category featuring Mac and Teddy modeling outside Abercrombie and Finch in the feature film *Neighbors*.",
-      "published_by_pipeline_at": "2026-09-18T08:39:20.341911+00:00"
-    },
-    {
-      "video_id": "8CV3SooS_zQ",
-      "title": "Text your besties, grab a marg, and head to the theater! #PracticalMagic2",
-      "category": "Movies & TV",
-      "channel": "Warner Bros. Pictures",
-      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
-      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
-      "url": "https://www.youtube.com/shorts/8CV3SooS_zQ",
-      "embed_url": "https://www.youtube-nocookie.com/embed/8CV3SooS_zQ",
-      "thumbnail": "https://i.ytimg.com/vi/8CV3SooS_zQ/hqdefault.jpg",
-      "published_at": "2026-09-17T18:30:35+00:00",
-      "source": "YouTube channel feed",
-      "description": "Warner Bros. Pictures has published a new movies & tv video: “Text your besties, grab a marg, and head to the theater! #PracticalMagic2”. Watch the original video on YouTube.",
-      "published_by_pipeline_at": "2026-09-18T08:39:20.402866+00:00"
     }
   ]
 }
