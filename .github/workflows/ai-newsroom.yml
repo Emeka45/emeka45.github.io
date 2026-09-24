@@ -1,30 +1,23 @@
 name: C. O. Eric AI Newsroom
 
 # Verified newsroom + automatic Video Hub pipeline.
-# Manual build trigger: 2026-09-21
 on:
   push:
     paths:
-      # Root-level website pages/assets that should trigger the pipeline when edited.
-      # Broad root patterns do not match generated files inside news/, videos/ or newsroom-data/.
       - '*.html'
       - '*.css'
       - '*.js'
       - '*.xml'
       - '*.json'
-      # Newsroom/video source and generator code.
       - 'scripts/ai_newsroom.py'
       - 'scripts/run_ai_newsroom.py'
-      - 'scripts/expand_existing_news.py'
       - 'scripts/generate_news_images.py'
       - 'scripts/repair_news_images.py'
       - 'scripts/update_video_hub.py'
-      - 'scripts/update_academic_jobs.py'
-      - 'academic-jobs-data/**'
       - 'video_sources.json'
       - '.github/workflows/ai-newsroom.yml'
   schedule:
-    - cron: '0 */4 * * *'
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 permissions:
@@ -40,14 +33,17 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Run newsroom
+      - name: Run newsroom (free-tier safe)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python scripts/run_ai_newsroom.py
-      - name: Expand existing short news articles
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python scripts/expand_existing_news.py
+        run: |
+          python - <<'PY'
+          import scripts.run_ai_newsroom as newsroom
+          newsroom.ai_newsroom.AI_MODEL = 'gemini-3.6-flash'
+          newsroom.ai_newsroom.MAX_AI_CANDIDATES_PER_RUN = 4
+          newsroom.ai_newsroom.main()
+          newsroom.normalize_and_seo()
+          PY
       - name: Generate missing story images with Gemini
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -60,10 +56,6 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/update_video_hub.py
-      - name: Update Academic & Jobs Hub
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python scripts/update_academic_jobs.py
       - name: Show newsroom and video diagnostics
         if: always()
         run: |
@@ -77,15 +69,12 @@ jobs:
         run: |
           git config user.name 'C. O. Eric AI Newsroom'
           git config user.email 'actions@users.noreply.github.com'
-          git add news/ newsroom-data/ videos/ academic-jobs-data/
+          git add news/ newsroom-data/ videos/
           if git diff --cached --quiet; then
             echo 'No newsroom or Video Hub changes to publish.'
           else
             git commit -m 'AI newsroom: publish stories, images and videos'
             git fetch origin main
-            # A human/other automation may update the same generated story while
-            # this run is processing. During rebase, keep the current main version
-            # for conflicts so an image/editorial fix is never overwritten.
             if ! git rebase origin/main; then
               conflicts="$(git diff --name-only --diff-filter=U || true)"
               if [ -n "$conflicts" ]; then
