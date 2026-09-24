@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-24T08:47:52.474291+00:00",
-  "finished_utc": "2026-09-24T08:50:55.117843+00:00",
+  "started_utc": "2026-09-24T09:04:41.360167+00:00",
+  "finished_utc": "2026-09-24T09:08:51.984950+00:00",
   "model": "gemini-3.6-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -37,11 +37,8 @@
   "fresh_items": 623,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 2,
-  "held_or_rejected": 2,
+  "ai_failures": 4,
+  "held_or_rejected": 0,
   "published_count": 0,
-  "rejection_reasons": [
-    "Insufficient multi-domain corroboration. The provided sources discuss distinct events (a statement on the status of the ECOWAS Court, an announcement regarding a 2026 ECOWAS conference in Senegal, a drug trafficking conviction, and a university law clinic renovation) without at least two independent publisher domains materially supporting the exact same central event.",
-    "The provided source records discuss disparate feature topics and issues within the broader Nigerian justice system (including AI guardrails, pre-trial custody deaths, and mob justice) rather than materially corroborating a single specific central event, incident, or announcement across multiple publisher domains."
-  ]
+  "rejection_reasons": []
 }

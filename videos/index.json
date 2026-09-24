@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T08:51:39.078551+00:00",
+  "updated_at": "2026-09-24T09:09:35.873010+00:00",
   "videos": [
     {
       "video_id": "z-IhectxDvY",
@@ -32,6 +32,22 @@
       "is_short": false,
       "description": "Watch the official launch trailer for Nomori, a gaming video presented by Xbox, showcasing footage from the title.",
       "published_by_pipeline_at": "2026-09-24T08:51:06.823700+00:00"
+    },
+    {
+      "video_id": "5xCOHODDhLU",
+      "title": "You think you know the truth? Think again. #DiggerMovie",
+      "category": "Movies & TV",
+      "channel": "Warner Bros. Pictures",
+      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
+      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
+      "url": "https://www.youtube.com/shorts/5xCOHODDhLU",
+      "embed_url": "https://www.youtube-nocookie.com/embed/5xCOHODDhLU",
+      "thumbnail": "https://i.ytimg.com/vi/5xCOHODDhLU/hqdefault.jpg",
+      "published_at": "2026-09-23T23:30:28+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Warner Bros. Pictures — You think you know the truth? Think again. #DiggerMovie. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-09-24T09:09:35.759914+00:00"
     },
     {
       "video_id": "uy7V_CQWExo",
@@ -144,6 +160,22 @@
       "is_short": false,
       "description": "Disney — Kapitel 14 - Disney Pixar 5 Minuten Gruselgeschichten. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-09-23T23:30:27.173688+00:00"
+    },
+    {
+      "video_id": "TTYfh2pPdSY",
+      "title": "On top of the world. #DiggerMovie",
+      "category": "Movies & TV",
+      "channel": "Warner Bros. Pictures",
+      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
+      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
+      "url": "https://www.youtube.com/shorts/TTYfh2pPdSY",
+      "embed_url": "https://www.youtube-nocookie.com/embed/TTYfh2pPdSY",
+      "thumbnail": "https://i.ytimg.com/vi/TTYfh2pPdSY/hqdefault.jpg",
+      "published_at": "2026-09-23T22:00:36+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Warner Bros. Pictures — On top of the world. #DiggerMovie. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-09-24T09:09:35.872907+00:00"
     },
     {
       "video_id": "D2xrcoQ__f0",
@@ -1557,36 +1589,6 @@
       "source": "YouTube channel feed",
       "description": "Watch the gameplay overview trailer for DRAGON QUEST Monsters: The Withered World, presented by Xbox in the gaming category, showcasing core features and mechanics from the upcoming title.",
       "published_by_pipeline_at": "2026-09-18T08:39:19.055057+00:00"
-    },
-    {
-      "video_id": "npsV6twF71I",
-      "title": "can you believe it has been 5yrs already?! 📺: SQUID GAME",
-      "category": "Movies & TV",
-      "channel": "Netflix",
-      "channel_id": "UCWOA1ZGywLbqmigxE4Qlvuw",
-      "channel_url": "https://www.youtube.com/channel/UCWOA1ZGywLbqmigxE4Qlvuw",
-      "url": "https://www.youtube.com/shorts/npsV6twF71I",
-      "embed_url": "https://www.youtube-nocookie.com/embed/npsV6twF71I",
-      "thumbnail": "https://i.ytimg.com/vi/npsV6twF71I/hqdefault.jpg",
-      "published_at": "2026-09-17T19:30:00+00:00",
-      "source": "YouTube channel feed",
-      "description": "Netflix shares a nostalgic look back at Squid Game in this Movies & TV video, celebrating the milestone of five years since the phenomenon first captured global audiences with its thrilling survival drama.",
-      "published_by_pipeline_at": "2026-09-18T08:39:19.733344+00:00"
-    },
-    {
-      "video_id": "G1-lx73dP5g",
-      "title": "CONTROL Resonant | Launch Trailer",
-      "category": "Gaming",
-      "channel": "Xbox",
-      "channel_id": "UCjBp_7RuDBUYbd1LegWEJ8g",
-      "channel_url": "https://www.youtube.com/channel/UCjBp_7RuDBUYbd1LegWEJ8g",
-      "url": "https://www.youtube.com/watch?v=G1-lx73dP5g",
-      "embed_url": "https://www.youtube-nocookie.com/embed/G1-lx73dP5g",
-      "thumbnail": "https://i.ytimg.com/vi/G1-lx73dP5g/hqdefault.jpg",
-      "published_at": "2026-09-17T19:10:26+00:00",
-      "source": "YouTube channel feed",
-      "description": "Xbox has published a new gaming video: “CONTROL Resonant | Launch Trailer”. Watch the original video on YouTube.",
-      "published_by_pipeline_at": "2026-09-18T08:39:19.837784+00:00"
     }
   ]
 }
