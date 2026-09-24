@@ -9,7 +9,13 @@ import urllib.parse
 import urllib.request
 from urllib.parse import urlparse
 
-import ai_newsroom
+if __package__:
+    from . import ai_newsroom
+else:
+    import sys
+    from pathlib import Path
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import ai_newsroom
 
 _original_sanitize = ai_newsroom.sanitize_body_html
 
