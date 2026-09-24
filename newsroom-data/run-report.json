@@ -1,8 +1,8 @@
 {
-  "started_utc": "2026-09-23T22:52:22.569007+00:00",
-  "finished_utc": "2026-09-23T23:08:08.471022+00:00",
-  "model": "gemini-3.5-flash-lite",
-  "max_ai_candidates_per_run": 20,
+  "started_utc": "2026-09-24T04:52:06.327293+00:00",
+  "finished_utc": "2026-09-24T04:55:30.619416+00:00",
+  "model": "gemini-3.6-flash",
+  "max_ai_candidates_per_run": 4,
   "feed_count": 56,
   "feed_success_count": 51,
   "feed_failure_count": 5,
@@ -35,15 +35,13 @@
   ],
   "total_items": 641,
   "fresh_items": 622,
-  "corroborated_candidates": 20,
-  "ai_attempts": 20,
-  "ai_failures": 16,
-  "held_or_rejected": 4,
+  "corroborated_candidates": 4,
+  "ai_attempts": 4,
+  "ai_failures": 2,
+  "held_or_rejected": 2,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided source records cover completely unrelated topics (an education story about Governor Otti receiving a JAMB scorer in Abia State, and sports stories about Kylian Mbappé targeting the Ballon d'Or). There are no two distinct publisher domains reporting on the same central event, failing the strict evidence and corroboration rules.",
-    "The provided source records cover distinct topics (NESG on education, housing market growth, and IMF on the developing-world job market) without sufficient multi-source corroboration on a single central event.",
-    "The provided source records discuss entirely different topics within Nigeria's law and justice sector—ranging from artificial intelligence in the justice system, human rights, judicial bureaucracy, to mob justice—without at least two sources materially corroborating the same central event.",
-    "The provided source records cover completely different, unrelated topics with no two sources corroborating the same central event."
+    "The supplied sources do not share corroborating coverage from at least two independent publisher domains regarding the same central event. One domain reports on Seriake Dickson ruling out a 2027 presidential bid, while another domain reports on the Obi-Kwankwaso Movement's refusal to merge structures into the Nigeria Democratic Congress.",
+    "The story is materially corroborated across multiple independent media sources, confirming EFCC Chairman Ola Olukoyede's engagement with religious leaders at a NIREC meeting in Abuja."
   ]
 }
