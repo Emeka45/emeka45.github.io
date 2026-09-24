@@ -1,6 +1,38 @@
 {
-  "updated_at": "2026-09-24T16:48:50.111060+00:00",
+  "updated_at": "2026-09-24T18:57:55.528249+00:00",
   "videos": [
+    {
+      "video_id": "ZptzNZ29jLA",
+      "title": "Forgotten Island | Sophia Laforteza",
+      "category": "Movies & TV",
+      "channel": "Universal Pictures",
+      "channel_id": "UCq0OueAsdxH6b8nyAspwViw",
+      "channel_url": "https://www.youtube.com/channel/UCq0OueAsdxH6b8nyAspwViw",
+      "url": "https://www.youtube.com/watch?v=ZptzNZ29jLA",
+      "embed_url": "https://www.youtube-nocookie.com/embed/ZptzNZ29jLA",
+      "thumbnail": "https://i.ytimg.com/vi/ZptzNZ29jLA/hqdefault.jpg",
+      "published_at": "2026-09-24T17:36:58+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Universal Pictures presents a Movies and TV video titled Forgotten Island, featuring Sophia Laforteza in this official channel upload.",
+      "published_by_pipeline_at": "2026-09-24T18:56:50.037550+00:00"
+    },
+    {
+      "video_id": "4QTebG8vzrc",
+      "title": "Planet Zoo 2 | Animal Spotlight - West Indian Manatee",
+      "category": "Gaming",
+      "channel": "Xbox",
+      "channel_id": "UCjBp_7RuDBUYbd1LegWEJ8g",
+      "channel_url": "https://www.youtube.com/channel/UCjBp_7RuDBUYbd1LegWEJ8g",
+      "url": "https://www.youtube.com/watch?v=4QTebG8vzrc",
+      "embed_url": "https://www.youtube-nocookie.com/embed/4QTebG8vzrc",
+      "thumbnail": "https://i.ytimg.com/vi/4QTebG8vzrc/hqdefault.jpg",
+      "published_at": "2026-09-24T17:05:36+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Watch the West Indian Manatee animal spotlight for Planet Zoo 2 in this gaming video from the official Xbox channel.",
+      "published_by_pipeline_at": "2026-09-24T18:56:51.139529+00:00"
+    },
     {
       "video_id": "24skSoZsJv0",
       "title": "SCTV: The Greatest Show You've Never Heard Of | First Look | Netflix",
@@ -1394,6 +1426,22 @@
       "published_by_pipeline_at": "2026-09-19T12:28:31.986737+00:00"
     },
     {
+      "video_id": "XI05AyrsPNw",
+      "title": "Spider-Man's Jacob Batalon Has Better Anime Taste Than You | 128",
+      "category": "Anime",
+      "channel": "Crunchyroll",
+      "channel_id": "UCBXn1nJgmCeM3gt0CI99b6g",
+      "channel_url": "https://www.youtube.com/channel/UCBXn1nJgmCeM3gt0CI99b6g",
+      "url": "https://www.youtube.com/watch?v=XI05AyrsPNw",
+      "embed_url": "https://www.youtube-nocookie.com/embed/XI05AyrsPNw",
+      "thumbnail": "https://i.ytimg.com/vi/XI05AyrsPNw/hqdefault.jpg",
+      "published_at": "2026-09-18T23:00:06+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Crunchyroll shares a video featuring Jacob Batalon discussing his anime preferences in this anime-themed segment.",
+      "published_by_pipeline_at": "2026-09-24T18:57:01.126133+00:00"
+    },
+    {
       "video_id": "FHnm-RLfHWQ",
       "title": "Fortnite x KINGDOM HEARTS – Reveal Trailer – Nintendo Switch 2",
       "category": "Gaming",
@@ -1552,54 +1600,6 @@
       "is_short": false,
       "description": "Watch a live stream featuring a binge of Batman: The Animated Series alongside trivia for Batman Day 2026, presented by the channel DC in Movies and TV.",
       "published_by_pipeline_at": "2026-09-18T18:28:55.471065+00:00"
-    },
-    {
-      "video_id": "Z9z-g3mrNbE",
-      "title": "EA SPORTS FC 27 | Official Launch Trailer",
-      "category": "Gaming",
-      "channel": "Xbox",
-      "channel_id": "UCjBp_7RuDBUYbd1LegWEJ8g",
-      "channel_url": "https://www.youtube.com/channel/UCjBp_7RuDBUYbd1LegWEJ8g",
-      "url": "https://www.youtube.com/watch?v=Z9z-g3mrNbE",
-      "embed_url": "https://www.youtube-nocookie.com/embed/Z9z-g3mrNbE",
-      "thumbnail": "https://i.ytimg.com/vi/Z9z-g3mrNbE/hqdefault.jpg",
-      "published_at": "2026-09-18T17:00:30+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Watch the official launch trailer for EA SPORTS FC 27 from Xbox in this gaming video, showcasing the title in action.",
-      "published_by_pipeline_at": "2026-09-18T18:28:35.308241+00:00"
-    },
-    {
-      "video_id": "g3znTFR_ZGM",
-      "title": "who's crying at the end of #OuterBanks?",
-      "category": "Movies & TV",
-      "channel": "Netflix",
-      "channel_id": "UCWOA1ZGywLbqmigxE4Qlvuw",
-      "channel_url": "https://www.youtube.com/channel/UCWOA1ZGywLbqmigxE4Qlvuw",
-      "url": "https://www.youtube.com/shorts/g3znTFR_ZGM",
-      "embed_url": "https://www.youtube-nocookie.com/embed/g3znTFR_ZGM",
-      "thumbnail": "https://i.ytimg.com/vi/g3znTFR_ZGM/hqdefault.jpg",
-      "published_at": "2026-09-18T17:00:00+00:00",
-      "source": "YouTube channel feed",
-      "is_short": true,
-      "description": "Netflix shares a video from the Movies & TV category asking who is crying at the end of Outer Banks.",
-      "published_by_pipeline_at": "2026-09-18T18:37:02.864125+00:00"
-    },
-    {
-      "video_id": "7cXBT0U5uNc",
-      "title": "If you’re seeing this, you know what to do. 😉 #PracticalMagic2",
-      "category": "Movies & TV",
-      "channel": "Warner Bros. Pictures",
-      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
-      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
-      "url": "https://www.youtube.com/shorts/7cXBT0U5uNc",
-      "embed_url": "https://www.youtube-nocookie.com/embed/7cXBT0U5uNc",
-      "thumbnail": "https://i.ytimg.com/vi/7cXBT0U5uNc/hqdefault.jpg",
-      "published_at": "2026-09-18T16:30:32+00:00",
-      "source": "YouTube channel feed",
-      "is_short": true,
-      "description": "Warner Bros. Pictures — If you’re seeing this, you know what to do. 😉 #PracticalMagic2. Watch the original video on YouTube.",
-      "published_by_pipeline_at": "2026-09-18T18:37:02.997878+00:00"
     }
   ]
 }
