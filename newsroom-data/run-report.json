@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-25T16:41:53.744880+00:00",
-  "finished_utc": "2026-09-25T16:46:14.654563+00:00",
+  "started_utc": "2026-09-25T21:10:08.515413+00:00",
+  "finished_utc": "2026-09-25T21:13:21.715249+00:00",
   "model": "gemini-3.6-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 404: Not Found"
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -37,8 +37,11 @@
   "fresh_items": 623,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 4,
-  "held_or_rejected": 0,
+  "ai_failures": 2,
+  "held_or_rejected": 2,
   "published_count": 0,
-  "rejection_reasons": []
+  "rejection_reasons": [
+    "Insufficient corroboration across multiple independent publisher domains. The provided source records cover two distinct topics (Lagos state police framework plans and disciplinary action against a police inspector) across two domains, with no single central event supported by at least two distinct publisher domains.",
+    "The supplied source records do not contain at least two different publisher domains reporting on the same central event. The sources describe two unrelated incidents (an arrest for phone fraud/firearm possession and an arraignment for child abuse) without multi-domain corroboration for either story."
+  ]
 }
