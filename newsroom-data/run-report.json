@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-25T03:44:41.158290+00:00",
-  "finished_utc": "2026-09-25T03:49:08.747906+00:00",
+  "started_utc": "2026-09-25T11:18:04.465698+00:00",
+  "finished_utc": "2026-09-25T11:20:41.697451+00:00",
   "model": "gemini-3.6-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -33,12 +33,16 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 644,
-  "fresh_items": 626,
+  "total_items": 638,
+  "fresh_items": 620,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 4,
-  "held_or_rejected": 0,
+  "ai_failures": 1,
+  "held_or_rejected": 3,
   "published_count": 0,
-  "rejection_reasons": []
+  "rejection_reasons": [
+    "The provided sources do not materially corroborate the same central event across at least two distinct publisher domains. One source discusses the APC zoning its Abia governorship ticket to Abia Central, while another source discusses Governor Alex Otti explaining his support for President Bola Tinubu's re-election.",
+    "The provided source records do not contain corroborating coverage from at least two distinct publisher domains on the same central event. The sources cover entirely separate developments involving Governor Alex Otti.",
+    "Insufficient corroboration across multiple publisher domains. The provided source records report on two completely unrelated topics (a rescue operation in Enugu by thereporter.com.ng and an anti-drug awareness campaign in Yobe by punchng.com), with neither event supported by at least two distinct domain sources."
+  ]
 }
