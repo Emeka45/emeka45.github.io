@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-25T11:22:17.308243+00:00",
-  "finished_utc": "2026-09-25T11:26:15.342283+00:00",
+  "started_utc": "2026-09-25T11:31:58.827402+00:00",
+  "finished_utc": "2026-09-25T11:36:12.772017+00:00",
   "model": "gemini-3.6-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 404: Not Found"
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -37,10 +37,8 @@
   "fresh_items": 620,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 3,
-  "held_or_rejected": 1,
+  "ai_failures": 4,
+  "held_or_rejected": 0,
   "published_count": 0,
-  "rejection_reasons": [
-    "Insufficient corroboration from distinct publisher domains. The report regarding the rescue in Enugu is only provided by one domain (thereporter.com.ng), and the report regarding drug abuse awareness in Yobe is only provided by one domain (punchng.com). At least two different publisher domains must materially support the same central event to publish."
-  ]
+  "rejection_reasons": []
 }

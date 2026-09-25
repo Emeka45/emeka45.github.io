@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T11:26:38.422626+00:00",
+  "updated_at": "2026-09-25T11:36:35.773891+00:00",
   "videos": [
     {
       "video_id": "nRU2GZd6b6Y",
@@ -96,6 +96,38 @@
       "is_short": true,
       "description": "Warner Bros. Pictures — See for yourself. Search Clayface - only in theaters October 23.. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-09-25T11:26:38.422578+00:00"
+    },
+    {
+      "video_id": "SBfDCfOgYfw",
+      "title": "Lillian Takes the Designer Dress Out Onto the Street 🤢 #Bridesmaids #Shorts",
+      "category": "Movies & TV",
+      "channel": "Universal Pictures",
+      "channel_id": "UCq0OueAsdxH6b8nyAspwViw",
+      "channel_url": "https://www.youtube.com/channel/UCq0OueAsdxH6b8nyAspwViw",
+      "url": "https://www.youtube.com/shorts/SBfDCfOgYfw",
+      "embed_url": "https://www.youtube-nocookie.com/embed/SBfDCfOgYfw",
+      "thumbnail": "https://i.ytimg.com/vi/SBfDCfOgYfw/hqdefault.jpg",
+      "published_at": "2026-09-24T19:00:20+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Universal Pictures shares a Movies & TV YouTube Short titled Lillian Takes the Designer Dress Out Onto the Street, featuring the hashtag Bridesmaids.",
+      "published_by_pipeline_at": "2026-09-25T11:36:34.787939+00:00"
+    },
+    {
+      "video_id": "bQj5XxidIkA",
+      "title": "The party has arrived! 🎉 #TheCatInTheHat - Only in theaters November 6.",
+      "category": "Movies & TV",
+      "channel": "Warner Bros. Pictures",
+      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
+      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
+      "url": "https://www.youtube.com/shorts/bQj5XxidIkA",
+      "embed_url": "https://www.youtube-nocookie.com/embed/bQj5XxidIkA",
+      "thumbnail": "https://i.ytimg.com/vi/bQj5XxidIkA/hqdefault.jpg",
+      "published_at": "2026-09-24T19:00:02+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Warner Bros. Pictures shares a video for The Cat In The Hat, arriving only in theaters November 6, categorized under Movies and TV.",
+      "published_by_pipeline_at": "2026-09-25T11:36:35.773814+00:00"
     },
     {
       "video_id": "ZptzNZ29jLA",
@@ -1568,38 +1600,6 @@
       "is_short": false,
       "description": "Watch the official Bloomwalker trailer from Xbox in the gaming category, and wishlist the game now.",
       "published_by_pipeline_at": "2026-09-18T20:03:00.166419+00:00"
-    },
-    {
-      "video_id": "Bo1kyi4mefI",
-      "title": "Two early birds who love a marg. It’s a perfect match! 💜 #PracticalMagic2",
-      "category": "Movies & TV",
-      "channel": "Warner Bros. Pictures",
-      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
-      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
-      "url": "https://www.youtube.com/shorts/Bo1kyi4mefI",
-      "embed_url": "https://www.youtube-nocookie.com/embed/Bo1kyi4mefI",
-      "thumbnail": "https://i.ytimg.com/vi/Bo1kyi4mefI/hqdefault.jpg",
-      "published_at": "2026-09-18T19:30:25+00:00",
-      "source": "YouTube channel feed",
-      "is_short": true,
-      "description": "Warner Bros. Pictures shares a video for Practical Magic 2 featuring two early birds who love a marg in the Movies & TV category.",
-      "published_by_pipeline_at": "2026-09-18T20:03:01.005483+00:00"
-    },
-    {
-      "video_id": "oQ-OvD7-0NY",
-      "title": "LEGO Batman: Legacy of the Dark Knight – Launch Trailer – Nintendo Switch 2",
-      "category": "Gaming",
-      "channel": "Nintendo of America",
-      "channel_id": "UCGIY_O-8vW4rfX98KlMkvRg",
-      "channel_url": "https://www.youtube.com/channel/UCGIY_O-8vW4rfX98KlMkvRg",
-      "url": "https://www.youtube.com/watch?v=oQ-OvD7-0NY",
-      "embed_url": "https://www.youtube-nocookie.com/embed/oQ-OvD7-0NY",
-      "thumbnail": "https://i.ytimg.com/vi/oQ-OvD7-0NY/hqdefault.jpg",
-      "published_at": "2026-09-18T19:00:31+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Nintendo of America shares the gaming launch trailer for LEGO Batman: Legacy of the Dark Knight on the Nintendo Switch 2 system.",
-      "published_by_pipeline_at": "2026-09-18T19:17:30.992471+00:00"
     }
   ]
 }
