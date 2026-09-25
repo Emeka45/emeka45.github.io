@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T11:21:23.451340+00:00",
+  "updated_at": "2026-09-25T11:26:38.422626+00:00",
   "videos": [
     {
       "video_id": "nRU2GZd6b6Y",
@@ -34,6 +34,22 @@
       "published_by_pipeline_at": "2026-09-25T11:21:23.451248+00:00"
     },
     {
+      "video_id": "KDEfhzHytws",
+      "title": "Spottin’ the truth ain’t so easy. #DiggerMovie",
+      "category": "Movies & TV",
+      "channel": "Warner Bros. Pictures",
+      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
+      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
+      "url": "https://www.youtube.com/shorts/KDEfhzHytws",
+      "embed_url": "https://www.youtube-nocookie.com/embed/KDEfhzHytws",
+      "thumbnail": "https://i.ytimg.com/vi/KDEfhzHytws/hqdefault.jpg",
+      "published_at": "2026-09-24T22:00:30+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Warner Bros. Pictures — Spottin’ the truth ain’t so easy. #DiggerMovie. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-09-25T11:26:38.347899+00:00"
+    },
+    {
       "video_id": "CHobAJa8pQY",
       "title": "Questionin’ it all. #DiggerMovie",
       "category": "Movies & TV",
@@ -64,6 +80,22 @@
       "is_short": true,
       "description": "Warner Bros. Pictures — Searchin’ for the truth. #DiggerMovie. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-09-24T21:17:33.419968+00:00"
+    },
+    {
+      "video_id": "ygC0Sm6IVys",
+      "title": "See for yourself. Search Clayface - only in theaters October 23.",
+      "category": "Movies & TV",
+      "channel": "Warner Bros. Pictures",
+      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
+      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
+      "url": "https://www.youtube.com/shorts/ygC0Sm6IVys",
+      "embed_url": "https://www.youtube-nocookie.com/embed/ygC0Sm6IVys",
+      "thumbnail": "https://i.ytimg.com/vi/ygC0Sm6IVys/hqdefault.jpg",
+      "published_at": "2026-09-24T19:30:12+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Warner Bros. Pictures — See for yourself. Search Clayface - only in theaters October 23.. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-09-25T11:26:38.422578+00:00"
     },
     {
       "video_id": "ZptzNZ29jLA",
@@ -1568,38 +1600,6 @@
       "is_short": false,
       "description": "Nintendo of America shares the gaming launch trailer for LEGO Batman: Legacy of the Dark Knight on the Nintendo Switch 2 system.",
       "published_by_pipeline_at": "2026-09-18T19:17:30.992471+00:00"
-    },
-    {
-      "video_id": "c59V46rIUc0",
-      "title": "Push ‘em to their breaking point. DIGGER – only in theaters October 2. #DiggerMovie",
-      "category": "Movies & TV",
-      "channel": "Warner Bros. Pictures",
-      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
-      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
-      "url": "https://www.youtube.com/shorts/c59V46rIUc0",
-      "embed_url": "https://www.youtube-nocookie.com/embed/c59V46rIUc0",
-      "thumbnail": "https://i.ytimg.com/vi/c59V46rIUc0/hqdefault.jpg",
-      "published_at": "2026-09-18T19:00:21+00:00",
-      "source": "YouTube channel feed",
-      "is_short": true,
-      "description": "Warner Bros. Pictures shares a video for the Movies & TV category titled Push ‘em to their breaking point. DIGGER – only in theaters October 2. #DiggerMovie.",
-      "published_by_pipeline_at": "2026-09-18T19:17:31.641477+00:00"
-    },
-    {
-      "video_id": "7rpsTxtoIbk",
-      "title": "New Google Chrome Themes with the DC Super Hero Collection | DC",
-      "category": "Movies & TV",
-      "channel": "DC",
-      "channel_id": "UCiifkYAs_bq1pt_zbNAzYGg",
-      "channel_url": "https://www.youtube.com/channel/UCiifkYAs_bq1pt_zbNAzYGg",
-      "url": "https://www.youtube.com/shorts/7rpsTxtoIbk",
-      "embed_url": "https://www.youtube-nocookie.com/embed/7rpsTxtoIbk",
-      "thumbnail": "https://i.ytimg.com/vi/7rpsTxtoIbk/hqdefault.jpg",
-      "published_at": "2026-09-18T18:43:05+00:00",
-      "source": "YouTube channel feed",
-      "is_short": true,
-      "description": "DC presents new Google Chrome themes featuring the DC Super Hero Collection in this Movies and TV video.",
-      "published_by_pipeline_at": "2026-09-18T19:01:04.948134+00:00"
     }
   ]
 }
