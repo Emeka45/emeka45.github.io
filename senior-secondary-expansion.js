@@ -9,7 +9,81 @@ const SENIOR_ESC=s=>String(s).replaceAll("&","&amp;").replaceAll("<","&lt;").rep
 const SENIOR_CORE=(s,t,l)=>{const k=SENIOR_TYPE(s),stage=l==="SSS 1"?"foundation":l==="SSS 2"?"deeper application":"advanced integration and examination mastery";return `<p><strong>${SENIOR_ESC(t)}</strong> is a ${stage} unit in <strong>${SENIOR_ESC(s)}</strong>. Build understanding from precise definitions and core principles, then move to examples, applications and examination tasks.</p><p><strong>Study lens:</strong> ${SENIOR_LENS[k]}</p><p><strong>Application:</strong> Relate the topic to Nigerian school and real-life contexts where relevant. Explain reasoning, label work clearly, and verify facts, calculations, spelling, dates, units or procedures before submission.</p>`};
 const SENIOR_PRACTICE=(s,t)=>`<p><strong>Practice:</strong> Define <em>${SENIOR_ESC(t)}</em>, explain four important ideas, give one relevant Nigerian/everyday example and answer one examination-style question on the topic.</p><p><strong>Answer approach:</strong> Define the key term, organise the main points logically, support them with an example, evidence, calculation or procedure as appropriate, and conclude clearly.</p>`;
 SENIOR_EXTRA_N.push(...SENIOR_EXTRA_BUILD());
-const TEXTBOOK_CHAPTERS = {
+const const TEXTBOOK_RESEARCH_SOURCES = {
+  Biology: ["M. C. Michael, Essential Biology for Senior Secondary Schools (revised editions).","Sarojini T. Ramalingam, Lucy I. Akunwa & J.B.C. Obidiwe, Modern Biology for Senior Secondary Schools 1–3."],
+  Chemistry: ["Osei Yaw Ababio, New School Chemistry for Senior Secondary Schools.","I. A. Odesina, Essential Chemistry for Senior Secondary Schools.","G. O. Ojokuku, Understanding Chemistry for Schools and Colleges."],
+  Physics: ["M. W. Anyakoha, New School Physics for Senior Secondary Schools 1–3.","P. N. Okeke, F. N. Okeke & S. F. Akande, Senior Secondary Physics."],
+  Mathematics: ["D. B. Adu, Comprehensive Mathematics for Senior Secondary Schools.","U. E. Asuquo, D. J. Tochukwu & O. J. Felemu, Essential Mathematics for Senior Secondary Schools 1–3.","M. F. Macrae et al., New General Mathematics for Senior Secondary Schools 1–3."],
+  Economics: ["Cole Esan Ande, Essential Economics for Senior Secondary Schools 1–3.","Femi Longe, Amplified & Simplified Economics for Senior Secondary Schools 1–3."],
+  Accounting: ["R. A. Ibrahim & R. A. Kazeem, Essential Financial Accounting.","Femi Longe, Simplified & Amplified Book Keeping & Accounting."],
+  Commerce: ["O. A. Longe, Essential Commerce for Senior Secondary Schools 1–3."],
+  English: ["Ayo Banjo et al., New Oxford Secondary English Course for Senior Secondary Schools.","J. Eyisi et al., New Concept English for Senior Secondary Schools 1–3."],
+  Government: ["Dibie C. Chris, Essential Government for Senior Secondary Schools 1–3."]
+};
+TEXTBOOK_CHAPTERS = {
+  "SSS 1|Biology|Cell Structure, Organisation and Transport": `
+  <div class="senior-textbook">
+    <h3>Research-informed chapter</h3>
+    <p>This is an original synthesis of the Nigerian senior-secondary Biology curriculum and established secondary Biology references. It explains concepts rather than reproducing textbook wording.</p>
+    <h3>Learning objectives</h3><p>Identify major cell structures, relate structure to function, distinguish plant and animal cells, explain levels of organisation, and describe diffusion, osmosis and active transport.</p>
+    <h3>The cell as the basic unit of life</h3><p>A <strong>cell</strong> is the basic structural and functional unit of a living organism. Some organisms are unicellular; multicellular organisms contain specialised cells that cooperate in tissues, organs and systems.</p>
+    <h3>Major structures and functions</h3>
+    <table><tr><th>Structure</th><th>Main function</th></tr><tr><td>Cell membrane</td><td>Controls movement of substances into and out of the cell</td></tr><tr><td>Cytoplasm</td><td>Site of many metabolic reactions</td></tr><tr><td>Nucleus</td><td>Contains genetic material and regulates many cell activities</td></tr><tr><td>Mitochondrion</td><td>Major site of aerobic respiration and ATP production</td></tr><tr><td>Ribosome</td><td>Protein synthesis</td></tr><tr><td>Chloroplast</td><td>Photosynthesis</td></tr><tr><td>Cell wall</td><td>Support and resistance to bursting</td></tr><tr><td>Large permanent vacuole</td><td>Cell-sap storage and maintenance of turgor</td></tr></table>
+    <h3>Plant and animal cells</h3><p>Both contain structures such as membrane, cytoplasm, nucleus, mitochondria and ribosomes. Typical plant cells additionally have a cellulose cell wall, chloroplasts in photosynthetic tissues and a large permanent vacuole. Specialised plant cells differ from one another, so not every plant cell has every listed structure.</p>
+    <h3>Cell specialisation and organisation</h3><p>A root-hair cell has a long projection that increases absorptive surface area. A red blood cell is specialised for oxygen transport. A sperm cell has a flagellum for movement and numerous mitochondria for energy supply. Organisation proceeds from <strong>cell → tissue → organ → organ system → organism</strong>.</p>
+    <h3>Diffusion</h3><p><strong>Diffusion</strong> is the net movement of particles from a region of higher concentration to lower concentration due to random molecular motion. It does not require ATP. Greater concentration gradient, higher temperature and shorter diffusion distance can increase the rate, all else being equal.</p>
+    <h3>Osmosis</h3><p><strong>Osmosis</strong> is the net movement of water through a selectively permeable membrane from higher water potential to lower water potential. Water entering a plant cell can make it turgid; water leaving in a sufficiently concentrated external solution can cause plasmolysis.</p>
+    <h3>Active transport</h3><p><strong>Active transport</strong> uses cellular energy and membrane transport proteins to move substances against a concentration gradient. Root cells can use it to absorb mineral ions when the external concentration is lower than the internal concentration.</p>
+    <h3>Practical investigation: potato osmosis</h3><p>Cut equal potato cylinders, record initial masses, place them in solutions of different concentrations for a fixed time, blot consistently and record final masses. Calculate <strong>% change = ((final mass − initial mass) / initial mass) × 100</strong>. Control temperature, time, cylinder dimensions and solution volume. Plot concentration against percentage mass change and identify the concentration at which the graph approaches zero change.</p>
+    <h3>Common misconceptions</h3><ul><li>Osmosis concerns net water movement, not movement of solute.</li><li>Not every plant cell contains chloroplasts.</li><li>Diffusion is passive; active transport requires cellular energy.</li></ul>
+    <h3>Exam practice</h3><ol><li>State three structures common to typical plant and animal cells. <strong>Answer:</strong> cell membrane, cytoplasm and nucleus.</li><li>Why does a root-hair cell have a long extension? <strong>Answer:</strong> to increase surface area for absorption.</li><li>Differentiate diffusion and active transport. <strong>Answer:</strong> diffusion is net movement down a concentration gradient without metabolic energy; active transport uses energy to move against a gradient.</li></ol>
+    <h3>Research base</h3><p>Essential Biology by M. C. Michael; Modern Biology for Senior Secondary Schools by Ramalingam, Akunwa and Obidiwe; and the NERDC curriculum.</p>
+  </div>`,
+  "SSS 1|Physics|Measurement, Units and Vectors": `
+  <div class="senior-textbook">
+    <h3>Research-informed chapter</h3><p>This original chapter synthesises the Nigerian senior-secondary Physics curriculum with established Nigerian secondary Physics references.</p>
+    <h3>Physical quantities and SI units</h3><p>A physical quantity is measurable and is expressed with a numerical value and unit.</p>
+    <table><tr><th>Base quantity</th><th>SI unit</th><th>Symbol</th></tr><tr><td>Length</td><td>metre</td><td>m</td></tr><tr><td>Mass</td><td>kilogram</td><td>kg</td></tr><tr><td>Time</td><td>second</td><td>s</td></tr><tr><td>Electric current</td><td>ampere</td><td>A</td></tr><tr><td>Temperature</td><td>kelvin</td><td>K</td></tr><tr><td>Amount of substance</td><td>mole</td><td>mol</td></tr><tr><td>Luminous intensity</td><td>candela</td><td>cd</td></tr></table>
+    <h3>Derived quantities</h3><p>Area is measured in m², volume in m³, speed in m/s, acceleration in m/s² and density in kg/m³.</p>
+    <div class="box"><strong>Worked example:</strong> A mass of 600 g occupies 200 cm³. Convert to SI units: 0.600 kg and 2.00 × 10⁻⁴ m³. Density = m/V = 0.600/(2.00 × 10⁻⁴) = <strong>3.00 × 10³ kg m⁻³</strong>.</div>
+    <h3>Scalars and vectors</h3><p>A scalar has magnitude only, such as mass, time, temperature and speed. A vector has magnitude and direction, such as displacement, velocity, acceleration and force.</p>
+    <h3>Measurement and instruments</h3><p>Use a metre rule for ordinary lengths, a vernier caliper for smaller dimensions and a micrometer screw gauge for still smaller dimensions. A balance measures mass and a stopwatch measures time. Select an instrument whose range and least count suit the task.</p>
+    <h3>Accuracy, precision and errors</h3><p><strong>Accuracy</strong> is closeness to an accepted value; <strong>precision</strong> is closeness of repeated readings to one another. Random errors cause scatter and can be reduced by repetition and averaging. Systematic errors shift readings consistently and require calibration or correction.</p>
+    <h3>Significant figures</h3><p>Report results to a precision justified by the measurements. Leading zeros in decimals are normally not significant; zeros between non-zero digits are significant.</p>
+    <h3>Vectors in one dimension</h3><p>Choose a positive direction. A displacement of +8 m followed by −3 m gives +5 m, meaning 5 m in the chosen positive direction.</p>
+    <h3>Practical</h3><p>Measure a table five times, record every reading, calculate the mean, identify an anomalous result and state the instrument's least count. Explain why repetition helps with random uncertainty.</p>
+    <h3>Exam practice</h3><ol><li>Give two scalars and two vectors.</li><li>Convert 72 km h⁻¹ to m s⁻¹. <strong>Answer:</strong> 72 × 1000/3600 = <strong>20 m s⁻¹</strong>.</li><li>A body moves 30 m east then 10 m west. <strong>Answer:</strong> resultant displacement = <strong>20 m east</strong>.</li></ol>
+    <h3>Research base</h3><p>New School Physics for Senior Secondary Schools 1–3 by M. W. Anyakoha; Senior Secondary Physics by P. N. Okeke, F. N. Okeke and S. F. Akande; and the NERDC curriculum.</p>
+  </div>`,
+  "SSS 1|Economics|Basic Economic Concepts and Economic Problems": `
+  <div class="senior-textbook">
+    <h3>Research-informed chapter</h3>
+    <h3>Meaning of economics</h3><p>Economics studies how people and institutions make choices about scarce resources that have alternative uses in order to satisfy wants. Scarcity is central because resources are limited relative to competing wants.</p>
+    <h3>Wants, resources and scarcity</h3><p>Wants are desires for goods and services. The factors of production are commonly grouped as land, labour, capital and entrepreneurship. Scarcity forces households, firms and governments to choose.</p>
+    <h3>Choice and opportunity cost</h3><p><strong>Opportunity cost</strong> is the value of the next best alternative forgone when a choice is made.</p>
+    <div class="box"><strong>Worked example:</strong> A student can spend three hours studying, earning ₦3,000, or attending a programme. If studying is chosen and the job is the best forgone option, the opportunity cost of studying is ₦3,000.</div>
+    <h3>Production possibility frontier</h3><p>A PPF shows combinations of two goods that can be produced with given resources and technology. A point on the frontier represents productive efficiency in the model; a point inside may indicate unemployed or inefficiently allocated resources; a point beyond the frontier is unattainable under the current constraints.</p>
+    <h3>Economic agents</h3><p>Households consume and supply factors. Firms organise production. Government raises revenue, provides public services and regulates. In an open economy, foreign agents participate through trade and financial flows.</p>
+    <h3>Basic economic questions</h3><ol><li>What should be produced?</li><li>How should it be produced?</li><li>For whom should it be produced?</li><li>How should resources be allocated over time?</li></ol>
+    <h3>Economic systems</h3><p>Market economies rely heavily on price signals and decentralised decisions; command systems rely more heavily on central planning; mixed economies combine market mechanisms with government intervention.</p>
+    <h3>Misconceptions</h3><ul><li>Scarcity does not mean absolute non-existence; it means limited availability relative to competing wants.</li><li>Opportunity cost is the next best alternative forgone, not every alternative.</li></ul>
+    <h3>Exam practice</h3><ol><li>Define scarcity.</li><li>Explain opportunity cost with a Nigerian household example.</li><li>Distinguish a market economy from a command economy.</li></ol>
+    <h3>Research base</h3><p>Essential Economics for Senior Secondary Schools 1–3 by Cole Esan Ande; Amplified &amp; Simplified Economics for Senior Secondary Schools 1–3 by Femi Longe; and the NERDC curriculum.</p>
+  </div>`,
+  "SSS 1|Accounting|Accounting Concepts, Principles and Ethics": `
+  <div class="senior-textbook">
+    <h3>Research-informed chapter</h3>
+    <h3>Meaning and purpose</h3><p>Accounting is the systematic process of identifying, measuring, recording, classifying, summarising and communicating financial information for decision-making. Bookkeeping focuses mainly on recording; accounting extends to classification, reporting and interpretation.</p>
+    <h3>Users of accounting information</h3><table><tr><th>User</th><th>Typical need</th></tr><tr><td>Owner</td><td>Profitability and financial position</td></tr><tr><td>Manager</td><td>Planning and control</td></tr><tr><td>Creditor</td><td>Ability to repay</td></tr><tr><td>Government</td><td>Tax and regulatory information</td></tr><tr><td>Employees</td><td>Stability and ability to meet obligations</td></tr></table>
+    <h3>Accounting equation</h3><p>The basic relationship is <strong>Assets = Capital + Liabilities</strong>. Transactions must preserve the equality.</p>
+    <div class="box"><strong>Worked example:</strong> An owner starts a business with ₦200,000 cash. Assets = ₦200,000, Capital = ₦200,000 and Liabilities = ₦0.</div>
+    <div class="box"><strong>Second example:</strong> Equipment costing ₦50,000 is bought for cash. Cash falls by ₦50,000 and equipment rises by ₦50,000, so total assets remain ₦200,000 and the equation still balances.</div>
+    <h3>Business entity</h3><p>The business is treated as separate from its owner. A personal withdrawal of ₦10,000 from business cash is recorded as drawings, not as a business operating expense.</p>
+    <h3>Going concern and consistency</h3><p>Going concern assumes continued operation unless evidence indicates otherwise. Consistency supports comparison between periods, while justified changes may be required by changed circumstances or reporting requirements.</p>
+    <h3>Evidence and ethics</h3><p>Transactions should be supported by appropriate evidence such as invoices, receipts and bank records. Ethical accounting requires integrity, objectivity and confidentiality and prohibits deliberate manipulation intended to mislead users.</p>
+    <h3>Practice</h3><p>Classify: cash, loan payable, owner's investment, sales revenue, rent paid, inventory. <strong>Answers:</strong> asset; liability; capital; income; expense; asset.</p>
+    <h3>Research base</h3><p>Essential Financial Accounting by R. A. Ibrahim &amp; R. A. Kazeem; Simplified &amp; Amplified Book Keeping &amp; Accounting by Femi Longe; and the NERDC curriculum.</p>
+  </div>`,
   "SSS 1|Chemistry|Atomic Structure and the Periodic Table": `
   <div class="senior-textbook">
     <h3>1. Learning objectives</h3>
