@@ -177,7 +177,36 @@ SOURCE RECORDS:
         try:
             with urllib.request.urlopen(req, timeout=90) as r:
                 data = json.loads(r.read())
-            return json.loads(data['candidates'][0]['content']['parts'][0]['text'])
+            raw = data['candidates'][0]['content']['parts'][0]['text'].strip()\n            try:\n                return json.loads(raw)\n            except json.JSONDecodeError:\n                raw = re.sub(r'^\\s*```(?:json)?\\s*', '', raw, flags=re.I)\n                raw = re.sub(r'\\s*```\\s*
+        except urllib.error.HTTPError as exc:
+            last_error = exc
+            if exc.code not in (429, 500, 502, 503, 504):
+                raise
+            retry_after = exc.headers.get('Retry-After')
+            try:
+                delay = max(8, min(60, int(retry_after))) if retry_after else 8 * (2 ** attempt)
+            except ValueError:
+                delay = 8 * (2 ** attempt)
+            print(f'Detailed AI transient HTTP {exc.code}; retrying in {delay}s (attempt {attempt + 1}/3)')
+            time.sleep(delay)
+    raise last_error
+
+
+# Replace only the writing layer; the existing newsroom's feed collection,
+# corroboration, safety checks, sanitization and publishing flow remain in use.
+ai_newsroom.ask_ai = detailed_ask_ai
+
+
+def normalize_and_seo():
+    # No dependency on a removed normalize_index_categories() API.
+    if hasattr(ai_newsroom, 'apply_cloudflare_seo'):
+        ai_newsroom.apply_cloudflare_seo('https://emeka45-github-io.pages.dev/news')
+
+
+if __name__ == '__main__':
+    ai_newsroom.main()
+    normalize_and_seo()
+, '', raw)\n                return json.loads(raw)
         except urllib.error.HTTPError as exc:
             last_error = exc
             if exc.code not in (429, 500, 502, 503, 504):
