@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T09:29:36.761873+00:00",
+  "updated_at": "2026-09-26T09:35:00.209351+00:00",
   "videos": [
     {
       "video_id": "QA25cuCaM5c",
@@ -1202,6 +1202,22 @@
       "published_by_pipeline_at": "2026-09-22T19:44:29.184802+00:00"
     },
     {
+      "video_id": "gSjLRbFr3KQ",
+      "title": "M1014 damage increased!",
+      "category": "Gaming",
+      "channel": "Ubisoft",
+      "channel_id": "UCBMvc6jvuTxH6TNo9ThpYjg",
+      "channel_url": "https://www.youtube.com/channel/UCBMvc6jvuTxH6TNo9ThpYjg",
+      "url": "https://www.youtube.com/shorts/gSjLRbFr3KQ",
+      "embed_url": "https://www.youtube-nocookie.com/embed/gSjLRbFr3KQ",
+      "thumbnail": "https://i.ytimg.com/vi/gSjLRbFr3KQ/hqdefault.jpg",
+      "published_at": "2026-09-22T18:00:32+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Ubisoft shares gaming video coverage detailing an increase to the M1014 damage.",
+      "published_by_pipeline_at": "2026-09-26T09:35:00.209266+00:00"
+    },
+    {
       "video_id": "o4yfrEgIFHo",
       "title": "Bass X Machina | Minotaur Fight | Sneak Peek | Netflix",
       "category": "Movies & TV",
@@ -1584,22 +1600,6 @@
       "is_short": true,
       "description": "Watch a short clip from the Movies & TV channel Universal Pictures, titled The Bella's Stand Up to Aubrey ♫ #PitchPerfect #Shorts.",
       "published_by_pipeline_at": "2026-09-20T22:22:47.475033+00:00"
-    },
-    {
-      "video_id": "9RkdgOs0Dvc",
-      "title": "Neon Abyss 2 – Release Date Trailer – Nintendo Switch",
-      "category": "Gaming",
-      "channel": "Nintendo of America",
-      "channel_id": "UCGIY_O-8vW4rfX98KlMkvRg",
-      "channel_url": "https://www.youtube.com/channel/UCGIY_O-8vW4rfX98KlMkvRg",
-      "url": "https://www.youtube.com/watch?v=9RkdgOs0Dvc",
-      "embed_url": "https://www.youtube-nocookie.com/embed/9RkdgOs0Dvc",
-      "thumbnail": "https://i.ytimg.com/vi/9RkdgOs0Dvc/hqdefault.jpg",
-      "published_at": "2026-09-20T19:00:14+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Watch the release date trailer for Neon Abyss 2 on Nintendo Switch, presented by Nintendo of America in the Gaming category.",
-      "published_by_pipeline_at": "2026-09-20T22:22:45.768388+00:00"
     }
   ]
 }
