@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-26T06:09:22.290904+00:00",
-  "finished_utc": "2026-09-26T06:12:06.207155+00:00",
+  "started_utc": "2026-09-26T06:19:59.834729+00:00",
+  "finished_utc": "2026-09-26T06:21:41.737318+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 404: Not Found"
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -41,8 +41,8 @@
   "held_or_rejected": 3,
   "published_count": 0,
   "rejection_reasons": [
-    "At least two different publisher domains must materially support the same central event. The story regarding the lawsuit against Senator Solomon Adeola over his state of origin is reported exclusively by Punch, while the only other available domain reports an unrelated political development in Abia State.",
-    "The supplied source records do not corroborate the same central event. Each record covers a distinct development: advice from the World Energy Council Nigeria, remarks by Minister Ekpo on energy transition, a United Nations scheme for energy transition minerals, and Nigeria joining the International Energy Agency amid crude production changes. Under the newsroom's editorial rules, at least two independent publisher domains must corroborate the same event.",
-    "The provided source records do not meet the strict corroboration criteria requiring at least two independent publisher domains to report on the same central event. The BBC report covers CNN being barred from Air Force One, while the remaining stories are solely from The Guardian covering different events (the Trump-Xi summit and Brazilian election commentary)."
+    "There are no two independent publisher domains corroborating the same central event. The lawsuit involving Senator Solomon Adeola is covered exclusively by punchng.com across multiple entries, while the story involving Eric Opah is only present on thereporter.com.ng.",
+    "Strict corroboration requirements are not met. The core event regarding the summit between Donald Trump and Xi Jinping is covered solely by one publisher domain (theguardian.com across two articles), while the remaining articles from bbc.co.uk and theguardian.com report on entirely unrelated events.",
+    "The supplied source records do not corroborate a single central news event. They consist of separate, disparate features and opinion pieces addressing distinct aspects of Nigeria's justice system (artificial intelligence guardrails, pre-trial custody deaths, and mob/vigilante justice) without a shared event, announcement, or development."
   ]
 }
