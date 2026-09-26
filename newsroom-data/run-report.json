@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-26T07:50:52.822322+00:00",
-  "finished_utc": "2026-09-26T07:52:29.208543+00:00",
+  "started_utc": "2026-09-26T07:53:26.710399+00:00",
+  "finished_utc": "2026-09-26T07:57:41.380371+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -37,12 +37,8 @@
   "fresh_items": 625,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 1,
-  "held_or_rejected": 3,
+  "ai_failures": 4,
+  "held_or_rejected": 0,
   "published_count": 0,
-  "rejection_reasons": [
-    "There are not at least two distinct publisher domains corroborating any single central event. The lawsuit involving Senator Solomon Adeola appears only via punchng.com, while the political consultation story appears solely on thereporter.com.ng.",
-    "The provided source records represent disparate topics and opinion or feature analyses—ranging from AI guardrails in the judiciary and pre-trial detention deaths in Niger State to broader commentary on mob justice and judicial bureaucracy. There are not at least two independent publisher domains corroborating the same central event.",
-    "The supplied source records do not materially corroborate the same central event. Each record addresses a separate issue or commentary: one focuses on artificial intelligence governance in the judiciary, another examines judicial bureaucracy and vigilantism, a third reports on pre-trial custody deaths in Niger State, and a fourth explores mob justice. Because there are not at least two independent sources covering the same specific event or announcement, publication criteria are not met."
-  ]
+  "rejection_reasons": []
 }
