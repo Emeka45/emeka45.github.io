@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-26T05:21:00.367603+00:00",
-  "finished_utc": "2026-09-26T05:23:15.671180+00:00",
+  "started_utc": "2026-09-26T05:43:58.445940+00:00",
+  "finished_utc": "2026-09-26T05:46:07.896134+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -41,8 +41,8 @@
   "held_or_rejected": 3,
   "published_count": 0,
   "rejection_reasons": [
-    "Only one publisher domain (punchng.com) covers the lawsuit against Senator Solomon Adeola (Yayi), while the second domain (thereporter.com.ng) covers an entirely unrelated political event in Abia State. The strict requirement of corroboration across at least two distinct publisher domains is not met.",
-    "None of the provided sources corroborate the same specific central event. Each article reports on a distinct, separate occurrence (the World Energy Council Nigeria's advisory on raw minerals, a United Nations energy transition minerals initiative, Nigeria joining the IEA amid oil output shifts, and remarks by Ekpo on oil and gas investments).",
-    "None of the provided sources corroborate the same specific central event across at least two independent publisher domains. The records cover distinctly separate developments: advice from the World Energy Council Nigeria regarding mineral exports, a UN transition minerals scheme, an IEA announcement/crude production milestone, and remarks by Minister Ekpo on oil and gas investments."
+    "The provided source records do not contain corroboration across at least two distinct publisher domains for any single event. The lawsuit against Senator Solomon Adeola is reported exclusively by punchng.com, while the report on Eric Opah is from a single, unrelated domain (thereporter.com.ng).",
+    "The supplied records do not corroborate the same central event. Each article reports on a distinct story—a World Energy Council Nigeria advisory on raw mineral exports, a UN initiative on energy transition minerals, Nigeria's engagement with the IEA amid oil production figures, and ministerial remarks on petroleum sector investments.",
+    "None of the reported events are materially corroborated across at least two different publisher domains. The Trump-Xi summit articles both originate from The Guardian, while the BBC article covers an unrelated event concerning CNN and Air Force One."
   ]
 }
