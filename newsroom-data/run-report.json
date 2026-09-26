@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-25T21:10:08.515413+00:00",
-  "finished_utc": "2026-09-25T21:13:21.715249+00:00",
+  "started_utc": "2026-09-26T03:50:49.530881+00:00",
+  "finished_utc": "2026-09-26T03:53:51.662370+00:00",
   "model": "gemini-3.6-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -33,15 +33,15 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 641,
-  "fresh_items": 623,
+  "total_items": 642,
+  "fresh_items": 625,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
   "ai_failures": 2,
   "held_or_rejected": 2,
   "published_count": 0,
   "rejection_reasons": [
-    "Insufficient corroboration across multiple independent publisher domains. The provided source records cover two distinct topics (Lagos state police framework plans and disciplinary action against a police inspector) across two domains, with no single central event supported by at least two distinct publisher domains.",
-    "The supplied source records do not contain at least two different publisher domains reporting on the same central event. The sources describe two unrelated incidents (an arrest for phone fraud/firearm possession and an arraignment for child abuse) without multi-domain corroboration for either story."
+    "Insufficient corroboration across distinct publisher domains. The provided sources cover unrelated events and do not meet the requirement of having at least two independent publisher domains reporting on the same central story.",
+    "Insufficient corroboration. The source records cover two distinct events from separate publisher domains (Sanwo-Olu's state police plan on thereporter.com.ng and an N8,000 debt suicide story on punchng.com). No single central event is materially corroborated by two or more independent publisher domains."
   ]
 }
