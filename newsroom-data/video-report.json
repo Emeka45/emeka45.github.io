@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-09-26T08:53:21.044560+00:00",
+  "finished_utc": "2026-09-26T08:59:16.126587+00:00",
   "max_new_videos_per_run": 20,
   "max_shorts_per_run": 6,
   "channels_configured": 15,
@@ -34,7 +34,7 @@
   "discovered": 65,
   "published": 20,
   "shorts_published": 1,
-  "duplicates_skipped": 30,
+  "duplicates_skipped": 31,
   "total_stored": 100,
   "published_video_ids": [
     "s8cP1Vt5US8",
@@ -56,6 +56,6 @@
     "8i5xuWtfyDc",
     "K-EpTVjZCl8",
     "tzbRZM0XyoM",
-    "B3GAYWxzuug"
+    "SSBCpbh14AM"
   ]
 }

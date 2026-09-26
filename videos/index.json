@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T08:53:21.042559+00:00",
+  "updated_at": "2026-09-26T08:59:16.124931+00:00",
   "videos": [
     {
       "video_id": "QA25cuCaM5c",
@@ -208,6 +208,22 @@
       "is_short": false,
       "description": "Universal Pictures shares a collection of the best sisterhood moments in film history in this Movies and TV video.",
       "published_by_pipeline_at": "2026-09-25T21:13:39.975210+00:00"
+    },
+    {
+      "video_id": "SSBCpbh14AM",
+      "title": "You won't believe how this ends 🤯",
+      "category": "Gaming",
+      "channel": "Ubisoft",
+      "channel_id": "UCBMvc6jvuTxH6TNo9ThpYjg",
+      "channel_url": "https://www.youtube.com/channel/UCBMvc6jvuTxH6TNo9ThpYjg",
+      "url": "https://www.youtube.com/shorts/SSBCpbh14AM",
+      "embed_url": "https://www.youtube-nocookie.com/embed/SSBCpbh14AM",
+      "thumbnail": "https://i.ytimg.com/vi/SSBCpbh14AM/hqdefault.jpg",
+      "published_at": "2026-09-25T18:00:33+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Watch this gaming video from Ubisoft to see how it ends, featuring unexpected moments you won't believe.",
+      "published_by_pipeline_at": "2026-09-26T08:59:16.124849+00:00"
     },
     {
       "video_id": "xSnRU9zwbn0",
@@ -1584,22 +1600,6 @@
       "is_short": false,
       "description": "Nintendo of America shares a gaming trailer for the Stellar Blade Complete Edition Bayonetta Collaboration on Nintendo Switch 2.",
       "published_by_pipeline_at": "2026-09-20T18:06:24.895958+00:00"
-    },
-    {
-      "video_id": "alYQHqBt6Z8",
-      "title": "Love, sisterhood, and pure magic. 💜✨ #PracticalMagic2",
-      "category": "Movies & TV",
-      "channel": "Warner Bros. Pictures",
-      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
-      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
-      "url": "https://www.youtube.com/shorts/alYQHqBt6Z8",
-      "embed_url": "https://www.youtube-nocookie.com/embed/alYQHqBt6Z8",
-      "thumbnail": "https://i.ytimg.com/vi/alYQHqBt6Z8/hqdefault.jpg",
-      "published_at": "2026-09-20T16:30:25+00:00",
-      "source": "YouTube channel feed",
-      "is_short": true,
-      "description": "Warner Bros. Pictures shares a video about love, sisterhood, and pure magic in the Movies and TV category, featuring Practical Magic 2.",
-      "published_by_pipeline_at": "2026-09-20T18:06:25.970478+00:00"
     }
   ]
 }
