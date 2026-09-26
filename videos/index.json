@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T08:26:04.532609+00:00",
+  "updated_at": "2026-09-26T08:40:08.717207+00:00",
   "videos": [
     {
       "video_id": "QA25cuCaM5c",
@@ -112,6 +112,22 @@
       "is_short": true,
       "description": "Warner Bros. Pictures — His darlin’ girl, Maggie. #DiggerMovie. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-09-26T08:26:04.532520+00:00"
+    },
+    {
+      "video_id": "A-yE45ar1U8",
+      "title": "Hollywood Arts premieres October 15th on Netflix!",
+      "category": "Movies & TV",
+      "channel": "Netflix",
+      "channel_id": "UCWOA1ZGywLbqmigxE4Qlvuw",
+      "channel_url": "https://www.youtube.com/channel/UCWOA1ZGywLbqmigxE4Qlvuw",
+      "url": "https://www.youtube.com/shorts/A-yE45ar1U8",
+      "embed_url": "https://www.youtube-nocookie.com/embed/A-yE45ar1U8",
+      "thumbnail": "https://i.ytimg.com/vi/A-yE45ar1U8/hqdefault.jpg",
+      "published_at": "2026-09-25T20:00:01+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Netflix — Hollywood Arts premieres October 15th on Netflix!. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-09-26T08:40:08.717106+00:00"
     },
     {
       "video_id": "45nZolJjaJc",
@@ -1584,22 +1600,6 @@
       "is_short": true,
       "description": "Warner Bros. Pictures shares a Movies and TV video titled It’s a family business, after all. Sandra Hüller is Emma. DIGGER – only in theaters October 2.",
       "published_by_pipeline_at": "2026-09-20T18:06:27.124481+00:00"
-    },
-    {
-      "video_id": "1mYxg6DFoLM",
-      "title": "Happy Batman Day! LEGO Batman: Legacy of the Dark Knight w/ Jim Lee!",
-      "category": "Movies & TV",
-      "channel": "DC",
-      "channel_id": "UCiifkYAs_bq1pt_zbNAzYGg",
-      "channel_url": "https://www.youtube.com/channel/UCiifkYAs_bq1pt_zbNAzYGg",
-      "url": "https://www.youtube.com/watch?v=1mYxg6DFoLM",
-      "embed_url": "https://www.youtube-nocookie.com/embed/1mYxg6DFoLM",
-      "thumbnail": "https://i.ytimg.com/vi/1mYxg6DFoLM/hqdefault.jpg",
-      "published_at": "2026-09-19T20:53:35+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Celebrate Batman Day with DC in this Movies and TV video featuring Jim Lee discussing LEGO Batman: Legacy of the Dark Knight.",
-      "published_by_pipeline_at": "2026-09-19T22:20:28.809028+00:00"
     }
   ]
 }
