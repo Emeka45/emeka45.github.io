@@ -39,7 +39,7 @@ jobs:
         run: |
           python - <<'PY'
           import scripts.run_ai_newsroom as newsroom
-          newsroom.ai_newsroom.AI_MODEL = 'gemini-3.6-flash'
+          newsroom.ai_newsroom.AI_MODEL = 'gemini-3.8-flash'
           newsroom.ai_newsroom.MAX_AI_CANDIDATES_PER_RUN = 4
           newsroom.ai_newsroom.main()
           newsroom.normalize_and_seo()
