@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-26T03:50:49.530881+00:00",
-  "finished_utc": "2026-09-26T03:53:51.662370+00:00",
+  "started_utc": "2026-09-26T04:39:35.929568+00:00",
+  "finished_utc": "2026-09-26T04:42:58.917829+00:00",
   "model": "gemini-3.6-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -37,11 +37,10 @@
   "fresh_items": 625,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 2,
-  "held_or_rejected": 2,
+  "ai_failures": 3,
+  "held_or_rejected": 1,
   "published_count": 0,
   "rejection_reasons": [
-    "Insufficient corroboration across distinct publisher domains. The provided sources cover unrelated events and do not meet the requirement of having at least two independent publisher domains reporting on the same central story.",
-    "Insufficient corroboration. The source records cover two distinct events from separate publisher domains (Sanwo-Olu's state police plan on thereporter.com.ng and an N8,000 debt suicide story on punchng.com). No single central event is materially corroborated by two or more independent publisher domains."
+    "Insufficient corroboration: The provided source records do not contain at least two independent publisher domains corroborating the same central event."
   ]
 }

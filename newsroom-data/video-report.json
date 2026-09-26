@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-09-26T03:54:03.022843+00:00",
+  "finished_utc": "2026-09-26T04:43:13.142241+00:00",
   "max_new_videos_per_run": 20,
   "max_shorts_per_run": 6,
   "channels_configured": 15,
@@ -76,7 +76,7 @@
     },
     {
       "channel": "Disney",
-      "error": "HTTP Error 404: Not Found"
+      "error": "HTTP Error 500: Internal Server Error"
     },
     {
       "channel": "DC",
