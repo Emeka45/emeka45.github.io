@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T08:45:01.701912+00:00",
+  "updated_at": "2026-09-26T08:53:21.042559+00:00",
   "videos": [
     {
       "video_id": "QA25cuCaM5c",
@@ -160,6 +160,22 @@
       "is_short": false,
       "description": "Watch the launch trailer for Lawn Mowing Simulator 2 in this gaming video presented by Xbox, showcasing the newly released title.",
       "published_by_pipeline_at": "2026-09-25T21:13:36.083375+00:00"
+    },
+    {
+      "video_id": "B3GAYWxzuug",
+      "title": "Globetrottin’ begins in London. #DiggerMovie",
+      "category": "Movies & TV",
+      "channel": "Warner Bros. Pictures",
+      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
+      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
+      "url": "https://www.youtube.com/shorts/B3GAYWxzuug",
+      "embed_url": "https://www.youtube-nocookie.com/embed/B3GAYWxzuug",
+      "thumbnail": "https://i.ytimg.com/vi/B3GAYWxzuug/hqdefault.jpg",
+      "published_at": "2026-09-25T19:01:27+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Warner Bros. Pictures — Globetrottin’ begins in London. #DiggerMovie. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-09-26T08:53:21.042420+00:00"
     },
     {
       "video_id": "VIAGuer5cP4",
@@ -1584,22 +1600,6 @@
       "is_short": true,
       "description": "Warner Bros. Pictures shares a video about love, sisterhood, and pure magic in the Movies and TV category, featuring Practical Magic 2.",
       "published_by_pipeline_at": "2026-09-20T18:06:25.970478+00:00"
-    },
-    {
-      "video_id": "Z6lIViaUXtA",
-      "title": "no no no don't eat that! 🫣 | Supergirl | DC",
-      "category": "Movies & TV",
-      "channel": "DC",
-      "channel_id": "UCiifkYAs_bq1pt_zbNAzYGg",
-      "channel_url": "https://www.youtube.com/channel/UCiifkYAs_bq1pt_zbNAzYGg",
-      "url": "https://www.youtube.com/shorts/Z6lIViaUXtA",
-      "embed_url": "https://www.youtube-nocookie.com/embed/Z6lIViaUXtA",
-      "thumbnail": "https://i.ytimg.com/vi/Z6lIViaUXtA/hqdefault.jpg",
-      "published_at": "2026-09-20T16:00:31+00:00",
-      "source": "YouTube channel feed",
-      "is_short": true,
-      "description": "Watch the video titled \"no no no don't eat that! 🫣\" from the DC YouTube channel, categorized under Movies & TV, featuring Supergirl.",
-      "published_by_pipeline_at": "2026-09-20T18:06:26.464749+00:00"
     }
   ]
 }
