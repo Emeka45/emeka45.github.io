@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T08:59:16.124931+00:00",
+  "updated_at": "2026-09-26T09:09:30.960028+00:00",
   "videos": [
     {
       "video_id": "QA25cuCaM5c",
@@ -240,6 +240,22 @@
       "is_short": false,
       "description": "Crunchyroll shares anime content in this episode titled \"Our Worst Anime Takes Aged TERRIBLY, We Admit It | 129.\"",
       "published_by_pipeline_at": "2026-09-25T21:13:40.716308+00:00"
+    },
+    {
+      "video_id": "Qck7x9Hesbg",
+      "title": "This is how a Harvard prodigy became the most wanted man in America. UNABOMBER is now playing.",
+      "category": "Movies & TV",
+      "channel": "Netflix",
+      "channel_id": "UCWOA1ZGywLbqmigxE4Qlvuw",
+      "channel_url": "https://www.youtube.com/channel/UCWOA1ZGywLbqmigxE4Qlvuw",
+      "url": "https://www.youtube.com/shorts/Qck7x9Hesbg",
+      "embed_url": "https://www.youtube-nocookie.com/embed/Qck7x9Hesbg",
+      "thumbnail": "https://i.ytimg.com/vi/Qck7x9Hesbg/hqdefault.jpg",
+      "published_at": "2026-09-25T17:00:00+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Watch Netflix explain how a Harvard prodigy became the most wanted man in America in the movie and television feature UNABOMBER, which is now streaming.",
+      "published_by_pipeline_at": "2026-09-26T09:09:30.959934+00:00"
     },
     {
       "video_id": "Z7ddDV2V_8E",
@@ -1584,22 +1600,6 @@
       "is_short": true,
       "description": "Watch a video from Warner Bros. Pictures in the Movies and TV category, titled \"It’s the little things. ✨ #PracticalMagic2\".",
       "published_by_pipeline_at": "2026-09-20T18:06:25.505315+00:00"
-    },
-    {
-      "video_id": "T91qMvBn8n4",
-      "title": "Stellar Blade Complete Edition – Bayonetta Collaboration Trailer – Nintendo Switch 2",
-      "category": "Gaming",
-      "channel": "Nintendo of America",
-      "channel_id": "UCGIY_O-8vW4rfX98KlMkvRg",
-      "channel_url": "https://www.youtube.com/channel/UCGIY_O-8vW4rfX98KlMkvRg",
-      "url": "https://www.youtube.com/watch?v=T91qMvBn8n4",
-      "embed_url": "https://www.youtube-nocookie.com/embed/T91qMvBn8n4",
-      "thumbnail": "https://i.ytimg.com/vi/T91qMvBn8n4/hqdefault.jpg",
-      "published_at": "2026-09-20T17:00:15+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Nintendo of America shares a gaming trailer for the Stellar Blade Complete Edition Bayonetta Collaboration on Nintendo Switch 2.",
-      "published_by_pipeline_at": "2026-09-20T18:06:24.895958+00:00"
     }
   ]
 }
