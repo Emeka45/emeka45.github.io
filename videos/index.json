@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T08:40:08.717207+00:00",
+  "updated_at": "2026-09-26T08:45:01.701912+00:00",
   "videos": [
     {
       "video_id": "QA25cuCaM5c",
@@ -128,6 +128,22 @@
       "is_short": true,
       "description": "Netflix — Hollywood Arts premieres October 15th on Netflix!. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-09-26T08:40:08.717106+00:00"
+    },
+    {
+      "video_id": "gz-rfBDmAcY",
+      "title": "Describe DIGGER in three words. #DiggerMovie - in theaters October 2.",
+      "category": "Movies & TV",
+      "channel": "Warner Bros. Pictures",
+      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
+      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
+      "url": "https://www.youtube.com/shorts/gz-rfBDmAcY",
+      "embed_url": "https://www.youtube-nocookie.com/embed/gz-rfBDmAcY",
+      "thumbnail": "https://i.ytimg.com/vi/gz-rfBDmAcY/hqdefault.jpg",
+      "published_at": "2026-09-25T19:57:35+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Warner Bros. Pictures shares a video inviting viewers to describe the film Digger in three words ahead of its October 2 theatrical release.",
+      "published_by_pipeline_at": "2026-09-26T08:45:01.701776+00:00"
     },
     {
       "video_id": "45nZolJjaJc",
@@ -1584,22 +1600,6 @@
       "is_short": true,
       "description": "Watch the video titled \"no no no don't eat that! 🫣\" from the DC YouTube channel, categorized under Movies & TV, featuring Supergirl.",
       "published_by_pipeline_at": "2026-09-20T18:06:26.464749+00:00"
-    },
-    {
-      "video_id": "k56T-k8Fy8c",
-      "title": "It’s a family business, after all. Sandra Hüller is Emma. DIGGER – only in theaters October 2.",
-      "category": "Movies & TV",
-      "channel": "Warner Bros. Pictures",
-      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
-      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
-      "url": "https://www.youtube.com/shorts/k56T-k8Fy8c",
-      "embed_url": "https://www.youtube-nocookie.com/embed/k56T-k8Fy8c",
-      "thumbnail": "https://i.ytimg.com/vi/k56T-k8Fy8c/hqdefault.jpg",
-      "published_at": "2026-09-20T16:00:15+00:00",
-      "source": "YouTube channel feed",
-      "is_short": true,
-      "description": "Warner Bros. Pictures shares a Movies and TV video titled It’s a family business, after all. Sandra Hüller is Emma. DIGGER – only in theaters October 2.",
-      "published_by_pipeline_at": "2026-09-20T18:06:27.124481+00:00"
     }
   ]
 }
