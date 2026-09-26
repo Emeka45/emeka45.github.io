@@ -30,4 +30,6 @@ for(const row of SSS1_CORE_TEXTBOOK){
  for(let i=N.length-1;i>=0;i--) if(N[i][0]+"|"+N[i][1]+"|"+N[i][2]===key) N.splice(i,1);
  N.push(row);
 }
+for(const row of SSS1_CORE_TEXTBOOK) if(!subjects.includes(row[1])) subjects.push(row[1]);
+if(typeof drawTabs==="function") drawTabs();
 if(typeof draw==="function") draw();
