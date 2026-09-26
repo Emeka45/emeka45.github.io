@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-26T10:54:37.241691+00:00",
-  "finished_utc": "2026-09-26T10:58:08.881128+00:00",
+  "started_utc": "2026-09-26T15:55:05.629860+00:00",
+  "finished_utc": "2026-09-26T15:58:32.336433+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 404: Not Found"
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -33,14 +33,14 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 642,
-  "fresh_items": 625,
+  "total_items": 645,
+  "fresh_items": 628,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
   "ai_failures": 3,
   "held_or_rejected": 1,
   "published_count": 0,
   "rejection_reasons": [
-    "Insufficient corroboration across independent domains. The available sources cover two distinct stories: Governor Babajide Sanwo-Olu's state police integration plan reported by a single domain (thereporter.com.ng), and First Lady Ibijoke Sanwo-Olu's comments on waste collection delays reported solely by punchng.com. Neither event is corroborated by at least two different publisher domains."
+    "The supplied source records do not corroborate the same central event across at least two publisher domains. The articles cover separate, unrelated events and statements, including comments by a former university vice-chancellor, an energy transition statement by an official, a macroeconomic feature, and a remark by the NESG."
   ]
 }
