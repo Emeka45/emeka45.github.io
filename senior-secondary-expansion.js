@@ -9,7 +9,117 @@ const SENIOR_ESC=s=>String(s).replaceAll("&","&amp;").replaceAll("<","&lt;").rep
 const SENIOR_CORE=(s,t,l)=>{const k=SENIOR_TYPE(s),stage=l==="SSS 1"?"foundation":l==="SSS 2"?"deeper application":"advanced integration and examination mastery";return `<p><strong>${SENIOR_ESC(t)}</strong> is a ${stage} unit in <strong>${SENIOR_ESC(s)}</strong>. Build understanding from precise definitions and core principles, then move to examples, applications and examination tasks.</p><p><strong>Study lens:</strong> ${SENIOR_LENS[k]}</p><p><strong>Application:</strong> Relate the topic to Nigerian school and real-life contexts where relevant. Explain reasoning, label work clearly, and verify facts, calculations, spelling, dates, units or procedures before submission.</p>`};
 const SENIOR_PRACTICE=(s,t)=>`<p><strong>Practice:</strong> Define <em>${SENIOR_ESC(t)}</em>, explain four important ideas, give one relevant Nigerian/everyday example and answer one examination-style question on the topic.</p><p><strong>Answer approach:</strong> Define the key term, organise the main points logically, support them with an example, evidence, calculation or procedure as appropriate, and conclude clearly.</p>`;
 SENIOR_EXTRA_N.push(...SENIOR_EXTRA_BUILD());
-function seniorDetail(level,subject,topic){
+const TEXTBOOK_CHAPTERS = {
+  "SSS 1|Chemistry|Atomic Structure and the Periodic Table": `
+  <div class="senior-textbook">
+    <h3>1. Learning objectives</h3>
+    <p>By the end of this chapter, you should be able to describe the structure of an atom; distinguish protons, neutrons and electrons; use atomic number and mass number; explain isotopes; calculate relative atomic mass from isotopic abundance; arrange electrons in shells and subshells; write electronic configurations; use configuration to explain ions and periodic relationships; and solve examination-style problems.</p>
+
+    <h3>2. What is an atom?</h3>
+    <p>An <strong>atom</strong> is the smallest electrically neutral unit of an element that retains the chemical identity of that element. Atoms contain a tiny, dense <strong>nucleus</strong> surrounded by electrons occupying allowed energy levels.</p>
+    <p>The nucleus contains positively charged <strong>protons</strong> and electrically neutral <strong>neutrons</strong>. Negatively charged <strong>electrons</strong> occupy regions of space around the nucleus. Almost all of an atom's mass is concentrated in the nucleus because electrons have a much smaller mass than protons or neutrons.</p>
+    <table><tr><th>Particle</th><th>Relative charge</th><th>Relative mass</th><th>Location</th></tr><tr><td>Proton</td><td>+1</td><td>≈1</td><td>Nucleus</td></tr><tr><td>Neutron</td><td>0</td><td>≈1</td><td>Nucleus</td></tr><tr><td>Electron</td><td>−1</td><td>≈1/1836</td><td>Outside nucleus</td></tr></table>
+
+    <h3>3. Atomic number</h3>
+    <p>The <strong>atomic number, Z</strong>, is the number of protons in the nucleus. It identifies the element. In a neutral atom, the number of electrons equals the number of protons, so a neutral atom has electron count = Z.</p>
+    <div class="box"><strong>Example:</strong> Sodium has atomic number 11. Therefore every sodium atom contains 11 protons. A neutral sodium atom also contains 11 electrons.</div>
+
+    <h3>4. Mass number</h3>
+    <p>The <strong>mass number, A</strong>, is the total number of protons and neutrons in the nucleus.</p>
+    <div class="box"><strong>Relationship:</strong> A = Z + N, where N is the number of neutrons. Therefore N = A − Z.</div>
+    <p><strong>Worked example:</strong> An atom of chlorine-35 has Z = 17 and A = 35. Number of neutrons = 35 − 17 = <strong>18</strong>. A neutral chlorine atom has 17 electrons.</p>
+
+    <h3>5. Isotopes</h3>
+    <p><strong>Isotopes</strong> are atoms of the same element with the same number of protons but different numbers of neutrons. Because they have the same atomic number, they occupy the same position in the periodic table. Their different neutron numbers give them different mass numbers.</p>
+    <p>For example, carbon-12 and carbon-14 each have six protons. Carbon-12 has six neutrons, while carbon-14 has eight. Isotopes generally have very similar chemical behaviour because chemical behaviour is strongly determined by electron arrangement, although their masses and some physical/nuclear properties differ.</p>
+
+    <h3>6. Relative atomic mass</h3>
+    <p>The <strong>relative atomic mass, A<sub>r</sub></strong>, is the weighted mean mass of the atoms of an element compared with the defined standard based on carbon-12. It is not normally a whole number because naturally occurring elements may contain several isotopes.</p>
+    <div class="box"><strong>Formula:</strong> A<sub>r</sub> = Σ(isotopic mass × fractional abundance).</div>
+    <p><strong>Worked example:</strong> Suppose an element has two isotopes: mass 10 with abundance 20% and mass 11 with abundance 80%.</p>
+    <p>A<sub>r</sub> = (10 × 20/100) + (11 × 80/100) = 2.0 + 8.8 = <strong>10.8</strong>.</p>
+    <p><strong>Check:</strong> 10.8 lies between 10 and 11 and is closer to 11 because the isotope of mass 11 is more abundant.</p>
+
+    <h3>7. Electron arrangement: shells and subshells</h3>
+    <p>Electrons occupy quantised energy levels called <strong>shells</strong>. Shells are divided into <strong>subshells</strong>, commonly designated s, p, d and f. Each orbital can hold a maximum of two electrons, with opposite spins. The subshell capacities are s = 2, p = 6, d = 10 and f = 14.</p>
+    <p>At introductory secondary-school level, shell notation such as 2,8,1 is useful for the first twenty elements. More detailed electronic configuration uses subshell notation such as 1s² 2s² 2p⁶ 3s¹.</p>
+
+    <h3>8. Electronic configuration</h3>
+    <p>Electrons occupy lower-energy orbitals before higher-energy orbitals. For the first twenty elements, the commonly used order is 1s, 2s, 2p, 3s, 3p and 4s. The Pauli exclusion principle limits an orbital to two electrons, while Hund's rule explains how electrons occupy orbitals of equal energy before pairing.</p>
+    <div class="box"><strong>Worked example — magnesium:</strong> Mg has Z = 12, so a neutral Mg atom has 12 electrons. Shell arrangement = <strong>2,8,2</strong>. Subshell configuration = <strong>1s² 2s² 2p⁶ 3s²</strong>.</div>
+    <div class="box"><strong>Worked example — chlorine:</strong> Cl has Z = 17. Shell arrangement = <strong>2,8,7</strong>; subshell configuration = <strong>1s² 2s² 2p⁶ 3s² 3p⁵</strong>.</div>
+
+    <h3>9. Periodic relationships</h3>
+    <p>The periodic table arranges elements by increasing atomic number. For main-group elements, the number of occupied electron shells relates to the period, while the number of outer-shell electrons helps explain group relationships. Elements in the same group tend to have related chemical properties because their valence-electron arrangements are similar.</p>
+    <p>For example, lithium (2,1), sodium (2,8,1) and potassium (2,8,8,1) each have one outer electron and belong to Group 1. Their similar valence-electron pattern helps explain their related chemical behaviour.</p>
+
+    <h3>10. Ions and ion formation</h3>
+    <p>An <strong>ion</strong> is a charged particle formed when an atom or group of atoms gains or loses electrons. Losing electrons produces a positive <strong>cation</strong>; gaining electrons produces a negative <strong>anion</strong>.</p>
+    <div class="box"><strong>Worked example:</strong> A neutral sodium atom has 11 protons and 11 electrons. When it loses one electron, Na⁺ has 11 protons and 10 electrons. Its net charge is +1 because there is one more positive charge than negative charge.</div>
+    <p>Oxygen has Z = 8. A neutral oxygen atom has 8 electrons. An O²⁻ ion has gained two electrons and therefore has 10 electrons while retaining its 8 protons.</p>
+
+    <h3>11. Atomic-structure calculations</h3>
+    <ol>
+      <li><strong>Given Z and A:</strong> protons = Z; electrons in a neutral atom = Z; neutrons = A − Z.</li>
+      <li><strong>Given an ion charge:</strong> protons remain Z; electrons decrease when positive and increase when negative.</li>
+      <li><strong>Given isotope abundances:</strong> convert percentages to fractions and calculate the weighted mean.</li>
+    </ol>
+    <div class="box"><strong>Worked problem:</strong> An ion X²⁺ has atomic number 20 and mass number 40. Protons = 20; neutrons = 40 − 20 = 20; electrons = 20 − 2 = <strong>18</strong>.</div>
+
+    <h3>12. Model and practical activity</h3>
+    <p><strong>Activity — build an atom model:</strong> Use labelled counters or balls to represent protons, neutrons and electrons. Build a neutral atom, then remove two electron markers to model a 2+ ion. Record what changed and what did not. The activity illustrates particle counting; it is a model, not a literal picture of electron motion.</p>
+    <p><strong>Safety:</strong> Use clean classroom materials, avoid small loose objects with young children, and do not present the model as a scale-accurate representation of atomic structure.</p>
+
+    <h3>13. Common misconceptions</h3>
+    <ul>
+      <li><strong>“Atomic number is the number of neutrons.”</strong> No. Atomic number is the number of protons.</li>
+      <li><strong>“Mass number is the same as relative atomic mass.”</strong> No. Mass number refers to one isotope and is a whole-number count of protons plus neutrons; relative atomic mass is a weighted mean.</li>
+      <li><strong>“An ion is formed by changing protons.”</strong> Ordinary ion formation changes electrons, not the nucleus.</li>
+      <li><strong>“Isotopes are different elements.”</strong> No. Isotopes have the same number of protons and therefore are the same element.</li>
+      <li><strong>“Electrons orbit exactly like planets.”</strong> The shell picture is a simplified teaching model; modern atomic theory describes electrons using quantum states and orbitals.</li>
+    </ul>
+
+    <h3>14. Exercises</h3>
+    <ol>
+      <li>Define atomic number and mass number.</li>
+      <li>An atom has Z = 13 and A = 27. Find its numbers of protons, neutrons and electrons.</li>
+      <li>Write the shell arrangement and subshell configuration of oxygen (Z = 8).</li>
+      <li>How many electrons are present in Al³⁺ when aluminium has atomic number 13?</li>
+      <li>An element has isotopes of masses 24 and 26 with abundances 75% and 25%. Calculate its relative atomic mass.</li>
+      <li>Explain why sodium and potassium have related chemical properties.</li>
+    </ol>
+
+    <h3>15. Answers with explanations</h3>
+    <ol>
+      <li>Atomic number is the number of protons; mass number is protons + neutrons.</li>
+      <li>Protons = 13; neutral electrons = 13; neutrons = 27 − 13 = <strong>14</strong>.</li>
+      <li>Oxygen: shell arrangement <strong>2,6</strong>; configuration <strong>1s² 2s² 2p⁴</strong>.</li>
+      <li>Al³⁺ has lost three electrons: 13 − 3 = <strong>10 electrons</strong>.</li>
+      <li>A<sub>r</sub> = (24 × 0.75) + (26 × 0.25) = 18 + 6.5 = <strong>24.5</strong>.</li>
+      <li>Both have one electron in their outermost shell. Their similar valence-electron arrangement contributes to similar chemical behaviour.</li>
+    </ol>
+
+    <h3>16. Examination questions</h3>
+    <ol>
+      <li>An atom is represented by <sup>35</sup><sub>17</sub>Cl. State its proton, neutron and electron numbers.</li>
+      <li>Explain the difference between an isotope and an ion.</li>
+      <li>An element consists of 60% isotope X of mass 10 and 40% isotope Y of mass 11. Calculate its relative atomic mass.</li>
+      <li>Write the electronic configuration of sodium and explain how it forms Na⁺.</li>
+      <li>Explain why elements in the same main-group column tend to show related chemical properties.</li>
+    </ol>
+
+    <h3>17. Examination answers and reasoning</h3>
+    <div class="box"><strong>Q1:</strong> Z = 17, so protons = 17 and neutral electrons = 17. Neutrons = 35 − 17 = <strong>18</strong>.</div>
+    <div class="box"><strong>Q2:</strong> Isotopes are atoms of the same element with different neutron numbers. Ions are charged particles formed by electron loss or gain. The nucleus is unchanged during ordinary ion formation.</div>
+    <div class="box"><strong>Q3:</strong> A<sub>r</sub> = (10 × 0.60) + (11 × 0.40) = 6 + 4.4 = <strong>10.4</strong>.</div>
+    <div class="box"><strong>Q4:</strong> Na has 11 electrons: 1s² 2s² 2p⁶ 3s¹. It loses the outer 3s electron to form Na⁺ with a stable 2,8 arrangement.</div>
+    <div class="box"><strong>Q5:</strong> Main-group elements in the same group have related outer-electron arrangements. Because valence electrons strongly influence bonding and reactivity, their chemistry often shows recurring patterns.</div>
+
+    <h3>18. Further reading and source discipline</h3>
+    <p>Use the current NERDC Senior Secondary Education Curriculum as the curriculum reference, together with your school's approved textbook and teacher guidance. For scientific facts, prefer authoritative educational and scientific sources and check the edition/date of any resource that may have changed.</p>
+  </div>`,
+};
+function seniorDetail(level,subject,topic){\n  const textbookKey = `${level}|${subject}|${topic}`;\n  if (TEXTBOOK_CHAPTERS[textbookKey]) return TEXTBOOK_CHAPTERS[textbookKey];
   const k=SENIOR_TYPE(subject);
   const lens=SENIOR_LENS[k];
   const stage=level==="SSS 1"?"foundation":level==="SSS 2"?"development and application":"advanced integration and examination mastery";
