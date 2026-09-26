@@ -177,7 +177,13 @@ SOURCE RECORDS:
         try:
             with urllib.request.urlopen(req, timeout=90) as r:
                 data = json.loads(r.read())
-            raw = data['candidates'][0]['content']['parts'][0]['text'].strip()\n            try:\n                return json.loads(raw)\n            except json.JSONDecodeError:\n                raw = re.sub(r'^\\s*```(?:json)?\\s*', '', raw, flags=re.I)\n                raw = re.sub(r'\\s*```\\s*
+            raw = data['candidates'][0]['content']['parts'][0]['text'].strip()
+            try:
+                return json.loads(raw)
+            except json.JSONDecodeError:
+                cleaned = re.sub(r'^\s*```(?:json)?\s*', '', raw, flags=re.I)
+                cleaned = re.sub(r'\s*```\s*$', '', cleaned)
+                return json.loads(cleaned)
         except urllib.error.HTTPError as exc:
             last_error = exc
             if exc.code not in (429, 500, 502, 503, 504):
@@ -190,7 +196,6 @@ SOURCE RECORDS:
             print(f'Detailed AI transient HTTP {exc.code}; retrying in {delay}s (attempt {attempt + 1}/3)')
             time.sleep(delay)
     raise last_error
-
 
 # Replace only the writing layer; the existing newsroom's feed collection,
 # corroboration, safety checks, sanitization and publishing flow remain in use.
