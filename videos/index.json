@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T08:08:12.919529+00:00",
+  "updated_at": "2026-09-26T08:26:04.532609+00:00",
   "videos": [
     {
       "video_id": "QA25cuCaM5c",
@@ -96,6 +96,22 @@
       "is_short": false,
       "description": "Xbox presents the gaming video titled The Relic First Guardian out now on XBOX Series X|S and XPA, available to watch now.",
       "published_by_pipeline_at": "2026-09-25T21:13:38.794767+00:00"
+    },
+    {
+      "video_id": "V79-yCt7Log",
+      "title": "His darlin’ girl, Maggie. #DiggerMovie",
+      "category": "Movies & TV",
+      "channel": "Warner Bros. Pictures",
+      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
+      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
+      "url": "https://www.youtube.com/shorts/V79-yCt7Log",
+      "embed_url": "https://www.youtube-nocookie.com/embed/V79-yCt7Log",
+      "thumbnail": "https://i.ytimg.com/vi/V79-yCt7Log/hqdefault.jpg",
+      "published_at": "2026-09-25T20:00:24+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Warner Bros. Pictures — His darlin’ girl, Maggie. #DiggerMovie. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-09-26T08:26:04.532520+00:00"
     },
     {
       "video_id": "45nZolJjaJc",
@@ -1584,22 +1600,6 @@
       "is_short": false,
       "description": "Celebrate Batman Day with DC in this Movies and TV video featuring Jim Lee discussing LEGO Batman: Legacy of the Dark Knight.",
       "published_by_pipeline_at": "2026-09-19T22:20:28.809028+00:00"
-    },
-    {
-      "video_id": "qmvkdk1HJlA",
-      "title": "LEGO® Batman™: Legacy of the Dark Knight - 5 Hour Gliding ASMR",
-      "category": "Movies & TV",
-      "channel": "DC",
-      "channel_id": "UCiifkYAs_bq1pt_zbNAzYGg",
-      "channel_url": "https://www.youtube.com/channel/UCiifkYAs_bq1pt_zbNAzYGg",
-      "url": "https://www.youtube.com/watch?v=qmvkdk1HJlA",
-      "embed_url": "https://www.youtube-nocookie.com/embed/qmvkdk1HJlA",
-      "thumbnail": "https://i.ytimg.com/vi/qmvkdk1HJlA/hqdefault.jpg",
-      "published_at": "2026-09-19T20:03:55+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Watch a five-hour gliding ASMR video featuring LEGO Batman and the Legacy of the Dark Knight, presented by the official DC channel.",
-      "published_by_pipeline_at": "2026-09-19T22:20:29.352721+00:00"
     }
   ]
 }
