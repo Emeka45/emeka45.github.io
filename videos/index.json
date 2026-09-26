@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T07:57:57.031655+00:00",
+  "updated_at": "2026-09-26T08:08:12.919529+00:00",
   "videos": [
     {
       "video_id": "QA25cuCaM5c",
@@ -48,6 +48,22 @@
       "is_short": false,
       "description": "Watch the season one recap for Haunted Hotel, titled Abaddon's, in this video from the Netflix Movies and TV channel.",
       "published_by_pipeline_at": "2026-09-26T07:52:38.754715+00:00"
+    },
+    {
+      "video_id": "nmtewUk_SUk",
+      "title": "The hype is real. Search Clayface - only in theaters October 23.",
+      "category": "Movies & TV",
+      "channel": "Warner Bros. Pictures",
+      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
+      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
+      "url": "https://www.youtube.com/shorts/nmtewUk_SUk",
+      "embed_url": "https://www.youtube-nocookie.com/embed/nmtewUk_SUk",
+      "thumbnail": "https://i.ytimg.com/vi/nmtewUk_SUk/hqdefault.jpg",
+      "published_at": "2026-09-25T22:00:14+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Warner Bros. Pictures — The hype is real. Search Clayface - only in theaters October 23.. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-09-26T08:08:12.919438+00:00"
     },
     {
       "video_id": "nsIVAUwke3o",
@@ -1584,22 +1600,6 @@
       "is_short": false,
       "description": "Watch a five-hour gliding ASMR video featuring LEGO Batman and the Legacy of the Dark Knight, presented by the official DC channel.",
       "published_by_pipeline_at": "2026-09-19T22:20:29.352721+00:00"
-    },
-    {
-      "video_id": "_de_g6qhKDw",
-      "title": "Audiences are loving #PracticalMagic2!",
-      "category": "Movies & TV",
-      "channel": "Warner Bros. Pictures",
-      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
-      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
-      "url": "https://www.youtube.com/shorts/_de_g6qhKDw",
-      "embed_url": "https://www.youtube-nocookie.com/embed/_de_g6qhKDw",
-      "thumbnail": "https://i.ytimg.com/vi/_de_g6qhKDw/hqdefault.jpg",
-      "published_at": "2026-09-19T19:30:29+00:00",
-      "source": "YouTube channel feed",
-      "is_short": true,
-      "description": "Warner Bros. Pictures shares that audiences are loving the movie and television feature #PracticalMagic2 in this video from the Movies & TV category.",
-      "published_by_pipeline_at": "2026-09-19T22:20:30.590758+00:00"
     }
   ]
 }
