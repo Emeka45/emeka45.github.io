@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T09:19:00.334482+00:00",
+  "updated_at": "2026-09-26T09:23:55.541910+00:00",
   "videos": [
     {
       "video_id": "QA25cuCaM5c",
@@ -496,6 +496,22 @@
       "is_short": true,
       "description": "Ubisoft — The SPAS-15 now hits harder! 💪. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-09-26T09:19:00.334367+00:00"
+    },
+    {
+      "video_id": "0AF8p-Q_pqo",
+      "title": "Aquaman 🤝 Autumn | DC",
+      "category": "Movies & TV",
+      "channel": "DC",
+      "channel_id": "UCiifkYAs_bq1pt_zbNAzYGg",
+      "channel_url": "https://www.youtube.com/channel/UCiifkYAs_bq1pt_zbNAzYGg",
+      "url": "https://www.youtube.com/shorts/0AF8p-Q_pqo",
+      "embed_url": "https://www.youtube-nocookie.com/embed/0AF8p-Q_pqo",
+      "thumbnail": "https://i.ytimg.com/vi/0AF8p-Q_pqo/hqdefault.jpg",
+      "published_at": "2026-09-24T16:00:11+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Watch the DC channel video titled Aquaman 🤝 Autumn, featuring Aquaman in this Movies & TV presentation.",
+      "published_by_pipeline_at": "2026-09-26T09:23:55.541820+00:00"
     },
     {
       "video_id": "MOU2thjq6Z0",
@@ -1584,22 +1600,6 @@
       "is_short": false,
       "description": "Xbox shares an announcement trailer for BALL x PIT: Risen Ballbylon in this gaming video.",
       "published_by_pipeline_at": "2026-09-20T22:22:46.304523+00:00"
-    },
-    {
-      "video_id": "tsSjJQ2Jqk4",
-      "title": "Neon Abyss 2 - XBOX Release Date Trailer",
-      "category": "Gaming",
-      "channel": "Xbox",
-      "channel_id": "UCjBp_7RuDBUYbd1LegWEJ8g",
-      "channel_url": "https://www.youtube.com/channel/UCjBp_7RuDBUYbd1LegWEJ8g",
-      "url": "https://www.youtube.com/watch?v=tsSjJQ2Jqk4",
-      "embed_url": "https://www.youtube-nocookie.com/embed/tsSjJQ2Jqk4",
-      "thumbnail": "https://i.ytimg.com/vi/tsSjJQ2Jqk4/hqdefault.jpg",
-      "published_at": "2026-09-20T17:30:11+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Watch the Xbox release date trailer for Neon Abyss 2 in this gaming video published by the official Xbox channel.",
-      "published_by_pipeline_at": "2026-09-20T18:06:24.037557+00:00"
     }
   ]
 }
