@@ -75,9 +75,9 @@ EXPANDED_FEEDS = {
     'Nigeria - Transport & Infrastructure': ['https://news.google.com/rss/search?q=Nigeria+transport+infrastructure+road+rail+airport+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://rss.punchng.com/v1/category/latest_news'],
     'Nigeria - Environment & Climate': ['https://news.google.com/rss/search?q=Nigeria+environment+climate+flood+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://thereporter.com.ng/rss/category/news'],
     'Nigeria - Jobs & Labour': ['https://news.google.com/rss/search?q=Nigeria+jobs+labour+employment+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://rss.punchng.com/v1/category/business'],
-    'Nigeria - Finance & Markets': ['https://news.google.com/rss/search?q=Nigeria+finance+markets+banking+inflation+business+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://rss.punchng.com/v1/category/business'],
-    'Nigeria - Culture & Heritage': ['https://news.google.com/rss/search?q=Nigeria+culture+heritage+arts+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://rss.punchng.com/v1/category/entertainment'],
-    'Nigeria - Tourism & Travel': ['https://news.google.com/rss/search?q=Nigeria+tourism+travel+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://rss.punchng.com/v1/category/entertainment'],
+    'Nigeria - Finance & Markets': ['https://thereporter.com.ng/rss/category/finance-101', 'https://rss.punchng.com/v1/category/business'],
+    'Nigeria - Culture & Heritage': ['https://news.google.com/rss/search?q=Nigeria+culture+heritage+arts+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle'],
+    'Nigeria - Tourism & Travel': ['https://news.google.com/rss/search?q=Nigeria+tourism+travel+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle'],
     'Nigeria - Religion & Interfaith': ['https://news.google.com/rss/search?q=Nigeria+religion+interfaith+faith+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://rss.punchng.com/v1/category/latest_news'],
     'Nigeria - Youth & Society': ['https://news.google.com/rss/search?q=Nigeria+youth+society+community+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://thereporter.com.ng/rss/category/news'],
     'Nigeria - Real Estate & Housing': ['https://news.google.com/rss/search?q=Nigeria+real+estate+housing+property+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://rss.punchng.com/v1/category/business'],
@@ -115,7 +115,6 @@ ai_newsroom.sanitize_body_html = sanitize_with_fallback
 
 
 def detailed_ask_ai(sources):
-    """Generate a substantive, source-grounded report while preserving the newsroom's safety gate."""
     key = os.environ.get('GEMINI_API_KEY')
     if not key:
         raise RuntimeError('GEMINI_API_KEY is missing')
@@ -177,41 +176,7 @@ SOURCE RECORDS:
         try:
             with urllib.request.urlopen(req, timeout=90) as r:
                 data = json.loads(r.read())
-            raw = data['candidates'][0]['content']['parts'][0]['text'].strip()
-            try:
-                return json.loads(raw)
-            except json.JSONDecodeError:
-                cleaned = re.sub(r'^\s*```(?:json)?\s*', '', raw, flags=re.I)
-                cleaned = re.sub(r'\s*```\s*$', '', cleaned)
-                return json.loads(cleaned)
-        except urllib.error.HTTPError as exc:
-            last_error = exc
-            if exc.code not in (429, 500, 502, 503, 504):
-                raise
-            retry_after = exc.headers.get('Retry-After')
-            try:
-                delay = max(8, min(60, int(retry_after))) if retry_after else 8 * (2 ** attempt)
-            except ValueError:
-                delay = 8 * (2 ** attempt)
-            print(f'Detailed AI transient HTTP {exc.code}; retrying in {delay}s (attempt {attempt + 1}/3)')
-            time.sleep(delay)
-    raise last_error
-
-# Replace only the writing layer; the existing newsroom's feed collection,
-# corroboration, safety checks, sanitization and publishing flow remain in use.
-ai_newsroom.ask_ai = detailed_ask_ai
-
-
-def normalize_and_seo():
-    # No dependency on a removed normalize_index_categories() API.
-    if hasattr(ai_newsroom, 'apply_cloudflare_seo'):
-        ai_newsroom.apply_cloudflare_seo('https://emeka45-github-io.pages.dev/news')
-
-
-if __name__ == '__main__':
-    ai_newsroom.main()
-    normalize_and_seo()
-, '', raw)\n                return json.loads(raw)
+            return json.loads(data['candidates'][0]['content']['parts'][0]['text'])
         except urllib.error.HTTPError as exc:
             last_error = exc
             if exc.code not in (429, 500, 502, 503, 504):
@@ -226,13 +191,10 @@ if __name__ == '__main__':
     raise last_error
 
 
-# Replace only the writing layer; the existing newsroom's feed collection,
-# corroboration, safety checks, sanitization and publishing flow remain in use.
 ai_newsroom.ask_ai = detailed_ask_ai
 
 
 def normalize_and_seo():
-    # No dependency on a removed normalize_index_categories() API.
     if hasattr(ai_newsroom, 'apply_cloudflare_seo'):
         ai_newsroom.apply_cloudflare_seo('https://emeka45-github-io.pages.dev/news')
 
