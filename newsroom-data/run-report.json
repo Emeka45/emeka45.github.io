@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-26T06:19:59.834729+00:00",
-  "finished_utc": "2026-09-26T06:21:41.737318+00:00",
+  "started_utc": "2026-09-26T07:50:52.822322+00:00",
+  "finished_utc": "2026-09-26T07:52:29.208543+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -41,8 +41,8 @@
   "held_or_rejected": 3,
   "published_count": 0,
   "rejection_reasons": [
-    "There are no two independent publisher domains corroborating the same central event. The lawsuit involving Senator Solomon Adeola is covered exclusively by punchng.com across multiple entries, while the story involving Eric Opah is only present on thereporter.com.ng.",
-    "Strict corroboration requirements are not met. The core event regarding the summit between Donald Trump and Xi Jinping is covered solely by one publisher domain (theguardian.com across two articles), while the remaining articles from bbc.co.uk and theguardian.com report on entirely unrelated events.",
-    "The supplied source records do not corroborate a single central news event. They consist of separate, disparate features and opinion pieces addressing distinct aspects of Nigeria's justice system (artificial intelligence guardrails, pre-trial custody deaths, and mob/vigilante justice) without a shared event, announcement, or development."
+    "There are not at least two distinct publisher domains corroborating any single central event. The lawsuit involving Senator Solomon Adeola appears only via punchng.com, while the political consultation story appears solely on thereporter.com.ng.",
+    "The provided source records represent disparate topics and opinion or feature analyses—ranging from AI guardrails in the judiciary and pre-trial detention deaths in Niger State to broader commentary on mob justice and judicial bureaucracy. There are not at least two independent publisher domains corroborating the same central event.",
+    "The supplied source records do not materially corroborate the same central event. Each record addresses a separate issue or commentary: one focuses on artificial intelligence governance in the judiciary, another examines judicial bureaucracy and vigilantism, a third reports on pre-trial custody deaths in Niger State, and a fourth explores mob justice. Because there are not at least two independent sources covering the same specific event or announcement, publication criteria are not met."
   ]
 }
