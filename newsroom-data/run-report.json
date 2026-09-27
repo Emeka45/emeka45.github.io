@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-27T03:59:53.674176+00:00",
-  "finished_utc": "2026-09-27T04:03:01.919851+00:00",
+  "started_utc": "2026-09-27T11:31:14.418559+00:00",
+  "finished_utc": "2026-09-27T11:33:26.603725+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -39,14 +39,15 @@
     }
   ],
   "total_items": 637,
-  "fresh_items": 619,
+  "fresh_items": 618,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 2,
-  "held_or_rejected": 2,
+  "ai_failures": 1,
+  "held_or_rejected": 3,
   "published_count": 0,
   "rejection_reasons": [
-    "The supplied source records do not materially corroborate the same central event across two independent publisher domains. Punch reports on regulatory data from the NMDPRA regarding a 26 percent decline in daily petrol imports alongside Dangote Refinery stock hitting 630.9 million litres in August, whereas the only other domain provided lacks body text and refers to a separate development concerning IPMAN rejecting fuel imports and Dangote dismissing supply disruption claims. Mentioning the same entity or broad subject does not meet the strict corroboration standard.",
-    "The supplied source records do not corroborate the same central event across at least two independent publisher domains. Punch reports on Governor Douye Diri congratulating APC National Secretary Ajibola Basiru on a fellowship award, while The Reporter solely covers the unveiling of the Bayelsa at 30 anniversary logo."
+    "The supplied records do not contain corroboration from at least two distinct publisher domains for any single event. The Bayelsa arrests are reported solely by thereporter.com.ng, and the Anambra arrests appear only in duplicate entries from punchng.com.",
+    "There are not at least two different publisher domains corroborating any single central event. The Lagos APC 2027 mobilisation campaign is only reported by punchng.com, while the report on President Tinubu addressing the nation for the independence anniversary is only covered by thereporter.com.ng.",
+    "The provided records do not meet the requirement of at least two different publisher domains materially corroborating the same central event. The summit between Donald Trump and Xi Jinping is covered solely by articles from a single publisher domain (theguardian.com), while the BBC report covers a completely distinct event regarding CNN and Air Force One."
   ]
 }
