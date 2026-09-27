@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-09-27T11:33:47.798928+00:00",
+  "updated_at": "2026-09-27T16:34:33.613472+00:00",
   "videos": [
+    {
+      "video_id": "g1cPu1knA9s",
+      "title": "Facin’ the truth. #DiggerMovie",
+      "category": "Movies & TV",
+      "channel": "Warner Bros. Pictures",
+      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
+      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
+      "url": "https://www.youtube.com/shorts/g1cPu1knA9s",
+      "embed_url": "https://www.youtube-nocookie.com/embed/g1cPu1knA9s",
+      "thumbnail": "https://i.ytimg.com/vi/g1cPu1knA9s/hqdefault.jpg",
+      "published_at": "2026-09-27T16:00:09+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Warner Bros. Pictures — Facin’ the truth. #DiggerMovie. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-09-27T16:34:33.613368+00:00"
+    },
     {
       "video_id": "1ELhd0kyiaw",
       "title": "Girls Trip | Dina Crashes Out on Stewart With a Broken Wine Bottle",
@@ -1584,22 +1600,6 @@
       "is_short": false,
       "description": "Netflix — THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH | Official Trailer | Netflix. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-09-21T15:21:18.089855+00:00"
-    },
-    {
-      "video_id": "RjEZaUBbUvU",
-      "title": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH | Official Trailer | Netflix",
-      "category": "Movies & TV",
-      "channel": "Netflix",
-      "channel_id": "UCWOA1ZGywLbqmigxE4Qlvuw",
-      "channel_url": "https://www.youtube.com/channel/UCWOA1ZGywLbqmigxE4Qlvuw",
-      "url": "https://www.youtube.com/watch?v=RjEZaUBbUvU",
-      "embed_url": "https://www.youtube-nocookie.com/embed/RjEZaUBbUvU",
-      "thumbnail": "https://i.ytimg.com/vi/RjEZaUBbUvU/hqdefault.jpg",
-      "published_at": "2026-09-21T12:00:00+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Netflix — THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH | Official Trailer | Netflix. Watch the original video on YouTube.",
-      "published_by_pipeline_at": "2026-09-21T15:21:43.126094+00:00"
     }
   ]
 }

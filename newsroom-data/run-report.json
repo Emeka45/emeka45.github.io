@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-27T11:31:14.418559+00:00",
-  "finished_utc": "2026-09-27T11:33:26.603725+00:00",
+  "started_utc": "2026-09-27T16:30:57.375152+00:00",
+  "finished_utc": "2026-09-27T16:34:10.726333+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -39,15 +39,14 @@
     }
   ],
   "total_items": 637,
-  "fresh_items": 618,
+  "fresh_items": 620,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 1,
-  "held_or_rejected": 3,
+  "ai_failures": 2,
+  "held_or_rejected": 2,
   "published_count": 0,
   "rejection_reasons": [
-    "The supplied records do not contain corroboration from at least two distinct publisher domains for any single event. The Bayelsa arrests are reported solely by thereporter.com.ng, and the Anambra arrests appear only in duplicate entries from punchng.com.",
-    "There are not at least two different publisher domains corroborating any single central event. The Lagos APC 2027 mobilisation campaign is only reported by punchng.com, while the report on President Tinubu addressing the nation for the independence anniversary is only covered by thereporter.com.ng.",
-    "The provided records do not meet the requirement of at least two different publisher domains materially corroborating the same central event. The summit between Donald Trump and Xi Jinping is covered solely by articles from a single publisher domain (theguardian.com), while the BBC report covers a completely distinct event regarding CNN and Air Force One."
+    "The provided source records do not contain at least two independent publisher domains corroborating the same central event. One story covers Abia State Governor Alex Otti and a JAMB scorer from a single domain (thereporter.com.ng), while the other covers Ekiti State Governor Biodun Oyebanji from punchng.com alone.",
+    "There are no two independent publisher domains corroborating the same central event. One story covers APC chieftain Olatunbosun Oyintiloye urging President Tinubu regarding poverty alleviation, while the other covers Atiku Abubakar's proposals on petrol prices, reported solely by a single domain."
   ]
 }
