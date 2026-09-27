@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-27T16:30:57.375152+00:00",
-  "finished_utc": "2026-09-27T16:34:10.726333+00:00",
+  "started_utc": "2026-09-27T20:58:21.717905+00:00",
+  "finished_utc": "2026-09-27T21:01:28.598150+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -38,7 +38,7 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 637,
+  "total_items": 638,
   "fresh_items": 620,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
@@ -46,7 +46,7 @@
   "held_or_rejected": 2,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided source records do not contain at least two independent publisher domains corroborating the same central event. One story covers Abia State Governor Alex Otti and a JAMB scorer from a single domain (thereporter.com.ng), while the other covers Ekiti State Governor Biodun Oyebanji from punchng.com alone.",
-    "There are no two independent publisher domains corroborating the same central event. One story covers APC chieftain Olatunbosun Oyintiloye urging President Tinubu regarding poverty alleviation, while the other covers Atiku Abubakar's proposals on petrol prices, reported solely by a single domain."
+    "Insufficient corroboration across distinct publisher domains. The story concerning the APC youth group is reported by only one domain (punchng.com), and the story regarding the Independence Day address is reported by only one domain (thereporter.com.ng). At least two distinct publisher domains must materially support the same central event.",
+    "Insufficient corroboration across multiple publisher domains. The supplied records cover two entirely different events: Punch Nigeria reports on an APC youth group mobilising votes for the 2027 elections, while The Reporter covers President Tinubu's planned address for Nigeria's Independence Anniversary. No single event is corroborated by at least two distinct domains."
   ]
 }

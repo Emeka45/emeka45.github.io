@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-09-27T16:34:33.613472+00:00",
+  "updated_at": "2026-09-27T21:02:11.094171+00:00",
   "videos": [
+    {
+      "video_id": "xK8xGYtzEUw",
+      "title": "Dina's CRAZY Crash Out! 🍾 #GirlsTrip #Shorts",
+      "category": "Movies & TV",
+      "channel": "Universal Pictures",
+      "channel_id": "UCq0OueAsdxH6b8nyAspwViw",
+      "channel_url": "https://www.youtube.com/channel/UCq0OueAsdxH6b8nyAspwViw",
+      "url": "https://www.youtube.com/shorts/xK8xGYtzEUw",
+      "embed_url": "https://www.youtube-nocookie.com/embed/xK8xGYtzEUw",
+      "thumbnail": "https://i.ytimg.com/vi/xK8xGYtzEUw/hqdefault.jpg",
+      "published_at": "2026-09-27T19:00:00+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Universal Pictures shares a clip from Girls Trip titled Dina's CRAZY Crash Out! in the Movies & TV category.",
+      "published_by_pipeline_at": "2026-09-27T21:02:11.094042+00:00"
+    },
     {
       "video_id": "g1cPu1knA9s",
       "title": "Facin’ the truth. #DiggerMovie",
@@ -1584,22 +1600,6 @@
       "is_short": false,
       "description": "Watch the official trailer from Netflix for the movies and tv video titled The Further Mis-Adventures of Cliff Booth.",
       "published_by_pipeline_at": "2026-09-21T15:20:53.060437+00:00"
-    },
-    {
-      "video_id": "NIOfWyHdBSE",
-      "title": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH | Official Trailer | Netflix",
-      "category": "Movies & TV",
-      "channel": "Netflix",
-      "channel_id": "UCWOA1ZGywLbqmigxE4Qlvuw",
-      "channel_url": "https://www.youtube.com/channel/UCWOA1ZGywLbqmigxE4Qlvuw",
-      "url": "https://www.youtube.com/watch?v=NIOfWyHdBSE",
-      "embed_url": "https://www.youtube-nocookie.com/embed/NIOfWyHdBSE",
-      "thumbnail": "https://i.ytimg.com/vi/NIOfWyHdBSE/hqdefault.jpg",
-      "published_at": "2026-09-21T12:00:00+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Netflix — THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH | Official Trailer | Netflix. Watch the original video on YouTube.",
-      "published_by_pipeline_at": "2026-09-21T15:21:18.089855+00:00"
     }
   ]
 }
