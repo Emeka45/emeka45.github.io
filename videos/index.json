@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-09-28T04:05:24.933596+00:00",
+  "updated_at": "2026-09-28T13:09:22.156494+00:00",
   "videos": [
+    {
+      "video_id": "9JrxAzY6uys",
+      "title": "ACE COMBAT 8: WINGS OF THEVE - Launch Trailer",
+      "category": "Gaming",
+      "channel": "Xbox",
+      "channel_id": "UCjBp_7RuDBUYbd1LegWEJ8g",
+      "channel_url": "https://www.youtube.com/channel/UCjBp_7RuDBUYbd1LegWEJ8g",
+      "url": "https://www.youtube.com/watch?v=9JrxAzY6uys",
+      "embed_url": "https://www.youtube-nocookie.com/embed/9JrxAzY6uys",
+      "thumbnail": "https://i.ytimg.com/vi/9JrxAzY6uys/hqdefault.jpg",
+      "published_at": "2026-09-28T12:00:18+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Xbox — ACE COMBAT 8: WINGS OF THEVE - Launch Trailer. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-09-28T13:08:53.788325+00:00"
+    },
     {
       "video_id": "xK8xGYtzEUw",
       "title": "Dina's CRAZY Crash Out! 🍾 #GirlsTrip #Shorts",
@@ -1584,22 +1600,6 @@
       "is_short": false,
       "description": "Nintendo of America — Trails in the Sky 2nd Chapter – Launch Trailer – Nintendo Switch 2. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-09-21T15:20:52.083694+00:00"
-    },
-    {
-      "video_id": "JckKVDBXfXM",
-      "title": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH | Official Trailer | Netflix",
-      "category": "Movies & TV",
-      "channel": "Netflix",
-      "channel_id": "UCWOA1ZGywLbqmigxE4Qlvuw",
-      "channel_url": "https://www.youtube.com/channel/UCWOA1ZGywLbqmigxE4Qlvuw",
-      "url": "https://www.youtube.com/watch?v=JckKVDBXfXM",
-      "embed_url": "https://www.youtube-nocookie.com/embed/JckKVDBXfXM",
-      "thumbnail": "https://i.ytimg.com/vi/JckKVDBXfXM/hqdefault.jpg",
-      "published_at": "2026-09-21T12:00:00+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Watch the official trailer from Netflix for the movies and tv video titled The Further Mis-Adventures of Cliff Booth.",
-      "published_by_pipeline_at": "2026-09-21T15:20:53.060437+00:00"
     }
   ]
 }
