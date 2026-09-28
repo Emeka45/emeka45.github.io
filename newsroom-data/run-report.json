@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-28T13:04:32.745357+00:00",
-  "finished_utc": "2026-09-28T13:08:42.728195+00:00",
+  "started_utc": "2026-09-28T22:58:46.515733+00:00",
+  "finished_utc": "2026-09-28T23:03:15.442405+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -38,14 +38,12 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 639,
-  "fresh_items": 621,
+  "total_items": 637,
+  "fresh_items": 618,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 3,
-  "held_or_rejected": 1,
+  "ai_failures": 4,
+  "held_or_rejected": 0,
   "published_count": 0,
-  "rejection_reasons": [
-    "The supplied source records do not corroborate a single central event. While all four articles broadly relate to Nigeria's justice system, each covers a distinct development, opinion, or feature: one addresses artificial intelligence guardrails, another discusses mob justice, a third covers remarks by Simon Kolawole on corruption, and the fourth examines judicial bureaucracy and vigilante redress. Under the strict evidence rules, two independent domains must support the same specific event."
-  ]
+  "rejection_reasons": []
 }
