@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-27T20:58:21.717905+00:00",
-  "finished_utc": "2026-09-27T21:01:28.598150+00:00",
+  "started_utc": "2026-09-28T04:00:45.290958+00:00",
+  "finished_utc": "2026-09-28T04:05:12.135900+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -38,15 +38,12 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 638,
-  "fresh_items": 620,
+  "total_items": 641,
+  "fresh_items": 622,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 2,
-  "held_or_rejected": 2,
+  "ai_failures": 4,
+  "held_or_rejected": 0,
   "published_count": 0,
-  "rejection_reasons": [
-    "Insufficient corroboration across distinct publisher domains. The story concerning the APC youth group is reported by only one domain (punchng.com), and the story regarding the Independence Day address is reported by only one domain (thereporter.com.ng). At least two distinct publisher domains must materially support the same central event.",
-    "Insufficient corroboration across multiple publisher domains. The supplied records cover two entirely different events: Punch Nigeria reports on an APC youth group mobilising votes for the 2027 elections, while The Reporter covers President Tinubu's planned address for Nigeria's Independence Anniversary. No single event is corroborated by at least two distinct domains."
-  ]
+  "rejection_reasons": []
 }
