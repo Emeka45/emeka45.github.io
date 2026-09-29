@@ -1,21 +1,16 @@
 {
-  "started_utc": "2026-09-29T04:34:19.410444+00:00",
-  "finished_utc": "2026-09-29T04:38:42.788990+00:00",
+  "started_utc": "2026-09-29T12:14:52.424918+00:00",
+  "finished_utc": "2026-09-29T12:19:11.405115+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
-  "feed_success_count": 50,
-  "feed_failure_count": 6,
+  "feed_success_count": 51,
+  "feed_failure_count": 5,
   "feed_failures": [
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
       "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "category": "Religion & Faith",
-      "url": "https://nscia.com.ng/category/news/feed/",
-      "error": "no element found: line 2, column 0"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -38,12 +33,14 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 638,
-  "fresh_items": 620,
+  "total_items": 646,
+  "fresh_items": 628,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 4,
-  "held_or_rejected": 0,
+  "ai_failures": 3,
+  "held_or_rejected": 1,
   "published_count": 0,
-  "rejection_reasons": []
+  "rejection_reasons": [
+    "The supplied source records do not contain at least two distinct publisher domains corroborating the same central event. One report covers President Bola Tinubu's dinner with Femi Otedola in France, while the remaining entries are duplicate links from a single domain regarding Atiku Abubakar's fuel price proposal."
+  ]
 }
