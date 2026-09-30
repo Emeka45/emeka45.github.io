@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-29T21:57:01.884462+00:00",
-  "finished_utc": "2026-09-29T22:01:28.098159+00:00",
+  "started_utc": "2026-09-30T04:17:44.996915+00:00",
+  "finished_utc": "2026-09-30T04:21:52.543855+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -37,8 +37,10 @@
   "fresh_items": 629,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 4,
-  "held_or_rejected": 0,
+  "ai_failures": 3,
+  "held_or_rejected": 1,
   "published_count": 0,
-  "rejection_reasons": []
+  "rejection_reasons": [
+    "None of the supplied sources corroborate the same central event. The records represent separate topics: comments on corruption by Simon Kolawole, an analysis of mob justice in Nigeria, diplomatic calls for justice over Nigerians killed in South Africa, and an EFCC initiative engaging religious institutions."
+  ]
 }
