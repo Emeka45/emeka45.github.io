@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-09-30T12:00:55.140396+00:00",
-  "finished_utc": "2026-09-30T12:06:13.399150+00:00",
+  "started_utc": "2026-09-30T21:55:38.965055+00:00",
+  "finished_utc": "2026-09-30T21:58:12.188366+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 404: Not Found"
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -33,12 +33,16 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 648,
-  "fresh_items": 630,
+  "total_items": 636,
+  "fresh_items": 618,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 4,
-  "held_or_rejected": 0,
+  "ai_failures": 1,
+  "held_or_rejected": 3,
   "published_count": 0,
-  "rejection_reasons": []
+  "rejection_reasons": [
+    "None of the supplied source records share or materially corroborate the same central event. Each record covers an entirely distinct topic (Bayelsa political movements, child rights protection, Bauchi State governor's speech, and the murder of a ward chairman in Benue State).",
+    "The supplied source records from the two separate domains do not corroborate the same central event. One report focuses on Senate President Godswill Akpabio paying tribute to founding fathers, while the other covers President Bola Tinubu's scheduled October 1 address and low-key government anniversary plans. Furthermore, the limited summary text provides insufficient factual detail to sustain a comprehensive news report without unverified extrapolation.",
+    "The available source records provide only headlines and truncated snippets without sufficient factual details (such as the specific event, speakers, dates, or formal policy statements) to confirm a single central event and sustain a factual report without fabricating information."
+  ]
 }
