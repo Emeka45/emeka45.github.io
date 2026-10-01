@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Universal Dictionary — a 260,000+ word English dictionary with meanings, parts of speech, examples and etymology.">
+<meta name="theme-color" content="#0b0714">
+<title>Universal Dictionary — C. O. Eric</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+:root{--bg:#08060f;--panel:#120d1f;--text:#faf8ff;--muted:#bdb4cc;--accent:#9b6cff;--accent2:#d19cff;--line:rgba(255,255,255,.1)}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 85% -5%,rgba(124,58,237,.28),transparent 35%),linear-gradient(180deg,#08060f,#0b0812);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6}.wrap{width:min(980px,92%);margin:auto}.nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}.brand{font-weight:900}.brand span{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,var(--accent),var(--accent2));margin-right:8px}.hero{text-align:center;padding:70px 0 45px}.hero h1{font-size:clamp(2.8rem,8vw,5.5rem);line-height:.95;letter-spacing:-.06em;margin:20px 0}.gradient{background:linear-gradient(105deg,#fff,#dfc5ff,#a777ff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:var(--muted);max-width:680px;margin:auto}.search{margin:32px auto 0;display:flex;gap:10px;max-width:760px}.search input{flex:1;padding:17px 18px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:#fff;font-size:1.05rem;outline:none}.search button{padding:0 22px;border:0;border-radius:16px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-weight:850}.suggestions{max-width:760px;margin:10px auto;text-align:left}.suggestions button{margin:4px;padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.04);color:#ddd;cursor:pointer}.card{margin:25px 0;padding:30px;border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.035)}.word{font-size:2.5rem;font-weight:900;margin:0}.pos{display:inline-block;margin:7px 0;padding:4px 9px;border-radius:999px;background:rgba(155,108,255,.12);color:#d9c8ff;font-size:.8rem;font-weight:800}.definition{padding:17px 0;border-top:1px solid var(--line)}.definition:first-child{border-top:0}.example{color:var(--muted);font-style:italic}.meta{color:var(--muted);font-size:.9rem}.status{color:var(--muted);text-align:center;min-height:28px}.footer{padding:40px 0 70px;color:var(--muted);font-size:.88rem}@media(max-width:650px){.search{flex-direction:column}.search button{height:52px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="nav"><a class="brand" href="index.html"><span>U</span>C. O. Eric</a><a href="index.html">Home</a></nav>
+<section class="hero">
+<div class="meta">UNIVERSAL DICTIONARY</div>
+<h1><span class="gradient">Find any word.</span></h1>
+<p>Explore a 260,000+ English-word foundation with multiple meanings, parts of speech, examples and etymological information. The same dictionary service powers the Universal Dictionary Android app.</p>
+<form class="search" id="searchForm"><input id="query" autocomplete="off" placeholder="Search a word..." aria-label="Search a word"><button>Search</button></form>
+<div class="suggestions" id="suggestions"></div>
+<div class="status" id="status"></div>
+</section>
+<main id="result"></main>
+<section class="card">
+<h2>About Universal Dictionary</h2>
+<p>This dictionary is built from the Open Dictionary project and its Wiktionary-derived data. The website is the online source used by the Universal Dictionary app, while the app can retain cached/offline entries for resilience.</p>
+<p class="meta">Dataset attribution: Open Dictionary / Wiktionary-derived content. Content remains subject to the applicable upstream licenses.</p>
+</section>
+<footer class="footer">© C. O. Eric · Universal Dictionary · <a href="privacy.html">Privacy</a></footer>
+</div>
+<script>
+const API="/api/dictionary";
+const q=document.getElementById("query"), result=document.getElementById("result"), suggestions=document.getElementById("suggestions"), status=document.getElementById("status");
+let timer;
+function esc(s){return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+function renderEntry(e){
+ const defs=[];
+ for(const et of (e.etymologies||[])){
+  for(const part of (et.partsOfSpeech||[])){
+   const pos=part.partOfSpeech||"Other";
+   for(const sense of (part.senses||[])){
+    if(!sense.sense) continue;
+    const ex=(sense.examples||[])[0];
+    defs.push(`<div class="definition"><div class="pos">${esc(pos)}</div><div><strong>${esc(sense.sense)}</strong></div>${ex?`<div class="example">“${esc(ex)}”</div>`:""}</div>`);
+   }
+  }
+ }
+ result.innerHTML=`<article class="card"><h2 class="word">${esc(e.word)}</h2>${defs.join("")||"<p>No definitions were returned for this entry.</p>"}</article>`;
+}
+async function lookup(word){
+ word=word.trim().toLowerCase(); if(!word)return;
+ status.textContent="Searching…"; suggestions.innerHTML="";
+ try{const r=await fetch(API+"?word="+encodeURIComponent(word));const d=await r.json();if(!r.ok)throw new Error(d.error||"Not found");renderEntry(d);status.textContent="";history.replaceState(null,"","?word="+encodeURIComponent(word));}
+ catch(e){status.textContent=e.message;result.innerHTML="";}
+}
+async function suggest(){
+ const word=q.value.trim().toLowerCase(); if(word.length<2){suggestions.innerHTML="";return}
+ clearTimeout(timer);timer=setTimeout(async()=>{try{const r=await fetch(API+"?suggest="+encodeURIComponent(word)+"&limit=8");const d=await r.json();suggestions.innerHTML=(d.suggestions||[]).map(x=>`<button type="button" onclick="lookup('${x.replace(/'/g,"\\'")}');q.value='${x.replace(/'/g,"\\'")}'">${esc(x)}</button>`).join("")}catch{}},180);
+}
+q.addEventListener("input",suggest);document.getElementById("searchForm").addEventListener("submit",e=>{e.preventDefault();lookup(q.value)});
+const initial=new URLSearchParams(location.search).get("word");if(initial){q.value=initial;lookup(initial);}
+</script>
+</body>
+</html>
