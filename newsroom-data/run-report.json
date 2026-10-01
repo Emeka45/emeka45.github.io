@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-01T04:29:48.423932+00:00",
-  "finished_utc": "2026-10-01T04:33:18.399442+00:00",
+  "started_utc": "2026-10-01T10:05:43.368557+00:00",
+  "finished_utc": "2026-10-01T10:09:54.539625+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 404: Not Found"
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -41,6 +41,6 @@
   "held_or_rejected": 1,
   "published_count": 0,
   "rejection_reasons": [
-    "The supplied source records do not corroborate the same central event across at least two independent publisher domains. The report from Punch covers PETROAN opening talks with Azikel Refinery, while the article from The Reporter covers IPMAN and Dangote Refinery regarding fuel imports."
+    "The supplied records do not corroborate the same central event across at least two distinct publisher domains. One domain reports on the United States congratulating Nigeria, while the other reports on President Bola Tinubu's scheduled address and low-key celebration plans. Sharing the broad context of Nigeria's Independence Anniversary does not satisfy the requirement for overlapping specific events or announcements."
   ]
 }
