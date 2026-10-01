@@ -1,16 +1,21 @@
 {
-  "started_utc": "2026-10-01T10:05:43.368557+00:00",
-  "finished_utc": "2026-10-01T10:09:54.539625+00:00",
+  "started_utc": "2026-10-01T12:33:44.430515+00:00",
+  "finished_utc": "2026-10-01T12:38:33.253006+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
-  "feed_success_count": 51,
-  "feed_failure_count": 5,
+  "feed_success_count": 50,
+  "feed_failure_count": 6,
   "feed_failures": [
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "category": "Religion & Faith",
+      "url": "https://nscia.com.ng/category/news/feed/",
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -33,14 +38,12 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 644,
-  "fresh_items": 626,
+  "total_items": 634,
+  "fresh_items": 616,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 3,
-  "held_or_rejected": 1,
+  "ai_failures": 4,
+  "held_or_rejected": 0,
   "published_count": 0,
-  "rejection_reasons": [
-    "The supplied records do not corroborate the same central event across at least two distinct publisher domains. One domain reports on the United States congratulating Nigeria, while the other reports on President Bola Tinubu's scheduled address and low-key celebration plans. Sharing the broad context of Nigeria's Independence Anniversary does not satisfy the requirement for overlapping specific events or announcements."
-  ]
+  "rejection_reasons": []
 }
