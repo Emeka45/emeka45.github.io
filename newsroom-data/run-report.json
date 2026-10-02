@@ -1,11 +1,11 @@
 {
-  "started_utc": "2026-10-02T04:22:27.868532+00:00",
-  "finished_utc": "2026-10-02T04:25:05.037528+00:00",
+  "started_utc": "2026-10-02T11:59:04.954876+00:00",
+  "finished_utc": "2026-10-02T12:05:00.373068+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
-  "feed_success_count": 50,
-  "feed_failure_count": 6,
+  "feed_success_count": 40,
+  "feed_failure_count": 16,
   "feed_failures": [
     {
       "category": "Religion & Faith",
@@ -13,14 +13,34 @@
       "error": "HTTP Error 429: Too Many Requests"
     },
     {
-      "category": "Religion & Faith",
-      "url": "https://nscia.com.ng/category/news/feed/",
-      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
-    },
-    {
       "category": "Entertainment & Lifestyle",
       "url": "https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle",
       "error": "not well-formed (invalid token): line 11, column 61"
+    },
+    {
+      "category": "Nigeria - Law & Justice",
+      "url": "https://news.google.com/rss/search?q=Nigeria+law+justice+court+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "category": "Nigeria - Energy & Power",
+      "url": "https://news.google.com/rss/search?q=Nigeria+energy+power+electricity+oil+gas+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "category": "Nigeria - Transport & Infrastructure",
+      "url": "https://news.google.com/rss/search?q=Nigeria+transport+infrastructure+road+rail+airport+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "category": "Nigeria - Environment & Climate",
+      "url": "https://news.google.com/rss/search?q=Nigeria+environment+climate+flood+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "category": "Nigeria - Jobs & Labour",
+      "url": "https://news.google.com/rss/search?q=Nigeria+jobs+labour+employment+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "category": "Nigeria - Finance & Markets",
@@ -29,24 +49,53 @@
     },
     {
       "category": "Nigeria - Culture & Heritage",
+      "url": "https://news.google.com/rss/search?q=Nigeria+culture+heritage+arts+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "category": "Nigeria - Culture & Heritage",
       "url": "https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle",
       "error": "not well-formed (invalid token): line 11, column 61"
     },
     {
       "category": "Nigeria - Tourism & Travel",
+      "url": "https://news.google.com/rss/search?q=Nigeria+tourism+travel+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "category": "Nigeria - Tourism & Travel",
       "url": "https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle",
       "error": "not well-formed (invalid token): line 11, column 61"
+    },
+    {
+      "category": "Nigeria - Religion & Interfaith",
+      "url": "https://news.google.com/rss/search?q=Nigeria+religion+interfaith+faith+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "category": "Nigeria - Youth & Society",
+      "url": "https://news.google.com/rss/search?q=Nigeria+youth+society+community+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "category": "Nigeria - Real Estate & Housing",
+      "url": "https://news.google.com/rss/search?q=Nigeria+real+estate+housing+property+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "category": "Nigeria - Food & Consumer",
+      "url": "https://news.google.com/rss/search?q=Nigeria+food+prices+consumer+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
     }
   ],
-  "total_items": 634,
-  "fresh_items": 616,
+  "total_items": 443,
+  "fresh_items": 426,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 2,
-  "held_or_rejected": 2,
+  "ai_failures": 3,
+  "held_or_rejected": 1,
   "published_count": 0,
   "rejection_reasons": [
-    "The supplied source records fail the cross-publisher corroboration requirement. The report regarding Sokoto diphtheria deaths appears exclusively on punchng.com across multiple entries, while the only other distinct domain (thereporter.com.ng) covers an unrelated political meeting in Abia State.",
-    "The supplied source records do not corroborate the same central event across at least two independent publisher domains. One story from thereporter.com.ng covers Senator Seriake Dickson ruling out a 2027 presidential run to focus on party building, while reports from punchng.com cover Peter Obi's Independence Day remarks about spending his presidential holidays locally in Zamfara and Borno states. Because these are distinct events covered by separate single outlets, publication criteria are not met."
+    "The supplied sources do not materially corroborate the same central event. One report concerns former Bayelsa State Governor Seriake Dickson ruling out a 2027 presidential bid, while the other reports cover Muhammed Bawa, an NDC House of Representatives candidate campaigning in Edo State."
   ]
 }
