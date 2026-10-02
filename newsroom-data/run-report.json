@@ -1,46 +1,21 @@
 {
-  "started_utc": "2026-10-02T11:59:04.954876+00:00",
-  "finished_utc": "2026-10-02T12:05:00.373068+00:00",
+  "started_utc": "2026-10-02T17:48:22.888378+00:00",
+  "finished_utc": "2026-10-02T17:57:19.826894+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
-  "feed_success_count": 40,
-  "feed_failure_count": 16,
+  "feed_success_count": 51,
+  "feed_failure_count": 5,
   "feed_failures": [
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "category": "Entertainment & Lifestyle",
       "url": "https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle",
       "error": "not well-formed (invalid token): line 11, column 61"
-    },
-    {
-      "category": "Nigeria - Law & Justice",
-      "url": "https://news.google.com/rss/search?q=Nigeria+law+justice+court+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
-      "error": "HTTP Error 503: Service Unavailable"
-    },
-    {
-      "category": "Nigeria - Energy & Power",
-      "url": "https://news.google.com/rss/search?q=Nigeria+energy+power+electricity+oil+gas+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
-      "error": "HTTP Error 503: Service Unavailable"
-    },
-    {
-      "category": "Nigeria - Transport & Infrastructure",
-      "url": "https://news.google.com/rss/search?q=Nigeria+transport+infrastructure+road+rail+airport+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
-      "error": "HTTP Error 503: Service Unavailable"
-    },
-    {
-      "category": "Nigeria - Environment & Climate",
-      "url": "https://news.google.com/rss/search?q=Nigeria+environment+climate+flood+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
-      "error": "HTTP Error 503: Service Unavailable"
-    },
-    {
-      "category": "Nigeria - Jobs & Labour",
-      "url": "https://news.google.com/rss/search?q=Nigeria+jobs+labour+employment+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
-      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "category": "Nigeria - Finance & Markets",
@@ -49,53 +24,21 @@
     },
     {
       "category": "Nigeria - Culture & Heritage",
-      "url": "https://news.google.com/rss/search?q=Nigeria+culture+heritage+arts+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
-      "error": "HTTP Error 503: Service Unavailable"
-    },
-    {
-      "category": "Nigeria - Culture & Heritage",
       "url": "https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle",
       "error": "not well-formed (invalid token): line 11, column 61"
     },
     {
       "category": "Nigeria - Tourism & Travel",
-      "url": "https://news.google.com/rss/search?q=Nigeria+tourism+travel+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
-      "error": "HTTP Error 503: Service Unavailable"
-    },
-    {
-      "category": "Nigeria - Tourism & Travel",
       "url": "https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle",
       "error": "not well-formed (invalid token): line 11, column 61"
-    },
-    {
-      "category": "Nigeria - Religion & Interfaith",
-      "url": "https://news.google.com/rss/search?q=Nigeria+religion+interfaith+faith+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
-      "error": "HTTP Error 503: Service Unavailable"
-    },
-    {
-      "category": "Nigeria - Youth & Society",
-      "url": "https://news.google.com/rss/search?q=Nigeria+youth+society+community+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
-      "error": "HTTP Error 503: Service Unavailable"
-    },
-    {
-      "category": "Nigeria - Real Estate & Housing",
-      "url": "https://news.google.com/rss/search?q=Nigeria+real+estate+housing+property+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
-      "error": "HTTP Error 503: Service Unavailable"
-    },
-    {
-      "category": "Nigeria - Food & Consumer",
-      "url": "https://news.google.com/rss/search?q=Nigeria+food+prices+consumer+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
-      "error": "HTTP Error 503: Service Unavailable"
     }
   ],
-  "total_items": 443,
-  "fresh_items": 426,
+  "total_items": 642,
+  "fresh_items": 624,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 3,
-  "held_or_rejected": 1,
+  "ai_failures": 4,
+  "held_or_rejected": 0,
   "published_count": 0,
-  "rejection_reasons": [
-    "The supplied sources do not materially corroborate the same central event. One report concerns former Bayelsa State Governor Seriake Dickson ruling out a 2027 presidential bid, while the other reports cover Muhammed Bawa, an NDC House of Representatives candidate campaigning in Edo State."
-  ]
+  "rejection_reasons": []
 }
