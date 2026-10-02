@@ -1,6 +1,38 @@
 {
-  "updated_at": "2026-10-02T17:57:38.576389+00:00",
+  "updated_at": "2026-10-02T21:58:09.930866+00:00",
   "videos": [
+    {
+      "video_id": "-MfuGaOEARo",
+      "title": "Angstrom Levy Gameplay Trailer | Invincible VS",
+      "category": "Gaming",
+      "channel": "Xbox",
+      "channel_id": "UCjBp_7RuDBUYbd1LegWEJ8g",
+      "channel_url": "https://www.youtube.com/channel/UCjBp_7RuDBUYbd1LegWEJ8g",
+      "url": "https://www.youtube.com/watch?v=-MfuGaOEARo",
+      "embed_url": "https://www.youtube-nocookie.com/embed/-MfuGaOEARo",
+      "thumbnail": "https://i.ytimg.com/vi/-MfuGaOEARo/hqdefault.jpg",
+      "published_at": "2026-10-02T21:13:38+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Watch the Angstrom Levy gameplay trailer for Invincible VS, presented by Xbox in the gaming category, featuring action from the title.",
+      "published_by_pipeline_at": "2026-10-02T21:58:00.270055+00:00"
+    },
+    {
+      "video_id": "fikKMZZiLD0",
+      "title": "DIGGER | You Decide | Now Playing in theaters",
+      "category": "Movies & TV",
+      "channel": "Warner Bros. Pictures",
+      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
+      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
+      "url": "https://www.youtube.com/watch?v=fikKMZZiLD0",
+      "embed_url": "https://www.youtube-nocookie.com/embed/fikKMZZiLD0",
+      "thumbnail": "https://i.ytimg.com/vi/fikKMZZiLD0/hqdefault.jpg",
+      "published_at": "2026-10-02T18:21:42+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Warner Bros. Pictures presents DIGGER, featured in the Movies and TV category, with the film currently playing in theaters and audiences encouraged to decide.",
+      "published_by_pipeline_at": "2026-10-02T21:58:01.862685+00:00"
+    },
     {
       "video_id": "Q_NBFHxkJi4",
       "title": "MXGP 26 - The Official Game | Launch Trailer",
@@ -1568,38 +1600,6 @@
       "is_short": false,
       "description": "Watch the Sesame Street: Friends and Fun feature angle trailer for gaming in this video shared by Xbox.",
       "published_by_pipeline_at": "2026-09-25T16:46:22.093104+00:00"
-    },
-    {
-      "video_id": "nRU2GZd6b6Y",
-      "title": "Hollywood Arts | Born for This | Music Video | Netflix",
-      "category": "Movies & TV",
-      "channel": "Netflix",
-      "channel_id": "UCWOA1ZGywLbqmigxE4Qlvuw",
-      "channel_url": "https://www.youtube.com/channel/UCWOA1ZGywLbqmigxE4Qlvuw",
-      "url": "https://www.youtube.com/watch?v=nRU2GZd6b6Y",
-      "embed_url": "https://www.youtube-nocookie.com/embed/nRU2GZd6b6Y",
-      "thumbnail": "https://i.ytimg.com/vi/nRU2GZd6b6Y/hqdefault.jpg",
-      "published_at": "2026-09-25T04:00:00+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Watch the \"Born for This\" music video featuring Hollywood Arts, provided by Netflix in the Movies & TV category.",
-      "published_by_pipeline_at": "2026-09-25T11:21:02.582227+00:00"
-    },
-    {
-      "video_id": "ubj67MCgUuY",
-      "title": "5 days until LEGO ONE PIECE!",
-      "category": "Movies & TV",
-      "channel": "Netflix",
-      "channel_id": "UCWOA1ZGywLbqmigxE4Qlvuw",
-      "channel_url": "https://www.youtube.com/channel/UCWOA1ZGywLbqmigxE4Qlvuw",
-      "url": "https://www.youtube.com/shorts/ubj67MCgUuY",
-      "embed_url": "https://www.youtube-nocookie.com/embed/ubj67MCgUuY",
-      "thumbnail": "https://i.ytimg.com/vi/ubj67MCgUuY/hqdefault.jpg",
-      "published_at": "2026-09-25T02:00:00+00:00",
-      "source": "YouTube channel feed",
-      "is_short": true,
-      "description": "Netflix — 5 days until LEGO ONE PIECE!. Watch the original video on YouTube.",
-      "published_by_pipeline_at": "2026-09-25T11:21:23.451248+00:00"
     }
   ]
 }
