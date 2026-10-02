@@ -7,6 +7,21 @@ interface Env {
   MCP_ACCESS_TOKEN?: string;
 }
 
+async function cloudflareGet(env: Env, path: string) {
+  if (!env.CLOUDFLARE_API_TOKEN || !env.CLOUDFLARE_ACCOUNT_ID) {
+    throw new Error("Cloudflare credentials are not configured.");
+  }
+  const response = await fetch(`https://api.cloudflare.com/client/v4${path}`, {
+    headers: {
+      Authorization: `Bearer ${env.CLOUDFLARE_API_TOKEN}`,
+      "Content-Type": "application/json",
+    },
+  });
+  const data = await response.json();
+  if (!response.ok) throw new Error(`Cloudflare API returned HTTP ${response.status}.`);
+  return data;
+}
+
 function createServer(env: Env) {
   const server = new McpServer({
     name: "Emeka45 Cloudflare Bridge",
@@ -27,6 +42,30 @@ function createServer(env: Env) {
     }],
   }));
 
+  server.registerTool("cloudflare_account", {
+    description: "Read basic information about the configured Cloudflare account.",
+    inputSchema: {},
+  }, async () => {
+    try {
+      const data = await cloudflareGet(env, `/accounts/${env.CLOUDFLARE_ACCOUNT_ID}`);
+      return { content: [{ type: "text", text: JSON.stringify(data.result, null, 2) }] };
+    } catch (error) {
+      return { isError: true, content: [{ type: "text", text: error instanceof Error ? error.message : "Cloudflare request failed." }] };
+    }
+  });
+
+  server.registerTool("cloudflare_pages_projects", {
+    description: "List Cloudflare Pages projects visible to the configured API token.",
+    inputSchema: {},
+  }, async () => {
+    try {
+      const data = await cloudflareGet(env, `/accounts/${env.CLOUDFLARE_ACCOUNT_ID}/pages/projects`);
+      return { content: [{ type: "text", text: JSON.stringify(data.result ?? data, null, 2) }] };
+    } catch (error) {
+      return { isError: true, content: [{ type: "text", text: error instanceof Error ? error.message : "Cloudflare Pages request failed." }] };
+    }
+  });
+
   return server;
 }
 
@@ -41,9 +80,7 @@ export default {
       return Response.json({ ok: true, service: "Emeka45 Cloudflare Bridge", mcp: "/mcp" });
     }
 
-    if (url.pathname !== "/mcp") {
-      return new Response("Not found", { status: 404 });
-    }
+    if (url.pathname !== "/mcp") return new Response("Not found", { status: 404 });
 
     if (env.MCP_ACCESS_TOKEN) {
       const authorization = request.headers.get("Authorization");
