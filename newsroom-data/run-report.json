@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-01T22:24:05.344719+00:00",
-  "finished_utc": "2026-10-01T22:29:16.669440+00:00",
+  "started_utc": "2026-10-02T04:22:27.868532+00:00",
+  "finished_utc": "2026-10-02T04:25:05.037528+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -38,12 +38,15 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 633,
-  "fresh_items": 615,
+  "total_items": 634,
+  "fresh_items": 616,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 4,
-  "held_or_rejected": 0,
+  "ai_failures": 2,
+  "held_or_rejected": 2,
   "published_count": 0,
-  "rejection_reasons": []
+  "rejection_reasons": [
+    "The supplied source records fail the cross-publisher corroboration requirement. The report regarding Sokoto diphtheria deaths appears exclusively on punchng.com across multiple entries, while the only other distinct domain (thereporter.com.ng) covers an unrelated political meeting in Abia State.",
+    "The supplied source records do not corroborate the same central event across at least two independent publisher domains. One story from thereporter.com.ng covers Senator Seriake Dickson ruling out a 2027 presidential run to focus on party building, while reports from punchng.com cover Peter Obi's Independence Day remarks about spending his presidential holidays locally in Zamfara and Borno states. Because these are distinct events covered by separate single outlets, publication criteria are not met."
+  ]
 }
