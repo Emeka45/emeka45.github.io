@@ -25,5 +25,6 @@ jobs:
         with:
           node-version: 24
       - run: npm install
+      - run: npm run cf-typegen
       - run: npm run typecheck
       - run: npx wrangler deploy --dry-run
