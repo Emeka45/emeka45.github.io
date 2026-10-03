@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-03T15:49:02.697587+00:00",
-  "finished_utc": "2026-10-03T15:51:34.348888+00:00",
+  "started_utc": "2026-10-03T20:39:40.449802+00:00",
+  "finished_utc": "2026-10-03T20:44:04.657958+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -33,16 +33,12 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 638,
+  "total_items": 637,
   "fresh_items": 620,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 1,
-  "held_or_rejected": 3,
+  "ai_failures": 4,
+  "held_or_rejected": 0,
   "published_count": 0,
-  "rejection_reasons": [
-    "There is no single central event corroborated by at least two different publisher domains. The supplied records cover unrelated developments (one about an ex-IYC president defending a pipeline surveillance contract from thereporter.com.ng, and others from punchng.com covering separate calls for President Tinubu's re-election by an NDDC director and the Ekiti State governor).",
-    "None of the distinct publisher domains materially corroborate the same central event. The story regarding Atiku's proposal on petrol prices appears only on a single domain (thereporter.com.ng), while the remaining reports cover separate, unrelated political statements.",
-    "Insufficient cross-publisher corroboration. The records describe two separate developments (Governor Biodun Oyebanji addressing Muslims regarding President Bola Tinubu's re-election from punchng.com, and Atiku Abubakar urging petrol price reductions from thereporter.com.ng). Neither central event is corroborated by at least two independent publisher domains."
-  ]
+  "rejection_reasons": []
 }
