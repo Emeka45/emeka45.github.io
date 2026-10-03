@@ -1,7 +1,6 @@
 import { OAuthProvider, type OAuthHelpers } from "@cloudflare/workers-oauth-provider";
 import { createMcpHandler } from "agents/mcp/server";
 import { McpServer } from "@modelcontextprotocol/server";
-import { z } from "zod";
 
 interface Env {
   OAUTH_KV: KVNamespace;
