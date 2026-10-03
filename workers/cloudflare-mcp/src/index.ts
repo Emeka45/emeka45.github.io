@@ -216,7 +216,42 @@ const defaultHandler: ExportedHandler<Env> = {
       });
     }
 
-    if (url.pathname === "/authorize") {
+    if (url.pathname === "/authorize" && request.method === "POST") {
+      try {
+        const form = await request.formData();
+        const handle = form.get("handle");
+        if (typeof handle !== "string" || !handle) {
+          return new Response("Missing authorization handle.", { status: 400 });
+        }
+
+        const approved = await env.OAUTH_PROVIDER.approveConsent(request, handle);
+        const upstream = await env.OAUTH_PROVIDER.beginUpstream(
+          approved.request,
+          { headers: approved.headers },
+        );
+
+        if (!env.GITHUB_CLIENT_ID) {
+          return new Response("GitHub OAuth client is not configured.", { status: 503 });
+        }
+
+        const githubUrl = new URL("https://github.com/login/oauth/authorize");
+        githubUrl.searchParams.set("client_id", env.GITHUB_CLIENT_ID);
+        githubUrl.searchParams.set("redirect_uri", new URL("/callback", request.url).href);
+        githubUrl.searchParams.set("scope", "read:user");
+        githubUrl.searchParams.set("state", upstream.state);
+
+        const headers = new Headers(upstream.headers);
+        headers.set("Location", githubUrl.href);
+        return new Response(null, { status: 302, headers });
+      } catch (error) {
+        return new Response(
+          error instanceof Error ? error.message : "Authorization approval failed.",
+          { status: 400 },
+        );
+      }
+    }
+
+    if (url.pathname === "/authorize" && request.method === "GET") {
       try {
         const authRequest = await env.OAUTH_PROVIDER.parseAuthRequest(request);
         const description = await env.OAUTH_PROVIDER.describeConsent(authRequest);
@@ -245,10 +280,6 @@ const defaultHandler: ExportedHandler<Env> = {
           { status: 400 },
         );
       }
-    }
-
-    if (url.pathname === "/authorize" && request.method === "POST") {
-      return new Response("Invalid method", { status: 405 });
     }
 
     if (url.pathname === "/callback") {
@@ -289,22 +320,31 @@ const defaultHandler: ExportedHandler<Env> = {
   },
 };
 
-const provider = new OAuthProvider<Env>({
-  apiRoute: "/mcp",
-  apiHandler: mcpHandler,
-  defaultHandler,
-  authorizeEndpoint: "/authorize",
-  tokenEndpoint: "/oauth/token",
-  clientRegistrationEndpoint: "/oauth/register",
-  scopesSupported: ["cloudflare:read"],
-  requiredScopes: ["cloudflare:read"],
-  resourceMetadata: {
-    resource: "https://mcp.emeka45.workers.dev/mcp",
-    authorization_servers: ["https://mcp.emeka45.workers.dev"],
-    scopes_supported: ["cloudflare:read"],
-    resource_name: "Emeka45 Cloudflare Bridge",
-  },
-  clientIdMetadataDocumentEnabled: true,
-});
+function createProvider(request: Request) {
+  const resource = new URL("/mcp", request.url).href;
+  const issuer = new URL("/", request.url).origin;
 
-export default provider;
+  return new OAuthProvider<Env>({
+    apiRoute: "/mcp",
+    apiHandler: mcpHandler,
+    defaultHandler,
+    authorizeEndpoint: "/authorize",
+    tokenEndpoint: "/oauth/token",
+    clientRegistrationEndpoint: "/oauth/register",
+    scopesSupported: ["cloudflare:read"],
+    requiredScopes: ["cloudflare:read"],
+    resourceMetadata: {
+      resource,
+      authorization_servers: [issuer],
+      scopes_supported: ["cloudflare:read"],
+      resource_name: "Emeka45 Cloudflare Bridge",
+    },
+    clientIdMetadataDocumentEnabled: true,
+  });
+}
+
+export default {
+  async fetch(request: Request, env: Env, ctx: ExecutionContext) {
+    return createProvider(request).fetch(request, env, ctx);
+  },
+} satisfies ExportedHandler<Env>;
