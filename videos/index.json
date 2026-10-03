@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-10-03T04:06:34.532300+00:00",
+  "updated_at": "2026-10-03T11:17:25.571468+00:00",
   "videos": [
+    {
+      "video_id": "CBoNcLY2Ia8",
+      "title": "Megan Lawless is OBSESSED with Demon Slayer: Kimetsu no Yaiba",
+      "category": "Anime",
+      "channel": "Crunchyroll",
+      "channel_id": "UCBXn1nJgmCeM3gt0CI99b6g",
+      "channel_url": "https://www.youtube.com/channel/UCBXn1nJgmCeM3gt0CI99b6g",
+      "url": "https://www.youtube.com/shorts/CBoNcLY2Ia8",
+      "embed_url": "https://www.youtube-nocookie.com/embed/CBoNcLY2Ia8",
+      "thumbnail": "https://i.ytimg.com/vi/CBoNcLY2Ia8/hqdefault.jpg",
+      "published_at": "2026-10-03T04:15:03+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Watch Megan Lawless discuss their obsession with the anime series Demon Slayer: Kimetsu no Yaiba in this Crunchyroll video.",
+      "published_by_pipeline_at": "2026-10-03T11:17:25.465155+00:00"
+    },
     {
       "video_id": "-MfuGaOEARo",
       "title": "Angstrom Levy Gameplay Trailer | Invincible VS",
@@ -16,6 +32,22 @@
       "is_short": false,
       "description": "Watch the Angstrom Levy gameplay trailer for Invincible VS, presented by Xbox in the gaming category, featuring action from the title.",
       "published_by_pipeline_at": "2026-10-02T21:58:00.270055+00:00"
+    },
+    {
+      "video_id": "tJRKXeimGw0",
+      "title": "’fit for the throne. Tom Cruise and Emma D’Arcy star in DIGGER, now playing.",
+      "category": "Movies & TV",
+      "channel": "Warner Bros. Pictures",
+      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
+      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
+      "url": "https://www.youtube.com/shorts/tJRKXeimGw0",
+      "embed_url": "https://www.youtube-nocookie.com/embed/tJRKXeimGw0",
+      "thumbnail": "https://i.ytimg.com/vi/tJRKXeimGw0/hqdefault.jpg",
+      "published_at": "2026-10-02T20:30:25+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Warner Bros. Pictures — ’fit for the throne. Tom Cruise and Emma D’Arcy star in DIGGER, now playing.. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-10-03T11:17:25.571368+00:00"
     },
     {
       "video_id": "fikKMZZiLD0",
@@ -1568,38 +1600,6 @@
       "is_short": false,
       "description": "Watch a twenty-three minute compilation highlighting Smallville as a comfort show, presented by DC in the Movies and TV category.",
       "published_by_pipeline_at": "2026-09-25T16:46:24.554858+00:00"
-    },
-    {
-      "video_id": "3cK8u6MYbeE",
-      "title": "EA SPORTS FC™ 27 Has Arrived | This Week on XBOX",
-      "category": "Gaming",
-      "channel": "Xbox",
-      "channel_id": "UCjBp_7RuDBUYbd1LegWEJ8g",
-      "channel_url": "https://www.youtube.com/channel/UCjBp_7RuDBUYbd1LegWEJ8g",
-      "url": "https://www.youtube.com/watch?v=3cK8u6MYbeE",
-      "embed_url": "https://www.youtube-nocookie.com/embed/3cK8u6MYbeE",
-      "thumbnail": "https://i.ytimg.com/vi/3cK8u6MYbeE/hqdefault.jpg",
-      "published_at": "2026-09-25T16:00:17+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "The channel Xbox presents a gaming video titled EA SPORTS FC™ 27 Has Arrived | This Week on XBOX, discussing the newly arrived game.",
-      "published_by_pipeline_at": "2026-09-25T16:46:25.255774+00:00"
-    },
-    {
-      "video_id": "WQPUKmRL4_k",
-      "title": "Sesame Street: Friends and Fun Feature Angle Trailer",
-      "category": "Gaming",
-      "channel": "Xbox",
-      "channel_id": "UCjBp_7RuDBUYbd1LegWEJ8g",
-      "channel_url": "https://www.youtube.com/channel/UCjBp_7RuDBUYbd1LegWEJ8g",
-      "url": "https://www.youtube.com/watch?v=WQPUKmRL4_k",
-      "embed_url": "https://www.youtube-nocookie.com/embed/WQPUKmRL4_k",
-      "thumbnail": "https://i.ytimg.com/vi/WQPUKmRL4_k/hqdefault.jpg",
-      "published_at": "2026-09-25T13:00:37+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Watch the Sesame Street: Friends and Fun feature angle trailer for gaming in this video shared by Xbox.",
-      "published_by_pipeline_at": "2026-09-25T16:46:22.093104+00:00"
     }
   ]
 }
