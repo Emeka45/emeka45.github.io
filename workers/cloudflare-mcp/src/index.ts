@@ -104,7 +104,7 @@ function createServer(env: Env) {
     async () => {
       try {
         return {
-          content: [{ type: "text", text: JSON.stringify(
+          content: [{ type: "text" as const, text: JSON.stringify(
             await cloudflareGet(env, `/accounts/${env.CLOUDFLARE_ACCOUNT_ID}`),
             null,
             2,
@@ -131,7 +131,7 @@ function createServer(env: Env) {
     async () => {
       try {
         return {
-          content: [{ type: "text", text: JSON.stringify(
+          content: [{ type: "text" as const, text: JSON.stringify(
             await cloudflareGet(env, `/accounts/${env.CLOUDFLARE_ACCOUNT_ID}/pages/projects`),
             null,
             2,
@@ -256,8 +256,8 @@ const defaultHandler: ExportedHandler<Env> = {
         const description = await env.OAUTH_PROVIDER.describeConsent(authRequest);
         const transaction = await env.OAUTH_PROVIDER.beginConsent(authRequest);
 
-        const requestedScopes = description.scopes.length
-          ? description.scopes.map((scope) => `<li>${escapeHtml(scope)}</li>`).join("")
+        const requestedScopes = description.scope.length
+          ? description.scope.map((scope: string) => `<li>${escapeHtml(scope)}</li>`).join("")
           : "<li>Cloudflare bridge access</li>";
 
         return page(
@@ -270,7 +270,7 @@ const defaultHandler: ExportedHandler<Env> = {
             <input type="hidden" name="handle" value="${escapeHtml(transaction.handle)}">
             <button type="submit">Continue with GitHub</button>
           </form>
-          <p class="muted">Redirect destination: ${escapeHtml(description.redirectUriHostname)}</p>`,
+          <p class="muted">Redirect destination: ${escapeHtml(description.redirectHost)}</p>`,
           transaction.headers,
         );
       } catch (error) {
