@@ -85,7 +85,7 @@ function createServer(env: Env) {
     },
     async () => ({
       content: [{
-        type: "text",
+        type: "text" as const,
         text: JSON.stringify({
           connected: Boolean(env.CLOUDFLARE_API_TOKEN && env.CLOUDFLARE_ACCOUNT_ID),
           accountIdConfigured: Boolean(env.CLOUDFLARE_ACCOUNT_ID),
@@ -114,7 +114,7 @@ function createServer(env: Env) {
         return {
           isError: true,
           content: [{
-            type: "text",
+            type: "text" as const,
             text: error instanceof Error ? error.message : "Cloudflare request failed.",
           }],
         };
@@ -141,7 +141,7 @@ function createServer(env: Env) {
         return {
           isError: true,
           content: [{
-            type: "text",
+            type: "text" as const,
             text: error instanceof Error ? error.message : "Cloudflare Pages request failed.",
           }],
         };
