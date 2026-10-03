@@ -9,9 +9,8 @@
   },
   "dependencies": {
     "@cloudflare/workers-oauth-provider": "^1.1.0",
-    "@modelcontextprotocol/server": "^2.1.0",
-    "agents": "^0.24.0",
-    "zod": "^4.2.0"
+    "@modelcontextprotocol/server": "2.0.0",
+    "agents": "^0.24.0"
   },
   "devDependencies": {
     "typescript": "^7.0.2",
