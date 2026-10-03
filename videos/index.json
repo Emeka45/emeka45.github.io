@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-10-03T11:17:25.571468+00:00",
+  "updated_at": "2026-10-03T15:51:50.622931+00:00",
   "videos": [
+    {
+      "video_id": "ZKXlaN4dKFs",
+      "title": "You decide. DIGGER is now playing in theaters and IMAX. #DiggerMovie",
+      "category": "Movies & TV",
+      "channel": "Warner Bros. Pictures",
+      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
+      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
+      "url": "https://www.youtube.com/shorts/ZKXlaN4dKFs",
+      "embed_url": "https://www.youtube-nocookie.com/embed/ZKXlaN4dKFs",
+      "thumbnail": "https://i.ytimg.com/vi/ZKXlaN4dKFs/hqdefault.jpg",
+      "published_at": "2026-10-03T14:00:10+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Warner Bros. Pictures — You decide. DIGGER is now playing in theaters and IMAX. #DiggerMovie. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-10-03T15:51:50.493602+00:00"
+    },
     {
       "video_id": "CBoNcLY2Ia8",
       "title": "Megan Lawless is OBSESSED with Demon Slayer: Kimetsu no Yaiba",
@@ -64,6 +80,22 @@
       "is_short": false,
       "description": "Warner Bros. Pictures presents DIGGER, featured in the Movies and TV category, with the film currently playing in theaters and audiences encouraged to decide.",
       "published_by_pipeline_at": "2026-10-02T21:58:01.862685+00:00"
+    },
+    {
+      "video_id": "yQyGFKo3g-8",
+      "title": "Alibi at her best 🎥u/Bapaer #R6Siege",
+      "category": "Gaming",
+      "channel": "Ubisoft",
+      "channel_id": "UCBMvc6jvuTxH6TNo9ThpYjg",
+      "channel_url": "https://www.youtube.com/channel/UCBMvc6jvuTxH6TNo9ThpYjg",
+      "url": "https://www.youtube.com/shorts/yQyGFKo3g-8",
+      "embed_url": "https://www.youtube-nocookie.com/embed/yQyGFKo3g-8",
+      "thumbnail": "https://i.ytimg.com/vi/yQyGFKo3g-8/hqdefault.jpg",
+      "published_at": "2026-10-02T18:00:28+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Ubisoft — Alibi at her best 🎥u/Bapaer #R6Siege. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-10-03T15:51:50.622735+00:00"
     },
     {
       "video_id": "Q_NBFHxkJi4",
@@ -1568,38 +1600,6 @@
       "is_short": false,
       "description": "Crunchyroll shares anime content in this episode titled \"Our Worst Anime Takes Aged TERRIBLY, We Admit It | 129.\"",
       "published_by_pipeline_at": "2026-09-25T21:13:40.716308+00:00"
-    },
-    {
-      "video_id": "Qck7x9Hesbg",
-      "title": "This is how a Harvard prodigy became the most wanted man in America. UNABOMBER is now playing.",
-      "category": "Movies & TV",
-      "channel": "Netflix",
-      "channel_id": "UCWOA1ZGywLbqmigxE4Qlvuw",
-      "channel_url": "https://www.youtube.com/channel/UCWOA1ZGywLbqmigxE4Qlvuw",
-      "url": "https://www.youtube.com/shorts/Qck7x9Hesbg",
-      "embed_url": "https://www.youtube-nocookie.com/embed/Qck7x9Hesbg",
-      "thumbnail": "https://i.ytimg.com/vi/Qck7x9Hesbg/hqdefault.jpg",
-      "published_at": "2026-09-25T17:00:00+00:00",
-      "source": "YouTube channel feed",
-      "is_short": true,
-      "description": "Watch Netflix explain how a Harvard prodigy became the most wanted man in America in the movie and television feature UNABOMBER, which is now streaming.",
-      "published_by_pipeline_at": "2026-09-26T09:09:30.959934+00:00"
-    },
-    {
-      "video_id": "Z7ddDV2V_8E",
-      "title": "Smallville being my comfort show for 23 minutes 📺 | Best of Smallville | DC",
-      "category": "Movies & TV",
-      "channel": "DC",
-      "channel_id": "UCiifkYAs_bq1pt_zbNAzYGg",
-      "channel_url": "https://www.youtube.com/channel/UCiifkYAs_bq1pt_zbNAzYGg",
-      "url": "https://www.youtube.com/watch?v=Z7ddDV2V_8E",
-      "embed_url": "https://www.youtube-nocookie.com/embed/Z7ddDV2V_8E",
-      "thumbnail": "https://i.ytimg.com/vi/Z7ddDV2V_8E/hqdefault.jpg",
-      "published_at": "2026-09-25T16:00:27+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Watch a twenty-three minute compilation highlighting Smallville as a comfort show, presented by DC in the Movies and TV category.",
-      "published_by_pipeline_at": "2026-09-25T16:46:24.554858+00:00"
     }
   ]
 }
