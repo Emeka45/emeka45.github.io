@@ -8,6 +8,10 @@ on:
     paths:
       - "workers/cloudflare-mcp/**"
       - ".github/workflows/cloudflare-mcp.yml"
+  pull_request:
+    paths:
+      - "workers/cloudflare-mcp/**"
+      - ".github/workflows/cloudflare-mcp.yml"
 
 jobs:
   validate:
@@ -19,9 +23,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
-          cache: npm
-          cache-dependency-path: workers/cloudflare-mcp/package.json
+          node-version: 24
       - run: npm install
-      - run: npx tsc --noEmit
+      - run: npm run typecheck
       - run: npx wrangler deploy --dry-run
