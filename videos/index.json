@@ -1,6 +1,38 @@
 {
-  "updated_at": "2026-10-04T16:36:38.352554+00:00",
+  "updated_at": "2026-10-04T20:59:24.888821+00:00",
   "videos": [
+    {
+      "video_id": "Zpue66E5zSQ",
+      "title": "Doctor McMichael is Stabbed! 🗡️ #CrimsonPeak #Shorts",
+      "category": "Movies & TV",
+      "channel": "Universal Pictures",
+      "channel_id": "UCq0OueAsdxH6b8nyAspwViw",
+      "channel_url": "https://www.youtube.com/channel/UCq0OueAsdxH6b8nyAspwViw",
+      "url": "https://www.youtube.com/shorts/Zpue66E5zSQ",
+      "embed_url": "https://www.youtube-nocookie.com/embed/Zpue66E5zSQ",
+      "thumbnail": "https://i.ytimg.com/vi/Zpue66E5zSQ/hqdefault.jpg",
+      "published_at": "2026-10-04T19:00:27+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Universal Pictures shares a short video featuring the character Doctor McMichael getting stabbed, associated with the film Crimson Peak in the Movies and TV category.",
+      "published_by_pipeline_at": "2026-10-04T20:59:24.788671+00:00"
+    },
+    {
+      "video_id": "g63xPiXBm6Y",
+      "title": "All ‘bout perception. DIGGER is NOW PLAYING in theaters and IMAX. #DiggerMovie",
+      "category": "Movies & TV",
+      "channel": "Warner Bros. Pictures",
+      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
+      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
+      "url": "https://www.youtube.com/shorts/g63xPiXBm6Y",
+      "embed_url": "https://www.youtube-nocookie.com/embed/g63xPiXBm6Y",
+      "thumbnail": "https://i.ytimg.com/vi/g63xPiXBm6Y/hqdefault.jpg",
+      "published_at": "2026-10-04T18:00:28+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Warner Bros. Pictures — All ‘bout perception. DIGGER is NOW PLAYING in theaters and IMAX. #DiggerMovie. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-10-04T20:59:24.888708+00:00"
+    },
     {
       "video_id": "lc8sbYa4dKI",
       "title": "Call of Duty: Modern Warfare 4 | DMZ WorldBuilder Trailer",
@@ -1568,38 +1600,6 @@
       "is_short": false,
       "description": "Watch the season one recap for Haunted Hotel, titled Abaddon's, in this video from the Netflix Movies and TV channel.",
       "published_by_pipeline_at": "2026-09-26T07:52:38.754715+00:00"
-    },
-    {
-      "video_id": "nmtewUk_SUk",
-      "title": "The hype is real. Search Clayface - only in theaters October 23.",
-      "category": "Movies & TV",
-      "channel": "Warner Bros. Pictures",
-      "channel_id": "UCjmJDM5pRKbUlVIzDYYWb6g",
-      "channel_url": "https://www.youtube.com/channel/UCjmJDM5pRKbUlVIzDYYWb6g",
-      "url": "https://www.youtube.com/shorts/nmtewUk_SUk",
-      "embed_url": "https://www.youtube-nocookie.com/embed/nmtewUk_SUk",
-      "thumbnail": "https://i.ytimg.com/vi/nmtewUk_SUk/hqdefault.jpg",
-      "published_at": "2026-09-25T22:00:14+00:00",
-      "source": "YouTube channel feed",
-      "is_short": true,
-      "description": "Warner Bros. Pictures — The hype is real. Search Clayface - only in theaters October 23.. Watch the original video on YouTube.",
-      "published_by_pipeline_at": "2026-09-26T08:08:12.919438+00:00"
-    },
-    {
-      "video_id": "nsIVAUwke3o",
-      "title": "EA SPORTS FC 27 – Launch Trailer – Nintendo Switch 2",
-      "category": "Gaming",
-      "channel": "Nintendo of America",
-      "channel_id": "UCGIY_O-8vW4rfX98KlMkvRg",
-      "channel_url": "https://www.youtube.com/channel/UCGIY_O-8vW4rfX98KlMkvRg",
-      "url": "https://www.youtube.com/watch?v=nsIVAUwke3o",
-      "embed_url": "https://www.youtube-nocookie.com/embed/nsIVAUwke3o",
-      "thumbnail": "https://i.ytimg.com/vi/nsIVAUwke3o/hqdefault.jpg",
-      "published_at": "2026-09-25T22:00:04+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Watch the launch trailer for EA SPORTS FC 27 on Nintendo Switch 2, presented by Nintendo of America in this gaming video.",
-      "published_by_pipeline_at": "2026-09-26T07:52:34.996796+00:00"
     }
   ]
 }

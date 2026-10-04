@@ -1,11 +1,20 @@
 {
-  "finished_utc": "2026-10-04T16:36:18.334981+00:00",
+  "finished_utc": "2026-10-04T20:59:09.937797+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 0,
-  "attempted": 0,
+  "missing_before_run": 1,
+  "attempted": 1,
   "generated": [],
-  "source_photos": [],
+  "source_photos": [
+    {
+      "article": "2026-10-04-brazil-votes-in-high-stakes-presidential-race-as-lula-faces-fl-vio-bolsonaro-58e513465b.html",
+      "image": "news/images/2026-10-04-brazil-votes-in-high-stakes-presidential-race-as-lula-faces-fl-vio-bolsonaro-58e513465b-source.jpg",
+      "bytes": 1176490,
+      "provider": "Original news source",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6wyz0r2n0djo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/70fc/live/b2ed88c0-bd79-11f1-babe-4199b0e7ccea.png"
+    }
+  ],
   "openverse_photos": [],
   "fallbacks": [],
   "failures": [],
