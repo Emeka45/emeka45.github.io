@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-04T11:51:57.244589+00:00",
-  "finished_utc": "2026-10-04T11:54:52.869422+00:00",
+  "started_utc": "2026-10-04T16:31:26.180703+00:00",
+  "finished_utc": "2026-10-04T16:36:18.257819+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 404: Not Found"
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -37,11 +37,10 @@
   "fresh_items": 621,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 2,
-  "held_or_rejected": 2,
+  "ai_failures": 3,
+  "held_or_rejected": 1,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided sources do not corroborate a single central event across at least two independent publisher domains. One story relates to statements by John Okiyi Kalu regarding the PDP in Abia State, while the other covers party defections in Kwara State reported solely by Punch.",
-    "The provided sources do not contain at least two independent publisher domains corroborating the same central event. One story regarding SERAP's call to probe missing oil revenue appears solely on punchng.com, while the story regarding Atiku Abubakar's petrol price proposal appears solely on thereporter.com.ng."
+    "None of the supplied source records share a common central event. Each record describes an entirely distinct development (NSCDC warning against misinformation, a retiring Supreme Court justice advising against political gifts, citizen reflections on food prices and insecurity, and CAN warning against electoral violence in 2027). Under the strict evidence rules, at least two different publisher domains must materially corroborate the same event."
   ]
 }
