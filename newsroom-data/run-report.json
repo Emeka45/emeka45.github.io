@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-04T04:37:38.238036+00:00",
-  "finished_utc": "2026-10-04T04:41:03.311335+00:00",
+  "started_utc": "2026-10-04T11:51:57.244589+00:00",
+  "finished_utc": "2026-10-04T11:54:52.869422+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -33,14 +33,15 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 637,
-  "fresh_items": 620,
+  "total_items": 638,
+  "fresh_items": 621,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 3,
-  "held_or_rejected": 1,
+  "ai_failures": 2,
+  "held_or_rejected": 2,
   "published_count": 0,
   "rejection_reasons": [
-    "Insufficient corroboration across independent domains. The report regarding Ogun State's APM candidate is only covered by a single domain (punchng.com), while the Abia State consultation report is also supported by only one domain (thereporter.com.ng). The strict requirement of at least two independent publisher domains corroborating the same central event is not met."
+    "The provided sources do not corroborate a single central event across at least two independent publisher domains. One story relates to statements by John Okiyi Kalu regarding the PDP in Abia State, while the other covers party defections in Kwara State reported solely by Punch.",
+    "The provided sources do not contain at least two independent publisher domains corroborating the same central event. One story regarding SERAP's call to probe missing oil revenue appears solely on punchng.com, while the story regarding Atiku Abubakar's petrol price proposal appears solely on thereporter.com.ng."
   ]
 }
