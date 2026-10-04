@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-03T20:39:40.449802+00:00",
-  "finished_utc": "2026-10-03T20:44:04.657958+00:00",
+  "started_utc": "2026-10-04T04:37:38.238036+00:00",
+  "finished_utc": "2026-10-04T04:41:03.311335+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -37,8 +37,10 @@
   "fresh_items": 620,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 4,
-  "held_or_rejected": 0,
+  "ai_failures": 3,
+  "held_or_rejected": 1,
   "published_count": 0,
-  "rejection_reasons": []
+  "rejection_reasons": [
+    "Insufficient corroboration across independent domains. The report regarding Ogun State's APM candidate is only covered by a single domain (punchng.com), while the Abia State consultation report is also supported by only one domain (thereporter.com.ng). The strict requirement of at least two independent publisher domains corroborating the same central event is not met."
+  ]
 }
