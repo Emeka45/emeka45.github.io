@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-05T04:24:27.736450+00:00",
-  "finished_utc": "2026-10-05T04:28:51.676137+00:00",
+  "started_utc": "2026-10-05T13:46:46.458457+00:00",
+  "finished_utc": "2026-10-05T13:51:48.703426+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 404: Not Found"
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -34,7 +34,7 @@
     }
   ],
   "total_items": 639,
-  "fresh_items": 619,
+  "fresh_items": 621,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
   "ai_failures": 4,
