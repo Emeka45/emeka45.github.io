@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-06T05:11:12.496498+00:00",
-  "finished_utc": "2026-10-06T05:15:05.992229+00:00",
+  "started_utc": "2026-10-06T12:52:10.362293+00:00",
+  "finished_utc": "2026-10-06T12:57:40.785637+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -33,14 +33,12 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 643,
+  "total_items": 642,
   "fresh_items": 625,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 3,
-  "held_or_rejected": 1,
+  "ai_failures": 4,
+  "held_or_rejected": 0,
   "published_count": 0,
-  "rejection_reasons": [
-    "There are no two independent publisher domains corroborating the same central event. The Kebbi State NLC story appears only on punchng.com, while the Abia State APC candidate story appears exclusively on thereporter.com.ng across duplicate entries."
-  ]
+  "rejection_reasons": []
 }
