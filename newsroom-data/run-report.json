@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-05T23:48:21.114242+00:00",
-  "finished_utc": "2026-10-05T23:52:29.697419+00:00",
+  "started_utc": "2026-10-06T05:11:12.496498+00:00",
+  "finished_utc": "2026-10-06T05:15:05.992229+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -33,14 +33,14 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 641,
-  "fresh_items": 623,
+  "total_items": 643,
+  "fresh_items": 625,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
   "ai_failures": 3,
   "held_or_rejected": 1,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided records do not contain at least two independent publisher domains corroborating the same central event. The report on Solomon Adeola (Yayi) appears only in punchng.com, while the report on Eric Opah appears only in thereporter.com.ng."
+    "There are no two independent publisher domains corroborating the same central event. The Kebbi State NLC story appears only on punchng.com, while the Abia State APC candidate story appears exclusively on thereporter.com.ng across duplicate entries."
   ]
 }
