@@ -1,16 +1,21 @@
 {
-  "started_utc": "2026-10-07T12:46:06.867338+00:00",
-  "finished_utc": "2026-10-07T12:53:00.916566+00:00",
+  "started_utc": "2026-10-07T22:49:01.034176+00:00",
+  "finished_utc": "2026-10-07T22:51:00.367190+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
-  "feed_success_count": 51,
-  "feed_failure_count": 5,
+  "feed_success_count": 50,
+  "feed_failure_count": 6,
   "feed_failures": [
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "category": "Gaming",
+      "url": "https://www.polygon.com/rss/index.xml",
+      "error": "Remote end closed connection without response"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -33,12 +38,17 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 645,
-  "fresh_items": 628,
+  "total_items": 633,
+  "fresh_items": 616,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 4,
-  "held_or_rejected": 0,
+  "ai_failures": 0,
+  "held_or_rejected": 4,
   "published_count": 0,
-  "rejection_reasons": []
+  "rejection_reasons": [
+    "Neither event is corroborated by at least two distinct publisher domains. The Bayelsa APC story appears only in thereporter.com.ng, and the Kano reconciliation story appears only across duplicate links from punchng.com.",
+    "No single central event is materially corroborated by two or more distinct publisher domains. The Iraq currency devaluation story is published solely by Punch, while the Naira exchange rate and World Bank outlook reports are covered by single, independent domains.",
+    "The supplied records do not meet the corroboration requirement. The Asaba massacre story is reported by only a single publisher domain (punchng.com), and the Tompolo security contract story is likewise covered by only one domain (thereporter.com.ng). At least two independent publisher domains must corroborate the same central event.",
+    "The supplied source records do not corroborate the same central event across at least two independent publisher domains. One story from punchng.com covers presidential aide Daniel Bwala discussing the 2027 elections, while the remaining duplicate entries from thereporter.com.ng cover Atiku Abubakar's proposal on petrol prices. Neither event is corroborated by a second distinct publisher domain."
+  ]
 }
