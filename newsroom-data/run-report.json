@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-06T22:24:09.557178+00:00",
-  "finished_utc": "2026-10-06T22:28:22.597353+00:00",
+  "started_utc": "2026-10-07T04:38:30.838619+00:00",
+  "finished_utc": "2026-10-07T04:42:11.594621+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -33,12 +33,14 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 642,
-  "fresh_items": 625,
+  "total_items": 645,
+  "fresh_items": 628,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 4,
-  "held_or_rejected": 0,
+  "ai_failures": 3,
+  "held_or_rejected": 1,
   "published_count": 0,
-  "rejection_reasons": []
+  "rejection_reasons": [
+    "None of the supplied source records share the same central event across at least two independent publisher domains. The records cover separate topics spanning insurance partnerships, food security, climate finance, and real estate."
+  ]
 }
