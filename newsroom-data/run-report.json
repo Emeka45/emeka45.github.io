@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-08T04:49:07.731123+00:00",
-  "finished_utc": "2026-10-08T04:54:05.594511+00:00",
+  "started_utc": "2026-10-08T12:55:02.874805+00:00",
+  "finished_utc": "2026-10-08T12:58:45.938027+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -37,11 +37,10 @@
   "fresh_items": 627,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 2,
-  "held_or_rejected": 2,
+  "ai_failures": 3,
+  "held_or_rejected": 1,
   "published_count": 0,
   "rejection_reasons": [
-    "There are no two independent publisher domains corroborating the same central event. Punch reported on the Bayelsa State Government's partnership with NCDMB for the Practical Nigerian Content Forum, while The Reporter covered local government chairmen holding 2027 budget stakeholder sessions. Mentions of Bayelsa State alone do not satisfy the corroboration criteria.",
-    "The supplied records do not provide multi-source corroboration from at least two independent publisher domains for the same central event. One story relates to the evacuation of persons with mental health challenges (reported only by thereporter.com.ng), while the other relates to a partnership with the NCDMB for the Practical Nigerian Content Forum (reported only by punchng.com)."
+    "No two independent publisher domains corroborate the same central event. The ITF director-general's statements were reported only by Punch, the oil production claims only by The Fact, and the Independence Day broadcast announcement only by The Reporter. At least two distinct publisher domains are required to verify an event before publication."
   ]
 }
