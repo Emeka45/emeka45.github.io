@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T23:02:58.211714+00:00",
+  "updated_at": "2026-10-09T04:55:41.203027+00:00",
   "videos": [
     {
       "video_id": "JCeq-T1Q4FM",
@@ -34,6 +34,38 @@
       "published_by_pipeline_at": "2026-10-08T23:02:52.654752+00:00"
     },
     {
+      "video_id": "sGZARga-dSA",
+      "title": "Waiting for Hollywood Arts Like…#shorts #netflix",
+      "category": "Movies & TV",
+      "channel": "Netflix",
+      "channel_id": "UCWOA1ZGywLbqmigxE4Qlvuw",
+      "channel_url": "https://www.youtube.com/channel/UCWOA1ZGywLbqmigxE4Qlvuw",
+      "url": "https://www.youtube.com/shorts/sGZARga-dSA",
+      "embed_url": "https://www.youtube-nocookie.com/embed/sGZARga-dSA",
+      "thumbnail": "https://i.ytimg.com/vi/sGZARga-dSA/hqdefault.jpg",
+      "published_at": "2026-10-08T20:00:00+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Watch Netflix's short video titled Waiting for Hollywood Arts Like… in the Movies and TV category, featuring content related to Hollywood Arts.",
+      "published_by_pipeline_at": "2026-10-09T04:55:38.986390+00:00"
+    },
+    {
+      "video_id": "idkLYLw284Y",
+      "title": "Mommy's laugh is contagious 🖤 | 🎬 Other Mommy (2026)",
+      "category": "Movies & TV",
+      "channel": "Universal Pictures",
+      "channel_id": "UCq0OueAsdxH6b8nyAspwViw",
+      "channel_url": "https://www.youtube.com/channel/UCq0OueAsdxH6b8nyAspwViw",
+      "url": "https://www.youtube.com/shorts/idkLYLw284Y",
+      "embed_url": "https://www.youtube-nocookie.com/embed/idkLYLw284Y",
+      "thumbnail": "https://i.ytimg.com/vi/idkLYLw284Y/hqdefault.jpg",
+      "published_at": "2026-10-08T19:00:50+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Universal Pictures shares a video featuring the contagious laugh of mommy from Other Mommy, categorized under movies and television.",
+      "published_by_pipeline_at": "2026-10-09T04:55:39.518719+00:00"
+    },
+    {
       "video_id": "bE1yi91npYI",
       "title": "Order of the Sinking Star – Launch Trailer – Nintendo Switch 2",
       "category": "Gaming",
@@ -50,6 +82,22 @@
       "published_by_pipeline_at": "2026-10-08T23:02:48.704092+00:00"
     },
     {
+      "video_id": "CMadgXV-TzI",
+      "title": "Mama is UNDER the Bed! 😱 #Mama #Shorts",
+      "category": "Movies & TV",
+      "channel": "Universal Pictures",
+      "channel_id": "UCq0OueAsdxH6b8nyAspwViw",
+      "channel_url": "https://www.youtube.com/channel/UCq0OueAsdxH6b8nyAspwViw",
+      "url": "https://www.youtube.com/shorts/CMadgXV-TzI",
+      "embed_url": "https://www.youtube-nocookie.com/embed/CMadgXV-TzI",
+      "thumbnail": "https://i.ytimg.com/vi/CMadgXV-TzI/hqdefault.jpg",
+      "published_at": "2026-10-08T19:00:32+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Watch a short clip titled Mama is UNDER the Bed! from Universal Pictures, featuring a scene related to the movie Mama in the Movies and TV category.",
+      "published_by_pipeline_at": "2026-10-09T04:55:40.058978+00:00"
+    },
+    {
       "video_id": "hy9WGVnKCZ0",
       "title": "Aftergods - Reveal Trailer",
       "category": "Gaming",
@@ -64,6 +112,22 @@
       "is_short": false,
       "description": "Xbox shares the reveal trailer for Aftergods in this gaming video, offering viewers a first look at the title's official promotional footage.",
       "published_by_pipeline_at": "2026-10-08T23:02:49.402779+00:00"
+    },
+    {
+      "video_id": "dT7r9i73hZk",
+      "title": "I 👏 don’t 👏 think 👏 so 👏 | 🎬 To Wong Foo, Thanks for Everything! Julie Newmar (1995)",
+      "category": "Movies & TV",
+      "channel": "Universal Pictures",
+      "channel_id": "UCq0OueAsdxH6b8nyAspwViw",
+      "channel_url": "https://www.youtube.com/channel/UCq0OueAsdxH6b8nyAspwViw",
+      "url": "https://www.youtube.com/shorts/dT7r9i73hZk",
+      "embed_url": "https://www.youtube-nocookie.com/embed/dT7r9i73hZk",
+      "thumbnail": "https://i.ytimg.com/vi/dT7r9i73hZk/hqdefault.jpg",
+      "published_at": "2026-10-08T17:00:28+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Watch a clip from the movie To Wong Foo, Thanks for Everything! Julie Newmar (1995), shared by Universal Pictures in the Movies & TV category.",
+      "published_by_pipeline_at": "2026-10-09T04:55:40.619497+00:00"
     },
     {
       "video_id": "HcscA49OjQo",
@@ -320,6 +384,22 @@
       "is_short": false,
       "description": "Watch the official Xbox channel trailer for Neon Abyss 2, available now on the platform, featured in this gaming video.",
       "published_by_pipeline_at": "2026-10-08T12:59:42.488104+00:00"
+    },
+    {
+      "video_id": "Hp_H02XXj10",
+      "title": "\"Where is She Now?\" 😱 #Mama #Shorts",
+      "category": "Movies & TV",
+      "channel": "Universal Pictures",
+      "channel_id": "UCq0OueAsdxH6b8nyAspwViw",
+      "channel_url": "https://www.youtube.com/channel/UCq0OueAsdxH6b8nyAspwViw",
+      "url": "https://www.youtube.com/shorts/Hp_H02XXj10",
+      "embed_url": "https://www.youtube-nocookie.com/embed/Hp_H02XXj10",
+      "thumbnail": "https://i.ytimg.com/vi/Hp_H02XXj10/hqdefault.jpg",
+      "published_at": "2026-10-07T19:00:23+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Universal Pictures shares a short video titled \"Where is She Now?\" for the movie or television project Mama.",
+      "published_by_pipeline_at": "2026-10-09T04:55:41.202937+00:00"
     },
     {
       "video_id": "RxlAdSgJB3A",
@@ -1520,86 +1600,6 @@
       "is_short": false,
       "description": "Watch a winter tease trailer for Don't Fret, presented by the Xbox gaming channel, featuring a sneak peek at the upcoming content.",
       "published_by_pipeline_at": "2026-10-01T22:29:27.608281+00:00"
-    },
-    {
-      "video_id": "js4zZvYN2gc",
-      "title": "End of Abyss | Launch Trailer | XBOX Series X|S",
-      "category": "Gaming",
-      "channel": "Xbox",
-      "channel_id": "UCjBp_7RuDBUYbd1LegWEJ8g",
-      "channel_url": "https://www.youtube.com/channel/UCjBp_7RuDBUYbd1LegWEJ8g",
-      "url": "https://www.youtube.com/watch?v=js4zZvYN2gc",
-      "embed_url": "https://www.youtube-nocookie.com/embed/js4zZvYN2gc",
-      "thumbnail": "https://i.ytimg.com/vi/js4zZvYN2gc/hqdefault.jpg",
-      "published_at": "2026-10-01T17:09:39+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Xbox presents the launch trailer for End of Abyss on Xbox Series X|S, featured in this gaming video card.",
-      "published_by_pipeline_at": "2026-10-01T22:29:25.293901+00:00"
-    },
-    {
-      "video_id": "aHnYsSAfQAE",
-      "title": "Planet Zoo 2 | Animal Spotlight - Long-Tailed Parakeet",
-      "category": "Gaming",
-      "channel": "Xbox",
-      "channel_id": "UCjBp_7RuDBUYbd1LegWEJ8g",
-      "channel_url": "https://www.youtube.com/channel/UCjBp_7RuDBUYbd1LegWEJ8g",
-      "url": "https://www.youtube.com/watch?v=aHnYsSAfQAE",
-      "embed_url": "https://www.youtube-nocookie.com/embed/aHnYsSAfQAE",
-      "thumbnail": "https://i.ytimg.com/vi/aHnYsSAfQAE/hqdefault.jpg",
-      "published_at": "2026-10-01T17:05:54+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Watch the animal spotlight featuring the long-tailed parakeet in this gaming video from Xbox, showcasing Planet Zoo 2.",
-      "published_by_pipeline_at": "2026-10-01T22:29:31.285399+00:00"
-    },
-    {
-      "video_id": "Cyu9OANWa6E",
-      "title": "Forgotten Island | Manang",
-      "category": "Movies & TV",
-      "channel": "Universal Pictures",
-      "channel_id": "UCq0OueAsdxH6b8nyAspwViw",
-      "channel_url": "https://www.youtube.com/channel/UCq0OueAsdxH6b8nyAspwViw",
-      "url": "https://www.youtube.com/watch?v=Cyu9OANWa6E",
-      "embed_url": "https://www.youtube-nocookie.com/embed/Cyu9OANWa6E",
-      "thumbnail": "https://i.ytimg.com/vi/Cyu9OANWa6E/hqdefault.jpg",
-      "published_at": "2026-10-01T17:00:31+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Universal Pictures presents a Movies and TV video titled Forgotten Island | Manang, featuring scenes from the production.",
-      "published_by_pipeline_at": "2026-10-01T22:29:31.868566+00:00"
-    },
-    {
-      "video_id": "SlIYGKw-qhw",
-      "title": "Other Mommy | A New Face Of Fear",
-      "category": "Movies & TV",
-      "channel": "Universal Pictures",
-      "channel_id": "UCq0OueAsdxH6b8nyAspwViw",
-      "channel_url": "https://www.youtube.com/channel/UCq0OueAsdxH6b8nyAspwViw",
-      "url": "https://www.youtube.com/watch?v=SlIYGKw-qhw",
-      "embed_url": "https://www.youtube-nocookie.com/embed/SlIYGKw-qhw",
-      "thumbnail": "https://i.ytimg.com/vi/SlIYGKw-qhw/hqdefault.jpg",
-      "published_at": "2026-10-01T16:00:37+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Watch the video Other Mommy | A New Face Of Fear from Universal Pictures, featuring content related to movies and television.",
-      "published_by_pipeline_at": "2026-10-01T22:29:32.376134+00:00"
-    },
-    {
-      "video_id": "dNmFCCuhjQA",
-      "title": "Elta: Defy All Gods - Demo Trailer",
-      "category": "Gaming",
-      "channel": "Xbox",
-      "channel_id": "UCjBp_7RuDBUYbd1LegWEJ8g",
-      "channel_url": "https://www.youtube.com/channel/UCjBp_7RuDBUYbd1LegWEJ8g",
-      "url": "https://www.youtube.com/watch?v=dNmFCCuhjQA",
-      "embed_url": "https://www.youtube-nocookie.com/embed/dNmFCCuhjQA",
-      "thumbnail": "https://i.ytimg.com/vi/dNmFCCuhjQA/hqdefault.jpg",
-      "published_at": "2026-10-01T16:00:29+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Xbox shares a gaming demo trailer for Elta: Defy All Gods, showcasing footage from the upcoming title in this concise video preview.",
-      "published_by_pipeline_at": "2026-10-01T22:29:28.208032+00:00"
     }
   ]
 }

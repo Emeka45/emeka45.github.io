@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-08T22:59:35.670502+00:00",
-  "finished_utc": "2026-10-08T23:02:42.082265+00:00",
+  "started_utc": "2026-10-09T04:52:07.973122+00:00",
+  "finished_utc": "2026-10-09T04:55:25.677735+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -37,12 +37,11 @@
   "fresh_items": 629,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 1,
-  "held_or_rejected": 3,
+  "ai_failures": 2,
+  "held_or_rejected": 2,
   "published_count": 0,
   "rejection_reasons": [
-    "There are no two distinct publisher domains reporting on the same central event. The available sources cover separate stories (Governor Sanwo-Olu on Lagos state police framework from thereporter.com.ng, Governor Dapo Abiodun on national police manpower from punchng.com, and INEC/police election security in Sokoto from punchng.com).",
-    "There are not at least two independent publisher domains corroborating the same specific event or announcement. While both Punch and Vanguard touch on labour and minimum wage issues, they do not materially corroborate the same central event or announcement.",
-    "There are no two independent publisher domains corroborating the same central event. While both Punch and Vanguard touch on the topic of labour and the minimum wage, Vanguard's report concerns the adequacy of the N70,000 wage while Punch reports on a specific two-week ultimatum regarding petrol prices and talks, lacking sufficient overlap to establish material corroboration."
+    "The provided source records do not contain corroboration from at least two different publisher domains for any single central event. The Abia PDP candidate story appears solely on punchng.com across duplicate entries, while the other stories represent entirely distinct political events.",
+    "The supplied source records fail the cross-publisher corroboration requirement. There are two distinct stories in the feed: one regarding Udengs Eradiri defending Tantita Security Services contract (covered only by thereporter.com.ng) and another regarding former Peter Obi campaign members forming a pro-Tinubu group (covered only by punchng.com). Neither central event is corroborated by at least two independent publisher domains."
   ]
 }
