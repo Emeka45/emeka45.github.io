@@ -1,11 +1,20 @@
 {
-  "finished_utc": "2026-10-09T04:55:25.802552+00:00",
+  "finished_utc": "2026-10-09T12:45:05.863414+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 0,
-  "attempted": 0,
+  "missing_before_run": 1,
+  "attempted": 1,
   "generated": [],
-  "source_photos": [],
+  "source_photos": [
+    {
+      "article": "2026-10-09-ghana-air-force-leaders-mourn-victims-of-nigerian-air-force-ondo-plane-crash-788ea9ea82.html",
+      "image": "news/images/2026-10-09-ghana-air-force-leaders-mourn-victims-of-nigerian-air-force-ondo-plane-crash-788ea9ea82-source.jpg",
+      "bytes": 33914,
+      "provider": "Original news source",
+      "source_url": "https://punchng.com/ghana-air-force-mourns-25-victims-of-ondo-plane-crash/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/10/08081818/Screenshot-2026-10-08-081756_1791443898.webp"
+    }
+  ],
   "openverse_photos": [],
   "fallbacks": [],
   "failures": [],

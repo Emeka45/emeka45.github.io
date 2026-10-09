@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-09T04:52:07.973122+00:00",
-  "finished_utc": "2026-10-09T04:55:25.677735+00:00",
+  "started_utc": "2026-10-09T12:40:51.940128+00:00",
+  "finished_utc": "2026-10-09T12:45:05.465045+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -33,15 +33,15 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 646,
-  "fresh_items": 629,
+  "total_items": 644,
+  "fresh_items": 627,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 2,
+  "ai_failures": 1,
   "held_or_rejected": 2,
-  "published_count": 0,
+  "published_count": 1,
   "rejection_reasons": [
-    "The provided source records do not contain corroboration from at least two different publisher domains for any single central event. The Abia PDP candidate story appears solely on punchng.com across duplicate entries, while the other stories represent entirely distinct political events.",
-    "The supplied source records fail the cross-publisher corroboration requirement. There are two distinct stories in the feed: one regarding Udengs Eradiri defending Tantita Security Services contract (covered only by thereporter.com.ng) and another regarding former Peter Obi campaign members forming a pro-Tinubu group (covered only by punchng.com). Neither central event is corroborated by at least two independent publisher domains."
+    "Insufficient corroboration. Only one publisher domain (punchng.com) reported on Kwara State's electronic warehouse management system, while the other domain (thereporter.com.ng) reported on an unrelated topic concerning family planning in Abia State. Under the editorial guidelines, at least two distinct publisher domains must corroborate the same central event.",
+    "None of the supplied stories are corroborated across at least two different publisher domains. Each record covers a distinct topic or originates from a single source without multi-domain verification."
   ]
 }
