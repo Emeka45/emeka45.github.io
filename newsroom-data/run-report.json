@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-10T04:37:39.382332+00:00",
-  "finished_utc": "2026-10-10T04:41:50.649360+00:00",
+  "started_utc": "2026-10-10T11:59:55.963218+00:00",
+  "finished_utc": "2026-10-10T12:01:13.997708+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -33,17 +33,17 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 642,
-  "fresh_items": 621,
+  "total_items": 641,
+  "fresh_items": 620,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
   "ai_failures": 0,
   "held_or_rejected": 4,
   "published_count": 0,
   "rejection_reasons": [
-    "The supplied sources do not meet the corroboration requirement. There are two distinct stories provided across two domains: one regarding Abia PDP from thereporter.com.ng and one regarding the APC's electoral law demand to INEC from punchng.com. Neither event is corroborated by at least two independent publisher domains.",
-    "The supplied records do not contain at least two different publisher domains corroborating the same central event. The report on Governor Siminalayi Fubara is only published by punchng.com, while the report on Governor Alex Otti is only published by thereporter.com.ng.",
-    "No two distinct publisher domains corroborate the same central event. The provided records cover unrelated developments: a customer satisfaction report, an analysis on energy zones, a government pledge calling for power sector investment, and a report on the housing crisis.",
-    "The supplied source records do not corroborate the same central event across at least two independent publisher domains. One record discusses a vintage car show in Lagos, while the others report on President Tinubu's Independence Day address."
+    "The supplied source records do not meet the minimum corroboration threshold. There are no two distinct publisher domains reporting on the same central event; the Zamfara story is covered solely by punchng.com across duplicate records, while the Abia story is covered solely by thereporter.com.ng.",
+    "The supplied source records do not corroborate the same central event across at least two independent publisher domains. One source covers Abia State PDP politics, while the other covers an Ondo State APC candidate's court victory from a single publisher.",
+    "None of the provided sources corroborate the same central event. Each source reports on a distinct, separate legal or justice-related topic, failing the requirement that at least two independent publisher domains materially corroborate the same event.",
+    "The supplied source records contain only headline snippets without substantive article text, context, or factual details. Fabricating information to meet report requirements is strictly prohibited by editorial guidelines."
   ]
 }
