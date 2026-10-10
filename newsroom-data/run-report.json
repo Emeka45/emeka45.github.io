@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-10T17:17:50.253603+00:00",
-  "finished_utc": "2026-10-10T17:18:55.853267+00:00",
+  "started_utc": "2026-10-10T21:14:20.122283+00:00",
+  "finished_utc": "2026-10-10T21:19:44.935080+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -33,17 +33,14 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 641,
-  "fresh_items": 620,
+  "total_items": 639,
+  "fresh_items": 618,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 0,
-  "held_or_rejected": 4,
+  "ai_failures": 3,
+  "held_or_rejected": 1,
   "published_count": 0,
   "rejection_reasons": [
-    "The supplied sources from different publisher domains do not materially corroborate the same central event. One report details the arrest of 26 suspects and the recovery of a stolen vehicle valued at N145 million, while the other covers the arrest of 23 suspected cultists following deadly clashes. The sources lack overlapping factual details to verify a single shared event.",
-    "The supplied source records do not corroborate the same central event. One source covers AAC presidential candidate Omoyele Sowore visiting the crash site in Igbokoda to call for an independent investigation, while the other covers Abia APC governorship candidate Eric Opah mourning Squadron Leader Ahamefule Aham Man Ugwueje. They share only background reference to a Nigerian Air Force plane crash in Ondo State, and the sparse details prevent writing a factual report without fabrication.",
-    "The supplied source records do not corroborate the same central event. While both mention a Nigerian Air Force plane crash in Ondo State as background, one source reports on Omoyele Sowore visiting the crash site and demanding an independent probe, while the other covers Eric Opah mourning a deceased Air Force officer. Under the evidence rules, two stories cannot be treated as corroborating merely because they share a broad topic or background incident.",
-    "The supplied source records cover disparate, unrelated developments within the Nigerian legal and justice sector—including an ECOWAS Chairman visit, a speech by Yemi Osinbajo and Archbishop Martins, a debate led by Justice Adefope-Okojie, and a separate general feature. There are not two independent publisher sources corroborating the same central event."
+    "The provided source records cover distinct, unrelated events across the justice sector (an ECOWAS court visit, comments by Yemi Osinbajo and Archbishop Martins, and an election debate led by Justice Adefope-Okojie) with no two independent publisher domains corroborating the same central event."
   ]
 }
