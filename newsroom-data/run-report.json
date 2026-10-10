@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-09T22:20:55.193447+00:00",
-  "finished_utc": "2026-10-09T22:23:44.561027+00:00",
+  "started_utc": "2026-10-10T04:37:39.382332+00:00",
+  "finished_utc": "2026-10-10T04:41:50.649360+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 404: Not Found"
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -33,17 +33,17 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 643,
-  "fresh_items": 622,
+  "total_items": 642,
+  "fresh_items": 621,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
   "ai_failures": 0,
   "held_or_rejected": 4,
   "published_count": 0,
   "rejection_reasons": [
-    "There are no two independent publisher domains corroborating the same central event. One source covers the All Progressives Congress (APC) zoning its 2027 governorship ticket to Abia Central, while the other source covers tricycle operators endorsing Governor Alex Otti for a second term. Mentioning the same political landscape or state does not meet the strict corroboration standard.",
-    "The supplied sources do not corroborate the same central event across at least two independent publisher domains. One domain reports on Governor Alex Otti receiving a top JAMB scorer, while the other reports on tricycle operators endorsing him for a second term in 2027. Merely mentioning the same public figure or state does not meet the corroboration standard.",
-    "Insufficient multi-source corroboration. The supplied records cover two completely distinct topics: one regarding Nyesom Wike and Rotimi Amaechi (reported solely by punchng.com) and another regarding Tompolo's Tantita contract (reported solely by thereporter.com.ng). At least two independent publisher domains are required to verify the same central event.",
-    "There are no two independent publisher domains corroborating the same central event. The report concerning Wike and Amaechi is only published by punchng.com, while the story concerning Atiku Abubakar's proposal on petrol prices is only covered by thereporter.com.ng."
+    "The supplied sources do not meet the corroboration requirement. There are two distinct stories provided across two domains: one regarding Abia PDP from thereporter.com.ng and one regarding the APC's electoral law demand to INEC from punchng.com. Neither event is corroborated by at least two independent publisher domains.",
+    "The supplied records do not contain at least two different publisher domains corroborating the same central event. The report on Governor Siminalayi Fubara is only published by punchng.com, while the report on Governor Alex Otti is only published by thereporter.com.ng.",
+    "No two distinct publisher domains corroborate the same central event. The provided records cover unrelated developments: a customer satisfaction report, an analysis on energy zones, a government pledge calling for power sector investment, and a report on the housing crisis.",
+    "The supplied source records do not corroborate the same central event across at least two independent publisher domains. One record discusses a vintage car show in Lagos, while the others report on President Tinubu's Independence Day address."
   ]
 }
