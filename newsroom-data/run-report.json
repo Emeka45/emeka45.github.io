@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-10T11:59:55.963218+00:00",
-  "finished_utc": "2026-10-10T12:01:13.997708+00:00",
+  "started_utc": "2026-10-10T17:17:50.253603+00:00",
+  "finished_utc": "2026-10-10T17:18:55.853267+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -41,9 +41,9 @@
   "held_or_rejected": 4,
   "published_count": 0,
   "rejection_reasons": [
-    "The supplied source records do not meet the minimum corroboration threshold. There are no two distinct publisher domains reporting on the same central event; the Zamfara story is covered solely by punchng.com across duplicate records, while the Abia story is covered solely by thereporter.com.ng.",
-    "The supplied source records do not corroborate the same central event across at least two independent publisher domains. One source covers Abia State PDP politics, while the other covers an Ondo State APC candidate's court victory from a single publisher.",
-    "None of the provided sources corroborate the same central event. Each source reports on a distinct, separate legal or justice-related topic, failing the requirement that at least two independent publisher domains materially corroborate the same event.",
-    "The supplied source records contain only headline snippets without substantive article text, context, or factual details. Fabricating information to meet report requirements is strictly prohibited by editorial guidelines."
+    "The supplied sources from different publisher domains do not materially corroborate the same central event. One report details the arrest of 26 suspects and the recovery of a stolen vehicle valued at N145 million, while the other covers the arrest of 23 suspected cultists following deadly clashes. The sources lack overlapping factual details to verify a single shared event.",
+    "The supplied source records do not corroborate the same central event. One source covers AAC presidential candidate Omoyele Sowore visiting the crash site in Igbokoda to call for an independent investigation, while the other covers Abia APC governorship candidate Eric Opah mourning Squadron Leader Ahamefule Aham Man Ugwueje. They share only background reference to a Nigerian Air Force plane crash in Ondo State, and the sparse details prevent writing a factual report without fabrication.",
+    "The supplied source records do not corroborate the same central event. While both mention a Nigerian Air Force plane crash in Ondo State as background, one source reports on Omoyele Sowore visiting the crash site and demanding an independent probe, while the other covers Eric Opah mourning a deceased Air Force officer. Under the evidence rules, two stories cannot be treated as corroborating merely because they share a broad topic or background incident.",
+    "The supplied source records cover disparate, unrelated developments within the Nigerian legal and justice sector—including an ECOWAS Chairman visit, a speech by Yemi Osinbajo and Archbishop Martins, a debate led by Justice Adefope-Okojie, and a separate general feature. There are not two independent publisher sources corroborating the same central event."
   ]
 }
