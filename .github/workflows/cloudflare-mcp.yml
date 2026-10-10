@@ -1,0 +1,30 @@
+name: Cloudflare MCP bridge
+
+on:
+  push:
+    branches:
+      - feat/cloudflare-chatgpt-mcp
+      - main
+    paths:
+      - "workers/cloudflare-mcp/**"
+      - ".github/workflows/cloudflare-mcp.yml"
+  pull_request:
+    paths:
+      - "workers/cloudflare-mcp/**"
+      - ".github/workflows/cloudflare-mcp.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: workers/cloudflare-mcp
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npm install
+      - run: npm run cf-typegen
+      - run: npm run typecheck
+      - run: npx wrangler deploy --dry-run
