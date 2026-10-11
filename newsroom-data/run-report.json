@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-11T04:22:36.360076+00:00",
-  "finished_utc": "2026-10-11T04:24:47.979906+00:00",
+  "started_utc": "2026-10-11T12:12:36.763970+00:00",
+  "finished_utc": "2026-10-11T12:17:12.395568+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -33,16 +33,14 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 635,
-  "fresh_items": 614,
+  "total_items": 636,
+  "fresh_items": 615,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 1,
-  "held_or_rejected": 3,
+  "ai_failures": 3,
+  "held_or_rejected": 1,
   "published_count": 0,
   "rejection_reasons": [
-    "Insufficient multi-source corroboration across independent domains. The available events are either reported by a single domain or duplicate entries from the same publisher (punchng.com).",
-    "The provided sources do not corroborate a single central event across at least two independent domains. One report from thereporter.com.ng covers remarks by John Okiyi Kalu regarding the PDP in Abia State, while the other reports from punchng.com cover a PDP mobilisation rally in Kwara State. Broad thematic overlap regarding the PDP and the 2027 elections does not satisfy the multi-source corroboration requirement.",
-    "There are no two independent sources corroborating the same central news event among the provided records. Each source covers a distinct topic without overlap."
+    "None of the provided sources corroborate the same central event across at least two independent publisher domains. The articles cover distinct events across Bauchi, Abia, and Bayelsa states."
   ]
 }
