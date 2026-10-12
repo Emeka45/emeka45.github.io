@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-11T21:34:26.937340+00:00",
-  "finished_utc": "2026-10-11T21:37:06.901327+00:00",
+  "started_utc": "2026-10-12T04:38:33.015405+00:00",
+  "finished_utc": "2026-10-12T04:39:35.154495+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -33,16 +33,17 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 635,
-  "fresh_items": 614,
+  "total_items": 633,
+  "fresh_items": 612,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 1,
-  "held_or_rejected": 3,
+  "ai_failures": 0,
+  "held_or_rejected": 4,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided sources do not materially corroborate the same central event across at least two independent publisher domains. One publisher covers the APC zoning its Abia governorship ticket to Abia Central, while the other covers remarks by Governor Alex Otti cautioning voters against political inducements.",
-    "The provided source records do not contain at least two different publisher domains materially corroborating the same central event. The report on the rescue of a kidnapped lieutenant colonel in Enugu is covered only by thereporter.com.ng, while the report on the Nigerian Army pledging security for NYSC members in Rivers State appears exclusively across duplicate links from punchng.com.",
-    "The supplied source records do not satisfy the corroboration criteria. The Kano vehicle recovery is reported exclusively by punchng.com across duplicate records, while the Bayelsa arrest report is supported only by thereporter.com.ng. At least two distinct publisher domains are required to verify the same central event."
+    "Insufficient corroboration. The provided records cover two entirely different events across separate states, with neither event reported by at least two distinct publisher domains.",
+    "The supplied sources do not materially corroborate the same central event across at least two independent publisher domains. One source provides only a headline regarding IPMAN rejecting fuel imports and Dangote Refinery dismissing supply disruption claims, while the other reports trade data showing Nigeria imported petrol between April and August while Dangote exported fuel to West Africa. Additionally, there is insufficient factual detail across the records to construct an accurate, verified news article without speculation.",
+    "The supplied records do not contain at least two different publisher domains materially corroborating the same central event. Each event (state police integration, feedback boxes in palaces, and a 3,000MW electricity target) is covered by only a single publisher domain.",
+    "None of the provided sources corroborate a single central event across at least two independent publisher domains. Each record discusses an unrelated topic."
   ]
 }
