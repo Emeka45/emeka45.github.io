@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-12T04:38:33.015405+00:00",
-  "finished_utc": "2026-10-12T04:39:35.154495+00:00",
+  "started_utc": "2026-10-12T14:35:31.670795+00:00",
+  "finished_utc": "2026-10-12T14:37:36.182843+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -33,17 +33,16 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 633,
-  "fresh_items": 612,
+  "total_items": 634,
+  "fresh_items": 613,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
   "ai_failures": 0,
-  "held_or_rejected": 4,
-  "published_count": 0,
+  "held_or_rejected": 3,
+  "published_count": 1,
   "rejection_reasons": [
-    "Insufficient corroboration. The provided records cover two entirely different events across separate states, with neither event reported by at least two distinct publisher domains.",
-    "The supplied sources do not materially corroborate the same central event across at least two independent publisher domains. One source provides only a headline regarding IPMAN rejecting fuel imports and Dangote Refinery dismissing supply disruption claims, while the other reports trade data showing Nigeria imported petrol between April and August while Dangote exported fuel to West Africa. Additionally, there is insufficient factual detail across the records to construct an accurate, verified news article without speculation.",
-    "The supplied records do not contain at least two different publisher domains materially corroborating the same central event. Each event (state police integration, feedback boxes in palaces, and a 3,000MW electricity target) is covered by only a single publisher domain.",
-    "None of the provided sources corroborate a single central event across at least two independent publisher domains. Each record discusses an unrelated topic."
+    "The supplied records do not meet the minimum corroboration requirement. There is only one publisher domain (punchng.com) covering the Kwara APC governorship denial story, and only one publisher domain (thereporter.com.ng) covering the Abia APC consultation story. At least two different publisher domains must materially support the same central event to proceed with publication.",
+    "Two independent media outlets (Western Post and Premium Times Nigeria) corroborate Governor Babajide Sanwo-Olu's announcement setting a target to raise Lagos State's electricity supply to 3,000MW by March 2027.",
+    "The supplied records do not contain corroboration across at least two independent publisher domains for any single event. The Makinde/Adelabu story appears only on punchng.com, while the Atiku petrol proposal story appears exclusively on thereporter.com.ng."
   ]
 }

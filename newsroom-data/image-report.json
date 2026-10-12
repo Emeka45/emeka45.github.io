@@ -1,11 +1,20 @@
 {
-  "finished_utc": "2026-10-12T04:39:35.267428+00:00",
+  "finished_utc": "2026-10-12T14:37:36.531337+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 0,
-  "attempted": 0,
+  "missing_before_run": 1,
+  "attempted": 1,
   "generated": [],
-  "source_photos": [],
+  "source_photos": [
+    {
+      "article": "2026-10-12-2027-elections-cjn-kekere-ekun-warns-judges-and-lawyers-against-political-alignment-e8f8f6453e.html",
+      "image": "news/images/2026-10-12-2027-elections-cjn-kekere-ekun-warns-judges-and-lawyers-against-political-alignment-e8f8f6453e-source.jpg",
+      "bytes": 50908,
+      "provider": "Original news source",
+      "source_url": "https://punchng.com/2027-cjn-cautions-judges-lawyers-over-political-cases/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://punchng.com/wp-content/uploads/2026/06/Chief-Justice-of-Nigeria-Justice-Kudirat-Kekere-Ekun.jpeg.jpg_1782327370-1200x630.webp"
+    }
+  ],
   "openverse_photos": [],
   "fallbacks": [],
   "failures": [],
