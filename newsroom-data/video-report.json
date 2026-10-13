@@ -1,9 +1,9 @@
 {
-  "finished_utc": "2026-10-12T14:37:54.841546+00:00",
+  "finished_utc": "2026-10-13T00:16:25.502805+00:00",
   "max_new_videos_per_run": 20,
   "max_shorts_per_run": 6,
   "channels_configured": 15,
-  "channels_resolved": 13,
+  "channels_resolved": 4,
   "resolver_methods": {
     "PlayStation": "wikidata",
     "Xbox": "wikidata",
@@ -23,39 +23,67 @@
   },
   "channels_with_errors": [
     {
+      "channel": "PlayStation",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "Xbox",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "Ubisoft",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
       "channel": "Bandai Namco Entertainment America",
       "error": "Could not resolve stable YouTube channel ID"
     },
     {
+      "channel": "Electronic Arts",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
       "channel": "Marvel Entertainment",
       "error": "Could not resolve stable YouTube channel ID"
+    },
+    {
+      "channel": "Universal Pictures",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "Crunchyroll",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "MAPPA",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "Disney",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "DC",
+      "error": "HTTP Error 500: Internal Server Error"
     }
   ],
-  "discovered": 65,
-  "published": 20,
-  "shorts_published": 6,
-  "duplicates_skipped": 41,
+  "discovered": 20,
+  "published": 12,
+  "shorts_published": 3,
+  "duplicates_skipped": 8,
   "total_stored": 100,
   "published_video_ids": [
-    "L18ih13Bf-U",
-    "sA2v6KGB57s",
-    "CPFkLjHfKoc",
-    "oaHq9DQIxfI",
+    "8MHI6QfhY14",
+    "_7hcl_N5ct4",
+    "pgXUkeU1BS8",
+    "r0H-oWUFJbk",
+    "wl7uj7n7DoY",
+    "_E2yeOUZlOw",
     "CFgEL7ei8VE",
-    "eT5Ecm99O5Y",
+    "eK-0wMHbDvA",
     "0ExAS1lmMJg",
-    "rgGkgrNvIUc",
-    "g9TXe-eryes",
-    "JkHDjMWK7bs",
-    "mSYtGLdl9kg",
-    "8i5xuWtfyDc",
-    "K-EpTVjZCl8",
-    "tzbRZM0XyoM",
-    "5-y15RoLbm0",
-    "vwAB8fD8l9A",
-    "sEkH64NFfbY",
-    "XNIBvoya18U",
-    "wXXTfAnAH_E",
-    "eMiKTdCqurk"
+    "ipRabazEtig",
+    "L6hnv8H2ndc",
+    "T7Wzap4gP_k"
   ]
 }
