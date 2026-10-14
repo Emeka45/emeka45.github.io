@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-10-13T22:24:45.489940+00:00",
+  "finished_utc": "2026-10-14T03:52:11.522260+00:00",
   "max_new_videos_per_run": 20,
   "max_shorts_per_run": 6,
   "channels_configured": 15,
@@ -36,7 +36,7 @@
     },
     {
       "channel": "Ubisoft",
-      "error": "HTTP Error 500: Internal Server Error"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "channel": "Bandai Namco Entertainment America",
@@ -64,7 +64,7 @@
     },
     {
       "channel": "Crunchyroll",
-      "error": "HTTP Error 500: Internal Server Error"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "channel": "Toei Animation",

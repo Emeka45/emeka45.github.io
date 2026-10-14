@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-13T22:20:52.344904+00:00",
-  "finished_utc": "2026-10-13T22:24:35.116033+00:00",
+  "started_utc": "2026-10-14T03:47:42.621542+00:00",
+  "finished_utc": "2026-10-14T03:52:02.057747+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -33,15 +33,12 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 624,
-  "fresh_items": 602,
+  "total_items": 627,
+  "fresh_items": 605,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 2,
-  "held_or_rejected": 2,
+  "ai_failures": 4,
+  "held_or_rejected": 0,
   "published_count": 0,
-  "rejection_reasons": [
-    "The supplied source records contain only headline-level text without article bodies, detailed reporting, or substantive factual context. Although TheCable and Channels Television both reference the Chief Justice of Nigeria warning lawyers against forum shopping ahead of the 2027 elections due to the risk of conflicting court orders, the sources provide insufficient factual detail to produce an authentic news report without inventing dates, venues, full statements, and background not supported by the records.",
-    "The provided source records do not materially corroborate the same central event across at least two independent publisher domains. While multiple records mention the Chief Justice of Nigeria, they refer to distinct occasions and topics (a warning concerning 2027 political entanglements, the commissioning of the National Industrial Court headquarters, and general statements on judicial independence), lacking overlapping factual details needed to substantiate a corroborated report without invention."
-  ]
+  "rejection_reasons": []
 }
