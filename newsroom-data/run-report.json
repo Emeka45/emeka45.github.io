@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-14T16:40:25.120237+00:00",
-  "finished_utc": "2026-10-14T16:44:45.188723+00:00",
+  "started_utc": "2026-10-14T21:19:44.735272+00:00",
+  "finished_utc": "2026-10-14T21:22:27.844256+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -33,12 +33,15 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 635,
-  "fresh_items": 613,
+  "total_items": 638,
+  "fresh_items": 616,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 4,
-  "held_or_rejected": 0,
+  "ai_failures": 2,
+  "held_or_rejected": 2,
   "published_count": 0,
-  "rejection_reasons": []
+  "rejection_reasons": [
+    "There are no two independent publisher domains corroborating the same central event. The Punch reports on Ogun PDP chieftain Segun Showunmi accepting an APC campaign council appointment, while The Reporter discusses Abia CityBoy Movement congratulating Lucky Igbokwe on an APC appointment.",
+    "There are not two different publisher domains materially corroborating the same central event. One source from punchng.com discusses Governor Soludo's comments on re-election support, while the other sources from thereporter.com.ng discuss an upcoming Independence Day address."
+  ]
 }
