@@ -157,6 +157,15 @@ def page_html(item):
 <article>{item["body_html"]}{source_html}</article><a class="back" href="../articles.html">← More articles</a></main>
 <footer>© C. O. Eric · Original features and explainers. <a href="../editorial-policy.html">Editorial policy</a></footer></body></html>'''
 
+def update_sitemap(filename):
+    sitemap = ROOT / "sitemap.xml"
+    url = SITE + "/articles/" + urllib.parse.quote(filename)
+    if sitemap.exists():
+        text = sitemap.read_text(encoding="utf-8")
+        if url not in text:
+            text = text.replace("</urlset>", "<url><loc>" + html.escape(url) + "</loc></url>\\n</urlset>")
+            sitemap.write_text(text, encoding="utf-8")
+
 def main():
     ARTICLES.mkdir(exist_ok=True)
     REPORT_DIR.mkdir(exist_ok=True)
@@ -208,6 +217,7 @@ def main():
             if len(re.sub(r"<[^>]+>", " ", record["body_html"]).split()) < 450:
                 raise ValueError("Article was too short after HTML sanitization.")
             (ARTICLES / record["file"]).write_text(page_html(record), encoding="utf-8")
+            update_sitemap(record["file"])
             items.insert(0, {k: record[k] for k in ("title", "summary", "category", "date", "file", "tags")})
             items = items[:300]
             INDEX.write_text(json.dumps(items, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
