@@ -1,0 +1,78 @@
+name: C. O. Eric AI Articles
+
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Optional specific article topic (leave blank for the next planned topic)"
+        required: false
+        type: string
+      category:
+        description: "Optional article category"
+        required: false
+        type: choice
+        options:
+          - Lifestyle
+          - Psychology & Human Behaviour
+          - Relationships & Family
+          - Money & Work
+          - Education
+          - Health & Wellness
+          - Technology & Modern Life
+          - Nigerian & African Society
+          - Culture & Entertainment
+          - Religion & Meaning
+          - Practical Explainers
+          - Personal Development
+        default: Lifestyle
+  schedule:
+    - cron: '0 9 * * *'
+  push:
+    paths:
+      - 'scripts/run_ai_articles.py'
+      - '.github/workflows/ai-articles.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ai-articles-main
+  cancel-in-progress: false
+
+jobs:
+  articles:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out site
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generate one original feature article
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ARTICLE_TOPIC: ${{ inputs.topic }}
+          ARTICLE_CATEGORY: ${{ inputs.category }}
+        run: python scripts/run_ai_articles.py
+      - name: Show editorial diagnostics
+        if: always()
+        run: |
+          echo '=== AI ARTICLES REPORT ==='
+          if [ -f articles-data/run-report.json ]; then cat articles-data/run-report.json; else echo 'No report generated.'; fi
+      - name: Publish article and index
+        if: success()
+        run: |
+          git config user.name 'C. O. Eric AI Articles'
+          git config user.email 'actions@users.noreply.github.com'
+          git add articles/ articles-data/
+          if git diff --cached --quiet; then
+            echo 'No article changes to publish.'
+            exit 0
+          fi
+          git commit -m 'AI Articles: publish original feature'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
