@@ -163,7 +163,7 @@ def update_sitemap(filename):
     if sitemap.exists():
         text = sitemap.read_text(encoding="utf-8")
         if url not in text:
-            text = text.replace("</urlset>", "<url><loc>" + html.escape(url) + "</loc></url>\\n</urlset>")
+            text = text.replace("</urlset>", "<url><loc>" + html.escape(url) + "</loc></url>\n</urlset>")
             sitemap.write_text(text, encoding="utf-8")
 
 def main():
