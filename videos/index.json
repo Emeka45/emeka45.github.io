@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-10-15T03:33:07.636087+00:00",
+  "updated_at": "2026-10-15T05:02:12.943327+00:00",
   "videos": [
+    {
+      "video_id": "My6xJ9oiR40",
+      "title": "Embrace the fear. Get tickets NOW for #ClayfaceMovie",
+      "category": "Movies & TV",
+      "channel": "DC",
+      "channel_id": "UCiifkYAs_bq1pt_zbNAzYGg",
+      "channel_url": "https://www.youtube.com/channel/UCiifkYAs_bq1pt_zbNAzYGg",
+      "url": "https://www.youtube.com/shorts/My6xJ9oiR40",
+      "embed_url": "https://www.youtube-nocookie.com/embed/My6xJ9oiR40",
+      "thumbnail": "https://i.ytimg.com/vi/My6xJ9oiR40/hqdefault.jpg",
+      "published_at": "2026-10-15T00:00:31+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Get movie tickets now for the Clayface movie in this official video from DC, featuring the prompt to embrace the fear.",
+      "published_by_pipeline_at": "2026-10-15T05:02:12.943258+00:00"
+    },
     {
       "video_id": "BhpH9Ww6E1U",
       "title": "Play Minecraft Dungeons II with the new XBOX Nano Controller",
@@ -80,6 +96,22 @@
       "is_short": false,
       "description": "Watch the official trailer for Bass X Machina, presented by Netflix under the Movies and TV category.",
       "published_by_pipeline_at": "2026-10-14T21:22:59.855286+00:00"
+    },
+    {
+      "video_id": "cWdiaxNnyA0",
+      "title": "DC GO! Runway to Ruin Trailer | DC",
+      "category": "Movies & TV",
+      "channel": "DC",
+      "channel_id": "UCiifkYAs_bq1pt_zbNAzYGg",
+      "channel_url": "https://www.youtube.com/channel/UCiifkYAs_bq1pt_zbNAzYGg",
+      "url": "https://www.youtube.com/shorts/cWdiaxNnyA0",
+      "embed_url": "https://www.youtube-nocookie.com/embed/cWdiaxNnyA0",
+      "thumbnail": "https://i.ytimg.com/vi/cWdiaxNnyA0/hqdefault.jpg",
+      "published_at": "2026-10-14T19:00:35+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Watch the Runway to Ruin trailer from DC in this Movies & TV video presented by the official DC channel.",
+      "published_by_pipeline_at": "2026-10-15T05:02:12.157360+00:00"
     },
     {
       "video_id": "PiUsPFTYhGM",
@@ -1568,38 +1600,6 @@
       "is_short": true,
       "description": "Watch a curry rice making short from the anime Ranma 1/2, presented by the channel MAPPA in the anime category.",
       "published_by_pipeline_at": "2026-10-09T12:45:21.961657+00:00"
-    },
-    {
-      "video_id": "dbaJVQuvJV0",
-      "title": "Sesame Street: Friends & Fun - Launch trailer",
-      "category": "Gaming",
-      "channel": "Xbox",
-      "channel_id": "UCjBp_7RuDBUYbd1LegWEJ8g",
-      "channel_url": "https://www.youtube.com/channel/UCjBp_7RuDBUYbd1LegWEJ8g",
-      "url": "https://www.youtube.com/watch?v=dbaJVQuvJV0",
-      "embed_url": "https://www.youtube-nocookie.com/embed/dbaJVQuvJV0",
-      "thumbnail": "https://i.ytimg.com/vi/dbaJVQuvJV0/hqdefault.jpg",
-      "published_at": "2026-10-09T08:00:30+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Watch the launch trailer for Sesame Street: Friends & Fun, a gaming video presented by Xbox, showcasing footage from the title.",
-      "published_by_pipeline_at": "2026-10-09T12:45:13.771828+00:00"
-    },
-    {
-      "video_id": "0oIvE3Z7Q_c",
-      "title": "My dad got in a car accident and STILL took me to see Pokemon 💪",
-      "category": "Anime",
-      "channel": "Crunchyroll",
-      "channel_id": "UCBXn1nJgmCeM3gt0CI99b6g",
-      "channel_url": "https://www.youtube.com/channel/UCBXn1nJgmCeM3gt0CI99b6g",
-      "url": "https://www.youtube.com/shorts/0oIvE3Z7Q_c",
-      "embed_url": "https://www.youtube-nocookie.com/embed/0oIvE3Z7Q_c",
-      "thumbnail": "https://i.ytimg.com/vi/0oIvE3Z7Q_c/hqdefault.jpg",
-      "published_at": "2026-10-08T23:00:35+00:00",
-      "source": "YouTube channel feed",
-      "is_short": true,
-      "description": "On the Crunchyroll anime channel, a viewer shares a personal story about how their dad still took them to see Pokémon after a car accident.",
-      "published_by_pipeline_at": "2026-10-09T12:45:22.564771+00:00"
     }
   ]
 }

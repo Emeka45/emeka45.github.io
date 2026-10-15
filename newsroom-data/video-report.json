@@ -1,9 +1,9 @@
 {
-  "finished_utc": "2026-10-15T03:33:07.637416+00:00",
+  "finished_utc": "2026-10-15T05:02:12.945050+00:00",
   "max_new_videos_per_run": 20,
   "max_shorts_per_run": 6,
   "channels_configured": 15,
-  "channels_resolved": 0,
+  "channels_resolved": 1,
   "resolver_methods": {
     "PlayStation": "wikidata",
     "Xbox": "wikidata",
@@ -77,16 +77,15 @@
     {
       "channel": "Disney",
       "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "DC",
-      "error": "HTTP Error 404: Not Found"
     }
   ],
-  "discovered": 0,
-  "published": 0,
-  "shorts_published": 0,
-  "duplicates_skipped": 0,
+  "discovered": 5,
+  "published": 2,
+  "shorts_published": 2,
+  "duplicates_skipped": 3,
   "total_stored": 100,
-  "published_video_ids": []
+  "published_video_ids": [
+    "cWdiaxNnyA0",
+    "My6xJ9oiR40"
+  ]
 }
