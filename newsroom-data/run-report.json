@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-14T21:19:44.735272+00:00",
-  "finished_utc": "2026-10-14T21:22:27.844256+00:00",
+  "started_utc": "2026-10-15T03:29:34.177055+00:00",
+  "finished_utc": "2026-10-15T03:32:57.268686+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -33,15 +33,14 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 638,
-  "fresh_items": 616,
+  "total_items": 641,
+  "fresh_items": 620,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 2,
-  "held_or_rejected": 2,
+  "ai_failures": 3,
+  "held_or_rejected": 1,
   "published_count": 0,
   "rejection_reasons": [
-    "There are no two independent publisher domains corroborating the same central event. The Punch reports on Ogun PDP chieftain Segun Showunmi accepting an APC campaign council appointment, while The Reporter discusses Abia CityBoy Movement congratulating Lucky Igbokwe on an APC appointment.",
-    "There are not two different publisher domains materially corroborating the same central event. One source from punchng.com discusses Governor Soludo's comments on re-election support, while the other sources from thereporter.com.ng discuss an upcoming Independence Day address."
+    "Insufficient corroboration across distinct domains. The story concerning the attack on Accord supporters in Oyo State is only covered by a single domain (punchng.com) across multiple duplicate entries, while the unrelated political consultation in Abia State appears only on thereporter.com.ng. The strict rule requiring at least two different publisher domains corroborating the same central event is not satisfied."
   ]
 }
