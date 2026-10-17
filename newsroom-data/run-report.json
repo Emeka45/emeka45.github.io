@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-17T03:15:18.311644+00:00",
-  "finished_utc": "2026-10-17T03:17:51.729301+00:00",
+  "started_utc": "2026-10-17T10:14:21.727655+00:00",
+  "finished_utc": "2026-10-17T10:15:26.509556+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -33,15 +33,17 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 647,
+  "total_items": 646,
   "fresh_items": 625,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 2,
-  "held_or_rejected": 2,
+  "ai_failures": 0,
+  "held_or_rejected": 4,
   "published_count": 0,
   "rejection_reasons": [
-    "The supplied records do not meet the minimum requirement of at least two independent publisher domains corroborating the same central event. The report on the Kwankwasiyya protest is published solely by Punch Nigeria across duplicate entries, while the remaining article from The Reporter covers an unrelated political consultation in Abia State.",
-    "There are no two independent publisher domains corroborating the same central event. The report concerning AIG Tunji Disu is published only by thereporter.com.ng, while the report regarding lifetime pay for former immigration chiefs is covered solely by punchng.com."
+    "There are no two distinct publisher domains corroborating the same central event. The Abia PDP story appears exclusively on thereporter.com.ng, while the Kwara APC support group story appears only on punchng.com.",
+    "At least two different publisher domains must materially corroborate the same central event. The report on Lagos approving 101 private schools is supported by only one publisher domain (punchng.com), and the unrelated report on hotel price inflation is also covered by only a single domain (thereporter.com.ng).",
+    "The supplied records do not meet the corroboration requirement. There are no two distinct publisher domains reporting on the same central event; one story from thereporter.com.ng addresses state police plans in Lagos, while three duplicate records from punchng.com cover Biodun Oyebanji's inauguration in Ekiti.",
+    "The supplied source records cover disparate developments (Governor Oyebanji's inauguration in Ekiti, Lagos State police framework plans, Lagos power generation targets, and transport reforms) without at least two independent publisher domains corroborating any single central event. Merely sharing a common figure (Governor Sanwo-Olu) does not satisfy the corroboration requirement."
   ]
 }
