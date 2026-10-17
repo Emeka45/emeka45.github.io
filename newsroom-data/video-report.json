@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-10-17T15:05:26.760919+00:00",
+  "finished_utc": "2026-10-17T20:17:07.770625+00:00",
   "max_new_videos_per_run": 20,
   "max_shorts_per_run": 6,
   "channels_configured": 15,
@@ -32,12 +32,14 @@
     }
   ],
   "discovered": 65,
-  "published": 18,
+  "published": 20,
   "shorts_published": 6,
-  "duplicates_skipped": 41,
+  "duplicates_skipped": 42,
   "total_stored": 100,
   "published_video_ids": [
     "eT5Ecm99O5Y",
+    "fyoAfu-S1Tc",
+    "-jC32AIIn14",
     "ohVyyYSd7IE",
     "p7j-iOhl8GI",
     "Id9r7gQvngg",
@@ -49,11 +51,11 @@
     "8i5xuWtfyDc",
     "K-EpTVjZCl8",
     "tzbRZM0XyoM",
-    "NjwT28eNJY4",
-    "ytXZzmqsdMI",
-    "Y5fbfNTdTYA",
-    "5RFwfON1Jm4",
-    "ZI8yz5RdZE8",
-    "I3wy0uxmHEc"
+    "Jm1pc_TWm8g",
+    "PAAUAgl5QMc",
+    "LmkosMfxAwE",
+    "wW-f4VLim9s",
+    "5-y15RoLbm0",
+    "zn6E66_xryc"
   ]
 }
