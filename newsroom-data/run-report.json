@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-17T10:14:21.727655+00:00",
-  "finished_utc": "2026-10-17T10:15:26.509556+00:00",
+  "started_utc": "2026-10-17T15:04:11.868806+00:00",
+  "finished_utc": "2026-10-17T15:05:06.710900+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -33,17 +33,17 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 646,
-  "fresh_items": 625,
+  "total_items": 650,
+  "fresh_items": 629,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
   "ai_failures": 0,
   "held_or_rejected": 4,
   "published_count": 0,
   "rejection_reasons": [
-    "There are no two distinct publisher domains corroborating the same central event. The Abia PDP story appears exclusively on thereporter.com.ng, while the Kwara APC support group story appears only on punchng.com.",
-    "At least two different publisher domains must materially corroborate the same central event. The report on Lagos approving 101 private schools is supported by only one publisher domain (punchng.com), and the unrelated report on hotel price inflation is also covered by only a single domain (thereporter.com.ng).",
-    "The supplied records do not meet the corroboration requirement. There are no two distinct publisher domains reporting on the same central event; one story from thereporter.com.ng addresses state police plans in Lagos, while three duplicate records from punchng.com cover Biodun Oyebanji's inauguration in Ekiti.",
-    "The supplied source records cover disparate developments (Governor Oyebanji's inauguration in Ekiti, Lagos State police framework plans, Lagos power generation targets, and transport reforms) without at least two independent publisher domains corroborating any single central event. Merely sharing a common figure (Governor Sanwo-Olu) does not satisfy the corroboration requirement."
+    "The supplied records lack sufficient substantive detail to construct an accurate, verified news report of standard length without inventing facts or quotes. One source contains only a headline, and the other contains merely a single-sentence summary.",
+    "The supplied source records do not satisfy the corroboration criteria. Only one publisher domain (punchng.com) reported on Governor Sanwo-Olu's warning against building on wetlands, while the only other domain (thereporter.com.ng) covered an entirely distinct story concerning hotel and venue pricing regulations. At least two independent publisher domains must corroborate the same central event.",
+    "The supplied source records do not contain corroboration from at least two different publisher domains for the same central event. The Bayelsa missing baby case is only covered by thereporter.com.ng, while the Oyo baby rescue incident is covered exclusively by punchng.com.",
+    "The provided sources do not satisfy the multi-source corroboration rule. There is only one report regarding Governor Sanwo-Olu's warning on building on wetlands (from punchng.com), while the only other distinct domain (thereporter.com.ng) covers an entirely different event concerning state police integration."
   ]
 }
