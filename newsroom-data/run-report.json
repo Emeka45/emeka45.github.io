@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-16T20:34:38.794301+00:00",
-  "finished_utc": "2026-10-16T20:39:49.059174+00:00",
+  "started_utc": "2026-10-17T03:15:18.311644+00:00",
+  "finished_utc": "2026-10-17T03:17:51.729301+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -33,14 +33,15 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 648,
-  "fresh_items": 626,
+  "total_items": 647,
+  "fresh_items": 625,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 3,
-  "held_or_rejected": 1,
+  "ai_failures": 2,
+  "held_or_rejected": 2,
   "published_count": 0,
   "rejection_reasons": [
-    "Insufficient multi-source corroboration: No single event is corroborated by at least two distinct publisher domains. The reports on the arrest of kidnapping suspects and the BRT incident are only covered by Punchng.com, while the Lagos state police story is only listed from thereporter.com.ng without details."
+    "The supplied records do not meet the minimum requirement of at least two independent publisher domains corroborating the same central event. The report on the Kwankwasiyya protest is published solely by Punch Nigeria across duplicate entries, while the remaining article from The Reporter covers an unrelated political consultation in Abia State.",
+    "There are no two independent publisher domains corroborating the same central event. The report concerning AIG Tunji Disu is published only by thereporter.com.ng, while the report regarding lifetime pay for former immigration chiefs is covered solely by punchng.com."
   ]
 }
