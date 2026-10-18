@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-18T10:30:04.764440+00:00",
-  "finished_utc": "2026-10-18T10:35:47.160438+00:00",
+  "started_utc": "2026-10-18T15:28:12.480325+00:00",
+  "finished_utc": "2026-10-18T15:29:06.310884+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -37,11 +37,13 @@
   "fresh_items": 625,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 2,
-  "held_or_rejected": 2,
+  "ai_failures": 0,
+  "held_or_rejected": 4,
   "published_count": 0,
   "rejection_reasons": [
-    "The supplied records provide only headline snippets with no article body or contextual detail specifying the underlying event, date, venue, or occasion of Justice Augie's remarks. Under the strict evidence rules, facts cannot be invented to achieve the required article depth, and the records do not provide enough substantive information to establish and report a corroborated central event.",
-    "Three independent publisher sources—TheCable, Daily Trust, and The Sun Nigeria—corroborate the central event concerning retired Justice Augie's public critique warning that corruption and chronic delays are turning Nigerian courts into 'market stalls'."
+    "None of the reported events are corroborated across at least two independent publisher domains. The Bauchi robbery arrests appear only on punchng.com, while the Bayelsa arrests appear only on thereporter.com.ng.",
+    "Although two distinct publisher domains (Punch Newspapers and Nigeria Info FM) share a matching headline regarding Governor Babajide Sanwo-Olu warning residents against building on wetlands, the provided records contain no article text, quotes, or substantive factual details. Composing a complete news article without these facts would violate the strict evidence guidelines against inventing information.",
+    "There are not at least two different publisher domains corroborating the same central event. The Punch record concerns Ogun State police officers summoned over an assault, while the remaining records are duplicates from a single domain (thereporter.com.ng) concerning an unrelated child abuse case in Abia State.",
+    "The provided source records do not contain corroboration from at least two distinct publisher domains for any single event. The Punch reported on an Ogun State Police incident involving four summoned officers, whereas The Reporter reported on an unrelated arraignment of a man for child abuse in Abia State."
   ]
 }

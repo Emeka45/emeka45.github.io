@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-10-18T10:36:14.016193+00:00",
+  "updated_at": "2026-10-18T15:29:24.952483+00:00",
   "videos": [
+    {
+      "video_id": "Nog6oN3MEjs",
+      "title": "Cyberpunk: Edgerunners 2 in 2 days",
+      "category": "Movies & TV",
+      "channel": "Netflix",
+      "channel_id": "UCWOA1ZGywLbqmigxE4Qlvuw",
+      "channel_url": "https://www.youtube.com/channel/UCWOA1ZGywLbqmigxE4Qlvuw",
+      "url": "https://www.youtube.com/shorts/Nog6oN3MEjs",
+      "embed_url": "https://www.youtube-nocookie.com/embed/Nog6oN3MEjs",
+      "thumbnail": "https://i.ytimg.com/vi/Nog6oN3MEjs/hqdefault.jpg",
+      "published_at": "2026-10-18T14:00:00+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Watch Cyberpunk: Edgerunners 2 in 2 days in this Movies and TV video published on YouTube by Netflix.",
+      "published_by_pipeline_at": "2026-10-18T15:29:21.546570+00:00"
+    },
     {
       "video_id": "XjUt3Fv_f-Y",
       "title": "You, Me, Us | Official Trailer | Netflix",
@@ -1584,22 +1600,6 @@
       "is_short": false,
       "description": "Watch the launch trailer for the National Championship Air Races in Microsoft Flight Simulator, shared by the Xbox gaming channel.",
       "published_by_pipeline_at": "2026-10-14T11:24:16.699212+00:00"
-    },
-    {
-      "video_id": "bvFWiFBfagc",
-      "title": "Rainbow Six Siege: For Honor Bundle Trailer",
-      "category": "Gaming",
-      "channel": "Ubisoft",
-      "channel_id": "UCBMvc6jvuTxH6TNo9ThpYjg",
-      "channel_url": "https://www.youtube.com/channel/UCBMvc6jvuTxH6TNo9ThpYjg",
-      "url": "https://www.youtube.com/watch?v=bvFWiFBfagc",
-      "embed_url": "https://www.youtube-nocookie.com/embed/bvFWiFBfagc",
-      "thumbnail": "https://i.ytimg.com/vi/bvFWiFBfagc/hqdefault.jpg",
-      "published_at": "2026-10-13T17:00:20+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Ubisoft presents a gaming trailer for the For Honor Bundle in Rainbow Six Siege, showcasing content available in this promotional crossover package.",
-      "published_by_pipeline_at": "2026-10-14T11:24:31.473464+00:00"
     }
   ]
 }
