@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-10-18T18:53:26.307356+00:00",
+  "updated_at": "2026-10-18T19:15:09.028013+00:00",
   "videos": [
+    {
+      "video_id": "yXhrZyFtB-o",
+      "title": "\"I am Not Weak\" 💪 #Ma #Shorts",
+      "category": "Movies & TV",
+      "channel": "Universal Pictures",
+      "channel_id": "UCq0OueAsdxH6b8nyAspwViw",
+      "channel_url": "https://www.youtube.com/channel/UCq0OueAsdxH6b8nyAspwViw",
+      "url": "https://www.youtube.com/shorts/yXhrZyFtB-o",
+      "embed_url": "https://www.youtube-nocookie.com/embed/yXhrZyFtB-o",
+      "thumbnail": "https://i.ytimg.com/vi/yXhrZyFtB-o/hqdefault.jpg",
+      "published_at": "2026-10-18T19:00:00+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "A short promotional video titled \"I am Not Weak\" for the film Ma is shared by the official Universal Pictures Movies and TV channel.",
+      "published_by_pipeline_at": "2026-10-18T19:15:07.175414+00:00"
+    },
     {
       "video_id": "9qpM-jT83R8",
       "title": "Take it all in. #ClayfaceMovie",
@@ -1584,22 +1600,6 @@
       "is_short": false,
       "description": "Nintendo of America presents October 2026 game updates for the Game Boy Advance Nintendo Classics in this gaming video.",
       "published_by_pipeline_at": "2026-10-14T11:24:50.284270+00:00"
-    },
-    {
-      "video_id": "cX2aPqOzh1Y",
-      "title": "Sonic Racing: CrossWorlds - Avatar Legends Pack Trailer",
-      "category": "Gaming",
-      "channel": "Xbox",
-      "channel_id": "UCjBp_7RuDBUYbd1LegWEJ8g",
-      "channel_url": "https://www.youtube.com/channel/UCjBp_7RuDBUYbd1LegWEJ8g",
-      "url": "https://www.youtube.com/watch?v=cX2aPqOzh1Y",
-      "embed_url": "https://www.youtube-nocookie.com/embed/cX2aPqOzh1Y",
-      "thumbnail": "https://i.ytimg.com/vi/cX2aPqOzh1Y/hqdefault.jpg",
-      "published_at": "2026-10-14T01:00:05+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Xbox shares a gaming trailer for Sonic Racing: CrossWorlds featuring the Avatar Legends Pack.",
-      "published_by_pipeline_at": "2026-10-14T11:24:19.668558+00:00"
     }
   ]
 }
