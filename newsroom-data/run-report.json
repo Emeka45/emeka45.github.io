@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-18T18:19:41.991412+00:00",
-  "finished_utc": "2026-10-18T18:20:35.323830+00:00",
+  "started_utc": "2026-10-18T18:50:19.065312+00:00",
+  "finished_utc": "2026-10-18T18:53:07.619535+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -33,17 +33,15 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 649,
-  "fresh_items": 628,
+  "total_items": 648,
+  "fresh_items": 627,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 0,
-  "held_or_rejected": 4,
+  "ai_failures": 2,
+  "held_or_rejected": 2,
   "published_count": 0,
   "rejection_reasons": [
-    "There is insufficient cross-publisher corroboration. None of the distinct events reported in the provided sources are supported by at least two independent publisher domains.",
-    "There are not two independent publisher domains corroborating the same central event. The report on Eric Opah in Abia State appears only on thereporter.com.ng, while the report regarding President Tinubu's warning to Ekiti politicians appears solely on punchng.com.",
-    "The provided sources do not meet the minimum corroboration requirement. There are no two distinct publisher domains reporting on the same central event; the rescue operation in Enugu is reported by only one domain (thereporter.com.ng), while the directive to troops in Oyo State appears only on punchng.com across duplicate records.",
-    "Fails corroboration requirement: Only one publisher domain (punchng.com) reports on Governor Sanwo-Olu pledging support for the 2026 CAF awards, while the other source from thereporter.com.ng covers an unrelated topic on state police."
+    "There are no two independent publisher domains that materially corroborate the same central event. The story regarding the South-East APM chairmen appears only on punchng.com, and the separate APC-related stories cover distinct topics across different domains without shared factual corroboration.",
+    "The provided source records do not meet the requirement of at least two independent publisher domains corroborating the same central event. One report concerns Eric Opah addressing voters in Abia State, while the other concerns President Tinubu warning politicians in Ekiti State, with only a single publisher domain reporting on each topic."
   ]
 }
