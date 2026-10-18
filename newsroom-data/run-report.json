@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-18T03:19:33.552695+00:00",
-  "finished_utc": "2026-10-18T03:23:57.680790+00:00",
+  "started_utc": "2026-10-18T10:30:04.764440+00:00",
+  "finished_utc": "2026-10-18T10:35:47.160438+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -33,12 +33,15 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 648,
-  "fresh_items": 627,
+  "total_items": 646,
+  "fresh_items": 625,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
-  "ai_failures": 4,
-  "held_or_rejected": 0,
+  "ai_failures": 2,
+  "held_or_rejected": 2,
   "published_count": 0,
-  "rejection_reasons": []
+  "rejection_reasons": [
+    "The supplied records provide only headline snippets with no article body or contextual detail specifying the underlying event, date, venue, or occasion of Justice Augie's remarks. Under the strict evidence rules, facts cannot be invented to achieve the required article depth, and the records do not provide enough substantive information to establish and report a corroborated central event.",
+    "Three independent publisher sources—TheCable, Daily Trust, and The Sun Nigeria—corroborate the central event concerning retired Justice Augie's public critique warning that corruption and chronic delays are turning Nigerian courts into 'market stalls'."
+  ]
 }
