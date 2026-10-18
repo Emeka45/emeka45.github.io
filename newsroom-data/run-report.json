@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-18T15:28:12.480325+00:00",
-  "finished_utc": "2026-10-18T15:29:06.310884+00:00",
+  "started_utc": "2026-10-18T18:19:41.991412+00:00",
+  "finished_utc": "2026-10-18T18:20:35.323830+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 4,
   "feed_count": 56,
@@ -33,17 +33,17 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 646,
-  "fresh_items": 625,
+  "total_items": 649,
+  "fresh_items": 628,
   "corroborated_candidates": 4,
   "ai_attempts": 4,
   "ai_failures": 0,
   "held_or_rejected": 4,
   "published_count": 0,
   "rejection_reasons": [
-    "None of the reported events are corroborated across at least two independent publisher domains. The Bauchi robbery arrests appear only on punchng.com, while the Bayelsa arrests appear only on thereporter.com.ng.",
-    "Although two distinct publisher domains (Punch Newspapers and Nigeria Info FM) share a matching headline regarding Governor Babajide Sanwo-Olu warning residents against building on wetlands, the provided records contain no article text, quotes, or substantive factual details. Composing a complete news article without these facts would violate the strict evidence guidelines against inventing information.",
-    "There are not at least two different publisher domains corroborating the same central event. The Punch record concerns Ogun State police officers summoned over an assault, while the remaining records are duplicates from a single domain (thereporter.com.ng) concerning an unrelated child abuse case in Abia State.",
-    "The provided source records do not contain corroboration from at least two distinct publisher domains for any single event. The Punch reported on an Ogun State Police incident involving four summoned officers, whereas The Reporter reported on an unrelated arraignment of a man for child abuse in Abia State."
+    "There is insufficient cross-publisher corroboration. None of the distinct events reported in the provided sources are supported by at least two independent publisher domains.",
+    "There are not two independent publisher domains corroborating the same central event. The report on Eric Opah in Abia State appears only on thereporter.com.ng, while the report regarding President Tinubu's warning to Ekiti politicians appears solely on punchng.com.",
+    "The provided sources do not meet the minimum corroboration requirement. There are no two distinct publisher domains reporting on the same central event; the rescue operation in Enugu is reported by only one domain (thereporter.com.ng), while the directive to troops in Oyo State appears only on punchng.com across duplicate records.",
+    "Fails corroboration requirement: Only one publisher domain (punchng.com) reports on Governor Sanwo-Olu pledging support for the 2026 CAF awards, while the other source from thereporter.com.ng covers an unrelated topic on state police."
   ]
 }
