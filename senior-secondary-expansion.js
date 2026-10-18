@@ -9,7 +9,7 @@ const SENIOR_ESC=s=>String(s).replaceAll("&","&amp;").replaceAll("<","&lt;").rep
 const SENIOR_CORE=(s,t,l)=>{const k=SENIOR_TYPE(s),stage=l==="SSS 1"?"foundation":l==="SSS 2"?"deeper application":"advanced integration and examination mastery";return `<p><strong>${SENIOR_ESC(t)}</strong> is a ${stage} unit in <strong>${SENIOR_ESC(s)}</strong>. Build understanding from precise definitions and core principles, then move to examples, applications and examination tasks.</p><p><strong>Study lens:</strong> ${SENIOR_LENS[k]}</p><p><strong>Application:</strong> Relate the topic to Nigerian school and real-life contexts where relevant. Explain reasoning, label work clearly, and verify facts, calculations, spelling, dates, units or procedures before submission.</p>`};
 const SENIOR_PRACTICE=(s,t)=>`<p><strong>Practice:</strong> Define <em>${SENIOR_ESC(t)}</em>, explain four important ideas, give one relevant Nigerian/everyday example and answer one examination-style question on the topic.</p><p><strong>Answer approach:</strong> Define the key term, organise the main points logically, support them with an example, evidence, calculation or procedure as appropriate, and conclude clearly.</p>`;
 SENIOR_EXTRA_N.push(...SENIOR_EXTRA_BUILD());
-const const TEXTBOOK_RESEARCH_SOURCES = {
+const TEXTBOOK_RESEARCH_SOURCES = {
   Biology: ["M. C. Michael, Essential Biology for Senior Secondary Schools (revised editions).","Sarojini T. Ramalingam, Lucy I. Akunwa & J.B.C. Obidiwe, Modern Biology for Senior Secondary Schools 1–3."],
   Chemistry: ["Osei Yaw Ababio, New School Chemistry for Senior Secondary Schools.","I. A. Odesina, Essential Chemistry for Senior Secondary Schools.","G. O. Ojokuku, Understanding Chemistry for Schools and Colleges."],
   Physics: ["M. W. Anyakoha, New School Physics for Senior Secondary Schools 1–3.","P. N. Okeke, F. N. Okeke & S. F. Akande, Senior Secondary Physics."],
@@ -193,7 +193,9 @@ TEXTBOOK_CHAPTERS = {
     <p>Use the current NERDC Senior Secondary Education Curriculum as the curriculum reference, together with your school's approved textbook and teacher guidance. For scientific facts, prefer authoritative educational and scientific sources and check the edition/date of any resource that may have changed.</p>
   </div>`,
 };
-function seniorDetail(level,subject,topic){\n  const textbookKey = `${level}|${subject}|${topic}`;\n  if (TEXTBOOK_CHAPTERS[textbookKey]) return TEXTBOOK_CHAPTERS[textbookKey];
+function seniorDetail(level,subject,topic){
+  const textbookKey = `${level}|${subject}|${topic}`;
+  if (TEXTBOOK_CHAPTERS[textbookKey]) return TEXTBOOK_CHAPTERS[textbookKey];
   const k=SENIOR_TYPE(subject);
   const lens=SENIOR_LENS[k];
   const stage=level==="SSS 1"?"foundation":level==="SSS 2"?"development and application":"advanced integration and examination mastery";
