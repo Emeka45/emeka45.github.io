@@ -51,5 +51,47 @@ main section{padding:48px 0}.section-head{display:flex;justify-content:space-bet
 <script>
 (function(){const input=document.getElementById('classSearch');const filter=document.getElementById('levelFilter');const cards=[...document.querySelectorAll('#classGrid .card')];const empty=document.getElementById('noResults');function apply(){const q=input.value.trim().toLowerCase();const level=filter.value;let count=0;cards.forEach(card=>{const matchText=(card.dataset.search+' '+card.innerText).toLowerCase().includes(q);const matchLevel=level==='all'||card.dataset.level===level;const show=matchText&&matchLevel;card.hidden=!show;if(show)count++;});empty.style.display=count?'none':'block';}input.addEventListener('input',apply);filter.addEventListener('change',apply);})();
 </script>
+
+<script>
+(function(){
+const $=id=>document.getElementById(id);
+const esc=value=>String(value||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});
+function addActions(box,name,markup){
+  const bar=document.createElement('div');bar.className='output-actions';
+  const print=document.createElement('button');print.type='button';print.textContent='Print / Save PDF';
+  const download=document.createElement('button');download.type='button';download.textContent='Download .txt';
+  bar.append(print,download);box.appendChild(bar);
+  print.addEventListener('click',function(){
+    const w=window.open('','_blank');
+    if(!w){alert('Allow pop-ups to print, or use Download .txt.');return;}
+    w.document.write('<!doctype html><html><head><title>'+esc(name)+'</title><meta name="viewport" content="width=device-width"><style>body{font:16px/1.6 Arial,sans-serif;max-width:800px;margin:35px auto;padding:0 18px}h1,h2{line-height:1.2}li{margin:6px 0}</style></head><body>'+markup+'</body></html>');
+    w.document.close();w.focus();setTimeout(function(){w.print();},300);
+  });
+  download.addEventListener('click',function(){
+    const text=markup.replace(/<\/(p|h[1-6]|li|div)>/gi,'\n').replace(/<[^>]+>/g,'').replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>');
+    const url=URL.createObjectURL(new Blob([text],{type:'text/plain;charset=utf-8'}));
+    const a=document.createElement('a');a.href=url;a.download=name+'.txt';a.click();setTimeout(function(){URL.revokeObjectURL(url);},1000);
+  });
+}
+$('lessonForm').addEventListener('submit',function(event){
+  event.preventDefault();
+  const v=id=>$(id).value.trim();
+  const cls=v('lpClass'),term=v('lpTerm'),subject=v('lpSubject'),topic=v('lpTopic'),week=v('lpWeek')||'To be confirmed',duration=v('lpDuration'),prior=v('lpPrior')||'Review prerequisite knowledge with learners';
+  const title=subject+': '+topic;
+  const body='<h2>'+esc(title)+'</h2><p><strong>Class:</strong> '+esc(cls)+' | <strong>Term:</strong> '+esc(term)+' | <strong>Week:</strong> '+esc(week)+' | <strong>Duration:</strong> '+esc(duration)+'</p><p><strong>Topic:</strong> '+esc(topic)+'</p><h3>Learning objectives</h3><p>By the end of the lesson, learners should be able to:</p><ol><li>Define or explain '+esc(topic)+'.</li><li>Identify its main features, steps or components.</li><li>Apply the idea to a suitable example or practical task.</li></ol><h3>Prior knowledge</h3><p>'+esc(prior)+'</p><h3>Teaching and learning materials</h3><p>Board, markers, relevant textbook or curriculum material, and subject-specific examples or materials.</p><h3>Lesson introduction</h3><p>Ask learners a short question connected to their everyday experience and link their answers to '+esc(topic)+'. State the lesson objectives.</p><h3>Lesson development</h3><ol><li><strong>Explore:</strong> introduce and explain the key idea using clear examples.</li><li><strong>Demonstrate:</strong> work through a model example or demonstration.</li><li><strong>Guided practice:</strong> solve a task with learners, asking them to explain their reasoning.</li><li><strong>Independent practice:</strong> learners complete an individual or group activity.</li></ol><h3>Assessment</h3><ol><li>Explain '+esc(topic)+' in your own words.</li><li>Give one relevant example.</li><li>Answer a short question or complete a practical task related to the lesson.</li></ol><h3>Conclusion</h3><p>Summarise the main points and ask learners to state one thing they have learned.</p><h3>Assignment</h3><p>Set three age-appropriate practice questions on '+esc(topic)+' and ask learners to bring one real-life example to the next lesson.</p><p><em>Teacher note: verify subject-specific facts, examples, and curriculum alignment before classroom use.</em></p>';
+  const out=$('lessonOutput');out.style.display='block';out.innerHTML='<h4>Lesson plan draft</h4>'+body;addActions(out,'lesson-plan-'+cls.toLowerCase().replace(/\s+/g,'-'),body);
+});
+$('examForm').addEventListener('submit',function(event){
+  event.preventDefault();
+  const v=id=>$(id).value.trim(),cls=v('exClass'),type=v('exType'),subject=v('exSubject'),count=v('exCount'),topics=v('exTopics').split(',').map(x=>x.trim()).filter(Boolean);
+  if(!topics.length){$('exTopics').focus();return;}
+  const topicList=topics.map(t=>'<li>'+esc(t)+'</li>').join('');
+  const prompts=topics.map(t=>'<li>Write one recall question and one understanding question on <strong>'+esc(t)+'</strong>.</li>').join('');
+  const body='<h2>'+esc(type)+' — '+esc(subject)+'</h2><p><strong>Class:</strong> '+esc(cls)+' | <strong>Objective section:</strong> '+esc(count)+' questions</p><h3>Coverage</h3><ul>'+topicList+'</ul><h3>Suggested assessment structure</h3><ol><li><strong>Section A — Objective:</strong> '+esc(count)+' multiple-choice questions across the listed topics; include plausible distractors and one defensible correct answer per item.</li><li><strong>Section B — Short answer:</strong> 4–6 questions testing definitions, explanation and worked examples.</li><li><strong>Section C — Application:</strong> 2–4 questions requiring learners to apply knowledge to examples or practical situations.</li></ol><h3>Question-writing prompts</h3><ol>'+prompts+'<li>Include at least one question that tests application rather than memorisation.</li></ol><h3>Quality check before use</h3><ul><li>Match every question to what was taught and the current scheme of work.</li><li>Confirm the answer key and marks; remove ambiguity and duplicate questions.</li><li>Use age-appropriate language and accessible formatting.</li></ul><p><em>This is a blueprint, not a finished examination paper. A teacher should write, verify and mark the actual questions.</em></p>';
+  const out=$('examOutput');out.style.display='block';out.innerHTML='<h4>Assessment blueprint</h4>'+body;addActions(out,'assessment-blueprint-'+cls.toLowerCase().replace(/\s+/g,'-'),body);
+});
+})();
+</script>
+
 </body>
 </html>
