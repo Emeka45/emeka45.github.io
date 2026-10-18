@@ -6,6 +6,8 @@ import json
 import os
 import re
 import urllib.error
+import email.utils
+import time
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -95,10 +97,64 @@ Set publish=false if the topic cannot be responsibly handled as an original usef
         headers={"Content-Type": "application/json", "x-goog-api-key": key},
         method="POST"
     )
-    with urllib.request.urlopen(req, timeout=90) as response:
-        data = json.loads(response.read().decode("utf-8"))
-    raw = data["candidates"][0]["content"]["parts"][0]["text"]
-    return json.loads(raw)
+    # Retry transient service/rate-limit errors, but fail immediately on exhausted quota
+    # so the workflow does not waste calls or hide the real cause.
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=90) as response:
+                data = json.loads(response.read().decode("utf-8"))
+            candidates = data.get("candidates") or []
+            if not candidates:
+                feedback = data.get("promptFeedback", {})
+                raise RuntimeError(
+                    "Gemini returned no article candidate. "
+                    + json.dumps(feedback, ensure_ascii=False)[:700]
+                )
+            parts = candidates[0].get("content", {}).get("parts", [])
+            raw = next((part.get("text") for part in parts if isinstance(part, dict) and part.get("text")), None)
+            if not raw:
+                finish = candidates[0].get("finishReason", "unknown")
+                raise RuntimeError(f"Gemini returned no text (finishReason={finish}).")
+            try:
+                return json.loads(raw)
+            except json.JSONDecodeError as exc:
+                raise RuntimeError(f"Gemini returned invalid JSON: {exc}") from exc
+        except urllib.error.HTTPError as exc:
+            error_body = exc.read().decode("utf-8", errors="replace")
+            message = error_body
+            try:
+                error_json = json.loads(error_body)
+                message = error_json.get("error", {}).get("message", error_body)
+                status = str(error_json.get("error", {}).get("status", ""))
+            except (ValueError, AttributeError):
+                status = ""
+            detail = str(message)[:900]
+            lower = (detail + " " + status).lower()
+            if exc.code == 429 and any(term in lower for term in (
+                "quota", "resource_exhausted", "requests per day",
+                "daily limit", "limit: 0", "billing"
+            )):
+                raise RuntimeError(
+                    "Gemini API quota/rate limit is exhausted for this key or project "
+                    f"(HTTP 429). Wait for the quota reset or check the key's API quota. Details: {detail}"
+                ) from exc
+            if exc.code not in (429, 500, 502, 503, 504) or attempt == 2:
+                raise RuntimeError(f"Gemini API request failed (HTTP {exc.code}): {detail}") from exc
+            delay = min(60, 15 * (2 ** attempt))
+            retry_after = exc.headers.get("Retry-After")
+            if retry_after:
+                try:
+                    delay = max(5, min(90, int(retry_after)))
+                except ValueError:
+                    try:
+                        retry_at = email.utils.parsedate_to_datetime(retry_after)
+                        if retry_at.tzinfo is None:
+                            retry_at = retry_at.replace(tzinfo=dt.timezone.utc)
+                        delay = max(5, min(90, int((retry_at - dt.datetime.now(dt.timezone.utc)).total_seconds())))
+                    except (TypeError, ValueError, OverflowError):
+                        pass
+            print(f"Gemini transient HTTP {exc.code}; retrying in {delay}s (attempt {attempt + 1}/3). Details: {detail[:300]}")
+            time.sleep(delay)
 
 def safe_body(raw, sources):
     allowed = {"p", "h2", "h3", "ul", "ol", "li", "strong", "em", "blockquote", "a"}
