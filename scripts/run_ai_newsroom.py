@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import json
 import os
+import datetime as dt
+import email.utils
 import re
 import time
 import urllib.error
@@ -179,14 +181,37 @@ SOURCE RECORDS:
             return json.loads(data['candidates'][0]['content']['parts'][0]['text'])
         except urllib.error.HTTPError as exc:
             last_error = exc
-            if exc.code not in (429, 500, 502, 503, 504):
-                raise
-            retry_after = exc.headers.get('Retry-After')
+            error_body = exc.read().decode('utf-8', errors='replace')
+            error_message = error_body
             try:
-                delay = max(8, min(60, int(retry_after))) if retry_after else 8 * (2 ** attempt)
-            except ValueError:
-                delay = 8 * (2 ** attempt)
-            print(f'Detailed AI transient HTTP {exc.code}; retrying in {delay}s (attempt {attempt + 1}/3)')
+                error_json = json.loads(error_body)
+                error_message = error_json.get('error', {}).get('message', error_body)
+            except (ValueError, AttributeError):
+                pass
+            if exc.code not in (429, 500, 502, 503, 504):
+                print(f'Detailed AI HTTP {exc.code}: {error_message[:800]}')
+                raise
+            # A depleted daily/project quota will not be fixed by rapid retries.
+            low_message = error_message.lower()
+            if exc.code == 429 and any(term in low_message for term in (
+                'exceeded your current quota', 'requests per day', 'quota_limit_value',
+                'quota exceeded', 'daily limit'
+            )):
+                raise RuntimeError(f'Gemini API quota exhausted (HTTP 429): {error_message[:800]}') from exc
+            retry_after = exc.headers.get('Retry-After')
+            delay = 15 * (2 ** attempt)
+            if retry_after:
+                try:
+                    delay = max(5, min(120, int(retry_after)))
+                except ValueError:
+                    try:
+                        retry_at = email.utils.parsedate_to_datetime(retry_after)
+                        if retry_at.tzinfo is None:
+                            retry_at = retry_at.replace(tzinfo=dt.timezone.utc)
+                        delay = max(5, min(120, int((retry_at - dt.datetime.now(dt.timezone.utc)).total_seconds())))
+                    except (TypeError, ValueError, OverflowError):
+                        pass
+            print(f'Detailed AI transient HTTP {exc.code}: {error_message[:500]}; retrying in {delay}s (attempt {attempt + 1}/3)')
             time.sleep(delay)
     raise last_error
 
