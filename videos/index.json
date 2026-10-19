@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-10-18T23:51:51.555070+00:00",
+  "updated_at": "2026-10-19T03:34:24.779574+00:00",
   "videos": [
+    {
+      "video_id": "vYK8UzELUFg",
+      "title": "10 Years of Netflix Korea",
+      "category": "Movies & TV",
+      "channel": "Netflix",
+      "channel_id": "UCWOA1ZGywLbqmigxE4Qlvuw",
+      "channel_url": "https://www.youtube.com/channel/UCWOA1ZGywLbqmigxE4Qlvuw",
+      "url": "https://www.youtube.com/watch?v=vYK8UzELUFg",
+      "embed_url": "https://www.youtube-nocookie.com/embed/vYK8UzELUFg",
+      "thumbnail": "https://i.ytimg.com/vi/vYK8UzELUFg/hqdefault.jpg",
+      "published_at": "2026-10-19T03:00:02+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Netflix presents a look back at a decade of Korean content in this video from the Movies and TV channel, celebrating ten years of Netflix Korea.",
+      "published_by_pipeline_at": "2026-10-19T03:34:24.779499+00:00"
+    },
     {
       "video_id": "yXhrZyFtB-o",
       "title": "\"I am Not Weak\" 💪 #Ma #Shorts",
@@ -1584,22 +1600,6 @@
       "is_short": false,
       "description": "Watch the official trailer for Obsess, provided by Netflix in the Movies and TV category, showcasing official promotional footage for the production.",
       "published_by_pipeline_at": "2026-10-14T11:23:54.307768+00:00"
-    },
-    {
-      "video_id": "7K7iGohHpWU",
-      "title": "Game Boy Advance –  Nintendo Classics – October 2026 Game Updates",
-      "category": "Gaming",
-      "channel": "Nintendo of America",
-      "channel_id": "UCGIY_O-8vW4rfX98KlMkvRg",
-      "channel_url": "https://www.youtube.com/channel/UCGIY_O-8vW4rfX98KlMkvRg",
-      "url": "https://www.youtube.com/watch?v=7K7iGohHpWU",
-      "embed_url": "https://www.youtube-nocookie.com/embed/7K7iGohHpWU",
-      "thumbnail": "https://i.ytimg.com/vi/7K7iGohHpWU/hqdefault.jpg",
-      "published_at": "2026-10-14T01:01:36+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Nintendo of America presents October 2026 game updates for the Game Boy Advance Nintendo Classics in this gaming video.",
-      "published_by_pipeline_at": "2026-10-14T11:24:50.284270+00:00"
     }
   ]
 }
