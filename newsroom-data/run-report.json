@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-19T07:16:04.872142+00:00",
-  "finished_utc": "2026-10-19T07:18:01.519299+00:00",
+  "started_utc": "2026-10-19T12:19:09.229337+00:00",
+  "finished_utc": "2026-10-19T12:21:44.270699+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 2,
   "feed_count": 56,
@@ -33,15 +33,15 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 652,
-  "fresh_items": 631,
+  "total_items": 653,
+  "fresh_items": 632,
   "corroborated_candidates": 2,
   "ai_attempts": 2,
   "ai_failures": 0,
   "held_or_rejected": 2,
   "published_count": 0,
   "rejection_reasons": [
-    "Insufficient corroboration across independent publisher domains. The report regarding the rescue of a kidnapped lieutenant colonel in Enugu is covered by only one domain (thereporter.com.ng), and the report on the Chief of Army Staff visiting Rwanda appears only on punchng.com. The strict editorial guidelines require at least two distinct publisher domains corroborating the same central event.",
-    "The supplied sources do not provide corroboration from at least two different publisher domains for the same central event. One domain covers Governor Hope Uzodimma discussing local government autonomy, while the other covers President Tinubu's upcoming Independence Day broadcast."
+    "Four national news platforms have corroborated statements and reform demands made by retired Supreme Court Justice Amina Augie regarding delays, corruption, disobedience of court orders, and the need for constitutional amendments to limit apex court caseloads.",
+    "Four distinct publisher domains materially corroborate retired Justice Augie's public remarks decrying corruption and delays turning Nigerian courts into 'market stalls'."
   ]
 }

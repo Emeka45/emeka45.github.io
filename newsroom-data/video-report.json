@@ -1,9 +1,10 @@
 {
-  "finished_utc": "2026-10-19T07:18:18.622346+00:00",
+  "finished_utc": "2026-10-19T12:21:58.119161+00:00",
   "max_new_videos_per_run": 20,
+  "max_selected_per_channel": 2,
   "max_shorts_per_run": 6,
   "channels_configured": 18,
-  "channels_resolved": 15,
+  "channels_resolved": 9,
   "resolver_methods": {
     "TED-Ed": "wikidata",
     "Veritasium": "wikidata",
@@ -15,14 +16,14 @@
     "PBS Terra": "unresolved",
     "Practical Engineering": "wikidata",
     "The B1M": "wikidata",
-    "iFixit": "wikidata",
+    "iFixit": "unresolved",
     "Tested": "unresolved",
-    "WIRED": "wikidata",
-    "Google DeepMind": "wikidata",
-    "Y Combinator": "wikidata",
+    "WIRED": "unresolved",
+    "Google DeepMind": "unresolved",
+    "Y Combinator": "unresolved",
     "Nairametrics": "unresolved",
-    "Vox": "wikidata",
-    "TED": "wikidata"
+    "Vox": "unresolved",
+    "TED": "unresolved"
   },
   "channels_with_errors": [
     {
@@ -30,40 +31,60 @@
       "error": "Could not resolve stable YouTube channel ID"
     },
     {
+      "channel": "iFixit",
+      "error": "Could not resolve stable YouTube channel ID"
+    },
+    {
       "channel": "Tested",
+      "error": "Could not resolve stable YouTube channel ID"
+    },
+    {
+      "channel": "WIRED",
+      "error": "Could not resolve stable YouTube channel ID"
+    },
+    {
+      "channel": "Google DeepMind",
+      "error": "Could not resolve stable YouTube channel ID"
+    },
+    {
+      "channel": "Y Combinator",
       "error": "Could not resolve stable YouTube channel ID"
     },
     {
       "channel": "Nairametrics",
       "error": "Could not resolve stable YouTube channel ID"
+    },
+    {
+      "channel": "Vox",
+      "error": "Could not resolve stable YouTube channel ID"
+    },
+    {
+      "channel": "TED",
+      "error": "Could not resolve stable YouTube channel ID"
     }
   ],
-  "discovered": 64,
-  "published": 20,
-  "shorts_published": 0,
-  "duplicates_skipped": 0,
-  "pruned_old_feed_videos": 20,
-  "total_stored": 20,
+  "discovered": 40,
+  "published": 16,
+  "shorts_published": 5,
+  "duplicates_skipped": 16,
+  "pruned_feed_videos": 0,
+  "total_stored": 36,
   "published_video_ids": [
-    "n_1wzYQwnts",
-    "NiCgcUTL9_Q",
-    "sRF_aTASC5c",
-    "X7oI4Umt3DU",
-    "h8wpG_A3_6g",
-    "1uTRlM6MbMo",
-    "xNyrk_DE7l0",
-    "ofxAtQhV-xA",
-    "JjhrN0FcHpM",
-    "5_B1Mq02wcI",
-    "HIUzrxQxTtw",
-    "-17mPnFxi30",
-    "r1wwtGgnzg4",
-    "stQfGfUSLQg",
-    "fbaw6suGQuc",
-    "cHqpobJIrKk",
-    "j1YmhOEyb4Y",
-    "3k2mpWrOD1s",
-    "1ICwPPBf4UQ",
-    "av3zdxYvCp8"
+    "QYThPEf6V08",
+    "ALC4bdP9kV4",
+    "ydZfcgxe59s",
+    "FdIupak-jyk",
+    "h6CmKF-mN2U",
+    "ujkD4SxPKOI",
+    "G3hXvByzLHs",
+    "ONAuUyml0yI",
+    "pXypQ6d_iDg",
+    "vS6HEes8daw",
+    "_y9JuojAIg0",
+    "l4zB1FrNjjY",
+    "PpIfxDziscg",
+    "IHkp5Kq72ro",
+    "zqydcyabedo",
+    "M_hr2SbTx2c"
   ]
 }

@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-10-19T07:18:18.621505+00:00",
+  "updated_at": "2026-10-19T12:21:58.118197+00:00",
   "videos": [
+    {
+      "video_id": "l4zB1FrNjjY",
+      "title": "Hope for Africa's Wild Future #AfricaEarthsWildHome",
+      "category": "Nature & Culture",
+      "channel": "National Geographic",
+      "channel_id": "UCpVm7bg6pXKo1Pr6k5kxG9A",
+      "channel_url": "https://www.youtube.com/channel/UCpVm7bg6pXKo1Pr6k5kxG9A",
+      "url": "https://www.youtube.com/shorts/l4zB1FrNjjY",
+      "embed_url": "https://www.youtube-nocookie.com/embed/l4zB1FrNjjY",
+      "thumbnail": "https://i.ytimg.com/vi/l4zB1FrNjjY/hqdefault.jpg",
+      "published_at": "2026-10-18T15:00:20+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Explore hope for Africa's wild future in this National Geographic video from the Nature & Culture category, highlighting the continent's resilient ecosystems and wildlife.",
+      "published_by_pipeline_at": "2026-10-19T12:21:55.255315+00:00"
+    },
     {
       "video_id": "X7oI4Umt3DU",
       "title": "AI Safety Fact vs. Fiction | YC Paper Club",
@@ -48,6 +64,22 @@
       "is_short": false,
       "description": "BBC Earth — 4 Hours of 4K Nature Scenes | 4K UHD | BBC Earth. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-10-19T07:18:17.111449+00:00"
+    },
+    {
+      "video_id": "zqydcyabedo",
+      "title": "Lending a helping hand to a young pangolin foraging for food #PerpetualPlanet #AfricaEarthsWildHome",
+      "category": "Nature & Culture",
+      "channel": "National Geographic",
+      "channel_id": "UCpVm7bg6pXKo1Pr6k5kxG9A",
+      "channel_url": "https://www.youtube.com/channel/UCpVm7bg6pXKo1Pr6k5kxG9A",
+      "url": "https://www.youtube.com/shorts/zqydcyabedo",
+      "embed_url": "https://www.youtube-nocookie.com/embed/zqydcyabedo",
+      "thumbnail": "https://i.ytimg.com/vi/zqydcyabedo/hqdefault.jpg",
+      "published_at": "2026-10-16T15:00:13+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "National Geographic shares a Nature and Culture video showing a young pangolin receiving assistance while foraging for food in Africa.",
+      "published_by_pipeline_at": "2026-10-19T12:21:57.987677+00:00"
     },
     {
       "video_id": "j1YmhOEyb4Y",
@@ -114,6 +146,54 @@
       "published_by_pipeline_at": "2026-10-19T07:18:18.621466+00:00"
     },
     {
+      "video_id": "QYThPEf6V08",
+      "title": "Nature's Tiny Terrors | BBC Earth",
+      "category": "Nature & Wildlife",
+      "channel": "BBC Earth",
+      "channel_id": "UCwmZiChSryoWQCZMIQezgTg",
+      "channel_url": "https://www.youtube.com/channel/UCwmZiChSryoWQCZMIQezgTg",
+      "url": "https://www.youtube.com/watch?v=QYThPEf6V08",
+      "embed_url": "https://www.youtube-nocookie.com/embed/QYThPEf6V08",
+      "thumbnail": "https://i.ytimg.com/vi/QYThPEf6V08/hqdefault.jpg",
+      "published_at": "2026-10-15T15:00:17+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Explore nature's tiny terrors in this practical knowledge video from BBC Earth, showcasing fascinating wildlife behavior in the natural world.",
+      "published_by_pipeline_at": "2026-10-19T12:21:47.881210+00:00"
+    },
+    {
+      "video_id": "ALC4bdP9kV4",
+      "title": "NASA ARSET: NOAA’s TEMPO Aerosol Products for Hourly Aerosol Monitoring over North America, Part 1/2",
+      "category": "Space & Discovery",
+      "channel": "NASA",
+      "channel_id": "UC_aP7p621ATY_yAa8jMqUVA",
+      "channel_url": "https://www.youtube.com/channel/UC_aP7p621ATY_yAa8jMqUVA",
+      "url": "https://www.youtube.com/watch?v=ALC4bdP9kV4",
+      "embed_url": "https://www.youtube-nocookie.com/embed/ALC4bdP9kV4",
+      "thumbnail": "https://i.ytimg.com/vi/ALC4bdP9kV4/hqdefault.jpg",
+      "published_at": "2026-10-14T20:14:26+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "In this NASA Space and Discovery video, explore NOAA's TEMPO aerosol products for hourly aerosol monitoring over North America in part one of a two-part series.",
+      "published_by_pipeline_at": "2026-10-19T12:21:48.548204+00:00"
+    },
+    {
+      "video_id": "ydZfcgxe59s",
+      "title": "Extraordinary Big Cat Moments | BBC Earth",
+      "category": "Nature & Wildlife",
+      "channel": "BBC Earth",
+      "channel_id": "UCwmZiChSryoWQCZMIQezgTg",
+      "channel_url": "https://www.youtube.com/channel/UCwmZiChSryoWQCZMIQezgTg",
+      "url": "https://www.youtube.com/watch?v=ydZfcgxe59s",
+      "embed_url": "https://www.youtube-nocookie.com/embed/ydZfcgxe59s",
+      "thumbnail": "https://i.ytimg.com/vi/ydZfcgxe59s/hqdefault.jpg",
+      "published_at": "2026-10-14T18:06:23+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Experience extraordinary big cat moments in this nature and wildlife video presented by BBC Earth, showcasing fascinating animal behaviors and remarkable wildlife encounters.",
+      "published_by_pipeline_at": "2026-10-19T12:21:49.179379+00:00"
+    },
+    {
       "video_id": "h8wpG_A3_6g",
       "title": "The Skyscraper That's Dividing Europe",
       "category": "Engineering & Infrastructure",
@@ -130,6 +210,22 @@
       "published_by_pipeline_at": "2026-10-19T07:18:10.335582+00:00"
     },
     {
+      "video_id": "FdIupak-jyk",
+      "title": "CSA Astronaut Discusses Life in Space with Canadian Media – Tuesday, October 13, 2026",
+      "category": "Space & Discovery",
+      "channel": "NASA",
+      "channel_id": "UC_aP7p621ATY_yAa8jMqUVA",
+      "channel_url": "https://www.youtube.com/channel/UC_aP7p621ATY_yAa8jMqUVA",
+      "url": "https://www.youtube.com/watch?v=FdIupak-jyk",
+      "embed_url": "https://www.youtube-nocookie.com/embed/FdIupak-jyk",
+      "thumbnail": "https://i.ytimg.com/vi/FdIupak-jyk/hqdefault.jpg",
+      "published_at": "2026-10-13T16:40:03+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "In this video from NASA under Space & Discovery, a CSA astronaut discusses life in space with Canadian media on Tuesday, October 13, 2026.",
+      "published_by_pipeline_at": "2026-10-19T12:21:49.875765+00:00"
+    },
+    {
       "video_id": "1uTRlM6MbMo",
       "title": "How to present your ideas effectively",
       "category": "Ideas & Explainers",
@@ -144,6 +240,22 @@
       "is_short": false,
       "description": "TED-Ed's Ideas & Explainers video provides actionable knowledge and practical strategies on how to present your ideas effectively.",
       "published_by_pipeline_at": "2026-10-19T07:18:10.974509+00:00"
+    },
+    {
+      "video_id": "M_hr2SbTx2c",
+      "title": "What is a GROUNDscraper?",
+      "category": "Engineering & Infrastructure",
+      "channel": "The B1M",
+      "channel_id": "UC6n8I1UDTKP1IWjQMg6_TwA",
+      "channel_url": "https://www.youtube.com/channel/UC6n8I1UDTKP1IWjQMg6_TwA",
+      "url": "https://www.youtube.com/shorts/M_hr2SbTx2c",
+      "embed_url": "https://www.youtube-nocookie.com/embed/M_hr2SbTx2c",
+      "thumbnail": "https://i.ytimg.com/vi/M_hr2SbTx2c/hqdefault.jpg",
+      "published_at": "2026-10-12T18:18:15+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "The B1M — What is a GROUNDscraper?. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-10-19T12:21:58.118147+00:00"
     },
     {
       "video_id": "NiCgcUTL9_Q",
@@ -178,6 +290,22 @@
       "published_by_pipeline_at": "2026-10-19T07:18:11.651657+00:00"
     },
     {
+      "video_id": "PpIfxDziscg",
+      "title": "Why NORTH KOREA Built a Beach Resort",
+      "category": "Engineering & Infrastructure",
+      "channel": "The B1M",
+      "channel_id": "UC6n8I1UDTKP1IWjQMg6_TwA",
+      "channel_url": "https://www.youtube.com/channel/UC6n8I1UDTKP1IWjQMg6_TwA",
+      "url": "https://www.youtube.com/shorts/PpIfxDziscg",
+      "embed_url": "https://www.youtube-nocookie.com/embed/PpIfxDziscg",
+      "thumbnail": "https://i.ytimg.com/vi/PpIfxDziscg/hqdefault.jpg",
+      "published_at": "2026-10-12T15:04:00+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "From engineering and infrastructure channel The B1M, this video explores the structural realities and context behind why North Korea built a beach resort.",
+      "published_by_pipeline_at": "2026-10-19T12:21:57.241706+00:00"
+    },
+    {
       "video_id": "sRF_aTASC5c",
       "title": "Inside The World's Darkest Airport",
       "category": "Engineering & Infrastructure",
@@ -194,6 +322,22 @@
       "published_by_pipeline_at": "2026-10-19T07:18:08.979561+00:00"
     },
     {
+      "video_id": "h6CmKF-mN2U",
+      "title": "Which is better: Buying or renting a home? - Ella Feldman",
+      "category": "Ideas & Explainers",
+      "channel": "TED-Ed",
+      "channel_id": "UCsooa4yRKGN_zEE8iknghZA",
+      "channel_url": "https://www.youtube.com/channel/UCsooa4yRKGN_zEE8iknghZA",
+      "url": "https://www.youtube.com/watch?v=h6CmKF-mN2U",
+      "embed_url": "https://www.youtube-nocookie.com/embed/h6CmKF-mN2U",
+      "thumbnail": "https://i.ytimg.com/vi/h6CmKF-mN2U/hqdefault.jpg",
+      "published_at": "2026-10-08T15:01:11+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "In this TED-Ed Ideas & Explainers video, Ella Feldman explores whether buying or renting a home is better by examining both options.",
+      "published_by_pipeline_at": "2026-10-19T12:21:50.504873+00:00"
+    },
+    {
       "video_id": "ofxAtQhV-xA",
       "title": "How Jeetu Patel Runs Cisco Like the World’s Largest Startup",
       "category": "Business & Startups",
@@ -208,6 +352,22 @@
       "is_short": false,
       "description": "Discover how Cisco is run like the world’s largest startup in this Y Combinator business and startups video featuring insights from Jeetu Patel.",
       "published_by_pipeline_at": "2026-10-19T07:18:12.261051+00:00"
+    },
+    {
+      "video_id": "_y9JuojAIg0",
+      "title": "We Finally Know More About Humanity’s First Civilization",
+      "category": "Science & Big Ideas",
+      "channel": "Kurzgesagt – In a Nutshell",
+      "channel_id": "UCsXVk37bltHxD1rDPwtNM8Q",
+      "channel_url": "https://www.youtube.com/channel/UCsXVk37bltHxD1rDPwtNM8Q",
+      "url": "https://www.youtube.com/watch?v=_y9JuojAIg0",
+      "embed_url": "https://www.youtube-nocookie.com/embed/_y9JuojAIg0",
+      "thumbnail": "https://i.ytimg.com/vi/_y9JuojAIg0/hqdefault.jpg",
+      "published_at": "2026-10-08T14:07:00+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Kurzgesagt – In a Nutshell explores science and big ideas in a practical video examining new discoveries about humanity's first civilization.",
+      "published_by_pipeline_at": "2026-10-19T12:21:54.269791+00:00"
     },
     {
       "video_id": "JjhrN0FcHpM",
@@ -242,6 +402,38 @@
       "published_by_pipeline_at": "2026-10-19T07:18:13.693593+00:00"
     },
     {
+      "video_id": "ujkD4SxPKOI",
+      "title": "AI Just Crossed the Terrifying Line - Now What?",
+      "category": "Science & Big Ideas",
+      "channel": "Kurzgesagt – In a Nutshell",
+      "channel_id": "UCsXVk37bltHxD1rDPwtNM8Q",
+      "channel_url": "https://www.youtube.com/channel/UCsXVk37bltHxD1rDPwtNM8Q",
+      "url": "https://www.youtube.com/watch?v=ujkD4SxPKOI",
+      "embed_url": "https://www.youtube-nocookie.com/embed/ujkD4SxPKOI",
+      "thumbnail": "https://i.ytimg.com/vi/ujkD4SxPKOI/hqdefault.jpg",
+      "published_at": "2026-10-05T14:58:58+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "In this science and big ideas video by Kurzgesagt – In a Nutshell, explore what happens now that artificial intelligence has crossed a terrifying new line.",
+      "published_by_pipeline_at": "2026-10-19T12:21:51.068670+00:00"
+    },
+    {
+      "video_id": "IHkp5Kq72ro",
+      "title": "How Dangerous Are Non-Stick Pans?",
+      "category": "Science & Discovery",
+      "channel": "Veritasium",
+      "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+      "channel_url": "https://www.youtube.com/channel/UCHnyfMqiRRG1u-2MsSQLbXA",
+      "url": "https://www.youtube.com/shorts/IHkp5Kq72ro",
+      "embed_url": "https://www.youtube-nocookie.com/embed/IHkp5Kq72ro",
+      "thumbnail": "https://i.ytimg.com/vi/IHkp5Kq72ro/hqdefault.jpg",
+      "published_at": "2026-10-01T18:26:42+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Veritasium — How Dangerous Are Non-Stick Pans?. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-10-19T12:21:57.363149+00:00"
+    },
+    {
       "video_id": "HIUzrxQxTtw",
       "title": "From deepfakes to DNA: the science of watermarking AI",
       "category": "AI & Technology",
@@ -256,6 +448,54 @@
       "is_short": false,
       "description": "Google DeepMind explores the science of watermarking AI, examining its applications from deepfakes to DNA in this technology video.",
       "published_by_pipeline_at": "2026-10-19T07:18:14.480420+00:00"
+    },
+    {
+      "video_id": "G3hXvByzLHs",
+      "title": "6 ways to be more persuasive",
+      "category": "Ideas & Explainers",
+      "channel": "TED-Ed",
+      "channel_id": "UCsooa4yRKGN_zEE8iknghZA",
+      "channel_url": "https://www.youtube.com/channel/UCsooa4yRKGN_zEE8iknghZA",
+      "url": "https://www.youtube.com/watch?v=G3hXvByzLHs",
+      "embed_url": "https://www.youtube-nocookie.com/embed/G3hXvByzLHs",
+      "thumbnail": "https://i.ytimg.com/vi/G3hXvByzLHs/hqdefault.jpg",
+      "published_at": "2026-10-01T15:00:32+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "TED-Ed's Ideas and Explainers video shares six effective methods to improve your persuasiveness and communication skills.",
+      "published_by_pipeline_at": "2026-10-19T12:21:51.627793+00:00"
+    },
+    {
+      "video_id": "ONAuUyml0yI",
+      "title": "We're trying something new...",
+      "category": "Science & Discovery",
+      "channel": "Veritasium",
+      "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+      "channel_url": "https://www.youtube.com/channel/UCHnyfMqiRRG1u-2MsSQLbXA",
+      "url": "https://www.youtube.com/watch?v=ONAuUyml0yI",
+      "embed_url": "https://www.youtube-nocookie.com/embed/ONAuUyml0yI",
+      "thumbnail": "https://i.ytimg.com/vi/ONAuUyml0yI/hqdefault.jpg",
+      "published_at": "2026-09-30T19:19:10+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "In this Science & Discovery video from Veritasium titled \"We're trying something new...,\" the channel introduces an experimental new format for exploring knowledge and practical concepts.",
+      "published_by_pipeline_at": "2026-10-19T12:21:52.297387+00:00"
+    },
+    {
+      "video_id": "pXypQ6d_iDg",
+      "title": "INSIDE a Nuclear Reactor Core - Smarter Every Day 317",
+      "category": "Science & Discovery",
+      "channel": "SmarterEveryDay",
+      "channel_id": "UC6107grRI4m0o2-emgoDnAA",
+      "channel_url": "https://www.youtube.com/channel/UC6107grRI4m0o2-emgoDnAA",
+      "url": "https://www.youtube.com/watch?v=pXypQ6d_iDg",
+      "embed_url": "https://www.youtube-nocookie.com/embed/pXypQ6d_iDg",
+      "thumbnail": "https://i.ytimg.com/vi/pXypQ6d_iDg/hqdefault.jpg",
+      "published_at": "2026-09-26T14:34:03+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "In this video from Smarter Every Day, journey inside a nuclear reactor core to explore the science and discovery behind its operation and practical mechanics.",
+      "published_by_pipeline_at": "2026-10-19T12:21:52.873968+00:00"
     },
     {
       "video_id": "n_1wzYQwnts",
@@ -320,6 +560,22 @@
       "is_short": false,
       "description": "Practical Engineering — The Grid That Doubles the Strength of the Ground. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-10-19T07:18:16.126921+00:00"
+    },
+    {
+      "video_id": "vS6HEes8daw",
+      "title": "The PROBLEM with Capitalism - Smarter Every Day 316",
+      "category": "Science & Discovery",
+      "channel": "SmarterEveryDay",
+      "channel_id": "UC6107grRI4m0o2-emgoDnAA",
+      "channel_url": "https://www.youtube.com/channel/UC6107grRI4m0o2-emgoDnAA",
+      "url": "https://www.youtube.com/watch?v=vS6HEes8daw",
+      "embed_url": "https://www.youtube-nocookie.com/embed/vS6HEes8daw",
+      "thumbnail": "https://i.ytimg.com/vi/vS6HEes8daw/hqdefault.jpg",
+      "published_at": "2026-07-26T14:00:36+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Smarter Every Day explores the problem with capitalism in this science and discovery video, offering knowledge and practical insights into the economic system.",
+      "published_by_pipeline_at": "2026-10-19T12:21:53.486056+00:00"
     }
   ]
 }
