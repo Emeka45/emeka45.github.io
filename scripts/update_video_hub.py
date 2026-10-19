@@ -17,22 +17,24 @@ INDEX_FILE = ROOT / "videos" / "index.json"
 REPORT_FILE = ROOT / "newsroom-data" / "video-report.json"
 MAX_NEW_VIDEOS = 20
 MAX_PER_CHANNEL = 5
+MAX_SELECTED_PER_CHANNEL = 2
 MAX_SHORTS_PER_RUN = 6
-USER_AGENT = "C-O-Eric-Video-Hub/2.0 (+https://emeka45-github-io.pages.dev/videos.html)"
+USER_AGENT = "C-O-Eric-Video-Hub/2.0"
 ATOM = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015"}
 
-# These signals reward useful explainers, demonstrations, documentaries and real-world knowledge.
+# Reward useful explainers, demonstrations, documentaries and real-world knowledge.
 KNOWLEDGE_TERMS = (
     "how", "why", "explained", "explainer", "science", "technology", "ai", "artificial intelligence",
     "engineering", "experiment", "documentary", "history", "discovery", "nature", "wildlife", "space",
     "future", "innovation", "behind the scenes", "making", "build", "repair", "fix", "guide", "tutorial",
     "demonstration", "demonstrates", "process", "business", "money", "economy", "entrepreneur", "startup",
     "design", "infrastructure", "environment", "climate", "health", "culture", "society", "interview",
-    "deep dive", "case study", "facts", "truth", "myth", "engineering", "craft", "practical"
+    "deep dive", "case study", "facts", "myth", "craft", "practical", "experiment", "invention", "architecture"
 )
 PROMO_TERMS = (
     "official trailer", "official teaser", "teaser trailer", "trailer", "movie clip", "tv spot",
-    "season trailer", "episode", "full episode", "official music", "music video", "soundtrack", "reaction"
+    "season trailer", "episode", "full episode", "official music", "music video", "soundtrack", "reaction",
+    "premiere", "red carpet", "behind the scenes of the movie"
 )
 
 
@@ -78,7 +80,7 @@ def score_video(title: str, category: str, is_short: bool) -> int:
     text = f"{title} {category}".lower()
     score = 40 if not is_short else 10
     score += sum(8 for term in KNOWLEDGE_TERMS if term in text)
-    score -= sum(30 for term in PROMO_TERMS if term in text)
+    score -= sum(35 for term in PROMO_TERMS if term in text)
     return score
 
 
@@ -97,7 +99,6 @@ def parse_feed(channel_id: str, source: dict) -> list[dict]:
         is_short = "/shorts/" in link.lower()
         clean_title = html.unescape(title)
         score = score_video(clean_title, source["category"], is_short)
-        # Do not let obvious promotional/movie-style items crowd out useful material.
         if score < 25:
             continue
         entries.append({
@@ -165,7 +166,6 @@ def main() -> None:
     config = json.loads(SOURCE_FILE.read_text(encoding="utf-8"))
     allowed_channels = {str(source.get("name", "")).strip() for source in config}
     index = load_index()
-    # Remove the old gaming/movie/anime feed so the hub does not slowly retain its previous identity.
     videos = [v for v in index.get("videos", []) if v.get("channel") in allowed_channels]
     existing = {v.get("video_id") for v in videos if v.get("video_id")}
 
@@ -183,16 +183,21 @@ def main() -> None:
 
     discovered.sort(key=lambda v: (v.get("selection_priority", 0), parse_iso(v.get("published_at", ""))), reverse=True)
     selected, selected_ids = [], set()
+    selected_by_channel: dict[str, int] = {}
     duplicates_skipped = 0
     shorts_selected = 0
     for item in discovered:
+        channel = item["channel"]
         if item["video_id"] in existing or item["video_id"] in selected_ids:
             duplicates_skipped += 1
+            continue
+        if selected_by_channel.get(channel, 0) >= MAX_SELECTED_PER_CHANNEL:
             continue
         if item.get("is_short") and shorts_selected >= MAX_SHORTS_PER_RUN:
             continue
         selected.append(item)
         selected_ids.add(item["video_id"])
+        selected_by_channel[channel] = selected_by_channel.get(channel, 0) + 1
         if item.get("is_short"):
             shorts_selected += 1
         if len(selected) >= MAX_NEW_VIDEOS:
@@ -203,9 +208,11 @@ def main() -> None:
         item["published_by_pipeline_at"] = datetime.now(timezone.utc).isoformat()
         item.pop("selection_priority", None)
 
+    before_prune = len(videos)
     videos.extend(selected)
     videos.sort(key=lambda v: parse_iso(v.get("published_at", "")), reverse=True)
     videos = videos[:100]
+    pruned_count = max(0, before_prune + len(selected) - len(videos))
     index["updated_at"] = datetime.now(timezone.utc).isoformat()
     index["videos"] = videos
     INDEX_FILE.write_text(json.dumps(index, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -213,6 +220,7 @@ def main() -> None:
     report = {
         "finished_utc": datetime.now(timezone.utc).isoformat(),
         "max_new_videos_per_run": MAX_NEW_VIDEOS,
+        "max_selected_per_channel": MAX_SELECTED_PER_CHANNEL,
         "max_shorts_per_run": MAX_SHORTS_PER_RUN,
         "channels_configured": len(config),
         "channels_resolved": len(config) - len(channel_errors),
@@ -222,7 +230,7 @@ def main() -> None:
         "published": len(selected),
         "shorts_published": shorts_selected,
         "duplicates_skipped": duplicates_skipped,
-        "pruned_old_feed_videos": max(0, len(index.get("videos", [])) - len(videos) + len(selected)),
+        "pruned_feed_videos": pruned_count,
         "total_stored": len(videos),
         "published_video_ids": [x["video_id"] for x in selected],
     }
