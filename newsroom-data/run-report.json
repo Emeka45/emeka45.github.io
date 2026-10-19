@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-19T03:32:00.186144+00:00",
-  "finished_utc": "2026-10-19T03:34:19.522757+00:00",
+  "started_utc": "2026-10-19T04:30:59.643164+00:00",
+  "finished_utc": "2026-10-19T04:31:43.452903+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 2,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 404: Not Found"
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -37,10 +37,11 @@
   "fresh_items": 631,
   "corroborated_candidates": 2,
   "ai_attempts": 2,
-  "ai_failures": 1,
-  "held_or_rejected": 1,
+  "ai_failures": 0,
+  "held_or_rejected": 2,
   "published_count": 0,
   "rejection_reasons": [
-    "The supplied source records contain only headline snippets with no underlying article text, dates, locations, or substantive context. There is insufficient factual detail to produce an accurate, corroborated news report without inventing information."
+    "The provided source records do not contain corroboration across at least two independent publisher domains for the same event. The reports about Kano State's police commissioner rejigging security architecture come solely from punchng.com, while the headline concerning Governor Sanwo-Olu in Lagos appears only on thereporter.com.ng. Because these cover two distinct events in different states without multi-source verification, publishing criteria are not met.",
+    "There are not at least two different publisher domains corroborating the same central event. One story covers Governor Hope Uzodimma discussing local government autonomy (punchng.com), while the other covers President Tinubu's planned Independence Day broadcast (thereporter.com.ng)."
   ]
 }

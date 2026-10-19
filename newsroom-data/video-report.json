@@ -1,9 +1,9 @@
 {
-  "finished_utc": "2026-10-19T03:34:24.781263+00:00",
+  "finished_utc": "2026-10-19T04:31:51.103611+00:00",
   "max_new_videos_per_run": 20,
   "max_shorts_per_run": 6,
   "channels_configured": 15,
-  "channels_resolved": 4,
+  "channels_resolved": 1,
   "resolver_methods": {
     "PlayStation": "wikidata",
     "Xbox": "wikidata",
@@ -31,6 +31,14 @@
       "error": "HTTP Error 404: Not Found"
     },
     {
+      "channel": "Nintendo of America",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "Ubisoft",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
       "channel": "Bandai Namco Entertainment America",
       "error": "Could not resolve stable YouTube channel ID"
     },
@@ -48,7 +56,7 @@
     },
     {
       "channel": "Universal Pictures",
-      "error": "HTTP Error 500: Internal Server Error"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "channel": "Crunchyroll",
@@ -60,6 +68,10 @@
     },
     {
       "channel": "MAPPA",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "channel": "Disney",
       "error": "HTTP Error 404: Not Found"
     },
     {
@@ -67,12 +79,10 @@
       "error": "HTTP Error 404: Not Found"
     }
   ],
-  "discovered": 20,
-  "published": 1,
+  "discovered": 5,
+  "published": 0,
   "shorts_published": 0,
-  "duplicates_skipped": 19,
+  "duplicates_skipped": 5,
   "total_stored": 100,
-  "published_video_ids": [
-    "vYK8UzELUFg"
-  ]
+  "published_video_ids": []
 }
