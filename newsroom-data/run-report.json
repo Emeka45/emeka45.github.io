@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-19T04:30:59.643164+00:00",
-  "finished_utc": "2026-10-19T04:31:43.452903+00:00",
+  "started_utc": "2026-10-19T07:16:04.872142+00:00",
+  "finished_utc": "2026-10-19T07:18:01.519299+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 2,
   "feed_count": 56,
@@ -10,7 +10,7 @@
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -41,7 +41,7 @@
   "held_or_rejected": 2,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided source records do not contain corroboration across at least two independent publisher domains for the same event. The reports about Kano State's police commissioner rejigging security architecture come solely from punchng.com, while the headline concerning Governor Sanwo-Olu in Lagos appears only on thereporter.com.ng. Because these cover two distinct events in different states without multi-source verification, publishing criteria are not met.",
-    "There are not at least two different publisher domains corroborating the same central event. One story covers Governor Hope Uzodimma discussing local government autonomy (punchng.com), while the other covers President Tinubu's planned Independence Day broadcast (thereporter.com.ng)."
+    "Insufficient corroboration across independent publisher domains. The report regarding the rescue of a kidnapped lieutenant colonel in Enugu is covered by only one domain (thereporter.com.ng), and the report on the Chief of Army Staff visiting Rwanda appears only on punchng.com. The strict editorial guidelines require at least two distinct publisher domains corroborating the same central event.",
+    "The supplied sources do not provide corroboration from at least two different publisher domains for the same central event. One domain covers Governor Hope Uzodimma discussing local government autonomy, while the other covers President Tinubu's upcoming Independence Day broadcast."
   ]
 }
