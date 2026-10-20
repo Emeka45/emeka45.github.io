@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T22:04:31.211978+00:00",
+  "updated_at": "2026-10-20T03:45:25.847094+00:00",
   "videos": [
     {
       "video_id": "XrdGM7gNvU8",
@@ -736,6 +736,22 @@
       "is_short": false,
       "description": "In this science and discovery video from SmarterEveryDay, the creator explores personal perception and self-awareness through the psychological concept known as the Johari Window.",
       "published_by_pipeline_at": "2026-10-19T22:04:27.497343+00:00"
+    },
+    {
+      "video_id": "-0JKHuzJ67A",
+      "title": "Everything About Disc Golf Aerodynamics - Smarter Every Day 313",
+      "category": "Science & Discovery",
+      "channel": "SmarterEveryDay",
+      "channel_id": "UC6107grRI4m0o2-emgoDnAA",
+      "channel_url": "https://www.youtube.com/channel/UC6107grRI4m0o2-emgoDnAA",
+      "url": "https://www.youtube.com/watch?v=-0JKHuzJ67A",
+      "embed_url": "https://www.youtube-nocookie.com/embed/-0JKHuzJ67A",
+      "thumbnail": "https://i.ytimg.com/vi/-0JKHuzJ67A/hqdefault.jpg",
+      "published_at": "2026-03-06T20:30:16+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "This Science & Discovery video from SmarterEveryDay, titled \"Everything About Disc Golf Aerodynamics,\" explores the standalone knowledge and practical mechanics of disc golf aerodynamics.",
+      "published_by_pipeline_at": "2026-10-20T03:45:25.847040+00:00"
     }
   ]
 }
