@@ -1,6 +1,38 @@
 {
-  "updated_at": "2026-10-20T16:34:17.054777+00:00",
+  "updated_at": "2026-10-20T21:22:39.988371+00:00",
   "videos": [
+    {
+      "video_id": "QdUGDEkRMME",
+      "title": "There are more than 6,000 exoplanets",
+      "category": "Nature & Culture",
+      "channel": "National Geographic",
+      "channel_id": "UCpVm7bg6pXKo1Pr6k5kxG9A",
+      "channel_url": "https://www.youtube.com/channel/UCpVm7bg6pXKo1Pr6k5kxG9A",
+      "url": "https://www.youtube.com/shorts/QdUGDEkRMME",
+      "embed_url": "https://www.youtube-nocookie.com/embed/QdUGDEkRMME",
+      "thumbnail": "https://i.ytimg.com/vi/QdUGDEkRMME/hqdefault.jpg",
+      "published_at": "2026-10-20T19:00:04+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "National Geographic's Nature and Culture video explores the vast universe by detailing how there are currently more than 6,000 known exoplanets.",
+      "published_by_pipeline_at": "2026-10-20T21:22:39.988318+00:00"
+    },
+    {
+      "video_id": "3II9AFi5U0M",
+      "title": "National Geographic's #BestOfTheWorld Guide 2027",
+      "category": "Nature & Culture",
+      "channel": "National Geographic",
+      "channel_id": "UCpVm7bg6pXKo1Pr6k5kxG9A",
+      "channel_url": "https://www.youtube.com/channel/UCpVm7bg6pXKo1Pr6k5kxG9A",
+      "url": "https://www.youtube.com/shorts/3II9AFi5U0M",
+      "embed_url": "https://www.youtube-nocookie.com/embed/3II9AFi5U0M",
+      "thumbnail": "https://i.ytimg.com/vi/3II9AFi5U0M/hqdefault.jpg",
+      "published_at": "2026-10-20T16:32:13+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Explore the National Geographic channel's Nature & Culture video guide featuring the #BestOfTheWorld for 2027, offering practical insights and essential knowledge.",
+      "published_by_pipeline_at": "2026-10-20T21:22:39.327468+00:00"
+    },
     {
       "video_id": "a1rdU67lvtM",
       "title": "Presidential Historian Answers US Election Questions",

@@ -1,10 +1,10 @@
 {
-  "finished_utc": "2026-10-20T16:34:17.057652+00:00",
+  "finished_utc": "2026-10-20T21:22:39.989536+00:00",
   "max_new_videos_per_run": 20,
   "max_selected_per_channel": 2,
   "max_shorts_per_run": 6,
   "channels_configured": 18,
-  "channels_resolved": 14,
+  "channels_resolved": 9,
   "resolver_methods": {
     "TED-Ed": "wikidata",
     "Veritasium": "wikidata",
@@ -16,13 +16,13 @@
     "PBS Terra": "unresolved",
     "Practical Engineering": "wikidata",
     "The B1M": "wikidata",
-    "iFixit": "wikidata",
+    "iFixit": "unresolved",
     "Tested": "unresolved",
-    "WIRED": "wikidata",
-    "Google DeepMind": "wikidata",
-    "Y Combinator": "wikidata",
+    "WIRED": "unresolved",
+    "Google DeepMind": "unresolved",
+    "Y Combinator": "unresolved",
     "Nairametrics": "unresolved",
-    "Vox": "wikidata",
+    "Vox": "unresolved",
     "TED": "unresolved"
   },
   "channels_with_errors": [
@@ -31,7 +31,23 @@
       "error": "Could not resolve stable YouTube channel ID"
     },
     {
+      "channel": "iFixit",
+      "error": "Could not resolve stable YouTube channel ID"
+    },
+    {
       "channel": "Tested",
+      "error": "Could not resolve stable YouTube channel ID"
+    },
+    {
+      "channel": "WIRED",
+      "error": "Could not resolve stable YouTube channel ID"
+    },
+    {
+      "channel": "Google DeepMind",
+      "error": "Could not resolve stable YouTube channel ID"
+    },
+    {
+      "channel": "Y Combinator",
       "error": "Could not resolve stable YouTube channel ID"
     },
     {
@@ -39,29 +55,22 @@
       "error": "Could not resolve stable YouTube channel ID"
     },
     {
+      "channel": "Vox",
+      "error": "Could not resolve stable YouTube channel ID"
+    },
+    {
       "channel": "TED",
       "error": "Could not resolve stable YouTube channel ID"
     }
   ],
-  "discovered": 61,
-  "published": 13,
+  "discovered": 44,
+  "published": 2,
   "shorts_published": 2,
-  "duplicates_skipped": 43,
+  "duplicates_skipped": 41,
   "pruned_feed_videos": 0,
-  "total_stored": 60,
+  "total_stored": 62,
   "published_video_ids": [
-    "NPJ9KZqrl50",
-    "awV7FP9sAHE",
-    "LVEfFyijQ2c",
-    "ftkic7Tdpcg",
-    "v7zBYbe0UZU",
-    "a1rdU67lvtM",
-    "PXbVn-f_wuM",
-    "VdJ20Cn3mio",
-    "tKIvQAHtLmE",
-    "OxxOEUHfzw4",
-    "c1duzuXz7D0",
-    "cp7mBZJkaCs",
-    "LbmiPYnFj48"
+    "3II9AFi5U0M",
+    "QdUGDEkRMME"
   ]
 }
