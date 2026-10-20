@@ -1,10 +1,10 @@
 {
-  "finished_utc": "2026-10-20T21:22:39.989536+00:00",
+  "finished_utc": "2026-10-20T21:44:11.997388+00:00",
   "max_new_videos_per_run": 20,
   "max_selected_per_channel": 2,
   "max_shorts_per_run": 6,
   "channels_configured": 18,
-  "channels_resolved": 9,
+  "channels_resolved": 13,
   "resolver_methods": {
     "TED-Ed": "wikidata",
     "Veritasium": "wikidata",
@@ -16,11 +16,11 @@
     "PBS Terra": "unresolved",
     "Practical Engineering": "wikidata",
     "The B1M": "wikidata",
-    "iFixit": "unresolved",
+    "iFixit": "wikidata",
     "Tested": "unresolved",
-    "WIRED": "unresolved",
-    "Google DeepMind": "unresolved",
-    "Y Combinator": "unresolved",
+    "WIRED": "wikidata",
+    "Google DeepMind": "wikidata",
+    "Y Combinator": "wikidata",
     "Nairametrics": "unresolved",
     "Vox": "unresolved",
     "TED": "unresolved"
@@ -31,23 +31,7 @@
       "error": "Could not resolve stable YouTube channel ID"
     },
     {
-      "channel": "iFixit",
-      "error": "Could not resolve stable YouTube channel ID"
-    },
-    {
       "channel": "Tested",
-      "error": "Could not resolve stable YouTube channel ID"
-    },
-    {
-      "channel": "WIRED",
-      "error": "Could not resolve stable YouTube channel ID"
-    },
-    {
-      "channel": "Google DeepMind",
-      "error": "Could not resolve stable YouTube channel ID"
-    },
-    {
-      "channel": "Y Combinator",
       "error": "Could not resolve stable YouTube channel ID"
     },
     {
@@ -63,14 +47,18 @@
       "error": "Could not resolve stable YouTube channel ID"
     }
   ],
-  "discovered": 44,
-  "published": 2,
-  "shorts_published": 2,
-  "duplicates_skipped": 41,
+  "discovered": 60,
+  "published": 6,
+  "shorts_published": 3,
+  "duplicates_skipped": 54,
   "pruned_feed_videos": 0,
-  "total_stored": 62,
+  "total_stored": 68,
   "published_video_ids": [
-    "3II9AFi5U0M",
-    "QdUGDEkRMME"
+    "9PICEmtfpWU",
+    "9jQA7IgPhBE",
+    "xjQGFaiClGA",
+    "FTQgGxG6T_w",
+    "jk0t12N7fV0",
+    "Klcl8qEdMaw"
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T21:22:39.988371+00:00",
+  "updated_at": "2026-10-20T21:44:11.993555+00:00",
   "videos": [
     {
       "video_id": "QdUGDEkRMME",
@@ -16,6 +16,22 @@
       "is_short": true,
       "description": "National Geographic's Nature and Culture video explores the vast universe by detailing how there are currently more than 6,000 known exoplanets.",
       "published_by_pipeline_at": "2026-10-20T21:22:39.988318+00:00"
+    },
+    {
+      "video_id": "jk0t12N7fV0",
+      "title": "Explore the world of romance scams with Mariana van Zeller #SuperScamMe",
+      "category": "Nature & Culture",
+      "channel": "National Geographic",
+      "channel_id": "UCpVm7bg6pXKo1Pr6k5kxG9A",
+      "channel_url": "https://www.youtube.com/channel/UCpVm7bg6pXKo1Pr6k5kxG9A",
+      "url": "https://www.youtube.com/shorts/jk0t12N7fV0",
+      "embed_url": "https://www.youtube-nocookie.com/embed/jk0t12N7fV0",
+      "thumbnail": "https://i.ytimg.com/vi/jk0t12N7fV0/hqdefault.jpg",
+      "published_at": "2026-10-20T17:30:11+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Join National Geographic and Mariana van Zeller in this Nature & Culture video to explore the fascinating world of romance scams and SuperScamMe.",
+      "published_by_pipeline_at": "2026-10-20T21:44:11.461858+00:00"
     },
     {
       "video_id": "3II9AFi5U0M",
@@ -434,6 +450,22 @@
       "published_by_pipeline_at": "2026-10-19T12:21:48.548204+00:00"
     },
     {
+      "video_id": "Klcl8qEdMaw",
+      "title": "Alexandr Wang on what matters in an age of abundant intelligence",
+      "category": "Business & Startups",
+      "channel": "Y Combinator",
+      "channel_id": "UCcefcZRL2oaA_uBNeo5UOWg",
+      "channel_url": "https://www.youtube.com/channel/UCcefcZRL2oaA_uBNeo5UOWg",
+      "url": "https://www.youtube.com/shorts/Klcl8qEdMaw",
+      "embed_url": "https://www.youtube-nocookie.com/embed/Klcl8qEdMaw",
+      "thumbnail": "https://i.ytimg.com/vi/Klcl8qEdMaw/hqdefault.jpg",
+      "published_at": "2026-10-14T18:44:27+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "In this Y Combinator video, Alexandr Wang discusses what truly matters in business and startups during an era of abundant intelligence.",
+      "published_by_pipeline_at": "2026-10-20T21:44:11.993488+00:00"
+    },
+    {
       "video_id": "ydZfcgxe59s",
       "title": "Extraordinary Big Cat Moments | BBC Earth",
       "category": "Nature & Wildlife",
@@ -464,6 +496,22 @@
       "is_short": false,
       "description": "From engineering channel The B1M, this practical video explores infrastructure controversies surrounding the skyscraper that is dividing Europe through architectural and urban analysis.",
       "published_by_pipeline_at": "2026-10-19T07:18:10.335582+00:00"
+    },
+    {
+      "video_id": "xjQGFaiClGA",
+      "title": "‘Abbott Elementary’ Cast Answer The 50 Most Searched Questions",
+      "category": "Technology & Ideas",
+      "channel": "WIRED",
+      "channel_id": "UCftwRNsjfRo08xYE31tkiyw",
+      "channel_url": "https://www.youtube.com/channel/UCftwRNsjfRo08xYE31tkiyw",
+      "url": "https://www.youtube.com/watch?v=xjQGFaiClGA",
+      "embed_url": "https://www.youtube-nocookie.com/embed/xjQGFaiClGA",
+      "thumbnail": "https://i.ytimg.com/vi/xjQGFaiClGA/hqdefault.jpg",
+      "published_at": "2026-10-14T16:01:57+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "In this Technology & Ideas video by WIRED, the cast of ‘Abbott Elementary’ answers the fifty most searched questions in a practical session.",
+      "published_by_pipeline_at": "2026-10-20T21:44:10.300988+00:00"
     },
     {
       "video_id": "cp7mBZJkaCs",
@@ -528,6 +576,38 @@
       "is_short": false,
       "description": "Google DeepMind — Using Gemini 4 Argon to protect against Cyber attackers. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-10-20T16:30:38.965631+00:00"
+    },
+    {
+      "video_id": "9PICEmtfpWU",
+      "title": "Teaching a humanoid robot to play cornhole with Gemini 4 Argon",
+      "category": "AI & Technology",
+      "channel": "Google DeepMind",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_url": "https://www.youtube.com/channel/UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "url": "https://www.youtube.com/watch?v=9PICEmtfpWU",
+      "embed_url": "https://www.youtube-nocookie.com/embed/9PICEmtfpWU",
+      "thumbnail": "https://i.ytimg.com/vi/9PICEmtfpWU/hqdefault.jpg",
+      "published_at": "2026-10-13T15:58:20+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "In this AI and technology video by Google DeepMind, learn how a humanoid robot is taught to play cornhole using Gemini 4 Argon.",
+      "published_by_pipeline_at": "2026-10-20T21:44:08.281893+00:00"
+    },
+    {
+      "video_id": "9jQA7IgPhBE",
+      "title": "Untangling 500-page chemistry patents with Gemini 4",
+      "category": "AI & Technology",
+      "channel": "Google DeepMind",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_url": "https://www.youtube.com/channel/UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "url": "https://www.youtube.com/watch?v=9jQA7IgPhBE",
+      "embed_url": "https://www.youtube-nocookie.com/embed/9jQA7IgPhBE",
+      "thumbnail": "https://i.ytimg.com/vi/9jQA7IgPhBE/hqdefault.jpg",
+      "published_at": "2026-10-13T15:58:17+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Google DeepMind presents an AI and technology video card demonstrating how Gemini untangles complex, 500-page chemistry patents with practical insights.",
+      "published_by_pipeline_at": "2026-10-20T21:44:08.867364+00:00"
     },
     {
       "video_id": "1uTRlM6MbMo",
@@ -688,6 +768,22 @@
       "is_short": false,
       "description": "Kurzgesagt – In a Nutshell explores science and big ideas in a practical video examining new discoveries about humanity's first civilization.",
       "published_by_pipeline_at": "2026-10-19T12:21:54.269791+00:00"
+    },
+    {
+      "video_id": "FTQgGxG6T_w",
+      "title": "Apple Finally Made AirPods Repairable",
+      "category": "Practical Skills",
+      "channel": "iFixit",
+      "channel_id": "UCHbx9IUW7eCeJsC4sBCTNBA",
+      "channel_url": "https://www.youtube.com/channel/UCHbx9IUW7eCeJsC4sBCTNBA",
+      "url": "https://www.youtube.com/shorts/FTQgGxG6T_w",
+      "embed_url": "https://www.youtube-nocookie.com/embed/FTQgGxG6T_w",
+      "thumbnail": "https://i.ytimg.com/vi/FTQgGxG6T_w/hqdefault.jpg",
+      "published_at": "2026-10-07T16:09:40+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "In this practical video, iFixit explores how Apple finally made AirPods repairable, offering a knowledge and hands-on look at the device's updated design.",
+      "published_by_pipeline_at": "2026-10-20T21:44:10.777743+00:00"
     },
     {
       "video_id": "c1duzuXz7D0",
