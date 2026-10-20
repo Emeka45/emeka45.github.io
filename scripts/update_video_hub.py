@@ -5,6 +5,7 @@ from __future__ import annotations
 import html
 import json
 import os
+import re
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -58,6 +59,24 @@ def resolve_channel_id(source: dict) -> tuple[str | None, str]:
                 return items[0]["id"], "youtube_api"
         except Exception:
             pass
+    # Resolve the channel directly from its official YouTube handle first.
+    # This avoids depending on a YouTube API key or a potentially ambiguous Wikidata name search.
+    handle = str(source.get("handle", "")).strip()
+    if handle:
+        try:
+            channel_page = fetch("https://www.youtube.com/" + urllib.parse.quote(handle.lstrip("/"), safe="@")).decode("utf-8", errors="replace")
+            patterns = (
+                r'"channelId"\s*:\s*"(UC[A-Za-z0-9_-]{22})"',
+                r'"externalId"\s*:\s*"(UC[A-Za-z0-9_-]{22})"',
+                r'youtube\.com/channel/(UC[A-Za-z0-9_-]{22})',
+            )
+            for pattern in patterns:
+                match = re.search(pattern, channel_page)
+                if match:
+                    return match.group(1), "youtube_handle"
+        except Exception:
+            pass
+
     search_q = urllib.parse.urlencode({"action":"wbsearchentities","search":source["name"],"language":"en","format":"json","limit":"5"})
     try:
         results = json.loads(fetch("https://www.wikidata.org/w/api.php?" + search_q).decode())
