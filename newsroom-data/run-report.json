@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-20T21:42:44.812116+00:00",
-  "finished_utc": "2026-10-20T21:43:56.336899+00:00",
+  "started_utc": "2026-10-20T22:25:15.900574+00:00",
+  "finished_utc": "2026-10-20T22:26:45.459378+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 2,
   "feed_count": 56,
@@ -41,7 +41,7 @@
   "held_or_rejected": 2,
   "published_count": 0,
   "rejection_reasons": [
-    "There is insufficient corroboration across independent domains. Only Punchng.com provides details regarding the PBAT/APC 2027 campaign council restructuring, while the other source domain (thereporter.com.ng) contains no summary text and merely features an unrelated or uncorroborated headline regarding a congratulatory message.",
-    "Insufficient corroboration: Neither the story regarding Abia APC zoning nor the report on the PDP ruling out an alliance with the APC is corroborated by at least two distinct publisher domains."
+    "The provided source records do not meet the corroboration requirement. Only one distinct publisher (Punchng.com) provides substantive details regarding the restructuring of the PBAT/APC 2027 campaign council teams, while the other domain only provides a headline about a congratulatory message without corroborating details. There is insufficient verified factual detail across independent domains to write a comprehensive news report.",
+    "There are no two independent publisher domains corroborating the same central event. The report on the Bayelsa arrests is only covered by thereporter.com.ng, while the report on the Jigawa arrests is covered exclusively by punchng.com."
   ]
 }

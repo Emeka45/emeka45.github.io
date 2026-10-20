@@ -1,64 +1,62 @@
 {
-  "finished_utc": "2026-10-20T21:44:11.997388+00:00",
+  "finished_utc": "2026-10-20T22:27:24.970773+00:00",
   "max_new_videos_per_run": 20,
   "max_selected_per_channel": 2,
   "max_shorts_per_run": 6,
   "channels_configured": 18,
-  "channels_resolved": 13,
+  "channels_resolved": 17,
   "resolver_methods": {
     "TED-Ed": "wikidata",
-    "Veritasium": "wikidata",
-    "SmarterEveryDay": "wikidata",
-    "Kurzgesagt – In a Nutshell": "wikidata",
-    "NASA": "wikidata",
-    "National Geographic": "wikidata",
-    "BBC Earth": "wikidata",
-    "PBS Terra": "unresolved",
-    "Practical Engineering": "wikidata",
-    "The B1M": "wikidata",
-    "iFixit": "wikidata",
-    "Tested": "unresolved",
-    "WIRED": "wikidata",
-    "Google DeepMind": "wikidata",
-    "Y Combinator": "wikidata",
+    "Veritasium": "youtube_handle",
+    "SmarterEveryDay": "youtube_handle",
+    "Kurzgesagt – In a Nutshell": "youtube_handle",
+    "NASA": "youtube_handle",
+    "National Geographic": "youtube_handle",
+    "BBC Earth": "youtube_handle",
+    "PBS Terra": "youtube_handle",
+    "Practical Engineering": "youtube_handle",
+    "The B1M": "youtube_handle",
+    "iFixit": "youtube_handle",
+    "Tested": "youtube_handle",
+    "WIRED": "youtube_handle",
+    "Google DeepMind": "youtube_handle",
+    "Y Combinator": "youtube_handle",
     "Nairametrics": "unresolved",
-    "Vox": "unresolved",
-    "TED": "unresolved"
+    "Vox": "youtube_handle",
+    "TED": "youtube_handle"
   },
   "channels_with_errors": [
     {
-      "channel": "PBS Terra",
-      "error": "Could not resolve stable YouTube channel ID"
-    },
-    {
-      "channel": "Tested",
-      "error": "Could not resolve stable YouTube channel ID"
-    },
-    {
       "channel": "Nairametrics",
-      "error": "Could not resolve stable YouTube channel ID"
-    },
-    {
-      "channel": "Vox",
-      "error": "Could not resolve stable YouTube channel ID"
-    },
-    {
-      "channel": "TED",
       "error": "Could not resolve stable YouTube channel ID"
     }
   ],
-  "discovered": 60,
-  "published": 6,
-  "shorts_published": 3,
-  "duplicates_skipped": 54,
+  "discovered": 75,
+  "published": 20,
+  "shorts_published": 0,
+  "duplicates_skipped": 16,
   "pruned_feed_videos": 0,
-  "total_stored": 68,
+  "total_stored": 88,
   "published_video_ids": [
-    "9PICEmtfpWU",
-    "9jQA7IgPhBE",
-    "xjQGFaiClGA",
-    "FTQgGxG6T_w",
-    "jk0t12N7fV0",
-    "Klcl8qEdMaw"
+    "jdJn46u16EE",
+    "kDLji2s7LV4",
+    "8qG7ETIhfkQ",
+    "xF0FwAVCqnY",
+    "mCAKJfoZ6YA",
+    "w6229Ivy_Lo",
+    "JAB_NLbkgCs",
+    "0-g2-PRrOdw",
+    "dZmkWdurcwQ",
+    "TTipD_G73iQ",
+    "EYWehMbxUJM",
+    "y9ag2jbb7b0",
+    "nxHHJt-6gZg",
+    "ozSjwdngA_U",
+    "AcjDyzYcIkc",
+    "3L-_HyXdGP4",
+    "g3ucRn4hm90",
+    "N5mpIRIhqvE",
+    "144Ai_FuQiU",
+    "62aBuDKsiDc"
   ]
 }

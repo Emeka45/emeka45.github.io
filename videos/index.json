@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T21:44:11.993555+00:00",
+  "updated_at": "2026-10-20T22:27:24.969146+00:00",
   "videos": [
     {
       "video_id": "QdUGDEkRMME",
@@ -34,6 +34,22 @@
       "published_by_pipeline_at": "2026-10-20T21:44:11.461858+00:00"
     },
     {
+      "video_id": "N5mpIRIhqvE",
+      "title": "Before You Use AI, Regulate Your Brain | Leo van Woerden | TEDxUniversityofGroningen",
+      "category": "Ideas & Conversations",
+      "channel": "TED",
+      "channel_id": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+      "channel_url": "https://www.youtube.com/channel/UCsT0YIqwnpJCM-mx7-gSA4Q",
+      "url": "https://www.youtube.com/watch?v=N5mpIRIhqvE",
+      "embed_url": "https://www.youtube-nocookie.com/embed/N5mpIRIhqvE",
+      "thumbnail": "https://i.ytimg.com/vi/N5mpIRIhqvE/hqdefault.jpg",
+      "published_at": "2026-10-20T16:32:17+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "In this TEDx talk from TED's Ideas & Conversations, Leo van Woerden explains how to regulate your brain before using artificial intelligence.",
+      "published_by_pipeline_at": "2026-10-20T22:27:22.444381+00:00"
+    },
+    {
       "video_id": "3II9AFi5U0M",
       "title": "National Geographic's #BestOfTheWorld Guide 2027",
       "category": "Nature & Culture",
@@ -48,6 +64,38 @@
       "is_short": true,
       "description": "Explore the National Geographic channel's Nature & Culture video guide featuring the #BestOfTheWorld for 2027, offering practical insights and essential knowledge.",
       "published_by_pipeline_at": "2026-10-20T21:22:39.327468+00:00"
+    },
+    {
+      "video_id": "8qG7ETIhfkQ",
+      "title": "What If the Secret to Life Is Something Deadly? | BBC Earth Science",
+      "category": "Nature & Wildlife",
+      "channel": "BBC Earth",
+      "channel_id": "UCdsOTr6SmDrxuWE7sJFrkhQ",
+      "channel_url": "https://www.youtube.com/channel/UCdsOTr6SmDrxuWE7sJFrkhQ",
+      "url": "https://www.youtube.com/watch?v=8qG7ETIhfkQ",
+      "embed_url": "https://www.youtube-nocookie.com/embed/8qG7ETIhfkQ",
+      "thumbnail": "https://i.ytimg.com/vi/8qG7ETIhfkQ/hqdefault.jpg",
+      "published_at": "2026-10-20T16:30:24+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "BBC Earth explores the deadly secrets behind the origins of life in this science video focused on nature and wildlife.",
+      "published_by_pipeline_at": "2026-10-20T22:27:01.944580+00:00"
+    },
+    {
+      "video_id": "144Ai_FuQiU",
+      "title": "What if your pain has a purpose? | Dr. Sunita Punjabi, PhD | TEDxButterfish Cove",
+      "category": "Ideas & Conversations",
+      "channel": "TED",
+      "channel_id": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+      "channel_url": "https://www.youtube.com/channel/UCsT0YIqwnpJCM-mx7-gSA4Q",
+      "url": "https://www.youtube.com/watch?v=144Ai_FuQiU",
+      "embed_url": "https://www.youtube-nocookie.com/embed/144Ai_FuQiU",
+      "thumbnail": "https://i.ytimg.com/vi/144Ai_FuQiU/hqdefault.jpg",
+      "published_at": "2026-10-20T16:26:08+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "TED — What if your pain has a purpose? | Dr. Sunita Punjabi, PhD | TEDxButterfish Cove. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-10-20T22:27:22.567520+00:00"
     },
     {
       "video_id": "a1rdU67lvtM",
@@ -98,6 +146,22 @@
       "published_by_pipeline_at": "2026-10-20T16:31:51.962367+00:00"
     },
     {
+      "video_id": "xF0FwAVCqnY",
+      "title": "Adam Savage Attempts to Solve a Mailbag Puzzle",
+      "category": "Making & Practical Skills",
+      "channel": "Tested",
+      "channel_id": "UCiDJtJKMICpb9B1qf7qjEOA",
+      "channel_url": "https://www.youtube.com/channel/UCiDJtJKMICpb9B1qf7qjEOA",
+      "url": "https://www.youtube.com/watch?v=xF0FwAVCqnY",
+      "embed_url": "https://www.youtube-nocookie.com/embed/xF0FwAVCqnY",
+      "thumbnail": "https://i.ytimg.com/vi/xF0FwAVCqnY/hqdefault.jpg",
+      "published_at": "2026-10-20T14:00:01+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "In this Making and Practical Skills video from Tested, Adam Savage attempts to solve a mailbag puzzle using hands-on knowledge and techniques.",
+      "published_by_pipeline_at": "2026-10-20T22:27:02.583132+00:00"
+    },
+    {
       "video_id": "awV7FP9sAHE",
       "title": "Whatever Happened to Fire Escapes?",
       "category": "Practical Engineering",
@@ -112,6 +176,22 @@
       "is_short": false,
       "description": "Practical Engineering — Whatever Happened to Fire Escapes?. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-10-20T16:29:54.679134+00:00"
+    },
+    {
+      "video_id": "62aBuDKsiDc",
+      "title": "Introducing Best of Luck with Kyla Scanlon",
+      "category": "Ideas & Society",
+      "channel": "Vox",
+      "channel_id": "UCLXo7UDZvByw2ixzpQCufnA",
+      "channel_url": "https://www.youtube.com/channel/UCLXo7UDZvByw2ixzpQCufnA",
+      "url": "https://www.youtube.com/watch?v=62aBuDKsiDc",
+      "embed_url": "https://www.youtube-nocookie.com/embed/62aBuDKsiDc",
+      "thumbnail": "https://i.ytimg.com/vi/62aBuDKsiDc/hqdefault.jpg",
+      "published_at": "2026-10-20T12:00:28+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "In this video from Vox's Ideas & Society channel, Kyla Scanlon introduces \"Best of Luck,\" offering knowledge and practical perspectives on the featured topic.",
+      "published_by_pipeline_at": "2026-10-20T22:27:24.969068+00:00"
     },
     {
       "video_id": "VdJ20Cn3mio",
@@ -210,6 +290,38 @@
       "published_by_pipeline_at": "2026-10-19T22:04:26.108990+00:00"
     },
     {
+      "video_id": "TTipD_G73iQ",
+      "title": "Smarter Every Day 2 Live Stream",
+      "category": "Science & Discovery",
+      "channel": "SmarterEveryDay",
+      "channel_id": "UC8VkNBOwvsTlFjoSnNSMmxw",
+      "channel_url": "https://www.youtube.com/channel/UC8VkNBOwvsTlFjoSnNSMmxw",
+      "url": "https://www.youtube.com/watch?v=TTipD_G73iQ",
+      "embed_url": "https://www.youtube-nocookie.com/embed/TTipD_G73iQ",
+      "thumbnail": "https://i.ytimg.com/vi/TTipD_G73iQ/hqdefault.jpg",
+      "published_at": "2026-10-19T15:20:17+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Watch the Smarter Every Day 2 Live Stream in this science and discovery video card, featuring practical knowledge and insights from the channel.",
+      "published_by_pipeline_at": "2026-10-20T22:27:12.090821+00:00"
+    },
+    {
+      "video_id": "EYWehMbxUJM",
+      "title": "Mars and Earth, Alike as Two Peas in a Pod?",
+      "category": "Space & Discovery",
+      "channel": "NASA",
+      "channel_id": "UC9SM7V7J1pAhPabOUST01fw",
+      "channel_url": "https://www.youtube.com/channel/UC9SM7V7J1pAhPabOUST01fw",
+      "url": "https://www.youtube.com/watch?v=EYWehMbxUJM",
+      "embed_url": "https://www.youtube-nocookie.com/embed/EYWehMbxUJM",
+      "thumbnail": "https://i.ytimg.com/vi/EYWehMbxUJM/hqdefault.jpg",
+      "published_at": "2026-10-19T12:01:12+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Explore comparisons between Mars and Earth in this NASA video from the Space and Discovery category, examining how alike the two planets truly are.",
+      "published_by_pipeline_at": "2026-10-20T22:27:14.327335+00:00"
+    },
+    {
       "video_id": "l4zB1FrNjjY",
       "title": "Hope for Africa's Wild Future #AfricaEarthsWildHome",
       "category": "Nature & Culture",
@@ -226,6 +338,22 @@
       "published_by_pipeline_at": "2026-10-19T12:21:55.255315+00:00"
     },
     {
+      "video_id": "y9ag2jbb7b0",
+      "title": "L’ingénierie complètement folle derrière Internet",
+      "category": "Science & Discovery",
+      "channel": "Veritasium",
+      "channel_id": "UCin0m13qWv3-051xlWlHamA",
+      "channel_url": "https://www.youtube.com/channel/UCin0m13qWv3-051xlWlHamA",
+      "url": "https://www.youtube.com/watch?v=y9ag2jbb7b0",
+      "embed_url": "https://www.youtube-nocookie.com/embed/y9ag2jbb7b0",
+      "thumbnail": "https://i.ytimg.com/vi/y9ag2jbb7b0/hqdefault.jpg",
+      "published_at": "2026-10-18T09:00:18+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Explore the wild engineering behind the internet in this science and discovery video from Veritasium, detailing the complex systems that make global connectivity possible.",
+      "published_by_pipeline_at": "2026-10-20T22:27:16.483142+00:00"
+    },
+    {
       "video_id": "X7oI4Umt3DU",
       "title": "AI Safety Fact vs. Fiction | YC Paper Club",
       "category": "Business & Startups",
@@ -240,6 +368,38 @@
       "is_short": false,
       "description": "Watch this Y Combinator Business and Startups video from YC Paper Club for a concise discussion separating AI safety fact from fiction.",
       "published_by_pipeline_at": "2026-10-19T07:18:09.723604+00:00"
+    },
+    {
+      "video_id": "mCAKJfoZ6YA",
+      "title": "Was Adam Savage Himself or a Persona on MythBusters?",
+      "category": "Making & Practical Skills",
+      "channel": "Tested",
+      "channel_id": "UCiDJtJKMICpb9B1qf7qjEOA",
+      "channel_url": "https://www.youtube.com/channel/UCiDJtJKMICpb9B1qf7qjEOA",
+      "url": "https://www.youtube.com/watch?v=mCAKJfoZ6YA",
+      "embed_url": "https://www.youtube-nocookie.com/embed/mCAKJfoZ6YA",
+      "thumbnail": "https://i.ytimg.com/vi/mCAKJfoZ6YA/hqdefault.jpg",
+      "published_at": "2026-10-17T14:00:15+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "In this Making & Practical Skills video from Tested, Adam Savage discusses whether he was himself or a persona during his time on MythBusters.",
+      "published_by_pipeline_at": "2026-10-20T22:27:05.365111+00:00"
+    },
+    {
+      "video_id": "nxHHJt-6gZg",
+      "title": "Astronaut Q&A with Florida Students: What Place on Earth Would You Photograph From Space?",
+      "category": "Space & Discovery",
+      "channel": "NASA",
+      "channel_id": "UC9SM7V7J1pAhPabOUST01fw",
+      "channel_url": "https://www.youtube.com/channel/UC9SM7V7J1pAhPabOUST01fw",
+      "url": "https://www.youtube.com/watch?v=nxHHJt-6gZg",
+      "embed_url": "https://www.youtube-nocookie.com/embed/nxHHJt-6gZg",
+      "thumbnail": "https://i.ytimg.com/vi/nxHHJt-6gZg/hqdefault.jpg",
+      "published_at": "2026-10-17T04:57:10+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Watch NASA astronauts answer questions from Florida students, including which place on Earth they would most like to photograph from space.",
+      "published_by_pipeline_at": "2026-10-20T22:27:18.105385+00:00"
     },
     {
       "video_id": "LbmiPYnFj48",
@@ -272,6 +432,22 @@
       "is_short": false,
       "description": "NASA astronauts discuss living and working in space during an educational downlink conversation with Florida students, sharing firsthand experiences of orbital life.",
       "published_by_pipeline_at": "2026-10-19T07:18:16.976781+00:00"
+    },
+    {
+      "video_id": "jdJn46u16EE",
+      "title": "Is this Unsettling Fact Science’s ‘Epic Fail’?  | BBC Earth Science",
+      "category": "Nature & Wildlife",
+      "channel": "BBC Earth",
+      "channel_id": "UCdsOTr6SmDrxuWE7sJFrkhQ",
+      "channel_url": "https://www.youtube.com/channel/UCdsOTr6SmDrxuWE7sJFrkhQ",
+      "url": "https://www.youtube.com/watch?v=jdJn46u16EE",
+      "embed_url": "https://www.youtube-nocookie.com/embed/jdJn46u16EE",
+      "thumbnail": "https://i.ytimg.com/vi/jdJn46u16EE/hqdefault.jpg",
+      "published_at": "2026-10-16T16:30:08+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "BBC Earth explores an unsettling scientific fact in this nature and wildlife video, questioning whether it represents a major failure for science.",
+      "published_by_pipeline_at": "2026-10-20T22:26:56.811324+00:00"
     },
     {
       "video_id": "OxxOEUHfzw4",
@@ -690,6 +866,22 @@
       "published_by_pipeline_at": "2026-10-19T12:21:57.241706+00:00"
     },
     {
+      "video_id": "ozSjwdngA_U",
+      "title": "L'étonnant effet Leidenfrost inversé",
+      "category": "Science & Discovery",
+      "channel": "Veritasium",
+      "channel_id": "UCin0m13qWv3-051xlWlHamA",
+      "channel_url": "https://www.youtube.com/channel/UCin0m13qWv3-051xlWlHamA",
+      "url": "https://www.youtube.com/watch?v=ozSjwdngA_U",
+      "embed_url": "https://www.youtube-nocookie.com/embed/ozSjwdngA_U",
+      "thumbnail": "https://i.ytimg.com/vi/ozSjwdngA_U/hqdefault.jpg",
+      "published_at": "2026-10-11T09:00:12+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "In this Science & Discovery video by Veritasium, the surprising phenomenon of the reverse Leidenfrost effect is explored through practical demonstration and explanation.",
+      "published_by_pipeline_at": "2026-10-20T22:27:20.109365+00:00"
+    },
+    {
       "video_id": "sRF_aTASC5c",
       "title": "Inside The World's Darkest Airport",
       "category": "Engineering & Infrastructure",
@@ -720,6 +912,22 @@
       "is_short": true,
       "description": "Explore the science and discovery of edge dislocation in this educational video by Veritasium, which provides a practical look at the concept.",
       "published_by_pipeline_at": "2026-10-19T22:04:30.420562+00:00"
+    },
+    {
+      "video_id": "w6229Ivy_Lo",
+      "title": "Why Does -1/12 Keep Appearing Everywhere In Physics?",
+      "category": "Science & Nature",
+      "channel": "PBS Terra",
+      "channel_id": "UC7_gcs09iThXybpVgjHZ_7g",
+      "channel_url": "https://www.youtube.com/channel/UC7_gcs09iThXybpVgjHZ_7g",
+      "url": "https://www.youtube.com/watch?v=w6229Ivy_Lo",
+      "embed_url": "https://www.youtube-nocookie.com/embed/w6229Ivy_Lo",
+      "thumbnail": "https://i.ytimg.com/vi/w6229Ivy_Lo/hqdefault.jpg",
+      "published_at": "2026-10-08T20:15:02+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "PBS Terra explores the Science & Nature topic of why the number negative one-twelfth repeatedly appears across physics in this educational video.",
+      "published_by_pipeline_at": "2026-10-20T22:27:05.901464+00:00"
     },
     {
       "video_id": "h6CmKF-mN2U",
@@ -768,6 +976,22 @@
       "is_short": false,
       "description": "Kurzgesagt – In a Nutshell explores science and big ideas in a practical video examining new discoveries about humanity's first civilization.",
       "published_by_pipeline_at": "2026-10-19T12:21:54.269791+00:00"
+    },
+    {
+      "video_id": "JAB_NLbkgCs",
+      "title": "I Helped Fix Chernobyl. Russia Blew it Up.",
+      "category": "Engineering & Infrastructure",
+      "channel": "The B1M",
+      "channel_id": "UCN3aYbtQ7yCqk9DM56B0kEw",
+      "channel_url": "https://www.youtube.com/channel/UCN3aYbtQ7yCqk9DM56B0kEw",
+      "url": "https://www.youtube.com/watch?v=JAB_NLbkgCs",
+      "embed_url": "https://www.youtube-nocookie.com/embed/JAB_NLbkgCs",
+      "thumbnail": "https://i.ytimg.com/vi/JAB_NLbkgCs/hqdefault.jpg",
+      "published_at": "2026-10-08T13:59:27+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Engineering channel The B1M shares practical insights from a professional who helped fix Chernobyl, detailing how the site was compromised by Russian forces.",
+      "published_by_pipeline_at": "2026-10-20T22:27:08.418393+00:00"
     },
     {
       "video_id": "FTQgGxG6T_w",
@@ -850,6 +1074,22 @@
       "published_by_pipeline_at": "2026-10-19T12:21:51.068670+00:00"
     },
     {
+      "video_id": "kDLji2s7LV4",
+      "title": "Building AI Agents for Everyone",
+      "category": "Business & Startups",
+      "channel": "Y Combinator",
+      "channel_id": "UCxIJaCMEptJjxmmQgGFsnCg",
+      "channel_url": "https://www.youtube.com/channel/UCxIJaCMEptJjxmmQgGFsnCg",
+      "url": "https://www.youtube.com/watch?v=kDLji2s7LV4",
+      "embed_url": "https://www.youtube-nocookie.com/embed/kDLji2s7LV4",
+      "thumbnail": "https://i.ytimg.com/vi/kDLji2s7LV4/hqdefault.jpg",
+      "published_at": "2026-10-02T14:30:34+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Y Combinator shares business and startup insights on building AI agents for everyone in this practical and informative video.",
+      "published_by_pipeline_at": "2026-10-20T22:26:59.341074+00:00"
+    },
+    {
       "video_id": "IHkp5Kq72ro",
       "title": "How Dangerous Are Non-Stick Pans?",
       "category": "Science & Discovery",
@@ -880,6 +1120,22 @@
       "is_short": false,
       "description": "Google DeepMind explores the science of watermarking AI, examining its applications from deepfakes to DNA in this technology video.",
       "published_by_pipeline_at": "2026-10-19T07:18:14.480420+00:00"
+    },
+    {
+      "video_id": "0-g2-PRrOdw",
+      "title": "The Training Ground for AI Knowledge Workers",
+      "category": "Business & Startups",
+      "channel": "Y Combinator",
+      "channel_id": "UCxIJaCMEptJjxmmQgGFsnCg",
+      "channel_url": "https://www.youtube.com/channel/UCxIJaCMEptJjxmmQgGFsnCg",
+      "url": "https://www.youtube.com/watch?v=0-g2-PRrOdw",
+      "embed_url": "https://www.youtube-nocookie.com/embed/0-g2-PRrOdw",
+      "thumbnail": "https://i.ytimg.com/vi/0-g2-PRrOdw/hqdefault.jpg",
+      "published_at": "2026-10-01T15:24:13+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Y Combinator's business and startups video explores the training ground for AI knowledge workers, offering essential insights and practical guidance for the industry.",
+      "published_by_pipeline_at": "2026-10-20T22:27:09.026780+00:00"
     },
     {
       "video_id": "G3hXvByzLHs",
@@ -928,6 +1184,22 @@
       "is_short": false,
       "description": "iFixit — We’ve Given AirPods 0/10 for 10 Years. Until Now.. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-10-20T16:31:04.039136+00:00"
+    },
+    {
+      "video_id": "dZmkWdurcwQ",
+      "title": "Engineer Explains Every Type of Bridge",
+      "category": "Engineering & Infrastructure",
+      "channel": "The B1M",
+      "channel_id": "UCN3aYbtQ7yCqk9DM56B0kEw",
+      "channel_url": "https://www.youtube.com/channel/UCN3aYbtQ7yCqk9DM56B0kEw",
+      "url": "https://www.youtube.com/watch?v=dZmkWdurcwQ",
+      "embed_url": "https://www.youtube-nocookie.com/embed/dZmkWdurcwQ",
+      "thumbnail": "https://i.ytimg.com/vi/dZmkWdurcwQ/hqdefault.jpg",
+      "published_at": "2026-09-29T14:01:36+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "In this Engineering & Infrastructure video from The B1M, an engineer explains every type of bridge, providing standalone knowledge and practical insights.",
+      "published_by_pipeline_at": "2026-10-20T22:27:09.606461+00:00"
     },
     {
       "video_id": "b1EMX3wyqCY",
@@ -994,6 +1266,22 @@
       "published_by_pipeline_at": "2026-10-19T07:18:15.377656+00:00"
     },
     {
+      "video_id": "AcjDyzYcIkc",
+      "title": "Why These Nuns Cut off Their Noses and Lips",
+      "category": "Science & Big Ideas",
+      "channel": "Kurzgesagt – In a Nutshell",
+      "channel_id": "UCq8ZAAsI89IoJ-fn1gYpO3g",
+      "channel_url": "https://www.youtube.com/channel/UCq8ZAAsI89IoJ-fn1gYpO3g",
+      "url": "https://www.youtube.com/watch?v=AcjDyzYcIkc",
+      "embed_url": "https://www.youtube-nocookie.com/embed/AcjDyzYcIkc",
+      "thumbnail": "https://i.ytimg.com/vi/AcjDyzYcIkc/hqdefault.jpg",
+      "published_at": "2026-08-31T14:00:39+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "In this Science & Big Ideas video by Kurzgesagt – In a Nutshell, discover the historical reasons why these nuns cut off their noses and lips.",
+      "published_by_pipeline_at": "2026-10-20T22:27:20.634971+00:00"
+    },
+    {
       "video_id": "r1wwtGgnzg4",
       "title": "Are Beavers Actually Good at Dams?",
       "category": "Practical Engineering",
@@ -1042,6 +1330,22 @@
       "published_by_pipeline_at": "2026-10-19T12:21:53.486056+00:00"
     },
     {
+      "video_id": "3L-_HyXdGP4",
+      "title": "Rebecca's Amazing America's 250th Birthday Quilt - From Alabama's American Village On July 4th 2026.",
+      "category": "Science & Discovery",
+      "channel": "SmarterEveryDay",
+      "channel_id": "UC8VkNBOwvsTlFjoSnNSMmxw",
+      "channel_url": "https://www.youtube.com/channel/UC8VkNBOwvsTlFjoSnNSMmxw",
+      "url": "https://www.youtube.com/watch?v=3L-_HyXdGP4",
+      "embed_url": "https://www.youtube-nocookie.com/embed/3L-_HyXdGP4",
+      "thumbnail": "https://i.ytimg.com/vi/3L-_HyXdGP4/hqdefault.jpg",
+      "published_at": "2026-07-05T03:46:50+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Discover Rebecca's amazing America's 250th birthday quilt from Alabama's American Village on July 4th, 2026, in this science and discovery video by SmarterEveryDay.",
+      "published_by_pipeline_at": "2026-10-20T22:27:21.212285+00:00"
+    },
+    {
       "video_id": "5lCWqEFVzbY",
       "title": "They Call it \"The Taco Turn\" and it's Genius - Smarter Every Day 315",
       "category": "Science & Discovery",
@@ -1088,6 +1392,22 @@
       "is_short": false,
       "description": "This Science & Discovery video from SmarterEveryDay, titled \"Everything About Disc Golf Aerodynamics,\" explores the standalone knowledge and practical mechanics of disc golf aerodynamics.",
       "published_by_pipeline_at": "2026-10-20T03:45:25.847040+00:00"
+    },
+    {
+      "video_id": "g3ucRn4hm90",
+      "title": "KitchenAid dishwasher active vent is defective",
+      "category": "Practical Skills",
+      "channel": "iFixit",
+      "channel_id": "UC8ttuHlcfA7Y-Pg2NmQ8Fdg",
+      "channel_url": "https://www.youtube.com/channel/UC8ttuHlcfA7Y-Pg2NmQ8Fdg",
+      "url": "https://www.youtube.com/watch?v=g3ucRn4hm90",
+      "embed_url": "https://www.youtube-nocookie.com/embed/g3ucRn4hm90",
+      "thumbnail": "https://i.ytimg.com/vi/g3ucRn4hm90/hqdefault.jpg",
+      "published_at": "2016-09-20T14:49:08+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Watch iFixit's practical skills video to learn how to diagnose and address a defective active vent in a KitchenAid dishwasher.",
+      "published_by_pipeline_at": "2026-10-20T22:27:21.930104+00:00"
     }
   ]
 }
