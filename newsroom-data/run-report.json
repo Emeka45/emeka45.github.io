@@ -1,21 +1,16 @@
 {
-  "started_utc": "2026-10-20T10:59:59.976355+00:00",
-  "finished_utc": "2026-10-20T11:02:09.014392+00:00",
+  "started_utc": "2026-10-20T16:26:14.876898+00:00",
+  "finished_utc": "2026-10-20T16:28:55.206713+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 2,
   "feed_count": 56,
-  "feed_success_count": 50,
-  "feed_failure_count": 6,
+  "feed_success_count": 51,
+  "feed_failure_count": 5,
   "feed_failures": [
     {
       "category": "Religion & Faith",
       "url": "https://christianitynigeria.com/feed/",
       "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "category": "Science",
-      "url": "https://www.sciencedaily.com/rss/all.xml",
-      "error": "junk after document element: line 440, column 46"
     },
     {
       "category": "Entertainment & Lifestyle",
@@ -38,14 +33,14 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 628,
-  "fresh_items": 607,
+  "total_items": 651,
+  "fresh_items": 630,
   "corroborated_candidates": 2,
   "ai_attempts": 2,
   "ai_failures": 1,
   "held_or_rejected": 1,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided source records do not contain at least two independent publisher domains corroborating the same central event. One domain covers an appointment in Abia State, while another covers a separate appointment rejection in Kano State."
+    "There are no two independent publisher domains corroborating the same central event. The Enugu rescue story appears on only one domain (thereporter.com.ng), and the Kaduna NUJ/Army story appears only on punchng.com."
   ]
 }
