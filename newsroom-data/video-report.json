@@ -1,10 +1,10 @@
 {
-  "finished_utc": "2026-10-20T03:45:25.848149+00:00",
+  "finished_utc": "2026-10-20T11:02:16.372727+00:00",
   "max_new_videos_per_run": 20,
   "max_selected_per_channel": 2,
   "max_shorts_per_run": 6,
   "channels_configured": 18,
-  "channels_resolved": 1,
+  "channels_resolved": 9,
   "resolver_methods": {
     "TED-Ed": "wikidata",
     "Veritasium": "wikidata",
@@ -27,40 +27,8 @@
   },
   "channels_with_errors": [
     {
-      "channel": "TED-Ed",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Veritasium",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Kurzgesagt – In a Nutshell",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "NASA",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "National Geographic",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "BBC Earth",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
       "channel": "PBS Terra",
       "error": "Could not resolve stable YouTube channel ID"
-    },
-    {
-      "channel": "Practical Engineering",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "The B1M",
-      "error": "HTTP Error 404: Not Found"
     },
     {
       "channel": "iFixit",
@@ -95,13 +63,11 @@
       "error": "Could not resolve stable YouTube channel ID"
     }
   ],
-  "discovered": 5,
-  "published": 1,
+  "discovered": 41,
+  "published": 0,
   "shorts_published": 0,
-  "duplicates_skipped": 4,
+  "duplicates_skipped": 41,
   "pruned_feed_videos": 0,
   "total_stored": 47,
-  "published_video_ids": [
-    "-0JKHuzJ67A"
-  ]
+  "published_video_ids": []
 }
