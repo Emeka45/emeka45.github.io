@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T22:27:24.969146+00:00",
+  "updated_at": "2026-10-21T03:36:09.142158+00:00",
   "videos": [
     {
       "video_id": "QdUGDEkRMME",
@@ -306,6 +306,22 @@
       "published_by_pipeline_at": "2026-10-20T22:27:12.090821+00:00"
     },
     {
+      "video_id": "ivWJoOnof_s",
+      "title": "The Secret Technique Behind Classic Star Wars Ships",
+      "category": "Making & Practical Skills",
+      "channel": "Tested",
+      "channel_id": "UCiDJtJKMICpb9B1qf7qjEOA",
+      "channel_url": "https://www.youtube.com/channel/UCiDJtJKMICpb9B1qf7qjEOA",
+      "url": "https://www.youtube.com/watch?v=ivWJoOnof_s",
+      "embed_url": "https://www.youtube-nocookie.com/embed/ivWJoOnof_s",
+      "thumbnail": "https://i.ytimg.com/vi/ivWJoOnof_s/hqdefault.jpg",
+      "published_at": "2026-10-19T14:00:34+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Tested explores the secret technique behind classic Star Wars ships in this making and practical skills video.",
+      "published_by_pipeline_at": "2026-10-21T03:36:08.700009+00:00"
+    },
+    {
       "video_id": "EYWehMbxUJM",
       "title": "Mars and Earth, Alike as Two Peas in a Pod?",
       "category": "Space & Discovery",
@@ -336,6 +352,22 @@
       "is_short": true,
       "description": "Explore hope for Africa's wild future in this National Geographic video from the Nature & Culture category, highlighting the continent's resilient ecosystems and wildlife.",
       "published_by_pipeline_at": "2026-10-19T12:21:55.255315+00:00"
+    },
+    {
+      "video_id": "1qCzCGskfiQ",
+      "title": "The Surprising Secret to Learning Any Physical Skill",
+      "category": "Making & Practical Skills",
+      "channel": "Tested",
+      "channel_id": "UCiDJtJKMICpb9B1qf7qjEOA",
+      "channel_url": "https://www.youtube.com/channel/UCiDJtJKMICpb9B1qf7qjEOA",
+      "url": "https://www.youtube.com/watch?v=1qCzCGskfiQ",
+      "embed_url": "https://www.youtube-nocookie.com/embed/1qCzCGskfiQ",
+      "thumbnail": "https://i.ytimg.com/vi/1qCzCGskfiQ/hqdefault.jpg",
+      "published_at": "2026-10-18T14:00:16+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "In this Tested video from the Making & Practical Skills category, discover surprising secrets for learning any physical skill effectively.",
+      "published_by_pipeline_at": "2026-10-21T03:36:09.142095+00:00"
     },
     {
       "video_id": "y9ag2jbb7b0",

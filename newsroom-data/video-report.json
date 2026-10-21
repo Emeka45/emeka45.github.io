@@ -1,10 +1,10 @@
 {
-  "finished_utc": "2026-10-20T22:27:24.970773+00:00",
+  "finished_utc": "2026-10-21T03:36:09.143627+00:00",
   "max_new_videos_per_run": 20,
   "max_selected_per_channel": 2,
   "max_shorts_per_run": 6,
   "channels_configured": 18,
-  "channels_resolved": 17,
+  "channels_resolved": 1,
   "resolver_methods": {
     "TED-Ed": "wikidata",
     "Veritasium": "youtube_handle",
@@ -27,36 +27,82 @@
   },
   "channels_with_errors": [
     {
+      "channel": "TED-Ed",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "channel": "Veritasium",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "SmarterEveryDay",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "channel": "Kurzgesagt – In a Nutshell",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "NASA",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "National Geographic",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "BBC Earth",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "PBS Terra",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "Practical Engineering",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "The B1M",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "iFixit",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "WIRED",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "Google DeepMind",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "Y Combinator",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
       "channel": "Nairametrics",
       "error": "Could not resolve stable YouTube channel ID"
+    },
+    {
+      "channel": "Vox",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "TED",
+      "error": "HTTP Error 404: Not Found"
     }
   ],
-  "discovered": 75,
-  "published": 20,
+  "discovered": 5,
+  "published": 2,
   "shorts_published": 0,
-  "duplicates_skipped": 16,
+  "duplicates_skipped": 2,
   "pruned_feed_videos": 0,
-  "total_stored": 88,
+  "total_stored": 90,
   "published_video_ids": [
-    "jdJn46u16EE",
-    "kDLji2s7LV4",
-    "8qG7ETIhfkQ",
-    "xF0FwAVCqnY",
-    "mCAKJfoZ6YA",
-    "w6229Ivy_Lo",
-    "JAB_NLbkgCs",
-    "0-g2-PRrOdw",
-    "dZmkWdurcwQ",
-    "TTipD_G73iQ",
-    "EYWehMbxUJM",
-    "y9ag2jbb7b0",
-    "nxHHJt-6gZg",
-    "ozSjwdngA_U",
-    "AcjDyzYcIkc",
-    "3L-_HyXdGP4",
-    "g3ucRn4hm90",
-    "N5mpIRIhqvE",
-    "144Ai_FuQiU",
-    "62aBuDKsiDc"
+    "ivWJoOnof_s",
+    "1qCzCGskfiQ"
   ]
 }
