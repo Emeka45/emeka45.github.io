@@ -77,9 +77,9 @@ EXPANDED_FEEDS = {
     'Nigeria - Transport & Infrastructure': ['https://news.google.com/rss/search?q=Nigeria+transport+infrastructure+road+rail+airport+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://rss.punchng.com/v1/category/latest_news'],
     'Nigeria - Environment & Climate': ['https://news.google.com/rss/search?q=Nigeria+environment+climate+flood+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://thereporter.com.ng/rss/category/news'],
     'Nigeria - Jobs & Labour': ['https://news.google.com/rss/search?q=Nigeria+jobs+labour+employment+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://rss.punchng.com/v1/category/business'],
-    'Nigeria - Finance & Markets': ['https://thereporter.com.ng/rss/category/finance-101', 'https://rss.punchng.com/v1/category/business'],
-    'Nigeria - Culture & Heritage': ['https://news.google.com/rss/search?q=Nigeria+culture+heritage+arts+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle'],
-    'Nigeria - Tourism & Travel': ['https://news.google.com/rss/search?q=Nigeria+tourism+travel+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle'],
+    'Nigeria - Finance & Markets': ['https://rss.punchng.com/v1/category/business', 'https://news.google.com/rss/search?q=Nigeria+finance+markets+economy+when:7d&hl=en-NG&gl=NG&ceid=NG:en'],
+    'Nigeria - Culture & Heritage': ['https://news.google.com/rss/search?q=Nigeria+culture+heritage+arts+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://rss.punchng.com/v1/category/entertainment'],
+    'Nigeria - Tourism & Travel': ['https://news.google.com/rss/search?q=Nigeria+tourism+travel+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://rss.punchng.com/v1/category/entertainment'],
     'Nigeria - Religion & Interfaith': ['https://news.google.com/rss/search?q=Nigeria+religion+interfaith+faith+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://rss.punchng.com/v1/category/latest_news'],
     'Nigeria - Youth & Society': ['https://news.google.com/rss/search?q=Nigeria+youth+society+community+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://thereporter.com.ng/rss/category/news'],
     'Nigeria - Real Estate & Housing': ['https://news.google.com/rss/search?q=Nigeria+real+estate+housing+property+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://rss.punchng.com/v1/category/business'],
@@ -191,12 +191,8 @@ SOURCE RECORDS:
             if exc.code not in (429, 500, 502, 503, 504):
                 print(f'Detailed AI HTTP {exc.code}: {error_message[:800]}')
                 raise
-            # A depleted daily/project quota will not be fixed by rapid retries.
             low_message = error_message.lower()
-            if exc.code == 429 and any(term in low_message for term in (
-                'exceeded your current quota', 'requests per day', 'quota_limit_value',
-                'quota exceeded', 'daily limit'
-            )):
+            if exc.code == 429 and any(term in low_message for term in ('exceeded your current quota', 'requests per day', 'quota_limit_value', 'quota exceeded', 'daily limit')):
                 raise RuntimeError(f'Gemini API quota exhausted (HTTP 429): {error_message[:800]}') from exc
             retry_after = exc.headers.get('Retry-After')
             delay = 15 * (2 ** attempt)
