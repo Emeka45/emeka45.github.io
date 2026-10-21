@@ -107,11 +107,14 @@ def event_match(a, b):
     at = tokens(a.get('title', ''))
     bt = tokens(b.get('title', ''))
     shared_title = at & bt
-    if len(shared_title) >= 3 and len(shared_title) / max(1, min(len(at), len(bt))) >= 0.40:
+    title_overlap = len(shared_title) / max(1, min(len(at), len(bt)))
+    if len(shared_title) >= 3 and title_overlap >= 0.50:
         return True
     combined = similarity(a, b)
     shared_all = tokens(a.get('title', '') + ' ' + a.get('summary', '')) & tokens(b.get('title', '') + ' ' + b.get('summary', ''))
-    return combined >= 0.22 and len(shared_all) >= 3
+    # Broad topic overlap alone is not evidence of the same event. Require a
+    # stronger match across titles and summaries before asking AI to synthesize.
+    return combined >= 0.38 and len(shared_all) >= 5
 
 
 def find_corroboration(item, all_items):
