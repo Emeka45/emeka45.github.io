@@ -1,10 +1,10 @@
 {
-  "finished_utc": "2026-10-21T20:06:02.779462+00:00",
+  "finished_utc": "2026-10-21T23:51:46.483096+00:00",
   "max_new_videos_per_run": 30,
   "max_selected_per_channel": 2,
   "max_shorts_per_run": 10,
   "channels_configured": 31,
-  "channels_resolved": 29,
+  "channels_resolved": 18,
   "resolver_methods": {
     "TED-Ed": "unresolved",
     "Veritasium": "youtube_handle",
@@ -44,40 +44,75 @@
       "error": "Could not resolve stable YouTube channel ID"
     },
     {
+      "channel": "Kurzgesagt – In a Nutshell",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
       "channel": "Nairametrics",
       "error": "Could not resolve stable YouTube channel ID"
+    },
+    {
+      "channel": "TED",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "channel": "Ani-One Asia",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "TheBestAMVsOfAllTime",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "channel": "Diablo AMV's",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "Maverick City Music",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "Nathaniel Bassey",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "Lofi Girl",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "COLORS",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "channel": "Mavin Records",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "channel": "Chocolate City Music",
+      "error": "HTTP Error 404: Not Found"
     }
   ],
-  "discovered": 139,
-  "published": 24,
-  "shorts_published": 4,
-  "duplicates_skipped": 95,
-  "pruned_feed_videos": 24,
+  "discovered": 90,
+  "published": 15,
+  "shorts_published": 3,
+  "duplicates_skipped": 65,
+  "pruned_feed_videos": 15,
   "total_stored": 150,
   "published_video_ids": [
     "1nZzfacrRsU",
     "BknxKToZw_U",
-    "7O5462Gl8FE",
-    "8I_WqKlY0B4",
-    "Hjj1PQORNKg",
-    "l0YJwKvsuyc",
-    "bfnWVVtGndc",
-    "ZJUgw0kXMIw",
-    "FlBenFm5RFk",
+    "B-YQtoh5W4Y",
     "n_1wzYQwnts",
-    "rF0e0dWNg8A",
+    "dZmkWdurcwQ",
     "2otGNwNOEUM",
     "yKEvjr_PwNI",
     "g3ucRn4hm90",
+    "lGm3anU395o",
     "usfXJM5uAvk",
-    "TXCQrjKazc8",
     "-17mPnFxi30",
-    "AcjDyzYcIkc",
     "3L-_HyXdGP4",
     "Q9JcpSJwEK0",
-    "205swuI0JlY",
     "MHfE-3xCqCQ",
-    "_u07GhQgNvk",
-    "l0ZhENzV_14"
+    "N8L8_5EAMn0"
   ]
 }
