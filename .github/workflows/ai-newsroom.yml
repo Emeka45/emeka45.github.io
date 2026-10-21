@@ -2,6 +2,10 @@ name: C. O. Eric AI Newsroom
 
 # Verified newsroom + automatic Video Hub pipeline.
 on:
+  push:
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/ai-newsroom.yml'
   schedule:
     - cron: '0 3 * * *'
   workflow_dispatch:
