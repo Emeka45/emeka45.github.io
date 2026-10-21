@@ -26,7 +26,7 @@ export async function onRequestPost(context) {
         const status=response.status;
         if(status===401||status===403)return Response.json({error:"Gemini rejected the API key. Check the Gemini API key configured in Cloudflare Pages."},{status:502});
         if(status===404)return Response.json({error:"The configured Gemini model is unavailable. Please redeploy the AI service with a supported Gemini model."},{status:502});
-        if(status===429)return Response.json({error:"Gemini rate limit reached. Please wait a moment and try again."},{status:429});
+        if(status===429)return Response.json({error:"Gemini free-tier quota is exhausted or rate-limited. Try again after the quota resets, or configure an API key with available quota."},{status:429});
         return Response.json({error:"Gemini could not complete the request right now. Please try again in a moment."},{status:502});
       }
       const text=data?.candidates?.[0]?.content?.parts?.map(p=>p.text||"").join("").trim();
