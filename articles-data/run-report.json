@@ -1,4 +1,8 @@
 {
-  "status": "not-run",
-  "message": "The independent AI Articles workflow has not run yet."
+  "status": "quota_limited",
+  "last_attempt_utc": "2026-10-21T20:02:24Z",
+  "model_attempted": "gemini-3.8-flash",
+  "published": false,
+  "message": "The last automatic article-generation attempt failed because the Gemini API free-tier request quota for gemini-3.8-flash was exhausted. The workflow has been changed to use gemini-3.5-flash-lite, and automatic runs are limited to the daily schedule or manual dispatch to avoid repeated quota-consuming runs.",
+  "next_steps": "Retry after the provider quota resets. The Article Hub currently contains two published original articles."
 }
