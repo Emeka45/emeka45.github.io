@@ -1,11 +1,11 @@
 {
-  "started_utc": "2026-10-21T18:01:33.380821+00:00",
-  "finished_utc": "2026-10-21T18:02:19.844330+00:00",
+  "started_utc": "2026-10-21T19:44:15.579903+00:00",
+  "finished_utc": "2026-10-21T19:45:07.001564+00:00",
   "model": "gemini-3.5-flash-lite",
-  "max_ai_candidates_per_run": 3,
+  "max_ai_candidates_per_run": 8,
   "feed_count": 56,
-  "feed_success_count": 51,
-  "feed_failure_count": 5,
+  "feed_success_count": 54,
+  "feed_failure_count": 2,
   "feed_failures": [
     {
       "category": "Religion & Faith",
@@ -16,33 +16,23 @@
       "category": "Entertainment & Lifestyle",
       "url": "https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle",
       "error": "not well-formed (invalid token): line 11, column 61"
-    },
-    {
-      "category": "Nigeria - Finance & Markets",
-      "url": "https://thereporter.com.ng/rss/category/finance-101",
-      "error": "not well-formed (invalid token): line 36, column 294"
-    },
-    {
-      "category": "Nigeria - Culture & Heritage",
-      "url": "https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle",
-      "error": "not well-formed (invalid token): line 11, column 61"
-    },
-    {
-      "category": "Nigeria - Tourism & Travel",
-      "url": "https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle",
-      "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 647,
-  "fresh_items": 626,
-  "corroborated_candidates": 3,
-  "ai_attempts": 3,
+  "total_items": 667,
+  "fresh_items": 646,
+  "corroborated_candidates": 8,
+  "ai_attempts": 8,
   "ai_failures": 0,
-  "held_or_rejected": 3,
+  "held_or_rejected": 8,
   "published_count": 0,
   "rejection_reasons": [
-    "The provided sources discuss completely different events and topics (an Abia CityBoy Movement congratulatory message versus an APC Presidential Campaign Council diaspora strategy for the 2027 election). There are no two publisher domains materially corroborating the same central event.",
-    "The provided source records discuss different topics (one about Wike mocking the opposition regarding primary election crises from 'thereporter.com.ng', and another about Wike defending the removal of the petrol subsidy from 'punchng.com'). There are no two different publisher domains materially supporting the same central event, violating the strict evidence rules for corroboration.",
-    "The supplied source records discuss different unrelated events: one source covers an APC governorship zoning decision in Abia State, while multiple other sources cover a warning from NITDA regarding AI manipulation ahead of the 2027 elections. There are no two different publisher domains materially supporting the same central event."
+    "The supplied source records discuss completely different events and topics (Abia State APC governorship zoning versus NITDA warning about AI manipulation ahead of the 2027 elections). There are no two different publisher domains materially supporting the same central event.",
+    "The provided sources discuss completely different events in different states (Bayelsa and Borno) with no overlapping central event to corroborate.",
+    "Only one distinct event or announcement is supported by at least two different publisher domains. The Punch source covers a political endorsement for 2027 <a href=\"https://punchng.com/2027-ex-presidential-candidate-lp-campaign-coordinators-endorse-tinubu/?utm_source=rss.punchng.com&utm_medium=web\">Punch News</a>, while the Reporter source covers the Tantita Security Services pipeline protection contract <a href=\"https://thereporter.com.ng/ex-iyc-president-defends-tompolo-contract-calls-on-tinubu-to-ignore-cancellation-demands\">The Reporter</a>. These are completely separate stories and lack corroboration across multiple domains.",
+    "The provided source records do not contain at least two different publisher domains materially corroborating the same central event. The sources cover entirely different topics: NITDA's warning on AI manipulation for the 2027 elections, the Nigerian judiciary, and tourism infrastructure investment.",
+    "The supplied source records do not contain at least two different publisher domains materially corroborating the same central event. Each topic listed has only one independent source or lacks overlapping coverage.",
+    "The provided sources discuss separate commentary, essays, and reports regarding Nigeria's justice system from different outlets (NALTF, THISDAYLIVE, The Fact, and The Sun Nigeria) rather than materially corroborating the same specific central event, announcement, or incident.",
+    "Multiple reputable sources (TheCable, Daily Trust, 21st Century Chronicle, and The Sun Nigeria) corroborate the statements made by retired Supreme Court Justice Amina Augie regarding corruption and delays in the Nigerian judiciary.",
+    "Multiple reputable sources (Vanguard News, The Sun Nigeria, FRCN HQ, and The Guardian Nigeria News) report on statements made by retired Supreme Court Justice Amina Augie regarding the state of Nigeria's justice system, rule of law, corruption, delays, and suggestions for constitutional reform."
   ]
 }
