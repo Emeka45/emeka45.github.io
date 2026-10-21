@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-21T08:55:37.970360+00:00",
-  "finished_utc": "2026-10-21T08:59:45.378936+00:00",
+  "started_utc": "2026-10-21T09:11:58.960643+00:00",
+  "finished_utc": "2026-10-21T09:15:27.336775+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 2,
   "feed_count": 56,
@@ -33,8 +33,8 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 645,
-  "fresh_items": 624,
+  "total_items": 649,
+  "fresh_items": 628,
   "corroborated_candidates": 2,
   "ai_attempts": 2,
   "ai_failures": 2,
