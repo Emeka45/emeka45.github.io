@@ -4,9 +4,8 @@ import datetime as dt
 import html
 import json
 import re
-from pathlib import Path
 
-import scripts.ai_newsroom as newsroom
+import ai_newsroom as newsroom
 
 MAX_PUBLISH = 5
 
@@ -31,14 +30,12 @@ def build_article(item, matches):
     summary = clean(item.get('summary', ''))
     if not summary:
         summary = f"Reports from multiple publishers are covering this development in {category}."
-
     paragraphs = [
         f"Multiple independent publishers are reporting on the same development: {title}.",
         f"The available reports place the development in the {category} category. The accounts were compared for agreement on the central event rather than simply shared names or broad topics.",
+        f"One of the available reports describes the development this way: {summary}",
+        "Readers should consult the linked source reports for additional context, updates and details that may change as the story develops.",
     ]
-    if summary:
-        paragraphs.append(f"One of the available reports describes the development this way: {summary}")
-    paragraphs.append("Readers should consult the linked source reports for additional context, updates and details that may change as the story develops.")
     body = ''.join(f'<p>{html.escape(p)}</p>' for p in paragraphs)
     first = sources[0]
     body += f'<p><a href="{html.escape(first["url"], quote=True)}" rel="nofollow noopener" target="_blank">Read the source report</a></p>'
@@ -48,10 +45,7 @@ def build_article(item, matches):
         'title': title,
         'summary': summary[:300],
         'body_html': body,
-        'sources': [
-            {'name': clean(s.get('source') or s.get('domain') or 'Source'), 'url': s['url']}
-            for s in sources
-        ],
+        'sources': [{'name': clean(s.get('source') or s.get('domain') or 'Source'), 'url': s['url']} for s in sources],
         'confidence': 85,
     }
 
@@ -62,7 +56,6 @@ def main():
     all_items = []
     feed_failures = []
     feed_count = feed_success = 0
-
     for category, feeds in newsroom.FEEDS.items():
         for feed in feeds:
             items, error = newsroom.parse_feed(category, feed)
@@ -91,8 +84,8 @@ def main():
     for _, item, matches in candidates:
         if published >= MAX_PUBLISH:
             break
-        article = build_article(item, matches)
         try:
+            article = build_article(item, matches)
             newsroom.publish(article)
             published += 1
             published_titles.append(article['title'])
@@ -102,12 +95,9 @@ def main():
         except Exception as exc:
             print('PUBLISH ERROR:', exc)
 
-    # Mark all currently processed feed URLs as seen only when they were
-    # actually considered, preventing the same failed candidates from looping forever.
     state['seen'] = list(dict.fromkeys(state.get('seen', [])))
     newsroom.save_state(state)
     newsroom.update_index()
-
     report = {
         'started_utc': started.isoformat(),
         'finished_utc': dt.datetime.now(dt.timezone.utc).isoformat(),
