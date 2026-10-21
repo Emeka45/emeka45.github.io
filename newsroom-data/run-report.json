@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-21T11:17:02.453688+00:00",
-  "finished_utc": "2026-10-21T11:18:01.455070+00:00",
+  "started_utc": "2026-10-21T16:43:14.834388+00:00",
+  "finished_utc": "2026-10-21T16:47:22.029747+00:00",
   "model": "gemini-3.8-flash",
   "max_ai_candidates_per_run": 2,
   "feed_count": 56,
@@ -33,15 +33,12 @@
       "error": "not well-formed (invalid token): line 11, column 61"
     }
   ],
-  "total_items": 647,
-  "fresh_items": 626,
+  "total_items": 646,
+  "fresh_items": 625,
   "corroborated_candidates": 2,
   "ai_attempts": 2,
-  "ai_failures": 0,
-  "held_or_rejected": 2,
+  "ai_failures": 2,
+  "held_or_rejected": 0,
   "published_count": 0,
-  "rejection_reasons": [
-    "The supplied source records do not corroborate the same central event across at least two independent publisher domains. One story covers police arrests and asset recovery in Bayelsa State reported solely by thereporter.com.ng, while the remaining records are duplicates from punchng.com reporting on a separate police operation in Rivers State.",
-    "The provided source records do not contain at least two independent publisher domains corroborating the same central event. One record from Punch covers President Tinubu congratulating the Oba of Benin on his coronation anniversary, while the remaining records from The Reporter cover an upcoming October 1 Independence Day presidential address. Because neither event is corroborated across multiple domains, publication criteria are not met."
-  ]
+  "rejection_reasons": []
 }
