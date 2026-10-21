@@ -17,7 +17,7 @@ ARTICLES = ROOT / "articles"
 INDEX = ARTICLES / "index.json"
 REPORT_DIR = ROOT / "articles-data"
 REPORT = REPORT_DIR / "run-report.json"
-MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")
 SITE = "https://emeka45.github.io"
 CATEGORIES = [
     "Psychology & Human Behaviour", "Relationships & Family", "Lifestyle",
