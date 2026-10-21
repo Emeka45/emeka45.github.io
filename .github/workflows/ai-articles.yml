@@ -1,6 +1,10 @@
 name: C. O. Eric AI Articles
 
 on:
+  push:
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/ai-articles.yml'
   workflow_dispatch:
     inputs:
       topic:
