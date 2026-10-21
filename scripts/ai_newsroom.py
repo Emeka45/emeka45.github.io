@@ -289,7 +289,10 @@ def main():
             continue
 
         corroborated_count += 1
-        sources = [item] + corroborators
+        # Keep the strongest independent corroborator as a pair. Adding several
+        # individually similar headlines can accidentally mix separate events
+        # into one prompt, causing the editor to reject an otherwise usable pair.
+        sources = [item, corroborators[0]]
         ai_attempts += 1
         try:
             article = ask_ai(sources)
