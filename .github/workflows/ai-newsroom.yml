@@ -14,6 +14,7 @@ on:
       - 'scripts/generate_news_images.py'
       - 'scripts/repair_news_images.py'
       - 'scripts/update_video_hub.py'
+      - 'scripts/upgrade_news_seo.py'
       - 'video_sources.json'
       - '.github/workflows/ai-newsroom.yml'
   schedule:
@@ -23,7 +24,6 @@ on:
 permissions:
   contents: write
 
-# Keep only one newsroom run active per branch to avoid duplicate Gemini bursts.
 concurrency:
   group: ai-newsroom-${{ github.ref }}
   cancel-in-progress: true
@@ -38,18 +38,18 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Run newsroom (free-tier safe)
+      - name: Run newsroom (cost-efficient Gemini model)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           python - <<'PY'
           import scripts.run_ai_newsroom as newsroom
-          newsroom.ai_newsroom.AI_MODEL = 'gemini-3.8-flash'
-          newsroom.ai_newsroom.MAX_AI_CANDIDATES_PER_RUN = 2
+          newsroom.ai_newsroom.AI_MODEL = 'gemini-3.5-flash-lite'
+          newsroom.ai_newsroom.MAX_AI_CANDIDATES_PER_RUN = 3
           newsroom.ai_newsroom.main()
           newsroom.normalize_and_seo()
           PY
-      - name: Generate missing story images with Gemini
+      - name: Generate missing story images
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/generate_news_images.py
