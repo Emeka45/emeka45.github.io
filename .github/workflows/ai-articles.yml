@@ -27,10 +27,6 @@ on:
         default: Lifestyle
   schedule:
     - cron: '0 9 * * *'
-  push:
-    paths:
-      - 'scripts/run_ai_articles.py'
-      - '.github/workflows/ai-articles.yml'
 
 permissions:
   contents: write
@@ -64,6 +60,7 @@ jobs:
       - name: Generate one original feature article
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: gemini-3.5-flash-lite
           ARTICLE_TOPIC: ${{ inputs.topic }}
           ARTICLE_CATEGORY: ${{ inputs.category }}
         run: python scripts/run_ai_articles.py
