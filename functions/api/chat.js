@@ -18,9 +18,9 @@ export async function onRequestPost(context) {
       if (!key) return Response.json({error:"Gemini AI is not configured on the live Cloudflare backend. Add the encrypted GEMINI_API_KEY secret to the Production environment, then redeploy the Pages project."},{status:503});
       const payload={systemInstruction:{parts:[{text:systemText}]},contents:clean.map(m=>({role:m.role==="assistant"?"model":"user",parts:[{text:m.text}]}))};
       const callGemini=async(model)=>{const r=await fetch("https://generativelanguage.googleapis.com/v1beta/models/"+model+":generateContent",{method:"POST",headers:{"Content-Type":"application/json","x-goog-api-key":key},body:JSON.stringify(payload)});let d=null;try{d=await r.json()}catch{}return {response:r,data:d};};
-      let result=await callGemini("gemini-3.8-flash");
-      if(!result.response.ok && (result.response.status===429 || result.response.status===503)){await new Promise(resolve=>setTimeout(resolve,1200));result=await callGemini("gemini-3.8-flash");}
-      if(!result.response.ok && (result.response.status===429 || result.response.status===503)){result=await callGemini("gemini-3.6-flash");}
+      let result=await callGemini("gemini-2.5-flash");
+      if(!result.response.ok && (result.response.status===429 || result.response.status===503)){await new Promise(resolve=>setTimeout(resolve,1200));result=await callGemini("gemini-2.5-flash");}
+      if(!result.response.ok && (result.response.status===429 || result.response.status===503)){result=await callGemini("gemini-2.0-flash");}
       const response=result.response;const data=result.data;
       if(!response.ok){
         const status=response.status;
