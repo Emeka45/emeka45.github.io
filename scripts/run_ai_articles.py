@@ -142,12 +142,16 @@ Set publish=false if the topic cannot be responsibly handled as an original usef
                     "quota", "resource_exhausted", "requests per day",
                     "daily limit", "limit: 0", "billing"
                 )):
-                    raise RuntimeError(
-                        "Gemini API quota/rate limit is exhausted for this key or project "
-                        f"(HTTP 429). Wait for the quota reset or check the key's API quota. Details: {detail}"
-                    ) from exc
+                    last_error = f"{model}: HTTP 429 quota/rate limit: {detail}"
+                    print(f"Quota exhausted for {model}; trying the next configured model.")
+                    break
+                if exc.code == 404:
+                    last_error = f"{model}: model unavailable (HTTP 404): {detail}"
+                    print(f"{model} is unavailable; trying the next configured model.")
+                    break
                 if exc.code not in (429, 500, 502, 503, 504) or attempt == 2:
-                    raise RuntimeError(f"Gemini API request failed (HTTP {exc.code}): {detail}") from exc
+                    last_error = f"{model}: HTTP {exc.code}: {detail}"
+                    break
                 delay = min(60, 15 * (2 ** attempt))
                 retry_after = exc.headers.get("Retry-After")
                 if retry_after:
