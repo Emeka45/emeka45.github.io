@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T19:51:03.375858+00:00",
+  "updated_at": "2026-10-21T20:06:02.777078+00:00",
   "videos": [
     {
       "video_id": "sPY3lry_Lg0",
@@ -496,6 +496,22 @@
       "is_short": true,
       "description": "National Geographic's Nature and Culture video explores the vast universe by detailing how there are currently more than 6,000 known exoplanets.",
       "published_by_pipeline_at": "2026-10-20T21:22:39.988318+00:00"
+    },
+    {
+      "video_id": "_u07GhQgNvk",
+      "title": "Skipping The Gym To Exercise My Rights 💅",
+      "category": "Technology & Ideas",
+      "channel": "WIRED",
+      "channel_id": "UCftwRNsjfRo08xYE31tkiyw",
+      "channel_url": "https://www.youtube.com/channel/UCftwRNsjfRo08xYE31tkiyw",
+      "url": "https://www.youtube.com/shorts/_u07GhQgNvk",
+      "embed_url": "https://www.youtube-nocookie.com/embed/_u07GhQgNvk",
+      "thumbnail": "https://i.ytimg.com/vi/_u07GhQgNvk/hqdefault.jpg",
+      "published_at": "2026-10-20T18:30:02+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "WIRED — Skipping The Gym To Exercise My Rights 💅. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-10-21T20:06:02.671597+00:00"
     },
     {
       "video_id": "jk0t12N7fV0",
@@ -1506,6 +1522,22 @@
       "published_by_pipeline_at": "2026-10-19T07:18:18.490469+00:00"
     },
     {
+      "video_id": "l0ZhENzV_14",
+      "title": "Mr. Johnson: Abbott Elementary's Many-Faced God",
+      "category": "Technology & Ideas",
+      "channel": "WIRED",
+      "channel_id": "UCftwRNsjfRo08xYE31tkiyw",
+      "channel_url": "https://www.youtube.com/channel/UCftwRNsjfRo08xYE31tkiyw",
+      "url": "https://www.youtube.com/shorts/l0ZhENzV_14",
+      "embed_url": "https://www.youtube-nocookie.com/embed/l0ZhENzV_14",
+      "thumbnail": "https://i.ytimg.com/vi/l0ZhENzV_14/hqdefault.jpg",
+      "published_at": "2026-10-15T15:45:03+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "WIRED — Mr. Johnson: Abbott Elementary's Many-Faced God. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-10-21T20:06:02.776897+00:00"
+    },
+    {
       "video_id": "av3zdxYvCp8",
       "title": "3 things to never do with a credit card",
       "category": "Ideas & Explainers",
@@ -2368,38 +2400,6 @@
       "is_short": true,
       "description": "Diablo AMV's — How Lamine Yamal destroyed Croatia - FOOTBALL ANIME VERSION. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-10-21T18:03:34.870968+00:00"
-    },
-    {
-      "video_id": "0mdRXQYxLQA",
-      "title": "Don’t Leave Me - feat. Amaeya #DLM #newmusic",
-      "category": "African Music",
-      "channel": "Mavin Records",
-      "channel_id": "UCbSj4OkU-WH5nIqBMqsH4zQ",
-      "channel_url": "https://www.youtube.com/channel/UCbSj4OkU-WH5nIqBMqsH4zQ",
-      "url": "https://www.youtube.com/shorts/0mdRXQYxLQA",
-      "embed_url": "https://www.youtube-nocookie.com/embed/0mdRXQYxLQA",
-      "thumbnail": "https://i.ytimg.com/vi/0mdRXQYxLQA/hqdefault.jpg",
-      "published_at": "2026-09-29T21:09:56+00:00",
-      "source": "YouTube channel feed",
-      "is_short": true,
-      "description": "Watch the new African Music video for \"Don’t Leave Me\" by Amaeya, released on the Mavin Records channel.",
-      "published_by_pipeline_at": "2026-10-21T19:50:56.174713+00:00"
-    },
-    {
-      "video_id": "dZmkWdurcwQ",
-      "title": "Engineer Explains Every Type of Bridge",
-      "category": "Engineering & Infrastructure",
-      "channel": "The B1M",
-      "channel_id": "UCN3aYbtQ7yCqk9DM56B0kEw",
-      "channel_url": "https://www.youtube.com/channel/UCN3aYbtQ7yCqk9DM56B0kEw",
-      "url": "https://www.youtube.com/watch?v=dZmkWdurcwQ",
-      "embed_url": "https://www.youtube-nocookie.com/embed/dZmkWdurcwQ",
-      "thumbnail": "https://i.ytimg.com/vi/dZmkWdurcwQ/hqdefault.jpg",
-      "published_at": "2026-09-29T14:01:36+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "The B1M — Engineer Explains Every Type of Bridge. Watch the original video on YouTube.",
-      "published_by_pipeline_at": "2026-10-21T18:03:56.316222+00:00"
     }
   ]
 }
