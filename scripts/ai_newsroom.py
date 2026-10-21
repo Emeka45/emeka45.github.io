@@ -29,7 +29,7 @@ BLOCKED_TERMS = {'porn', 'pornography', 'xxx', 'explicit sex', 'sexual explicit'
 
 FEEDS = {
     'Nigeria Politics': ['https://rss.punchng.com/v1/category/politics', 'https://thereporter.com.ng/rss/category/politics'],
-    'Religion & Faith': ['https://christianitynigeria.com/feed/', 'https://nscia.com.ng/category/news/feed/'],
+    'Religion & Faith': ['https://news.google.com/rss/search?q=Nigeria+Christianity+church+faith+when:7d&hl=en-NG&gl=NG&ceid=NG:en', 'https://nscia.com.ng/category/news/feed/'],
     'Education': ['https://rss.punchng.com/v1/category/education', 'https://thereporter.com.ng/rss/category/education'],
     'Business & Economy': ['https://rss.punchng.com/v1/category/business', 'https://thereporter.com.ng/rss/category/business'],
     'Security & Crime': ['https://thereporter.com.ng/rss/category/security', 'https://rss.punchng.com/v1/category/latest_news'],
@@ -41,7 +41,7 @@ FEEDS = {
     'Gaming': ['https://www.polygon.com/rss/index.xml', 'https://www.eurogamer.net/feed'],
     'Anime': ['https://www.animenewsnetwork.com/all/rss.xml', 'https://www.animenewsnetwork.com/news/rss.xml'],
     'Sports': ['https://rss.punchng.com/v1/category/sports', 'https://thereporter.com.ng/rss/category/sports-2'],
-    'Entertainment & Lifestyle': ['https://rss.punchng.com/v1/category/entertainment', 'https://thereporter.com.ng/rss/category/Entertainment-&-Lifestyle'],
+    'Entertainment & Lifestyle': ['https://rss.punchng.com/v1/category/entertainment', 'https://news.google.com/rss/search?q=Nigeria+entertainment+celebrity+music+when:7d&hl=en-NG&gl=NG&ceid=NG:en'],
     'World': ['https://feeds.bbci.co.uk/news/world/rss.xml', 'https://www.theguardian.com/world/rss'],
 }
 STOPWORDS = {'the','a','an','and','or','of','to','in','on','for','with','from','by','at','is','are','as','new','news','after','into','over','its','this','that','will','has','have','how','why','what','who','their','they','it','be','about','more','than','says','said','amid','among','over','could','would','also','first','latest','report','reports'}
