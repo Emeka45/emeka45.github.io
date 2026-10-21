@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       topic:
-        description: "Optional specific article topic (leave blank for the next planned topic)"
+        description: "Optional specific article topic"
         required: false
         type: string
       category:
@@ -47,34 +47,22 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Verify required Gemini secret
+      - name: Generate one original feature article reliably
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: |
-          if [ -z "$GEMINI_API_KEY" ]; then
-            echo "ERROR: GitHub Actions secret GEMINI_API_KEY is missing or unavailable to this workflow."
-            echo "Add it under Repository Settings > Secrets and variables > Actions. Do not put the key in source code."
-            exit 1
-          fi
-          echo "Gemini API secret is present (value hidden)."
-      - name: Generate one original feature article
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: gemini-3.5-flash-lite
           ARTICLE_TOPIC: ${{ inputs.topic }}
           ARTICLE_CATEGORY: ${{ inputs.category }}
-        run: python scripts/run_ai_articles.py
+        run: python scripts/run_articles_reliable.py
       - name: Show editorial diagnostics
         if: always()
         run: |
-          echo '=== AI ARTICLES REPORT ==='
+          echo '=== ARTICLES REPORT ==='
           if [ -f articles-data/run-report.json ]; then cat articles-data/run-report.json; else echo 'No report generated.'; fi
       - name: Publish article and index
         if: success()
         run: |
           git config user.name 'C. O. Eric AI Articles'
           git config user.email 'actions@users.noreply.github.com'
-          git add articles/ articles-data/ sitemap.xml
+          git add articles/ articles-data/
           if git diff --cached --quiet; then
             echo 'No article changes to publish.'
             exit 0
