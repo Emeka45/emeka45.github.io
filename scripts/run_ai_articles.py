@@ -85,76 +85,90 @@ Return ONLY valid JSON with this schema:
 {{"publish":true,"reason":"...","title":"...","category":"...","summary":"...","meta_description":"...","body_html":"...","sources":[{{"title":"...","url":"https://..."}}],"tags":["..."]}}
 Set publish=false if the topic cannot be responsibly handled as an original useful article.
 """
-    endpoint = "https://generativelanguage.googleapis.com/v1beta/models/" + urllib.parse.quote(MODEL, safe="") + ":generateContent"
     payload = {
         "systemInstruction": {"parts": [{"text": "You are a careful professional feature editor. Output valid JSON only. Never fabricate evidence."}]},
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {"responseMimeType": "application/json", "temperature": 0.75}
     }
-    req = urllib.request.Request(
-        endpoint,
-        data=json.dumps(payload).encode(),
-        headers={"Content-Type": "application/json", "x-goog-api-key": key},
-        method="POST"
-    )
-    # Retry transient service/rate-limit errors, but fail immediately on exhausted quota
-    # so the workflow does not waste calls or hide the real cause.
-    for attempt in range(3):
-        try:
-            with urllib.request.urlopen(req, timeout=90) as response:
-                data = json.loads(response.read().decode("utf-8"))
-            candidates = data.get("candidates") or []
-            if not candidates:
-                feedback = data.get("promptFeedback", {})
-                raise RuntimeError(
-                    "Gemini returned no article candidate. "
-                    + json.dumps(feedback, ensure_ascii=False)[:700]
-                )
-            parts = candidates[0].get("content", {}).get("parts", [])
-            raw = next((part.get("text") for part in parts if isinstance(part, dict) and part.get("text")), None)
-            if not raw:
-                finish = candidates[0].get("finishReason", "unknown")
-                raise RuntimeError(f"Gemini returned no text (finishReason={finish}).")
+    # Try a short, ordered model fallback list. A quota limit can apply to one
+    # model while another model in the same project may still have capacity.
+    models = []
+    for candidate in (MODEL, "gemini-3.8-flash", "gemini-2.5-flash", "gemini-2.0-flash"):
+        if candidate not in models:
+            models.append(candidate)
+    last_error = None
+    for model in models:
+        endpoint = "https://generativelanguage.googleapis.com/v1beta/models/" + urllib.parse.quote(model, safe="") + ":generateContent"
+        req = urllib.request.Request(
+            endpoint,
+            data=json.dumps(payload).encode(),
+            headers={"Content-Type": "application/json", "x-goog-api-key": key},
+            method="POST"
+        )
+        print(f"Trying Gemini model: {model}")
+        # Retry transient service/rate-limit errors, then fall back to another model.
+        for attempt in range(3):
             try:
-                return json.loads(raw)
-            except json.JSONDecodeError as exc:
-                raise RuntimeError(f"Gemini returned invalid JSON: {exc}") from exc
-        except urllib.error.HTTPError as exc:
-            error_body = exc.read().decode("utf-8", errors="replace")
-            message = error_body
-            try:
-                error_json = json.loads(error_body)
-                message = error_json.get("error", {}).get("message", error_body)
-                status = str(error_json.get("error", {}).get("status", ""))
-            except (ValueError, AttributeError):
-                status = ""
-            detail = str(message)[:900]
-            lower = (detail + " " + status).lower()
-            if exc.code == 429 and any(term in lower for term in (
-                "quota", "resource_exhausted", "requests per day",
-                "daily limit", "limit: 0", "billing"
-            )):
-                raise RuntimeError(
-                    "Gemini API quota/rate limit is exhausted for this key or project "
-                    f"(HTTP 429). Wait for the quota reset or check the key's API quota. Details: {detail}"
-                ) from exc
-            if exc.code not in (429, 500, 502, 503, 504) or attempt == 2:
-                raise RuntimeError(f"Gemini API request failed (HTTP {exc.code}): {detail}") from exc
-            delay = min(60, 15 * (2 ** attempt))
-            retry_after = exc.headers.get("Retry-After")
-            if retry_after:
+                with urllib.request.urlopen(req, timeout=90) as response:
+                    data = json.loads(response.read().decode("utf-8"))
+                candidates = data.get("candidates") or []
+                if not candidates:
+                    feedback = data.get("promptFeedback", {})
+                    raise RuntimeError(
+                        "Gemini returned no article candidate. "
+                        + json.dumps(feedback, ensure_ascii=False)[:700]
+                    )
+                parts = candidates[0].get("content", {}).get("parts", [])
+                raw = next((part.get("text") for part in parts if isinstance(part, dict) and part.get("text")), None)
+                if not raw:
+                    finish = candidates[0].get("finishReason", "unknown")
+                    raise RuntimeError(f"Gemini returned no text (finishReason={finish}).")
                 try:
-                    delay = max(5, min(90, int(retry_after)))
-                except ValueError:
+                    return json.loads(raw)
+                except json.JSONDecodeError as exc:
+                    raise RuntimeError(f"Gemini returned invalid JSON: {exc}") from exc
+            except urllib.error.HTTPError as exc:
+                error_body = exc.read().decode("utf-8", errors="replace")
+                message = error_body
+                try:
+                    error_json = json.loads(error_body)
+                    message = error_json.get("error", {}).get("message", error_body)
+                    status = str(error_json.get("error", {}).get("status", ""))
+                except (ValueError, AttributeError):
+                    status = ""
+                detail = str(message)[:900]
+                lower = (detail + " " + status).lower()
+                if exc.code == 429 and any(term in lower for term in (
+                    "quota", "resource_exhausted", "requests per day",
+                    "daily limit", "limit: 0", "billing"
+                )):
+                    raise RuntimeError(
+                        "Gemini API quota/rate limit is exhausted for this key or project "
+                        f"(HTTP 429). Wait for the quota reset or check the key's API quota. Details: {detail}"
+                    ) from exc
+                if exc.code not in (429, 500, 502, 503, 504) or attempt == 2:
+                    raise RuntimeError(f"Gemini API request failed (HTTP {exc.code}): {detail}") from exc
+                delay = min(60, 15 * (2 ** attempt))
+                retry_after = exc.headers.get("Retry-After")
+                if retry_after:
                     try:
-                        retry_at = email.utils.parsedate_to_datetime(retry_after)
-                        if retry_at.tzinfo is None:
-                            retry_at = retry_at.replace(tzinfo=dt.timezone.utc)
-                        delay = max(5, min(90, int((retry_at - dt.datetime.now(dt.timezone.utc)).total_seconds())))
-                    except (TypeError, ValueError, OverflowError):
-                        pass
-            print(f"Gemini transient HTTP {exc.code}; retrying in {delay}s (attempt {attempt + 1}/3). Details: {detail[:300]}")
-            time.sleep(delay)
+                        delay = max(5, min(90, int(retry_after)))
+                    except ValueError:
+                        try:
+                            retry_at = email.utils.parsedate_to_datetime(retry_after)
+                            if retry_at.tzinfo is None:
+                                retry_at = retry_at.replace(tzinfo=dt.timezone.utc)
+                            delay = max(5, min(90, int((retry_at - dt.datetime.now(dt.timezone.utc)).total_seconds())))
+                        except (TypeError, ValueError, OverflowError):
+                            pass
+                print(f"Gemini transient HTTP {exc.code}; retrying in {delay}s (attempt {attempt + 1}/3). Details: {detail[:300]}")
+                time.sleep(delay)
+
+    raise RuntimeError(
+        "Article generation failed with all configured Gemini models. "
+        "Check API model availability and free-tier quota. Last error: "
+        + str(last_error or "No model returned a usable article.")[:700]
+    )
 
 def safe_body(raw, sources):
     allowed = {"p", "h2", "h3", "ul", "ol", "li", "strong", "em", "blockquote", "a"}
