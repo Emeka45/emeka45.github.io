@@ -8,14 +8,15 @@ const TOPICS = [
   { category: "viral", query: "viral internet trends OR social media trends" }
 ];
 
-function xmlText(node, tag) {
-  const el = node.getElementsByTagName(tag)[0];
-  return el ? (el.textContent || "").trim() : "";
+function xmlField(block, tag) {
+  const match = block.match(new RegExp("<" + tag + "(?:\\s[^>]*)?>([\\s\\S]*?)</" + tag + ">", "i"));
+  return match ? match[1].replace(/^<!\\[CDATA\\[([\\s\\S]*)\\]\\]>$/, "$1").trim() : "";
 }
 function cleanText(s) {
   return String(s || "").replace(/<[^>]*>/g, " ").replace(/&amp;/g, "&")
     .replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">").replace(/\s+/g, " ").trim().slice(0, 500);
+    .replace(/&gt;/g, ">").replace(/&#(\\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+    .replace(/&apos;/g, "'").replace(/\\s+/g, " ").trim().slice(0, 500);
 }
 export async function onRequestGet({ request }) {
   const cors = {
@@ -36,12 +37,12 @@ export async function onRequestGet({ request }) {
         const response = await fetch(feedURL, { headers: { "User-Agent": "COEricSocialHub/1.0 (+https://emeka45.github.io)" } });
         if (!response.ok) return [];
         const xml = await response.text();
-        const doc = new DOMParser().parseFromString(xml, "text/xml");
-        return Array.from(doc.querySelectorAll("item")).slice(0, 8).map(item => {
-          const title = cleanText(xmlText(item, "title"));
-          const link = xmlText(item, "link");
-          const description = cleanText(xmlText(item, "description"));
-          const source = cleanText(xmlText(item, "source") || "Google News");
+        return Array.from(xml.matchAll(/<item(?:\\s[^>]*)?>([\\s\\S]*?)<\\/item>/gi)).slice(0, 8).map(match => {
+          const item = match[1];
+          const title = cleanText(xmlField(item, "title"));
+          const link = cleanText(xmlField(item, "link"));
+          const description = cleanText(xmlField(item, "description"));
+          const source = cleanText(xmlField(item, "source") || "Google News");
           if (!title || !/^https:\/\//i.test(link)) return null;
           return { title, summary: description || "Open the original public report for details.", category: topic.category, source, url: link };
         }).filter(Boolean);
