@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T09:15:51.600595+00:00",
+  "updated_at": "2026-10-21T11:19:04.967236+00:00",
   "videos": [
     {
       "video_id": "SAIPNwqH978",
@@ -1314,6 +1314,22 @@
       "published_by_pipeline_at": "2026-10-21T09:15:47.530494+00:00"
     },
     {
+      "video_id": "qrmRJfG5vM4",
+      "title": "Is a Moving Arrow NOT Actually Moving?",
+      "category": "Science & Nature",
+      "channel": "PBS Terra",
+      "channel_id": "UC7_gcs09iThXybpVgjHZ_7g",
+      "channel_url": "https://www.youtube.com/channel/UC7_gcs09iThXybpVgjHZ_7g",
+      "url": "https://www.youtube.com/shorts/qrmRJfG5vM4",
+      "embed_url": "https://www.youtube-nocookie.com/embed/qrmRJfG5vM4",
+      "thumbnail": "https://i.ytimg.com/vi/qrmRJfG5vM4/hqdefault.jpg",
+      "published_at": "2026-10-07T19:15:23+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "In this Science & Nature video from PBS Terra, explore the philosophical and physical question of whether a moving arrow is actually moving.",
+      "published_by_pipeline_at": "2026-10-21T11:18:47.779271+00:00"
+    },
+    {
       "video_id": "FTQgGxG6T_w",
       "title": "Apple Finally Made AirPods Repairable",
       "category": "Practical Skills",
@@ -1378,6 +1394,22 @@
       "published_by_pipeline_at": "2026-10-19T07:18:13.693593+00:00"
     },
     {
+      "video_id": "1JuzFJlw9-w",
+      "title": "Are You Made of Light?",
+      "category": "Science & Nature",
+      "channel": "PBS Terra",
+      "channel_id": "UC7_gcs09iThXybpVgjHZ_7g",
+      "channel_url": "https://www.youtube.com/channel/UC7_gcs09iThXybpVgjHZ_7g",
+      "url": "https://www.youtube.com/shorts/1JuzFJlw9-w",
+      "embed_url": "https://www.youtube-nocookie.com/embed/1JuzFJlw9-w",
+      "thumbnail": "https://i.ytimg.com/vi/1JuzFJlw9-w/hqdefault.jpg",
+      "published_at": "2026-10-05T19:15:05+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "PBS Terra's Science & Nature video explores whether humans are fundamentally made of light, examining scientific concepts related to light and existence.",
+      "published_by_pipeline_at": "2026-10-21T11:18:48.568269+00:00"
+    },
+    {
       "video_id": "ujkD4SxPKOI",
       "title": "AI Just Crossed the Terrifying Line - Now What?",
       "category": "Science & Big Ideas",
@@ -1392,6 +1424,22 @@
       "is_short": false,
       "description": "In this science and big ideas video by Kurzgesagt – In a Nutshell, explore what happens now that artificial intelligence has crossed a terrifying new line.",
       "published_by_pipeline_at": "2026-10-19T12:21:51.068670+00:00"
+    },
+    {
+      "video_id": "d102m8yu9eQ",
+      "title": "Which Way is Up in Space?",
+      "category": "Space & Discovery",
+      "channel": "NASA",
+      "channel_id": "UC9SM7V7J1pAhPabOUST01fw",
+      "channel_url": "https://www.youtube.com/channel/UC9SM7V7J1pAhPabOUST01fw",
+      "url": "https://www.youtube.com/shorts/d102m8yu9eQ",
+      "embed_url": "https://www.youtube-nocookie.com/embed/d102m8yu9eQ",
+      "thumbnail": "https://i.ytimg.com/vi/d102m8yu9eQ/hqdefault.jpg",
+      "published_at": "2026-10-05T11:49:39+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "NASA's Space and Discovery video explores orientation and navigation, explaining how to determine directions and understand which way is up in space.",
+      "published_by_pipeline_at": "2026-10-21T11:18:55.126491+00:00"
     },
     {
       "video_id": "kZ3Cr-EKELY",
@@ -1552,54 +1600,6 @@
       "is_short": false,
       "description": "In this Engineering & Infrastructure video from The B1M, an engineer explains every type of bridge, providing standalone knowledge and practical insights.",
       "published_by_pipeline_at": "2026-10-20T22:27:09.606461+00:00"
-    },
-    {
-      "video_id": "b1EMX3wyqCY",
-      "title": "Your Brain on Magic Mushrooms",
-      "category": "Science & Big Ideas",
-      "channel": "Kurzgesagt – In a Nutshell",
-      "channel_id": "UCsXVk37bltHxD1rDPwtNM8Q",
-      "channel_url": "https://www.youtube.com/channel/UCsXVk37bltHxD1rDPwtNM8Q",
-      "url": "https://www.youtube.com/shorts/b1EMX3wyqCY",
-      "embed_url": "https://www.youtube-nocookie.com/embed/b1EMX3wyqCY",
-      "thumbnail": "https://i.ytimg.com/vi/b1EMX3wyqCY/hqdefault.jpg",
-      "published_at": "2026-09-28T14:00:34+00:00",
-      "source": "YouTube channel feed",
-      "is_short": true,
-      "description": "Kurzgesagt – In a Nutshell explores the science and big ideas behind how magic mushrooms affect the human brain in this practical video.",
-      "published_by_pipeline_at": "2026-10-19T22:04:31.211918+00:00"
-    },
-    {
-      "video_id": "usfXJM5uAvk",
-      "title": "Habitation 101: What Makes a Habitation a Home",
-      "category": "Space & Discovery",
-      "channel": "NASA",
-      "channel_id": "UC9SM7V7J1pAhPabOUST01fw",
-      "channel_url": "https://www.youtube.com/channel/UC9SM7V7J1pAhPabOUST01fw",
-      "url": "https://www.youtube.com/watch?v=usfXJM5uAvk",
-      "embed_url": "https://www.youtube-nocookie.com/embed/usfXJM5uAvk",
-      "thumbnail": "https://i.ytimg.com/vi/usfXJM5uAvk/hqdefault.jpg",
-      "published_at": "2026-09-28T11:55:17+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Watch a NASA space and discovery video exploring the essential features that transform a basic habitation module into a functional home in space.",
-      "published_by_pipeline_at": "2026-10-21T08:59:59.993879+00:00"
-    },
-    {
-      "video_id": "pXypQ6d_iDg",
-      "title": "INSIDE a Nuclear Reactor Core - Smarter Every Day 317",
-      "category": "Science & Discovery",
-      "channel": "SmarterEveryDay",
-      "channel_id": "UC6107grRI4m0o2-emgoDnAA",
-      "channel_url": "https://www.youtube.com/channel/UC6107grRI4m0o2-emgoDnAA",
-      "url": "https://www.youtube.com/watch?v=pXypQ6d_iDg",
-      "embed_url": "https://www.youtube-nocookie.com/embed/pXypQ6d_iDg",
-      "thumbnail": "https://i.ytimg.com/vi/pXypQ6d_iDg/hqdefault.jpg",
-      "published_at": "2026-09-26T14:34:03+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "In this video from Smarter Every Day, journey inside a nuclear reactor core to explore the science and discovery behind its operation and practical mechanics.",
-      "published_by_pipeline_at": "2026-10-19T12:21:52.873968+00:00"
     }
   ]
 }

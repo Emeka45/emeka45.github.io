@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-10-21T09:15:51.602162+00:00",
+  "finished_utc": "2026-10-21T11:19:04.969007+00:00",
   "max_new_videos_per_run": 20,
   "max_selected_per_channel": 2,
   "max_shorts_per_run": 6,
@@ -31,26 +31,27 @@
       "error": "Could not resolve stable YouTube channel ID"
     }
   ],
-  "discovered": 76,
-  "published": 14,
-  "shorts_published": 6,
-  "duplicates_skipped": 55,
-  "pruned_feed_videos": 14,
+  "discovered": 75,
+  "published": 15,
+  "shorts_published": 4,
+  "duplicates_skipped": 54,
+  "pruned_feed_videos": 15,
   "total_stored": 100,
   "published_video_ids": [
+    "n_1wzYQwnts",
+    "2otGNwNOEUM",
+    "yKEvjr_PwNI",
+    "TXCQrjKazc8",
     "htAl33M5F54",
-    "r1wwtGgnzg4",
+    "-17mPnFxi30",
+    "AcjDyzYcIkc",
     "3L-_HyXdGP4",
     "Q9JcpSJwEK0",
     "g3ucRn4hm90",
-    "Qv5qQu0yMaU",
-    "HRFH9NkIsWo",
-    "Ntx3UVCNRMk",
-    "twkJp_jk-Xo",
-    "UP6J3Q9QH0I",
-    "0USB9ARf-9c",
-    "Wj3BvAGHcVQ",
-    "9_c74f8JDWo",
-    "-i3vdONekpc"
+    "205swuI0JlY",
+    "qrmRJfG5vM4",
+    "1JuzFJlw9-w",
+    "d102m8yu9eQ",
+    "MHfE-3xCqCQ"
   ]
 }
