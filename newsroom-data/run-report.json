@@ -1,6 +1,6 @@
 {
-  "started_utc": "2026-10-21T19:44:15.579903+00:00",
-  "finished_utc": "2026-10-21T19:45:07.001564+00:00",
+  "started_utc": "2026-10-21T19:49:38.649719+00:00",
+  "finished_utc": "2026-10-21T19:50:26.029390+00:00",
   "model": "gemini-3.5-flash-lite",
   "max_ai_candidates_per_run": 8,
   "feed_count": 56,
@@ -26,13 +26,13 @@
   "held_or_rejected": 8,
   "published_count": 0,
   "rejection_reasons": [
-    "The supplied source records discuss completely different events and topics (Abia State APC governorship zoning versus NITDA warning about AI manipulation ahead of the 2027 elections). There are no two different publisher domains materially supporting the same central event.",
-    "The provided sources discuss completely different events in different states (Bayelsa and Borno) with no overlapping central event to corroborate.",
-    "Only one distinct event or announcement is supported by at least two different publisher domains. The Punch source covers a political endorsement for 2027 <a href=\"https://punchng.com/2027-ex-presidential-candidate-lp-campaign-coordinators-endorse-tinubu/?utm_source=rss.punchng.com&utm_medium=web\">Punch News</a>, while the Reporter source covers the Tantita Security Services pipeline protection contract <a href=\"https://thereporter.com.ng/ex-iyc-president-defends-tompolo-contract-calls-on-tinubu-to-ignore-cancellation-demands\">The Reporter</a>. These are completely separate stories and lack corroboration across multiple domains.",
-    "The provided source records do not contain at least two different publisher domains materially corroborating the same central event. The sources cover entirely different topics: NITDA's warning on AI manipulation for the 2027 elections, the Nigerian judiciary, and tourism infrastructure investment.",
-    "The supplied source records do not contain at least two different publisher domains materially corroborating the same central event. Each topic listed has only one independent source or lacks overlapping coverage.",
-    "The provided sources discuss separate commentary, essays, and reports regarding Nigeria's justice system from different outlets (NALTF, THISDAYLIVE, The Fact, and The Sun Nigeria) rather than materially corroborating the same specific central event, announcement, or incident.",
-    "Multiple reputable sources (TheCable, Daily Trust, 21st Century Chronicle, and The Sun Nigeria) corroborate the statements made by retired Supreme Court Justice Amina Augie regarding corruption and delays in the Nigerian judiciary.",
-    "Multiple reputable sources (Vanguard News, The Sun Nigeria, FRCN HQ, and The Guardian Nigeria News) report on statements made by retired Supreme Court Justice Amina Augie regarding the state of Nigeria's justice system, rule of law, corruption, delays, and suggestions for constitutional reform."
+    "The provided source records discuss completely different events and topics (Abia State APC governorship zoning by thereporter.com.ng versus NITDA's warning about AI manipulation ahead of the 2027 elections by punchng.com). There are no two sources that materially corroborate the same central event.",
+    "The provided source records discuss entirely different events across different states (Bayelsa and Borno) without multiple independent domains corroborating the exact same central event.",
+    "Only one distinct event or announcement is supported by valid multi-source corroboration; the Punch source covers the 2027 political endorsement by a former presidential candidate and Labour Party coordinators, but there are no independent secondary sources for that event (the duplicate URLs do not count as separate publisher domains). The other source covers a completely different security/contract topic.",
+    "The provided source records cover completely different, unrelated events (Nigeria Immigration Service on irregular migration, port modernisation, justice reforms, and tourism infrastructure), lacking two or more sources that materially support the same central event.",
+    "The provided source records do not contain at least two different publisher domains materially supporting the same central event. Each news topic listed corresponds to separate events (NITDA warning on AI, judiciary analysis, and tourism infrastructure).",
+    "The supplied source records pertain to completely different events and topics across different domains (immigration, port modernization, justice reforms, and tourism infrastructure), lacking two or more sources that corroborate the same central event.",
+    "The supplied sources do not materially corroborate the same central event; each source discusses completely different topics (NITDA's warning on AI, the Nigerian judiciary, and tourism infrastructure).",
+    "The provided sources discuss the broad topic of Nigeria's justice system and legal reforms, but they do not materially corroborate the same specific central event, announcement, or development."
   ]
 }
