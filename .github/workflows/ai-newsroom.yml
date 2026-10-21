@@ -3,7 +3,7 @@ name: C. O. Eric AI Newsroom
 # Verified newsroom + automatic Video Hub pipeline.
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 3 * * *'
   workflow_dispatch:
 
 permissions:
@@ -30,7 +30,7 @@ jobs:
           python - <<'PY'
           import scripts.run_ai_newsroom as newsroom
           newsroom.ai_newsroom.AI_MODEL = 'gemini-3.5-flash-lite'
-          newsroom.ai_newsroom.MAX_AI_CANDIDATES_PER_RUN = 10
+          newsroom.ai_newsroom.MAX_AI_CANDIDATES_PER_RUN = 5
           newsroom.ai_newsroom.main()
           newsroom.normalize_and_seo()
           PY
