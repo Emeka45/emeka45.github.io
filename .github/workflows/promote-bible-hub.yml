@@ -1,0 +1,57 @@
+name: Promote Bible Hub
+
+on:
+  push:
+    paths:
+      - '.github/workflows/promote-bible-hub.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Promote key hubs on homepage
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path('index.html')
+          html = path.read_text(encoding='utf-8')
+          marker = '<section class="section" id="academic-hub">'
+
+          if marker not in html:
+              raise SystemExit('Homepage marker not found; refusing to modify index.html.')
+
+          blocks = [
+          '''<section class="section" id="dictionary-feature" style="padding-top:64px;padding-bottom:64px"><div class="wrap"><article style="position:relative;overflow:hidden;padding:38px;border:1px solid rgba(190,160,255,.30);border-radius:30px;background:radial-gradient(circle at 88% 10%,rgba(155,108,255,.25),transparent 34%),linear-gradient(135deg,rgba(155,108,255,.15),rgba(255,255,255,.035));box-shadow:0 24px 70px rgba(45,20,90,.22)"><div style="display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid rgba(255,255,255,.14);border-radius:999px;background:rgba(255,255,255,.06);color:#eadfff;font-size:.78rem;font-weight:850;letter-spacing:.05em">📖 FEATURED · UNIVERSAL DICTIONARY</div><h2 style="font-size:clamp(2rem,5vw,3.1rem);line-height:1.05;letter-spacing:-.045em;margin:16px 0 10px">Find the word you need — from a <span class="gradient">260,000+ word foundation.</span></h2><p style="color:var(--muted);max-width:780px;font-size:1.06rem;margin:0">Search meanings, parts of speech, examples and etymological information. The same dictionary service powers the Universal Dictionary Android app.</p><div class="buttons" style="margin-top:24px"><a class="btn primary" href="dictionary.html">Open Dictionary →</a><a class="btn" href="dictionary.html#searchForm">Search a word</a></div><div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:20px;color:#d8c7ff;font-size:.82rem"><span>🔎 Fast search</span><span>·</span><span>📚 260K+ words</span><span>·</span><span>📝 Examples</span><span>·</span><span>🌱 Etymology</span></div></article></div></section>''',
+          '''<section class="section" id="newsroom-feature" style="padding-top:64px;padding-bottom:64px"><div class="wrap"><article style="position:relative;overflow:hidden;padding:38px;border:1px solid rgba(190,160,255,.30);border-radius:30px;background:linear-gradient(135deg,rgba(20,27,55,.92),rgba(255,255,255,.035));box-shadow:0 24px 70px rgba(15,23,42,.24)"><div style="display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid rgba(255,255,255,.14);border-radius:999px;background:rgba(255,255,255,.06);color:#eadfff;font-size:.78rem;font-weight:850;letter-spacing:.05em">📰 FEATURED · NEWSROOM</div><h2 style="font-size:clamp(2rem,5vw,3.1rem);line-height:1.05;letter-spacing:-.045em;margin:16px 0 10px">What’s happening. <span class="gradient">Evidence first.</span></h2><p style="color:var(--muted);max-width:780px;font-size:1.06rem;margin:0">Follow automatically updated news across Nigeria and the world, with cross-source corroboration, safety screening and original synthesis.</p><div class="buttons" style="margin-top:24px"><a class="btn primary" href="newsroom.html">Open Newsroom →</a><a class="btn" href="newsroom.html#latest">Latest stories</a></div><div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:20px;color:#d8c7ff;font-size:.82rem"><span>✓ Corroborated</span><span>·</span><span>🌍 Global</span><span>·</span><span>🇳🇬 Nigeria-first</span><span>·</span><span>↻ Automatic updates</span></div></article></div></section>''',
+          '''<section class="section" id="articles-feature" style="padding-top:64px;padding-bottom:64px"><div class="wrap"><article style="position:relative;overflow:hidden;padding:38px;border:1px solid rgba(190,160,255,.30);border-radius:30px;background:linear-gradient(135deg,rgba(155,108,255,.15),rgba(255,255,255,.035));box-shadow:0 24px 70px rgba(45,20,90,.22)"><div style="display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid rgba(255,255,255,.14);border-radius:999px;background:rgba(255,255,255,.06);color:#eadfff;font-size:.78rem;font-weight:850;letter-spacing:.05em">✍️ FEATURED · ARTICLE HUB</div><h2 style="font-size:clamp(2rem,5vw,3.1rem);line-height:1.05;letter-spacing:-.045em;margin:16px 0 10px">Stories that go beyond the <span class="gradient">headlines.</span></h2><p style="color:var(--muted);max-width:780px;font-size:1.06rem;margin:0">Original features, practical explainers, education, technology, personal development and thoughtful perspectives — separate from the fast-moving Newsroom.</p><div class="buttons" style="margin-top:24px"><a class="btn primary" href="articles.html">Open Article Hub →</a><a class="btn" href="articles.html#articles">Browse articles</a></div><div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:20px;color:#d8c7ff;font-size:.82rem"><span>✍️ Original</span><span>·</span><span>🎓 Education</span><span>·</span><span>💡 Explainers</span><span>·</span><span>🌍 Ideas &amp; life</span></div></article></div></section>''',
+          '''<section class="section" id="bible-feature" style="padding-top:64px;padding-bottom:64px"><div class="wrap"><article style="position:relative;overflow:hidden;padding:38px;border:1px solid rgba(190,160,255,.30);border-radius:30px;background:radial-gradient(circle at 88% 10%,rgba(155,108,255,.30),transparent 34%),linear-gradient(135deg,rgba(155,108,255,.18),rgba(255,255,255,.035));box-shadow:0 24px 70px rgba(45,20,90,.28)"><div style="display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid rgba(255,255,255,.14);border-radius:999px;background:rgba(255,255,255,.06);color:#eadfff;font-size:.78rem;font-weight:850;letter-spacing:.05em">📖 FEATURED · BIBLE HUB</div><h2 style="font-size:clamp(2rem,5vw,3.1rem);line-height:1.05;letter-spacing:-.045em;margin:16px 0 10px">Read, search and study the Bible in <span class="gradient">1000+ translations.</span></h2><p style="color:var(--muted);max-width:780px;font-size:1.06rem;margin:0">A dedicated multilingual Bible reader with translation filtering, chapter navigation, search, bookmarks, reading history and version comparison. Explore available languages and open translations in one place.</p><div class="buttons" style="margin-top:24px"><a class="btn primary" href="bible.html">Open Bible Hub →</a><a class="btn" href="bible.html#languages">Explore languages</a></div><div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:20px;color:#d8c7ff;font-size:.82rem"><span>🌍 Multilingual</span><span>·</span><span>🔎 Search</span><span>·</span><span>🔖 Bookmarks</span><span>·</span><span>⚖️ Compare versions</span></div></article></div></section>'''
+          ]
+
+          for block in blocks:
+              section_id = block.split('id="', 1)[1].split('"', 1)[0]
+              if f'id="{section_id}"' not in html:
+                  html = html.replace(marker, block + marker, 1)
+
+          path.write_text(html, encoding='utf-8')
+          print('Homepage hub promotion complete.')
+          PY
+
+      - name: Commit homepage update
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          if git diff --cached --quiet; then
+            echo 'No homepage changes to commit.'
+          else
+            git commit -m 'Promote Dictionary Newsroom Articles and Bible Hub'
+            git push
+          fi
