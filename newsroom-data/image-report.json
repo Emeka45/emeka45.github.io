@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-10-22T00:26:44.422772+00:00",
+  "finished_utc": "2026-10-22T08:10:22.230851+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
   "missing_before_run": 5,
@@ -7,44 +7,44 @@
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-10-22-xbox-s-next-gen-console-to-reportedly-cost-up-to-1-800-with-a-helix-handheld-coming-in-202-9532461685.html",
-      "image": "news/images/2026-10-22-xbox-s-next-gen-console-to-reportedly-cost-up-to-1-800-with-a-helix-handheld-coming-in-202-9532461685-source.jpg",
-      "bytes": 31107,
+      "article": "2026-10-22-merging-spacex-and-tesla-would-be-a-good-idea-musk-says-725839d5bf.html",
+      "image": "news/images/2026-10-22-merging-spacex-and-tesla-would-be-a-good-idea-musk-says-725839d5bf-source.jpg",
+      "bytes": 121801,
       "provider": "Original news source",
-      "source_url": "https://www.eurogamer.net/microsoft-next-gen-xbox-helix-date-price",
-      "image_url": "https://assetsio.gnwcdn.com/Project-Helix-logo-and-name-written-in-white-on-a-black-background.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
+      "source_url": "https://arstechnica.com/space/2026/10/spacex-and-tesla-into-a-single-company-has-a-lot-of-merit-musk-says/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/tesla-in-space-1152x648.jpg"
     },
     {
-      "article": "2026-10-22-tourist-found-guilty-after-stealing-las-vegas-flamingo-from-enclosure-436908c7e0.html",
-      "image": "news/images/2026-10-22-tourist-found-guilty-after-stealing-las-vegas-flamingo-from-enclosure-436908c7e0-source.jpg",
-      "bytes": 3847645,
+      "article": "2026-10-22-elon-musk-confirms-he-is-considering-merging-tesla-and-spacex-b75c9ae819.html",
+      "image": "news/images/2026-10-22-elon-musk-confirms-he-is-considering-merging-tesla-and-spacex-b75c9ae819-source.jpg",
+      "bytes": 833629,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cq398rjewd1jo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/8f1e/live/5b9b0010-cc2f-11f1-aeea-f9fa95687445.png"
+      "source_url": "https://www.bbc.co.uk/news/articles/cmlyl09xjke4o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/819f/live/f7b5d9b0-ccd0-11f1-b06b-25a52a186d15.png"
     },
     {
-      "article": "2026-10-22-rip-bioware-ea-shuts-down-storied-rpg-studio-after-over-three-decades-d3d5856bb7.html",
-      "image": "news/images/2026-10-22-rip-bioware-ea-shuts-down-storied-rpg-studio-after-over-three-decades-d3d5856bb7-source.jpg",
-      "bytes": 90872,
+      "article": "2026-10-22-airbnb-hosts-can-no-longer-make-guests-strip-beds-and-wash-dishes-under-new-rules-d11bfd3583.html",
+      "image": "news/images/2026-10-22-airbnb-hosts-can-no-longer-make-guests-strip-beds-and-wash-dishes-under-new-rules-d11bfd3583-source.jpg",
+      "bytes": 126601,
       "provider": "Original news source",
-      "source_url": "https://arstechnica.com/gaming/2026/10/rip-bioware-ea-shuts-down-storied-rpg-studio-after-over-three-decades/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/me3ending-1152x648.webp"
+      "source_url": "https://www.bbc.co.uk/news/articles/c6n049gg75r4o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/c5a8/live/221cd660-cda1-11f1-96a8-11b361e3c25f.jpg"
     },
     {
-      "article": "2026-10-22-microsoft-reportedly-projects-1-200-to-1-800-price-for-2028-project-helix-54e9b2c59d.html",
-      "image": "news/images/2026-10-22-microsoft-reportedly-projects-1-200-to-1-800-price-for-2028-project-helix-54e9b2c59d-source.jpg",
-      "bytes": 86491,
+      "article": "2026-10-22-airbnb-guests-freed-from-chores-involving-significant-effort-under-new-global-rules-452fd2cf63.html",
+      "image": "news/images/2026-10-22-airbnb-guests-freed-from-chores-involving-significant-effort-under-new-global-rules-452fd2cf63-source.jpg",
+      "bytes": 42093,
       "provider": "Original news source",
-      "source_url": "https://arstechnica.com/gaming/2026/10/report-microsofts-project-helix-planned-for-2028-at-1200-to-1800-price/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2024/07/xbox-dominoes-1152x648.jpg"
+      "source_url": "https://www.theguardian.com/australia-news/2026/oct/22/airbnb-guests-freed-from-chores-involving-significant-effort-under-new-global-rules",
+      "image_url": "https://i.guim.co.uk/img/media/5885c2f121a007a0351fd0b0ec78ab29184cd31b/606_0_3750_3001/master/3750.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=01899534c0529cb6f62940d9e603d9a2"
     },
     {
-      "article": "2026-10-22-bad-decisions-man-convicted-for-taking-peachy-the-flamingo-from-las-vegas-hotel-929b573409.html",
-      "image": "news/images/2026-10-22-bad-decisions-man-convicted-for-taking-peachy-the-flamingo-from-las-vegas-hotel-929b573409-source.jpg",
-      "bytes": 61084,
+      "article": "2026-10-22-airbnb-bans-making-guests-do-dishes-and-take-out-the-trash-8ee944620f.html",
+      "image": "news/images/2026-10-22-airbnb-bans-making-guests-do-dishes-and-take-out-the-trash-8ee944620f-source.jpg",
+      "bytes": 56448,
       "provider": "Original news source",
-      "source_url": "https://www.theguardian.com/us-news/2026/oct/20/man-convicted-peachy-the-flamingo-las-vegas-hotel",
-      "image_url": "https://i.guim.co.uk/img/media/347c2b50dd40c786867351c740f195ced11a57b8/473_141_1639_1312/master/1639.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2c54f47e97c61b01c2168fcabfd7d89c"
+      "source_url": "https://www.theverge.com/tech/1015844/airbnb-chores-house-rules-update",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/04/acastro_STK090_06.jpg?quality=90&strip=all&crop=0%2C10.761835884455%2C100%2C78.47632823109&w=1200"
     }
   ],
   "openverse_photos": [],

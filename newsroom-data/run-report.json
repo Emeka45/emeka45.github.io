@@ -1,21 +1,21 @@
 {
-  "started_utc": "2026-10-22T00:26:25.763136+00:00",
-  "finished_utc": "2026-10-22T00:26:41.735094+00:00",
+  "started_utc": "2026-10-22T08:10:03.182201+00:00",
+  "finished_utc": "2026-10-22T08:10:20.096406+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 347,
-  "fresh_items": 342,
-  "corroborated_candidates": 8,
+  "fresh_items": 337,
+  "corroborated_candidates": 7,
   "published_count": 5,
   "published_titles": [
-    "Tourist found guilty after stealing Las Vegas flamingo from enclosure",
-    "‘Bad decisions’: Man convicted for taking Peachy the flamingo from Las Vegas hotel",
-    "Microsoft reportedly projects $1,200 to $1,800 price for 2028 Project Helix",
-    "Xbox's next-gen console to reportedly cost up to $1,800, with a Helix handheld coming in 2027 and a full release in holiday 2028",
-    "RIP BioWare: EA shuts down storied RPG studio after over three decades"
+    "Airbnb hosts can no longer make guests strip beds and wash dishes under new rules",
+    "Airbnb guests freed from chores involving ‘significant effort’ under new global rules",
+    "Airbnb bans making guests do dishes and take out the trash",
+    "Merging SpaceX and Tesla would be a \"good idea,\" Musk says",
+    "Elon Musk confirms he is considering merging Tesla and SpaceX"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }

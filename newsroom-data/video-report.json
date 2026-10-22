@@ -1,10 +1,10 @@
 {
-  "finished_utc": "2026-10-22T00:27:04.088469+00:00",
+  "finished_utc": "2026-10-22T08:10:53.060995+00:00",
   "max_new_videos_per_run": 30,
   "max_selected_per_channel": 2,
   "max_shorts_per_run": 10,
   "channels_configured": 31,
-  "channels_resolved": 3,
+  "channels_resolved": 29,
   "resolver_methods": {
     "TED-Ed": "unresolved",
     "Veritasium": "youtube_handle",
@@ -44,121 +44,42 @@
       "error": "Could not resolve stable YouTube channel ID"
     },
     {
-      "channel": "Veritasium",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "SmarterEveryDay",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Kurzgesagt – In a Nutshell",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "NASA",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "National Geographic",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "BBC Earth",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Practical Engineering",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "The B1M",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "iFixit",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Tested",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "WIRED",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Google DeepMind",
-      "error": "HTTP Error 500: Internal Server Error"
-    },
-    {
-      "channel": "Y Combinator",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
       "channel": "Nairametrics",
       "error": "Could not resolve stable YouTube channel ID"
-    },
-    {
-      "channel": "TED",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Muse Asia",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Ani-One Asia",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Crunchyroll",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "TheBestAMVsOfAllTime",
-      "error": "HTTP Error 500: Internal Server Error"
-    },
-    {
-      "channel": "Diablo AMV's",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Hillsong Worship",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Nathaniel Bassey",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Lofi Girl",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "COLORS",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Trap Nation",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Mavin Records",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "channel": "Chocolate City Music",
-      "error": "HTTP Error 500: Internal Server Error"
     }
   ],
-  "discovered": 10,
-  "published": 1,
-  "shorts_published": 1,
-  "duplicates_skipped": 9,
-  "pruned_feed_videos": 1,
+  "discovered": 139,
+  "published": 26,
+  "shorts_published": 3,
+  "duplicates_skipped": 89,
+  "pruned_feed_videos": 26,
   "total_stored": 150,
   "published_video_ids": [
-    "D_dEU8LbmSg"
+    "1nZzfacrRsU",
+    "BknxKToZw_U",
+    "4S2tnUvdXTM",
+    "fkkpHEj6Qn8",
+    "7O5462Gl8FE",
+    "8I_WqKlY0B4",
+    "Hjj1PQORNKg",
+    "l0YJwKvsuyc",
+    "bfnWVVtGndc",
+    "ZJUgw0kXMIw",
+    "FlBenFm5RFk",
+    "bIDKOYKgRYQ",
+    "n_1wzYQwnts",
+    "YjnGXebvzN8",
+    "T6hVGJ4gepk",
+    "dZmkWdurcwQ",
+    "2otGNwNOEUM",
+    "yKEvjr_PwNI",
+    "g3ucRn4hm90",
+    "usfXJM5uAvk",
+    "-17mPnFxi30",
+    "AcjDyzYcIkc",
+    "3L-_HyXdGP4",
+    "Q9JcpSJwEK0",
+    "205swuI0JlY",
+    "MHfE-3xCqCQ"
   ]
 }
