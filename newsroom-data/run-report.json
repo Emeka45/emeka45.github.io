@@ -1,21 +1,20 @@
 {
-  "started_utc": "2026-10-22T08:10:03.182201+00:00",
-  "finished_utc": "2026-10-22T08:10:20.096406+00:00",
+  "started_utc": "2026-10-22T18:25:17.941232+00:00",
+  "finished_utc": "2026-10-22T18:25:35.148804+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 347,
-  "fresh_items": 337,
-  "corroborated_candidates": 7,
-  "published_count": 5,
+  "fresh_items": 339,
+  "corroborated_candidates": 4,
+  "published_count": 4,
   "published_titles": [
-    "Airbnb hosts can no longer make guests strip beds and wash dishes under new rules",
-    "Airbnb guests freed from chores involving ‘significant effort’ under new global rules",
-    "Airbnb bans making guests do dishes and take out the trash",
-    "Merging SpaceX and Tesla would be a \"good idea,\" Musk says",
-    "Elon Musk confirms he is considering merging Tesla and SpaceX"
+    "'Marvel’s Wolverine' Soars on PS5 Sales Charts Despite Negative Buzz",
+    "Despite its mixed reception, Marvel's Wolverine was September's top-selling new game in the US, making Sony launch revenues it hasn't seen since Helldivers 2",
+    "Abia CityBoy Movement Congratulates Lucky Igbokwe On APC Campaign Council Appointment",
+    "Oborevwori inaugurates Delta APC campaign council"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }

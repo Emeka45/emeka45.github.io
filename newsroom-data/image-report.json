@@ -1,50 +1,42 @@
 {
-  "finished_utc": "2026-10-22T08:10:22.230851+00:00",
+  "finished_utc": "2026-10-22T18:25:38.038975+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 5,
-  "attempted": 5,
+  "missing_before_run": 4,
+  "attempted": 4,
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-10-22-merging-spacex-and-tesla-would-be-a-good-idea-musk-says-725839d5bf.html",
-      "image": "news/images/2026-10-22-merging-spacex-and-tesla-would-be-a-good-idea-musk-says-725839d5bf-source.jpg",
-      "bytes": 121801,
+      "article": "2026-10-22-oborevwori-inaugurates-delta-apc-campaign-council-5d016f1bfa.html",
+      "image": "news/images/2026-10-22-oborevwori-inaugurates-delta-apc-campaign-council-5d016f1bfa-source.jpg",
+      "bytes": 136250,
       "provider": "Original news source",
-      "source_url": "https://arstechnica.com/space/2026/10/spacex-and-tesla-into-a-single-company-has-a-lot-of-merit-musk-says/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/tesla-in-space-1152x648.jpg"
+      "source_url": "https://punchng.com/oborevwori-inaugurates-delta-apc-campaign-council/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/10/22185921/WhatsApp-Image-2026-10-22-at-18.29.01_1792691961-1080x630.webp"
     },
     {
-      "article": "2026-10-22-elon-musk-confirms-he-is-considering-merging-tesla-and-spacex-b75c9ae819.html",
-      "image": "news/images/2026-10-22-elon-musk-confirms-he-is-considering-merging-tesla-and-spacex-b75c9ae819-source.jpg",
-      "bytes": 833629,
+      "article": "2026-10-22-marvel-s-wolverine-soars-on-ps5-sales-charts-despite-negative-buzz-0f6860a6f1.html",
+      "image": "news/images/2026-10-22-marvel-s-wolverine-soars-on-ps5-sales-charts-despite-negative-buzz-0f6860a6f1-source.jpg",
+      "bytes": 108096,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cmlyl09xjke4o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/819f/live/f7b5d9b0-ccd0-11f1-b06b-25a52a186d15.png"
+      "source_url": "https://www.polygon.com/marvel-wolverine-best-selling-game-september-us/",
+      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/marvel-s-wolverine-attack-1080p.jpg?w=1600&h=900&fit=crop"
     },
     {
-      "article": "2026-10-22-airbnb-hosts-can-no-longer-make-guests-strip-beds-and-wash-dishes-under-new-rules-d11bfd3583.html",
-      "image": "news/images/2026-10-22-airbnb-hosts-can-no-longer-make-guests-strip-beds-and-wash-dishes-under-new-rules-d11bfd3583-source.jpg",
-      "bytes": 126601,
+      "article": "2026-10-22-despite-its-mixed-reception-marvel-s-wolverine-was-september-s-top-selling-new-game-in-the-0acd2eda74.html",
+      "image": "news/images/2026-10-22-despite-its-mixed-reception-marvel-s-wolverine-was-september-s-top-selling-new-game-in-the-0acd2eda74-source.jpg",
+      "bytes": 94000,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/c6n049gg75r4o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/c5a8/live/221cd660-cda1-11f1-96a8-11b361e3c25f.jpg"
+      "source_url": "https://www.eurogamer.net/marvels-wolverine-top-seling-september-us-circana",
+      "image_url": "https://assetsio.gnwcdn.com/marvel's-wolverine-logan-launching-at-a-reaver.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
     },
     {
-      "article": "2026-10-22-airbnb-guests-freed-from-chores-involving-significant-effort-under-new-global-rules-452fd2cf63.html",
-      "image": "news/images/2026-10-22-airbnb-guests-freed-from-chores-involving-significant-effort-under-new-global-rules-452fd2cf63-source.jpg",
-      "bytes": 42093,
+      "article": "2026-10-22-abia-cityboy-movement-congratulates-lucky-igbokwe-on-apc-campaign-council-appointment-cd2d41a801.html",
+      "image": "news/images/2026-10-22-abia-cityboy-movement-congratulates-lucky-igbokwe-on-apc-campaign-council-appointment-cd2d41a801-source.jpg",
+      "bytes": 67243,
       "provider": "Original news source",
-      "source_url": "https://www.theguardian.com/australia-news/2026/oct/22/airbnb-guests-freed-from-chores-involving-significant-effort-under-new-global-rules",
-      "image_url": "https://i.guim.co.uk/img/media/5885c2f121a007a0351fd0b0ec78ab29184cd31b/606_0_3750_3001/master/3750.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=01899534c0529cb6f62940d9e603d9a2"
-    },
-    {
-      "article": "2026-10-22-airbnb-bans-making-guests-do-dishes-and-take-out-the-trash-8ee944620f.html",
-      "image": "news/images/2026-10-22-airbnb-bans-making-guests-do-dishes-and-take-out-the-trash-8ee944620f-source.jpg",
-      "bytes": 56448,
-      "provider": "Original news source",
-      "source_url": "https://www.theverge.com/tech/1015844/airbnb-chores-house-rules-update",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/04/acastro_STK090_06.jpg?quality=90&strip=all&crop=0%2C10.761835884455%2C100%2C78.47632823109&w=1200"
+      "source_url": "https://thereporter.com.ng/abia-cityboy-movement-congratulates-lucky-igbokwe-on-apc-campaign-council-appointment",
+      "image_url": "https://thereporter.com.ng/uploads/images/202610/image_870x580_6acfd45ad4bbd.jpg"
     }
   ],
   "openverse_photos": [],
