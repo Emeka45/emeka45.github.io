@@ -112,8 +112,6 @@ def event_match(a, b):
         return True
     combined = similarity(a, b)
     shared_all = tokens(a.get('title', '') + ' ' + a.get('summary', '')) & tokens(b.get('title', '') + ' ' + b.get('summary', ''))
-    # Broad topic overlap alone is not evidence of the same event. Require a
-    # stronger match across titles and summaries before asking AI to synthesize.
     return combined >= 0.38 and len(shared_all) >= 5
 
 
@@ -211,7 +209,7 @@ def slug(text):
 
 def clean_category(value):
     value = html.unescape(re.sub('<[^>]+>', '', value or '')).strip()
-    return re.sub(r'^←\\s*C\\. O\\. Eric Newsroom\\s*', '', value, flags=re.I).strip() or 'News'
+    return re.sub(r'^←\s*C\. O\. Eric Newsroom\s*', '', value, flags=re.I).strip() or 'News'
 
 
 def update_index():
@@ -221,8 +219,21 @@ def update_index():
             raw = p.read_text(encoding='utf-8')
             title = re.search(r'<h1>(.*?)</h1>', raw, re.S)
             summary = re.search(r'<p><strong>(.*?)</strong></p>', raw, re.S)
-            category = re.search(r'<p>(.*?) · ', raw, re.S)
-            items.append({'file': p.name, 'title': html.unescape(re.sub('<[^>]+>', '', title.group(1))) if title else p.stem, 'summary': html.unescape(re.sub('<[^>]+>', '', summary.group(1))) if summary else '', 'category': html.unescape(category.group(1)) if category else 'News', 'date': dt.datetime.fromtimestamp(p.stat().st_mtime, dt.timezone.utc).strftime('%d %b %Y')})
+            category = re.search(r'<p>(.*?)\s*·\s*', raw, re.S)
+            title_text = html.unescape(re.sub('<[^>]+>', '', title.group(1))) if title else p.stem
+            summary_text = html.unescape(re.sub('<[^>]+>', '', summary.group(1))) if summary else ''
+            category_text = clean_category(category.group(1) if category else 'News')
+            image = NEWS / 'images' / f'{p.stem}-source.jpg'
+            item = {
+                'file': p.name,
+                'title': title_text,
+                'summary': summary_text,
+                'category': category_text,
+                'date': dt.datetime.fromtimestamp(p.stat().st_mtime, dt.timezone.utc).strftime('%d %b %Y'),
+            }
+            if image.exists():
+                item['image'] = f'news/images/{image.name}'
+            items.append(item)
         except Exception:
             continue
     items.sort(key=lambda x: x['file'], reverse=True)
@@ -242,111 +253,3 @@ def publish(article):
     doc = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{html.escape(article['summary'], quote=True)}"><title>{html.escape(article['title'])} — C. O. Eric News</title></head><body><main><p><a href="../newsroom.html">← C. O. Eric Newsroom</a></p><p>{html.escape(article['category'])} · {now.strftime('%d %b %Y')}</p><h1>{html.escape(article['title'])}</h1><p><strong>{html.escape(article['summary'])}</strong></p>{article['body_html']}<hr><h2>Sources</h2><ul>{sources_html}</ul><p>This article was produced by the C. O. Eric AI Newsroom from the cited sources. It is published only after automated evidence and safety checks.</p></main></body></html>'''
     path.write_text(doc, encoding='utf-8')
     return path
-
-
-def main():
-    started = dt.datetime.now(dt.timezone.utc)
-    state = load_state()
-    candidates = []
-    feed_count = 0
-    feed_success = 0
-    feed_failures = []
-    for cat, feeds in FEEDS.items():
-        for feed in feeds:
-            items, error = parse_feed(cat, feed)
-            feed_count += 1
-            if error:
-                feed_failures.append({'category': cat, 'url': feed, 'error': error})
-            else:
-                feed_success += 1
-            candidates.extend(items)
-
-    fresh = [x for x in candidates if x['url'] not in state.get('seen', [])]
-    ranked = [(len(find_corroboration(item, candidates)), item) for item in fresh]
-    ranked.sort(key=lambda x: x[0], reverse=True)
-
-    print('Feeds checked:', feed_count, 'successful:', feed_success, 'failed:', len(feed_failures))
-    print('Collected:', len(candidates), 'items; fresh:', len(fresh))
-    published_count = 0
-    held_count = 0
-    corroborated_count = 0
-    ai_attempts = 0
-    ai_failures = 0
-    rejection_reasons = []
-
-    for _, item in ranked[:MAX_AI_CANDIDATES_PER_RUN]:
-        if contains_blocked(item['title'] + ' ' + item['summary']):
-            state['seen'].append(item['url'])
-            rejection_reasons.append('blocked source content')
-            print('REJECTED blocked source:', item['title'])
-            continue
-
-        corroborators = find_corroboration(item, candidates)
-        if not corroborators:
-            held_count += 1
-            rejection_reasons.append('no independent corroboration yet')
-            print('RETRY LATER — no independent corroboration:', item['title'])
-            continue
-
-        corroborated_count += 1
-        # Keep the strongest independent corroborator as a pair. Adding several
-        # individually similar headlines can accidentally mix separate events
-        # into one prompt, causing the editor to reject an otherwise usable pair.
-        sources = [item, corroborators[0]]
-        ai_attempts += 1
-        try:
-            article = ask_ai(sources)
-        except Exception as exc:
-            ai_failures += 1
-            print('AI failed:', exc)
-            continue
-
-        allowed_urls = {s['url'] for s in sources}
-        article['body_html'] = sanitize_body_html(article.get('body_html', ''), allowed_urls)
-        body_links = extract_links(article['body_html'])
-        text = article.get('title', '') + ' ' + article.get('summary', '') + ' ' + re.sub('<[^>]+>', ' ', article.get('body_html', ''))
-        srcs = article.get('sources', []) if isinstance(article.get('sources', []), list) else []
-        supplied_urls = allowed_urls
-        returned_urls = {s.get('url') for s in srcs if isinstance(s, dict)}
-        domains = {urllib.parse.urlparse(u).netloc.lower().removeprefix('www.') for u in returned_urls if u}
-        body_link_valid = bool(body_links) and set(body_links).issubset(supplied_urls)
-        existing_duplicate = False
-        for existing_path in NEWS.glob('*.html'):
-            try:
-                existing_raw = existing_path.read_text(encoding='utf-8')
-                existing_title = re.search(r'<h1>(.*?)</h1>', existing_raw, re.S | re.I)
-                if existing_title and similarity({'title': article.get('title',''), 'summary': article.get('summary','')}, {'title': re.sub('<[^>]+>', ' ', existing_title.group(1)), 'summary': ''}) >= 0.72:
-                    existing_duplicate = True
-                    break
-            except Exception:
-                pass
-        valid = article.get('publish') is True and article.get('confidence', 0) >= 85 and len(srcs) >= 2 and len(domains) >= 2 and returned_urls.issubset(supplied_urls) and body_link_valid and not contains_blocked(text)
-
-        if valid and not existing_duplicate:
-            print('PUBLISHED', publish(article))
-            published_count += 1
-            state['seen'].extend(s['url'] for s in sources if s.get('url'))
-        else:
-            held_count += 1
-            reason = 'duplicate of an existing newsroom story' if existing_duplicate else article.get('reason', 'quality/link safety gate failed')
-            if not existing_duplicate and not body_link_valid:
-                reason = 'article did not contain a valid inline link to a supplied source'
-            rejection_reasons.append(reason)
-            print('HELD/REJECTED:', reason)
-
-    save_state(state)
-    update_index()
-    report = {
-        'started_utc': started.isoformat(), 'finished_utc': dt.datetime.now(dt.timezone.utc).isoformat(),
-        'model': AI_MODEL, 'max_ai_candidates_per_run': MAX_AI_CANDIDATES_PER_RUN,
-        'feed_count': feed_count, 'feed_success_count': feed_success, 'feed_failure_count': len(feed_failures),
-        'feed_failures': feed_failures, 'total_items': len(candidates), 'fresh_items': len(fresh),
-        'corroborated_candidates': corroborated_count, 'ai_attempts': ai_attempts, 'ai_failures': ai_failures,
-        'held_or_rejected': held_count, 'published_count': published_count, 'rejection_reasons': rejection_reasons[-50:],
-    }
-    REPORT.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding='utf-8')
-    print('RUN REPORT:', json.dumps(report, ensure_ascii=False))
-
-
-if __name__ == '__main__':
-    main()
