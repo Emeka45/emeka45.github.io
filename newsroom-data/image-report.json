@@ -1,11 +1,52 @@
 {
-  "finished_utc": "2026-10-21T23:51:20.282214+00:00",
+  "finished_utc": "2026-10-22T00:26:44.422772+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 0,
-  "attempted": 0,
+  "missing_before_run": 5,
+  "attempted": 5,
   "generated": [],
-  "source_photos": [],
+  "source_photos": [
+    {
+      "article": "2026-10-22-xbox-s-next-gen-console-to-reportedly-cost-up-to-1-800-with-a-helix-handheld-coming-in-202-9532461685.html",
+      "image": "news/images/2026-10-22-xbox-s-next-gen-console-to-reportedly-cost-up-to-1-800-with-a-helix-handheld-coming-in-202-9532461685-source.jpg",
+      "bytes": 31107,
+      "provider": "Original news source",
+      "source_url": "https://www.eurogamer.net/microsoft-next-gen-xbox-helix-date-price",
+      "image_url": "https://assetsio.gnwcdn.com/Project-Helix-logo-and-name-written-in-white-on-a-black-background.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
+    },
+    {
+      "article": "2026-10-22-tourist-found-guilty-after-stealing-las-vegas-flamingo-from-enclosure-436908c7e0.html",
+      "image": "news/images/2026-10-22-tourist-found-guilty-after-stealing-las-vegas-flamingo-from-enclosure-436908c7e0-source.jpg",
+      "bytes": 3847645,
+      "provider": "Original news source",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq398rjewd1jo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/8f1e/live/5b9b0010-cc2f-11f1-aeea-f9fa95687445.png"
+    },
+    {
+      "article": "2026-10-22-rip-bioware-ea-shuts-down-storied-rpg-studio-after-over-three-decades-d3d5856bb7.html",
+      "image": "news/images/2026-10-22-rip-bioware-ea-shuts-down-storied-rpg-studio-after-over-three-decades-d3d5856bb7-source.jpg",
+      "bytes": 90872,
+      "provider": "Original news source",
+      "source_url": "https://arstechnica.com/gaming/2026/10/rip-bioware-ea-shuts-down-storied-rpg-studio-after-over-three-decades/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/me3ending-1152x648.webp"
+    },
+    {
+      "article": "2026-10-22-microsoft-reportedly-projects-1-200-to-1-800-price-for-2028-project-helix-54e9b2c59d.html",
+      "image": "news/images/2026-10-22-microsoft-reportedly-projects-1-200-to-1-800-price-for-2028-project-helix-54e9b2c59d-source.jpg",
+      "bytes": 86491,
+      "provider": "Original news source",
+      "source_url": "https://arstechnica.com/gaming/2026/10/report-microsofts-project-helix-planned-for-2028-at-1200-to-1800-price/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2024/07/xbox-dominoes-1152x648.jpg"
+    },
+    {
+      "article": "2026-10-22-bad-decisions-man-convicted-for-taking-peachy-the-flamingo-from-las-vegas-hotel-929b573409.html",
+      "image": "news/images/2026-10-22-bad-decisions-man-convicted-for-taking-peachy-the-flamingo-from-las-vegas-hotel-929b573409-source.jpg",
+      "bytes": 61084,
+      "provider": "Original news source",
+      "source_url": "https://www.theguardian.com/us-news/2026/oct/20/man-convicted-peachy-the-flamingo-las-vegas-hotel",
+      "image_url": "https://i.guim.co.uk/img/media/347c2b50dd40c786867351c740f195ced11a57b8/473_141_1639_1312/master/1639.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2c54f47e97c61b01c2168fcabfd7d89c"
+    }
+  ],
   "openverse_photos": [],
   "fallbacks": [],
   "failures": [],

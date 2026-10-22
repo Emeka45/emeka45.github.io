@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-10-21T23:51:46.479659+00:00",
+  "updated_at": "2026-10-22T00:27:04.084516+00:00",
   "videos": [
+    {
+      "video_id": "D_dEU8LbmSg",
+      "title": "Is influencing the new pyramid scheme?",
+      "category": "Ideas & Society",
+      "channel": "Vox",
+      "channel_id": "UCLXo7UDZvByw2ixzpQCufnA",
+      "channel_url": "https://www.youtube.com/channel/UCLXo7UDZvByw2ixzpQCufnA",
+      "url": "https://www.youtube.com/shorts/D_dEU8LbmSg",
+      "embed_url": "https://www.youtube-nocookie.com/embed/D_dEU8LbmSg",
+      "thumbnail": "https://i.ytimg.com/vi/D_dEU8LbmSg/hqdefault.jpg",
+      "published_at": "2026-10-22T00:00:15+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "In this Vox video from the Ideas and Society category, explore whether the modern influencing industry functions similarly to a pyramid scheme.",
+      "published_by_pipeline_at": "2026-10-22T00:27:04.084411+00:00"
+    },
     {
       "video_id": "lGm3anU395o",
       "title": "Meet the Squad | BLACK TORCH",
@@ -2384,22 +2400,6 @@
       "is_short": false,
       "description": "Y Combinator's business and startups video explores the training ground for AI knowledge workers, offering essential insights and practical guidance for the industry.",
       "published_by_pipeline_at": "2026-10-20T22:27:09.026780+00:00"
-    },
-    {
-      "video_id": "G3hXvByzLHs",
-      "title": "6 ways to be more persuasive",
-      "category": "Ideas & Explainers",
-      "channel": "TED-Ed",
-      "channel_id": "UCsooa4yRKGN_zEE8iknghZA",
-      "channel_url": "https://www.youtube.com/channel/UCsooa4yRKGN_zEE8iknghZA",
-      "url": "https://www.youtube.com/watch?v=G3hXvByzLHs",
-      "embed_url": "https://www.youtube-nocookie.com/embed/G3hXvByzLHs",
-      "thumbnail": "https://i.ytimg.com/vi/G3hXvByzLHs/hqdefault.jpg",
-      "published_at": "2026-10-01T15:00:32+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "TED-Ed's Ideas and Explainers video shares six effective methods to improve your persuasiveness and communication skills.",
-      "published_by_pipeline_at": "2026-10-19T12:21:51.627793+00:00"
     }
   ]
 }
