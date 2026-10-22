@@ -52,26 +52,48 @@ jobs:
           if [ -f newsroom-data/video-report.json ]; then cat newsroom-data/video-report.json; else echo 'No video-report.json was generated.'; fi
       - name: Publish generated articles, images, videos and diagnostics
         run: |
+          set -e
           git config user.name 'C. O. Eric AI Newsroom'
           git config user.email 'actions@users.noreply.github.com'
           git add news/ newsroom-data/ videos/
           if git diff --cached --quiet; then
             echo 'No newsroom or Video Hub changes to publish.'
-          else
-            git commit -m 'AI newsroom: publish stories, images and videos'
-            git fetch origin main
-            if ! git rebase origin/main; then
-              conflicts="$(git diff --name-only --diff-filter=U || true)"
-              if [ -n "$conflicts" ]; then
-                echo "Rebase conflicts detected; preserving current main versions:"
-                echo "$conflicts"
-                git checkout --ours -- $conflicts
-                git add $conflicts
-                GIT_EDITOR=true git rebase --continue
-              else
-                git rebase --abort
-                exit 1
-              fi
-            fi
-            git push origin HEAD:main
+            exit 0
           fi
+
+          git commit -m 'AI newsroom: publish stories, images and videos'
+          git fetch origin main
+
+          if ! git rebase origin/main; then
+            conflicts="$(git diff --name-only --diff-filter=U || true)"
+            if [ -n "$conflicts" ]; then
+              echo "Rebase conflicts detected; resolving generated files from this run."
+              echo "$conflicts"
+              git checkout --theirs -- $conflicts
+              git add $conflicts
+              GIT_EDITOR=true git rebase --continue
+            else
+              git rebase --abort
+              exit 1
+            fi
+          fi
+
+          # The generated newsroom index can conflict with the older main branch
+          # index during the rebase. Rebuild it from the final post-rebase files,
+          # then include the rebuilt index in the pushed commit.
+          python - <<'PY'
+          import sys
+          sys.path.insert(0, 'scripts')
+          import ai_newsroom
+          ai_newsroom.update_index()
+          print('Rebuilt news/index.json from the final newsroom files.')
+          PY
+
+          git add news/index.json
+          if git diff --cached --quiet; then
+            echo 'Newsroom index already matches the final generated files.'
+          else
+            git commit --amend --no-edit
+          fi
+
+          git push origin HEAD:main
