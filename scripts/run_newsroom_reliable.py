@@ -15,11 +15,22 @@ def clean(text: str) -> str:
 
 
 def same_event(a, b):
-    at = newsroom.tokens(a.get('title', ''))
-    bt = newsroom.tokens(b.get('title', ''))
-    shared = at & bt
-    overlap = len(shared) / max(1, min(len(at), len(bt)))
-    return len(shared) >= 3 and overlap >= 0.5
+    """Use the newsroom's title+summary event matcher instead of title-only matching."""
+    return newsroom.event_match(a, b)
+
+
+def find_corroboration(item, all_items):
+    """Find independent reporting even when two feeds classify the story differently."""
+    matches = []
+    for other in all_items:
+        if other.get('url') == item.get('url'):
+            continue
+        if not other.get('domain') or other.get('domain') == item.get('domain'):
+            continue
+        if same_event(item, other):
+            matches.append(other)
+    matches.sort(key=lambda other: newsroom.similarity(item, other), reverse=True)
+    return matches[:3]
 
 
 def build_article(item, matches):
@@ -70,15 +81,15 @@ def main():
     candidates = []
     used_urls = set()
     for item in fresh:
-        if item['url'] in used_urls:
+        if item.get('url') in used_urls:
             continue
-        matches = [m for m in newsroom.find_corroboration(item, all_items) if same_event(item, m)]
+        matches = find_corroboration(item, all_items)
         domains = {item.get('domain')} | {m.get('domain') for m in matches}
         if len(domains) >= 2 and matches:
             candidates.append((len(domains), item, matches))
             used_urls.add(item['url'])
 
-    candidates.sort(key=lambda x: (x[0], len(newsroom.tokens(x[1].get('title', '')))), reverse=True)
+    candidates.sort(key=lambda x: (x[0], newsroom.similarity(x[1], x[2][0]) if x[2] else 0), reverse=True)
     published = 0
     published_titles = []
     for _, item, matches in candidates:
