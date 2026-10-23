@@ -3,90 +3,119 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="C. O. Eric Music Hub — discover music, artists, albums, playlists, videos and create original AI music with Gemini Lyria.">
+<meta name="description" content="C. O. Eric Music Hub — discover Nigerian and international music, artists, albums, playlists, charts and official music videos.">
 <title>Music Hub — C. O. Eric</title>
 <style>
-:root{--bg:#08060f;--panel:#120d1d;--panel2:#171022;--text:#faf8ff;--muted:#b9b2c9;--accent:#9b6cff;--accent2:#d19cff;--line:rgba(255,255,255,.1);--max:1160px}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 85% -5%,rgba(124,58,237,.3),transparent 34%),linear-gradient(180deg,#08060f,#0b0812 55%,#08060f);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),92%);margin:auto}.nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;border-bottom:1px solid var(--line)}.brand{font-weight:900}.mark{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,var(--accent),var(--accent2));margin-right:9px}.hero{padding:60px 0 35px}.tag{color:#d6c4ff;font-size:.72rem;font-weight:900;letter-spacing:.08em}.hero h1{font-size:clamp(3rem,8vw,6rem);line-height:.95;letter-spacing:-.06em;margin:18px 0}.gradient{background:linear-gradient(105deg,#fff,#e0c5ff,#a777ff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p,.intro,.muted{color:var(--muted)}.search{display:flex;gap:10px;margin:25px 0}.search input,.studio input,.studio textarea,.studio select{flex:1;padding:14px 16px;border-radius:13px;border:1px solid var(--line);background:rgba(255,255,255,.05);color:#fff;font-size:1rem}.studio select option{background:#171022;color:#fff}.studio textarea{min-height:130px;resize:vertical}.btn{border:1px solid var(--line);border-radius:13px;padding:11px 16px;background:rgba(255,255,255,.04);color:#fff;font-weight:800;cursor:pointer}.btn:disabled{opacity:.55;cursor:wait}.primary{border:0;background:linear-gradient(135deg,var(--accent),var(--accent2))}.section{padding:40px 0;border-top:1px solid var(--line)}h2{font-size:2rem;margin:0 0 8px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:20px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.035)}.cover{height:150px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(135deg,#24133c,#120d1d);font-size:3rem;margin-bottom:14px}.card h3{margin:6px 0}.notice{padding:20px;border:1px solid var(--line);border-radius:18px;background:rgba(155,108,255,.06);color:var(--muted)}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.chip{padding:8px 12px;border:1px solid var(--line);border-radius:999px;color:#ddd0ef;background:rgba(255,255,255,.03);cursor:pointer}.player{position:sticky;bottom:12px;margin:25px auto;padding:18px;border:1px solid rgba(200,170,255,.22);border-radius:20px;background:rgba(18,13,29,.97);backdrop-filter:blur(15px);box-shadow:0 20px 60px rgba(0,0,0,.45);display:none;z-index:5}.player strong{display:block}.player small{color:var(--muted)}audio{width:100%;margin-top:12px}.studio{display:grid;grid-template-columns:1.05fr .95fr;gap:20px}.studio-panel{padding:24px;border:1px solid rgba(200,170,255,.2);border-radius:24px;background:linear-gradient(145deg,rgba(155,108,255,.1),rgba(255,255,255,.025))}.studio h3{margin-top:0;font-size:1.35rem}.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:flex;flex-direction:column;gap:7px}.field label{font-size:.8rem;color:#d8d0e4;font-weight:800}.field.full{grid-column:1/-1}.studio-result{display:none}.ai-cover{aspect-ratio:1/1;border-radius:22px;display:grid;place-items:center;text-align:center;padding:25px;background:radial-gradient(circle at 72% 25%,#f2c7ff,transparent 18%),radial-gradient(circle at 25% 75%,#6c2fc2,transparent 32%),linear-gradient(135deg,#26113f,#0d0815 70%);box-shadow:0 20px 60px rgba(0,0,0,.35);overflow:hidden}.ai-cover .cover-title{font-size:clamp(1.8rem,5vw,3.2rem);line-height:1.05;font-weight:950;letter-spacing:-.04em;text-shadow:0 3px 20px rgba(0,0,0,.4)}.ai-cover .cover-by{margin-top:10px;color:#eadff7;font-weight:700}.result-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.lyrics{white-space:pre-wrap;color:#ded7e8;background:rgba(0,0,0,.18);padding:16px;border-radius:15px;max-height:280px;overflow:auto;margin-top:14px}.status{min-height:24px;color:#d7c4ff;font-size:.9rem;margin-top:10px}.footer{padding:42px 0 55px;color:var(--muted)}.row{display:flex;gap:10px;flex-wrap:wrap}
-@media(max-width:800px){.grid{grid-template-columns:1fr}.search{display:block}.search button{margin-top:10px;width:100%}.hero h1{font-size:3.5rem}.studio{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.nav{gap:15px}.nav>a:last-child{font-size:.85rem}}
+:root{--bg:#09070d;--panel:#15101c;--panel2:#1d1627;--text:#fffaff;--muted:#bdb4c8;--accent:#b16cff;--accent2:#ff8fcf;--line:rgba(255,255,255,.1);--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 85% 0,rgba(177,108,255,.25),transparent 30%),linear-gradient(180deg,#09070d,#100b16 55%,#09070d);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),92%);margin:auto}.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(9,7,13,.86);backdrop-filter:blur(14px);z-index:10}.brand{font-weight:900}.mark{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,var(--accent),var(--accent2));margin-right:8px}.navlinks{display:flex;gap:14px;font-size:.9rem;color:#ded5e6}.hero{padding:55px 0 30px}.eyebrow{color:#dfc7ff;font-size:.72rem;font-weight:900;letter-spacing:.1em}.hero h1{font-size:clamp(3rem,8vw,6.3rem);line-height:.92;letter-spacing:-.065em;margin:16px 0}.gradient{background:linear-gradient(105deg,#fff,#f2c8ff,#b278ff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:760px;color:var(--muted);font-size:1.05rem}.searchbar{display:flex;gap:10px;margin:24px 0 14px}.searchbar input{flex:1;padding:15px 17px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.055);color:#fff;font-size:1rem;outline:none}.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:11px 15px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.045);color:#fff;font-weight:850;cursor:pointer}.primary{border:0;background:linear-gradient(135deg,var(--accent),var(--accent2))}.chips{display:flex;gap:8px;overflow:auto;padding:4px 0 8px}.chip{white-space:nowrap;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.035);color:#ded5e6;cursor:pointer}.chip.active{background:rgba(177,108,255,.2);border-color:rgba(211,166,255,.5);color:#fff}.section{padding:38px 0;border-top:1px solid var(--line)}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:17px}.section h2{font-size:1.9rem;margin:0}.sectionhead p{margin:4px 0 0;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.card{border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(255,255,255,.02));padding:17px;min-width:0}.cover{aspect-ratio:1/1;border-radius:16px;display:grid;place-items:center;font-size:3rem;background:linear-gradient(135deg,#32184d,#161020 65%,#27152f);margin-bottom:13px;overflow:hidden;position:relative}.cover:after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 70% 25%,rgba(255,255,255,.18),transparent 20%)}.card h3{margin:5px 0;font-size:1.05rem}.meta,.muted{color:var(--muted);font-size:.9rem}.card .actions{display:flex;gap:7px;margin-top:13px;flex-wrap:wrap}.smallbtn{padding:8px 10px;border-radius:10px;font-size:.82rem}.heart{margin-left:auto}.feature{grid-column:span 2;display:grid;grid-template-columns:1.05fr 1fr;gap:18px;align-items:center;padding:20px}.feature .cover{margin:0}.feature h3{font-size:1.55rem}.badge{display:inline-block;padding:5px 9px;border-radius:999px;background:rgba(177,108,255,.15);color:#dfc7ff;font-size:.72rem;font-weight:900}.empty{padding:24px;border:1px dashed rgba(255,255,255,.16);border-radius:18px;color:var(--muted);text-align:center}.platforms{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.platform{padding:18px;border:1px solid var(--line);border-radius:17px;background:rgba(255,255,255,.03)}.platform b{display:block;margin-bottom:5px}.librarybar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.notice{padding:18px;border:1px solid rgba(177,108,255,.25);border-radius:18px;background:rgba(177,108,255,.07);color:var(--muted)}.footer{padding:42px 0 60px;color:var(--muted)}.hidden{display:none!important}.count{color:#dfc7ff;font-weight:800;font-size:.85rem}.coming{background:linear-gradient(135deg,rgba(177,108,255,.14),rgba(255,143,207,.08))}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.platforms{grid-template-columns:repeat(2,1fr)}.feature{grid-column:span 2}}
+@media(max-width:620px){.navlinks{display:none}.hero{padding-top:38px}.searchbar{display:block}.searchbar .btn{width:100%;margin-top:9px}.grid{grid-template-columns:1fr}.feature{grid-column:auto;display:block}.feature .cover{margin-bottom:15px}.platforms{grid-template-columns:1fr}.sectionhead{display:block}.sectionhead .btn{margin-top:10px}.card{padding:14px}}
 </style>
 </head>
 <body>
-<header class="wrap nav"><a class="brand" href="index.html"><span class="mark">U</span>C. O. Eric Music Hub</a><a href="index.html">← Home</a></header>
+<header class="wrap nav">
+<a class="brand" href="index.html"><span class="mark">U</span>C. O. Eric Music Hub</a>
+<nav class="navlinks"><a href="#discover">Discover</a><a href="#nigeria">Nigerian</a><a href="#playlists">Playlists</a><a href="#videos">Videos</a><a href="#library">My Library</a></nav>
+<a href="index.html">← Home</a>
+</header>
 <main>
-<section class="wrap hero">
-<span class="tag">MUSIC · DISCOVERY · AI CREATION · ARTISTS · AUDIO · VIDEO · LYRICS</span>
-<h1>Music, <span class="gradient">inside the hub.</span></h1>
-<p>Discover authorised music, artists, albums, playlists and videos — then create your own original songs with Gemini's Lyria music generation technology.</p>
-<div class="search"><input id="search" placeholder="Search songs, artists, albums or genres…" oninput="render()"><button class="btn primary" onclick="document.getElementById('search').focus()">Search Music</button></div>
-<div class="chips" id="genreChips"></div>
+<section class="wrap hero" id="discover">
+<span class="eyebrow">MUSIC · DISCOVERY · NIGERIA · WORLD · VIDEO</span>
+<h1>Find your next <span class="gradient">sound.</span></h1>
+<p>A growing home for Nigerian and international music — with artist discovery, albums, playlists, charts, official music videos and a personal saved library.</p>
+<div class="searchbar"><input id="search" type="search" placeholder="Search songs, artists, albums, genres…" autocomplete="off"><button class="btn primary" id="searchBtn">🔎 Search Music</button></div>
+<div class="chips" id="chips"></div>
 </section>
 
-<section class="section" id="ai-studio">
-<div class="wrap">
-<span class="tag">GEMINI · LYRIA 3.5</span>
-<h2>🎙️ AI Music Studio</h2>
-<p class="intro">Turn an idea into an original song. Describe the sound, choose a style and mood, add your own lyrics if you have them, and generate an MP3 directly from the Music Hub.</p>
-<div class="studio">
-<div class="studio-panel">
-<h3>Create a song</h3>
-<div class="fields">
-<div class="field"><label for="songTitle">Song title</label><input id="songTitle" maxlength="80" placeholder="e.g. Where the Morning Goes"></div>
-<div class="field"><label for="genre">Genre / style</label><select id="genre"><option>Afrobeats</option><option>Afro-pop</option><option>R&B / Soul</option><option>Pop</option><option>Indie Pop</option><option>Gospel</option><option>Worship</option><option>Hip-Hop / Rap</option><option>Amapiano</option><option>Reggae / Dancehall</option><option>Highlife</option><option>Acoustic / Folk</option><option>Instrumental</option><option>Cinematic</option></select></div>
-<div class="field"><label for="mood">Mood</label><input id="mood" maxlength="100" placeholder="Warm, emotional, hopeful"></div>
-<div class="field"><label for="voice">Vocals</label><select id="voice"><option>Vocals</option><option>Female vocals</option><option>Male vocals</option><option>Duet vocals</option><option>Instrumental only</option></select></div>
-<div class="field"><label for="duration">Target length</label><select id="duration"><option>about 1 minute</option><option selected>about 2 minutes</option><option>about 3 minutes</option><option>about 4 minutes</option></select></div>
-<div class="field full"><label for="idea">What should the song be about?</label><textarea id="idea" maxlength="1200" placeholder="Example: A beautiful sunset by the ocean, remembering someone you love and choosing hope instead of sadness."></textarea></div>
-<div class="field full"><label for="lyrics">Your lyrics (optional)</label><textarea id="lyrics" maxlength="6000" placeholder="Add your own lyrics with [Verse], [Chorus] and [Bridge] sections, or leave this empty and let the model write original lyrics."></textarea></div>
-</div>
-<div class="row" style="margin-top:14px"><button class="btn primary" id="generateBtn" onclick="generateMusic()">✨ Generate Music</button><button class="btn" onclick="fillExample()">Try an example</button></div>
-<div id="studioStatus" class="status" aria-live="polite"></div>
-</div>
-<div class="studio-panel studio-result" id="studioResult">
-<div class="ai-cover"><div><div id="coverTitle" class="cover-title">Your Song</div><div class="cover-by">C. O. Eric AI Music Studio</div></div></div>
-<h3 id="resultTitle" style="margin-bottom:0">Your generated song</h3>
-<p id="resultMeta" class="muted"></p>
-<audio id="generatedAudio" controls preload="metadata"></audio>
-<div class="result-actions"><a id="downloadSong" class="btn primary" download="ai-song.mp3">⬇ Download MP3</a><button class="btn" onclick="copyLyrics()">Copy Lyrics</button></div>
-<div id="generatedLyrics" class="lyrics"></div>
-</div>
-</div>
-<div class="notice" style="margin-top:16px"><strong style="color:#fff">🔐 API safety:</strong> the Gemini API key is not placed in this webpage. The Music Hub calls a Cloudflare Pages Function, where the <code>GEMINI_API_KEY</code> secret stays server-side.</div>
-</div>
-</section>
+<section class="section"><div class="wrap">
+<div class="sectionhead"><div><h2>🔥 Featured right now</h2><p>Curated categories ready for the catalogue to grow.</p></div><span class="count" id="resultCount"></span></div>
+<div class="grid" id="featuredGrid"></div>
+</div></section>
 
-<section class="section"><div class="wrap"><h2>Browse Music</h2><div class="grid">
-<a class="card" href="#library"><div class="cover">🔥</div><h3>Trending</h3><p class="muted">Popular and recently active releases.</p></a>
-<a class="card" href="#library"><div class="cover">🇳🇬</div><h3>Nigerian Music</h3><p class="muted">Afrobeats, gospel, hip-hop, highlife, Fuji, Juju and more.</p></a>
-<a class="card" href="#albums"><div class="cover">💿</div><h3>Albums & EPs</h3><p class="muted">Projects organised by artist and release.</p></a>
-<a class="card" href="#library"><div class="cover">✝️</div><h3>Gospel</h3><p class="muted">Gospel and worship releases.</p></a>
-<a class="card" href="music-artist.html?artist=Artist"><div class="cover">🎤</div><h3>Artists</h3><p class="muted">Profiles, biographies, releases and official links.</p></a>
-<a class="card" href="music-submit.html"><div class="cover">📝</div><h3>Lyrics & Submissions</h3><p class="muted">Rights-aware lyrics and artist submissions.</p></a>
-</div></div></section>
+<section class="section" id="nigeria"><div class="wrap">
+<div class="sectionhead"><div><h2>🇳🇬 Nigerian Music</h2><p>Afrobeats, Afropop, Highlife, Fuji, Juju, Gospel, Hip-Hop and more.</p></div><button class="btn" onclick="chooseGenre('Nigerian')">Explore Nigeria</button></div>
+<div class="grid" id="nigeriaGrid"></div>
+</div></section>
 
-<section class="section" id="library"><div class="wrap"><h2>🎵 Music Library</h2><p class="intro">Only music we are authorised to host is placed in the playable catalogue. Commercial releases can be linked or embedded through permitted official platforms.</p><div id="libraryGrid" class="grid"></div><div id="empty" class="notice" style="display:none;margin-top:16px">No matching tracks yet. Artists and labels can submit authorised releases.</div></div></section>
-<section class="section" id="albums"><div class="wrap"><h2>💿 Albums & EPs</h2><div class="grid"><div class="card"><div class="cover">💿</div><h3>Album catalogue</h3><p class="muted">Each approved project can have its own album page, tracklist, cover, credits and streaming links.</p></div><div class="card"><div class="cover">🎶</div><h3>Singles</h3><p class="muted">Individual releases can have dedicated song pages with audio, lyrics and official links.</p></div><div class="card"><div class="cover">📅</div><h3>New releases</h3><p class="muted">Release dates and catalogue metadata are ready for structured publishing.</p></div></div></div></section>
-<section class="section"><div class="wrap"><h2>📻 Playlists & Charts</h2><div class="grid"><div class="card"><h3>Featured playlists</h3><p class="muted">Curated playlists can combine authorised tracks and permitted external embeds.</p></div><div class="card"><h3>Weekly charts</h3><p class="muted">The architecture can track plays and produce most-played/trending charts once analytics are connected.</p></div><div class="card"><h3>Discovery</h3><p class="muted">Filter by genre, year, mood, language, artist and release type.</p></div></div></div></section>
-<section class="section"><div class="wrap"><h2>🎬 Music Videos</h2><div class="grid"><div class="card"><div class="cover">▶️</div><h3>Official videos</h3><p class="muted">Dedicated pages can embed authorised YouTube or other permitted video sources.</p></div><div class="card"><div class="cover">🎙️</div><h3>Live performances</h3><p class="muted">Concerts, sessions and performances can be organised separately.</p></div><div class="card"><div class="cover">📝</div><h3>Lyric videos</h3><p class="muted">Connect lyric videos to the corresponding song pages.</p></div></div></div></section>
-<section class="section"><div class="wrap"><h2>🎧 Official platforms</h2><div class="grid"><div class="card"><h3>YouTube</h3><p class="muted">Official videos and channels can be linked or embedded where permitted.</p></div><div class="card"><h3>Spotify</h3><p class="muted">Official artist, album and track links can be surfaced.</p></div><div class="card"><h3>Audiomack / Apple Music</h3><p class="muted">Official release pages can be linked from each song or artist profile.</p></div></div></div></section>
-<section class="section"><div class="wrap"><div class="notice"><strong style="color:#fff">🎙️ Artists & labels:</strong> Submit your artist profile, release title, genre, artwork, official audio/streaming links, lyrics where you have publishing permission, credits and rights confirmation. <a href="music-submit.html" style="color:#d8baff;font-weight:900">Open submission form →</a></div></div></section>
+<section class="section"><div class="wrap">
+<div class="sectionhead"><div><h2>🎧 Explore by sound</h2><p>Jump straight into a mood or genre.</p></div></div>
+<div class="grid" id="genreGrid"></div>
+</div></section>
+
+<section class="section" id="library"><div class="wrap">
+<div class="sectionhead"><div><h2>❤️ My Music Library</h2><p>Your saved songs and artists stay on this device.</p></div><span class="count" id="savedCount"></span></div>
+<div class="librarybar"><button class="btn primary" id="showSaved">Show Saved</button><button class="btn" id="clearSaved">Clear Saved</button></div>
+<div id="savedGrid" class="grid"></div>
+<div id="savedEmpty" class="empty">Nothing saved yet. Tap ♥ on a music card to build your personal library.</div>
+</div></section>
+
+<section class="section" id="playlists"><div class="wrap">
+<div class="sectionhead"><div><h2>📻 Playlists</h2><p>Playlist architecture is ready for real releases and official links.</p></div></div>
+<div class="grid">
+<article class="card"><div class="cover">🌅</div><span class="badge">MOOD</span><h3>Sunset & Chill</h3><p class="meta">Afro-soul · R&B · acoustic</p><button class="btn smallbtn" onclick="playlistMessage('Sunset & Chill')">Open playlist</button></article>
+<article class="card"><div class="cover">🙏</div><span class="badge">GOSPEL</span><h3>Morning Worship</h3><p class="meta">Gospel · worship · praise</p><button class="btn smallbtn" onclick="playlistMessage('Morning Worship')">Open playlist</button></article>
+<article class="card"><div class="cover">🇳🇬</div><span class="badge">NIGERIA</span><h3>Naija Essentials</h3><p class="meta">Afrobeats · Highlife · Hip-Hop</p><button class="btn smallbtn" onclick="playlistMessage('Naija Essentials')">Open playlist</button></article>
+<article class="card coming"><div class="cover">✨</div><span class="badge">COMING LATER</span><h3>C. O. Eric Originals</h3><p class="meta">A future home for your own authorised releases.</p></article>
+</div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<div class="sectionhead"><div><h2>📈 Charts</h2><p>Ready for verified play and engagement data.</p></div></div>
+<div class="grid">
+<div class="card"><span class="badge">TOP 10</span><h3>Trending in Nigeria</h3><p class="muted">Charts will populate when the catalogue has verified releases and play data.</p></div>
+<div class="card"><span class="badge">NEW</span><h3>Fresh Releases</h3><p class="muted">Newly published songs and projects can appear here automatically.</p></div>
+<div class="card"><span class="badge">DISCOVERY</span><h3>Rising Artists</h3><p class="muted">A future ranking for emerging artists based on transparent signals.</p></div>
+<div class="card"><span class="badge">GLOBAL</span><h3>World Sounds</h3><p class="muted">International releases can be organised alongside Nigerian music.</p></div>
+</div>
+</div></section>
+
+<section class="section" id="videos"><div class="wrap">
+<div class="sectionhead"><div><h2>🎬 Music Videos</h2><p>Use official video pages and permitted embeds — no unauthorised rehosting.</p></div><a class="btn" href="videos.html">Open Video Hub</a></div>
+<div class="grid">
+<article class="card"><div class="cover">▶️</div><h3>Official Music Videos</h3><p class="muted">Connect songs to official YouTube and other authorised video sources.</p></article>
+<article class="card"><div class="cover">🎤</div><h3>Live & Performance</h3><p class="muted">Concerts, acoustic sessions and performances can have their own discovery pages.</p></article>
+<article class="card"><div class="cover">📝</div><h3>Lyric Videos</h3><p class="muted">Pair permitted lyric videos with song metadata and official links.</p></article>
+<article class="card"><div class="cover">🎞️</div><h3>AMV & Creative</h3><p class="muted">Creative music-video discovery can connect with the wider Video Hub.</p></article>
+</div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<div class="sectionhead"><div><h2>🌍 Official music platforms</h2><p>We link listeners to legitimate sources instead of copying commercial audio.</p></div></div>
+<div class="platforms">
+<a class="platform" href="https://music.youtube.com/" target="_blank" rel="noopener"><b>▶ YouTube Music</b><span class="muted">Official music and artist discovery.</span></a>
+<a class="platform" href="https://open.spotify.com/" target="_blank" rel="noopener"><b>🟢 Spotify</b><span class="muted">Artists, albums, playlists and tracks.</span></a>
+<a class="platform" href="https://audiomack.com/" target="_blank" rel="noopener"><b>🎧 Audiomack</b><span class="muted">Strong discovery for African music.</span></a>
+<a class="platform" href="https://music.apple.com/" target="_blank" rel="noopener"><b>🍎 Apple Music</b><span class="muted">Official releases and artist pages.</span></a>
+</div>
+</div></section>
+
+<section class="section"><div class="wrap"><div class="notice"><strong style="color:#fff">🎙️ Artists & labels:</strong> Have an authorised release? Submit your artist profile, artwork, credits, lyrics where you have permission, and official streaming/video links. <a href="music-submit.html" style="color:#e1c8ff;font-weight:900">Submit music →</a></div></div></section>
 </main>
-<div id="player" class="wrap player"><strong id="now">Nothing playing</strong><small id="artist"></small><audio id="audio" controls preload="none"></audio></div>
 <footer class="wrap footer">© 2026 C. O. Eric · <a href="index.html">Home</a> · <a href="academic.html">Academic Hub</a> · <a href="videos.html">Video Hub</a> · <a href="music-submit.html">Submit Music</a></footer>
 <script>
-const TRACKS=[];
-const GENRES=['Afrobeats','Gospel','Hip-Hop / Rap','Highlife','Fuji','Juju','R&B / Soul','Amapiano','Reggae / Dancehall','Instrumental','Classical'];
-let selected='';
-let generatedUrl='';
-function esc(s){return String(s).replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[c]))}
-function setGenre(g){selected=selected===g?'':g;document.getElementById('search').value=selected;render()}
-function render(){const q=document.getElementById('search').value.toLowerCase().trim();document.getElementById('genreChips').innerHTML=GENRES.map(g=>`<button class="chip" onclick="setGenre('${g.replace(/'/g,"\\'")}')">${g}</button>`).join('');const list=TRACKS.filter(t=>!q||[t.title,t.artist,t.genre,t.album].join(' ').toLowerCase().includes(q));const el=document.getElementById('libraryGrid');el.innerHTML=list.map(t=>`<article class="card"><div class="cover">🎵</div><span class="tag">${esc(t.genre||'MUSIC')}</span><h3>${esc(t.title)}</h3><p class="muted">${esc(t.artist||'Artist')} ${t.album?'· '+esc(t.album):''}</p><div class="row"><button class="btn primary" onclick="playTrack(${TRACKS.indexOf(t)})">▶ Play</button><a class="btn" href="music-song.html?title=${encodeURIComponent(t.title)}&artist=${encodeURIComponent(t.artist||'Artist')}">Details</a></div></article>`).join('');document.getElementById('empty').style.display=list.length?'none':'block'}
-function playTrack(i){const t=TRACKS[i];if(!t||!t.audio)return;document.getElementById('now').textContent=t.title;document.getElementById('artist').textContent=(t.artist||'Artist')+' · '+(t.genre||'Music');const a=document.getElementById('audio');a.src=t.audio;document.getElementById('player').style.display='block';a.play().catch(()=>{})}
-function fillExample(){document.getElementById('songTitle').value='Where the Morning Goes';document.getElementById('genre').value='Indie Pop';document.getElementById('mood').value='Warm, dreamy, emotional and hopeful';document.getElementById('voice').value='Female vocals';document.getElementById('duration').value='about 3 minutes';document.getElementById('idea').value='A sunset love song about holding on to a beautiful memory while finding the courage to move forward into a new morning.';document.getElementById('lyrics').value=''}
-function base64ToBlob(base64,mime){const binary=atob(base64);const bytes=new Uint8Array(binary.length);for(let i=0;i<binary.length;i++)bytes[i]=binary.charCodeAt(i);return new Blob([bytes],{type:mime||'audio/mpeg'})}
-async function generateMusic(){const btn=document.getElementById('generateBtn'),status=document.getElementById('studioStatus');const title=document.getElementById('songTitle').value.trim()||'Untitled Song';const idea=document.getElementById('idea').value.trim();const lyrics=document.getElementById('lyrics').value.trim();if(!idea&&!lyrics){status.textContent='Please describe the song or add lyrics first.';return}btn.disabled=true;status.textContent='Creating your song with Gemini Lyria 3.5… this can take a little while.';try{const res=await fetch('/api/music-generate',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({title,genre:document.getElementById('genre').value,mood:document.getElementById('mood').value,voice:document.getElementById('voice').value,duration:document.getElementById('duration').value,idea,lyrics})});const data=await res.json().catch(()=>({}));if(!res.ok||!data.ok)throw new Error(data.error||'Music generation failed.');if(generatedUrl)URL.revokeObjectURL(generatedUrl);const blob=base64ToBlob(data.audioBase64,data.mimeType);generatedUrl=URL.createObjectURL(blob);const audio=document.getElementById('generatedAudio');audio.src=generatedUrl;document.getElementById('downloadSong').href=generatedUrl;document.getElementById('downloadSong').download=(title.replace(/[^a-z0-9]+/gi,'-').replace(/^-|-$/g,'')||'ai-song')+'.mp3';document.getElementById('coverTitle').textContent=title;document.getElementById('resultTitle').textContent=title;document.getElementById('resultMeta').textContent=document.getElementById('genre').value+' · '+document.getElementById('mood').value+' · '+document.getElementById('voice').value;document.getElementById('generatedLyrics').textContent=data.lyrics||'No lyrics were returned.';document.getElementById('studioResult').style.display='block';status.textContent='Song generated. Press play or download the MP3.';document.getElementById('studioResult').scrollIntoView({behavior:'smooth',block:'start'});}catch(err){status.textContent=err.message||'Something went wrong.'}finally{btn.disabled=false}}
-async function copyLyrics(){const text=document.getElementById('generatedLyrics').textContent;if(!text)return;try{await navigator.clipboard.writeText(text);document.getElementById('studioStatus').textContent='Lyrics copied.'}catch{document.getElementById('studioStatus').textContent='Could not copy lyrics on this browser.'}}
-render();
+const GENRES=['Afrobeats','Afro-pop','Gospel','Worship','Hip-Hop / Rap','R&B / Soul','Amapiano','Highlife','Fuji','Juju','Reggae / Dancehall','Pop','Instrumental','Classical'];
+const CATALOGUE=[
+{id:'afro',title:'Afrobeats',artist:'Nigerian & African discovery',genre:'Nigerian',icon:'🇳🇬',desc:'Explore Afrobeats, Afropop and contemporary African sounds.'},
+{id:'gospel',title:'Gospel & Worship',artist:'Faith · Praise · Worship',genre:'Gospel',icon:'🙏',desc:'A dedicated space for gospel and worship music.'},
+{id:'hiphop',title:'Hip-Hop & Rap',artist:'Global discovery',genre:'Hip-Hop / Rap',icon:'🎤',desc:'Rap, hip-hop and urban sounds from Nigeria and beyond.'},
+{id:'rnb',title:'R&B & Soul',artist:'Smooth · Emotional · Soulful',genre:'R&B / Soul',icon:'💜',desc:'Slow jams, soul, contemporary R&B and romantic sounds.'},
+{id:'highlife',title:'Highlife',artist:'Nigerian classics & new sounds',genre:'Highlife',icon:'🎸',desc:'Discover the sound of highlife and its modern descendants.'},
+{id:'amapiano',title:'Amapiano',artist:'South Africa · Nigeria · Africa',genre:'Amapiano',icon:'🥁',desc:'Log drums, dance grooves and African club sounds.'},
+{id:'reggae',title:'Reggae & Dancehall',artist:'Roots · Caribbean · Africa',genre:'Reggae / Dancehall',icon:'🌴',desc:'Reggae, dancehall and island-inspired sounds.'},
+{id:'instrumental',title:'Instrumental & Chill',artist:'Focus · Relax · Study',genre:'Instrumental',icon:'🎹',desc:'Instrumental, ambient and relaxing music.'}
+];
+let activeGenre='';let showingSaved=false;
+const $=id=>document.getElementById(id);
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function saved(){try{return JSON.parse(localStorage.getItem('musicHubSaved')||'[]')}catch{return[]}}
+function isSaved(id){return saved().includes(id)}
+function toggleSave(id){let s=saved();s=s.includes(id)?s.filter(x=>x!==id):[...s,id];localStorage.setItem('musicHubSaved',JSON.stringify(s));render();}
+function chooseGenre(g){activeGenre=activeGenre===g?'':g;render();document.getElementById('discover').scrollIntoView({behavior:'smooth'});}
+function card(t){return `<article class="card"><div class="cover">${t.icon}</div><span class="badge">${esc(t.genre)}</span><h3>${esc(t.title)}</h3><p class="meta">${esc(t.artist)}</p><p class="muted">${esc(t.desc)}</p><div class="actions"><button class="btn smallbtn" onclick="chooseGenre('${esc(t.genre)}')">Explore</button><button class="btn smallbtn heart" aria-label="Save ${esc(t.title)}" onclick="toggleSave('${t.id}')">${isSaved(t.id)?'♥ Saved':'♡ Save'}</button></div></article>`}
+function render(){const q=$('search').value.toLowerCase().trim();$('chips').innerHTML=GENRES.map(g=>`<button class="chip ${activeGenre===g?'active':''}" onclick="chooseGenre('${g.replace(/'/g,"\\'")}')">${g}</button>`).join('');let list=CATALOGUE.filter(t=>{const text=[t.title,t.artist,t.genre,t.desc].join(' ').toLowerCase();return(!q||text.includes(q))&&(!activeGenre||t.genre===activeGenre||activeGenre==='Nigerian'&&t.genre==='Nigerian')});$('resultCount').textContent=list.length+' discovery cards';$('featuredGrid').innerHTML=list.slice(0,4).map(card).join('');$('nigeriaGrid').innerHTML=CATALOGUE.filter(t=>['Nigerian','Gospel','Highlife'].includes(t.genre)).map(card).join('');$('genreGrid').innerHTML=GENRES.slice(0,8).map(g=>{const t=CATALOGUE.find(x=>x.genre===g)||{title:g,artist:'Coming to the catalogue',genre:g,icon:'🎵',desc:'A dedicated genre page will be populated with authorised releases.'};return `<article class="card"><div class="cover">${t.icon}</div><h3>${esc(g)}</h3><p class="muted">${esc(t.desc||'Discover this sound.')}</p><button class="btn smallbtn" onclick="chooseGenre('${g.replace(/'/g,"\\'")}')">Browse ${esc(g)}</button></article>`}).join('');renderSaved();}
+function renderSaved(){const s=saved();$('savedCount').textContent=s.length+' saved';const items=CATALOGUE.filter(t=>s.includes(t.id));$('savedGrid').innerHTML=items.map(card).join('');$('savedEmpty').classList.toggle('hidden',items.length>0);}
+function playlistMessage(name){alert(name+' is ready for catalogue data. We will connect real authorised tracks as the Music Hub catalogue grows.');}
+$('search').addEventListener('input',render);$('searchBtn').addEventListener('click',()=>{$('featuredGrid').scrollIntoView({behavior:'smooth',block:'start'});render()});$('showSaved').addEventListener('click',()=>{$('library').scrollIntoView({behavior:'smooth'});showingSaved=true});$('clearSaved').addEventListener('click',()=>{localStorage.removeItem('musicHubSaved');render()});render();
 </script>
 </body>
 </html>
