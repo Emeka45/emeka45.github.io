@@ -1,1 +1,80 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Submit Music — C. O. Eric</title><style>body{margin:0;background:#090711;color:#fff;font-family:system-ui,sans-serif;line-height:1.6}.wrap{width:min(760px,92%);margin:auto}header{padding:20px 0;border-bottom:1px solid #25202e}a{color:#d3b8ff;text-decoration:none}.hero{padding:45px 0 20px}.card{padding:25px;border:1px solid #282331;border-radius:20px;background:#110d18}label{display:block;margin-top:16px;font-weight:800}input,textarea,select{width:100%;padding:12px;margin-top:7px;border-radius:11px;border:1px solid #332b3d;background:#0d0912;color:#fff;box-sizing:border-box}.btn{margin-top:20px;border:0;padding:13px 17px;border-radius:11px;background:#9b6cff;color:#fff;font-weight:900}.notice{padding:15px;border-radius:13px;background:#171020;color:#bdb2c9}</style></head><body><header><div class="wrap"><a href="music.html">← Music Hub</a></div></header><main class="wrap"><section class="hero"><h1>🎙️ Submit Music</h1><p>Send release information for review. We only publish audio, artwork, lyrics and downloads where the submitter has the necessary rights or permission.</p></section><div class="card"><div class="notice">This is a static-site submission form. It prepares a submission message; it does not silently upload files or publish music automatically.</div><form id="form"><label>Artist / group<input name="artist" required></label><label>Song / release title<input name="title" required></label><label>Genre<select name="genre"><option>Afrobeats</option><option>Gospel</option><option>Hip-Hop / Rap</option><option>Highlife</option><option>R&B / Soul</option><option>Instrumental</option><option>Other</option></select></label><label>Official audio URL (if available)<input name="audio" placeholder="https://..."></label><label>YouTube / official video URL<input name="youtube" placeholder="https://youtube.com/..."></label><label>Spotify / Audiomack / Apple Music URL<input name="streaming" placeholder="https://..."></label><label>Lyrics / description<textarea name="lyrics" rows="7" placeholder="Paste lyrics only if you have permission to publish them, or provide a short release description."></textarea></label><label>Rights confirmation<textarea name="rights" rows="4" required placeholder="Explain that you own/control the relevant rights or have permission to submit this material."></textarea></label><button class="btn" type="submit">Prepare Submission</button></form><p id="result" class="notice" style="display:none;margin-top:18px"></p></div></main><script>document.getElementById("form").addEventListener("submit",e=>{e.preventDefault();const d=new FormData(e.target);const body=[...d.entries()].map(([k,v])=>k.toUpperCase()+": "+v).join("\n\n");const subject=encodeURIComponent("Music Submission — "+d.get("artist")+" — "+d.get("title"));const url="mailto:?subject="+subject+"&body="+encodeURIComponent(body);document.getElementById("result").style.display="block";document.getElementById("result").innerHTML="Submission details prepared. Your device may now open its email app; if it does not, copy the details below and send them to the site's music administrator.<br><br><textarea style='width:100%;margin-top:10px;min-height:180px'>"+body.replace(/</g,"&lt;")+"</textarea>";window.location.href=url});</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Submit your music release to C. O. Eric Music Hub for editorial review.">
+<title>Submit Music — C. O. Eric Music Hub</title>
+<style>
+:root{color-scheme:dark;--bg:#090711;--panel:#130e1b;--line:#33283f;--text:#fffaff;--muted:#c4b9ce;--accent:#b16cff}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0,#28133b,transparent 35%),var(--bg);color:var(--text);font:16px/1.6 system-ui,sans-serif}.wrap{width:min(820px,92%);margin:auto}header{padding:18px 0;border-bottom:1px solid var(--line)}a{color:#dfc7ff}.hero{padding:36px 0 18px}.hero h1{font-size:clamp(2.2rem,7vw,3.8rem);line-height:1.05;margin:.25em 0}.muted{color:var(--muted)}.card{padding:clamp(17px,4vw,28px);border:1px solid var(--line);border-radius:20px;background:rgba(19,14,27,.94);margin:18px 0 35px}.notice{padding:14px;border-radius:12px;background:#21152c;color:#e5d7f1;margin-bottom:18px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}.field{min-width:0}label{display:block;font-weight:750;margin-top:15px}input,textarea,select{display:block;width:100%;margin-top:6px;padding:12px;border:1px solid #443651;border-radius:10px;background:#0c0811;color:#fff;font:inherit}textarea{resize:vertical}input:focus,textarea:focus,select:focus{outline:2px solid var(--accent);outline-offset:1px}.check{display:flex;align-items:flex-start;gap:10px;margin-top:20px;font-weight:500}.check input{width:auto;margin-top:6px;flex-shrink:0}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.btn{border:0;border-radius:11px;padding:12px 16px;font:inherit;font-weight:800;cursor:pointer;background:#342343;color:white}.primary{background:linear-gradient(135deg,#a86bff,#ed83ca);color:#170c20}.result{margin-top:18px;white-space:pre-wrap;overflow-wrap:anywhere}.result textarea{min-height:180px}.hidden{display:none!important}footer{padding:0 0 35px;color:var(--muted)}@media(max-width:600px){.grid{grid-template-columns:1fr}.actions .btn{width:100%}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a href="music.html">← Back to Music Hub</a></div></header>
+<main class="wrap">
+<section class="hero"><p class="muted">ARTIST SUBMISSIONS · EDITORIAL REVIEW</p><h1>Bring your sound to the Hub. 🎙️</h1><p class="muted">Independent artists, bands, producers and labels can prepare a release submission for review. Share official listening links so listeners can support your work on authorised platforms.</p></section>
+<section class="card">
+<div class="notice"><strong>Important:</strong> this website currently has no connected submission server. Your entries stay in this page until you download or copy them. Submitting here does not send information to the site owner, create a public profile, or publish a release automatically.</div>
+<form id="submissionForm">
+<div class="grid">
+<div class="field"><label for="artist">Artist / group name *</label><input id="artist" name="artist" required maxlength="120" autocomplete="organization"></div>
+<div class="field"><label for="contact">Contact email (optional)</label><input id="contact" name="contactEmail" type="email" maxlength="200" autocomplete="email"></div>
+<div class="field"><label for="location">City / country</label><input id="location" name="location" maxlength="120" placeholder="e.g. Aba, Nigeria" autocomplete="country-name"></div>
+<div class="field"><label for="genre">Main genre *</label><select id="genre" name="genre" required><option value="">Choose a genre</option><option>Afrobeats / Afropop</option><option>Gospel / Worship</option><option>Highlife / Igbo Highlife</option><option>Hip-Hop / Rap</option><option>R&B / Soul</option><option>Fuji / Juju / Traditional</option><option>Amapiano / Dance</option><option>Reggae / Dancehall</option><option>Pop / Rock</option><option>Instrumental / Classical</option><option>Other</option></select></div>
+<div class="field"><label for="title">Song / release title *</label><input id="title" name="releaseTitle" required maxlength="180"></div>
+<div class="field"><label for="type">Release type</label><select id="type" name="releaseType"><option>Single</option><option>EP</option><option>Album</option><option>Music video</option><option>Instrumental / beat</option></select></div>
+<div class="field"><label for="date">Release date (if known)</label><input id="date" name="releaseDate" type="date"></div>
+<div class="field"><label for="artwork">Artwork image URL (optional)</label><input id="artwork" name="artworkUrl" type="url" placeholder="https://..."></div>
+<div class="field"><label for="audio">Official audio / listening URL *</label><input id="audio" name="officialAudioUrl" type="url" required placeholder="https://..."></div>
+<div class="field"><label for="video">Official music video URL (optional)</label><input id="video" name="officialVideoUrl" type="url" placeholder="https://..."></div>
+<div class="field"><label for="streaming">Spotify / Apple Music / Audiomack URL</label><input id="streaming" name="streamingUrl" type="url" placeholder="https://..."></div>
+<div class="field"><label for="social">Official artist page / social link</label><input id="social" name="artistPageUrl" type="url" placeholder="https://..."></div>
+</div>
+<label for="bio">Short artist bio / release description</label><textarea id="bio" name="bio" rows="4" maxlength="1800" placeholder="Tell us about the artist and this release."></textarea>
+<label for="notes">Additional notes (optional)</label><textarea id="notes" name="notes" rows="3" maxlength="1000" placeholder="Credits, featured artists, producer, clean/explicit version, etc."></textarea>
+<label class="check"><input type="checkbox" name="rightsConfirmed" required><span>I confirm that I own or have permission to submit these links and any artwork or other material I provide. I understand that this form does not grant the site rights to publish or redistribute copyrighted material. *</span></label>
+<label class="check"><input type="checkbox" name="reviewRequested"><span>I would like the release to be considered for editorial listing if the site later supports publication.</span></label>
+<div class="actions"><button class="btn primary" type="submit">Prepare Submission File</button><button class="btn" type="reset">Clear Form</button></div>
+</form>
+<div id="result" class="notice result hidden" aria-live="polite"></div>
+<div id="resultActions" class="actions hidden"><button id="download" class="btn primary" type="button">Download JSON</button><button id="copy" class="btn" type="button">Copy submission text</button></div>
+</section>
+</main>
+<footer class="wrap">© 2026 C. O. Eric Music Hub · <a href="music-catalogue.html">Artist Catalogue</a> · <a href="music-releases.html">Albums & New Music</a></footer>
+<script>
+const form=document.getElementById('submissionForm');
+const result=document.getElementById('result');
+const resultActions=document.getElementById('resultActions');
+let prepared=null;
+function safeUrl(value,label){if(!value)return '';try{const u=new URL(value);if(u.protocol!=='https:'&&u.protocol!=='http:')throw new Error();return u.href}catch{throw new Error(label+' must be a valid http:// or https:// link.');}}
+form.addEventListener('submit',e=>{
+ e.preventDefault();
+ try{
+  const fd=new FormData(form),data={schemaVersion:1,submissionType:'music-release',createdAt:new Date().toISOString()};
+  for(const [key,value] of fd.entries())if(key!=='rightsConfirmed'&&key!=='reviewRequested')data[key]=String(value).trim();
+  for(const [key,label] of [['artworkUrl','Artwork URL'],['officialAudioUrl','Official audio URL'],['officialVideoUrl','Official video URL'],['streamingUrl','Streaming URL'],['artistPageUrl','Artist page URL']])data[key]=safeUrl(data[key]||'',label);
+  data.rightsConfirmed=fd.get('rightsConfirmed')==='on';data.reviewRequested=fd.get('reviewRequested')==='on';
+  if(!data.rightsConfirmed)throw new Error('Please confirm you have the necessary rights or permission before preparing the submission.');
+  prepared=data;
+  const lines=Object.entries(data).map(([k,v])=>k+': '+(typeof v==='object'?JSON.stringify(v):String(v))).join('\n');
+  result.textContent='Submission prepared on this device. Nothing has been sent to the website. Download the JSON file or copy the text, then keep it for your records. To have it reviewed, you will need to send it through an official contact channel when one is provided.';
+  result.classList.remove('hidden');resultActions.classList.remove('hidden');
+  result.dataset.text=lines;
+ }catch(err){result.textContent=err.message;result.classList.remove('hidden');resultActions.classList.add('hidden');}
+});
+document.getElementById('download').addEventListener('click',()=>{
+ if(!prepared)return;
+ const blob=new Blob([JSON.stringify(prepared,null,2)],{type:'application/json'});
+ const url=URL.createObjectURL(blob),a=document.createElement('a');
+ a.href=url;a.download='music-submission-'+(prepared.artist||'artist').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')+'.json';
+ document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
+});
+document.getElementById('copy').addEventListener('click',async()=>{
+ if(!prepared)return;
+ const content=JSON.stringify(prepared,null,2);
+ try{await navigator.clipboard.writeText(content);result.textContent='Copied! Your submission is on the clipboard. Nothing has been sent to the website.'}
+ catch{result.textContent='Clipboard access was blocked. Your submission JSON is shown below so you can select and copy it.';const box=document.createElement('textarea');box.readOnly=true;box.value=content;box.setAttribute('aria-label','Prepared submission JSON');result.appendChild(box);box.focus();box.select()}
+});
+form.addEventListener('reset',()=>{prepared=null;result.classList.add('hidden');resultActions.classList.add('hidden');result.textContent=''});
+</script>
+</body></html>
