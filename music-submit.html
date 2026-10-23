@@ -36,7 +36,7 @@
 <label class="check"><input type="checkbox" name="rightsConfirmed" required><span>I confirm that I own or have permission to submit these links and any artwork or other material I provide. I understand that this form does not grant the site rights to publish or redistribute copyrighted material. *</span></label>
 <label class="check"><input type="checkbox" name="reviewRequested"><span>I would like the release to be considered for editorial listing if the site later supports publication.</span></label>
 <div class="actions"><button class="btn primary" type="submit" id="submitButton">Send for Review</button><button class="btn" type="reset">Clear Form</button></div>
-</form>
+<input type="text" name="website" id="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px" value="">\n</form>
 <div id="result" class="notice result hidden" aria-live="polite"></div>
 <div id="resultActions" class="actions hidden"><button id="download" class="btn primary" type="button">Download JSON</button><button id="copy" class="btn" type="button">Copy submission text</button></div>
 </section>
@@ -48,7 +48,7 @@ const result=document.getElementById('result');
 const resultActions=document.getElementById('resultActions');
 let prepared=null;
 function safeUrl(value,label){if(!value)return '';try{const u=new URL(value);if(u.protocol!=='https:'&&u.protocol!=='http:')throw new Error();return u.href}catch{throw new Error(label+' must be a valid http:// or https:// link.');}}
-form.addEventListener('submit',e=>{
+form.addEventListener('submit',async e=>{
  e.preventDefault();
  try{
   const fd=new FormData(form),data={schemaVersion:1,createdAt:new Date().toISOString()};
