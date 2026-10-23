@@ -12,11 +12,12 @@
 <body>
 <header><div class="wrap"><a href="music.html">← Back to Music Hub</a></div></header>
 <main class="wrap">
-<section class="hero"><p class="muted">ARTIST SUBMISSIONS · EDITORIAL REVIEW</p><h1>Bring your sound to the Hub. 🎙️</h1><p class="muted">Independent artists, bands, producers and labels can prepare a release submission for review. Share official listening links so listeners can support your work on authorised platforms.</p></section>
+<section class="hero"><p class="muted">ARTIST SUBMISSIONS · EDITORIAL REVIEW</p><h1>Request an artist profile or release. 🎙️</h1><p class="muted">Independent artists, bands, producers and labels can request an artist profile, a release listing, or both. Prepare your details and official listening links for editorial review. Share official listening links so listeners can support your work on authorised platforms.</p></section>
 <section class="card">
-<div class="notice"><strong>Important:</strong> this website currently has no connected submission server. Your entries stay in this page until you download or copy them. Submitting here does not send information to the site owner, create a public profile, or publish a release automatically.</div>
+<div class="notice"><strong>Important:</strong> this website currently has no connected submission server. Your entries stay in this page until you download or copy them. There is not yet an online inbox or automatic profile-publishing system. Submitting here does not send information to the site owner, create a public profile, or publish a release automatically.</div>
 <form id="submissionForm">
 <div class="grid">
+<div class="field"><label for="requestType">What would you like us to consider? *</label><select id="requestType" name="requestType" required><option value="Release listing">Release listing</option><option value="Artist profile">Artist profile listing</option><option value="Both profile and release">Both artist profile and release</option></select></div>
 <div class="field"><label for="artist">Artist / group name *</label><input id="artist" name="artist" required maxlength="120" autocomplete="organization"></div>
 <div class="field"><label for="contact">Contact email (optional)</label><input id="contact" name="contactEmail" type="email" maxlength="200" autocomplete="email"></div>
 <div class="field"><label for="location">City / country</label><input id="location" name="location" maxlength="120" placeholder="e.g. Aba, Nigeria" autocomplete="country-name"></div>
