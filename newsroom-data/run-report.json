@@ -1,20 +1,20 @@
 {
-  "started_utc": "2026-10-22T18:25:17.941232+00:00",
-  "finished_utc": "2026-10-22T18:25:35.148804+00:00",
+  "started_utc": "2026-10-23T08:08:17.902285+00:00",
+  "finished_utc": "2026-10-23T08:08:36.543199+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 347,
-  "fresh_items": 339,
+  "fresh_items": 338,
   "corroborated_candidates": 4,
   "published_count": 4,
   "published_titles": [
-    "'Marvel’s Wolverine' Soars on PS5 Sales Charts Despite Negative Buzz",
-    "Despite its mixed reception, Marvel's Wolverine was September's top-selling new game in the US, making Sony launch revenues it hasn't seen since Helldivers 2",
-    "Abia CityBoy Movement Congratulates Lucky Igbokwe On APC Campaign Council Appointment",
-    "Oborevwori inaugurates Delta APC campaign council"
+    "Powerful earthquake hits Tibet killing 16 people, reports say",
+    "Magnitude-7 earthquake hits Tibet, killing at least 16 and destroying hundreds of homes",
+    "5 'Solo Leveling' Characters Who Deserved So Much Better",
+    "Farewell BioWare, you inspired so many of us, and you deserved so much better than this"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }

@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-10-22T18:25:38.038975+00:00",
+  "finished_utc": "2026-10-23T08:08:37.820723+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
   "missing_before_run": 4,
@@ -7,36 +7,36 @@
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-10-22-oborevwori-inaugurates-delta-apc-campaign-council-5d016f1bfa.html",
-      "image": "news/images/2026-10-22-oborevwori-inaugurates-delta-apc-campaign-council-5d016f1bfa-source.jpg",
-      "bytes": 136250,
+      "article": "2026-10-23-powerful-earthquake-hits-tibet-killing-16-people-reports-say-7941dd9f13.html",
+      "image": "news/images/2026-10-23-powerful-earthquake-hits-tibet-killing-16-people-reports-say-7941dd9f13-source.jpg",
+      "bytes": 79275,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/oborevwori-inaugurates-delta-apc-campaign-council/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/10/22185921/WhatsApp-Image-2026-10-22-at-18.29.01_1792691961-1080x630.webp"
+      "source_url": "https://www.bbc.co.uk/news/articles/ck5ynd1z6e83o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/d9bb/live/35523df0-ce6f-11f1-a64c-550be9e3c66b.jpg"
     },
     {
-      "article": "2026-10-22-marvel-s-wolverine-soars-on-ps5-sales-charts-despite-negative-buzz-0f6860a6f1.html",
-      "image": "news/images/2026-10-22-marvel-s-wolverine-soars-on-ps5-sales-charts-despite-negative-buzz-0f6860a6f1-source.jpg",
-      "bytes": 108096,
+      "article": "2026-10-23-magnitude-7-earthquake-hits-tibet-killing-at-least-16-and-destroying-hundreds-of-homes-30621f89d5.html",
+      "image": "news/images/2026-10-23-magnitude-7-earthquake-hits-tibet-killing-at-least-16-and-destroying-hundreds-of-homes-30621f89d5-source.jpg",
+      "bytes": 70062,
       "provider": "Original news source",
-      "source_url": "https://www.polygon.com/marvel-wolverine-best-selling-game-september-us/",
-      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/marvel-s-wolverine-attack-1080p.jpg?w=1600&h=900&fit=crop"
+      "source_url": "https://www.theguardian.com/world/2026/oct/23/magnitude-7-earthquake-hits-china-tibet",
+      "image_url": "https://i.guim.co.uk/img/media/2b752e0d59c4399c02caaf09d97ac8759514aa0f/195_0_1350_1080/master/1350.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=6d48087c25f5790bf82283a97b0bea13"
     },
     {
-      "article": "2026-10-22-despite-its-mixed-reception-marvel-s-wolverine-was-september-s-top-selling-new-game-in-the-0acd2eda74.html",
-      "image": "news/images/2026-10-22-despite-its-mixed-reception-marvel-s-wolverine-was-september-s-top-selling-new-game-in-the-0acd2eda74-source.jpg",
-      "bytes": 94000,
+      "article": "2026-10-23-farewell-bioware-you-inspired-so-many-of-us-and-you-deserved-so-much-better-than-this-8f6e7dec1a.html",
+      "image": "news/images/2026-10-23-farewell-bioware-you-inspired-so-many-of-us-and-you-deserved-so-much-better-than-this-8f6e7dec1a-source.jpg",
+      "bytes": 134740,
       "provider": "Original news source",
-      "source_url": "https://www.eurogamer.net/marvels-wolverine-top-seling-september-us-circana",
-      "image_url": "https://assetsio.gnwcdn.com/marvel's-wolverine-logan-launching-at-a-reaver.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
+      "source_url": "https://www.eurogamer.net/farewell-bioware-closed-ea",
+      "image_url": "https://assetsio.gnwcdn.com/mass_effect_brighter.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
     },
     {
-      "article": "2026-10-22-abia-cityboy-movement-congratulates-lucky-igbokwe-on-apc-campaign-council-appointment-cd2d41a801.html",
-      "image": "news/images/2026-10-22-abia-cityboy-movement-congratulates-lucky-igbokwe-on-apc-campaign-council-appointment-cd2d41a801-source.jpg",
-      "bytes": 67243,
+      "article": "2026-10-23-5-solo-leveling-characters-who-deserved-so-much-better-d2fce01105.html",
+      "image": "news/images/2026-10-23-5-solo-leveling-characters-who-deserved-so-much-better-d2fce01105-source.jpg",
+      "bytes": 67891,
       "provider": "Original news source",
-      "source_url": "https://thereporter.com.ng/abia-cityboy-movement-congratulates-lucky-igbokwe-on-apc-campaign-council-appointment",
-      "image_url": "https://thereporter.com.ng/uploads/images/202610/image_870x580_6acfd45ad4bbd.jpg"
+      "source_url": "https://www.polygon.com/5-solo-leveling-characters-who-deserved-better-storylines/",
+      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/solo-leveling-esil.webp?w=1200&h=675&fit=crop"
     }
   ],
   "openverse_photos": [],
