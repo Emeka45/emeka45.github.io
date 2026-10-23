@@ -1,0 +1,20 @@
+[
+  {"id":"snake","title":"Snake","category":"Arcade","description":"Eat dots, grow longer and avoid the walls and your own tail.","icon":"🐍","path":"/games/snake/index.html","type":"local","featured":true},
+  {"id":"tic-tac-toe","title":"Tic-Tac-Toe","category":"Board & Strategy","description":"Classic three-in-a-row. You are X; the computer plays O.","icon":"❌","path":"/games/tic-tac-toe/index.html","type":"local","featured":true},
+  {"id":"2048","title":"2048","category":"Puzzle","description":"Combine matching tiles to reach 2048. Swipe or use arrow keys.","icon":"🔢","path":"/games/2048/index.html","type":"local","featured":true},
+  {"id":"minesweeper","title":"Minesweeper","category":"Puzzle","description":"Clear safe squares without triggering a mine.","icon":"💣","path":"/games/minesweeper/index.html","type":"local","featured":true},
+  {"id":"memory","title":"Memory Match","category":"Brain & Quiz","description":"Flip cards and match every pair in as few moves as possible.","icon":"🧠","path":"/games/memory/index.html","type":"local","featured":true},
+  {"id":"pong","title":"Pong","category":"Sports","description":"Beat the computer by returning the ball and scoring points.","icon":"🏓","path":"/games/pong/index.html","type":"local","featured":true},
+  {"id":"breakout","title":"Breakout","category":"Arcade","description":"Bounce the ball, break the bricks and clear the board.","icon":"🧱","path":"/games/breakout/index.html","type":"local","featured":false},
+  {"id":"flappy","title":"Sky Hop","category":"Arcade","description":"Tap to fly through the gaps.","icon":"🪽","path":"/games/flappy/index.html","type":"local","featured":false},
+  {"id":"sudoku","title":"Mini Sudoku","category":"Puzzle","description":"Complete the 4×4 Sudoku grid.","icon":"🔢","path":"/games/sudoku/index.html","type":"local","featured":false},
+  {"id":"word-guess","title":"Word Guess","category":"Brain & Quiz","description":"Guess the hidden five-letter word in six tries.","icon":"🔤","path":"/games/word-guess/index.html","type":"local","featured":false},
+  {"id":"connect-four","title":"Connect Four","category":"Board & Strategy","description":"Drop four pieces in a row before the computer does.","icon":"🔴","path":"/games/connect-four/index.html","type":"local","featured":false},
+  {"id":"rock-paper-scissors","title":"Rock Paper Scissors","category":"Casual","description":"Pick a move and challenge the computer.","icon":"✊","path":"/games/rock-paper-scissors/index.html","type":"local","featured":false},
+  {"id":"brick-breaker","title":"Brick Dash","category":"Arcade","description":"A fast mini brick-breaker.","icon":"🧱","path":"/games/brick-breaker/index.html","type":"local","featured":false},
+  {"id":"number-guess","title":"Number Guess","category":"Brain & Quiz","description":"Find the secret number between 1 and 100.","icon":"🎯","path":"/games/number-guess/index.html","type":"local","featured":false},
+  {"id":"whack-a-mole","title":"Whack-a-Mole","category":"Casual","description":"Tap the target before the timer ends.","icon":"🐹","path":"/games/whack-a-mole/index.html","type":"local","featured":false},
+  {"id":"reaction-test","title":"Reaction Test","category":"Brain & Quiz","description":"Wait for the signal, then tap as fast as you can.","icon":"⚡","path":"/games/reaction-test/index.html","type":"local","featured":false},
+  {"id":"sliding-puzzle","title":"Sliding Puzzle","category":"Puzzle","description":"Arrange 1–15 with the empty space in the bottom-right.","icon":"🧩","path":"/games/sliding-puzzle/index.html","type":"local","featured":false},
+  {"id":"endless-runner","title":"Endless Runner","category":"Racing","description":"Jump over obstacles and survive as long as possible.","icon":"🏃","path":"/games/endless-runner/index.html","type":"local","featured":false}
+]
