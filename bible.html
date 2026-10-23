@@ -108,7 +108,21 @@ const dailyVerses=[
 {ref:"Ephesians 4:32",text:"And be ye kind one to another, tenderhearted, forgiving one another, even as God for Christ's sake hath forgiven you.",thought:"Where possible, choose kindness and a heart willing to forgive."},
 {ref:"Psalm 19:14",text:"Let the words of my mouth, and the meditation of my heart, be acceptable in thy sight, O LORD, my strength, and my redeemer.",thought:"Before you speak, consider whether your words will bring truth and grace."},
 {ref:"Numbers 6:24-26",text:"The LORD bless thee, and keep thee: The LORD make his face shine upon thee, and be gracious unto thee: The LORD lift up his countenance upon thee, and give thee peace.",thought:"Receive this blessing of protection, grace, and peace for the day."}
-];
+,
+{"ref":"Psalm 56:3","text":"What time I am afraid, I will trust in thee.","thought":"Let fear become a reminder to turn toward trust."},
+{"ref":"Isaiah 40:31","text":"But they that wait upon the LORD shall renew their strength; they shall mount up with wings as eagles; they shall run, and not be weary; and they shall walk, and not faint.","thought":"Waiting can be active faith, not wasted time."},
+{"ref":"Proverbs 16:3","text":"Commit thy works unto the LORD, and thy thoughts shall be established.","thought":"Offer your plans to God and take the next responsible step."},
+{"ref":"Deuteronomy 31:8","text":"And the LORD, he it is that doth go before thee; he will be with thee, he will not fail thee, neither forsake thee: fear not, neither be dismayed.","thought":"You can face the unknown with courage and faith."},
+{"ref":"Psalm 16:11","text":"Thou wilt shew me the path of life: in thy presence is fulness of joy; at thy right hand there are pleasures for evermore.","thought":"Seek lasting joy in God's presence."},
+{"ref":"Proverbs 17:17","text":"A friend loveth at all times, and a brother is born for adversity.","thought":"Reach out to someone who needs a faithful friend."},
+{"ref":"Matthew 7:7","text":"Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you:","thought":"Keep seeking wisdom and bringing your needs honestly to God."},
+{"ref":"Psalm 91:2","text":"I will say of the LORD, He is my refuge and my fortress: my God; in him will I trust.","thought":"Let prayer be a place to bring your worries and find refuge."},
+{"ref":"Romans 12:21","text":"Be not overcome of evil, but overcome evil with good.","thought":"Answer hurtful situations with courage and goodness where you can."},
+{"ref":"1 Thessalonians 5:16-18","text":"Rejoice evermore. Pray without ceasing. In every thing give thanks: for this is the will of God in Christ Jesus concerning you.","thought":"Make room for joy, ongoing prayer, and gratitude."},
+{"ref":"Psalm 90:17","text":"And let the beauty of the LORD our God be upon us: and establish thou the work of our hands upon us; yea, the work of our hands establish thou it.","thought":"Ask for your work today to be meaningful and fruitful."},
+{"ref":"John 15:12","text":"This is my commandment, That ye love one another, as I have loved you.","thought":"Show love through a practical action, not words alone."},
+{"ref":"2 Corinthians 5:7","text":"(For we walk by faith, not by sight:)","thought":"Keep moving faithfully even when the whole path is not visible."},
+{"ref":"Psalm 30:5","text":"Weeping may endure for a night, but joy cometh in the morning.","thought":"Pain is real, but it does not have to define every tomorrow."}];
 let dailyVerseIndex;
 const dailyThemeMap={"Hope":["Lamentations 3:22-23","Romans 8:28","Matthew 11:28","Romans 15:13"],"Peace":["Psalm 46:10","John 14:27","Matthew 6:34","Numbers 6:24-26","Psalm 23:1"],"Wisdom":["Proverbs 3:5","Micah 6:8","Psalm 119:105","James 1:5","Psalm 19:14"],"Courage":["Isaiah 41:10","Joshua 1:9","2 Timothy 1:7","Psalm 27:1","Philippians 4:13"],"Love":["John 3:16","Matthew 5:16","Ephesians 4:32","1 Corinthians 16:14"],"Gratitude":["Psalm 34:8","Lamentations 3:22-23","Psalm 19:14","Numbers 6:24-26"],"Faith":["Hebrews 11:1","Psalm 37:5","1 Peter 5:7","Galatians 6:9","Romans 12:12","Colossians 3:23","Psalm 121:1-2"]};
 function getDailyPool(){const theme=document.getElementById('dailyTheme')?.value||'all';if(theme==='all')return dailyVerses;const refs=dailyThemeMap[theme]||[];const found=dailyVerses.filter(v=>refs.includes(v.ref));return found.length?found:dailyVerses;}
