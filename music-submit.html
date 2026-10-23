@@ -14,7 +14,7 @@
 <main class="wrap">
 <section class="hero"><p class="muted">ARTIST SUBMISSIONS · EDITORIAL REVIEW</p><h1>Request an artist profile or release. 🎙️</h1><p class="muted">Independent artists, bands, producers and labels can request an artist profile, a release listing, or both. Prepare your details and official listening links for editorial review. Share official listening links so listeners can support your work on authorised platforms.</p></section>
 <section class="card">
-<div class="notice"><strong>Important:</strong> this website currently has no connected submission server. Your entries stay in this page until you download or copy them. There is not yet an online inbox or automatic profile-publishing system. Submitting here does not send information to the site owner, create a public profile, or publish a release automatically.</div>
+<div class="notice"><strong>How submissions work:</strong> this form will send your entry for editorial review once the Cloudflare submission inbox is configured. If it is unavailable, use the download/copy fallback. Submissions are not published automatically.</div>
 <form id="submissionForm">
 <div class="grid">
 <div class="field"><label for="requestType">What would you like us to consider? *</label><select id="requestType" name="requestType" required><option value="Release listing">Release listing</option><option value="Artist profile">Artist profile listing</option><option value="Both profile and release">Both artist profile and release</option></select></div>
@@ -35,7 +35,7 @@
 <label for="notes">Additional notes (optional)</label><textarea id="notes" name="notes" rows="3" maxlength="1000" placeholder="Credits, featured artists, producer, clean/explicit version, etc."></textarea>
 <label class="check"><input type="checkbox" name="rightsConfirmed" required><span>I confirm that I own or have permission to submit these links and any artwork or other material I provide. I understand that this form does not grant the site rights to publish or redistribute copyrighted material. *</span></label>
 <label class="check"><input type="checkbox" name="reviewRequested"><span>I would like the release to be considered for editorial listing if the site later supports publication.</span></label>
-<div class="actions"><button class="btn primary" type="submit">Prepare Submission File</button><button class="btn" type="reset">Clear Form</button></div>
+<div class="actions"><button class="btn primary" type="submit" id="submitButton">Send for Review</button><button class="btn" type="reset">Clear Form</button></div>
 </form>
 <div id="result" class="notice result hidden" aria-live="polite"></div>
 <div id="resultActions" class="actions hidden"><button id="download" class="btn primary" type="button">Download JSON</button><button id="copy" class="btn" type="button">Copy submission text</button></div>
