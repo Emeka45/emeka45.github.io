@@ -14,6 +14,20 @@
 <main class="wrap">
 <section class="hero"><span class="eyebrow">📖 BIBLE HUB · 1000+ TRANSLATIONS</span><h1>Study Scripture <span class="gradient">your way.</span></h1><p>Choose from a large multilingual collection of Bible translations delivered through an open-access Bible service. Browse by language, read chapter-by-chapter, search, compare versions and save your study locally.</p><div class="count" id="catalogCount">Loading the live translation catalogue…</div></section>
 <section class="daily-verse" id="dailyVerseCard" aria-labelledby="dailyVerseHeading"><div class="daily-label">🌅 Your Daily Scripture</div><h2 id="dailyVerseHeading" style="margin:8px 0 0;font-size:clamp(1.5rem,4vw,2.1rem)">Daily Bible Verse</h2><blockquote id="dailyVerseText">Loading today's verse…</blockquote><div class="daily-ref" id="dailyVerseRef"></div><p class="muted" id="dailyVerseThought" style="margin:10px 0 0"></p><div class="daily-actions"><button type="button" id="copyDailyVerse">Copy verse</button><button type="button" class="secondary" id="shareDailyVerse">Share verse</button><button type="button" class="secondary" id="anotherDailyVerse">Reflect on another verse</button></div><div class="daily-note">Today's selection uses the public-domain King James Version (KJV). A new verse is selected each calendar day.</div></section>
+
+<section class="daily-verse" id="readingPlanCard" aria-labelledby="readingPlanHeading">
+  <div class="daily-label">📚 Grow in the Word</div>
+  <h2 id="readingPlanHeading" style="margin:8px 0 4px;font-size:clamp(1.5rem,4vw,2.1rem)">7-Day Bible Reading Plan</h2>
+  <p style="color:var(--muted);margin:0 0 14px">A simple one-week journey through hope, peace, wisdom, love, and faith. Tick each day when you finish reading; your progress stays on this device.</p>
+  <div id="readingPlanList" class="saved"></div>
+  <div class="daily-actions"><button type="button" id="resetReadingPlan" class="secondary">Reset 7-day plan</button></div>
+  <div class="status" id="readingPlanProgress" aria-live="polite">0 of 7 readings completed.</div>
+  <hr style="border:0;border-top:1px solid var(--line);margin:22px 0">
+  <h3 style="margin:0 0 6px">⏰ Daily Bible reminder</h3>
+  <p style="color:var(--muted);margin:0 0 12px">Choose a time for a gentle reminder when this Bible Hub is open in your browser. Notifications require permission. For privacy and reliability, this website does not claim to send scheduled reminders while fully closed.</p>
+  <div class="daily-actions"><label for="bibleReminderTime" style="align-self:center">Reminder time</label><input class="control" type="time" id="bibleReminderTime" value="08:00" style="max-width:150px"><button type="button" id="enableBibleReminder">Enable reminder</button><button type="button" id="disableBibleReminder" class="secondary">Turn off</button></div>
+  <div class="daily-note" id="bibleReminderStatus" aria-live="polite">Reminder is off.</div>
+</section>
 <div class="layout">
 <aside class="panel"><h3>Bible Library</h3><button class="sidebtn active" data-view="reader">📖 Reader</button><button class="sidebtn" data-view="bookmarks">🔖 Bookmarks</button><button class="sidebtn" data-view="history">🕘 History</button><button class="sidebtn" data-view="compare">⚖️ Compare versions</button><a class="sidebtn" href="extra-biblical-library.html">📜 Apocrypha & Ancient Texts ↗</a><a class="sidebtn" href="extra-biblical-library.html#enoch">📖 Book of Enoch ↗</a><button class="sidebtn" data-view="languages">🌍 Languages & all versions</button><button class="sidebtn" data-view="settings">⚙️ Reader settings</button></aside>
 <section>
@@ -98,6 +112,58 @@ const dailyVerses=[
 let dailyVerseIndex;
 function renderDailyVerse(index){dailyVerseIndex=(index+dailyVerses.length)%dailyVerses.length;const v=dailyVerses[dailyVerseIndex];$('dailyVerseText').textContent='“'+v.text+'”';$('dailyVerseRef').textContent=v.ref+' · King James Version (KJV)';$('dailyVerseThought').textContent=v.thought;}
 function initDailyVerse(){const now=new Date(),start=new Date(now.getFullYear(),0,0),day=Math.floor((now-start)/86400000);renderDailyVerse((day-1)%dailyVerses.length);$('copyDailyVerse').onclick=async()=>{const v=dailyVerses[dailyVerseIndex];const txt='“'+v.text+'” — '+v.ref+' (KJV)';try{await navigator.clipboard.writeText(txt);$('dailyVerseThought').textContent='Verse copied. Share it with someone who may need encouragement.'}catch(e){const ta=document.createElement('textarea');ta.value=txt;ta.setAttribute('readonly','');ta.style.position='absolute';ta.style.left='-9999px';document.body.append(ta);ta.select();const ok=document.execCommand('copy');ta.remove();$('dailyVerseThought').textContent=ok?'Verse copied.':'Copy is not available in this browser; you can select the verse text to copy it.'}};$('shareDailyVerse').onclick=async()=>{const v=dailyVerses[dailyVerseIndex],data={title:'Daily Bible Verse',text:'“'+v.text+'” — '+v.ref+' (KJV)',url:location.href};if(navigator.share){try{await navigator.share(data)}catch(e){if(e.name!=='AbortError')$('dailyVerseThought').textContent='Sharing is unavailable right now.'}}else{$('dailyVerseThought').textContent=data.text+' · '+data.url}};$('anotherDailyVerse').onclick=()=>renderDailyVerse(dailyVerseIndex+1);}
+
+
+const readingPlan=[
+ {title:"Day 1 · Hope",ref:"Romans 15:13",note:"Ask God to renew your hope."},
+ {title:"Day 2 · Peace",ref:"John 14:25-27",note:"Reflect on the peace Christ offers."},
+ {title:"Day 3 · Wisdom",ref:"Proverbs 3:1-8",note:"Consider where you need guidance."},
+ {title:"Day 4 · Love",ref:"1 Corinthians 13:4-8",note:"Choose one practical way to show love."},
+ {title:"Day 5 · Courage",ref:"Joshua 1:1-9",note:"Name one step you can take courageously."},
+ {title:"Day 6 · Gratitude",ref:"Psalm 100",note:"List a few things you are thankful for."},
+ {title:"Day 7 · Trust",ref:"Psalm 23",note:"Rest in God's care and faithfulness."}
+];
+function renderReadingPlan(){
+ const done=JSON.parse(localStorage.getItem('bibleReadingPlanDone')||'[]');
+ $('readingPlanList').innerHTML=readingPlan.map((p,i)=>'<label style="display:flex;align-items:flex-start;gap:12px;padding:12px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.025)"><input type="checkbox" data-plan-day="'+i+'" '+(done.includes(i)?'checked':'')+' style="width:20px;height:20px;flex:0 0 auto;margin-top:4px"><span><strong>'+esc(p.title)+' — '+esc(p.ref)+'</strong><br><span style="color:var(--muted);font-size:.9rem">'+esc(p.note)+'</span></span><button type="button" class="secondary" data-open-reading="'+i+'" style="margin-left:auto;min-height:34px;padding:5px 9px;flex:0 0 auto">Read</button></label>').join('');
+ $('readingPlanList').querySelectorAll('[data-plan-day]').forEach(box=>box.onchange=()=>{let a=JSON.parse(localStorage.getItem('bibleReadingPlanDone')||'[]');a=box.checked?[...new Set([...a,Number(box.dataset.planDay)])]:a.filter(n=>n!==Number(box.dataset.planDay));localStorage.setItem('bibleReadingPlanDone',JSON.stringify(a));renderReadingPlan()});
+ $('readingPlanList').querySelectorAll('[data-open-reading]').forEach(btn=>btn.onclick=()=>{const p=readingPlan[Number(btn.dataset.openReading)];$('search').value='';const m=p.ref.match(/^(.+?)\s+(\d+)(?::\d+(?:-\d+)?)?$/);if(m){const bookName=m[1],chapterNum=Number(m[2]);const target=books.find(b=>(b.commonName||b.name)===bookName||b.name===bookName);if(target){bk.value=target.id;fillChapters(chapterNum);renderBooks();loadChapter();document.querySelector('.layout').scrollIntoView({behavior:'smooth'});return}}$('status').textContent='Please read '+p.ref+' in your chosen Bible version; use the chapter controls or Bible search.';document.querySelector('.layout').scrollIntoView({behavior:'smooth'})});
+ $('readingPlanProgress').textContent=done.length+' of 7 readings completed'+(done.length===7?' — excellent work!':'');
+ $('resetReadingPlan').onclick=()=>{localStorage.removeItem('bibleReadingPlanDone');renderReadingPlan()};
+}
+let reminderTimer=null;
+function checkBibleReminder(){
+ const enabled=localStorage.getItem('bibleReminderEnabled')==='true';
+ const time=$('bibleReminderTime').value||'08:00';
+ if(!enabled)return;
+ const now=new Date(),today=now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0')+'-'+String(now.getDate()).padStart(2,'0');
+ if(now.getHours()*60+now.getMinutes()>=Number(time.split(':')[0])*60+Number(time.split(':')[1])&&localStorage.getItem('bibleReminderLast')!==today){
+  localStorage.setItem('bibleReminderLast',today);
+  if('Notification' in window&&Notification.permission==='granted'){
+   try{new Notification('Your Daily Bible Reading',{body:'Take a quiet moment for today’s verse and Bible reading plan.',icon:'favicon.svg'})}catch(e){}
+   $('bibleReminderStatus').textContent='Reminder sent for today. Keep this page open around your chosen time for future reminders.';
+  }else $('bibleReminderStatus').textContent='Reminder time reached. Allow notifications in your browser to receive a pop-up.';
+ }
+}
+async function enableBibleReminder(){
+ if(!('Notification' in window)){ $('bibleReminderStatus').textContent='This browser does not support notifications. You can still use the reading plan on this page.';return}
+ try{
+  const permission=Notification.permission==='granted'?'granted':await Notification.requestPermission();
+  if(permission!=='granted'){$('bibleReminderStatus').textContent='Notifications were not allowed. You can enable them in your browser settings.';return}
+  localStorage.setItem('bibleReminderEnabled','true');localStorage.setItem('bibleReminderTime',$('bibleReminderTime').value||'08:00');
+  $('bibleReminderStatus').textContent='Daily reminder enabled for '+( $('bibleReminderTime').value||'08:00')+'. Keep this Bible Hub open around that time; the browser cannot reliably notify you while the page is fully closed.';
+  checkBibleReminder();
+ }catch(e){$('bibleReminderStatus').textContent='Could not enable notifications in this browser.'}
+}
+function initBibleReminder(){
+ const saved=localStorage.getItem('bibleReminderTime');if(saved)$('bibleReminderTime').value=saved;
+ if(localStorage.getItem('bibleReminderEnabled')==='true')$('bibleReminderStatus').textContent='Reminder is enabled for '+$('bibleReminderTime').value+'. Keep this page open around that time.';
+ $('bibleReminderTime').onchange=()=>{localStorage.setItem('bibleReminderTime',$('bibleReminderTime').value);if(localStorage.getItem('bibleReminderEnabled')==='true')$('bibleReminderStatus').textContent='Reminder time updated to '+$('bibleReminderTime').value+'. Keep this page open around that time.'};
+ $('enableBibleReminder').onclick=enableBibleReminder;
+ $('disableBibleReminder').onclick=()=>{localStorage.setItem('bibleReminderEnabled','false');$('bibleReminderStatus').textContent='Reminder is off.'};
+ if(reminderTimer)clearInterval(reminderTimer);reminderTimer=setInterval(checkBibleReminder,30000);checkBibleReminder();
+}
+renderReadingPlan();initBibleReminder();
 
 initDailyVerse();
 loadCatalog();
