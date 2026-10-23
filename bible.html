@@ -15,6 +15,33 @@
 <section class="hero"><span class="eyebrow">📖 BIBLE HUB · 1000+ TRANSLATIONS</span><h1>Study Scripture <span class="gradient">your way.</span></h1><p>Choose from a large multilingual collection of Bible translations delivered through an open-access Bible service. Browse by language, read chapter-by-chapter, search, compare versions and save your study locally.</p><div class="count" id="catalogCount">Loading the live translation catalogue…</div></section>
 <section class="daily-verse" id="dailyVerseCard" aria-labelledby="dailyVerseHeading"><div class="daily-label">🌅 Your Daily Scripture</div><h2 id="dailyVerseHeading" style="margin:8px 0 0;font-size:clamp(1.5rem,4vw,2.1rem)">Daily Bible Verse</h2><blockquote id="dailyVerseText">Loading today's verse…</blockquote><div class="daily-ref" id="dailyVerseRef"></div><p class="muted" id="dailyVerseThought" style="margin:10px 0 0"></p><div class="daily-actions" style="align-items:center"><label for="dailyTheme" style="font-weight:750">Choose a theme</label><select class="control" id="dailyTheme" style="max-width:190px"><option value="all">All themes</option><option value="Hope">Hope</option><option value="Peace">Peace</option><option value="Wisdom">Wisdom</option><option value="Courage">Courage</option><option value="Love">Love</option><option value="Gratitude">Gratitude</option><option value="Faith">Faith</option></select></div><div class="daily-actions"><button type="button" id="copyDailyVerse">Copy verse</button><button type="button" class="secondary" id="shareDailyVerse">Share verse</button><button type="button" class="secondary" id="anotherDailyVerse">Another verse</button><button type="button" class="secondary" id="saveVerseCard">Save verse card</button></div><div class="daily-note">Today's selection uses the public-domain King James Version (KJV). A new verse is selected each calendar day.</div></section>
 
+
+<section class="daily-verse" id="questionPrayerCard" aria-labelledby="questionPrayerHeading">
+  <div class="daily-label">🙏 Reflect · Pray · Grow</div>
+  <h2 id="questionPrayerHeading" style="margin:8px 0 4px;font-size:clamp(1.5rem,4vw,2.1rem)">Bible Question of the Day</h2>
+  <p style="color:var(--muted);margin:0 0 10px">Pause and reflect on a practical question grounded in Scripture.</p>
+  <h3 id="dailyQuestionText" style="font-size:1.15rem;line-height:1.6;margin:8px 0"></h3>
+  <p class="daily-ref" id="dailyQuestionRef"></p>
+  <details style="margin-top:10px"><summary style="cursor:pointer;font-weight:750">Reveal a reflection</summary><p id="dailyQuestionAnswer" style="line-height:1.7;color:var(--muted)"></p></details>
+  <hr style="border:0;border-top:1px solid var(--line);margin:22px 0">
+  <h2 style="margin:0 0 8px;font-size:clamp(1.4rem,3vw,1.9rem)">Daily Prayer</h2>
+  <p id="dailyPrayerText" style="line-height:1.8;margin:0"></p>
+  <p id="dailyPrayerRef" class="daily-ref" style="margin:10px 0 0"></p>
+  <div class="daily-actions"><button type="button" id="copyDailyPrayer" class="secondary">Copy prayer</button></div>
+</section>
+<section class="daily-verse" id="prayerJournalCard" aria-labelledby="prayerJournalHeading">
+  <div class="daily-label">📝 Private · Saved on this device</div>
+  <h2 id="prayerJournalHeading" style="margin:8px 0 4px;font-size:clamp(1.5rem,4vw,2.1rem)">Prayer Journal</h2>
+  <p style="color:var(--muted);margin:0 0 14px">Write a prayer, gratitude note, or reflection. Entries are stored in this browser on this device, not uploaded to the website. Clearing browser data may erase them.</p>
+  <label for="prayerJournalDate" style="display:block;font-weight:750;margin:10px 0 6px">Entry date</label>
+  <input class="control" id="prayerJournalDate" type="date" style="max-width:220px">
+  <label for="prayerJournalText" style="display:block;font-weight:750;margin:14px 0 6px">Your prayer or reflection</label>
+  <textarea class="control" id="prayerJournalText" rows="5" maxlength="10000" placeholder="Dear God… / Today I am grateful for… / Please help me with…" style="width:100%;resize:vertical;line-height:1.65"></textarea>
+  <div class="daily-actions"><button type="button" id="savePrayerJournal">Save entry</button><button type="button" id="clearPrayerJournalEditor" class="secondary">Clear editor</button></div>
+  <p class="status" id="prayerJournalStatus" aria-live="polite">Your saved entries will appear below.</p>
+  <h3 style="margin:18px 0 8px">Saved entries</h3><div id="prayerJournalEntries" class="saved"></div>
+</section>
+
 <section class="daily-verse" id="readingPlanCard" aria-labelledby="readingPlanHeading">
   <div class="daily-label">📚 Grow in the Word</div>
   <h2 id="readingPlanHeading" style="margin:8px 0 4px;font-size:clamp(1.5rem,4vw,2.1rem)">7-Day Bible Reading Plan</h2>
@@ -188,6 +215,58 @@ function initBibleReminder(){
  $('disableBibleReminder').onclick=()=>{localStorage.setItem('bibleReminderEnabled','false');$('bibleReminderStatus').textContent='Reminder is off.'};
  if(reminderTimer)clearInterval(reminderTimer);reminderTimer=setInterval(checkBibleReminder,30000);checkBibleReminder();
 }
+
+const dailyQuestions=[
+ {q:'How can I show love to someone in a practical way today?',ref:'1 Corinthians 13:4–7',a:'Choose one concrete action: listen patiently, encourage someone, forgive where appropriate, or help without expecting anything in return.'},
+ {q:'What worry can I bring to God instead of carrying it alone?',ref:'Philippians 4:6–7',a:'Name the concern honestly in prayer, ask for wisdom, and consider one helpful next step you can take today.'},
+ {q:'Where do I need wisdom before making a decision?',ref:'James 1:5',a:'Ask God for wisdom, consider Scripture and sound counsel, and give yourself time to think rather than rushing.'},
+ {q:'Who could use encouragement from me today?',ref:'1 Thessalonians 5:11',a:'Send a kind message, offer sincere appreciation, or make time to hear how someone is doing.'},
+ {q:'What am I grateful for, even in a difficult season?',ref:'1 Thessalonians 5:18',a:'Write down one specific gift or moment of support. Gratitude can sit alongside grief and difficulty; it does not deny them.'},
+ {q:'What does trusting God look like in the situation I face now?',ref:'Proverbs 3:5–6',a:'Pray honestly, seek wise advice, and take the next responsible step without pretending you can control every outcome.'},
+ {q:'Is there someone I need to forgive or a boundary I need to set?',ref:'Colossians 3:13',a:'Consider what forgiveness might mean for you. Forgiveness does not require ignoring harm or removing necessary safety boundaries.'},
+ {q:'How can I use my words to bring peace today?',ref:'Proverbs 15:1',a:'Pause before replying, speak truth gently, and choose a private, respectful conversation when possible.'},
+ {q:'What good habit can help me make time for God?',ref:'Psalm 119:105',a:'Choose a small, realistic rhythm—perhaps a short passage and prayer at the same time each day.'},
+ {q:'Where can I act with courage even while feeling afraid?',ref:'Joshua 1:9',a:'Courage is not the absence of fear. Identify one safe, wise step and ask a trusted person to support you.'},
+ {q:'How can I serve someone without seeking recognition?',ref:'Galatians 5:13',a:'Offer practical help quietly and respectfully, while considering what the other person actually needs.'},
+ {q:'What burden might I share with a trusted person?',ref:'Galatians 6:2',a:'You do not have to manage everything alone. Consider reaching out to someone dependable who can listen or help.'},
+ {q:'How can I respond to conflict without returning hurt for hurt?',ref:'Romans 12:17–18',a:'Seek peace where possible, speak honestly, and remember that you can control your response even when you cannot control another person.'},
+ {q:'What am I learning during this waiting season?',ref:'Psalm 27:14',a:'Reflect on patience, preparation, and support you may need. Waiting does not mean you must remain passive.'}
+];
+const dailyPrayers=[
+ {p:'God of hope, steady my heart today. Give me wisdom for my choices, patience with others, and courage to do what is right. Help me notice people who need kindness, and let my words and actions reflect Your love. Amen.',r:'Romans 15:13'},
+ {p:'Lord, grant me peace in the middle of today’s pressures. Help me slow down, think clearly, and respond with gentleness. Show me what I can change and help me release what is beyond my control. Amen.',r:'John 14:27'},
+ {p:'Heavenly Father, thank You for the gifts I sometimes overlook. Help me approach today with a grateful heart, to serve others sincerely, and to recognise the good that is still present even when life is difficult. Amen.',r:'Psalm 100:4'},
+ {p:'God, give me wisdom in my decisions and humility to seek good counsel. Help me speak truth with kindness, act with integrity, and choose what brings life and peace. Amen.',r:'James 1:5'},
+ {p:'Lord, when I feel afraid or uncertain, remind me that I do not have to face every challenge alone. Give me strength for the next step and help me reach out for support when I need it. Amen.',r:'Isaiah 41:10'},
+ {p:'God of mercy, help me love with patience and honesty. Teach me to listen well, forgive wisely, respect healthy boundaries, and care for others without neglecting the responsibilities You have placed before me. Amen.',r:'1 Corinthians 13:4–7'},
+ {p:'Father, I place this day and its uncertainties before You. Guide my work, protect my attention from needless worry, and help me act faithfully with what is in my hands. Give rest to my mind and compassion to my heart. Amen.',r:'Proverbs 3:5–6'}
+];
+function dateOrdinal(dateString){const d=new Date((dateString||new Date().toISOString().slice(0,10))+'T12:00:00');return Math.floor(d.getTime()/86400000)}
+function initQuestionAndPrayer(){
+ const day=dateOrdinal(new Date().toISOString().slice(0,10));
+ const q=dailyQuestions[((day%dailyQuestions.length)+dailyQuestions.length)%dailyQuestions.length];
+ $('dailyQuestionText').textContent=q.q;$('dailyQuestionRef').textContent=q.ref;$('dailyQuestionAnswer').textContent=q.a;
+ const p=dailyPrayers[((day%dailyPrayers.length)+dailyPrayers.length)%dailyPrayers.length];
+ $('dailyPrayerText').textContent=p.p;$('dailyPrayerRef').textContent=p.r;
+ $('copyDailyPrayer').onclick=async()=>{const value=p.p+' ('+p.r+')';try{await navigator.clipboard.writeText(value);$('prayerJournalStatus').textContent='Daily prayer copied.'}catch{$('prayerJournalStatus').textContent=value}};
+}
+function initPrayerJournal(){
+ const date=$('prayerJournalDate'),editor=$('prayerJournalText'),status=$('prayerJournalStatus');
+ const today=new Date().toISOString().slice(0,10);date.value=today;
+ const read=()=>{try{const x=JSON.parse(localStorage.getItem('biblePrayerJournal')||'{}');return x&&typeof x==='object'&&!Array.isArray(x)?x:{}}catch{return {}}};
+ function render(){
+  const entries=read(),keys=Object.keys(entries).sort().reverse();
+  $('prayerJournalEntries').innerHTML=keys.length?keys.map(k=>'<article style="padding:12px;border:1px solid var(--line);border-radius:12px;margin:8px 0;background:rgba(255,255,255,.025)"><strong>'+esc(k)+'</strong><p style="white-space:pre-wrap;line-height:1.65;margin:8px 0">'+esc(entries[k])+'</p><div class="daily-actions"><button type="button" class="secondary" data-journal-edit="'+esc(k)+'">Edit</button><button type="button" class="secondary" data-journal-delete="'+esc(k)+'">Delete</button></div></article>').join(''):'<p style="color:var(--muted)">No entries saved yet. Your first entry will appear here.</p>';
+  $('prayerJournalEntries').querySelectorAll('[data-journal-edit]').forEach(b=>b.onclick=()=>{date.value=b.dataset.journalEdit;editor.value=read()[b.dataset.journalEdit]||'';status.textContent='Editing entry for '+date.value+'.'});
+  $('prayerJournalEntries').querySelectorAll('[data-journal-delete]').forEach(b=>b.onclick=()=>{const k=b.dataset.journalDelete;if(!confirm('Delete the prayer journal entry for '+k+' from this device?'))return;const x=read();delete x[k];localStorage.setItem('biblePrayerJournal',JSON.stringify(x));render();status.textContent='Entry deleted from this device.'});
+ }
+ $('savePrayerJournal').onclick=()=>{const k=date.value||today,val=editor.value.trim();if(!val){status.textContent='Write a prayer or reflection before saving.';return}try{const x=read();x[k]=val;localStorage.setItem('biblePrayerJournal',JSON.stringify(x));render();status.textContent='Entry saved on this device for '+k+'.'}catch(e){status.textContent='Could not save. Browser storage may be full or disabled.'}};
+ $('clearPrayerJournalEditor').onclick=()=>{editor.value='';status.textContent='Editor cleared. Previously saved entries are unchanged.'};
+ date.onchange=()=>{editor.value=read()[date.value]||'';status.textContent=read()[date.value]?'Loaded saved entry for '+date.value+'.':'Ready for a new entry on '+date.value+'.'};
+ editor.value=read()[today]||'';render();
+}
+
+initQuestionAndPrayer();initPrayerJournal();
 renderReadingPlan();initBibleReminder();
 
 initDailyVerse();
