@@ -51,28 +51,34 @@ function safeUrl(value,label){if(!value)return '';try{const u=new URL(value);if(
 form.addEventListener('submit',e=>{
  e.preventDefault();
  try{
-  const fd=new FormData(form),data={schemaVersion:1,submissionType:'music-release',createdAt:new Date().toISOString()};
-  for(const [key,value] of fd.entries())if(key!=='rightsConfirmed'&&key!=='reviewRequested')data[key]=String(value).trim();
+  const fd=new FormData(form),data={schemaVersion:1,createdAt:new Date().toISOString()};
+  for(const [key,value] of fd.entries())if(key!=='rightsConfirmed'&&key!=='reviewRequested'&&key!=='website')data[key]=String(value).trim();
   for(const [key,label] of [['artworkUrl','Artwork URL'],['officialAudioUrl','Official audio URL'],['officialVideoUrl','Official video URL'],['streamingUrl','Streaming URL'],['artistPageUrl','Artist page URL']])data[key]=safeUrl(data[key]||'',label);
-  data.rightsConfirmed=fd.get('rightsConfirmed')==='on';data.reviewRequested=fd.get('reviewRequested')==='on';
+  data.rightsConfirmed=fd.get('rightsConfirmed')==='on';data.reviewRequested=fd.get('reviewRequested')==='on';data.website=String(fd.get('website')||'');
   if(!data.rightsConfirmed)throw new Error('Please confirm you have the necessary rights or permission before preparing the submission.');
   prepared=data;
-  const lines=Object.entries(data).map(([k,v])=>k+': '+(typeof v==='object'?JSON.stringify(v):String(v))).join('\n');
-  result.textContent='Submission prepared on this device. Nothing has been sent to the website. Download the JSON file or copy the text, then keep it for your records. To have it reviewed, you will need to send it through an official contact channel when one is provided.';
-  result.classList.remove('hidden');resultActions.classList.remove('hidden');
-  result.dataset.text=lines;
+  result.classList.remove('hidden');resultActions.classList.add('hidden');
+  result.textContent='Sending your submission…';
+  const button=document.getElementById('submitButton');button.disabled=true;button.textContent='Sending…';
+  try {
+    const response=await fetch('/api/music-submissions',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+    const reply=await response.json().catch(()=>({}));
+    if(response.ok&&reply.ok){result.textContent=reply.message||'Your submission has been received for editorial review. It will not be published automatically.';prepared=null;resultActions.classList.add('hidden');}
+    else {result.textContent=(reply.message||'The online inbox is not available right now.')+' Download a copy or copy the submission text; receipt has not been confirmed.';resultActions.classList.remove('hidden');}
+  } catch {result.textContent='We could not reach the online submission inbox. Download a copy or copy the submission text; receipt has not been confirmed.';resultActions.classList.remove('hidden');}
+  finally {button.disabled=false;button.textContent='Send for Review';}
  }catch(err){result.textContent=err.message;result.classList.remove('hidden');resultActions.classList.add('hidden');}
 });
 document.getElementById('download').addEventListener('click',()=>{
  if(!prepared)return;
- const blob=new Blob([JSON.stringify(prepared,null,2)],{type:'application/json'});
+ const exportData={...prepared};delete exportData.website;const blob=new Blob([JSON.stringify(exportData,null,2)],{type:'application/json'});
  const url=URL.createObjectURL(blob),a=document.createElement('a');
  a.href=url;a.download='music-submission-'+(prepared.artist||'artist').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')+'.json';
  document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
 });
 document.getElementById('copy').addEventListener('click',async()=>{
  if(!prepared)return;
- const content=JSON.stringify(prepared,null,2);
+ const exportData={...prepared};delete exportData.website;const content=JSON.stringify(exportData,null,2);
  try{await navigator.clipboard.writeText(content);result.textContent='Copied! Your submission is on the clipboard. Nothing has been sent to the website.'}
  catch{result.textContent='Clipboard access was blocked. Your submission JSON is shown below so you can select and copy it.';const box=document.createElement('textarea');box.readOnly=true;box.value=content;box.setAttribute('aria-label','Prepared submission JSON');result.appendChild(box);box.focus();box.select()}
 });
