@@ -9,6 +9,20 @@
 <style>
 :root{color-scheme:dark;--bg:#071017;--panel:#101e27;--line:#263a45;--text:#f3fbff;--muted:#a9c0cb;--accent:#55e0b1;--accent2:#8de8ff}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 85% 0,rgba(35,190,155,.16),transparent 34%),var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}.wrap{width:min(1100px,92%);margin:auto}a{color:var(--accent2)}header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 0;border-bottom:1px solid var(--line)}.back,.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 15px;border-radius:12px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-weight:750;background:#ffffff08}.hero{padding:54px 0 34px}.eyebrow{color:var(--accent);font-size:.78rem;letter-spacing:.12em;font-weight:850;text-transform:uppercase}.hero h1{font-size:clamp(2.8rem,9vw,5.8rem);line-height:.95;letter-spacing:-.06em;margin:12px 0}.hero h1 span{color:var(--accent)}.hero p{max-width:720px;color:var(--muted);font-size:1.08rem}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.primary{background:linear-gradient(135deg,#128e70,#55e0b1);border:0;color:#03130e}.section{padding:28px 0 48px}.section h2{font-size:1.7rem;letter-spacing:-.03em;margin:0 0 6px}.intro{color:var(--muted);margin:0 0 20px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.card{display:flex;flex-direction:column;padding:22px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#13252e,#0c1820);min-height:205px}.icon{font-size:2rem}.tag{font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);font-weight:850;margin-top:12px}.card h3{margin:6px 0;font-size:1.2rem}.card p{color:var(--muted);font-size:.93rem;flex:1;margin:0 0 18px}.note{padding:17px;border:1px solid var(--line);border-radius:15px;color:var(--muted);background:#ffffff05}.note strong{color:var(--text)}footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}@media(max-width:760px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){.grid{grid-template-columns:1fr}.hero{padding-top:38px}}
+
+.live-panel{padding:22px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#13252e,#0c1820);margin-top:16px}
+.sport-tabs,.league-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+.sport-tabs button,.league-tabs button{font:inherit;font-weight:750;color:var(--text);background:#ffffff08;border:1px solid var(--line);border-radius:999px;padding:9px 13px;cursor:pointer}
+.sport-tabs button[aria-pressed="true"],.league-tabs button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#03130e}
+.live-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.match-card{padding:16px;border:1px solid var(--line);border-radius:15px;background:#ffffff04}
+.match-top{display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:.78rem;margin-bottom:10px}
+.match-teams{font-weight:800;line-height:1.5}.match-score{font-size:1.25rem;color:var(--accent);font-weight:900;white-space:nowrap}
+.match-bottom{color:var(--muted);font-size:.8rem;margin-top:8px}
+.data-status{color:var(--muted);font-size:.9rem;margin:12px 0}.data-status.error{color:#ffb5b5}
+.table-scroll{overflow:auto}table.standings{width:100%;border-collapse:collapse;min-width:420px;font-size:.88rem}table.standings th,table.standings td{text-align:left;padding:10px;border-bottom:1px solid var(--line)}table.standings th{color:var(--accent);font-size:.75rem;text-transform:uppercase}
+.refresh-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.refresh-row button{border:1px solid var(--line);border-radius:10px;padding:9px 13px;background:#ffffff0a;color:var(--text);font:inherit;font-weight:750}
+@media(max-width:600px){.live-grid{grid-template-columns:1fr}.live-panel{padding:15px}}
 </style>
 </head>
 <body><div class="wrap">
@@ -31,6 +45,110 @@
 <article class="card"><div class="icon">🥊</div><span class="tag">Combat sports</span><h3>UFC</h3><p>Fight cards, event results, athlete profiles and official announcements.</p><a class="btn" href="https://www.ufc.com/" target="_blank" rel="noopener noreferrer">UFC official site →</a></article>
 <article class="card"><div class="icon">🏃</div><span class="tag">Athletics</span><h3>World Athletics</h3><p>Track and field competitions, athlete profiles and records.</p><a class="btn" href="https://worldathletics.org/" target="_blank" rel="noopener noreferrer">World Athletics →</a></article>
 </div></section>
+
+<section class="section" id="live-sports"><h2>📡 Scores, fixtures & league tables</h2>
+<p class="intro">Live and recent match data for supported sports, plus selected football standings. Data is loaded from an external sports-data service; coverage varies by sport and competition.</p>
+<div class="live-panel">
+<div class="refresh-row"><strong id="matches-heading">⚽ Football scores & fixtures</strong><button type="button" id="refresh-matches">↻ Refresh</button></div>
+<div class="sport-tabs" role="group" aria-label="Choose sport">
+<button type="button" data-sport="football" aria-pressed="true">⚽ Football</button>
+<button type="button" data-sport="basketball" aria-pressed="false">🏀 Basketball</button>
+<button type="button" data-sport="cricket" aria-pressed="false">🏏 Cricket</button>
+<button type="button" data-sport="tennis" aria-pressed="false">🎾 Tennis</button>
+</div>
+<p id="matches-status" class="data-status" aria-live="polite">Loading match data…</p>
+<div id="matches-list" class="live-grid"></div>
+<p style="margin:18px 0 0"><a href="https://sportscore.com/" rel="dofollow" title="Sports data by SportScore">Powered by SportScore</a></p>
+</div>
+<div class="live-panel" id="standings-panel">
+<div class="refresh-row"><strong>🏆 Football league tables</strong></div>
+<div class="league-tabs" role="group" aria-label="Choose league">
+<button type="button" data-league="premier-league" aria-pressed="true">Premier League</button>
+<button type="button" data-league="la-liga" aria-pressed="false">La Liga</button>
+<button type="button" data-league="serie-a" aria-pressed="false">Serie A</button>
+<button type="button" data-league="bundesliga" aria-pressed="false">Bundesliga</button>
+<button type="button" data-league="ligue-1" aria-pressed="false">Ligue 1</button>
+</div>
+<p id="standings-status" class="data-status" aria-live="polite">Loading league table…</p>
+<div id="standings-list" class="table-scroll"></div>
+<p style="margin:18px 0 0"><a href="https://sportscore.com/" rel="dofollow" title="Sports data by SportScore">Powered by SportScore</a></p>
+</div>
+</section>
 <section class="section"><div class="note"><strong>Editorial note:</strong> This hub links to external official and established sports sources. Match schedules and scores are provided by those sites; this page does not claim to host a verified live-score feed. We will add verified embedded data when a reliable, permitted source is available.</div></section>
 </main><footer>© 2026 C. O. Eric · <a href="index.html">Home</a> · <a href="games.html">Games Hub</a> · <a href="videos.html">Video Hub</a> · <a href="music.html">Music Hub</a></footer>
-</div></body></html>
+</div>
+<script>
+(function(){
+const API='https://sportscore.com/api/widget/';
+const state={sport:'football',league:'premier-league'};
+const $=id=>document.getElementById(id);
+const escapeHTML=value=>String(value==null?'':value).replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
+const pick=(obj,keys,fallback='')=>{for(const key of keys){const v=obj&&obj[key];if(v!==undefined&&v!==null&&v!=='')return v;}return fallback;};
+const nameOf=(obj,keys,fallback)=>{const v=pick(obj,keys,fallback);if(typeof v==='object'&&v!==null)return pick(v,['name','shortName','short_name','title'],fallback);return v;};
+function getArray(data,keys){for(const key of keys){if(Array.isArray(data&&data[key]))return data[key];}if(Array.isArray(data))return data;return [];}
+function scoreOf(m,side){
+ const direct=pick(m,side==='home'?['homeScore','home_score','scoreHome','score_home']:['awayScore','away_score','scoreAway','score_away'],null);
+ if(direct!==null)return direct;
+ const scores=m&&m.score;
+ if(scores&&typeof scores==='object')return pick(scores,side==='home'?['home','homeScore','home_score','h']:['away','awayScore','away_score','a'],'—');
+ if(Array.isArray(scores))return scores[side==='home'?0:1]??'—';
+ return '—';
+}
+function matchCard(m){
+ const home=nameOf(m,['homeTeam','home_team','home','teamHome','team_home','localteam'],'Home team');
+ const away=nameOf(m,['awayTeam','away_team','away','teamAway','team_away','visitorteam'],'Away team');
+ const status=pick(m,['status','state','matchStatus','match_status','timeStatus'],'Fixture');
+ const comp=nameOf(m,['competition','league','tournament','competitionName','competition_name'],'');
+ const time=pick(m,['dateTime','datetime','kickoff','kickoffTime','startTime','date','time'],'');
+ const live=/live|in.play|playing|half/i.test(String(status));
+ return '<article class="match-card"><div class="match-top"><span>'+escapeHTML(comp||state.sport.toUpperCase())+'</span><span>'+escapeHTML(status)+'</span></div><div class="match-teams">'+escapeHTML(home)+' <span class="match-score">'+escapeHTML(scoreOf(m,'home'))+' – '+escapeHTML(scoreOf(m,'away'))+'</span> '+escapeHTML(away)+'</div><div class="match-bottom">'+escapeHTML(time||'Time not provided by data source')+(live?' · LIVE':'')+'</div></article>';
+}
+async function loadMatches(){
+ $('matches-heading').textContent=({football:'⚽ Football scores & fixtures',basketball:'🏀 Basketball scores & fixtures',cricket:'🏏 Cricket scores & fixtures',tennis:'🎾 Tennis scores & fixtures'})[state.sport]||'Scores & fixtures';
+ $('matches-status').className='data-status';$('matches-status').textContent='Loading latest available data…';$('matches-list').innerHTML='';
+ try{
+  const url=API+'matches/?sport='+encodeURIComponent(state.sport)+'&limit=20&src=emeka45.github.io';
+  const response=await fetch(url,{headers:{Accept:'application/json'},cache:'no-store'});
+  if(!response.ok)throw new Error('The sports data service returned HTTP '+response.status+'.');
+  const data=await response.json();const matches=getArray(data,['matches','events','fixtures','results','data']);
+  if(!matches.length){$('matches-status').textContent='No matches are currently listed for this sport. Try another sport or refresh later.';return;}
+  $('matches-list').innerHTML=matches.slice(0,20).map(matchCard).join('');
+  const updated=pick(data,['updatedAt','updated_at','lastUpdated','last_updated'],'');
+  $('matches-status').textContent='Showing '+Math.min(matches.length,20)+' available matches'+(updated?' · Updated '+updated:'')+'.';
+ }catch(err){$('matches-status').className='data-status error';$('matches-status').textContent='Match data could not be loaded right now. Please retry or use the official sources above. ('+err.message+')';}
+}
+function flattenStandings(data){
+ let rows=getArray(data,['standings','table','rows','teams','data','results']);
+ if(rows.length&&rows[0]&&typeof rows[0]==='object'&&(Array.isArray(rows[0].table)||Array.isArray(rows[0].rows)))rows=rows.flatMap(x=>x.table||x.rows||[]);
+ return rows;
+}
+async function loadStandings(){
+ $('standings-status').className='data-status';$('standings-status').textContent='Loading '+state.league.replace(/-/g,' ')+' table…';$('standings-list').innerHTML='';
+ try{
+  const url=API+'standings/?sport=football&slug='+encodeURIComponent(state.league)+'&src=emeka45.github.io';
+  const response=await fetch(url,{headers:{Accept:'application/json'},cache:'no-store'});
+  if(!response.ok)throw new Error('The standings service returned HTTP '+response.status+'.');
+  const data=await response.json();const rows=flattenStandings(data);
+  if(!rows.length)throw new Error('No table data is currently available for this competition.');
+  const body=rows.slice(0,30).map((row,i)=>{
+   const team=nameOf(row,['team','name','teamName','team_name','club'],'Team');
+   const pos=pick(row,['position','rank','place'],i+1);
+   const played=pick(row,['played','matchesPlayed','matches_played','p'],'—');
+   const won=pick(row,['won','wins','w'],'—');
+   const drawn=pick(row,['drawn','draws','d'],'—');
+   const lost=pick(row,['lost','losses','l'],'—');
+   const gd=pick(row,['goalDifference','goal_difference','gd'],'—');
+   const pts=pick(row,['points','pts','score'],'—');
+   return '<tr><td>'+escapeHTML(pos)+'</td><td>'+escapeHTML(team)+'</td><td>'+escapeHTML(played)+'</td><td>'+escapeHTML(won)+'</td><td>'+escapeHTML(drawn)+'</td><td>'+escapeHTML(lost)+'</td><td>'+escapeHTML(gd)+'</td><td><strong>'+escapeHTML(pts)+'</strong></td></tr>';
+  }).join('');
+  $('standings-list').innerHTML='<table class="standings"><thead><tr><th>#</th><th>Club</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>Pts</th></tr></thead><tbody>'+body+'</tbody></table>';
+  $('standings-status').textContent='League table loaded from the external sports-data service.';
+ }catch(err){$('standings-status').className='data-status error';$('standings-status').textContent='A verified table is not available right now for this selection. Please try another league or use the official source links above. ('+err.message+')';}
+}
+document.querySelectorAll('[data-sport]').forEach(button=>button.addEventListener('click',()=>{state.sport=button.dataset.sport;document.querySelectorAll('[data-sport]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));loadMatches();}));
+document.querySelectorAll('[data-league]').forEach(button=>button.addEventListener('click',()=>{state.league=button.dataset.league;document.querySelectorAll('[data-league]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));loadStandings();}));
+$('refresh-matches').addEventListener('click',loadMatches);
+loadMatches();loadStandings();
+})();
+</script>
+</body></html>
