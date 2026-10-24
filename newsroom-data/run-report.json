@@ -1,19 +1,15 @@
 {
-  "started_utc": "2026-10-24T18:40:36.113060+00:00",
-  "finished_utc": "2026-10-24T18:40:51.825564+00:00",
+  "started_utc": "2026-10-24T18:42:38.607794+00:00",
+  "finished_utc": "2026-10-24T18:42:55.389620+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 347,
-  "fresh_items": 333,
-  "corroborated_candidates": 3,
-  "published_count": 3,
-  "published_titles": [
-    "Xbox’s first chief operating officer is out after just a few months",
-    "British woman dies after trying to rescue sons swept away at sea in the Bahamas",
-    "Everybody panic: A Valve developer said \"HLX\" in public"
-  ],
+  "fresh_items": 326,
+  "corroborated_candidates": 0,
+  "published_count": 0,
+  "published_titles": [],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }

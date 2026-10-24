@@ -1,36 +1,11 @@
 {
-  "finished_utc": "2026-10-24T18:40:53.327525+00:00",
+  "finished_utc": "2026-10-24T18:42:55.509842+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 3,
-  "attempted": 3,
+  "missing_before_run": 0,
+  "attempted": 0,
   "generated": [],
-  "source_photos": [
-    {
-      "article": "2026-10-24-xbox-s-first-chief-operating-officer-is-out-after-just-a-few-months-836180f90b.html",
-      "image": "news/images/2026-10-24-xbox-s-first-chief-operating-officer-is-out-after-just-a-few-months-836180f90b-source.jpg",
-      "bytes": 20547,
-      "provider": "Original news source",
-      "source_url": "https://www.theverge.com/news/1018037/xbox-chief-operating-officer-helen-chiang-departure",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25485116/STK048_XBOX2__B.png?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
-    },
-    {
-      "article": "2026-10-24-everybody-panic-a-valve-developer-said-hlx-in-public-b4df59850c.html",
-      "image": "news/images/2026-10-24-everybody-panic-a-valve-developer-said-hlx-in-public-b4df59850c-source.jpg",
-      "bytes": 53027,
-      "provider": "Original news source",
-      "source_url": "https://arstechnica.com/gaming/2026/10/everybody-panic-a-valve-developer-said-hlx-in-public/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2017/08/024-1152x648-1740609184.jpg"
-    },
-    {
-      "article": "2026-10-24-british-woman-dies-after-trying-to-rescue-sons-swept-away-at-sea-in-the-bahamas-31477e95de.html",
-      "image": "news/images/2026-10-24-british-woman-dies-after-trying-to-rescue-sons-swept-away-at-sea-in-the-bahamas-31477e95de-source.jpg",
-      "bytes": 83229,
-      "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cm86z5n0yvy6o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/8b9f/live/09596b60-cfc8-11f1-b441-2b33b063138f.jpg"
-    }
-  ],
+  "source_photos": [],
   "openverse_photos": [],
   "fallbacks": [],
   "failures": [],
