@@ -84,10 +84,16 @@ def main():
         if item.get('url') in used_urls:
             continue
         matches = find_corroboration(item, all_items)
+        # One real-world event should produce at most one candidate per run.
+        # Reserve corroborating URLs as soon as a candidate is selected so a
+        # second publisher's version of the same event cannot become a duplicate.
+        if any(m.get('url') in used_urls for m in matches):
+            continue
         domains = {item.get('domain')} | {m.get('domain') for m in matches}
         if len(domains) >= 2 and matches:
             candidates.append((len(domains), item, matches))
             used_urls.add(item['url'])
+            used_urls.update(m['url'] for m in matches if m.get('url'))
 
     candidates.sort(key=lambda x: (x[0], newsroom.similarity(x[1], x[2][0]) if x[2] else 0), reverse=True)
     published = 0
