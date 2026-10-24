@@ -177,6 +177,39 @@ def main():
     titles = {str(x.get("title", "")).strip().lower() for x in entries if isinstance(x, dict)}
     requested = os.environ.get("ARTICLE_TOPIC", "").strip()
     category_override = os.environ.get("ARTICLE_CATEGORY", "").strip()
+
+    # On scheduled runs, repair all existing placeholder/short articles in one
+    # pass so the site does not need a separate workflow run for each bad page.
+    if not requested:
+        repaired = []
+        entry_by_title = {str(x.get("title", "")).strip().lower(): x for x in entries if isinstance(x, dict)}
+        for candidate_title, candidate_category in TOPICS:
+            old_entry = entry_by_title.get(candidate_title.lower())
+            if not old_entry:
+                continue
+            old_path = ARTICLES / str(old_entry.get("file", ""))
+            if not old_path.is_file():
+                continue
+            old_text = html.unescape(re.sub(r"<[^>]+>", " ", old_path.read_text(encoding="utf-8", errors="replace")))
+            old_text = re.sub(r"\s+", " ", old_text).strip()
+            if len(old_text.split()) >= 300:
+                continue
+            paragraphs = article_body(candidate_title)
+            errors = validate_article(candidate_title, paragraphs)
+            if errors:
+                continue
+            document, summary = render(candidate_title, candidate_category, paragraphs, now)
+            filename = f"{slug(candidate_title)}.html"
+            (ARTICLES / filename).write_text(document, encoding="utf-8")
+            old_entry.update({"file": filename, "title": candidate_title, "summary": summary, "category": candidate_category, "date": now.strftime("%d %b %Y")})
+            repaired.append({"title": candidate_title, "file": filename, "word_count": len(" ".join(paragraphs).split())})
+        if repaired:
+            entries.sort(key=lambda x: (str(x.get("date", "")), str(x.get("title", ""))), reverse=True)
+            INDEX.write_text(json.dumps(entries[:100], ensure_ascii=False, indent=2), encoding="utf-8")
+            report = {"finished_utc": now.isoformat(), "mode": "batch-quality-repair", "published": True, "repaired_count": len(repaired), "repaired_articles": repaired, "quality_checks": "passed", "note": "Existing short/template articles were replaced with topic-specific editorial content."}
+            REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+            print(json.dumps(report, ensure_ascii=False, indent=2))
+            return
     if requested:
         chosen = next(((t, c) for t, c in TOPICS if t.lower() == requested.lower()), None)
         if chosen is None:
