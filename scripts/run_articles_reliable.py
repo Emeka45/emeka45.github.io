@@ -185,9 +185,25 @@ def main():
             print(json.dumps(report, ensure_ascii=False, indent=2))
             raise SystemExit(2)
     else:
-        chosen = next(((t, c) for t, c in TOPICS if t.lower() not in titles), None)
+        # Repair previously published filler/short articles before creating a new topic.
+        chosen = None
+        for candidate_title, candidate_category in TOPICS:
+            old_entry = next((x for x in entries if str(x.get("title", "")).strip().lower() == candidate_title.lower()), None)
+            if old_entry:
+                old_path = ARTICLES / str(old_entry.get("file", ""))
+                old_text = ""
+                if old_path.is_file():
+                    old_text = re.sub(r"<[^>]+>", " ", old_path.read_text(encoding="utf-8", errors="replace"))
+                    old_text = html.unescape(re.sub(r"\\s+", " ", old_text)).strip()
+                # Existing generic filler is replaced by the reviewed topic-specific article.
+                if len(old_text.split()) < 430 or candidate_title.lower() in old_text[:1000].lower():
+                    chosen = (candidate_title, candidate_category)
+                    break
+            else:
+                chosen = (candidate_title, candidate_category)
+                break
     if chosen is None:
-        report = {"finished_utc": now.isoformat(), "published": False, "reason": "All reviewed topics already exist; no duplicate article was created."}
+        report = {"finished_utc": now.isoformat(), "published": False, "reason": "All reviewed topics already exist and pass the repair check; no duplicate article was created."}
         REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
         print(json.dumps(report, ensure_ascii=False, indent=2))
         return
