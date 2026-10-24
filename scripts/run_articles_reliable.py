@@ -196,7 +196,7 @@ def main():
                     old_text = re.sub(r"<[^>]+>", " ", old_path.read_text(encoding="utf-8", errors="replace"))
                     old_text = html.unescape(re.sub(r"\\s+", " ", old_text)).strip()
                 # Existing generic filler is replaced by the reviewed topic-specific article.
-                if len(old_text.split()) < 430 or candidate_title.lower() in old_text[:1000].lower():
+                if len(old_text.split()) < 430:
                     chosen = (candidate_title, candidate_category)
                     break
             else:
