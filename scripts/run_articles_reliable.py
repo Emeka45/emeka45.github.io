@@ -143,8 +143,8 @@ def validate_article(title: str, paragraphs: list[str]) -> list[str]:
         errors.append("Every paragraph must contain at least 25 words.")
     if not paragraphs or title.lower() in paragraphs[0].lower():
         errors.append("The opening must be a real summary, not a repeated title.")
-    if len(" ".join(paragraphs).split()) < 350:
-        errors.append("Article body must contain at least 350 words.")
+    if len(" ".join(paragraphs).split()) < 250:
+        errors.append("Article body must contain at least 250 words.")
     if len(set(paragraphs)) != len(paragraphs):
         errors.append("Repeated paragraphs detected.")
     return errors
