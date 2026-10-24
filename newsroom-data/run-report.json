@@ -1,21 +1,19 @@
 {
-  "started_utc": "2026-10-24T07:47:13.712513+00:00",
-  "finished_utc": "2026-10-24T07:47:27.013071+00:00",
+  "started_utc": "2026-10-24T18:40:36.113060+00:00",
+  "finished_utc": "2026-10-24T18:40:51.825564+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 347,
-  "fresh_items": 336,
-  "corroborated_candidates": 10,
-  "published_count": 5,
+  "fresh_items": 333,
+  "corroborated_candidates": 3,
+  "published_count": 3,
   "published_titles": [
-    "Mystery over source of Ebola infection in Nigeria fuels concern about spread of virus",
-    "Australian MP's condition improves after alleged car attack",
-    "Helen Haines’s condition improves days after losing both legs from alleged attack",
-    "Updated Google privacy policy says your Gmail might be used for advertising",
-    "Now Google says it might use your Gmail and Google Photos data to target ads"
+    "Xbox’s first chief operating officer is out after just a few months",
+    "British woman dies after trying to rescue sons swept away at sea in the Bahamas",
+    "Everybody panic: A Valve developer said \"HLX\" in public"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }
