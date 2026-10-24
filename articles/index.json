@@ -1,9 +1,9 @@
 [
   {
-    "file": "a-practical-guide-to-building-better-study-habits.html",
-    "title": "A Practical Guide to Building Better Study Habits",
-    "summary": "Effective studying depends less on the number of hours spent with a book open than on what the learner can recall and apply afterwards. A manageable system combines clear objectives, active recall, practice and spaced review.",
-    "category": "Education",
+    "file": "why-small-daily-habits-often-beat-sudden-motivation.html",
+    "title": "Why Small Daily Habits Often Beat Sudden Motivation",
+    "summary": "Motivation can help someone begin a task, but it changes with mood, sleep, stress and circumstances. A habit reduces the number of decisions required by linking an action to a regular cue, making progress less dependent on feeling inspired.",
+    "category": "Psychology & Human Behaviour",
     "date": "24 Oct 2026"
   },
   {
@@ -14,32 +14,32 @@
     "date": "24 Oct 2026"
   },
   {
+    "file": "how-to-spot-misleading-information-online.html",
+    "title": "How to Spot Misleading Information Online",
+    "summary": "Misleading online content is not always entirely fabricated. It may use an old photograph for a new event, remove a quotation from its context, present an allegation as a proven fact or use a headline that goes beyond what the report actually establishes.",
+    "category": "Practical Explainers",
+    "date": "24 Oct 2026"
+  },
+  {
     "file": "how-to-protect-your-digital-privacy-on-a-phone.html",
     "title": "How to Protect Your Digital Privacy on a Phone",
-    "summary": "How to Protect Your Digital Privacy on a Phone is easier to approach when the problem is broken into small, practical decisions.",
+    "summary": "A phone can hold messages, photos, location history, financial apps and access to other accounts. Protecting it is not one setting but a set of practical layers: secure the device, limit app access, protect accounts and think carefully before sharing information.",
     "category": "Technology & Modern Life",
     "date": "24 Oct 2026"
   },
   {
     "file": "how-to-manage-money-when-income-is-irregular.html",
     "title": "How to Manage Money When Income Is Irregular",
-    "summary": "How to Manage Money When Income Is Irregular is easier to approach when the problem is broken into small, practical decisions.",
+    "summary": "When income changes from week to week, a budget based on one optimistic month can quickly become unreliable. A safer approach begins with the money that is actually available and gives priority to essential costs before optional spending.",
     "category": "Money & Work",
-    "date": "23 Oct 2026"
+    "date": "24 Oct 2026"
   },
   {
-    "file": "why-small-daily-habits-often-beat-sudden-motivation.html",
-    "title": "Why Small Daily Habits Often Beat Sudden Motivation",
-    "summary": "Why Small Daily Habits Often Beat Sudden Motivation is easier to approach when the problem is broken into small, practical decisions.",
-    "category": "Psychology & Human Behaviour",
-    "date": "22 Oct 2026"
-  },
-  {
-    "file": "how-to-spot-misleading-information-online.html",
-    "title": "How to Spot Misleading Information Online",
-    "summary": "Misleading information is not always an obvious lie. A real event can be presented with a false date, an old photograph can be attached to a new story, or a headline can exaggerate what the underlying report actually says.",
-    "category": "Practical Explainers",
-    "date": "22 Oct 2026"
+    "file": "a-practical-guide-to-building-better-study-habits.html",
+    "title": "A Practical Guide to Building Better Study Habits",
+    "summary": "Effective studying depends less on the number of hours spent with a book open than on what the learner can recall and apply afterwards. A manageable system combines clear objectives, active recall, practice and spaced review.",
+    "category": "Education",
+    "date": "24 Oct 2026"
   },
   {
     "file": "how-to-use-ai-as-a-tool-without-letting-it-think-for-you.html",
@@ -47,20 +47,6 @@
     "summary": "AI can make research, drafting and explanation faster, but speed is not the same thing as judgment. The most useful relationship with an AI system is closer to using a calculator or research assistant: let it accelerate work while you remain responsible for the result.",
     "category": "Technology & Modern Life",
     "date": "21 Oct 2026"
-  },
-  {
-    "title": "How to Check Viral News Before Sharing It",
-    "summary": "A practical guide to checking viral claims, tracing original sources, reading dates carefully and avoiding accidental misinformation online.",
-    "category": "Practical Explainers",
-    "date": "2026-10-21",
-    "file": "how-to-check-viral-news-before-sharing-it.html",
-    "tags": [
-      "misinformation",
-      "fact-checking",
-      "digital literacy",
-      "news",
-      "critical thinking"
-    ]
   },
   {
     "title": "How to Use AI Tools Without Losing Your Own Judgment",
@@ -73,6 +59,20 @@
       "digital literacy",
       "learning",
       "technology",
+      "critical thinking"
+    ]
+  },
+  {
+    "title": "How to Check Viral News Before Sharing It",
+    "summary": "A practical guide to checking viral claims, tracing original sources, reading dates carefully and avoiding accidental misinformation online.",
+    "category": "Practical Explainers",
+    "date": "2026-10-21",
+    "file": "how-to-check-viral-news-before-sharing-it.html",
+    "tags": [
+      "misinformation",
+      "fact-checking",
+      "digital literacy",
+      "news",
       "critical thinking"
     ]
   }
