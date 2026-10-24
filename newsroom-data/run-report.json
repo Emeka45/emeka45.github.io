@@ -1,20 +1,21 @@
 {
-  "started_utc": "2026-10-23T08:08:17.902285+00:00",
-  "finished_utc": "2026-10-23T08:08:36.543199+00:00",
+  "started_utc": "2026-10-24T07:47:13.712513+00:00",
+  "finished_utc": "2026-10-24T07:47:27.013071+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 347,
-  "fresh_items": 338,
-  "corroborated_candidates": 4,
-  "published_count": 4,
+  "fresh_items": 336,
+  "corroborated_candidates": 10,
+  "published_count": 5,
   "published_titles": [
-    "Powerful earthquake hits Tibet killing 16 people, reports say",
-    "Magnitude-7 earthquake hits Tibet, killing at least 16 and destroying hundreds of homes",
-    "5 'Solo Leveling' Characters Who Deserved So Much Better",
-    "Farewell BioWare, you inspired so many of us, and you deserved so much better than this"
+    "Mystery over source of Ebola infection in Nigeria fuels concern about spread of virus",
+    "Australian MP's condition improves after alleged car attack",
+    "Helen Haines’s condition improves days after losing both legs from alleged attack",
+    "Updated Google privacy policy says your Gmail might be used for advertising",
+    "Now Google says it might use your Gmail and Google Photos data to target ads"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }

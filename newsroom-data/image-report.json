@@ -1,42 +1,50 @@
 {
-  "finished_utc": "2026-10-23T08:08:37.820723+00:00",
+  "finished_utc": "2026-10-24T07:47:28.820830+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 4,
-  "attempted": 4,
+  "missing_before_run": 5,
+  "attempted": 5,
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-10-23-powerful-earthquake-hits-tibet-killing-16-people-reports-say-7941dd9f13.html",
-      "image": "news/images/2026-10-23-powerful-earthquake-hits-tibet-killing-16-people-reports-say-7941dd9f13-source.jpg",
-      "bytes": 79275,
+      "article": "2026-10-24-updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising-6a25db3410.html",
+      "image": "news/images/2026-10-24-updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising-6a25db3410-source.jpg",
+      "bytes": 55610,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/ck5ynd1z6e83o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/d9bb/live/35523df0-ce6f-11f1-a64c-550be9e3c66b.jpg"
+      "source_url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2025/05/google-logo-big-g-grooves-1152x648.jpg"
     },
     {
-      "article": "2026-10-23-magnitude-7-earthquake-hits-tibet-killing-at-least-16-and-destroying-hundreds-of-homes-30621f89d5.html",
-      "image": "news/images/2026-10-23-magnitude-7-earthquake-hits-tibet-killing-at-least-16-and-destroying-hundreds-of-homes-30621f89d5-source.jpg",
-      "bytes": 70062,
+      "article": "2026-10-24-now-google-says-it-might-use-your-gmail-and-google-photos-data-to-target-ads-a6e6691889.html",
+      "image": "news/images/2026-10-24-now-google-says-it-might-use-your-gmail-and-google-photos-data-to-target-ads-a6e6691889-source.jpg",
+      "bytes": 28829,
       "provider": "Original news source",
-      "source_url": "https://www.theguardian.com/world/2026/oct/23/magnitude-7-earthquake-hits-china-tibet",
-      "image_url": "https://i.guim.co.uk/img/media/2b752e0d59c4399c02caaf09d97ac8759514aa0f/195_0_1350_1080/master/1350.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=6d48087c25f5790bf82283a97b0bea13"
+      "source_url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK093_GOOGLE_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
     },
     {
-      "article": "2026-10-23-farewell-bioware-you-inspired-so-many-of-us-and-you-deserved-so-much-better-than-this-8f6e7dec1a.html",
-      "image": "news/images/2026-10-23-farewell-bioware-you-inspired-so-many-of-us-and-you-deserved-so-much-better-than-this-8f6e7dec1a-source.jpg",
-      "bytes": 134740,
+      "article": "2026-10-24-mystery-over-source-of-ebola-infection-in-nigeria-fuels-concern-about-spread-of-virus-dddb1fdb24.html",
+      "image": "news/images/2026-10-24-mystery-over-source-of-ebola-infection-in-nigeria-fuels-concern-about-spread-of-virus-dddb1fdb24-source.jpg",
+      "bytes": 110668,
       "provider": "Original news source",
-      "source_url": "https://www.eurogamer.net/farewell-bioware-closed-ea",
-      "image_url": "https://assetsio.gnwcdn.com/mass_effect_brighter.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
+      "source_url": "https://www.theguardian.com/world/2026/oct/23/ebola-swiss-patient-nigeria-dr-congo-concerns-virus-spread",
+      "image_url": "https://i.guim.co.uk/img/media/795089c147661c73d9d1db1fbfb3b77cf917034c/296_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=f9841448dbfe505c41f07a973244bb4d"
     },
     {
-      "article": "2026-10-23-5-solo-leveling-characters-who-deserved-so-much-better-d2fce01105.html",
-      "image": "news/images/2026-10-23-5-solo-leveling-characters-who-deserved-so-much-better-d2fce01105-source.jpg",
-      "bytes": 67891,
+      "article": "2026-10-24-helen-haines-s-condition-improves-days-after-losing-both-legs-from-alleged-attack-81b41c35f9.html",
+      "image": "news/images/2026-10-24-helen-haines-s-condition-improves-days-after-losing-both-legs-from-alleged-attack-81b41c35f9-source.jpg",
+      "bytes": 93906,
       "provider": "Original news source",
-      "source_url": "https://www.polygon.com/5-solo-leveling-characters-who-deserved-better-storylines/",
-      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/solo-leveling-esil.webp?w=1200&h=675&fit=crop"
+      "source_url": "https://www.theguardian.com/australia-news/2026/oct/24/helen-hainess-condition-improves-days-after-losing-both-legs-from-alleged-attack-ntwnfb",
+      "image_url": "https://i.guim.co.uk/img/media/8e1350b18ced3e0720e985fc77f463f3ddf345db/266_0_6827_5464/master/6827.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=79d2859e6bbbda016019a57aeb4ba00d"
+    },
+    {
+      "article": "2026-10-24-australian-mp-s-condition-improves-after-alleged-car-attack-e5e17c6dda.html",
+      "image": "news/images/2026-10-24-australian-mp-s-condition-improves-after-alleged-car-attack-e5e17c6dda-source.jpg",
+      "bytes": 54599,
+      "provider": "Original news source",
+      "source_url": "https://www.bbc.co.uk/news/articles/c670pr1ryxyno?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/e656/live/f2bfb570-cf41-11f1-81c6-53f66e190efd.jpg"
     }
   ],
   "openverse_photos": [],
