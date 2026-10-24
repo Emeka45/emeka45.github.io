@@ -15,12 +15,27 @@ def clean(text: str) -> str:
 
 
 def same_event(a, b):
-    """Use the newsroom's title+summary event matcher instead of title-only matching."""
-    return newsroom.event_match(a, b)
+    """Match the same real-world event across feeds with different headlines."""
+    # The old matcher was too strict for RSS headlines: two genuine reports
+    # could describe the same event with different wording and still fail.
+    at = newsroom.tokens(a.get('title', ''))
+    bt = newsroom.tokens(b.get('title', ''))
+    shared_title = at & bt
+    title_overlap = len(shared_title) / max(1, min(len(at), len(bt)))
+    if len(shared_title) >= 2 and title_overlap >= 0.40:
+        return True
+
+    aa = newsroom.tokens(a.get('title', '') + ' ' + a.get('summary', ''))
+    bb = newsroom.tokens(b.get('title', '') + ' ' + b.get('summary', ''))
+    shared = aa & bb
+    combined = len(shared) / max(1, min(len(aa), len(bb)))
+    # Require several shared non-stopword terms so broad topic overlap alone
+    # cannot turn unrelated stories into corroboration.
+    return len(shared) >= 4 and combined >= 0.30
 
 
 def find_corroboration(item, all_items):
-    """Find independent reporting even when two feeds classify the story differently."""
+    """Find independent reports of the same event across different domains."""
     matches = []
     for other in all_items:
         if other.get('url') == item.get('url'):
@@ -85,8 +100,6 @@ def main():
             continue
         matches = find_corroboration(item, all_items)
         # One real-world event should produce at most one candidate per run.
-        # Reserve corroborating URLs as soon as a candidate is selected so a
-        # second publisher's version of the same event cannot become a duplicate.
         if any(m.get('url') in used_urls for m in matches):
             continue
         domains = {item.get('domain')} | {m.get('domain') for m in matches}
