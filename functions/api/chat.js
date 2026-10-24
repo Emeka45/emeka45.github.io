@@ -26,7 +26,7 @@ export async function onRequestPost(context) {
         if(listResponse.ok && Array.isArray(listData.models)) {
           modelNames=listData.models
             .filter(m=>Array.isArray(m.supportedGenerationMethods)&&m.supportedGenerationMethods.includes("generateContent"))
-            .map(m=>String(m.name||"").replace(/^models\\//,""))
+            .map(m=>String(m.name||"").replace("models/",""))
             .filter(n=>/^gemini-/i.test(n));
         }
       } catch (_) {}
