@@ -1,15 +1,20 @@
 {
-  "started_utc": "2026-10-24T18:42:38.607794+00:00",
-  "finished_utc": "2026-10-24T18:42:55.389620+00:00",
+  "started_utc": "2026-10-24T20:51:52.610873+00:00",
+  "finished_utc": "2026-10-24T20:52:06.194061+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 347,
-  "fresh_items": 326,
-  "corroborated_candidates": 0,
-  "published_count": 0,
-  "published_titles": [],
+  "fresh_items": 327,
+  "corroborated_candidates": 4,
+  "published_count": 4,
+  "published_titles": [
+    "Nigeria confirms Ebola case as outbreak spreads into western Africa",
+    "It’s time to find a new browser",
+    "Typhoon Champi knocks out power to thousands in Taiwan",
+    "3 Final Fantasy Games to Play if You Loved FF Resonance"
+  ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }

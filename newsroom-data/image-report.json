@@ -1,11 +1,44 @@
 {
-  "finished_utc": "2026-10-24T18:42:55.509842+00:00",
+  "finished_utc": "2026-10-24T20:52:08.014082+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 0,
-  "attempted": 0,
+  "missing_before_run": 4,
+  "attempted": 4,
   "generated": [],
-  "source_photos": [],
+  "source_photos": [
+    {
+      "article": "2026-10-24-typhoon-champi-knocks-out-power-to-thousands-in-taiwan-d698764c7f.html",
+      "image": "news/images/2026-10-24-typhoon-champi-knocks-out-power-to-thousands-in-taiwan-d698764c7f-source.jpg",
+      "bytes": 209185,
+      "provider": "Original news source",
+      "source_url": "https://www.theguardian.com/world/2026/oct/24/typhoon-champi-kills-one-and-injures-more-than-500-in-taiwan-as-it-heads-to-china",
+      "image_url": "https://i.guim.co.uk/img/media/ef90d32836e051ec70630f8c26f1745009515247/589_0_6827_5464/master/6827.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=56571f3caabc8eedbc61b17f65b265f7"
+    },
+    {
+      "article": "2026-10-24-nigeria-confirms-ebola-case-as-outbreak-spreads-into-western-africa-e0f1300e0f.html",
+      "image": "news/images/2026-10-24-nigeria-confirms-ebola-case-as-outbreak-spreads-into-western-africa-e0f1300e0f-source.jpg",
+      "bytes": 133960,
+      "provider": "Original news source",
+      "source_url": "https://www.theguardian.com/world/2026/oct/21/nigeria-first-ebola-case-africa-outbreak-latest",
+      "image_url": "https://i.guim.co.uk/img/media/cc9a6ec270dac6b02b8ff0b829657c9fed193c1b/671_0_4033_3227/master/4033.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=85b9f5f0c8fc151f39b636cc7e3f6168"
+    },
+    {
+      "article": "2026-10-24-it-s-time-to-find-a-new-browser-88f5d839df.html",
+      "image": "news/images/2026-10-24-it-s-time-to-find-a-new-browser-88f5d839df-source.jpg",
+      "bytes": 66541,
+      "provider": "Original news source",
+      "source_url": "https://www.theverge.com/tech/1018121/cod-4-claude-duet-wildwood-installer",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Installer-149.jpg?quality=90&strip=all&crop=0%2C3.4987011938249%2C100%2C93.00259761235&w=1200"
+    },
+    {
+      "article": "2026-10-24-3-final-fantasy-games-to-play-if-you-loved-ff-resonance-1cda986925.html",
+      "image": "news/images/2026-10-24-3-final-fantasy-games-to-play-if-you-loved-ff-resonance-1cda986925-source.jpg",
+      "bytes": 166402,
+      "provider": "Original news source",
+      "source_url": "https://www.polygon.com/final-fantasy-games-like-ff-resonance/",
+      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/en2-2.jpg?w=1600&h=900&fit=crop"
+    }
+  ],
   "openverse_photos": [],
   "fallbacks": [],
   "failures": [],
