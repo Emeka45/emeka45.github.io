@@ -196,7 +196,7 @@ def main():
             if old_path.is_file():
                 old_text = re.sub(r"<[^>]+>", " ", old_path.read_text(encoding="utf-8", errors="replace"))
                 old_text = html.unescape(re.sub(r"\s+", " ", old_text)).strip()
-            if len(old_text.split()) < 430:
+            if len(old_text.split()) < 300:
                 chosen = (candidate_title, candidate_category)
                 break
         if chosen is None:
