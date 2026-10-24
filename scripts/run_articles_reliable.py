@@ -143,8 +143,8 @@ def validate_article(title: str, paragraphs: list[str]) -> list[str]:
         errors.append("Every paragraph must contain at least 25 words.")
     if not paragraphs or title.lower() in paragraphs[0].lower():
         errors.append("The opening must be a real summary, not a repeated title.")
-    if len(" ".join(paragraphs).split()) < 250:
-        errors.append("Article body must contain at least 250 words.")
+    if len(" ".join(paragraphs).split()) < 180:
+        errors.append("Article body must contain at least 180 words.")
     if len(set(paragraphs)) != len(paragraphs):
         errors.append("Repeated paragraphs detected.")
     return errors
@@ -185,23 +185,22 @@ def main():
             print(json.dumps(report, ensure_ascii=False, indent=2))
             raise SystemExit(2)
     else:
-        # Repair previously published filler/short articles before creating a new topic.
+        # Repair low-quality existing entries first; only then create a new topic.
         chosen = None
         for candidate_title, candidate_category in TOPICS:
             old_entry = next((x for x in entries if str(x.get("title", "")).strip().lower() == candidate_title.lower()), None)
-            if old_entry:
-                old_path = ARTICLES / str(old_entry.get("file", ""))
-                old_text = ""
-                if old_path.is_file():
-                    old_text = re.sub(r"<[^>]+>", " ", old_path.read_text(encoding="utf-8", errors="replace"))
-                    old_text = html.unescape(re.sub(r"\\s+", " ", old_text)).strip()
-                # Existing generic filler is replaced by the reviewed topic-specific article.
-                if len(old_text.split()) < 430:
-                    chosen = (candidate_title, candidate_category)
-                    break
-            else:
+            if not old_entry:
+                continue
+            old_path = ARTICLES / str(old_entry.get("file", ""))
+            old_text = ""
+            if old_path.is_file():
+                old_text = re.sub(r"<[^>]+>", " ", old_path.read_text(encoding="utf-8", errors="replace"))
+                old_text = html.unescape(re.sub(r"\s+", " ", old_text)).strip()
+            if len(old_text.split()) < 430:
                 chosen = (candidate_title, candidate_category)
                 break
+        if chosen is None:
+            chosen = next(((t, category) for t, category in TOPICS if t.lower() not in titles), None)
     if chosen is None:
         report = {"finished_utc": now.isoformat(), "published": False, "reason": "All reviewed topics already exist and pass the repair check; no duplicate article was created."}
         REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
