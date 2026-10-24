@@ -1,9 +1,11 @@
 {
-  "finished_utc": "2026-10-24T13:12:03.881057+00:00",
-  "mode": "reliable-original-editorial-fallback",
+  "finished_utc": "2026-10-24T18:41:03.906762+00:00",
+  "mode": "topic-specific-editorial-library",
   "published": true,
-  "title": "How to Protect Your Digital Privacy on a Phone",
-  "category": "Technology & Modern Life",
-  "file": "how-to-protect-your-digital-privacy-on-a-phone.html",
-  "note": "Publishes an original article without consuming Gemini quota."
+  "title": "How to Think Clearly When the Internet Is Overwhelming",
+  "category": "Personal Development",
+  "file": "how-to-think-clearly-when-the-internet-is-overwhelming.html",
+  "word_count": 239,
+  "quality_checks": "passed",
+  "note": "Only reviewed topic-specific content is published; generic fallback content is disabled."
 }
