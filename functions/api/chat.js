@@ -17,20 +17,34 @@ export async function onRequestPost(context) {
       const key = context.env["GEMINI_"+"API_KEY"] || context.env["GOOGLE_"+"API_KEY"];
       if (!key) return Response.json({error:"Gemini AI is not configured on the live Cloudflare backend. Add the encrypted GEMINI_API_KEY secret to the Production environment, then redeploy the Pages project."},{status:503});
       const payload={systemInstruction:{parts:[{text:systemText}]},contents:clean.map(m=>({role:m.role==="assistant"?"model":"user",parts:[{text:m.text}]}))};
-      const callGemini=async(model)=>{const r=await fetch("https://generativelanguage.googleapis.com/v1beta/models/"+model+":generateContent",{method:"POST",headers:{"Content-Type":"application/json","x-goog-api-key":key},body:JSON.stringify(payload)});let d=null;try{d=await r.json()}catch{}return {response:r,data:d};};
-      let result=await callGemini("gemini-3.8-flash");
-      if(!result.response.ok && (result.response.status===429 || result.response.status===503)){await new Promise(resolve=>setTimeout(resolve,1200));result=await callGemini("gemini-3.8-flash");}
-      if(!result.response.ok && [404,429,503].includes(result.response.status)){result=await callGemini("gemini-3.5-flash-lite");}
-      const response=result.response;const data=result.data;
+      // Ask Google's API which models are actually available to this key. This avoids
+      // hard-coding retired or misspelled model IDs and gives a useful setup error.
+      let modelNames=[];
+      try {
+        const listResponse=await fetch("https://generativelanguage.googleapis.com/v1beta/models",{headers:{"x-goog-api-key":key}});
+        const listData=await listResponse.json();
+        if(listResponse.ok && Array.isArray(listData.models)) {
+          modelNames=listData.models
+            .filter(m=>Array.isArray(m.supportedGenerationMethods)&&m.supportedGenerationMethods.includes("generateContent"))
+            .map(m=>String(m.name||"").replace(/^models\\//,""))
+            .filter(n=>/^gemini-/i.test(n));
+        }
+      } catch (_) {}
+      if(!modelNames.length) {
+        return Response.json({error:"Could not discover an available Gemini model for this API key. Check the key, Gemini API access and quota in Google AI Studio, then try again."},{status:502});
+      }
+      const preferred=["gemini-2.5-flash","gemini-2.5-flash-lite","gemini-2.0-flash","gemini-2.0-flash-lite"];
+      const model=preferred.find(name=>modelNames.includes(name)) || modelNames.filter(name=>/flash/i.test(name)&&!/preview|exp/i.test(name)).sort().reverse()[0] || modelNames.filter(name=>!/preview|exp/i.test(name)).sort().reverse()[0] || modelNames[0];
+      const response=await fetch("https://generativelanguage.googleapis.com/v1beta/models/"+encodeURIComponent(model)+":generateContent",{method:"POST",headers:{"Content-Type":"application/json","x-goog-api-key":key},body:JSON.stringify(payload)});
+      let data=null;try{data=await response.json()}catch{}
       if(!response.ok){
         const status=response.status;
-        if(status===401||status===403)return Response.json({error:"Gemini rejected the API key. Check the Gemini API key configured in Cloudflare Pages."},{status:502});
-        if(status===404)return Response.json({error:"The configured Gemini model is unavailable. Please redeploy the AI service with a supported Gemini model."},{status:502});
-        if(status===429)return Response.json({error:"Gemini free-tier quota is exhausted or rate-limited. Try again after the quota resets, or configure an API key with available quota."},{status:429});
-        return Response.json({error:"Gemini could not complete the request right now. Please try again in a moment."},{status:502});
+        if(status===401||status===403)return Response.json({error:"Gemini rejected the API key or this project lacks permission. Check the key and API access in Google AI Studio."},{status:502});
+        if(status===429)return Response.json({error:"Gemini free-tier quota is exhausted or rate-limited. Try again after the quota resets."},{status:429});
+        return Response.json({error:"Gemini could not complete the request using the available model. Please try again shortly."},{status:502});
       }
       const text=data?.candidates?.[0]?.content?.parts?.map(p=>p.text||"").join("").trim();
-      if(!text)return Response.json({error:"Gemini returned no text."},{status:502});
+      if(!text)return Response.json({error:"Gemini returned no text. The response may have been blocked; try rephrasing your request."},{status:502});
       return Response.json({text,provider:provider==="coeric"?"C. O. Eric Universal AI":"Gemini"});
     }
 
