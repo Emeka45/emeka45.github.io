@@ -1,30 +1,11 @@
 {
-  "finished_utc": "2026-10-24T18:42:27.721027+00:00",
-  "mode": "batch-quality-repair",
+  "finished_utc": "2026-10-24T20:51:52.409857+00:00",
+  "mode": "topic-specific-editorial-library",
   "published": true,
-  "repaired_count": 4,
-  "repaired_articles": [
-    {
-      "title": "How to Spot Misleading Information Online",
-      "file": "how-to-spot-misleading-information-online.html",
-      "word_count": 220
-    },
-    {
-      "title": "Why Small Daily Habits Often Beat Sudden Motivation",
-      "file": "why-small-daily-habits-often-beat-sudden-motivation.html",
-      "word_count": 219
-    },
-    {
-      "title": "How to Manage Money When Income Is Irregular",
-      "file": "how-to-manage-money-when-income-is-irregular.html",
-      "word_count": 233
-    },
-    {
-      "title": "How to Protect Your Digital Privacy on a Phone",
-      "file": "how-to-protect-your-digital-privacy-on-a-phone.html",
-      "word_count": 252
-    }
-  ],
+  "title": "How to Have Better Conversations During Disagreements",
+  "category": "Relationships & Family",
+  "file": "how-to-have-better-conversations-during-disagreements.html",
+  "word_count": 220,
   "quality_checks": "passed",
-  "note": "Existing short/template articles were replaced with topic-specific editorial content."
+  "note": "Only reviewed topic-specific content is published; generic fallback content is disabled."
 }
