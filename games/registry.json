@@ -4,7 +4,7 @@
   {"id":"2048","title":"2048","category":"Puzzle","description":"Combine matching tiles to reach 2048. Swipe or use arrow keys.","icon":"🔢","path":"/games/2048/index.html","type":"local","featured":true},
   {"id":"minesweeper","title":"Minesweeper","category":"Puzzle","description":"Clear safe squares without triggering a mine.","icon":"💣","path":"/games/minesweeper/index.html","type":"local","featured":true},
   {"id":"memory","title":"Memory Match","category":"Brain & Quiz","description":"Flip cards and match every pair in as few moves as possible.","icon":"🧠","path":"/games/memory/index.html","type":"local","featured":true},
-  {"id":"pong","title":"Pong","category":"Sports","description":"Beat the computer by returning the ball and scoring points.","icon":"🏓","path":"/games/pong/index.html","type":"local","featured":true},
+  {"id":"pong","title":"Pong","category":"Arcade","description":"Beat the computer by returning the ball and scoring points.","icon":"🏓","path":"/games/pong/index.html","type":"local","featured":true},
   {"id":"breakout","title":"Breakout","category":"Arcade","description":"Bounce the ball, break the bricks and clear the board.","icon":"🧱","path":"/games/breakout/index.html","type":"local","featured":false},
   {"id":"flappy","title":"Sky Hop","category":"Arcade","description":"Tap to fly through the gaps.","icon":"🪽","path":"/games/flappy/index.html","type":"local","featured":false},
   {"id":"sudoku","title":"Mini Sudoku","category":"Puzzle","description":"Complete the 4×4 Sudoku grid.","icon":"🔢","path":"/games/sudoku/index.html","type":"local","featured":false},
