@@ -1,20 +1,29 @@
 {
-  "started_utc": "2026-10-24T20:51:52.610873+00:00",
-  "finished_utc": "2026-10-24T20:52:06.194061+00:00",
+  "started_utc": "2026-10-25T07:57:51.500699+00:00",
+  "finished_utc": "2026-10-25T07:58:17.303788+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
-  "feed_success_count": 30,
-  "feed_failure_count": 0,
-  "feed_failures": [],
-  "total_items": 347,
-  "fresh_items": 327,
-  "corroborated_candidates": 4,
-  "published_count": 4,
+  "feed_success_count": 28,
+  "feed_failure_count": 2,
+  "feed_failures": [
+    {
+      "category": "Religion & Faith",
+      "url": "https://news.google.com/rss/search?q=Nigeria+Christianity+church+faith+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "category": "Entertainment & Lifestyle",
+      "url": "https://news.google.com/rss/search?q=Nigeria+entertainment+celebrity+music+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
+      "error": "HTTP Error 503: Service Unavailable"
+    }
+  ],
+  "total_items": 307,
+  "fresh_items": 282,
+  "corroborated_candidates": 2,
+  "published_count": 2,
   "published_titles": [
-    "Nigeria confirms Ebola case as outbreak spreads into western Africa",
-    "It’s time to find a new browser",
-    "Typhoon Champi knocks out power to thousands in Taiwan",
-    "3 Final Fantasy Games to Play if You Loved FF Resonance"
+    "Voters in Brazil to choose between Lula and Bolsonaro's son",
+    "Nigerian Army Frees Kidnapped Lieutenant Colonel, Civilian in Enugu"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }
