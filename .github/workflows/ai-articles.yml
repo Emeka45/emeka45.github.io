@@ -72,6 +72,19 @@ jobs:
             exit 0
           fi
           git commit -m 'AI Articles: publish original feature'
-          git fetch origin main
-          git rebase origin/main
-          git push origin HEAD:main
+
+          # Newsroom and Articles can publish close together. Refresh the base
+          # immediately before each push and retry if another workflow wins the race.
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              echo 'Article publication pushed successfully.'
+              exit 0
+            fi
+            echo "Push attempt $attempt was rejected; retrying after refreshing main."
+            sleep $((attempt * 2))
+          done
+
+          echo 'Could not publish article after three push attempts.'
+          exit 1
