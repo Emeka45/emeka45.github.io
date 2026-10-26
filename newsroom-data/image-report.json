@@ -1,26 +1,50 @@
 {
-  "finished_utc": "2026-10-25T07:58:19.580365+00:00",
+  "finished_utc": "2026-10-26T08:20:17.165864+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 2,
-  "attempted": 2,
+  "missing_before_run": 5,
+  "attempted": 5,
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-10-25-voters-in-brazil-to-choose-between-lula-and-bolsonaro-s-son-46751e9357.html",
-      "image": "news/images/2026-10-25-voters-in-brazil-to-choose-between-lula-and-bolsonaro-s-son-46751e9357-source.jpg",
-      "bytes": 142596,
+      "article": "2026-10-26-the-10-best-snes-games-to-play-on-nintendo-switch-online-d39f6041c8.html",
+      "image": "news/images/2026-10-26-the-10-best-snes-games-to-play-on-nintendo-switch-online-d39f6041c8-source.jpg",
+      "bytes": 178702,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cxp8g21j4648o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/cc2d/live/5e5c94f0-cffc-11f1-b444-6fb1f13f8d87.jpg"
+      "source_url": "https://www.polygon.com/best-snes-games-nintendo-switch-online-classics/",
+      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/snes-classics-2.jpg?w=1200&h=675&fit=crop"
     },
     {
-      "article": "2026-10-25-nigerian-army-frees-kidnapped-lieutenant-colonel-civilian-in-enugu-965af684bb.html",
-      "image": "news/images/2026-10-25-nigerian-army-frees-kidnapped-lieutenant-colonel-civilian-in-enugu-965af684bb-source.jpg",
-      "bytes": 92375,
+      "article": "2026-10-26-sanwo-olu-details-plan-to-integrate-proposed-state-police-into-lagos-security-framework-62c46cc754.html",
+      "image": "news/images/2026-10-26-sanwo-olu-details-plan-to-integrate-proposed-state-police-into-lagos-security-framework-62c46cc754-source.jpg",
+      "bytes": 23936,
       "provider": "Original news source",
-      "source_url": "https://thereporter.com.ng/nigerian-army-frees-kidnapped-lieutenant-colonel-civilian-in-enugu",
-      "image_url": "https://thereporter.com.ng/uploads/images/202608/image_870x580_6a6dc53dee667.jpg"
+      "source_url": "https://thereporter.com.ng/sanwo-olu-details-plan-to-integrate-proposed-state-police-into-lagos-security-framework",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRasg7rm6drgI7_bARXaR7su59AE4Z4FywxYF1Sc62jspQsWXvHWJ8lEVbAxbi-HyqJZYH19v2flp0iNKhiFj8bZ69lMtz_2XxyFzmy7vw&s=10"
+    },
+    {
+      "article": "2026-10-26-phantom-blade-zero-reviews-just-beat-every-soulslike-in-2026-6a17d8c062.html",
+      "image": "news/images/2026-10-26-phantom-blade-zero-reviews-just-beat-every-soulslike-in-2026-6a17d8c062-source.jpg",
+      "bytes": 179404,
+      "provider": "Original news source",
+      "source_url": "https://www.polygon.com/phantom-blade-zero-review-roundup-score/",
+      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/phantom-blade-zero-slow-motion-walk.jpg?w=1600&h=900&fit=crop"
+    },
+    {
+      "article": "2026-10-26-exiled-opposition-leader-mar-a-corina-machado-returns-to-rapturous-reception-in-venezuela-9149963c12.html",
+      "image": "news/images/2026-10-26-exiled-opposition-leader-mar-a-corina-machado-returns-to-rapturous-reception-in-venezuela-9149963c12-source.jpg",
+      "bytes": 69197,
+      "provider": "Original news source",
+      "source_url": "https://www.theguardian.com/world/2026/oct/25/exiled-venezuelan-opposition-leader-maria-corina-machado-announces-her-return",
+      "image_url": "https://i.guim.co.uk/img/media/b76716fc922183868270c55ef67ee72294490554/313_0_4560_3648/master/4560.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=cdfa0bc3b59eb2a1670022459854998b"
+    },
+    {
+      "article": "2026-10-26-brazil-runoff-live-updates-lula-supporters-celebrate-historic-election-win-as-bolsonaro-re-3b7c4e5627.html",
+      "image": "news/images/2026-10-26-brazil-runoff-live-updates-lula-supporters-celebrate-historic-election-win-as-bolsonaro-re-3b7c4e5627-source.jpg",
+      "bytes": 86760,
+      "provider": "Original news source",
+      "source_url": "https://www.theguardian.com/world/live/2026/oct/25/brazil-election-runoff-live-updates-flavio-bolsonaro-lula",
+      "image_url": "https://i.guim.co.uk/img/media/12419465c89789c79295caff90cc2957feb4543c/512_0_3320_2656/master/3320.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=e32293a3abd038488dbbb9d84056cce1"
     }
   ],
   "openverse_photos": [],

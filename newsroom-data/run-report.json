@@ -1,29 +1,21 @@
 {
-  "started_utc": "2026-10-25T07:57:51.500699+00:00",
-  "finished_utc": "2026-10-25T07:58:17.303788+00:00",
+  "started_utc": "2026-10-26T08:19:56.615840+00:00",
+  "finished_utc": "2026-10-26T08:20:13.533230+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
-  "feed_success_count": 28,
-  "feed_failure_count": 2,
-  "feed_failures": [
-    {
-      "category": "Religion & Faith",
-      "url": "https://news.google.com/rss/search?q=Nigeria+Christianity+church+faith+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
-      "error": "HTTP Error 503: Service Unavailable"
-    },
-    {
-      "category": "Entertainment & Lifestyle",
-      "url": "https://news.google.com/rss/search?q=Nigeria+entertainment+celebrity+music+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
-      "error": "HTTP Error 503: Service Unavailable"
-    }
-  ],
-  "total_items": 307,
-  "fresh_items": 282,
-  "corroborated_candidates": 2,
-  "published_count": 2,
+  "feed_success_count": 30,
+  "feed_failure_count": 0,
+  "feed_failures": [],
+  "total_items": 347,
+  "fresh_items": 332,
+  "corroborated_candidates": 9,
+  "published_count": 5,
   "published_titles": [
-    "Voters in Brazil to choose between Lula and Bolsonaro's son",
-    "Nigerian Army Frees Kidnapped Lieutenant Colonel, Civilian in Enugu"
+    "Exiled opposition leader María Corina Machado returns to rapturous reception in Venezuela",
+    "Sanwo-Olu details plan to integrate proposed state police into Lagos security framework",
+    "The 10 Best SNES Games to Play on Nintendo Switch Online",
+    "Brazil runoff live updates: Lula supporters celebrate historic election win as Bolsonaro refuses to concede",
+    "Phantom Blade Zero Reviews Just Beat Every Soulslike In 2026"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }
