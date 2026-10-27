@@ -128,7 +128,7 @@ function collectEpisodeRows(payload){
 }
 async function fetchEpisodeMetadata(item,kind){
  const slug=detailSlug(item);
- if(!slug||/^\\d+$/.test(slug))return [];
+ if(!slug||/^\d+$/.test(slug))return [];
  const prefixes=kind==='donghua'?['/dnh/series/','/dgb/series/']:['/otd/anime/'];
  for(const prefix of prefixes){
   const controller=new AbortController();
@@ -199,7 +199,7 @@ function render(){
        link.className='watch-link';
        link.target='_blank';link.rel='noopener noreferrer';
        const episodeSlug=episodeActionUrl(ep);
-       const directPage=episodeSlug&&!/^\d+$/.test(episodeSlug)&&!/^https?:\/\//i.test(String(first(ep,['url','link'])||''))?API+(state.kind==='donghua'?'/dnh/episode/':'/otd/episode/')+encodeURIComponent(episodeSlug):'';
+       const directPage=state.kind==='anime'&&episodeSlug&&!/^\d+$/.test(episodeSlug)&&!/^https?:\/\//i.test(String(first(ep,['url','link'])||''))?API+'/otd/episode/'+encodeURIComponent(episodeSlug):'';
        link.href=directPage|| (state.kind==='anime'?'https://anilist.co/search/anime?search='+encodeURIComponent(item.title):'https://www.google.com/search?q='+encodeURIComponent(item.title+' official licensed streaming'));
        link.textContent=directPage?'Open episode details':'Find licensed options';
        link.style.cssText='flex-shrink:0;max-width:45%;text-align:center';
