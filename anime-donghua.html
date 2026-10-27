@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#0b0714">
-<meta name="description" content="Current Anime and Donghua catalogue for C. O. Eric, refreshed from live catalogue sources.">
+<meta name="description" content="Anime and Donghua downloads from open-licensed and creator-authorized sources, curated by C. O. Eric.">
 <title>Anime & Donghua — C. O. Eric</title>
 <style>
 :root{color-scheme:dark;--bg:#090711;--panel:#151020;--line:#30263f;--text:#f8f5ff;--muted:#bdb3cd;--accent:#b18aff;--accent2:#7c5bd6}
@@ -16,10 +16,10 @@
 <body>
 <header class="wrap top"><a class="brand" href="index.html">C. O. Eric <span style="color:#b18aff">/ Anime & Donghua</span></a><a class="back" href="index.html">← Main site</a></header>
 <main class="wrap">
-<section class="hero"><div class="eyebrow">Live catalogue · separate from Video Hub</div><h1>Anime <span style="color:#b18aff">&</span> Donghua</h1><p>Current Japanese anime and Chinese animation, pulled from live release feeds rather than a fixed seasonal list. New and recently updated titles can appear without manually editing this page.</p></section>
+<section class="hero"><div class="eyebrow">Download library · separate from Video Hub</div><h1>Anime <span style="color:#b18aff">&</span> Donghua</h1><p>Browse downloadable animation from open-licensed and creator-authorized sources. This page uses its own local download catalogue; it does not rely on external anime catalogues. Commercial titles are added only when distribution permission is available.</p></section>
 <div class="tabs" role="tablist" aria-label="Choose catalogue"><button class="tab" role="tab" aria-selected="true" data-kind="anime">🎌 Anime</button><button class="tab" role="tab" aria-selected="false" data-kind="donghua">🏮 Donghua</button></div>
-<div class="tools"><input class="search" id="search" type="search" placeholder="Search current titles…" aria-label="Search titles"><button id="reload" class="primary" type="button">Refresh now</button></div>
-<div class="status" id="status" role="status" aria-live="polite">Loading current catalogue…</div>
+<div class="tools"><input class="search" id="search" type="search" placeholder="Search downloadable titles…" aria-label="Search downloadable titles"><button id="reload" class="primary" type="button">Refresh now</button></div>
+<div class="status" id="status" role="status" aria-live="polite">Loading download library…</div>
 <section id="openAnime" class="card" style="margin:16px 0;padding:16px;display:block" aria-labelledby="openAnimeTitle">
  <div class="eyebrow">Open-license feature · direct media files</div>
  <h2 id="openAnimeTitle" style="margin:6px 0 8px;font-size:1.35rem">Morevna Episode 3.0.2 (English)</h2>
@@ -158,108 +158,41 @@
 <footer class="footer"><div class="wrap">© C. O. Eric · <a href="videos.html">Video Hub</a> remains a separate section.</div></footer>
 <script>
 (function(){'use strict';
-const API='https://shivraapi.my.id';
-const ANILIST='https://graphql.anilist.co';
-const state={kind:'anime',items:[],query:'',loaded:false,loadId:0};
-let mediaManifest=null;let mediaManifestPromise=null;
-async function loadMediaManifest(){if(mediaManifest)return mediaManifest;if(mediaManifestPromise)return mediaManifestPromise;mediaManifestPromise=(async()=>{try{const r=await fetchWithTimeout('./anime-downloads.json',{headers:{Accept:'application/json'},cache:'no-store'},7000);if(!r.ok)throw Error('manifest unavailable');const j=await r.json();mediaManifest=j&&typeof j==='object'?j:{titles:[]}}catch(_){mediaManifest={titles:[]}}return mediaManifest})();return mediaManifestPromise}
-function manifestTitle(item,manifest){const titles=Array.isArray(manifest&&manifest.titles)?manifest.titles:[];const id=String(item.slug||'');const title=String(item.title||'').trim().toLowerCase();return titles.find(x=>x&&((x.anilistId!=null&&String(x.anilistId)===id)||(x.title&&String(x.title).trim().toLowerCase()===title)))||null;}
+const state={kind:'anime',items:[],query:''};
 const $=id=>document.getElementById(id);
-async function fetchWithTimeout(url,options={},ms=10000){const c=new AbortController(),t=setTimeout(()=>c.abort(),ms);try{return await fetch(url,{...options,signal:c.signal})}finally{clearTimeout(t)}}
-function first(o,keys){for(const k of keys)if(o&&o[k]!==undefined&&o[k]!==null&&o[k]!=='')return o[k];return ''}
-function esc(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function img(s){try{const u=new URL(String(s||''));return /^https?:$/.test(u.protocol)?u.href:''}catch(_){return ''}}
-function slug(s){let x=String(s||'').trim();if(/^https?:\/\//i.test(x)){try{x=new URL(x).pathname.split('/').filter(Boolean).pop()||''}catch(_){}}return x.replace(/^\/+|\/+$/g,'')}
-function airingLabel(x){const a=x&&x.nextAiringEpisode;if(!a||!a.airingAt)return '';const d=new Date(a.airingAt*1000);return 'Next episode '+a.episode+' · '+d.toLocaleString(undefined,{month:'short',day:'numeric',hour:'numeric',minute:'2-digit',timeZoneName:'short'})}function aniMap(rows,source){return rows.map(x=>({title:(x.title&&(x.title.english||x.title.romaji||x.title.native))||'Untitled',slug:String(x.id||''),poster:x.coverImage&&(x.coverImage.extraLarge||x.coverImage.large||x.coverImage.medium)||x.bannerImage||(x.trailer&&x.trailer.thumbnail)||'',banner:x.bannerImage||'',trailerThumb:x.trailer&&x.trailer.thumbnail||'',description:String(x.description||'').replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim().slice(0,420),status:[x.status,x.episodes?x.episodes+' episodes':'',airingLabel(x)].filter(Boolean).join(' · '),source,streamingEpisodes:Array.isArray(x.streamingEpisodes)?x.streamingEpisodes:[],nextAiring:x.nextAiringEpisode||null,raw:x}))}
-async function aniListFeed(kind){
- const filter=kind==='donghua'?'type:ANIME,countryOfOrigin:CN,status:RELEASING,isAdult:false':'type:ANIME,status:RELEASING,isAdult:false';
- const q='query { Page(page:1,perPage:25) { media('+filter+',sort:UPDATED_AT_DESC) { id title { romaji english native } coverImage { extraLarge large medium } bannerImage trailer { thumbnail } description(asHtml:false) episodes status nextAiringEpisode { episode airingAt } streamingEpisodes { title url site } } } }';
- const r=await fetchWithTimeout(ANILIST,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({query:q})});
- if(!r.ok)throw Error('AniList HTTP '+r.status);const p=await r.json();const rows=p&&p.data&&p.data.Page&&p.data.Page.media;if(!Array.isArray(rows))throw Error('No live release feed');
- return aniMap(rows,kind==='donghua'?'AniList · current Chinese animation':'AniList · currently releasing');
-}
-function normalize(payload){let rows=Array.isArray(payload)?payload:[];const keys=['data','results','anime','series','items','ongoing','ongoing_anime','list','donghua','popular','recent'];function find(v,d){if(!v||typeof v!=='object'||d>5)return[];if(Array.isArray(v))return v;for(const k of keys)if(Array.isArray(v[k])&&v[k].length)return v[k];for(const k of ['data','result','response','payload'])if(v[k]&&typeof v[k]==='object'){const a=find(v[k],d+1);if(a.length)return a}return[]}if(!rows.length)rows=find(payload,0);return rows.map(x=>{if(typeof x==='string')return{title:x,slug:'',poster:'',description:'',status:'',source:'Catalogue',streamingEpisodes:[],raw:x};const p=first(x,['poster','cover','image','thumbnail','thumb','posterUrl','coverImage','cover_url','image_url']);const banner=first(x,['banner','bannerImage','banner_image','backdrop']);const trailer=first(x,['trailer','trailerThumbnail','trailer_thumbnail']);return{title:String(first(x,['title','name','judul','englishTitle','romaji','seriesTitle','anime_title','series_name'])||'Untitled'),slug:String(first(x,['slug','endpoint','anime_slug','series_slug','animeId','id','url','link'])||''),poster:String(typeof p==='object'?first(p,['extraLarge','large','medium','url','src']):p||''),banner:String(typeof banner==='object'?first(banner,['large','url','src']):banner||''),trailerThumb:String(typeof trailer==='object'?first(trailer,['thumbnail','thumb','url','src']):trailer||''),description:String(first(x,['description','synopsis','desc','sinopsis'])||''),status:String(first(x,['status','type','episode','episodes','season','latest_episode','latestEpisode'])||''),source:'ShivraHub · live catalogue',streamingEpisodes:Array.isArray(x.streamingEpisodes)?x.streamingEpisodes:[],raw:x}}).filter(x=>x.title!=='Untitled')}
-async function shivra(kind){const paths=kind==='donghua'?['/dnh/series','/dgb/home']:['/otd/ongoing','/otd/home'];let last;for(const path of paths){try{const r=await fetchWithTimeout(API+path,{headers:{Accept:'application/json'},cache:'no-store'});if(!r.ok){last=Error('HTTP '+r.status);continue}const rows=normalize(await r.json());if(rows.length)return rows;last=Error('No titles from '+path)}catch(e){last=e}}throw last||Error('Catalogue unavailable')}
-async function getList(kind){try{return await aniListFeed(kind)}catch(primary){try{return await shivra(kind)}catch(fallback){throw primary}}}
-function episodeRows(payload){const found=[];function walk(v,d){if(!v||d>6)return;if(Array.isArray(v)){if(v.length&&v.some(x=>x&&typeof x==='object'&&(x.episode||x.episodeNumber||x.slug||x.url)))found.push(v);v.slice(0,100).forEach(x=>walk(x,d+1));return}if(typeof v==='object')for(const [k,x] of Object.entries(v)){if(Array.isArray(x)&&/episode|eps|chapter/i.test(k))found.push(x);if(x&&typeof x==='object')walk(x,d+1)}}walk(payload,0);found.sort((a,b)=>b.length-a.length);return found[0]||[]}
-async function providerEpisodesForCatalogueItem(item){
- const kind=state.kind,title=String(item.title||'').trim();if(!title)return[];
- const searchRoutes=kind==='donghua'?['/dgb/search','/dnh/search']:['/otd/search'];
- const detailRoutes=kind==='donghua'?['/dnh/series/','/dgb/series/']:['/otd/anime/'];
- const normalizeTitle=s=>String(s||'').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
- const target=normalizeTitle(title);
- for(const route of searchRoutes){
-  for(const param of ['q','keyword','query']){
-   try{
-    const u=API+route+'?'+param+'='+encodeURIComponent(title);
-    const r=await fetchWithTimeout(u,{headers:{Accept:'application/json'},cache:'no-store'},9000);if(!r.ok)continue;
-    const results=normalize(await r.json());if(!results.length)continue;
-    const scored=results.map(x=>{const t=normalizeTitle(x.title);let score=t===target?100:(t.includes(target)||target.includes(t)?70:0);const a=new Set(target.split(' ')),b=new Set(t.split(' '));let overlap=0;a.forEach(w=>{if(w.length>2&&b.has(w))overlap++});score=Math.max(score,Math.round(overlap/Math.max(1,a.size)*60));return{x,score}}).sort((a,b)=>b.score-a.score);
-    for(const match of scored.slice(0,3)){
-     if(match.score<45)continue;
-     const s=slug(match.x.slug);if(!s||/^\d+$/.test(s))continue;
-     for(const dr of detailRoutes){try{const d=await fetchWithTimeout(API+dr+encodeURIComponent(s),{headers:{Accept:'application/json'},cache:'no-store'},9000);if(d.ok){const rows=episodeRows(await d.json());if(rows.length)return rows}}catch(_){}}
-    }
-   }catch(_){}
-  }
+async function fetchManifest(){const r=await fetch('./anime-downloads.json',{headers:{Accept:'application/json'},cache:'no-store'});if(!r.ok)throw Error('Download library unavailable');const data=await r.json();return Array.isArray(data.titles)?data.titles:[]}
+function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function safeUrl(v){try{const u=new URL(String(v||''),location.href);return /^https?:$/.test(u.protocol)?u.href:''}catch(_){return ''}}
+function fileName(title,label,url){const ext=(String(url).match(/\.(mp4|webm|m4v|mov|ogv|ogg)(?:[?#]|$)/i)||[])[1]||'bin';return (title+'-'+label).replace(/[^a-z0-9_-]+/gi,'-').replace(/^-+|-+$/g,'')+'.'+ext}
+function render(){
+ const q=state.query.trim().toLowerCase();
+ const rows=state.items.filter(x=>String(x.kind||'anime')===state.kind&&[x.title,x.description,x.license].join(' ').toLowerCase().includes(q));
+ const grid=$('grid');grid.innerHTML='';
+ if(!rows.length){
+  const msg=state.kind==='donghua'?'No verified open-licensed or creator-authorized direct Donghua downloads are listed yet. I will not label commercial episodes as downloadable without permission. When authorized files are added to anime-downloads.json, they will appear here automatically.':'No titles match that search. Clear the search or refresh the download library.';
+  grid.innerHTML='<div class="empty">'+esc(msg)+'</div>';return;
  }
- return[]
+ const frag=document.createDocumentFragment();
+ rows.forEach((item,i)=>{
+  const card=document.createElement('article');card.className='card';
+  const links=(Array.isArray(item.downloads)?item.downloads:[]).map(d=>{const url=safeUrl(d.url);if(!url)return '';return '<a class="watch-link" href="'+esc(url)+'" download="'+esc(fileName(item.title,d.label||'download',url))+'" rel="noopener noreferrer">⬇ '+esc(d.label||'Download file')+'</a>'}).join('');
+  const source=safeUrl(item.sourceUrl);
+  card.innerHTML='<div class="poster"><span>'+(state.kind==='donghua'?'🏮':'🎌')+'</span></div><div class="info"><h3>'+esc(item.title)+'</h3><div class="meta">'+esc(item.description||'Authorized animation download')+'</div><span class="badge">DOWNLOADS AVAILABLE</span><span class="source">'+esc(item.license||'Check source licence')+'</span><div class="watch-links">'+(links||'<span class="empty">No direct files listed.</span>')+(source?'<a class="watch-link" href="'+esc(source)+'" target="_blank" rel="noopener noreferrer">Licence & original source</a>':'')+'</div></div>';
+  frag.appendChild(card);
+ });
+ grid.appendChild(frag);
 }
-async function details(item){
- const manifest=await loadMediaManifest(),entry=manifestTitle(item,manifest);
- const localEpisodes=Array.isArray(entry&&entry.episodes)?entry.episodes.map((x,i)=>({...x,title:String(x.title||('Episode '+(Number(x.number)||i+1))),number:Number(x.number)||i+1,slug:'',raw:x,manifestSource:true})): [];
- if(String(item.source||'').startsWith('AniList')){
-  const episodes=(item.streamingEpisodes||[]).map((x,i)=>({title:String(x.title||('Available streaming episode '+(i+1))),number:i+1,url:x.url||'',slug:'',raw:x}));
-  try{const id=Number(item.slug);if(id){const query='query ($id:Int) { Media(id:$id,type:ANIME) { airingSchedule(notYetAired:false,sort:TIME_DESC,perPage:10) { nodes { episode airingAt } } } }';const r=await fetchWithTimeout(ANILIST,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({query,variables:{id}})});if(r.ok){const p=await r.json();const nodes=p&&p.data&&p.data.Media&&p.data.Media.airingSchedule&&p.data.Media.airingSchedule.nodes;if(Array.isArray(nodes))nodes.forEach(n=>episodes.push({title:'Episode '+n.episode,number:n.episode,url:'',slug:'',scheduleOnly:true,airingAt:n.airingAt}))}}}catch(_){}
-  let providerRows=[];try{providerRows=await providerEpisodesForCatalogueItem(item)}catch(_){}const mappedProvider=providerRows.map((x,i)=>({...epInfo(x,i),raw:x,providerEpisode:true}));episodes.push(...mappedProvider,...localEpisodes);const seen=new Set();return episodes.filter(e=>{const k=String(e.number)+'|'+e.url+'|'+(e.manifestSource?'local':e.providerEpisode?'provider':'catalogue');if(seen.has(k))return false;seen.add(k);return true}).sort((a,b)=>b.number-a.number)
- }
- const s=slug(item.slug);let providerEpisodes=[];
- if(s&&!/^\d+$/.test(s)){const routes=state.kind==='anime'?['/otd/anime/']:['/dnh/series/','/dgb/series/'];for(const route of routes){try{const r=await fetchWithTimeout(API+route+encodeURIComponent(s),{headers:{Accept:'application/json'},cache:'no-store'});if(r.ok){providerEpisodes=episodeRows(await r.json());if(providerEpisodes.length)break}}catch(_){}}}
- return providerEpisodes.concat(localEpisodes)
+async function load(){
+ const btn=$('reload');btn.disabled=true;$('status').textContent='Loading the local download library…';$('grid').innerHTML='<div class="empty">Loading downloadable titles…</div>';
+ try{state.items=await fetchManifest();render();const count=state.items.filter(x=>String(x.kind||'anime')===state.kind).length;$('status').textContent=count+' '+(state.kind==='donghua'?'authorized Donghua':'open-licensed / authorized Anime and animation')+' entries in the local download library';}
+ catch(_){$('grid').innerHTML='<div class="empty">The download library could not be loaded. Please refresh the page.</div>';$('status').textContent='Download library unavailable';}
+ finally{btn.disabled=false}
 }
-function epInfo(ep,i){if(typeof ep==='string')return{title:'Episode '+(i+1),number:i+1,url:ep,slug:slug(ep)};const n=first(ep,['episodeNumber','episode_no','episodeNo','number','episode','ep','index']);return{title:String(first(ep,['title','name','episodeTitle','judul','episode_name'])||('Episode '+(Number(n)||i+1))),number:Number(n)||i+1,url:first(ep,['url','link','watch_url','watchUrl'])||'',slug:slug(first(ep,['slug','endpoint','episode_slug','episodeSlug','id'])),raw:ep,scheduleOnly:!!ep.scheduleOnly,airingAt:ep.airingAt}}
-function mediaOptions(payload){const streams=[],downloads=[];const add=(arr,label,url)=>{try{const u=new URL(String(url||''));if(!/^https?:$/.test(u.protocol)||arr.some(x=>x.url===u.href))return;arr.push({label:String(label||'Open'),url:u.href})}catch(_){} };function walk(v,d,ctx){if(!v||d>7)return;if(Array.isArray(v)){v.slice(0,100).forEach((x,i)=>walk(x,d+1,ctx||'Option '+(i+1)));return}if(typeof v!=='object')return;const keys=Object.keys(v).join(' '),label=first(v,['quality','resolution','label','name','server','provider','host','title'])||ctx;const url=first(v,['url','link','download_url','downloadUrl','file_url','fileUrl','src','embed_url','embedUrl','stream_url','streamUrl','play_url','playUrl']);const text=(ctx+' '+keys+' '+label).toLowerCase();if(url){const directFile=/\.(mp4|webm|m4v|mov|ogv|ogg)(?:$|[?#])/i.test(String(url));if(directFile){add(downloads,label,url);add(streams,label,url)}else if(/download|quality|resolution|file_size|filesize|mirror/.test(text))add(downloads,label,url);else if(/stream|player|embed|watch|video|server/.test(text)||/\.m3u8(?:$|[?#])/i.test(String(url)))add(streams,label,url)}for(const [k,x] of Object.entries(v)){if(x&&typeof x==='object')walk(x,d+1,ctx?ctx+' '+k:k);else if(typeof x==='string'&&/^https?:\/\//i.test(x)){const t=(ctx+' '+k).toLowerCase();if(/download|quality|resolution|file|mirror/.test(t))add(downloads,k,x);else if(/stream|player|embed|watch|video|server/.test(t))add(streams,k,x)}}}walk(payload,0,'');return{streams,downloads}}
-async function episodeOptions(ep){
- const combined={streams:[],downloads:[]};
- const merge=opts=>{for(const k of ['streams','downloads'])for(const x of opts[k]||[])if(!combined[k].some(y=>y.url===x.url))combined[k].push(x)};
- // Some providers include usable media URLs in the episode object itself.
- if(ep.raw)merge(mediaOptions(ep.raw));
- if(ep.url)merge(mediaOptions({url:ep.url,episodeUrl:ep.url}));
- if(combined.streams.length||combined.downloads.length)return combined;
- const s=slug(ep.slug);if(!s||/^\d+$/.test(s))return combined;
- // Try only the episode routes associated with the selected catalogue source.
- const routes=state.kind==='donghua'?['/dnh/episode/','/dgb/episode/']:['/otd/episode/'];
- for(const route of routes){try{const r=await fetchWithTimeout(API+route+encodeURIComponent(s),{headers:{Accept:'application/json'},cache:'no-store'});if(r.ok){merge(mediaOptions(await r.json()));if(combined.streams.length||combined.downloads.length)return combined}}catch(_){}}
- return combined
-}
-function openPlayer(title,url){const u=String(url||'');if(!/^https?:\/\//i.test(u))return false;const video=$('player');video.pause();video.removeAttribute('src');video.load();video.src=u;$('playerTitle').textContent=title;$('playerFoot').textContent='C. O. Eric watermark is displayed in this player. English subtitles are shown only when the supplied media includes an English subtitle track.';$('playerModal').hidden=false;video.play().catch(()=>{});return true}
-function render(){const q=state.query.trim().toLowerCase(),rows=state.items.filter(x=>(x.title+' '+x.description+' '+x.status).toLowerCase().includes(q));$('grid').innerHTML='';if(!rows.length){$('grid').innerHTML='<div class="empty">No matching current titles. Try another search or Refresh now.</div>';return}const f=document.createDocumentFragment();rows.slice(0,100).forEach((item,cardIndex)=>{const card=document.createElement('article');card.className='card';const candidates=[item.poster,item.banner,item.trailerThumb].map(img).filter((u,i,a)=>u&&a.indexOf(u)===i);const poster=candidates.length?'<img loading="'+(cardIndex<8?'eager':'lazy')+'" decoding="async" alt="Poster for '+esc(item.title)+'">':'<span>'+(state.kind==='donghua'?'🏮':'🎌')+'</span>';const badge=state.kind==='donghua'?'<span class="badge">CURRENT DONGHUA</span>':'<span class="badge">CURRENT ANIME</span>';const official=(item.streamingEpisodes||[]).filter(e=>e&&/^https?:\/\//i.test(e.url)).slice(0,3).map(e=>'<a class="watch-link" target="_blank" rel="noopener noreferrer" href="'+esc(e.url)+'">▶ '+esc(e.site||e.title||'Official streaming')+'</a>').join('');const info='';card.innerHTML='<div class="poster">'+poster+'</div><div class="info"><h3>'+esc(item.title)+'</h3><div class="meta">'+esc(item.status||item.description||'Current release')+'</div>'+badge+'<span class="source">'+esc(String(item.source||'').startsWith('AniList')?'Catalogue metadata · current releases':item.source)+'</span>'+(official?'<div class="watch-links">'+official+'</div>':'')+(info?'<div class="watch-links">'+info+'</div>':'')+'<div class="watch-links"><button class="watch-link details-toggle" type="button" aria-expanded="false">＋ Load episodes & details</button><div class="episode-details" hidden><p>'+esc(item.description||'No synopsis supplied.')+'</p><p class="episode-loading">Episode list has not been loaded.</p><div class="episode-list"></div></div></div></div>';const posterImg=card.querySelector('.poster img');if(posterImg&&candidates.length){let imageIndex=0;posterImg.onerror=()=>{imageIndex++;if(imageIndex<candidates.length){posterImg.src=candidates[imageIndex];return}const holder=posterImg.parentElement;holder.textContent=(state.kind==='donghua'?'🏮 ':'🎌 ')+(item.title||'Artwork unavailable').slice(0,28);holder.setAttribute('aria-label','Artwork unavailable for '+item.title);};posterImg.src=candidates[0];}const toggle=card.querySelector('.details-toggle');toggle.addEventListener('click',async()=>{const panel=card.querySelector('.episode-details'),opening=panel.hidden;panel.hidden=!opening;toggle.setAttribute('aria-expanded',String(opening));toggle.textContent=opening?'− Hide episodes':'＋ Find episodes & details';if(!opening||panel.dataset.loading||panel.dataset.loaded)return;panel.dataset.loading='1';const loading=panel.querySelector('.episode-loading'),list=panel.querySelector('.episode-list');loading.textContent='Loading current episode list…';try{const eps=await details(item);if(!eps.length){loading.textContent='No episode list returned by the available provider.';return}panel.dataset.loaded='1';loading.textContent=eps.length+' episode entries found';eps.slice(0,200).forEach((raw,i)=>{const e=epInfo(raw,i),row=document.createElement('div');row.style.cssText='display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;padding:7px 0;border-bottom:1px solid #30263f;align-items:start';const label=document.createElement('span');label.textContent='Ep. '+e.number+' — '+e.title+(e.airingAt?' · aired '+new Date(e.airingAt*1000).toLocaleDateString():'');label.style.overflowWrap='anywhere';const btn=document.createElement('button');btn.className='watch-link';btn.type='button';btn.textContent='Find episode streams / downloads';const box=document.createElement('div');box.style.cssText='grid-column:1/-1;display:grid;gap:6px';box.hidden=true;btn.onclick=async()=>{box.hidden=!box.hidden;if(box.hidden)return;if(box.dataset.done)return;if(e.scheduleOnly){const m=document.createElement('small');m.textContent='Airing schedule confirmed by AniList. A schedule entry is not a video stream; use an available official streaming link shown on the title card.';box.appendChild(m);box.dataset.done='1';return}btn.disabled=true;btn.textContent='Checking…';const opts=await episodeOptions(e);if(opts.streams.length)opts.streams.forEach(x=>{const a=document.createElement('button');a.className='watch-link';a.type='button';a.textContent='▶ '+x.label;a.onclick=()=>{if(/\.(mp4|webm|m3u8|ogg)(?:$|[?#])/i.test(x.url)){openPlayer(item.title+' · '+e.title,x.url)}else window.open(x.url,'_blank','noopener')};box.appendChild(a)});if(opts.downloads.length)opts.downloads.forEach(x=>{const a=document.createElement('a');a.className='watch-link';a.href=x.url;a.rel='noopener noreferrer';a.textContent='⬇ Download '+x.label;const ext=(x.url.match(/\.(mp4|webm|m4v|mov|ogv|ogg)(?:[?#]|$)/i)||[])[1]||'mp4';a.download=(item.title+'-'+e.title).replace(/[^a-z0-9_-]+/gi,'-')+'.'+ext;box.appendChild(a)});if(!opts.streams.length&&!opts.downloads.length&&e.url){const a=document.createElement('a');a.className='watch-link';a.href=e.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Open streaming/source page';box.appendChild(a)}if(!box.children.length){const m=document.createElement('small');m.textContent='The available catalogue did not return a direct video file or playable stream for this episode. This site now checks episode media data for both Anime and Donghua, but a download appears only when the source actually supplies a media URL. Catalogue entries and release schedules are not video files.';box.appendChild(m)}box.dataset.done='1';btn.disabled=false;btn.textContent='Hide options'};row.append(label,btn,box);list.appendChild(row)})}finally{delete panel.dataset.loading}});f.appendChild(card)});$('grid').appendChild(f)}
-async function load(){const id=++state.loadId,kind=state.kind;$('status').textContent='Loading current '+(kind==='donghua'?'Donghua':'Anime')+' releases…';$('grid').innerHTML='<div class="empty">Fetching live releases…</div>';$('reload').disabled=true;try{const items=await getList(kind);if(id!==state.loadId||kind!==state.kind)return;state.items=items;state.loaded=true;render();$('status').textContent=items.length+' current '+(kind==='donghua'?'Donghua':'Anime')+' titles loaded · live release feed'}catch(_){if(id!==state.loadId)return;state.items=[];state.loaded=false;render();$('status').textContent=(kind==='donghua'?'Donghua':'Anime')+' live feed unavailable right now. Try Refresh now.'}finally{if(id===state.loadId)$('reload').disabled=false}}
-document.querySelectorAll('[data-kind]').forEach(b=>b.onclick=()=>{state.kind=b.dataset.kind;$('openAnime').hidden=state.kind!=='anime';state.query='';$('search').value='';document.querySelectorAll('[data-kind]').forEach(x=>x.setAttribute('aria-selected',String(x===b)));load()});
-async function loadMorevna4Files(){
- const box=$('morevna4Files');if(!box||box.dataset.loaded)return;box.dataset.loaded='1';
- try{
-  const r=await fetchWithTimeout('https://archive.org/metadata/morevna-ep4',{headers:{Accept:'application/json'},cache:'no-store'},9000);
-  if(!r.ok)throw Error('metadata unavailable');
-  const data=await r.json(),files=Array.isArray(data.files)?data.files:[];
-  const candidates=files.filter(f=>{const n=String(f.name||'').toLowerCase();const ext=/\.(mp4|webm|ogv)$/i.test(n);const bad=/(__ia_thumb|_thumb|\.torrent$|\.xml$|\.sqlite$|\.srt$|\.vtt$|\.jpg$|\.png$)/i.test(n);return ext&&!bad&&/^\d+$/.test(String(f.size||''))})
-   .map(f=>({...f,sizeBytes:Number(f.size),name:String(f.name)}))
-   .sort((a,b)=>{const ext=n=>/\.mp4$/i.test(n)?0:/\.webm$/i.test(n)?1:2;return ext(a.name)-ext(b.name)||a.sizeBytes-b.sizeBytes});
-  if(!candidates.length)throw Error('no direct video files listed');
-  box.innerHTML='';
-  candidates.slice(0,5).forEach(f=>{
-   const a=document.createElement('a');a.className='watch-link';a.href='https://archive.org/download/morevna-ep4/'+f.name.split('/').map(encodeURIComponent).join('/');a.rel='noopener noreferrer';a.download=f.name.split('/').pop();
-   const mb=f.sizeBytes/(1024*1024),label=f.name.split('/').pop();
-   a.textContent='⬇ Download '+label+' · '+(mb>=100?mb.toFixed(0):mb.toFixed(1))+' MB';
-   box.appendChild(a);
-  });
- }catch(_){
-  box.innerHTML='<a class="watch-link" href="https://archive.org/details/morevna-ep4" target="_blank" rel="noopener noreferrer">Open Morevna Episode 4 downloads</a><span style="color:var(--muted);font-size:.8rem">The automatic file list could not be loaded; the archive page lists any available downloads.</span>';
- }
-}
-loadMorevna4Files();
-$('openAnime').hidden=state.kind!=='anime';let timer; $('search').oninput=e=>{state.query=e.target.value;clearTimeout(timer);timer=setTimeout(()=>render(),120)};$('reload').onclick=load;$('playOpenAnime').onclick=()=>openPlayer('Morevna Episode 3.0.2 (English) — 360p','https://upload.wikimedia.org/wikipedia/commons/transcoded/a/a7/Morevna_Episode_3.0.2_%28English%29.webm/Morevna_Episode_3.0.2_%28English%29.webm.360p.vp9.webm');
-$('closePlayer').onclick=()=>{$('player').pause();$('player').removeAttribute('src');$('player').load();$('playerModal').hidden=true};$('playerModal').onclick=e=>{if(e.target===$('playerModal'))$('closePlayer').click()};load();setInterval(()=>{if(!document.hidden)load()},1800000);
+document.querySelectorAll('[data-kind]').forEach(b=>b.onclick=()=>{state.kind=b.dataset.kind;$('openAnime').hidden=state.kind!=='anime';state.query='';$('search').value='';document.querySelectorAll('[data-kind]').forEach(x=>x.setAttribute('aria-selected',String(x===b)));render();const count=state.items.filter(x=>String(x.kind||'anime')===state.kind).length;$('status').textContent=count+' '+(state.kind==='donghua'?'authorized Donghua':'open-licensed / authorized Anime and animation')+' entries in the local download library';});
+let searchTimer;$('search').oninput=e=>{state.query=e.target.value;clearTimeout(searchTimer);searchTimer=setTimeout(render,100)};$('reload').onclick=load;
+$('playOpenAnime').onclick=()=>{const video=$('player');video.pause();video.removeAttribute('src');video.load();video.src='https://upload.wikimedia.org/wikipedia/commons/transcoded/a/a7/Morevna_Episode_3.0.2_%28English%29.webm/Morevna_Episode_3.0.2_%28English%29.webm.360p.vp9.webm';$('playerTitle').textContent='Morevna Episode 3.0.2 (English) — 360p';$('playerFoot').textContent='C. O. Eric watermark is displayed in this player. The source file is hosted externally.';$('playerModal').hidden=false;video.play().catch(()=>{})};
+$('closePlayer').onclick=()=>{$('player').pause();$('player').removeAttribute('src');$('player').load();$('playerModal').hidden=true};$('playerModal').onclick=e=>{if(e.target===$('playerModal'))$('closePlayer').click()};
+$('openAnime').hidden=false;load();
 })();
 </script>
 </body>
