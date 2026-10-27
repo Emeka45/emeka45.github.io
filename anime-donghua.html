@@ -77,8 +77,8 @@ function safeImage(s){try{const u=new URL(s);return ['https:','http:'].includes(
 
 function detailSlug(item){
  let slug=String(item.slug||'').trim();
- if(/^https?:\\/\\//i.test(slug)){try{slug=new URL(slug).pathname.split('/').filter(Boolean).pop()||''}catch(_){}}
- return slug.replace(/^\\/+|\\/+$/g,'');
+ if(/^https?:\/\//i.test(slug)){try{slug=new URL(slug).pathname.split('/').filter(Boolean).pop()||''}catch(_){}}
+ return slug.replace(/^\/+|\/+$/g,'');
 }
 function collectEpisodeRows(payload){
  const candidates=[];
@@ -108,7 +108,7 @@ function collectEpisodeRows(payload){
 }
 async function fetchEpisodeMetadata(item,kind){
  const slug=detailSlug(item);
- if(!slug||/^\\d+$/.test(slug))return [];
+ if(!slug||/^\d+$/.test(slug))return [];
  const prefixes=kind==='donghua'?['/dnh/series/','/dgb/series/']:['/otd/anime/'];
  for(const prefix of prefixes){
   try{
