@@ -1,4 +1,192 @@
 {
-  "version": 1,
-  "titles": []
+  "version": 2,
+  "policy": "Only list media that is openly licensed or explicitly authorized for distribution. The website provides links; third-party source hosts store the media unless a file is specifically hosted in this repository.",
+  "titles": [
+    {
+      "id": "morevna-episode-3",
+      "kind": "anime",
+      "title": "Morevna Episode 3.0.2 (English)",
+      "description": "Independent sci-fi anime episode. Check the source page for licence, attribution and music terms.",
+      "license": "CC BY 4.0 — verify source-page credits",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Morevna_Episode_3.0.2_(English).webm",
+      "downloads": [
+        {
+          "label": "240p WebM · lowest data",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/a7/Morevna_Episode_3.0.2_%28English%29.webm/Morevna_Episode_3.0.2_%28English%29.webm.240p.vp9.webm?download="
+        },
+        {
+          "label": "360p WebM",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/a7/Morevna_Episode_3.0.2_%28English%29.webm/Morevna_Episode_3.0.2_%28English%29.webm.360p.vp9.webm?download="
+        }
+      ]
+    },
+    {
+      "id": "morevna-demo",
+      "kind": "anime",
+      "title": "Morevna Demo",
+      "description": "Short animation demo. Visual work and music have different licence terms; review creator credits before reuse.",
+      "license": "Visuals CC BY 3.0; music CC BY-NC-SA 3.0",
+      "sourceUrl": "https://morevnaproject.org/anime/demo/",
+      "downloads": [
+        {
+          "label": "MP4 · 1080p · about 32 MB",
+          "url": "https://archive.org/download/TheBeautifulQueenMaryaMorevnaDemo/demo-20121110-final-1920x1080.mp4?download=1"
+        },
+        {
+          "label": "OGV · about 25 MB",
+          "url": "https://archive.org/download/TheBeautifulQueenMaryaMorevnaDemo/demo-20121110-final-1920x1080.ogv?download=1"
+        }
+      ]
+    },
+    {
+      "id": "coffee-run",
+      "kind": "anime",
+      "title": "Coffee Run",
+      "description": "Blender open animation. Use the source page for current attribution details.",
+      "license": "CC BY 4.0 — check source page",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coffee_Run_-_Blender_Open_Movie-full_movie.webm",
+      "downloads": [
+        {
+          "label": "240p WebM · lowest data",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/80/Coffee_Run_-_Blender_Open_Movie-full_movie.webm/Coffee_Run_-_Blender_Open_Movie-full_movie.webm.240p.vp9.webm?download="
+        },
+        {
+          "label": "360p WebM",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/80/Coffee_Run_-_Blender_Open_Movie-full_movie.webm/Coffee_Run_-_Blender_Open_Movie-full_movie.webm.360p.vp9.webm?download="
+        },
+        {
+          "label": "480p WebM",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/80/Coffee_Run_-_Blender_Open_Movie-full_movie.webm/Coffee_Run_-_Blender_Open_Movie-full_movie.webm.480p.vp9.webm?download="
+        }
+      ]
+    },
+    {
+      "id": "wing-it",
+      "kind": "anime",
+      "title": "Wing It!",
+      "description": "Blender Studio open animation. Use the source page for current attribution details.",
+      "license": "CC BY 4.0 — check source page",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:WING_IT%21_-_Blender_Open_Movie-full_movie.webm",
+      "downloads": [
+        {
+          "label": "240p WebM · lowest data",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/3/38/WING_IT%21_-_Blender_Open_Movie-full_movie.webm/WING_IT%21_-_Blender_Open_Movie-full_movie.webm.240p.vp9.webm?download="
+        },
+        {
+          "label": "360p WebM",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/3/38/WING_IT%21_-_Blender_Open_Movie-full_movie.webm/WING_IT%21_-_Blender_Open_Movie-full_movie.webm.360p.vp9.webm?download="
+        },
+        {
+          "label": "480p WebM",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/3/38/WING_IT%21_-_Blender_Open_Movie-full_movie.webm/WING_IT%21_-_Blender_Open_Movie-full_movie.webm.480p.vp9.webm?download="
+        }
+      ]
+    },
+    {
+      "id": "spring",
+      "kind": "anime",
+      "title": "Spring",
+      "description": "Blender Studio open film; download options may be large.",
+      "license": "Check official source licence and attribution",
+      "sourceUrl": "https://studio.blender.org/films/spring/",
+      "downloads": [
+        {
+          "label": "240p WebM",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/a5/Spring_-_Blender_Open_Movie.webm/Spring_-_Blender_Open_Movie.webm.240p.vp9.webm?download="
+        },
+        {
+          "label": "360p WebM",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/a5/Spring_-_Blender_Open_Movie.webm/Spring_-_Blender_Open_Movie.webm.360p.vp9.webm?download="
+        },
+        {
+          "label": "480p WebM",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/a5/Spring_-_Blender_Open_Movie.webm/Spring_-_Blender_Open_Movie.webm.480p.vp9.webm?download="
+        }
+      ]
+    },
+    {
+      "id": "charge",
+      "kind": "anime",
+      "title": "Charge",
+      "description": "Blender Studio open film; check source-page terms before reuse.",
+      "license": "Check official source licence and attribution",
+      "sourceUrl": "https://studio.blender.org/films/charge/",
+      "downloads": [
+        {
+          "label": "240p WebM",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b5/Charge_-_Blender_Open_Movie-full_movie.webm/Charge_-_Blender_Open_Movie-full_movie.webm.240p.vp9.webm?download="
+        },
+        {
+          "label": "360p WebM",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b5/Charge_-_Blender_Open_Movie-full_movie.webm/Charge_-_Blender_Open_Movie-full_movie.webm.360p.vp9.webm?download="
+        },
+        {
+          "label": "480p WebM",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b5/Charge_-_Blender_Open_Movie-full_movie.webm/Charge_-_Blender_Open_Movie-full_movie.webm.480p.vp9.webm?download="
+        }
+      ]
+    },
+    {
+      "id": "sprite-fright",
+      "kind": "anime",
+      "title": "Sprite Fright",
+      "description": "Blender Studio open film; check source-page terms before reuse.",
+      "license": "Check official source licence and attribution",
+      "sourceUrl": "https://studio.blender.org/films/sprite-fright/",
+      "downloads": [
+        {
+          "label": "240p WebM",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/7/76/Sprite_Fright_-_Blender_Open_Movie-full_movie.webm/Sprite_Fright_-_Blender_Open_Movie-full_movie.webm.240p.vp9.webm?download="
+        },
+        {
+          "label": "360p WebM",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/7/76/Sprite_Fright_-_Blender_Open_Movie-full_movie.webm/Sprite_Fright_-_Blender_Open_Movie-full_movie.webm.360p.vp9.webm?download="
+        },
+        {
+          "label": "480p WebM",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/7/76/Sprite_Fright_-_Blender_Open_Movie-full_movie.webm/Sprite_Fright_-_Blender_Open_Movie-full_movie.webm.480p.vp9.webm?download="
+        }
+      ]
+    },
+    {
+      "id": "caminandes-gran-dillama",
+      "kind": "anime",
+      "title": "Caminandes: Gran Dillama",
+      "description": "Blender open animation. Follow source page for attribution and share-alike requirements.",
+      "license": "CC BY-SA 3.0 — check source page",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Caminandes_-_Gran_Dillama_-_Blender_Foundation%27s_new_Open_Movie.webm",
+      "downloads": [
+        {
+          "label": "240p WebM",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/7/7c/Caminandes_-_Gran_Dillama_-_Blender_Foundation%27s_new_Open_Movie.webm/Caminandes_-_Gran_Dillama_-_Blender_Foundation%27s_new_Open_Movie.webm.240p.vp9.webm?download="
+        },
+        {
+          "label": "360p WebM",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/7/7c/Caminandes_-_Gran_Dillama_-_Blender_Foundation%27s_new_Open_Movie.webm/Caminandes_-_Gran_Dillama_-_Blender_Foundation%27s_new_Open_Movie.webm.360p.vp9.webm?download="
+        },
+        {
+          "label": "480p WebM",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/7/7c/Caminandes_-_Gran_Dillama_-_Blender_Foundation%27s_new_Open_Movie.webm/Caminandes_-_Gran_Dillama_-_Blender_Foundation%27s_new_Open_Movie.webm.480p.vp9.webm?download="
+        }
+      ]
+    },
+    {
+      "id": "big-buck-bunny",
+      "kind": "anime",
+      "title": "Big Buck Bunny",
+      "description": "Blender Foundation open movie. MOV files are hosted in the official Blender download directory.",
+      "license": "CC BY 3.0; retain full end credits and attribution",
+      "sourceUrl": "https://peach.blender.org/download/",
+      "downloads": [
+        {
+          "label": "720p MOV · smaller",
+          "url": "https://download.blender.org/demo/movies/BBB/big_buck_bunny_720p_h264.mov"
+        },
+        {
+          "label": "1080p MOV",
+          "url": "https://download.blender.org/demo/movies/BBB/big_buck_bunny_1080p_h264.mov"
+        }
+      ]
+    }
+  ]
 }
