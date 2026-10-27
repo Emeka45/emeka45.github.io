@@ -187,6 +187,32 @@
           "url": "https://download.blender.org/demo/movies/BBB/big_buck_bunny_1080p_h264.mov"
         }
       ]
+    },
+    {
+      "id": "hutong-meow",
+      "kind": "donghua",
+      "title": "Hutong Meow",
+      "description": "Chinese stop-motion animated short by Kaide Wang, about a cat exploring old Beijing.",
+      "license": "Creative Commons Attribution 3.0 Unported. Credit Kaide Wang and link to the licence.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hutong_Meow.webm",
+      "downloads": [
+        {
+          "label": "240p WebM · lowest data",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/83/Hutong_Meow.webm/Hutong_Meow.webm.240p.vp9.webm?download="
+        },
+        {
+          "label": "360p WebM",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/83/Hutong_Meow.webm/Hutong_Meow.webm.360p.vp9.webm?download="
+        },
+        {
+          "label": "480p WebM",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/83/Hutong_Meow.webm/Hutong_Meow.webm.480p.vp9.webm?download="
+        },
+        {
+          "label": "720p WebM",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/83/Hutong_Meow.webm/Hutong_Meow.webm.720p.vp9.webm?download="
+        }
+      ]
     }
   ]
 }
