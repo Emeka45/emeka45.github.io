@@ -32,22 +32,34 @@ const $=id=>document.getElementById(id);
 function first(obj,keys){for(const k of keys){if(obj&&obj[k]!==undefined&&obj[k]!==null&&obj[k]!=='')return obj[k]}return ''}
 function normalize(payload){
  let rows=Array.isArray(payload)?payload:[];
- if(!rows.length&&payload&&typeof payload==='object'){
-   for(const key of ['data','results','anime','series','items','ongoing','list','donghua']){if(Array.isArray(payload[key])){rows=payload[key];break}}
+ const keys=['data','results','anime','series','items','ongoing','ongoing_anime','complete_anime','list','donghua','popular','recent'];
+ function findRows(value,depth){
+  if(!value||typeof value!=='object'||depth>4)return [];
+  if(Array.isArray(value))return value;
+  for(const key of keys){if(Array.isArray(value[key])&&value[key].length)return value[key]}
+  for(const key of ['data','result','response','payload']){
+   const nested=value[key];
+   if(nested&&typeof nested==='object'){const found=findRows(nested,depth+1);if(found.length)return found}
+  }
+  return [];
  }
- return rows.map((x,i)=>{
-  if(typeof x==='string')return {title:x,slug:'',poster:'',description:'',source:'Catalogue'};
+ if(!rows.length)rows=findRows(payload,0);
+ return rows.map(x=>{
+  if(typeof x==='string')return {title:x,slug:'',poster:'',description:'',status:'',source:'Catalogue',streamingEpisodes:[],raw:x};
+  const title=first(x,['title','name','judul','englishTitle','romaji','seriesTitle','anime_title','series_name']);
+  const posterValue=first(x,['poster','cover','image','thumbnail','thumb','posterUrl','coverImage','cover_url','image_url']);
+  const slug=first(x,['slug','endpoint','anime_slug','series_slug','animeId','id','url','otakudesu_url','link']);
   return {
-   title:String(first(x,['title','name','judul','englishTitle','romaji','seriesTitle'])||'Untitled series'),
-   slug:String(first(x,['slug','id','url','animeId'])||''),
-   poster:String(first(x,['poster','cover','image','thumbnail','thumb','posterUrl','coverImage'])||''),
-   description:String(first(x,['description','synopsis','desc'])||''),
-   status:String(first(x,['status','type','episode','episodes','season'])||''),
+   title:String(title||'Untitled series'),
+   slug:String(slug||''),
+   poster:String(typeof posterValue==='object'?first(posterValue,['large','url','src']):posterValue||''),
+   description:String(first(x,['description','synopsis','desc','sinopsis'])||''),
+   status:String(first(x,['status','type','episode','episodes','season','latest_episode','latestEpisode'])||''),
    source:String(first(x,['source','studio'])||'Catalogue'),
    streamingEpisodes:Array.isArray(x.streamingEpisodes)?x.streamingEpisodes:[],
    raw:x
   };
- }).filter(x=>x.title);
+ }).filter(x=>x.title&&x.title!=='Untitled series');
 }
 async function getList(kind){
  const paths=kind==='donghua'?['/dnh/series','/dgb/home']:['/otd/ongoing','/otd/home'];
@@ -82,7 +94,6 @@ function detailSlug(item){
 }
 function collectEpisodeRows(payload){
  const candidates=[];
- const seen=new Set();
  function walk(value,depth){
   if(!value||depth>5)return;
   if(Array.isArray(value)){
@@ -175,8 +186,8 @@ function render(){
        const link=document.createElement('a');
        link.className='watch-link';
        link.target='_blank';link.rel='noopener noreferrer';
-       link.href=state.kind==='anime'?'https://anilist.co/search/anime?search='+encodeURIComponent(item.title):'https://www.google.com/search?q='+encodeURIComponent(item.title+' official streaming');
-       link.textContent='Legal viewing options';
+       link.href=state.kind==='anime'?'https://anilist.co/search/anime?search='+encodeURIComponent(item.title):'https://www.google.com/search?q='+encodeURIComponent(item.title+' official licensed streaming');
+       link.textContent='Find licensed options';
        link.style.cssText='flex-shrink:0;max-width:45%;text-align:center';
        row.append(label,link);frag.appendChild(row);
       });
