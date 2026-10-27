@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0714">
+<meta name="description" content="Browse Anime and Donghua in a dedicated, lightweight section of C. O. Eric.">
+<title>Anime & Donghua — C. O. Eric</title>
+<style>
+:root{color-scheme:dark;--bg:#090711;--panel:#151020;--line:#30263f;--text:#f8f5ff;--muted:#bdb3cd;--accent:#b18aff;--accent2:#7c5bd6}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 85% 0%,#291644 0,transparent 42%),var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0;border-bottom:1px solid var(--line)}.brand{font-weight:850;letter-spacing:-.03em}.back{color:#e0d0ff;font-weight:700}.hero{padding:48px 0 26px}.eyebrow{font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#d8c4ff}.hero h1{font-size:clamp(2.3rem,8vw,4.5rem);line-height:1.02;letter-spacing:-.06em;margin:10px 0}.hero p{color:var(--muted);max-width:680px;margin:0}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:25px 0 14px}.tab,button,.search{font:inherit}.tab,button{border:1px solid var(--line);background:#171020;color:var(--text);border-radius:12px;padding:10px 15px;cursor:pointer;font-weight:750}.tab[aria-selected=true],button.primary{background:linear-gradient(135deg,var(--accent2),#a986f2);border-color:transparent;color:#fff}.tools{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 18px}.search{flex:1;min-width:190px;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#110c1a;color:var(--text);outline:none}.search:focus{border-color:var(--accent)}.status{padding:10px 13px;border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:.88rem;margin:14px 0}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.card{min-width:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:linear-gradient(145deg,#191225,#100c17)}.poster{aspect-ratio:3/4;display:grid;place-items:center;background:linear-gradient(145deg,#352052,#151020);color:#d6c1ff;font-size:2.4rem;overflow:hidden}.poster img{width:100%;height:100%;object-fit:cover}.info{padding:13px}.info h3{font-size:1rem;line-height:1.35;margin:0 0 7px;overflow-wrap:anywhere}.meta{color:var(--muted);font-size:.82rem;min-height:2.4em}.card .source{display:inline-block;margin-top:10px;font-size:.78rem;color:#d7c5ff;font-weight:750}.empty{padding:30px 18px;border:1px dashed var(--line);border-radius:16px;color:var(--muted);text-align:center;grid-column:1/-1}.note{font-size:.88rem;color:var(--muted);padding:17px 0 40px}.note strong{color:#eee5ff}.footer{border-top:1px solid var(--line);padding:20px 0;color:var(--muted);font-size:.85rem}
+@media(max-width:850px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:580px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.hero{padding-top:35px}.info{padding:10px}.top{align-items:flex-start}.tab,button{padding:9px 12px;font-size:.92rem}}
+</style>
+</head>
+<body>
+<header class="wrap top"><a class="brand" href="index.html">C. O. Eric <span style="color:#b18aff">/ Anime & Donghua</span></a><a class="back" href="index.html">← Main site</a></header>
+<main class="wrap">
+<section class="hero"><div class="eyebrow">A separate entertainment section</div><h1>Anime <span style="color:#b18aff">&</span> Donghua</h1><p>Discover Japanese anime and Chinese animation in one lightweight catalogue. Anime & Donghua is separate from Video Hub; the catalogue is designed for low-data mobile browsing.</p></section>
+<div class="tabs" role="tablist" aria-label="Choose catalogue"><button class="tab" id="animeTab" role="tab" aria-selected="true" data-kind="anime">🎌 Anime</button><button class="tab" id="donghuaTab" role="tab" aria-selected="false" data-kind="donghua">🏮 Donghua</button></div>
+<div class="tools"><input class="search" id="search" type="search" placeholder="Search titles…" aria-label="Search titles"><button id="reload" class="primary" type="button">Refresh</button></div>
+<div class="status" id="status" role="status" aria-live="polite">Loading catalogue…</div>
+<section class="grid" id="grid" aria-label="Titles"></section>
+<p class="note"><strong>About episode links:</strong> this first pass connects the catalogue layer only. Direct watch/download links will be enabled for sources that are verified and authorized to provide the files or streams. This keeps the new section independent and prevents broken or expiring links from being presented as reliable downloads.</p>
+</main>
+<footer class="footer"><div class="wrap">© C. O. Eric · <a href="videos.html">Video Hub</a> remains a separate section.</div></footer>
+<script>
+(function(){
+'use strict';
+const API='https://shivraapi.my.id';
+const state={kind:'anime',items:[],query:'',loaded:false};
+const $=id=>document.getElementById(id);
+function first(obj,keys){for(const k of keys){if(obj&&obj[k]!==undefined&&obj[k]!==null&&obj[k]!=='')return obj[k]}return ''}
+function normalize(payload){
+ let rows=Array.isArray(payload)?payload:[];
+ if(!rows.length&&payload&&typeof payload==='object'){
+   for(const key of ['data','results','anime','series','items','ongoing','list','donghua']){if(Array.isArray(payload[key])){rows=payload[key];break}}
+ }
+ return rows.map((x,i)=>{
+  if(typeof x==='string')return {title:x,slug:'',poster:'',description:'',source:'Catalogue'};
+  return {
+   title:String(first(x,['title','name','judul','englishTitle','romaji','seriesTitle'])||'Untitled series'),
+   slug:String(first(x,['slug','id','url','animeId'])||''),
+   poster:String(first(x,['poster','cover','image','thumbnail','thumb','posterUrl','coverImage'])||''),
+   description:String(first(x,['description','synopsis','desc'])||''),
+   status:String(first(x,['status','type','episode','episodes','season'])||''),
+   source:String(first(x,['source','studio'])||'Catalogue'),
+   raw:x
+  };
+ }).filter(x=>x.title);
+}
+async function getList(kind){
+ const paths=kind==='donghua'?['/dnh/series','/dgb/home']:['/otd/ongoing','/otd/home'];
+ let lastError;
+ for(const path of paths){
+  try{
+   const response=await fetch(API+path,{headers:{'Accept':'application/json'},cache:'no-store'});
+   if(!response.ok)throw new Error('HTTP '+response.status+' at '+path);
+   const data=await response.json();const rows=normalize(data);
+   if(rows.length)return rows;
+   lastError=new Error('No title list returned by '+path);
+  }catch(e){lastError=e}
+ }
+ throw lastError||new Error('No catalogue response');
+}
+function escapeHtml(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function safeImage(s){try{const u=new URL(s);return ['https:','http:'].includes(u.protocol)?u.href:''}catch(_){return ''}}
+function render(){
+ const q=state.query.trim().toLowerCase();
+ const rows=state.items.filter(x=>(x.title+' '+x.description+' '+x.status).toLowerCase().includes(q));
+ $('grid').innerHTML='';
+ if(!rows.length){$('grid').innerHTML='<div class="empty">'+(state.loaded?'No matching titles. Try another search or refresh the catalogue.':'The catalogue could not be loaded right now. Try Refresh in a moment.')+'</div>';return}
+ const fragment=document.createDocumentFragment();
+ rows.slice(0,100).forEach(item=>{
+  const card=document.createElement('article');card.className='card';
+  const image=safeImage(item.poster);
+  const poster=image?'<img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="'+escapeHtml(image)+'" alt="">':'<span aria-hidden="true">'+(state.kind==='donghua'?'🏮':'🎌')+'</span>';
+  card.innerHTML='<div class="poster">'+poster+'</div><div class="info"><h3>'+escapeHtml(item.title)+'</h3><div class="meta">'+escapeHtml(item.status||item.description|| (state.kind==='donghua'?'Chinese animation':'Japanese animation'))+'</div><span class="source">'+(state.kind==='donghua'?'Donghua catalogue':'Anime catalogue')+'</span></div>';
+  fragment.appendChild(card);
+ });
+ $('grid').appendChild(fragment);
+}
+async function load(){
+ $('status').textContent='Loading '+(state.kind==='donghua'?'Donghua':'Anime')+' catalogue…';
+ $('grid').innerHTML='<div class="empty">Fetching titles…</div>';
+ $('reload').disabled=true;
+ try{
+  state.items=await getList(state.kind);state.loaded=true;render();
+  $('status').textContent=state.items.length+' titles loaded · '+(state.kind==='donghua'?'Donghua':'Anime')+' catalogue';
+ }catch(e){
+  state.items=[];state.loaded=false;render();
+  $('status').textContent='Live catalogue is temporarily unavailable. '+(e&&e.message?e.message:'Please retry.');
+ }
+ finally{$('reload').disabled=false}
+}
+document.querySelectorAll('[data-kind]').forEach(btn=>btn.addEventListener('click',()=>{
+ state.kind=btn.dataset.kind;
+ document.querySelectorAll('[data-kind]').forEach(b=>b.setAttribute('aria-selected',String(b===btn)));
+ state.query='';$('search').value='';load();
+}));
+$('search').addEventListener('input',e=>{state.query=e.target.value;render()});
+$('reload').addEventListener('click',load);
+load();
+})();
+</script>
+</body>
+</html>
