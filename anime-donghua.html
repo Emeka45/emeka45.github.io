@@ -130,9 +130,9 @@ async function loadMorevna4Files(){
   const r=await fetchWithTimeout('https://archive.org/metadata/morevna-ep4',{headers:{Accept:'application/json'},cache:'no-store'},9000);
   if(!r.ok)throw Error('metadata unavailable');
   const data=await r.json(),files=Array.isArray(data.files)?data.files:[];
-  const candidates=files.filter(f=>{const n=String(f.name||'').toLowerCase();const ext=/\\.(mp4|webm|ogv)$/i.test(n);const bad=/(__ia_thumb|_thumb|\.torrent$|\.xml$|\.sqlite$|\.srt$|\.vtt$|\.jpg$|\.png$)/i.test(n);return ext&&!bad&&/^\\d+$/.test(String(f.size||''))})
+  const candidates=files.filter(f=>{const n=String(f.name||'').toLowerCase();const ext=/\.(mp4|webm|ogv)$/i.test(n);const bad=/(__ia_thumb|_thumb|\.torrent$|\.xml$|\.sqlite$|\.srt$|\.vtt$|\.jpg$|\.png$)/i.test(n);return ext&&!bad&&/^\d+$/.test(String(f.size||''))})
    .map(f=>({...f,sizeBytes:Number(f.size),name:String(f.name)}))
-   .sort((a,b)=>{const ext=n=>/\\.mp4$/i.test(n)?0:/\\.webm$/i.test(n)?1:2;return ext(a.name)-ext(b.name)||a.sizeBytes-b.sizeBytes});
+   .sort((a,b)=>{const ext=n=>/\.mp4$/i.test(n)?0:/\.webm$/i.test(n)?1:2;return ext(a.name)-ext(b.name)||a.sizeBytes-b.sizeBytes});
   if(!candidates.length)throw Error('no direct video files listed');
   box.innerHTML='';
   candidates.slice(0,5).forEach(f=>{
