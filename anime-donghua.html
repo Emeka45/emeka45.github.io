@@ -84,7 +84,7 @@ function render(){
   const card=document.createElement('article');card.className='card';
   const image=safeImage(item.poster);
   const poster=image?'<img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="'+escapeHtml(image)+'" alt="">':'<span aria-hidden="true">'+(state.kind==='donghua'?'🏮':'🎌')+'</span>';
-  const watchLinks=(item.streamingEpisodes||[]).filter(ep=>ep&&ep.url&&/^https?:\\/\\//i.test(ep.url)).slice(0,3).map(ep=>'<a class="watch-link" target="_blank" rel="noopener noreferrer" href="'+escapeHtml(ep.url)+'">▶ '+escapeHtml(ep.site||ep.title||'Watch officially')+'</a>').join('');
+  const watchLinks=(item.streamingEpisodes||[]).filter(ep=>ep&&ep.url&&/^https?:\/\//i.test(ep.url)).slice(0,3).map(ep=>'<a class="watch-link" target="_blank" rel="noopener noreferrer" href="'+escapeHtml(ep.url)+'">▶ '+escapeHtml(ep.site||ep.title||'Watch officially')+'</a>').join('');
   card.innerHTML='<div class="poster">'+poster+'</div><div class="info"><h3>'+escapeHtml(item.title)+'</h3><div class="meta">'+escapeHtml(item.status||item.description|| (state.kind==='donghua'?'Chinese animation':'Japanese animation'))+'</div><span class="source">'+escapeHtml(item.source|| (state.kind==='donghua'?'Donghua catalogue':'Anime catalogue'))+'</span>'+(watchLinks?'<div class="watch-links">'+watchLinks+'</div>':'')+'</div>';
   fragment.appendChild(card);
  });
