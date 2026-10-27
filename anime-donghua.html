@@ -51,13 +51,36 @@ function normalize(payload){let rows=Array.isArray(payload)?payload:[];const key
 async function shivra(kind){const paths=kind==='donghua'?['/dnh/series','/dgb/home']:['/otd/ongoing','/otd/home'];let last;for(const path of paths){try{const r=await fetchWithTimeout(API+path,{headers:{Accept:'application/json'},cache:'no-store'});if(!r.ok){last=Error('HTTP '+r.status);continue}const rows=normalize(await r.json());if(rows.length)return rows;last=Error('No titles from '+path)}catch(e){last=e}}throw last||Error('Catalogue unavailable')}
 async function getList(kind){try{return await aniListFeed(kind)}catch(primary){try{return await shivra(kind)}catch(fallback){throw primary}}}
 function episodeRows(payload){const found=[];function walk(v,d){if(!v||d>6)return;if(Array.isArray(v)){if(v.length&&v.some(x=>x&&typeof x==='object'&&(x.episode||x.episodeNumber||x.slug||x.url)))found.push(v);v.slice(0,100).forEach(x=>walk(x,d+1));return}if(typeof v==='object')for(const [k,x] of Object.entries(v)){if(Array.isArray(x)&&/episode|eps|chapter/i.test(k))found.push(x);if(x&&typeof x==='object')walk(x,d+1)}}walk(payload,0);found.sort((a,b)=>b.length-a.length);return found[0]||[]}
+async function providerEpisodesForCatalogueItem(item){
+ const kind=state.kind,title=String(item.title||'').trim();if(!title)return[];
+ const searchRoutes=kind==='donghua'?['/dgb/search','/dnh/search']:['/otd/search'];
+ const detailRoutes=kind==='donghua'?['/dnh/series/','/dgb/series/']:['/otd/anime/'];
+ const normalizeTitle=s=>String(s||'').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
+ const target=normalizeTitle(title);
+ for(const route of searchRoutes){
+  for(const param of ['q','keyword','query']){
+   try{
+    const u=API+route+'?'+param+'='+encodeURIComponent(title);
+    const r=await fetchWithTimeout(u,{headers:{Accept:'application/json'},cache:'no-store'},9000);if(!r.ok)continue;
+    const results=normalize(await r.json());if(!results.length)continue;
+    const scored=results.map(x=>{const t=normalizeTitle(x.title);let score=t===target?100:(t.includes(target)||target.includes(t)?70:0);const a=new Set(target.split(' ')),b=new Set(t.split(' '));let overlap=0;a.forEach(w=>{if(w.length>2&&b.has(w))overlap++});score=Math.max(score,Math.round(overlap/Math.max(1,a.size)*60));return{x,score}}).sort((a,b)=>b.score-a.score);
+    for(const match of scored.slice(0,3)){
+     if(match.score<45)continue;
+     const s=slug(match.x.slug);if(!s||/^\d+$/.test(s))continue;
+     for(const dr of detailRoutes){try{const d=await fetchWithTimeout(API+dr+encodeURIComponent(s),{headers:{Accept:'application/json'},cache:'no-store'},9000);if(d.ok){const rows=episodeRows(await d.json());if(rows.length)return rows}}catch(_){}}
+    }
+   }catch(_){}
+  }
+ }
+ return[]
+}
 async function details(item){
  const manifest=await loadMediaManifest(),entry=manifestTitle(item,manifest);
  const localEpisodes=Array.isArray(entry&&entry.episodes)?entry.episodes.map((x,i)=>({...x,title:String(x.title||('Episode '+(Number(x.number)||i+1))),number:Number(x.number)||i+1,slug:'',raw:x,manifestSource:true})): [];
  if(String(item.source||'').startsWith('AniList')){
   const episodes=(item.streamingEpisodes||[]).map((x,i)=>({title:String(x.title||('Available streaming episode '+(i+1))),number:i+1,url:x.url||'',slug:'',raw:x}));
   try{const id=Number(item.slug);if(id){const query='query ($id:Int) { Media(id:$id,type:ANIME) { airingSchedule(notYetAired:false,sort:TIME_DESC,perPage:10) { nodes { episode airingAt } } } }';const r=await fetchWithTimeout(ANILIST,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({query,variables:{id}})});if(r.ok){const p=await r.json();const nodes=p&&p.data&&p.data.Media&&p.data.Media.airingSchedule&&p.data.Media.airingSchedule.nodes;if(Array.isArray(nodes))nodes.forEach(n=>episodes.push({title:'Episode '+n.episode,number:n.episode,url:'',slug:'',scheduleOnly:true,airingAt:n.airingAt}))}}}catch(_){}
-  episodes.push(...localEpisodes);const seen=new Set();return episodes.filter(e=>{const k=String(e.number)+'|'+e.url+'|'+(e.manifestSource?'local':'catalogue');if(seen.has(k))return false;seen.add(k);return true}).sort((a,b)=>b.number-a.number)
+  let providerRows=[];try{providerRows=await providerEpisodesForCatalogueItem(item)}catch(_){}const mappedProvider=providerRows.map((x,i)=>({...epInfo(x,i),raw:x,providerEpisode:true}));episodes.push(...mappedProvider,...localEpisodes);const seen=new Set();return episodes.filter(e=>{const k=String(e.number)+'|'+e.url+'|'+(e.manifestSource?'local':e.providerEpisode?'provider':'catalogue');if(seen.has(k))return false;seen.add(k);return true}).sort((a,b)=>b.number-a.number)
  }
  const s=slug(item.slug);let providerEpisodes=[];
  if(s&&!/^\d+$/.test(s)){const routes=state.kind==='anime'?['/otd/anime/']:['/dnh/series/','/dgb/series/'];for(const route of routes){try{const r=await fetchWithTimeout(API+route+encodeURIComponent(s),{headers:{Accept:'application/json'},cache:'no-store'});if(r.ok){providerEpisodes=episodeRows(await r.json());if(providerEpisodes.length)break}}catch(_){}}}
