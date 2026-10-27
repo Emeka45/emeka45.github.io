@@ -1,11 +1,11 @@
 {
-  "finished_utc": "2026-10-26T15:59:46.251204+00:00",
+  "finished_utc": "2026-10-27T15:14:00.881385+00:00",
   "mode": "topic-specific-editorial-library",
   "published": true,
-  "title": "How to Make Better Decisions With Limited Information",
-  "category": "Psychology & Human Behaviour",
-  "file": "how-to-make-better-decisions-with-limited-information.html",
-  "word_count": 225,
+  "title": "How to Build a Simple Personal Knowledge System",
+  "category": "Education",
+  "file": "how-to-build-a-simple-personal-knowledge-system.html",
+  "word_count": 242,
   "quality_checks": "passed",
   "note": "Only reviewed topic-specific content is published; generic fallback content is disabled."
 }
