@@ -74,6 +74,61 @@ async function getList(kind){
 }
 function escapeHtml(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function safeImage(s){try{const u=new URL(s);return ['https:','http:'].includes(u.protocol)?u.href:''}catch(_){return ''}}
+
+function detailSlug(item){
+ let slug=String(item.slug||'').trim();
+ if(/^https?:\\/\\//i.test(slug)){try{slug=new URL(slug).pathname.split('/').filter(Boolean).pop()||''}catch(_){}}
+ return slug.replace(/^\\/+|\\/+$/g,'');
+}
+function collectEpisodeRows(payload){
+ const candidates=[];
+ const seen=new Set();
+ function walk(value,depth){
+  if(!value||depth>5)return;
+  if(Array.isArray(value)){
+   if(value.length&&value.some(x=>x&&typeof x==='object'&&(/episode|eps|chapter/i.test(Object.keys(x).join(' '))||x.url||x.slug||x.id))){
+    const score=value.filter(x=>x&&typeof x==='object'&&(/episode|eps|title|name/i.test(Object.keys(x).join(' ')))).length;
+    candidates.push({rows:value,score});
+   }
+   value.slice(0,40).forEach(x=>walk(x,depth+1));return;
+  }
+  if(typeof value==='object'){
+   for(const [key,v] of Object.entries(value)){
+    if(Array.isArray(v)&&/episode|eps|chapter/i.test(key)){
+     const score=v.filter(x=>x&&typeof x==='object').length+100;
+     candidates.push({rows:v,score});
+    }
+    if(v&&typeof v==='object')walk(v,depth+1);
+   }
+  }
+ }
+ walk(payload,0);
+ candidates.sort((a,b)=>b.score-a.score);
+ return candidates.length?candidates[0].rows:[];
+}
+async function fetchEpisodeMetadata(item,kind){
+ const slug=detailSlug(item);
+ if(!slug||/^\\d+$/.test(slug))return [];
+ const prefixes=kind==='donghua'?['/dnh/series/','/dgb/series/']:['/otd/anime/'];
+ for(const prefix of prefixes){
+  try{
+   const response=await fetch(API+prefix+encodeURIComponent(slug),{headers:{'Accept':'application/json'},cache:'no-store'});
+   if(!response.ok)continue;
+   const payload=await response.json();
+   const rows=collectEpisodeRows(payload);
+   if(rows.length)return rows;
+  }catch(_){}
+ }
+ return [];
+}
+function episodeDisplay(ep,index){
+ if(typeof ep==='string')return {title:ep,number:index+1};
+ const title=String(first(ep,['title','name','episodeTitle','judul','episode_name'])||'');
+ const number=first(ep,['episodeNumber','episode_no','episodeNo','number','episode','ep','index']);
+ const cleanNumber=number!==''&&Number.isFinite(Number(number))?Number(number):index+1;
+ return {title:title||('Episode '+cleanNumber),number:cleanNumber};
+}
+
 function render(){
  const q=state.query.trim().toLowerCase();
  const rows=state.items.filter(x=>(x.title+' '+x.description+' '+x.status).toLowerCase().includes(q));
@@ -87,16 +142,50 @@ function render(){
   const watchLinks=(item.streamingEpisodes||[]).filter(ep=>ep&&ep.url&&/^https?:\/\//i.test(ep.url)).slice(0,3).map(ep=>'<a class="watch-link" target="_blank" rel="noopener noreferrer" href="'+escapeHtml(ep.url)+'">▶ '+escapeHtml(ep.site||ep.title||'Watch officially')+'</a>').join('');
   const infoUrl=state.kind==='anime'&&/^\d+$/.test(item.slug)?'https://anilist.co/anime/'+encodeURIComponent(item.slug):'https://anilist.co/search/anime?search='+encodeURIComponent(item.title);
   const infoLink=state.kind==='anime'?'<a class="watch-link" target="_blank" rel="noopener noreferrer" href="'+escapeHtml(infoUrl)+'">ⓘ Anime details & official streaming options</a>':'';
-  const detailButton='<button class="watch-link details-toggle" type="button" aria-expanded="false">＋ Episode & viewing details</button>';
-  const detailPanel='<div class="episode-details" hidden><p>'+escapeHtml(item.description||'No synopsis supplied by this catalogue.')+'</p><p>'+escapeHtml(item.status||'Episode count/status not supplied.')+'</p><p class="detail-hint">'+(watchLinks?'Use the listed official streaming links above.':'No episode-specific official streaming links were supplied for this title. Check the title information page for licensed viewing options.')+'</p></div>';
+  const detailButton='<button class="watch-link details-toggle" type="button" aria-expanded="false">＋ Load episode list & details</button>';
+  const detailPanel='<div class="episode-details" hidden><p>'+escapeHtml(item.description||'No synopsis supplied by this catalogue.')+'</p><p>'+escapeHtml(item.status||'Episode count/status not supplied.')+'</p><p class="episode-loading">Episode list has not been loaded.</p><div class="episode-list"></div><p class="detail-hint">Episode listings are metadata only. Use official/licensed viewing services; this page does not expose third-party video files or unverified download links.</p></div>';
   card.innerHTML='<div class="poster">'+poster+'</div><div class="info"><h3>'+escapeHtml(item.title)+'</h3><div class="meta">'+escapeHtml(item.status||item.description|| (state.kind==='donghua'?'Chinese animation':'Japanese animation'))+'</div><span class="source">'+escapeHtml(item.source|| (state.kind==='donghua'?'Donghua catalogue':'Anime catalogue'))+'</span>'+(watchLinks?'<div class="watch-links">'+watchLinks+'</div>':'')+(infoLink?'<div class="watch-links">'+infoLink+'</div>':'')+'<div class="watch-links">'+detailButton+detailPanel+'</div></div>';
   const toggle=card.querySelector('.details-toggle');
-  toggle.addEventListener('click',()=>{
+  toggle.addEventListener('click',async()=>{
    const panel=card.querySelector('.episode-details');
    const opening=panel.hidden;
    panel.hidden=!opening;
    toggle.setAttribute('aria-expanded',String(opening));
-   toggle.textContent=opening?'− Hide details':'＋ Episode & viewing details';
+   toggle.textContent=opening?'− Hide details':'＋ Load episode list & details';
+   if(opening&&!panel.dataset.loaded&&!panel.dataset.loading){
+    panel.dataset.loading='1';
+    const loading=panel.querySelector('.episode-loading');
+    const list=panel.querySelector('.episode-list');
+    loading.textContent='Loading episode list…';
+    try{
+     const episodes=await fetchEpisodeMetadata(item,state.kind);
+     panel.dataset.loaded='1';
+     if(!episodes.length){
+      loading.textContent='No episode list was returned by this catalogue for this title.';
+     }else{
+      loading.textContent=episodes.length+' episode entries found';
+      const frag=document.createDocumentFragment();
+      episodes.slice(0,200).forEach((ep,index)=>{
+       const data=episodeDisplay(ep,index);
+       const row=document.createElement('div');
+       row.style.cssText='display:flex;gap:8px;align-items:flex-start;justify-content:space-between;padding:7px 0;border-bottom:1px solid #30263f';
+       const label=document.createElement('span');
+       label.textContent='Ep. '+data.number+' — '+data.title;
+       label.style.cssText='min-width:0;overflow-wrap:anywhere;color:#f3edff';
+       const link=document.createElement('a');
+       link.className='watch-link';
+       link.target='_blank';link.rel='noopener noreferrer';
+       link.href=state.kind==='anime'?'https://anilist.co/search/anime?search='+encodeURIComponent(item.title):'https://www.google.com/search?q='+encodeURIComponent(item.title+' official streaming');
+       link.textContent='Legal viewing options';
+       link.style.cssText='flex-shrink:0;max-width:45%;text-align:center';
+       row.append(label,link);frag.appendChild(row);
+      });
+      list.appendChild(frag);
+      if(episodes.length>200){const more=document.createElement('p');more.textContent='Showing first 200 episodes to keep the page lightweight.';list.appendChild(more)}
+     }
+    }catch(_){loading.textContent='Could not load episode metadata right now. Try again later.'}
+    finally{delete panel.dataset.loading}
+   }
   });
   fragment.appendChild(card);
  });
