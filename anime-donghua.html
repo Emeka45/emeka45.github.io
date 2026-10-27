@@ -152,33 +152,35 @@ async function fetchEpisodeMetadata(item,kind){
 }
 function safeHttpUrl(value){try{const u=new URL(String(value||''));return (u.protocol==='https:'||u.protocol==='http:')?u.href:''}catch(_){return ''}}
 function collectMediaOptions(payload){
- const root=payload&&payload.data&&typeof payload.data==='object'?payload.data:payload;
- const episode=root&&(root.episode_detail||root.episodeDetail||root.episode_data||root.episodeData||root.episode||root);
  const streams=[],downloads=[];
  function addStream(label,url){const safe=safeHttpUrl(url);if(safe&&!streams.some(x=>x.url===safe))streams.push({label:String(label||'Watch episode'),url:safe})}
  function addDownload(quality,server,url,size){const safe=safeHttpUrl(url);if(safe&&!downloads.some(x=>x.url===safe))downloads.push({quality:String(quality||'Download'),server:String(server||''),url:safe,size:String(size||'')})}
- if(episode&&typeof episode==='object'){
-  addStream('Watch episode',first(episode,['stream_url','streamUrl','stream_link','streamLink','play_url','playUrl']));
-  const servers=first(episode,['streaming','streaming_servers','streamingServers','servers']);
-  if(Array.isArray(servers))servers.forEach((x,i)=>addStream(first(x,['name','server','provider','label'])||('Player '+(i+1)),first(x,['url','link','stream_url','streamUrl'])));
-  const source=first(episode,['download_urls','downloadUrls','downloads','download_links','downloadLinks']);
-  if(Array.isArray(source))source.forEach((group,i)=>{
-   if(!group||typeof group!=='object')return;
-   const quality=first(group,['resolution','quality','label','name'])||('Download '+(i+1)),size=first(group,['size','file_size','fileSize']),urls=first(group,['urls','links','servers','download_links']);
-   if(Array.isArray(urls))urls.forEach(entry=>typeof entry==='string'?addDownload(quality,'',entry,size):entry&&addDownload(quality,first(entry,['provider','server','host','name']),first(entry,['url','link','download_url','downloadUrl']),first(entry,['size','file_size','fileSize'])||size));
-   else addDownload(quality,first(group,['provider','server','host']),first(group,['url','link','download_url','downloadUrl']),size);
-  });
-  if(source&&typeof source==='object'&&!Array.isArray(source))Object.entries(source).forEach(([quality,values])=>{
-   (Array.isArray(values)?values:[values]).forEach(v=>{
-    if(typeof v==='string')addDownload(quality,'',v,'');
-    else if(v&&typeof v==='object'){const nested=first(v,['urls','links']);if(Array.isArray(nested))nested.forEach(n=>typeof n==='string'?addDownload(quality,first(v,['provider','server']),n,first(v,['size'])):n&&addDownload(quality,first(n,['provider','server','host']),first(n,['url','link']),first(n,['size'])||first(v,['size'])));else addDownload(quality,first(v,['provider','server','host']),first(v,['url','link']),first(v,['size']))}
-   });
-  });
+ const urlKeys=['url','link','download_url','downloadUrl','file_url','fileUrl','src','embed_url','embedUrl','stream_url','streamUrl','play_url','playUrl'];
+ function visit(value,depth,context){
+  if(!value||depth>6)return;
+  if(Array.isArray(value)){value.slice(0,80).forEach((v,i)=>visit(v,depth+1,context||('Option '+(i+1))));return}
+  if(typeof value!=='object')return;
+  const keys=Object.keys(value),label=String(first(value,['quality','resolution','label','name','server','provider','host','title'])||context||'');
+  const url=first(value,urlKeys);
+  const combined=(context+' '+keys.join(' ')+' '+label).toLowerCase();
+  if(url){
+   if(/download|quality|resolution|file_size|filesize|mirror/i.test(combined))addDownload(first(value,['quality','resolution','label'])||context||'Download',first(value,['provider','server','host','name']),url,first(value,['size','file_size','fileSize']));
+   else if(/stream|player|embed|watch|video|server/i.test(combined))addStream(label||'Watch episode',url);
+  }
+  for(const [key,child] of Object.entries(value)){
+   if(child&&typeof child==='object')visit(child,depth+1,key);
+   else if(typeof child==='string'&&/^https?:\/\//i.test(child)){
+    if(/download|quality|resolution|file|mirror/i.test(key))addDownload(context||'Download',key,child,'');
+    else if(/stream|player|embed|watch|video|server/i.test(key))addStream(key,child);
+   }
+  }
  }
+ const root=payload&&payload.data&&typeof payload.data==='object'?payload.data:payload;
+ visit(root,0,'');
  return {streams,downloads};
 }
 async function fetchEpisodeOptions(slug,kind){
- if(!slug||/^\\d+$/.test(slug))return {streams:[],downloads:[]};
+ if(!slug||/^\d+$/.test(slug))return {streams:[],downloads:[]};
  const routes=kind==='anime'?['/otd/episode/']:['/dnh/episode/','/dgb/episode/'];
  for(const route of routes){try{const response=await fetchWithTimeout(API+route+encodeURIComponent(slug),{headers:{'Accept':'application/json'},cache:'no-store'},9000);if(!response.ok)continue;const options=collectMediaOptions(await response.json());if(options.streams.length||options.downloads.length)return options}catch(_){}}
  return {streams:[],downloads:[]};
