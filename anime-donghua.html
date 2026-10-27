@@ -60,7 +60,7 @@ async function details(item){
   episodes.push(...localEpisodes);const seen=new Set();return episodes.filter(e=>{const k=String(e.number)+'|'+e.url+'|'+(e.manifestSource?'local':'catalogue');if(seen.has(k))return false;seen.add(k);return true}).sort((a,b)=>b.number-a.number)
  }
  const s=slug(item.slug);let providerEpisodes=[];
- if(s&&!/^\\d+$/.test(s)){const routes=state.kind==='anime'?['/otd/anime/']:['/dnh/series/','/dgb/series/'];for(const route of routes){try{const r=await fetchWithTimeout(API+route+encodeURIComponent(s),{headers:{Accept:'application/json'},cache:'no-store'});if(r.ok){providerEpisodes=episodeRows(await r.json());if(providerEpisodes.length)break}}catch(_){}}}
+ if(s&&!/^\d+$/.test(s)){const routes=state.kind==='anime'?['/otd/anime/']:['/dnh/series/','/dgb/series/'];for(const route of routes){try{const r=await fetchWithTimeout(API+route+encodeURIComponent(s),{headers:{Accept:'application/json'},cache:'no-store'});if(r.ok){providerEpisodes=episodeRows(await r.json());if(providerEpisodes.length)break}}catch(_){}}}
  return providerEpisodes.concat(localEpisodes)
 }
 function epInfo(ep,i){if(typeof ep==='string')return{title:'Episode '+(i+1),number:i+1,url:ep,slug:slug(ep)};const n=first(ep,['episodeNumber','episode_no','episodeNo','number','episode','ep','index']);return{title:String(first(ep,['title','name','episodeTitle','judul','episode_name'])||('Episode '+(Number(n)||i+1))),number:Number(n)||i+1,url:first(ep,['url','link','watch_url','watchUrl'])||'',slug:slug(first(ep,['slug','endpoint','episode_slug','episodeSlug','id'])),raw:ep,scheduleOnly:!!ep.scheduleOnly,airingAt:ep.airingAt}}
@@ -72,7 +72,7 @@ async function episodeOptions(ep){
  if(ep.raw)merge(mediaOptions(ep.raw));
  if(ep.url)merge(mediaOptions({url:ep.url,episodeUrl:ep.url}));
  if(combined.streams.length||combined.downloads.length)return combined;
- const s=slug(ep.slug);if(!s||/^\\d+$/.test(s))return combined;
+ const s=slug(ep.slug);if(!s||/^\d+$/.test(s))return combined;
  // Try only the episode routes associated with the selected catalogue source.
  const routes=state.kind==='donghua'?['/dnh/episode/','/dgb/episode/']:['/otd/episode/'];
  for(const route of routes){try{const r=await fetchWithTimeout(API+route+encodeURIComponent(s),{headers:{Accept:'application/json'},cache:'no-store'});if(r.ok){merge(mediaOptions(await r.json()));if(combined.streams.length||combined.downloads.length)return combined}}catch(_){}}
