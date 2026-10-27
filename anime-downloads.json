@@ -212,6 +212,76 @@
           "label": "720p WebM",
           "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/83/Hutong_Meow.webm/Hutong_Meow.webm.720p.vp9.webm?download="
         }
+      ],
+      "posterUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Hutong_Meow.webm/320px-Hutong_Meow.webm.jpg",
+      "episodes": [
+        {
+          "title": "Full short film · Hutong Meow",
+          "description": "Complete 3-minute Chinese stop-motion short. Credit Kaide Wang; CC BY 3.0.",
+          "downloads": [
+            {
+              "label": "240p WebM · lowest data",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/83/Hutong_Meow.webm/Hutong_Meow.webm.240p.vp9.webm?download="
+            },
+            {
+              "label": "360p WebM",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/83/Hutong_Meow.webm/Hutong_Meow.webm.360p.vp9.webm?download="
+            },
+            {
+              "label": "480p WebM",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/83/Hutong_Meow.webm/Hutong_Meow.webm.480p.vp9.webm?download="
+            },
+            {
+              "label": "720p WebM",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/83/Hutong_Meow.webm/Hutong_Meow.webm.720p.vp9.webm?download="
+            }
+          ],
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hutong_Meow.webm"
+        }
+      ]
+    },
+    {
+      "id": "chinese-new-year-paper-cut-animation",
+      "kind": "donghua",
+      "title": "The Chinese New Year Story (Paper-Cut Animation)",
+      "description": "A Chinese paper-cut and 2D animated short about Lunar New Year traditions, family reunion, gratitude and blessings. Original publisher: China News Service. Approximately 4 minutes; multiple language versions have been reported.",
+      "license": "Creative Commons Attribution 3.0 Unported (CC BY 3.0). Credit China News Service and link to the licence.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C%E5%B9%B4%E2%80%9D%E6%95%85%E4%BA%8B.webm",
+      "posterUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C%E5%B9%B4%E2%80%9D%E6%95%85%E4%BA%8B.webm/320px-2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C年%E2%80%9D%E6%95%85%E4%BA%8B.webm.jpg",
+      "episodes": [
+        {
+          "title": "Full film · The Chinese New Year Story",
+          "description": "Complete short film · choose 240p or 360p to save data.",
+          "downloads": [
+            {
+              "label": "240p · lowest data",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/5d/2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C%E5%B9%B4%E2%80%9D%E6%95%85%E4%BA%8B.webm/2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C%E5%B9%B4%E2%80%9D%E6%95%85%E4%BA%8B.webm.240p.vp9.webm?download="
+            },
+            {
+              "label": "360p · recommended",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/5d/2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C%E5%B9%B4%E2%80%9D%E6%95%85%E4%BA%8B.webm/2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C%E5%B9%B4%E2%80%9D%E6%95%85%E4%BA%8B.webm.360p.vp9.webm?download="
+            },
+            {
+              "label": "480p · clearer picture",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/5d/2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C%E5%B9%B4%E2%80%9D%E6%95%85%E4%BA%8B.webm/2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C%E5%B9%B4%E2%80%9D%E6%95%85%E4%BA%8B.webm.480p.vp9.webm?download="
+            }
+          ],
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A向世界讲述中国“年”故事.webm"
+        }
+      ],
+      "downloads": [
+        {
+          "label": "240p · lowest data",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/5d/2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C%E5%B9%B4%E2%80%9D%E6%95%85%E4%BA%8B.webm/2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C%E5%B9%B4%E2%80%9D%E6%95%85%E4%BA%8B.webm.240p.vp9.webm?download="
+        },
+        {
+          "label": "360p · recommended",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/5d/2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C%E5%B9%B4%E2%80%9D%E6%95%85%E4%BA%8B.webm/2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C%E5%B9%B4%E2%80%9D%E6%95%85%E4%BA%8B.webm.360p.vp9.webm?download="
+        },
+        {
+          "label": "480p · clearer picture",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/5d/2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C%E5%B9%B4%E2%80%9D%E6%95%85%E4%BA%8B.webm/2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C%E5%B9%B4%E2%80%9D%E6%95%85%E4%BA%8B.webm.480p.vp9.webm?download="
+        }
       ]
     }
   ]
