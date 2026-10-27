@@ -1,36 +1,33 @@
-# Anime & Donghua download manifest
+# Anime & Donghua download library
 
-The Anime & Donghua page reads `anime-downloads.json` from the same website. Use this file to add direct episode streams and downloads **only when you own the media or have permission to distribute it**. The live catalogue supplies titles and metadata; it does not grant download rights.
+The Anime & Donghua page reads `anime-downloads.json` from this website repository. The page no longer depends on a third-party anime catalogue API. Add titles here only when the video is openly licensed for redistribution or you have explicit permission from the rights holder.
 
-## Shape
+## Entry format
+
+Each title should include a stable local `id`, a `kind` (`anime` or `donghua`), a `title`, an optional `description`, licence/source details, and a `downloads` array:
 
 ```json
 {
-  "version": 1,
-  "titles": [
+  "id": "example-title",
+  "kind": "anime",
+  "title": "Example title",
+  "description": "Short description",
+  "license": "Licence and attribution details",
+  "sourceUrl": "https://official-source.example/license",
+  "downloads": [
     {
-      "anilistId": 12345,
-      "title": "Exact catalogue title",
-      "episodes": [
-        {
-          "number": 1,
-          "title": "Episode 1",
-          "streams": [
-            { "label": "Watch 720p", "url": "https://your-authorized-host.example/episode-1-720.mp4" }
-          ],
-          "downloads": [
-            { "label": "Download 720p MP4", "url": "https://your-authorized-host.example/episode-1-720.mp4" }
-          ]
-        }
-      ]
+      "label": "Download 360p WebM",
+      "url": "https://authorized-host.example/video-360p.webm"
     }
   ]
 }
 ```
 
-- Match a catalogue title by its AniList numeric ID (`anilistId`) or its exact title (`title`).
-- Use a valid HTTPS URL to a media file or stream you are authorized to host/distribute.
-- Direct downloadable files work best as MP4 or WebM. HLS (`.m3u8`) may stream in supported browsers but is not a single-file download.
-- Cross-origin hosts may ignore the browser's `download` attribute or block playback with CORS. Hosting authorized files on your own origin or Cloudflare R2/custom domain is more reliable.
-- Do not put passwords, API tokens, or other secrets in this public JSON file.
-- An empty manifest is valid; the catalogue still loads. Until authorized media URLs are added, this file cannot make every episode downloadable by itself.
+## Rules
+
+- Only include direct media links when you own the file, the licence allows redistribution, or the rights holder has authorized downloads.
+- Prefer HTTPS and direct MP4/WebM files. HLS playlists can stream in some browsers but are not single-file downloads.
+- The website presents download buttons, but most files currently remain hosted by their original sources. The HTML `download` attribute cannot force every cross-origin host or mobile browser to save a file.
+- Do not copy or rehost commercial anime or donghua without permission. A catalogue entry or a source-page link does not grant download rights.
+- Include accurate licence and attribution details; verify the source page before publishing a new title.
+- `kind: "donghua"` entries appear under the Donghua tab. If there are no authorized entries, the page explains that no verified direct downloads are listed yet.
