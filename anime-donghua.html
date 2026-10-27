@@ -47,9 +47,9 @@ function render(){
   const poster=safeUrl(item.posterUrl);
   const cover=poster?'<img loading="lazy" src="'+esc(poster)+'" alt="'+esc(item.title)+' poster">':'<span class="poster-fallback">'+(state.kind==='donghua'?'🏮':'🎌')+'</span>';
   const downloads=Array.isArray(item.downloads)?item.downloads:[];
-  const episodeCount=Array.isArray(item.episodes)?item.episodes.length:(downloads.length?1:0);
-  card.innerHTML='<button type="button" class="poster-button" aria-label="Open '+esc(item.title)+' details"><div class="poster">'+cover+'<span class="poster-label">'+esc(item.title)+'</span></div></button><div class="info"><h3>'+esc(item.title)+'</h3><div class="meta">'+esc(item.description||'Open for introduction and episodes')+'</div><span class="badge">'+(episodeCount?esc(episodeCount+' '+(episodeCount===1?'EPISODE / FEATURE':'EPISODES')):'DETAILS')+'</span><div class="source">'+esc(item.license||'See source details')+'</div></div>';
-  card.querySelector('.poster-button').addEventListener('click',()=>openDetails(item));
+   const episodeCount=item.catalogueOnly?0:(Array.isArray(item.episodes)?item.episodes.filter(ep=>Array.isArray(ep.downloads)&&ep.downloads.length).length:(downloads.length?1:0));
+   const badgeText=item.catalogueOnly?'OFFICIAL SOURCE':(episodeCount?episodeCount+' '+(episodeCount===1?'DOWNLOADABLE FEATURE':'DOWNLOADABLE EPISODES'):'SOURCE DETAILS');
+   card.innerHTML='<button type="button" class="poster-button" aria-label="Open '+esc(item.title)+' details"><div class="poster">'+cover+'<span class="poster-label">'+esc(item.title)+'</span></div></button><div class="info"><h3>'+esc(item.title)+'</h3><div class="meta">'+esc(item.description||'Open for introduction and episodes')+'</div><span class="badge">'+esc(badgeText)+'</span><div class="source">'+esc(item.license||'See source details')+'</div></div>';
   frag.appendChild(card);
  });
  grid.appendChild(frag);
@@ -59,15 +59,16 @@ function openDetails(item){
  const poster=safeUrl(item.posterUrl);
  const cover=poster?'<img class="detail-poster" src="'+esc(poster)+'" alt="'+esc(item.title)+' poster">':'<div class="detail-poster poster" style="display:grid;place-items:center;font-size:3rem">'+(item.kind==='donghua'?'🏮':'🎌')+'</div>';
  const source=safeUrl(item.sourceUrl);
- let episodes=Array.isArray(item.episodes)?item.episodes:[];
- if(!episodes.length && Array.isArray(item.downloads) && item.downloads.length) episodes=[{title:item.episodeTitle||item.title,description:item.episodeDescription||'Choose a download resolution below.',downloads:item.downloads}];
- const episodeHtml=episodes.length?episodes.map((ep,i)=>{
-  const opts=(Array.isArray(ep.downloads)?ep.downloads:[]).slice().sort((a,b)=>qualityRank(a.label)-qualityRank(b.label));
-  const links=opts.map(d=>{const u=safeUrl(d.url);return u?'<a class="watch-link" href="'+esc(u)+'" download="'+esc(fileName(item.title+'-'+(ep.title||('Episode-'+(i+1))),d.label||'download',u))+'" rel="noopener noreferrer">⬇ '+esc(d.label||'Download')+'</a>':''}).join('');
-  const episodeSource=safeUrl(ep.sourceUrl);
-  return '<div class="episode-row"><div><div class="episode-name">'+esc(ep.title||('Episode '+(i+1)))+'</div><div class="episode-meta">'+esc(ep.description||'Select a low-data resolution')+'</div></div><div class="episode-actions">'+(links||'<span class="episode-meta">No direct download link listed yet.</span>')+(episodeSource?'<a class="watch-link" href="'+esc(episodeSource)+'" target="_blank" rel="noopener noreferrer">Source</a>':'')+'</div></div>';
- }).join(''):'<div class="empty">No episode download links are listed for this title yet.</div>';
- content.innerHTML='<div class="detail-layout">'+cover+'<div><div class="eyebrow">'+(item.kind==='donghua'?'Chinese animation · Donghua':'Anime & animation')+'</div><h2 class="detail-heading">'+esc(item.title)+'</h2><p class="detail-description">'+esc(item.description||'Introduction will be added when available.')+'</p><p class="episode-meta">'+esc(item.license||'Check the original source for licensing and credits.')+'</p>'+(source?'<a class="watch-link" style="display:inline-block;margin-top:8px" href="'+esc(source)+'" target="_blank" rel="noopener noreferrer">Original source & credits ↗</a>':'')+'</div><div class="detail-section" style="grid-column:1/-1"><h3>Episodes & downloads</h3><p class="episode-meta">Start with 240p for lower data use, or choose 360p for a clearer picture when available. Links open the file host; mobile browsers may ask you to save the file.</p>'+episodeHtml+'</div></div>';
+  let episodes=item.catalogueOnly?[]:(Array.isArray(item.episodes)?item.episodes.filter(ep=>Array.isArray(ep.downloads)&&ep.downloads.length):[]);
+  if(!item.catalogueOnly&&!episodes.length && Array.isArray(item.downloads) && item.downloads.length) episodes=[{title:item.episodeTitle||item.title,description:item.episodeDescription||'Choose a download resolution below.',downloads:item.downloads}];
+  const episodeHtml=episodes.length?episodes.map((ep,i)=>{
+   const opts=(Array.isArray(ep.downloads)?ep.downloads:[]).slice().sort((a,b)=>qualityRank(a.label)-qualityRank(b.label));
+   const links=opts.map(d=>{const u=safeUrl(d.url);return u?'<a class="watch-link" href="'+esc(u)+'" download="'+esc(fileName(item.title+'-'+(ep.title||('Episode-'+(i+1))),d.label||'download',u))+'" rel="noopener noreferrer">⬇ '+esc(d.label||'Download')+'</a>':''}).join('');
+   const episodeSource=safeUrl(ep.sourceUrl);
+   return '<div class="episode-row"><div><div class="episode-name">'+esc(ep.title||('Episode '+(i+1)))+'</div><div class="episode-meta">'+esc(ep.description||'Select a low-data resolution')+'</div></div><div class="episode-actions">'+(links||'<span class="episode-meta">No verified direct download listed.</span>')+(episodeSource?'<a class="watch-link" href="'+esc(episodeSource)+'" target="_blank" rel="noopener noreferrer">Source</a>':'')+'</div></div>';
+  }).join(''):'<div class="empty">'+(item.catalogueOnly?'This listing does not pretend to host episodes. Use the official-source button below to check availability and any offline-download options in your region.':'No verified direct download is listed for this title yet.')+'</div>';
+  const officialButton=item.catalogueOnly&&source?'<a class="watch-link" style="display:inline-block;margin-top:8px" href="'+esc(source)+'" target="_blank" rel="noopener noreferrer">Find official episodes & availability ↗</a>':'';
+  content.innerHTML='<div class="detail-layout">'+cover+'<div><div class="eyebrow">'+(item.kind==='donghua'?'Chinese animation · Donghua':'Anime & animation')+'</div><h2 class="detail-heading">'+esc(item.title)+'</h2><p class="detail-description">'+esc(item.description||'Introduction will be added when available.')+'</p><p class="episode-meta">'+esc(item.license||'Check the original source for licensing and credits.')+'</p>'+(source&&!item.catalogueOnly?'<a class="watch-link" style="display:inline-block;margin-top:8px" href="'+esc(source)+'" target="_blank" rel="noopener noreferrer">Original source & credits ↗</a>':'')+officialButton+'</div><div class="detail-section" style="grid-column:1/-1"><h3>'+(item.catalogueOnly?'Official availability':'Episodes & downloads')+'</h3><p class="episode-meta">'+(item.catalogueOnly?'Availability and offline downloads depend on the official provider, region and account. This website does not host a copy of this copyrighted title.':'Start with 240p for lower data use, or choose 360p for a clearer picture when available. Links open the file host; mobile browsers may ask you to save the file.')+'</p>'+episodeHtml+'</div></div>';
  modal.hidden=false;
 }
 function closeDetails(){$('detailModal').hidden=true;$('detailContent').innerHTML=''}
