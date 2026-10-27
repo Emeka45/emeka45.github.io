@@ -157,8 +157,8 @@ function collectMediaOptions(payload){
  function addDownload(quality,server,url,size){const safe=safeHttpUrl(url);if(safe&&!downloads.some(x=>x.url===safe))downloads.push({quality:String(quality||'Download'),server:String(server||''),url:safe,size:String(size||'')})}
  const urlKeys=['url','link','download_url','downloadUrl','file_url','fileUrl','src','embed_url','embedUrl','stream_url','streamUrl','play_url','playUrl'];
  function visit(value,depth,context){
-  if(!value||depth>6)return;
-  if(Array.isArray(value)){value.slice(0,80).forEach((v,i)=>visit(v,depth+1,context||('Option '+(i+1))));return}
+  if(!value||depth>7)return;
+  if(Array.isArray(value)){value.slice(0,100).forEach((v,i)=>visit(v,depth+1,context||('Option '+(i+1))));return}
   if(typeof value!=='object')return;
   const keys=Object.keys(value),label=String(first(value,['quality','resolution','label','name','server','provider','host','title'])||context||'');
   const url=first(value,urlKeys);
@@ -168,10 +168,12 @@ function collectMediaOptions(payload){
    else if(/stream|player|embed|watch|video|server/i.test(combined))addStream(label||'Watch episode',url);
   }
   for(const [key,child] of Object.entries(value)){
-   if(child&&typeof child==='object')visit(child,depth+1,key);
+   const path=context?context+' '+key:key;
+   if(child&&typeof child==='object')visit(child,depth+1,path);
    else if(typeof child==='string'&&/^https?:\/\//i.test(child)){
-    if(/download|quality|resolution|file|mirror/i.test(key))addDownload(context||'Download',key,child,'');
-    else if(/stream|player|embed|watch|video|server/i.test(key))addStream(key,child);
+    const field=(context+' '+key).toLowerCase();
+    if(/download|quality|resolution|file|mirror/i.test(field))addDownload(context||'Download',key,child,'');
+    else if(/stream|player|embed|watch|video|server/i.test(field))addStream(key,child);
    }
   }
  }
