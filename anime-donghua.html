@@ -4,325 +4,68 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#0b0714">
-<meta name="description" content="Browse Anime and Donghua in a dedicated, lightweight section of C. O. Eric.">
+<meta name="description" content="Current Anime and Donghua catalogue for C. O. Eric, refreshed from live catalogue sources.">
 <title>Anime & Donghua — C. O. Eric</title>
 <style>
 :root{color-scheme:dark;--bg:#090711;--panel:#151020;--line:#30263f;--text:#f8f5ff;--muted:#bdb3cd;--accent:#b18aff;--accent2:#7c5bd6}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 85% 0%,#291644 0,transparent 42%),var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0;border-bottom:1px solid var(--line)}.brand{font-weight:850;letter-spacing:-.03em}.back{color:#e0d0ff;font-weight:700}.hero{padding:48px 0 26px}.eyebrow{font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#d8c4ff}.hero h1{font-size:clamp(2.3rem,8vw,4.5rem);line-height:1.02;letter-spacing:-.06em;margin:10px 0}.hero p{color:var(--muted);max-width:680px;margin:0}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:25px 0 14px}.tab,button,.search{font:inherit}.tab,button{border:1px solid var(--line);background:#171020;color:var(--text);border-radius:12px;padding:10px 15px;cursor:pointer;font-weight:750}.tab[aria-selected=true],button.primary{background:linear-gradient(135deg,var(--accent2),#a986f2);border-color:transparent;color:#fff}.tools{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 18px}.search{flex:1;min-width:190px;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#110c1a;color:var(--text);outline:none}.search:focus{border-color:var(--accent)}.status{padding:10px 13px;border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:.88rem;margin:14px 0}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.card{min-width:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:linear-gradient(145deg,#191225,#100c17)}.poster{aspect-ratio:3/4;display:grid;place-items:center;background:linear-gradient(145deg,#352052,#151020);color:#d6c1ff;font-size:2.4rem;overflow:hidden}.poster img{width:100%;height:100%;object-fit:cover}.info{padding:13px}.watch-links{display:grid;gap:6px;margin-top:10px}.watch-link{display:block;background:#241737;border:1px solid #493663;border-radius:8px;padding:7px 8px;font-size:.8rem;font-weight:750;color:#eadfff;overflow-wrap:anywhere}.details-toggle{width:100%;text-align:left}.episode-details{margin-top:8px;padding:10px;border:1px solid var(--line);border-radius:10px;background:#100b18;font-size:.85rem;color:var(--muted)}.episode-details p{margin:0 0 8px}.episode-details p:last-child{margin-bottom:0}.episode-details[hidden]{display:none}.detail-hint{color:#e0d0ff}.info h3{font-size:1rem;line-height:1.35;margin:0 0 7px;overflow-wrap:anywhere}.meta{color:var(--muted);font-size:.82rem;min-height:2.4em}.card .source{display:inline-block;margin-top:10px;font-size:.78rem;color:#d7c5ff;font-weight:750}.empty{padding:30px 18px;border:1px dashed var(--line);border-radius:16px;color:var(--muted);text-align:center;grid-column:1/-1}.note{font-size:.88rem;color:var(--muted);padding:17px 0 40px}.note strong{color:#eee5ff}.footer{border-top:1px solid var(--line);padding:20px 0;color:var(--muted);font-size:.85rem}
-@media(max-width:850px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:580px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.hero{padding-top:35px}.info{padding:10px}.top{align-items:flex-start}.tab,button{padding:9px 12px;font-size:.92rem}}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 85% 0%,#291644 0,transparent 42%),var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0;border-bottom:1px solid var(--line)}.brand{font-weight:850;letter-spacing:-.03em}.back{color:#e0d0ff;font-weight:700}.hero{padding:48px 0 26px}.eyebrow{font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#d8c4ff}.hero h1{font-size:clamp(2.3rem,8vw,4.5rem);line-height:1.02;letter-spacing:-.06em;margin:10px 0}.hero p{color:var(--muted);max-width:720px;margin:0}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:25px 0 14px}.tab,button,.search{font:inherit}.tab,button{border:1px solid var(--line);background:#171020;color:var(--text);border-radius:12px;padding:10px 15px;cursor:pointer;font-weight:750}.tab[aria-selected=true],button.primary{background:linear-gradient(135deg,var(--accent2),#a986f2);border-color:transparent;color:#fff}.tools{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 18px}.search{flex:1;min-width:190px;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#110c1a;color:var(--text);outline:none}.search:focus{border-color:var(--accent)}.status{padding:10px 13px;border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:.88rem;margin:14px 0}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.card{min-width:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:linear-gradient(145deg,#191225,#100c17)}.poster{aspect-ratio:3/4;display:grid;place-items:center;background:linear-gradient(145deg,#352052,#151020);color:#d6c1ff;font-size:2.4rem;overflow:hidden}.poster img{width:100%;height:100%;object-fit:cover}.info{padding:13px}.watch-links{display:grid;gap:6px;margin-top:10px}.watch-link{display:block;background:#241737;border:1px solid #493663;border-radius:8px;padding:7px 8px;font-size:.8rem;font-weight:750;color:#eadfff;overflow-wrap:anywhere}.details-toggle{width:100%;text-align:left}.episode-details{margin-top:8px;padding:10px;border:1px solid var(--line);border-radius:10px;background:#100b18;font-size:.85rem;color:var(--muted)}.episode-details p{margin:0 0 8px}.episode-details[hidden]{display:none}.info h3{font-size:1rem;line-height:1.35;margin:0 0 7px;overflow-wrap:anywhere}.meta{color:var(--muted);font-size:.82rem;min-height:2.4em}.source{display:inline-block;margin-top:10px;font-size:.78rem;color:#d7c5ff;font-weight:750}.badge{display:inline-block;margin:7px 5px 0 0;padding:3px 7px;border-radius:999px;background:#261b38;color:#e9ddff;font-size:.7rem;font-weight:800}.empty{padding:30px 18px;border:1px dashed var(--line);border-radius:16px;color:var(--muted);text-align:center;grid-column:1/-1}.note{font-size:.88rem;color:var(--muted);padding:17px 0 40px}.note strong{color:#eee5ff}.footer{border-top:1px solid var(--line);padding:20px 0;color:var(--muted);font-size:.85rem}.modal{position:fixed;inset:0;background:rgba(0,0,0,.82);display:grid;place-items:center;padding:18px;z-index:20}.modal[hidden]{display:none}.player-box{width:min(980px,100%);background:#0d0913;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 20px 70px rgba(0,0,0,.55)}.player-head{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:10px 12px;border-bottom:1px solid var(--line)}.player-title{font-weight:800;min-width:0;overflow-wrap:anywhere}.player-stage{position:relative;background:#000;min-height:240px}.player-stage video{display:block;width:100%;max-height:70vh;background:#000}.watermark{position:absolute;right:14px;top:12px;z-index:2;color:#fff;background:rgba(0,0,0,.28);padding:3px 7px;border-radius:5px;font-size:.75rem;font-weight:800;letter-spacing:.03em;opacity:.72;pointer-events:none;text-shadow:0 1px 3px #000}.player-foot{padding:10px 12px;color:var(--muted);font-size:.78rem}.close{padding:7px 10px}
+@media(max-width:850px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:580px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.hero{padding-top:35px}.info{padding:10px}.top{align-items:flex-start}.tab,button{padding:9px 12px;font-size:.92rem}.player-stage{min-height:180px}}
 </style>
 </head>
 <body>
 <header class="wrap top"><a class="brand" href="index.html">C. O. Eric <span style="color:#b18aff">/ Anime & Donghua</span></a><a class="back" href="index.html">← Main site</a></header>
 <main class="wrap">
-<section class="hero"><div class="eyebrow">A separate entertainment section</div><h1>Anime <span style="color:#b18aff">&</span> Donghua</h1><p>Discover Japanese anime and Chinese animation in one lightweight catalogue. Anime & Donghua is separate from Video Hub; the catalogue is designed for low-data mobile browsing.</p></section>
+<section class="hero"><div class="eyebrow">Live catalogue · separate from Video Hub</div><h1>Anime <span style="color:#b18aff">&</span> Donghua</h1><p>Current Japanese anime and Chinese animation, pulled from live catalogue sources instead of a fixed list. Refreshing the page keeps new releases and episode changes moving into this section.</p></section>
 <div class="tabs" role="tablist" aria-label="Choose catalogue"><button class="tab" id="animeTab" role="tab" aria-selected="true" data-kind="anime">🎌 Anime</button><button class="tab" id="donghuaTab" role="tab" aria-selected="false" data-kind="donghua">🏮 Donghua</button></div>
-<div class="tools"><input class="search" id="search" type="search" placeholder="Search titles…" aria-label="Search titles"><button id="reload" class="primary" type="button">Refresh</button></div>
-<div class="status" id="status" role="status" aria-live="polite">Loading catalogue…</div>
-<section class="grid" id="grid" aria-label="Titles"></section>
-<p class="note"><strong>Watch & download:</strong> official streaming links appear when the catalogue supplies them. Episode-level Watch / Download options are shown only if the provider returns usable links; quality choices are not guaranteed. The Donghua episode-download route is not yet verified, so this page will not guess one. Use only links you are authorized to access or save.</p>
+<div class="tools"><input class="search" id="search" type="search" placeholder="Search current titles…" aria-label="Search titles"><button id="reload" class="primary" type="button">Refresh now</button></div>
+<div class="status" id="status" role="status" aria-live="polite">Loading current catalogue…</div>
+<section class="grid" id="grid" aria-label="Current titles"></section>
+<p class="note"><strong>Freshness:</strong> Anime is requested as currently releasing from AniList when the live streaming catalogue is unavailable; Donghua is requested from the live ShivraHub Donghua catalogue. The page also refreshes automatically every 30 minutes while open. No hard-coded seasonal list is used.</p>
+<p class="note"><strong>English subtitles & branding:</strong> the player supports English subtitle tracks when a provider supplies a subtitle URL, and the C. O. Eric watermark appears in our player. A player overlay cannot permanently watermark a third-party file; a downloaded file can only carry permanent branding if we control/process that media. Use only streams and downloads you are authorized to access or save.</p>
 </main>
+<div class="modal" id="playerModal" hidden role="dialog" aria-modal="true" aria-labelledby="playerTitle"><div class="player-box"><div class="player-head"><div class="player-title" id="playerTitle">Episode</div><button class="close" id="closePlayer" type="button">Close</button></div><div class="player-stage"><video id="player" controls playsinline preload="metadata"></video><div class="watermark">C. O. Eric</div></div><div class="player-foot" id="playerFoot">English subtitles are attached only when the source provides a subtitle track.</div></div></div>
 <footer class="footer"><div class="wrap">© C. O. Eric · <a href="videos.html">Video Hub</a> remains a separate section.</div></footer>
 <script>
 (function(){
 'use strict';
 const API='https://shivraapi.my.id';
-const state={kind:'anime',items:[],query:'',loaded:false,loadId:0};
-async function fetchWithTimeout(url,options={},timeoutMs=9000){
- const controller=new AbortController();
- const timer=setTimeout(()=>controller.abort(),timeoutMs);
- try{return await fetch(url,{...options,signal:controller.signal})}
- finally{clearTimeout(timer)}
-}
+const state={kind:'anime',items:[],query:'',loaded:false,loadId:0,lastUpdated:0};
 const $=id=>document.getElementById(id);
-function first(obj,keys){for(const k of keys){if(obj&&obj[k]!==undefined&&obj[k]!==null&&obj[k]!=='')return obj[k]}return ''}
+async function fetchWithTimeout(url,options={},timeoutMs=10000){const c=new AbortController(),t=setTimeout(()=>c.abort(),timeoutMs);try{return await fetch(url,{...options,signal:c.signal})}finally{clearTimeout(t)}}
+function first(o,keys){for(const k of keys)if(o&&o[k]!==undefined&&o[k]!==null&&o[k]!=='')return o[k];return ''}
+function esc(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function imageUrl(s){try{const u=new URL(String(s||''));return /^https?:$/.test(u.protocol)?u.href:''}catch(_){return ''}}
+function slugOf(v){let s=String(v||'').trim();if(/^https?:\/\//i.test(s)){try{s=new URL(s).pathname.split('/').filter(Boolean).pop()||''}catch(_){}}return s.replace(/^\/+|\/+$/g,'')}
 function normalize(payload){
  let rows=Array.isArray(payload)?payload:[];
- const keys=['data','results','anime','series','items','ongoing','ongoing_anime','complete_anime','list','donghua','popular','recent'];
- function findRows(value,depth){
-  if(!value||typeof value!=='object'||depth>4)return [];
-  if(Array.isArray(value))return value;
-  for(const key of keys){if(Array.isArray(value[key])&&value[key].length)return value[key]}
-  for(const key of ['data','result','response','payload']){
-   const nested=value[key];
-   if(nested&&typeof nested==='object'){const found=findRows(nested,depth+1);if(found.length)return found}
-  }
-  return [];
- }
- if(!rows.length)rows=findRows(payload,0);
- return rows.map(x=>{
-  if(typeof x==='string')return {title:x,slug:'',poster:'',description:'',status:'',source:'Catalogue',streamingEpisodes:[],raw:x};
-  const title=first(x,['title','name','judul','englishTitle','romaji','seriesTitle','anime_title','series_name']);
-  const posterValue=first(x,['poster','cover','image','thumbnail','thumb','posterUrl','coverImage','cover_url','image_url']);
-  const slug=first(x,['slug','endpoint','anime_slug','series_slug','animeId','id','url','otakudesu_url','link']);
-  return {
-   title:String(title||'Untitled series'),
-   slug:String(slug||''),
-   poster:String(typeof posterValue==='object'?first(posterValue,['large','url','src']):posterValue||''),
-   description:String(first(x,['description','synopsis','desc','sinopsis'])||''),
-   status:String(first(x,['status','type','episode','episodes','season','latest_episode','latestEpisode'])||''),
-   source:String(first(x,['source','studio'])||'Catalogue'),
-   streamingEpisodes:Array.isArray(x.streamingEpisodes)?x.streamingEpisodes:[],
-   raw:x
-  };
- }).filter(x=>x.title&&x.title!=='Untitled series');
-}
+ const keys=['data','results','anime','series','items','ongoing','ongoing_anime','list','donghua','popular','recent'];
+ function find(v,d){if(!v||typeof v!=='object'||d>5)return[];if(Array.isArray(v))return v;for(const k of keys)if(Array.isArray(v[k])&&v[k].length)return v[k];for(const k of ['data','result','response','payload'])if(v[k]&&typeof v[k]==='object'){const r=find(v[k],d+1);if(r.length)return r}return[]}
+ if(!rows.length)rows=find(payload,0);
+ return rows.map(x=>{if(typeof x==='string')return{title:x,slug:'',poster:'',description:'',status:'',source:'Catalogue',streamingEpisodes:[],raw:x};const title=first(x,['title','name','judul','englishTitle','romaji','seriesTitle','anime_title','series_name']);const p=first(x,['poster','cover','image','thumbnail','thumb','posterUrl','coverImage','cover_url','image_url']);return{title:String(title||'Untitled'),slug:String(first(x,['slug','endpoint','anime_slug','series_slug','animeId','id','url','link'])||''),poster:String(typeof p==='object'?first(p,['large','url','src']):p||''),description:String(first(x,['description','synopsis','desc','sinopsis'])||''),status:String(first(x,['status','type','episode','episodes','season','latest_episode','latestEpisode'])||''),source:String(first(x,['source','studio'])||'Live catalogue'),streamingEpisodes:Array.isArray(x.streamingEpisodes)?x.streamingEpisodes:[],raw:x}}).filter(x=>x.title&&x.title!=='Untitled')}
+function aniMap(rows,source){return rows.map(x=>({title:(x.title&&(x.title.english||x.title.romaji||x.title.native))||'Untitled anime',slug:String(x.id||''),poster:x.coverImage&&x.coverImage.large||'',description:String(x.description||'').replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim().slice(0,420),status:[x.status,x.episodes?x.episodes+' episodes':''].filter(Boolean).join(' · '),source,streamingEpisodes:Array.isArray(x.streamingEpisodes)?x.streamingEpisodes:[],raw:x}))}
+async function aniListCurrent(){const q='query { Page(page:1,perPage:50) { media(type:ANIME,status:RELEASING,isAdult:false,sort:UPDATED_AT_DESC) { id title { romaji english native } coverImage { large } description(asHtml:false) episodes status nextAiringEpisode { episode airingAt } streamingEpisodes { title url site } } } }';const r=await fetchWithTimeout('https://graphql.anilist.co',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({query:q})});if(!r.ok)throw Error('AniList HTTP '+r.status);const p=await r.json();const rows=p&&p.data&&p.data.Page&&p.data.Page.media;if(!Array.isArray(rows))throw Error('AniList returned no current titles');return aniMap(rows,'AniList · currently releasing')}
 async function getList(kind){
- const paths=kind==='donghua'?['/dnh/series','/dgb/home']:['/otd/ongoing','/otd/home'];
- let lastError;
- for(const path of paths){
-  try{
-   const response=await fetchWithTimeout(API+path,{headers:{'Accept':'application/json'},cache:'no-store'},9000);
-   if(!response.ok)throw new Error('HTTP '+response.status+' at '+path);
-   const data=await response.json();const rows=normalize(data);
-   if(rows.length)return rows;
-   lastError=new Error('No title list returned by '+path);
-  }catch(e){lastError=e}
- }
  if(kind==='anime'){
-  try{
-   const response=await fetchWithTimeout('https://graphql.anilist.co',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({query:'query { Page(page: 1, perPage: 30) { media(type: ANIME, sort: TRENDING_DESC, isAdult: false) { id title { romaji english native } coverImage { large } description(asHtml: false) episodes status streamingEpisodes { title url site } } } }'})},9000);
-   if(!response.ok)throw new Error('AniList HTTP '+response.status);
-   const payload=await response.json();
-   const rows=payload&&payload.data&&payload.data.Page&&payload.data.Page.media;
-   if(Array.isArray(rows)&&rows.length)return rows.map(x=>({title:(x.title&& (x.title.english||x.title.romaji||x.title.native))||'Untitled anime',slug:String(x.id||''),poster:x.coverImage&&x.coverImage.large||'',description:String(x.description||'').replace(/<[^>]*>/g,' ').slice(0,400),status:[x.status,x.episodes?x.episodes+' episodes':''].filter(Boolean).join(' · '),source:'AniList',streamingEpisodes:Array.isArray(x.streamingEpisodes)?x.streamingEpisodes:[],raw:x}));
-  }catch(e){lastError=e}
+  try{const r=await fetchWithTimeout(API+'/otd/ongoing',{headers:{Accept:'application/json'},cache:'no-store'});if(r.ok){const rows=normalize(await r.json());if(rows.length)return rows.map(x=>({...x,source:'ShivraHub · ongoing anime'}))}}catch(_){}
+  try{const r=await fetchWithTimeout(API+'/otd/home',{headers:{Accept:'application/json'},cache:'no-store'});if(r.ok){const rows=normalize(await r.json());if(rows.length)return rows.map(x=>({...x,source:'ShivraHub · anime'}))}}catch(_){}
+  return aniListCurrent();
  }
- throw lastError||new Error('No catalogue response');
+ const attempts=['/dnh/series','/dgb/home'];let last;
+ for(const path of attempts){try{const r=await fetchWithTimeout(API+path,{headers:{Accept:'application/json'},cache:'no-store'});if(!r.ok){last=Error('HTTP '+r.status);continue}const rows=normalize(await r.json());if(rows.length)return rows.map(x=>({...x,source:'ShivraHub · current Donghua'}));last=Error('No titles from '+path)}catch(e){last=e}}
+ throw last||Error('Donghua catalogue unavailable');
 }
-function escapeHtml(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function safeImage(s){try{const u=new URL(s);return ['https:','http:'].includes(u.protocol)?u.href:''}catch(_){return ''}}
-
-function detailSlug(item){
- let slug=String(item.slug||'').trim();
- if(/^https?:\/\//i.test(slug)){try{slug=new URL(slug).pathname.split('/').filter(Boolean).pop()||''}catch(_){}}
- return slug.replace(/^\/+|\/+$/g,'');
-}
-function extractSlug(value){
- if(!value)return '';
- let s=String(value).trim();
- if(/^https?:\/\//i.test(s)){try{s=new URL(s).pathname.split('/').filter(Boolean).pop()||''}catch(_){}}
- return s.replace(/^\/+|\/+$/g,'');
-}
-function episodeActionUrl(ep){
- return extractSlug(first(ep,['slug','endpoint','episode_slug','episodeSlug','url','link','id']));
-}
-function collectEpisodeRows(payload){
- const candidates=[];
- function walk(value,depth){
-  if(!value||depth>5)return;
-  if(Array.isArray(value)){
-   if(value.length&&value.some(x=>x&&typeof x==='object'&&(/episode|eps|chapter/i.test(Object.keys(x).join(' '))||x.url||x.slug||x.id))){
-    const score=value.filter(x=>x&&typeof x==='object'&&(/episode|eps|title|name/i.test(Object.keys(x).join(' ')))).length;
-    candidates.push({rows:value,score});
-   }
-   value.slice(0,40).forEach(x=>walk(x,depth+1));return;
-  }
-  if(typeof value==='object'){
-   for(const [key,v] of Object.entries(value)){
-    if(Array.isArray(v)&&/episode|eps|chapter/i.test(key)){
-     const score=v.filter(x=>x&&typeof x==='object').length+100;
-     candidates.push({rows:v,score});
-    }
-    if(v&&typeof v==='object')walk(v,depth+1);
-   }
-  }
- }
- walk(payload,0);
- candidates.sort((a,b)=>b.score-a.score);
- return candidates.length?candidates[0].rows:[];
-}
-async function fetchEpisodeMetadata(item,kind){
- const slug=detailSlug(item);
- if(!slug||/^\d+$/.test(slug))return [];
- const prefixes=kind==='donghua'?['/dnh/series/','/dgb/series/']:['/otd/anime/'];
- for(const prefix of prefixes){
-  const controller=new AbortController();
-  const timer=setTimeout(()=>controller.abort(),9000);
-  try{
-   const response=await fetch(API+prefix+encodeURIComponent(slug),{headers:{'Accept':'application/json'},cache:'no-store',signal:controller.signal});
-   if(!response.ok)continue;
-   const payload=await response.json();
-   const rows=collectEpisodeRows(payload);
-   if(rows.length)return rows;
-  }catch(_){}
-  finally{clearTimeout(timer)}
- }
- return [];
-}
-function safeHttpUrl(value){try{const u=new URL(String(value||''));return (u.protocol==='https:'||u.protocol==='http:')?u.href:''}catch(_){return ''}}
-function collectMediaOptions(payload){
- const streams=[],downloads=[];
- function addStream(label,url){const safe=safeHttpUrl(url);if(safe&&!streams.some(x=>x.url===safe))streams.push({label:String(label||'Watch episode'),url:safe})}
- function addDownload(quality,server,url,size){const safe=safeHttpUrl(url);if(safe&&!downloads.some(x=>x.url===safe))downloads.push({quality:String(quality||'Download'),server:String(server||''),url:safe,size:String(size||'')})}
- const urlKeys=['url','link','download_url','downloadUrl','file_url','fileUrl','src','embed_url','embedUrl','stream_url','streamUrl','play_url','playUrl'];
- function visit(value,depth,context){
-  if(!value||depth>7)return;
-  if(Array.isArray(value)){value.slice(0,100).forEach((v,i)=>visit(v,depth+1,context||('Option '+(i+1))));return}
-  if(typeof value!=='object')return;
-  const keys=Object.keys(value),label=String(first(value,['quality','resolution','label','name','server','provider','host','title'])||context||'');
-  const url=first(value,urlKeys);
-  const combined=(context+' '+keys.join(' ')+' '+label).toLowerCase();
-  if(url){
-   if(/download|quality|resolution|file_size|filesize|mirror/i.test(combined))addDownload(first(value,['quality','resolution','label'])||context||'Download',first(value,['provider','server','host','name']),url,first(value,['size','file_size','fileSize']));
-   else if(/stream|player|embed|watch|video|server/i.test(combined))addStream(label||'Watch episode',url);
-  }
-  for(const [key,child] of Object.entries(value)){
-   const path=context?context+' '+key:key;
-   if(child&&typeof child==='object')visit(child,depth+1,path);
-   else if(typeof child==='string'&&/^https?:\/\//i.test(child)){
-    const field=(context+' '+key).toLowerCase();
-    if(/download|quality|resolution|file|mirror/i.test(field))addDownload(context||'Download',key,child,'');
-    else if(/stream|player|embed|watch|video|server/i.test(field))addStream(key,child);
-   }
-  }
- }
- const root=payload&&payload.data&&typeof payload.data==='object'?payload.data:payload;
- visit(root,0,'');
- return {streams,downloads};
-}
-async function fetchEpisodeOptions(slug,kind){
- if(!slug||/^\d+$/.test(slug))return {streams:[],downloads:[]};
- // The documented Otakudesu episode route is known; a matching Donghua episode route has not been verified.
- if(kind==='donghua')return {streams:[],downloads:[]};
- for(const route of ['/otd/episode/']){try{const response=await fetchWithTimeout(API+route+encodeURIComponent(slug),{headers:{'Accept':'application/json'},cache:'no-store'},9000);if(!response.ok)continue;const options=collectMediaOptions(await response.json());if(options.streams.length||options.downloads.length)return options}catch(_){}}
- return {streams:[],downloads:[]};
-}
-function appendOptionLink(container,label,url){const link=document.createElement('a');link.className='watch-link';link.href=url;link.target='_blank';link.rel='noopener noreferrer';link.textContent=label;container.appendChild(link)}
-function episodeDisplay(ep,index){
- if(typeof ep==='string')return {title:ep,number:index+1};
- const title=String(first(ep,['title','name','episodeTitle','judul','episode_name'])||'');
- const number=first(ep,['episodeNumber','episode_no','episodeNo','number','episode','ep','index']);
- const cleanNumber=number!==''&&Number.isFinite(Number(number))?Number(number):index+1;
- return {title:title||('Episode '+cleanNumber),number:cleanNumber};
-}
-
-function render(){
- const q=state.query.trim().toLowerCase();
- const rows=state.items.filter(x=>(x.title+' '+x.description+' '+x.status).toLowerCase().includes(q));
- $('grid').innerHTML='';
- if(!rows.length){$('grid').innerHTML='<div class="empty">'+(state.loaded?'No matching titles. Try another search or refresh the catalogue.':'The catalogue could not be loaded right now. Try Refresh in a moment.')+'</div>';return}
- const fragment=document.createDocumentFragment();
- rows.slice(0,100).forEach(item=>{
-  const card=document.createElement('article');card.className='card';
-  const image=safeImage(item.poster);
-  const poster=image?'<img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="'+escapeHtml(image)+'" alt="">':'<span aria-hidden="true">'+(state.kind==='donghua'?'🏮':'🎌')+'</span>';
-  const watchLinks=(item.streamingEpisodes||[]).filter(ep=>ep&&ep.url&&/^https?:\/\//i.test(ep.url)).slice(0,3).map(ep=>'<a class="watch-link" target="_blank" rel="noopener noreferrer" href="'+escapeHtml(ep.url)+'">▶ '+escapeHtml(ep.site||ep.title||'Watch officially')+'</a>').join('');
-  const infoUrl=state.kind==='anime'&&/^\d+$/.test(item.slug)?'https://anilist.co/anime/'+encodeURIComponent(item.slug):'https://anilist.co/search/anime?search='+encodeURIComponent(item.title);
-  const infoLink=state.kind==='anime'?'<a class="watch-link" target="_blank" rel="noopener noreferrer" href="'+escapeHtml(infoUrl)+'">ⓘ Anime details & official streaming options</a>':'';
-  const detailButton='<button class="watch-link details-toggle" type="button" aria-expanded="false">＋ Load episode list & details</button>';
-  const detailPanel='<div class="episode-details" hidden><p>'+escapeHtml(item.description||'No synopsis supplied by this catalogue.')+'</p><p>'+escapeHtml(item.status||'Episode count/status not supplied.')+'</p><p class="episode-loading">Episode list has not been loaded.</p><div class="episode-list"></div><p class="detail-hint">Choose an episode to check for available watch/download options. Links are supplied by external providers; availability and usage rights vary. Download only content you are authorized to save.</p></div>';
-  card.innerHTML='<div class="poster">'+poster+'</div><div class="info"><h3>'+escapeHtml(item.title)+'</h3><div class="meta">'+escapeHtml(item.status||item.description|| (state.kind==='donghua'?'Chinese animation':'Japanese animation'))+'</div><span class="source">'+escapeHtml(item.source|| (state.kind==='donghua'?'Donghua catalogue':'Anime catalogue'))+'</span>'+(watchLinks?'<div class="watch-links">'+watchLinks+'</div>':'')+(infoLink?'<div class="watch-links">'+infoLink+'</div>':'')+'<div class="watch-links">'+detailButton+detailPanel+'</div></div>';
-  const toggle=card.querySelector('.details-toggle');
-  toggle.addEventListener('click',async()=>{
-   const panel=card.querySelector('.episode-details');
-   const opening=panel.hidden;
-   panel.hidden=!opening;
-   toggle.setAttribute('aria-expanded',String(opening));
-   toggle.textContent=opening?'− Hide details':'＋ Load episode list & details';
-   if(opening&&!panel.dataset.loaded&&!panel.dataset.loading){
-    panel.dataset.loading='1';
-    const loading=panel.querySelector('.episode-loading');
-    const list=panel.querySelector('.episode-list');
-    loading.textContent='Loading episode list…';
-    try{
-     const episodes=await fetchEpisodeMetadata(item,state.kind);
-     if(!episodes.length){
-      loading.textContent='No episode list was returned. Close and reopen this panel to retry, or use the title details link.';
-     }else{
-      panel.dataset.loaded='1';
-      loading.textContent=episodes.length+' episode entries found';
-      const frag=document.createDocumentFragment();
-      episodes.slice(0,200).forEach((ep,index)=>{
-       const data=episodeDisplay(ep,index);
-       const row=document.createElement('div');
-       row.style.cssText='display:flex;gap:8px;align-items:flex-start;justify-content:space-between;padding:7px 0;border-bottom:1px solid #30263f';
-       const label=document.createElement('span');
-       label.textContent='Ep. '+data.number+' — '+data.title;
-       label.style.cssText='min-width:0;overflow-wrap:anywhere;color:#f3edff';
-       const action=document.createElement('button');action.className='watch-link';action.type='button';action.textContent='Watch / Download';action.style.cssText='flex-shrink:0;max-width:45%;text-align:center';
-       const optionsBox=document.createElement('div');optionsBox.style.cssText='display:grid;gap:6px;width:100%;padding:4px 0 10px';optionsBox.hidden=true;
-       action.addEventListener('click',async()=>{
-        if(!optionsBox.hidden){optionsBox.hidden=true;action.textContent='Watch / Download';return}
-        optionsBox.hidden=false;if(optionsBox.dataset.loaded){action.textContent='Hide options';return}
-        action.disabled=true;action.textContent='Checking…';
-        const epSlug=episodeActionUrl(ep),sourceUrl=safeHttpUrl(first(ep,['url','link','watch_url','watchUrl']));
-        try{
-         const options=await fetchEpisodeOptions(epSlug,state.kind);
-         if(options.streams.length){const h=document.createElement('strong');h.textContent='Watch';h.style.color='#eee5ff';optionsBox.appendChild(h);options.streams.forEach(x=>appendOptionLink(optionsBox,'▶ '+x.label,x.url))}
-         if(options.downloads.length){const h=document.createElement('strong');h.textContent='Download by quality';h.style.color='#eee5ff';optionsBox.appendChild(h);options.downloads.forEach(x=>appendOptionLink(optionsBox,'⬇ '+x.quality+(x.size?' · '+x.size:'')+(x.server?' · '+x.server:''),x.url))}
-         if(!options.streams.length&&!options.downloads.length){if(sourceUrl)appendOptionLink(optionsBox,'Open episode source',sourceUrl);const msg=document.createElement('small');msg.textContent=sourceUrl?'No quality list was returned by the API.':'No watch/download links returned. This provider may not support the episode route.';optionsBox.appendChild(msg)}
-         optionsBox.dataset.loaded='1';
-        }catch(_){const msg=document.createElement('small');msg.textContent='Could not retrieve episode options right now. Try again later.';optionsBox.appendChild(msg)}
-        finally{action.disabled=false;action.textContent='Hide options'}
-       });
-       const rowWrap=document.createElement('div');rowWrap.style.cssText='display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:start;padding:7px 0;border-bottom:1px solid #30263f';rowWrap.append(label,action);
-       const optionWrap=document.createElement('div');optionWrap.style.cssText='grid-column:1/-1;min-width:0';optionWrap.appendChild(optionsBox);rowWrap.appendChild(optionWrap);frag.appendChild(rowWrap);
-      });
-      list.appendChild(frag);
-      if(episodes.length>200){const more=document.createElement('p');more.textContent='Showing first 200 episodes to keep the page lightweight.';list.appendChild(more)}
-     }
-    }catch(_){loading.textContent='Could not load episode metadata right now. Try again later.'}
-    finally{delete panel.dataset.loading}
-   }
-  });
-  fragment.appendChild(card);
- });
- $('grid').appendChild(fragment);
-}
-async function load(){
- const thisLoad=++state.loadId;
- const kindAtStart=state.kind;
- $('status').textContent='Loading '+(kindAtStart==='donghua'?'Donghua':'Anime')+' catalogue…';
- $('grid').innerHTML='<div class="empty">Fetching titles…</div>';
- $('reload').disabled=true;
- try{
-  const items=await getList(kindAtStart);
-  if(thisLoad!==state.loadId||kindAtStart!==state.kind)return;
-  state.items=items;state.loaded=true;render();
-  $('status').textContent=state.items.length+' titles loaded · '+(kindAtStart==='donghua'?'Donghua':'Anime')+' catalogue';
- }catch(e){
-  if(thisLoad!==state.loadId||kindAtStart!==state.kind)return;
-  state.items=[];state.loaded=false;render();
-  $('status').textContent=kindAtStart==='anime'?'Anime catalogue is temporarily unavailable. Check your connection and try Refresh.':'Donghua catalogue is temporarily unavailable. Check your connection and try Refresh.';
- }
- finally{if(thisLoad===state.loadId)$('reload').disabled=false}
-}
-document.querySelectorAll('[data-kind]').forEach(btn=>btn.addEventListener('click',()=>{
- state.kind=btn.dataset.kind;
- document.querySelectorAll('[data-kind]').forEach(b=>b.setAttribute('aria-selected',String(b===btn)));
- state.query='';$('search').value='';load();
-}));
-let searchTimer;
-async function searchAnime(term){
- const query='query ($search: String!) { Page(page: 1, perPage: 24) { media(search: $search, type: ANIME, isAdult: false, sort: SEARCH_MATCH) { id title { romaji english native } coverImage { large } description(asHtml: false) episodes status streamingEpisodes { title url site } } } }';
- const response=await fetchWithTimeout('https://graphql.anilist.co',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({query,variables:{search:term}})},9000);
- if(!response.ok)throw new Error('Search service HTTP '+response.status);
- const payload=await response.json();
- const rows=payload&&payload.data&&payload.data.Page&&payload.data.Page.media;
- if(!Array.isArray(rows))throw new Error('No search results returned');
- return rows.map(x=>({title:(x.title&&(x.title.english||x.title.romaji||x.title.native))||'Untitled anime',slug:String(x.id||''),poster:x.coverImage&&x.coverImage.large||'',description:String(x.description||'').replace(/<[^>]*>/g,' ').slice(0,400),status:[x.status,x.episodes?x.episodes+' episodes':''].filter(Boolean).join(' · '),source:'AniList search',streamingEpisodes:Array.isArray(x.streamingEpisodes)?x.streamingEpisodes:[],raw:x}));
-}
-$('search').addEventListener('input',e=>{
- state.query=e.target.value;
- clearTimeout(searchTimer);
- if(state.kind!=='anime'||state.query.trim().length<2){render();return}
- render();
- searchTimer=setTimeout(async()=>{
-  const term=state.query.trim();
-  $('status').textContent='Searching anime titles…';
-  try{
-   const found=await searchAnime(term);
-   if(state.kind!=='anime'||state.query.trim()!==term)return;
-   state.items=found;state.loaded=true;render();
-   $('status').textContent=found.length+' anime search results · official streaming links appear only when provided by AniList';
-  }catch(_){
-   if(state.query.trim()===term)$('status').textContent='Online search unavailable; showing matches from the loaded catalogue.';
-  }
- },450);
-});
-$('reload').addEventListener('click',load);
-load();
+function episodeRows(payload){const out=[];function walk(v,d){if(!v||d>6)return;if(Array.isArray(v)){if(v.length&&v.some(x=>x&&typeof x==='object'&&(x.episode||x.episodeNumber||x.slug||x.url)))out.push(v);v.slice(0,80).forEach(x=>walk(x,d+1));return}if(typeof v==='object')for(const [k,x] of Object.entries(v)){if(Array.isArray(x)&&/episode|eps/i.test(k))out.push(x);if(x&&typeof x==='object')walk(x,d+1)}}walk(payload,0);out.sort((a,b)=>b.length-a.length);return out[0]||[]}
+async function details(item){const s=slugOf(item.slug);if(!s||/^\d+$/.test(s))return[];const routes=state.kind==='anime'?['/otd/anime/']:['/dnh/series/','/dgb/series/'];for(const route of routes){try{const r=await fetchWithTimeout(API+route+encodeURIComponent(s),{headers:{Accept:'application/json'},cache:'no-store'});if(r.ok){const rows=episodeRows(await r.json());if(rows.length)return rows}}catch(_){} }return[]}
+function epInfo(ep,i){if(typeof ep==='string')return{title:'Episode '+(i+1),number:i+1,url:ep};const n=first(ep,['episodeNumber','episode_no','episodeNo','number','episode','ep','index']);return{title:String(first(ep,['title','name','episodeTitle','judul','episode_name'])||('Episode '+(Number(n)||i+1)),number:Number(n)||i+1,url:first(ep,['url','link','watch_url','watchUrl'])||'',slug:slugOf(first(ep,['slug','endpoint','episode_slug','episodeSlug','id']))}}
+function mediaOptions(payload){const streams=[],downloads=[],subs=[];function add(a,url){try{const u=new URL(String(url||''));if(!/^https?:$/.test(u.protocol))return;a.push(u.href)}catch(_){} }function walk(v,d,ctx){if(!v||d>7)return;if(Array.isArray(v)){v.slice(0,100).forEach(x=>walk(x,d+1,ctx));return}if(typeof v!=='object')return;const label=String(first(v,['quality','resolution','label','name','server','provider','host','title'])||ctx||'Source');for(const [k,x] of Object.entries(v)){if(typeof x==='string'&&/^https?:\/\//i.test(x)){const f=(ctx+' '+k+' '+label).toLowerCase();if(/subtitle|sub_url|suburl|caption|vtt|srt/.test(f))add(subs,x);else if(/download|file|mirror|quality|resolution/.test(f))add(downloads,x);else if(/stream|player|embed|watch|video|server|m3u8|mp4/.test(f))add(streams,x)}else if(x&&typeof x==='object')walk(x,d+1,ctx?ctx+' '+k:k)}}walk(payload&&payload.data&&typeof payload.data==='object'?payload.data:payload,0,'');return{streams:[...new Set(streams)],downloads:[...new Set(downloads)],subs:[...new Set(subs)]}}
+async function episodeMedia(ep){if(state.kind==='donghua')return{streams:[],downloads:[],subs:[]};const s=ep.slug;if(!s||/^\d+$/.test(s))return{streams:[],downloads:[],subs:[]};try{const r=await fetchWithTimeout(API+'/otd/episode/'+encodeURIComponent(s),{headers:{Accept:'application/json'},cache:'no-store'});if(r.ok)return mediaOptions(await r.json())}catch(_){}return{streams:[],downloads:[],subs:[]}}
+function play(url,title,subs){$('playerTitle').textContent=title;const v=$('player');v.pause();v.removeAttribute('src');v.innerHTML='';if(url.toLowerCase().includes('.m3u8')){v.src=url}else{const source=document.createElement('source');source.src=url;source.type=/\.webm(\?|$)/i.test(url)?'video/webm':'video/mp4';v.appendChild(source)}(subs||[]).slice(0,4).forEach((u,i)=>{const track=document.createElement('track');track.kind='subtitles';track.label='English';track.srclang='en';track.src=u;track.default=i===0;v.appendChild(track)});$('playerFoot').textContent=subs&&subs.length?'English subtitle track supplied by the source.':'English subtitles are not verified for this source; no subtitle track was supplied.';$('playerModal').hidden=false;v.play().catch(()=>{})}
+function openLink(container,label,url){const a=document.createElement('a');a.className='watch-link';a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=label;container.appendChild(a)}
+function render(){const q=state.query.trim().toLowerCase();const rows=state.items.filter(x=>(x.title+' '+x.description+' '+x.status).toLowerCase().includes(q));$('grid').innerHTML='';if(!rows.length){$('grid').innerHTML='<div class="empty">No matching current titles. Try another search or Refresh now.</div>';return}const frag=document.createDocumentFragment();rows.slice(0,100).forEach(item=>{const card=document.createElement('article');card.className='card';const img=imageUrl(item.poster);const poster=img?'<img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="'+esc(img)+'" alt="">': '<span>'+(state.kind==='donghua'?'🏮':'🎌')+'</span>';const official=(item.streamingEpisodes||[]).filter(x=>x&&/^https?:\/\//i.test(x.url)).slice(0,3);card.innerHTML='<div class="poster">'+poster+'</div><div class="info"><h3>'+esc(item.title)+'</h3><div class="meta">'+esc(item.status||item.description||'Current release')+'</div><span class="source">'+esc(item.source)+'</span>'+(official.length?'<div class="watch-links">'+official.map(x=>'<a class="watch-link" target="_blank" rel="noopener noreferrer" href="'+esc(x.url)+'">▶ '+esc(x.site||x.title||'Official watch')+'</a>').join('')+'</div>':'')+'<span class="badge">Live catalogue</span><div class="watch-links"><button class="details-toggle" type="button">＋ Episodes & details</button><div class="episode-details" hidden><p>'+esc(item.description||'No synopsis supplied.')+'</p><p class="episode-loading">Episodes have not been loaded.</p><div class="episode-list"></div></div></div></div>';const toggle=card.querySelector('.details-toggle'),panel=card.querySelector('.episode-details');toggle.addEventListener('click',async()=>{const opening=panel.hidden;panel.hidden=!opening;toggle.textContent=opening?'− Hide episodes':'＋ Episodes & details';if(!opening||panel.dataset.loaded||panel.dataset.loading)return;panel.dataset.loading='1';const loading=panel.querySelector('.episode-loading');const list=panel.querySelector('.episode-list');loading.textContent='Checking the current episode list…';try{const eps=await details(item);if(!eps.length){loading.textContent='No episode list returned by this source yet.'}else{panel.dataset.loaded='1';loading.textContent=eps.length+' episode entries · checked now';eps.slice(0,200).forEach((ep,i)=>{const d=epInfo(ep,i),row=document.createElement('div');row.style.cssText='display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;padding:7px 0;border-bottom:1px solid #30263f';const label=document.createElement('span');label.textContent='Ep. '+d.number+' — '+d.title;label.style.overflowWrap='anywhere';const btn=document.createElement('button');btn.className='watch-link';btn.type='button';btn.textContent='Watch / Download';const box=document.createElement('div');box.style.cssText='grid-column:1/-1;display:grid;gap:6px';box.hidden=true;btn.onclick=async()=>{box.hidden=!box.hidden;if(box.dataset.loaded||box.hidden)return;btn.disabled=true;btn.textContent='Checking…';const m=await episodeMedia(d);if(m.streams.length){m.streams.forEach((u,n)=>{const b=document.createElement('button');b.className='watch-link';b.type='button';b.textContent='▶ Watch source '+(n+1);b.onclick=()=>play(u,item.title+' · Episode '+d.number,m.subs);box.appendChild(b)})}if(m.downloads.length)m.downloads.forEach((u,n)=>openLink(box,'⬇ Download source '+(n+1),u));if(!m.streams.length&&!m.downloads.length&&d.url&&/^https?:\/\//i.test(d.url))openLink(box,'Open episode source',d.url);if(!box.children.length){const s=document.createElement('small');s.textContent=state.kind==='donghua'?'Episode playback/download route is not verified for this provider yet.':'No media links were returned for this episode.';box.appendChild(s)}box.dataset.loaded='1';btn.disabled=false;btn.textContent='Hide options'};row.append(label,btn,box);list.appendChild(row)})}}catch(_){loading.textContent='Could not load episode metadata right now.'}finally{delete panel.dataset.loading}});frag.appendChild(card)});$('grid').appendChild(frag)}
+async function load(){const id=++state.loadId,kind=state.kind;$('status').textContent='Loading current '+(kind==='donghua'?'Donghua':'Anime')+'…';$('grid').innerHTML='<div class="empty">Fetching live catalogue…</div>';$('reload').disabled=true;try{const items=await getList(kind);if(id!==state.loadId||kind!==state.kind)return;state.items=items;state.loaded=true;state.lastUpdated=Date.now();render();$('status').textContent=items.length+' current titles loaded · updated '+new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'})}catch(_){if(id!==state.loadId||kind!==state.kind)return;state.items=[];state.loaded=false;render();$('status').textContent='Live '+(kind==='donghua'?'Donghua':'Anime')+' catalogue is temporarily unavailable. Try Refresh now.'}finally{if(id===state.loadId)$('reload').disabled=false}}
+async function searchAnime(term){const q='query($search:String!){Page(page:1,perPage:30){media(search:$search,type:ANIME,isAdult:false,sort:SEARCH_MATCH){id title{romaji english native} coverImage{large} description(asHtml:false) episodes status streamingEpisodes{title url site}}}}';const r=await fetchWithTimeout('https://graphql.anilist.co',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({query:q,variables:{search:term}})});if(!r.ok)throw Error('search failed');const p=await r.json();return aniMap(p.data.Page.media||[],'AniList search')}
+let searchTimer;$('search').addEventListener('input',e=>{state.query=e.target.value;clearTimeout(searchTimer);if(state.kind!=='anime'||state.query.trim().length<2){render();return}searchTimer=setTimeout(async()=>{const term=state.query.trim();$('status').textContent='Searching current anime data…';try{const found=await searchAnime(term);if(state.kind!=='anime'||state.query.trim()!==term)return;state.items=found;state.loaded=true;render();$('status').textContent=found.length+' anime search results · AniList'}catch(_){$('status').textContent='Search unavailable; showing the loaded current catalogue.'}},350)});
+document.querySelectorAll('[data-kind]').forEach(b=>b.onclick=()=>{state.kind=b.dataset.kind;state.query='';$('search').value='';document.querySelectorAll('[data-kind]').forEach(x=>x.setAttribute('aria-selected',String(x===b)));load()});$('reload').onclick=load;$('closePlayer').onclick=()=>{$('player').pause();$('player').removeAttribute('src');$('player').load();$('playerModal').hidden=true};$('playerModal').addEventListener('click',e=>{if(e.target.id==='playerModal')$('closePlayer').click()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('playerModal').hidden)$('closePlayer').click()});setInterval(()=>{if(document.visibilityState==='visible'&&!$('reload').disabled)load()},30*60*1000);load();
 })();
 </script>
 </body>
