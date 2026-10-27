@@ -1,21 +1,21 @@
 {
-  "started_utc": "2026-10-26T08:19:56.615840+00:00",
-  "finished_utc": "2026-10-26T08:20:13.533230+00:00",
+  "started_utc": "2026-10-27T08:31:56.380739+00:00",
+  "finished_utc": "2026-10-27T08:32:12.913854+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
-  "total_items": 347,
-  "fresh_items": 332,
-  "corroborated_candidates": 9,
+  "total_items": 350,
+  "fresh_items": 338,
+  "corroborated_candidates": 10,
   "published_count": 5,
   "published_titles": [
-    "Exiled opposition leader María Corina Machado returns to rapturous reception in Venezuela",
-    "Sanwo-Olu details plan to integrate proposed state police into Lagos security framework",
-    "The 10 Best SNES Games to Play on Nintendo Switch Online",
-    "Brazil runoff live updates: Lula supporters celebrate historic election win as Bolsonaro refuses to concede",
-    "Phantom Blade Zero Reviews Just Beat Every Soulslike In 2026"
+    "US Marine indicted for murder and robbery of woman in Japan",
+    "Gov. Otti Receives Abia Born Top JAMB Scorer, Pledges Support for His Education",
+    "Chinese brands drop Mbappe over alleged Mao Zedong joke",
+    "Some iPhone Duo screens are already failing",
+    "Lula's comeback in Brazil dents Trump's ambitions for Latin America"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }
