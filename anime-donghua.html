@@ -110,7 +110,34 @@ document.querySelectorAll('[data-kind]').forEach(btn=>btn.addEventListener('clic
  document.querySelectorAll('[data-kind]').forEach(b=>b.setAttribute('aria-selected',String(b===btn)));
  state.query='';$('search').value='';load();
 }));
-$('search').addEventListener('input',e=>{state.query=e.target.value;render()});
+let searchTimer;
+async function searchAnime(term){
+ const query='query ($search: String!) { Page(page: 1, perPage: 24) { media(search: $search, type: ANIME, isAdult: false, sort: SEARCH_MATCH) { id title { romaji english native } coverImage { large } description(asHtml: false) episodes status streamingEpisodes { title url site } } } }';
+ const response=await fetch('https://graphql.anilist.co',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({query,variables:{search:term}})});
+ if(!response.ok)throw new Error('Search service HTTP '+response.status);
+ const payload=await response.json();
+ const rows=payload&&payload.data&&payload.data.Page&&payload.data.Page.media;
+ if(!Array.isArray(rows))throw new Error('No search results returned');
+ return rows.map(x=>({title:(x.title&&(x.title.english||x.title.romaji||x.title.native))||'Untitled anime',slug:String(x.id||''),poster:x.coverImage&&x.coverImage.large||'',description:String(x.description||'').replace(/<[^>]*>/g,' ').slice(0,400),status:[x.status,x.episodes?x.episodes+' episodes':''].filter(Boolean).join(' · '),source:'AniList search',streamingEpisodes:Array.isArray(x.streamingEpisodes)?x.streamingEpisodes:[],raw:x}));
+}
+$('search').addEventListener('input',e=>{
+ state.query=e.target.value;
+ clearTimeout(searchTimer);
+ if(state.kind!=='anime'||state.query.trim().length<2){render();return}
+ render();
+ searchTimer=setTimeout(async()=>{
+  const term=state.query.trim();
+  $('status').textContent='Searching anime titles…';
+  try{
+   const found=await searchAnime(term);
+   if(state.kind!=='anime'||state.query.trim()!==term)return;
+   state.items=found;state.loaded=true;render();
+   $('status').textContent=found.length+' anime search results · official streaming links appear only when provided by AniList';
+  }catch(_){
+   if(state.query.trim()===term)$('status').textContent='Online search unavailable; showing matches from the loaded catalogue.';
+  }
+ },450);
+});
 $('reload').addEventListener('click',load);
 load();
 })();
