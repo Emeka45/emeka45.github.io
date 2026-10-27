@@ -150,6 +150,40 @@ async function fetchEpisodeMetadata(item,kind){
  }
  return [];
 }
+function safeHttpUrl(value){try{const u=new URL(String(value||''));return (u.protocol==='https:'||u.protocol==='http:')?u.href:''}catch(_){return ''}}
+function collectMediaOptions(payload){
+ const root=payload&&payload.data&&typeof payload.data==='object'?payload.data:payload;
+ const episode=root&&(root.episode_detail||root.episodeDetail||root.episode_data||root.episodeData||root.episode||root);
+ const streams=[],downloads=[];
+ function addStream(label,url){const safe=safeHttpUrl(url);if(safe&&!streams.some(x=>x.url===safe))streams.push({label:String(label||'Watch episode'),url:safe})}
+ function addDownload(quality,server,url,size){const safe=safeHttpUrl(url);if(safe&&!downloads.some(x=>x.url===safe))downloads.push({quality:String(quality||'Download'),server:String(server||''),url:safe,size:String(size||'')})}
+ if(episode&&typeof episode==='object'){
+  addStream('Watch episode',first(episode,['stream_url','streamUrl','stream_link','streamLink','play_url','playUrl']));
+  const servers=first(episode,['streaming','streaming_servers','streamingServers','servers']);
+  if(Array.isArray(servers))servers.forEach((x,i)=>addStream(first(x,['name','server','provider','label'])||('Player '+(i+1)),first(x,['url','link','stream_url','streamUrl'])));
+  const source=first(episode,['download_urls','downloadUrls','downloads','download_links','downloadLinks']);
+  if(Array.isArray(source))source.forEach((group,i)=>{
+   if(!group||typeof group!=='object')return;
+   const quality=first(group,['resolution','quality','label','name'])||('Download '+(i+1)),size=first(group,['size','file_size','fileSize']),urls=first(group,['urls','links','servers','download_links']);
+   if(Array.isArray(urls))urls.forEach(entry=>typeof entry==='string'?addDownload(quality,'',entry,size):entry&&addDownload(quality,first(entry,['provider','server','host','name']),first(entry,['url','link','download_url','downloadUrl']),first(entry,['size','file_size','fileSize'])||size));
+   else addDownload(quality,first(group,['provider','server','host']),first(group,['url','link','download_url','downloadUrl']),size);
+  });
+  if(source&&typeof source==='object'&&!Array.isArray(source))Object.entries(source).forEach(([quality,values])=>{
+   (Array.isArray(values)?values:[values]).forEach(v=>{
+    if(typeof v==='string')addDownload(quality,'',v,'');
+    else if(v&&typeof v==='object'){const nested=first(v,['urls','links']);if(Array.isArray(nested))nested.forEach(n=>typeof n==='string'?addDownload(quality,first(v,['provider','server']),n,first(v,['size'])):n&&addDownload(quality,first(n,['provider','server','host']),first(n,['url','link']),first(n,['size'])||first(v,['size'])));else addDownload(quality,first(v,['provider','server','host']),first(v,['url','link']),first(v,['size']))}
+   });
+  });
+ }
+ return {streams,downloads};
+}
+async function fetchEpisodeOptions(slug,kind){
+ if(!slug||/^\\d+$/.test(slug))return {streams:[],downloads:[]};
+ const routes=kind==='anime'?['/otd/episode/']:['/dnh/episode/','/dgb/episode/'];
+ for(const route of routes){try{const response=await fetchWithTimeout(API+route+encodeURIComponent(slug),{headers:{'Accept':'application/json'},cache:'no-store'},9000);if(!response.ok)continue;const options=collectMediaOptions(await response.json());if(options.streams.length||options.downloads.length)return options}catch(_){}}
+ return {streams:[],downloads:[]};
+}
+function appendOptionLink(container,label,url){const link=document.createElement('a');link.className='watch-link';link.href=url;link.target='_blank';link.rel='noopener noreferrer';link.textContent=label;container.appendChild(link)}
 function episodeDisplay(ep,index){
  if(typeof ep==='string')return {title:ep,number:index+1};
  const title=String(first(ep,['title','name','episodeTitle','judul','episode_name'])||'');
@@ -172,7 +206,7 @@ function render(){
   const infoUrl=state.kind==='anime'&&/^\d+$/.test(item.slug)?'https://anilist.co/anime/'+encodeURIComponent(item.slug):'https://anilist.co/search/anime?search='+encodeURIComponent(item.title);
   const infoLink=state.kind==='anime'?'<a class="watch-link" target="_blank" rel="noopener noreferrer" href="'+escapeHtml(infoUrl)+'">ⓘ Anime details & official streaming options</a>':'';
   const detailButton='<button class="watch-link details-toggle" type="button" aria-expanded="false">＋ Load episode list & details</button>';
-  const detailPanel='<div class="episode-details" hidden><p>'+escapeHtml(item.description||'No synopsis supplied by this catalogue.')+'</p><p>'+escapeHtml(item.status||'Episode count/status not supplied.')+'</p><p class="episode-loading">Episode list has not been loaded.</p><div class="episode-list"></div><p class="detail-hint">Episode listings are metadata only. Use official/licensed viewing services; this page does not expose third-party video files or unverified download links.</p></div>';
+  const detailPanel='<div class="episode-details" hidden><p>'+escapeHtml(item.description||'No synopsis supplied by this catalogue.')+'</p><p>'+escapeHtml(item.status||'Episode count/status not supplied.')+'</p><p class="episode-loading">Episode list has not been loaded.</p><div class="episode-list"></div><p class="detail-hint">Choose an episode to check for available watch/download options. Links are supplied by external providers; availability and usage rights vary. Download only content you are authorized to save.</p></div>';
   card.innerHTML='<div class="poster">'+poster+'</div><div class="info"><h3>'+escapeHtml(item.title)+'</h3><div class="meta">'+escapeHtml(item.status||item.description|| (state.kind==='donghua'?'Chinese animation':'Japanese animation'))+'</div><span class="source">'+escapeHtml(item.source|| (state.kind==='donghua'?'Donghua catalogue':'Anime catalogue'))+'</span>'+(watchLinks?'<div class="watch-links">'+watchLinks+'</div>':'')+(infoLink?'<div class="watch-links">'+infoLink+'</div>':'')+'<div class="watch-links">'+detailButton+detailPanel+'</div></div>';
   const toggle=card.querySelector('.details-toggle');
   toggle.addEventListener('click',async()=>{
@@ -201,15 +235,24 @@ function render(){
        const label=document.createElement('span');
        label.textContent='Ep. '+data.number+' — '+data.title;
        label.style.cssText='min-width:0;overflow-wrap:anywhere;color:#f3edff';
-       const link=document.createElement('a');
-       link.className='watch-link';
-       link.target='_blank';link.rel='noopener noreferrer';
-       const episodeSlug=episodeActionUrl(ep);
-       const directPage=state.kind==='anime'&&episodeSlug&&!/^\d+$/.test(episodeSlug)&&!/^https?:\/\//i.test(String(first(ep,['url','link'])||''))?API+'/otd/episode/'+encodeURIComponent(episodeSlug):'';
-       link.href=directPage|| (state.kind==='anime'?'https://anilist.co/search/anime?search='+encodeURIComponent(item.title):'https://www.google.com/search?q='+encodeURIComponent(item.title+' official licensed streaming'));
-       link.textContent=directPage?'Open episode details':'Find licensed options';
-       link.style.cssText='flex-shrink:0;max-width:45%;text-align:center';
-       row.append(label,link);frag.appendChild(row);
+       const action=document.createElement('button');action.className='watch-link';action.type='button';action.textContent='Watch / Download';action.style.cssText='flex-shrink:0;max-width:45%;text-align:center';
+       const optionsBox=document.createElement('div');optionsBox.style.cssText='display:grid;gap:6px;width:100%;padding:4px 0 10px';optionsBox.hidden=true;
+       action.addEventListener('click',async()=>{
+        if(!optionsBox.hidden){optionsBox.hidden=true;action.textContent='Watch / Download';return}
+        optionsBox.hidden=false;if(optionsBox.dataset.loaded){action.textContent='Hide options';return}
+        action.disabled=true;action.textContent='Checking…';
+        const epSlug=episodeActionUrl(ep),sourceUrl=safeHttpUrl(first(ep,['url','link','watch_url','watchUrl']));
+        try{
+         const options=await fetchEpisodeOptions(epSlug,state.kind);
+         if(options.streams.length){const h=document.createElement('strong');h.textContent='Watch';h.style.color='#eee5ff';optionsBox.appendChild(h);options.streams.forEach(x=>appendOptionLink(optionsBox,'▶ '+x.label,x.url))}
+         if(options.downloads.length){const h=document.createElement('strong');h.textContent='Download by quality';h.style.color='#eee5ff';optionsBox.appendChild(h);options.downloads.forEach(x=>appendOptionLink(optionsBox,'⬇ '+x.quality+(x.size?' · '+x.size:'')+(x.server?' · '+x.server:''),x.url))}
+         if(!options.streams.length&&!options.downloads.length){if(sourceUrl)appendOptionLink(optionsBox,'Open episode source',sourceUrl);const msg=document.createElement('small');msg.textContent=sourceUrl?'No quality list was returned by the API.':'No watch/download links returned. This provider may not support the episode route.';optionsBox.appendChild(msg)}
+         optionsBox.dataset.loaded='1';
+        }catch(_){const msg=document.createElement('small');msg.textContent='Could not retrieve episode options right now. Try again later.';optionsBox.appendChild(msg)}
+        finally{action.disabled=false;action.textContent='Hide options'}
+       });
+       const rowWrap=document.createElement('div');rowWrap.style.cssText='display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:start;padding:7px 0;border-bottom:1px solid #30263f';rowWrap.append(label,action);
+       const optionWrap=document.createElement('div');optionWrap.style.cssText='grid-column:1/-1;min-width:0';optionWrap.appendChild(optionsBox);rowWrap.appendChild(optionWrap);frag.appendChild(rowWrap);
       });
       list.appendChild(frag);
       if(episodes.length>200){const more=document.createElement('p');more.textContent='Showing first 200 episodes to keep the page lightweight.';list.appendChild(more)}
