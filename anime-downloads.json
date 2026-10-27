@@ -1,6 +1,6 @@
 {
-  "version": 2,
-  "policy": "Only list media that is openly licensed or explicitly authorized for distribution. The website provides links; third-party source hosts store the media unless a file is specifically hosted in this repository.",
+  "version": 3,
+  "policy": "Catalogue includes creator-authorized/open-licensed media with direct download links and discovery-only listings for copyrighted titles. Commercial titles are not copied or rehosted; use official provider pages. Verify the licence and territorial availability of each media item before redistribution.",
   "titles": [
     {
       "id": "morevna-episode-3",
@@ -281,6 +281,958 @@
         {
           "label": "480p · clearer picture",
           "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/5d/2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C%E5%B9%B4%E2%80%9D%E6%95%85%E4%BA%8B.webm/2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C%E5%B9%B4%E2%80%9D%E6%95%85%E4%BA%8B.webm.480p.vp9.webm?download="
+        }
+      ]
+    },
+    {
+      "id": "frieren-beyond-journeys-end",
+      "kind": "anime",
+      "title": "Frieren: Beyond Journey’s End",
+      "description": "Fantasy adventure following an elven mage reflecting on friendship, time and the lives of her former companions.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=Frieren%3A%20Beyond%20Journey%E2%80%99s%20End",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=Frieren%3A%20Beyond%20Journey%E2%80%99s%20End",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "solo-leveling",
+      "kind": "anime",
+      "title": "Solo Leveling",
+      "description": "A low-ranked hunter gains a mysterious power that lets him grow stronger after surviving a deadly dungeon.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=Solo%20Leveling",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=Solo%20Leveling",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "demon-slayer",
+      "kind": "anime",
+      "title": "Demon Slayer: Kimetsu no Yaiba",
+      "description": "Tanjiro joins the Demon Slayer Corps after tragedy strikes his family and his sister is transformed.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=Demon%20Slayer%3A%20Kimetsu%20no%20Yaiba",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=Demon%20Slayer%3A%20Kimetsu%20no%20Yaiba",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "jujutsu-kaisen",
+      "kind": "anime",
+      "title": "Jujutsu Kaisen",
+      "description": "A student enters the dangerous world of curses after swallowing a powerful cursed object.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=Jujutsu%20Kaisen",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=Jujutsu%20Kaisen",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "one-piece",
+      "kind": "anime",
+      "title": "One Piece",
+      "description": "Monkey D. Luffy and his crew sail across the seas in search of the legendary treasure.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=One%20Piece",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=One%20Piece",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "naruto",
+      "kind": "anime",
+      "title": "Naruto",
+      "description": "A young ninja seeks recognition and dreams of becoming the leader of his village.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=Naruto",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=Naruto",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "bleach",
+      "kind": "anime",
+      "title": "Bleach",
+      "description": "A teenager gains the powers of a Soul Reaper and protects people from hostile spirits.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=Bleach",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=Bleach",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "my-hero-academia",
+      "kind": "anime",
+      "title": "My Hero Academia",
+      "description": "In a world where superpowers are common, a determined boy pursues his dream of becoming a hero.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=My%20Hero%20Academia",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=My%20Hero%20Academia",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "spy-family",
+      "kind": "anime",
+      "title": "SPY x FAMILY",
+      "description": "A spy, an assassin and a telepath form a pretend family while hiding their identities from one another.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=SPY%20x%20FAMILY",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=SPY%20x%20FAMILY",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "attack-on-titan",
+      "kind": "anime",
+      "title": "Attack on Titan",
+      "description": "Humanity fights for survival behind enormous walls while uncovering the truth about the Titans.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=Attack%20on%20Titan",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=Attack%20on%20Titan",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "fullmetal-alchemist-brotherhood",
+      "kind": "anime",
+      "title": "Fullmetal Alchemist: Brotherhood",
+      "description": "Two brothers search for the Philosopher’s Stone after an alchemical experiment goes terribly wrong.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=Fullmetal%20Alchemist%3A%20Brotherhood",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=Fullmetal%20Alchemist%3A%20Brotherhood",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "hunter-x-hunter",
+      "kind": "anime",
+      "title": "Hunter x Hunter",
+      "description": "Gon sets out to become a Hunter and find his father, meeting powerful allies and enemies.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=Hunter%20x%20Hunter",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=Hunter%20x%20Hunter",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "death-note",
+      "kind": "anime",
+      "title": "Death Note",
+      "description": "A student discovers a notebook that can kill anyone whose name is written in it.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=Death%20Note",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=Death%20Note",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "dragon-ball",
+      "kind": "anime",
+      "title": "Dragon Ball",
+      "description": "Goku’s adventures lead him into martial arts tournaments and the search for mystical Dragon Balls.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=Dragon%20Ball",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=Dragon%20Ball",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "dragon-ball-z",
+      "kind": "anime",
+      "title": "Dragon Ball Z",
+      "description": "Goku and his allies defend Earth against increasingly powerful extraterrestrial threats.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=Dragon%20Ball%20Z",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=Dragon%20Ball%20Z",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "detective-conan",
+      "kind": "anime",
+      "title": "Detective Conan",
+      "description": "A brilliant young detective solves crimes while secretly searching for a way to regain his original body.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=Detective%20Conan",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=Detective%20Conan",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "haikyu",
+      "kind": "anime",
+      "title": "Haikyu!!",
+      "description": "A determined volleyball player joins a high-school team and works toward the national stage.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=Haikyu!!",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=Haikyu!!",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "blue-lock",
+      "kind": "anime",
+      "title": "Blue Lock",
+      "description": "Strikers compete in an intense training project designed to produce Japan’s ultimate football forward.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=Blue%20Lock",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=Blue%20Lock",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "chainsaw-man",
+      "kind": "anime",
+      "title": "Chainsaw Man",
+      "description": "A young devil hunter gains chainsaw powers and is drawn into dangerous work for a government agency.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=Chainsaw%20Man",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=Chainsaw%20Man",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "vinland-saga",
+      "kind": "anime",
+      "title": "Vinland Saga",
+      "description": "A Viking-era drama follows revenge, war and a young warrior’s search for a meaningful life.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=Vinland%20Saga",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=Vinland%20Saga",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "mob-psycho-100",
+      "kind": "anime",
+      "title": "Mob Psycho 100",
+      "description": "A quiet middle-schooler with overwhelming psychic abilities tries to grow emotionally as well as mentally.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=Mob%20Psycho%20100",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=Mob%20Psycho%20100",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "one-punch-man",
+      "kind": "anime",
+      "title": "One-Punch Man",
+      "description": "An overwhelmingly powerful hero searches for purpose when almost every fight ends with one punch.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=One-Punch%20Man",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=One-Punch%20Man",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "black-clover",
+      "kind": "anime",
+      "title": "Black Clover",
+      "description": "A boy born without magic refuses to abandon his ambition to become the Wizard King.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=Black%20Clover",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=Black%20Clover",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "sailor-moon",
+      "kind": "anime",
+      "title": "Sailor Moon",
+      "description": "A schoolgirl discovers she is a guardian destined to protect Earth with a team of magical warriors.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=Sailor%20Moon",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=Sailor%20Moon",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "studio-ghibli-collection",
+      "kind": "anime",
+      "title": "Studio Ghibli films",
+      "description": "A discovery listing for celebrated animated fantasy and coming-of-age films; availability varies by country and title.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=Studio%20Ghibli%20films",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=Studio%20Ghibli%20films",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "the-apothecary-diaries",
+      "kind": "anime",
+      "title": "The Apothecary Diaries",
+      "description": "A clever apothecary becomes involved in palace mysteries and uses her knowledge to uncover hidden truths.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://www.crunchyroll.com/search?q=The%20Apothecary%20Diaries",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://www.crunchyroll.com/search?q=The%20Apothecary%20Diaries",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "battle-through-the-heavens",
+      "kind": "donghua",
+      "title": "Battle Through the Heavens",
+      "description": "A young cultivator seeks to restore his strength and uncover the secrets behind his family’s legacy.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=Battle%20Through%20the%20Heavens",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=Battle%20Through%20the%20Heavens",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "soul-land",
+      "kind": "donghua",
+      "title": "Soul Land",
+      "description": "A martial-arts prodigy enters a world where spiritual abilities determine a fighter’s path.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=Soul%20Land",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=Soul%20Land",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "soul-land-ii",
+      "kind": "donghua",
+      "title": "Soul Land II: The Unrivaled Tang Sect",
+      "description": "A new generation of talented students trains at an elite academy in a changing cultivation world.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=Soul%20Land%20II%3A%20The%20Unrivaled%20Tang%20Sect",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=Soul%20Land%20II%3A%20The%20Unrivaled%20Tang%20Sect",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "the-daily-life-of-the-immortal-king",
+      "kind": "donghua",
+      "title": "The Daily Life of the Immortal King",
+      "description": "An extraordinarily powerful young cultivator tries to live an ordinary school life.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Daily%20Life%20of%20the%20Immortal%20King",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Daily%20Life%20of%20the%20Immortal%20King",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "perfect-world",
+      "kind": "donghua",
+      "title": "Perfect World",
+      "description": "A gifted child journeys through a mythic world of ancient clans, powerful beings and cultivation.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=Perfect%20World",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=Perfect%20World",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "a-will-eternal",
+      "kind": "donghua",
+      "title": "A Will Eternal",
+      "description": "A clever young cultivator fears death but becomes entangled in a vast and often comic cultivation journey.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=A%20Will%20Eternal",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=A%20Will%20Eternal",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "renegade-immortal",
+      "kind": "donghua",
+      "title": "Renegade Immortal",
+      "description": "A determined young man follows a harsh path toward immortality in a world of competing sects.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=Renegade%20Immortal",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=Renegade%20Immortal",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "swallowed-star",
+      "kind": "donghua",
+      "title": "Swallowed Star",
+      "description": "A young fighter rises in a post-apocalyptic Earth threatened by monsters and later explores the wider universe.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=Swallowed%20Star",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=Swallowed%20Star",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "throne-of-seal",
+      "kind": "donghua",
+      "title": "Throne of Seal",
+      "description": "A young knight joins an order defending humanity against demonic forces.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=Throne%20of%20Seal",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=Throne%20of%20Seal",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "the-magic-chef-of-ice-and-fire",
+      "kind": "donghua",
+      "title": "The Magic Chef of Ice and Fire",
+      "description": "A young chef with opposing elemental powers seeks mastery while facing danger and rivalry.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Magic%20Chef%20of%20Ice%20and%20Fire",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Magic%20Chef%20of%20Ice%20and%20Fire",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "martial-universe",
+      "kind": "donghua",
+      "title": "Martial Universe",
+      "description": "A young man discovers a mysterious talisman and begins a journey through martial arts and cultivation.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=Martial%20Universe",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=Martial%20Universe",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "the-great-ruler",
+      "kind": "donghua",
+      "title": "The Great Ruler",
+      "description": "A young cultivator travels through a vast spiritual world in pursuit of strength and destiny.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Great%20Ruler",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Great%20Ruler",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "record-of-a-mortals-journey",
+      "kind": "donghua",
+      "title": "A Record of a Mortal’s Journey to Immortality",
+      "description": "An ordinary village boy uses persistence and caution to survive the perilous road to immortality.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=A%20Record%20of%20a%20Mortal%E2%80%99s%20Journey%20to%20Immortality",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=A%20Record%20of%20a%20Mortal%E2%80%99s%20Journey%20to%20Immortality",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "against-the-gods",
+      "kind": "donghua",
+      "title": "Against the Gods",
+      "description": "A reborn young warrior faces powerful enemies while navigating a world of martial cultivation.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=Against%20the%20Gods",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=Against%20the%20Gods",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "the-galactic-marine",
+      "kind": "donghua",
+      "title": "The First Order",
+      "description": "A science-fiction adventure set in a changed world where a young survivor becomes involved in a larger conflict.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=The%20First%20Order",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=The%20First%20Order",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "fog-hill-of-five-elements",
+      "kind": "donghua",
+      "title": "Fog Hill of Five Elements",
+      "description": "Stylish hand-painted action follows warriors who confront dangerous creatures tied to elemental powers.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=Fog%20Hill%20of%20Five%20Elements",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=Fog%20Hill%20of%20Five%20Elements",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "link-click",
+      "kind": "donghua",
+      "title": "Link Click",
+      "description": "Two friends enter photographs to uncover clients’ secrets, but every mission carries emotional and temporal risks.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=Link%20Click",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=Link%20Click",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "scissor-seven",
+      "kind": "donghua",
+      "title": "Scissor Seven",
+      "description": "An amnesiac hairdresser and part-time assassin takes odd jobs while slowly uncovering his past.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=Scissor%20Seven",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=Scissor%20Seven",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "the-outcast",
+      "kind": "donghua",
+      "title": "The Outcast",
+      "description": "A young man becomes involved in a hidden world of martial artists and supernatural techniques.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Outcast",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Outcast",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "blades-of-the-guardians",
+      "kind": "donghua",
+      "title": "Blades of the Guardians",
+      "description": "A dangerous escort journey crosses a turbulent land of warriors, rival powers and political intrigue.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=Blades%20of%20the%20Guardians",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=Blades%20of%20the%20Guardians",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "the-land-of-miracles",
+      "kind": "donghua",
+      "title": "The Land of Miracles",
+      "description": "A fantasy adventure follows characters with rare abilities through a world of magic and conflict.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Land%20of%20Miracles",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Land%20of%20Miracles",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "the-island-of-siliang",
+      "kind": "donghua",
+      "title": "The Island of Siliang",
+      "description": "A mysterious island hides secrets about immortals, power and the lives of its inhabitants.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Island%20of%20Siliang",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Island%20of%20Siliang",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "the-warrior-from-sky",
+      "kind": "donghua",
+      "title": "The Warrior from Sky",
+      "description": "A fantasy martial-arts adventure about training, rivalries and supernatural challenges.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Warrior%20from%20Sky",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Warrior%20from%20Sky",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "white-cat-legend",
+      "kind": "donghua",
+      "title": "White Cat Legend",
+      "description": "A young official investigates strange cases in a richly stylized historical fantasy setting.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=White%20Cat%20Legend",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=White%20Cat%20Legend",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "the-ravages-of-time",
+      "kind": "donghua",
+      "title": "The Ravages of Time",
+      "description": "A strategic historical drama reimagines the era of the Three Kingdoms through rival factions and tacticians.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Ravages%20of%20Time",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Ravages%20of%20Time",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "legend-of-exorcism",
+      "kind": "donghua",
+      "title": "Legend of Exorcism",
+      "description": "A young exorcist travels to the capital and becomes involved in supernatural threats and palace intrigue.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=Legend%20of%20Exorcism",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=Legend%20of%20Exorcism",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "heaven-officials-blessing",
+      "kind": "donghua",
+      "title": "Heaven Official’s Blessing",
+      "description": "A fallen crown prince ascends again and encounters a mysterious powerful ghost king.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=Heaven%20Official%E2%80%99s%20Blessing",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=Heaven%20Official%E2%80%99s%20Blessing",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "grandmaster-of-demonic-cultivation",
+      "kind": "donghua",
+      "title": "The Founder of Diabolism",
+      "description": "A controversial cultivator returns years later and joins an old rival to investigate supernatural mysteries.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Founder%20of%20Diabolism",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Founder%20of%20Diabolism",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "the-kings-avatar",
+      "kind": "donghua",
+      "title": "The King’s Avatar",
+      "description": "An elite esports player rebuilds his career after leaving a professional team.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=The%20King%E2%80%99s%20Avatar",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=The%20King%E2%80%99s%20Avatar",
+          "downloads": []
+        }
+      ]
+    },
+    {
+      "id": "the-outcast-seasonal",
+      "kind": "donghua",
+      "title": "Hitori no Shita: The Outcast",
+      "description": "A college student is pulled into a secret society of martial artists after a mysterious incident.",
+      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
+      "sourceUrl": "https://search.bilibili.com/all?keyword=Hitori%20no%20Shita%3A%20The%20Outcast",
+      "catalogueOnly": true,
+      "episodes": [
+        {
+          "title": "Official availability & episodes",
+          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
+          "sourceUrl": "https://search.bilibili.com/all?keyword=Hitori%20no%20Shita%3A%20The%20Outcast",
+          "downloads": []
         }
       ]
     }
