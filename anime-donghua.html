@@ -20,7 +20,7 @@
 <div class="tools"><input class="search" id="search" type="search" placeholder="Search titles…" aria-label="Search titles"><button id="reload" class="primary" type="button">Refresh</button></div>
 <div class="status" id="status" role="status" aria-live="polite">Loading catalogue…</div>
 <section class="grid" id="grid" aria-label="Titles"></section>
-<p class="note"><strong>Watch & download:</strong> this page shows official streaming links when available and provides expandable title details. Direct episode downloads and quality selection are not enabled yet because a dependable, authorized download source has not been verified. Catalogue metadata alone cannot guarantee a safe, working download.</p>
+<p class="note"><strong>Watch & download:</strong> official streaming links appear when the catalogue supplies them. Episode-level Watch / Download options are shown only if the provider returns usable links; quality choices are not guaranteed. The Donghua episode-download route is not yet verified, so this page will not guess one. Use only links you are authorized to access or save.</p>
 </main>
 <footer class="footer"><div class="wrap">© C. O. Eric · <a href="videos.html">Video Hub</a> remains a separate section.</div></footer>
 <script>
@@ -181,8 +181,9 @@ function collectMediaOptions(payload){
 }
 async function fetchEpisodeOptions(slug,kind){
  if(!slug||/^\d+$/.test(slug))return {streams:[],downloads:[]};
- const routes=kind==='anime'?['/otd/episode/']:['/dnh/episode/','/dgb/episode/'];
- for(const route of routes){try{const response=await fetchWithTimeout(API+route+encodeURIComponent(slug),{headers:{'Accept':'application/json'},cache:'no-store'},9000);if(!response.ok)continue;const options=collectMediaOptions(await response.json());if(options.streams.length||options.downloads.length)return options}catch(_){}}
+ // The documented Otakudesu episode route is known; a matching Donghua episode route has not been verified.
+ if(kind==='donghua')return {streams:[],downloads:[]};
+ for(const route of ['/otd/episode/']){try{const response=await fetchWithTimeout(API+route+encodeURIComponent(slug),{headers:{'Accept':'application/json'},cache:'no-store'},9000);if(!response.ok)continue;const options=collectMediaOptions(await response.json());if(options.streams.length||options.downloads.length)return options}catch(_){}}
  return {streams:[],downloads:[]};
 }
 function appendOptionLink(container,label,url){const link=document.createElement('a');link.className='watch-link';link.href=url;link.target='_blank';link.rel='noopener noreferrer';link.textContent=label;container.appendChild(link)}
