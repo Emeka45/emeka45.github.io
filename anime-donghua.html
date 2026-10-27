@@ -119,16 +119,19 @@ function collectEpisodeRows(payload){
 }
 async function fetchEpisodeMetadata(item,kind){
  const slug=detailSlug(item);
- if(!slug||/^\d+$/.test(slug))return [];
+ if(!slug||/^\\d+$/.test(slug))return [];
  const prefixes=kind==='donghua'?['/dnh/series/','/dgb/series/']:['/otd/anime/'];
  for(const prefix of prefixes){
+  const controller=new AbortController();
+  const timer=setTimeout(()=>controller.abort(),9000);
   try{
-   const response=await fetch(API+prefix+encodeURIComponent(slug),{headers:{'Accept':'application/json'},cache:'no-store'});
+   const response=await fetch(API+prefix+encodeURIComponent(slug),{headers:{'Accept':'application/json'},cache:'no-store',signal:controller.signal});
    if(!response.ok)continue;
    const payload=await response.json();
    const rows=collectEpisodeRows(payload);
    if(rows.length)return rows;
   }catch(_){}
+  finally{clearTimeout(timer)}
  }
  return [];
 }
@@ -170,10 +173,10 @@ function render(){
     loading.textContent='Loading episode list…';
     try{
      const episodes=await fetchEpisodeMetadata(item,state.kind);
-     panel.dataset.loaded='1';
      if(!episodes.length){
-      loading.textContent='No episode list was returned by this catalogue for this title.';
+      loading.textContent='No episode list was returned. Close and reopen this panel to retry, or use the title details link.';
      }else{
+      panel.dataset.loaded='1';
       loading.textContent=episodes.length+' episode entries found';
       const frag=document.createDocumentFragment();
       episodes.slice(0,200).forEach((ep,index)=>{
@@ -211,7 +214,7 @@ async function load(){
   $('status').textContent=state.items.length+' titles loaded · '+(state.kind==='donghua'?'Donghua':'Anime')+' catalogue';
  }catch(e){
   state.items=[];state.loaded=false;render();
-  $('status').textContent='Live catalogue is temporarily unavailable. '+(e&&e.message?e.message:'Please retry.');
+  $('status').textContent=state.kind==='anime'?'Anime catalogue is temporarily unavailable. Check your connection and try Refresh.':'Donghua catalogue is temporarily unavailable. Check your connection and try Refresh.';
  }
  finally{$('reload').disabled=false}
 }
