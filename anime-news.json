@@ -1,0 +1,87 @@
+[
+  {
+    "id": "anime-watch-order-guide",
+    "category": "Guides",
+    "kind": "Anime",
+    "title": "How to Choose the Right Anime Watch Order Without Getting Lost",
+    "excerpt": "A practical way to handle long-running series, seasons, specials, OVAs and recap films before you start watching.",
+    "date": "2026-10-28",
+    "author": "C. O. Eric Editorial",
+    "readTime": "5 min read",
+    "content": [
+      "Anime franchises can become confusing when a story has multiple seasons, specials and movies. The simplest approach is to identify the main television seasons first, then check whether a film is a continuation, a side story or a recap.",
+      "Start with the first season and follow the numbered seasons in release order unless the official publisher or studio gives a different viewing order. Specials and OVAs can usually wait until you understand the main story.",
+      "Movies need more care. A recap film may compress an earlier season, while a sequel film can contain material that belongs after a particular season. When in doubt, use the official series page or publisher announcement as the final authority.",
+      "The goal is not to watch every piece of material immediately. Build a clean main-story path first, then return for extras when you want more of the world."
+    ],
+    "sourceLabel": "Editorial guide based on general anime release and viewing practices."
+  },
+  {
+    "id": "donghua-cultivation-explained",
+    "category": "Features",
+    "kind": "Donghua",
+    "title": "Why Cultivation Stories Are So Important to Modern Donghua",
+    "excerpt": "From power progression to mythology, cultivation storytelling gives Chinese animation a distinctive way to build enormous fantasy worlds.",
+    "date": "2026-10-27",
+    "author": "C. O. Eric Editorial",
+    "readTime": "6 min read",
+    "content": [
+      "Cultivation stories are built around characters who train, overcome bottlenecks and gradually move through increasingly difficult realms. That structure gives a series a natural progression system that can continue for a very long time.",
+      "The appeal is also cultural. Many cultivation stories draw from Chinese mythology, martial-arts traditions, philosophy and ideas about spiritual discipline, even when a particular series uses an entirely fictional universe.",
+      "For viewers coming from Japanese anime, the easiest comparison is a progression fantasy: characters acquire techniques, face stronger opponents and discover larger layers of the world. The difference is the vocabulary and mythology surrounding that progression.",
+      "That combination of spectacle, mythology and long-form progression is one reason donghua has become increasingly interesting to international animation audiences."
+    ],
+    "sourceLabel": "Original feature; terminology is explained for general readers."
+  },
+  {
+    "id": "anime-seasonal-guide",
+    "category": "Recommendations",
+    "kind": "Anime",
+    "title": "A Simple Way to Pick What to Watch From a Crowded Anime Season",
+    "excerpt": "You do not need to start everything. Use a quick filter based on genre, episode commitment, premise and your current mood.",
+    "date": "2026-10-26",
+    "author": "C. O. Eric Editorial",
+    "readTime": "4 min read",
+    "content": [
+      "A new anime season can produce more interesting shows than one person can reasonably follow. Instead of trying to watch everything, make a shortlist of three to five titles.",
+      "First filter by premise. If the central idea does not interest you, a strong production team may not be enough to keep you engaged. Next check the expected episode commitment and whether the story is likely to continue beyond the current season.",
+      "Then use the first episode as a test. Pay attention to the characters, pacing and whether the show delivers the type of story promised by its synopsis. You can drop a series without feeling that you failed an assignment.",
+      "Finally, keep one comfort watch, one serious story and one experimental title on your list. That gives you variety without turning entertainment into a workload."
+    ],
+    "sourceLabel": "Original recommendation guide."
+  },
+  {
+    "id": "anime-film-vs-series",
+    "category": "Features",
+    "kind": "Anime",
+    "title": "Anime Film or TV Series: Which Format Fits the Story Better?",
+    "excerpt": "The difference is not only runtime. Films and series give creators very different ways to develop characters, worlds and pacing.",
+    "date": "2026-10-25",
+    "author": "C. O. Eric Editorial",
+    "readTime": "5 min read",
+    "content": [
+      "A film has a limited window to establish its world, conflict and emotional payoff. That pressure can create tight storytelling and strong visual momentum.",
+      "A television series has more room for relationships, side characters and gradual world-building. The trade-off is that pacing can vary because the story has to sustain attention across multiple episodes.",
+      "Neither format is automatically better. A contained adventure may benefit from a film, while an expansive fantasy or character-driven drama may need a series to breathe.",
+      "For viewers, the practical difference is commitment. A film can often be completed in one sitting, while a series becomes part of your routine. Choose the format that fits the story and the amount of time you actually have."
+    ],
+    "sourceLabel": "Original feature."
+  },
+  {
+    "id": "anime-donghua-discovery-hub",
+    "category": "Editorial",
+    "kind": "Anime & Donghua",
+    "title": "Welcome to the C. O. Eric Anime & Donghua Editorial Hub",
+    "excerpt": "A new home for anime and donghua news, guides, features, reviews and watch recommendations alongside the existing catalogue.",
+    "date": "2026-10-24",
+    "author": "C. O. Eric Editorial",
+    "readTime": "3 min read",
+    "content": [
+      "The Anime & Donghua section of the site is being expanded beyond a catalogue. The new editorial side is designed for people who want to understand what they are watching, discover new titles and keep up with developments in animation.",
+      "The editorial hub will cover announcements, seasonal guides, reviews, character features, animation discussions, anime music, Japanese and Chinese animation culture, and selected gaming connections.",
+      "The catalogue and editorial sides serve different purposes. The catalogue helps you find titles and authorized viewing or download sources. The editorial hub explains, discusses and recommends those titles.",
+      "This structure is inspired by the useful organization of major anime publications, while all articles published here are original C. O. Eric editorial work rather than copied articles."
+    ],
+    "sourceLabel": "C. O. Eric editorial statement."
+  }
+]
