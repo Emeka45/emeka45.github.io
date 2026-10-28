@@ -1,21 +1,20 @@
 {
-  "started_utc": "2026-10-27T08:31:56.380739+00:00",
-  "finished_utc": "2026-10-27T08:32:12.913854+00:00",
+  "started_utc": "2026-10-28T09:10:52.008525+00:00",
+  "finished_utc": "2026-10-28T09:11:10.583513+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 350,
-  "fresh_items": 338,
-  "corroborated_candidates": 10,
-  "published_count": 5,
+  "fresh_items": 336,
+  "corroborated_candidates": 4,
+  "published_count": 4,
   "published_titles": [
-    "US Marine indicted for murder and robbery of woman in Japan",
-    "Gov. Otti Receives Abia Born Top JAMB Scorer, Pledges Support for His Education",
-    "Chinese brands drop Mbappe over alleged Mao Zedong joke",
-    "Some iPhone Duo screens are already failing",
-    "Lula's comeback in Brazil dents Trump's ambitions for Latin America"
+    "Pokémon Unite closing down for good, but you'll still be able to use it afterwards, sort of",
+    "NDC Accuses APC Of Neglecting Bayelsa Ahead Of 2027 Elections",
+    "Here’s why the iPhone Duo’s hinge could be cracking the screen",
+    "In the biotech world, you can’t see everything"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }

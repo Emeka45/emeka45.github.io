@@ -1,50 +1,42 @@
 {
-  "finished_utc": "2026-10-27T08:32:15.264026+00:00",
+  "finished_utc": "2026-10-28T09:11:12.904588+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 5,
-  "attempted": 5,
+  "missing_before_run": 4,
+  "attempted": 4,
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-10-27-us-marine-indicted-for-murder-and-robbery-of-woman-in-japan-a42917883c.html",
-      "image": "news/images/2026-10-27-us-marine-indicted-for-murder-and-robbery-of-woman-in-japan-a42917883c-source.jpg",
-      "bytes": 64458,
+      "article": "2026-10-28-pok-mon-unite-closing-down-for-good-but-you-ll-still-be-able-to-use-it-afterwards-sort-of-9500e5bd8f.html",
+      "image": "news/images/2026-10-28-pok-mon-unite-closing-down-for-good-but-you-ll-still-be-able-to-use-it-afterwards-sort-of-9500e5bd8f-source.jpg",
+      "bytes": 142945,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/c3vgxjex1z9wo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/f0a6/live/4658dae0-d13b-11f1-8d4e-ef1672a07d66.jpg"
+      "source_url": "https://www.eurogamer.net/pokemon-unite-closing-date",
+      "image_url": "https://assetsio.gnwcdn.com/pokemon-unite-tier-header.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
     },
     {
-      "article": "2026-10-27-some-iphone-duo-screens-are-already-failing-93166177fe.html",
-      "image": "news/images/2026-10-27-some-iphone-duo-screens-are-already-failing-93166177fe-source.jpg",
-      "bytes": 115369,
+      "article": "2026-10-28-ndc-accuses-apc-of-neglecting-bayelsa-ahead-of-2027-elections-133507d6f6.html",
+      "image": "news/images/2026-10-28-ndc-accuses-apc-of-neglecting-bayelsa-ahead-of-2027-elections-133507d6f6-source.jpg",
+      "bytes": 35861,
       "provider": "Original news source",
-      "source_url": "https://arstechnica.com/gadgets/2026/10/some-iphone-duo-screens-are-already-failing/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/iphone-duo-oops-1152x648.jpg"
+      "source_url": "https://thereporter.com.ng/ndc-accuses-apc-marginalising-bayelsa-ahead-2027-elections",
+      "image_url": "https://dailytrust.com/wp-content/uploads/2026/04/ndc-logo-Nigeria-Democratic-Congress.jpeg"
     },
     {
-      "article": "2026-10-27-lula-s-comeback-in-brazil-dents-trump-s-ambitions-for-latin-america-893806fa23.html",
-      "image": "news/images/2026-10-27-lula-s-comeback-in-brazil-dents-trump-s-ambitions-for-latin-america-893806fa23-source.jpg",
-      "bytes": 158946,
+      "article": "2026-10-28-in-the-biotech-world-you-can-t-see-everything-00fa026dea.html",
+      "image": "news/images/2026-10-28-in-the-biotech-world-you-can-t-see-everything-00fa026dea-source.jpg",
+      "bytes": 112128,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cq62yg6rggj0o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/05b2/live/06753110-d192-11f1-8c41-0bbbeafdc6d4.jpg"
+      "source_url": "https://www.technologyreview.com/2026/10/23/1147610/biotech-you-can-see-everything-theranos-holmes/",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/YCSE_NP_1_1.jpg?resize=1200,600"
     },
     {
-      "article": "2026-10-27-gov-otti-receives-abia-born-top-jamb-scorer-pledges-support-for-his-education-82df233d90.html",
-      "image": "news/images/2026-10-27-gov-otti-receives-abia-born-top-jamb-scorer-pledges-support-for-his-education-82df233d90-source.jpg",
-      "bytes": 92583,
+      "article": "2026-10-28-here-s-why-the-iphone-duo-s-hinge-could-be-cracking-the-screen-fda0754967.html",
+      "image": "news/images/2026-10-28-here-s-why-the-iphone-duo-s-hinge-could-be-cracking-the-screen-fda0754967-source.jpg",
+      "bytes": 87472,
       "provider": "Original news source",
-      "source_url": "https://thereporter.com.ng/gov-otti-receives-abia-born-top-jamb-scorer-pledges-support-for-his-education",
-      "image_url": "https://thereporter.com.ng/uploads/images/202607/image_870x580_6a5eefad4ecfe.jpg"
-    },
-    {
-      "article": "2026-10-27-chinese-brands-drop-mbappe-over-alleged-mao-zedong-joke-671bb81eeb.html",
-      "image": "news/images/2026-10-27-chinese-brands-drop-mbappe-over-alleged-mao-zedong-joke-671bb81eeb-source.jpg",
-      "bytes": 31126,
-      "provider": "Original news source",
-      "source_url": "https://punchng.com/chinese-brands-drop-mbappe-over-alleged-mao-zedong-joke/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/09/07154216/Mbappe_1788792136.webp"
+      "source_url": "https://www.theverge.com/tech/1020145/iphone-duo-crackgate-broken-screen-hinge",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/iPhone-Duo_208.jpg?quality=90&strip=all&crop=0%2C3.5651957117926%2C100%2C92.869608576415&w=1200"
     }
   ],
   "openverse_photos": [],
