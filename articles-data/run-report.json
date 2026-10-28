@@ -1,11 +1,5 @@
 {
-  "finished_utc": "2026-10-27T15:14:00.881385+00:00",
-  "mode": "topic-specific-editorial-library",
-  "published": true,
-  "title": "How to Build a Simple Personal Knowledge System",
-  "category": "Education",
-  "file": "how-to-build-a-simple-personal-knowledge-system.html",
-  "word_count": 242,
-  "quality_checks": "passed",
-  "note": "Only reviewed topic-specific content is published; generic fallback content is disabled."
+  "finished_utc": "2026-10-28T15:50:19.952664+00:00",
+  "published": false,
+  "reason": "All reviewed topics already exist and pass the repair check; no duplicate article was created."
 }
