@@ -1,20 +1,21 @@
 {
-  "started_utc": "2026-10-28T09:10:52.008525+00:00",
-  "finished_utc": "2026-10-28T09:11:10.583513+00:00",
+  "started_utc": "2026-10-29T09:10:02.061045+00:00",
+  "finished_utc": "2026-10-29T09:10:20.978356+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 350,
-  "fresh_items": 336,
-  "corroborated_candidates": 4,
-  "published_count": 4,
+  "fresh_items": 339,
+  "corroborated_candidates": 8,
+  "published_count": 5,
   "published_titles": [
-    "Pokémon Unite closing down for good, but you'll still be able to use it afterwards, sort of",
-    "NDC Accuses APC Of Neglecting Bayelsa Ahead Of 2027 Elections",
-    "Here’s why the iPhone Duo’s hinge could be cracking the screen",
-    "In the biotech world, you can’t see everything"
+    "Hello Kitty maker cuts ties with Japanese spy drama after China backlash",
+    "Apple announces touchscreen MacBook Pro with OLED display",
+    "A hidden ocean change near Antarctica could have global consequences",
+    "Google announces Gemini 4 Carbon, its latest frontier AI model that you can't use",
+    "A hacker stole more than 40,000 DHS employee records"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }

@@ -1,42 +1,50 @@
 {
-  "finished_utc": "2026-10-28T09:11:12.904588+00:00",
+  "finished_utc": "2026-10-29T09:10:22.754213+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 4,
-  "attempted": 4,
+  "missing_before_run": 5,
+  "attempted": 5,
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-10-28-pok-mon-unite-closing-down-for-good-but-you-ll-still-be-able-to-use-it-afterwards-sort-of-9500e5bd8f.html",
-      "image": "news/images/2026-10-28-pok-mon-unite-closing-down-for-good-but-you-ll-still-be-able-to-use-it-afterwards-sort-of-9500e5bd8f-source.jpg",
-      "bytes": 142945,
+      "article": "2026-10-29-hello-kitty-maker-cuts-ties-with-japanese-spy-drama-after-china-backlash-982f50ac57.html",
+      "image": "news/images/2026-10-29-hello-kitty-maker-cuts-ties-with-japanese-spy-drama-after-china-backlash-982f50ac57-source.jpg",
+      "bytes": 67978,
       "provider": "Original news source",
-      "source_url": "https://www.eurogamer.net/pokemon-unite-closing-date",
-      "image_url": "https://assetsio.gnwcdn.com/pokemon-unite-tier-header.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
+      "source_url": "https://www.bbc.co.uk/news/articles/cry4x177jlnyo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/3ae0/live/865a2400-d343-11f1-ad8b-790d6224b426.jpg"
     },
     {
-      "article": "2026-10-28-ndc-accuses-apc-of-neglecting-bayelsa-ahead-of-2027-elections-133507d6f6.html",
-      "image": "news/images/2026-10-28-ndc-accuses-apc-of-neglecting-bayelsa-ahead-of-2027-elections-133507d6f6-source.jpg",
-      "bytes": 35861,
+      "article": "2026-10-29-google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-can-t-use-0dd436854f.html",
+      "image": "news/images/2026-10-29-google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-can-t-use-0dd436854f-source.jpg",
+      "bytes": 52919,
       "provider": "Original news source",
-      "source_url": "https://thereporter.com.ng/ndc-accuses-apc-marginalising-bayelsa-ahead-2027-elections",
-      "image_url": "https://dailytrust.com/wp-content/uploads/2026/04/ndc-logo-Nigeria-Democratic-Congress.jpeg"
+      "source_url": "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/04/gemini-general-2-1152x648.jpg"
     },
     {
-      "article": "2026-10-28-in-the-biotech-world-you-can-t-see-everything-00fa026dea.html",
-      "image": "news/images/2026-10-28-in-the-biotech-world-you-can-t-see-everything-00fa026dea-source.jpg",
-      "bytes": 112128,
+      "article": "2026-10-29-apple-announces-touchscreen-macbook-pro-with-oled-display-b0ee410970.html",
+      "image": "news/images/2026-10-29-apple-announces-touchscreen-macbook-pro-with-oled-display-b0ee410970-source.jpg",
+      "bytes": 77440,
       "provider": "Original news source",
-      "source_url": "https://www.technologyreview.com/2026/10/23/1147610/biotech-you-can-see-everything-theranos-holmes/",
-      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/YCSE_NP_1_1.jpg?resize=1200,600"
+      "source_url": "https://arstechnica.com/apple/2026/10/apple-announces-touchscreen-macbook-pro-with-oled-display/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/2026-MacBook-Pro-1152x648-1793208150.jpg"
     },
     {
-      "article": "2026-10-28-here-s-why-the-iphone-duo-s-hinge-could-be-cracking-the-screen-fda0754967.html",
-      "image": "news/images/2026-10-28-here-s-why-the-iphone-duo-s-hinge-could-be-cracking-the-screen-fda0754967-source.jpg",
-      "bytes": 87472,
+      "article": "2026-10-29-a-hidden-ocean-change-near-antarctica-could-have-global-consequences-f92f53a899.html",
+      "image": "news/images/2026-10-29-a-hidden-ocean-change-near-antarctica-could-have-global-consequences-f92f53a899-source.jpg",
+      "bytes": 150268,
       "provider": "Original news source",
-      "source_url": "https://www.theverge.com/tech/1020145/iphone-duo-crackgate-broken-screen-hinge",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/iPhone-Duo_208.jpg?quality=90&strip=all&crop=0%2C3.5651957117926%2C100%2C92.869608576415&w=1200"
+      "source_url": "https://arstechnica.com/science/2026/10/antarctic-sea-ice-loss-could-reshape-weather-far-beyond-the-pole/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/antarctic-seaice-1024x648.jpg"
+    },
+    {
+      "article": "2026-10-29-a-hacker-stole-more-than-40-000-dhs-employee-records-c3302a8d44.html",
+      "image": "news/images/2026-10-29-a-hacker-stole-more-than-40-000-dhs-employee-records-c3302a8d44-source.jpg",
+      "bytes": 95015,
+      "provider": "Original news source",
+      "source_url": "https://www.theverge.com/tech/1021528/ice-cbp-data-leak",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-2200388904.jpg?quality=90&strip=all&crop=0%2C2.8462472714856%2C100%2C78.524215886627&w=1200"
     }
   ],
   "openverse_photos": [],
