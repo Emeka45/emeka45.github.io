@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-10-29T09:10:22.754213+00:00",
+  "finished_utc": "2026-10-30T09:21:40.313494+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
   "missing_before_run": 5,
@@ -7,44 +7,44 @@
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-10-29-hello-kitty-maker-cuts-ties-with-japanese-spy-drama-after-china-backlash-982f50ac57.html",
-      "image": "news/images/2026-10-29-hello-kitty-maker-cuts-ties-with-japanese-spy-drama-after-china-backlash-982f50ac57-source.jpg",
-      "bytes": 67978,
+      "article": "2026-10-30-trump-ignored-intel-on-china-s-nvidia-spy-to-protect-company-s-stock-report-says-3808b945e2.html",
+      "image": "news/images/2026-10-30-trump-ignored-intel-on-china-s-nvidia-spy-to-protect-company-s-stock-report-says-3808b945e2-source.jpg",
+      "bytes": 113193,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cry4x177jlnyo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/3ae0/live/865a2400-d343-11f1-ad8b-790d6224b426.jpg"
+      "source_url": "https://arstechnica.com/tech-policy/2026/10/report-trump-did-nothing-with-intel-that-china-planted-spy-close-to-nvidia-ceo/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2298607192-1024x648.jpg"
     },
     {
-      "article": "2026-10-29-google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-can-t-use-0dd436854f.html",
-      "image": "news/images/2026-10-29-google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-can-t-use-0dd436854f-source.jpg",
-      "bytes": 52919,
+      "article": "2026-10-30-record-number-of-purges-as-xi-emphasises-party-discipline-at-china-political-gathering-f592a70a59.html",
+      "image": "news/images/2026-10-30-record-number-of-purges-as-xi-emphasises-party-discipline-at-china-political-gathering-f592a70a59-source.jpg",
+      "bytes": 90448,
       "provider": "Original news source",
-      "source_url": "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/04/gemini-general-2-1152x648.jpg"
+      "source_url": "https://www.bbc.co.uk/news/articles/cq5ynw94k7kzo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/3573/live/24bff950-d388-11f1-b5f4-fd541fd21001.jpg"
     },
     {
-      "article": "2026-10-29-apple-announces-touchscreen-macbook-pro-with-oled-display-b0ee410970.html",
-      "image": "news/images/2026-10-29-apple-announces-touchscreen-macbook-pro-with-oled-display-b0ee410970-source.jpg",
-      "bytes": 77440,
+      "article": "2026-10-30-patrick-stewart-has-died-at-age-86-9d2c982f08.html",
+      "image": "news/images/2026-10-30-patrick-stewart-has-died-at-age-86-9d2c982f08-source.jpg",
+      "bytes": 99935,
       "provider": "Original news source",
-      "source_url": "https://arstechnica.com/apple/2026/10/apple-announces-touchscreen-macbook-pro-with-oled-display/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/2026-MacBook-Pro-1152x648-1793208150.jpg"
+      "source_url": "https://www.theverge.com/news/1022626/patrick-stewart-star-trek-death",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-2156843221.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
     },
     {
-      "article": "2026-10-29-a-hidden-ocean-change-near-antarctica-could-have-global-consequences-f92f53a899.html",
-      "image": "news/images/2026-10-29-a-hidden-ocean-change-near-antarctica-could-have-global-consequences-f92f53a899-source.jpg",
-      "bytes": 150268,
+      "article": "2026-10-30-mushroom-murderer-fails-to-overturn-convictions-in-australian-court-challenge-06cad47b7e.html",
+      "image": "news/images/2026-10-30-mushroom-murderer-fails-to-overturn-convictions-in-australian-court-challenge-06cad47b7e-source.jpg",
+      "bytes": 68479,
       "provider": "Original news source",
-      "source_url": "https://arstechnica.com/science/2026/10/antarctic-sea-ice-loss-could-reshape-weather-far-beyond-the-pole/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/antarctic-seaice-1024x648.jpg"
+      "source_url": "https://www.bbc.co.uk/news/articles/ck8dz8j5n993o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/2fd0/live/73fed000-d3fa-11f1-ad77-7dc2f7c343f8.jpg"
     },
     {
-      "article": "2026-10-29-a-hacker-stole-more-than-40-000-dhs-employee-records-c3302a8d44.html",
-      "image": "news/images/2026-10-29-a-hacker-stole-more-than-40-000-dhs-employee-records-c3302a8d44-source.jpg",
-      "bytes": 95015,
+      "article": "2026-10-30-fl-vio-bolsonaro-calls-himself-leader-of-brazil-after-election-loss-e168c09ca6.html",
+      "image": "news/images/2026-10-30-fl-vio-bolsonaro-calls-himself-leader-of-brazil-after-election-loss-e168c09ca6-source.jpg",
+      "bytes": 94190,
       "provider": "Original news source",
-      "source_url": "https://www.theverge.com/tech/1021528/ice-cbp-data-leak",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-2200388904.jpg?quality=90&strip=all&crop=0%2C2.8462472714856%2C100%2C78.524215886627&w=1200"
+      "source_url": "https://www.bbc.co.uk/news/articles/c3x2w4109pj8o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/57ed/live/bd177c10-d3aa-11f1-b441-2b33b063138f.jpg"
     }
   ],
   "openverse_photos": [],
