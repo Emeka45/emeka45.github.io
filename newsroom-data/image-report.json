@@ -1,54 +1,37 @@
 {
-  "finished_utc": "2026-10-30T09:21:40.313494+00:00",
+  "finished_utc": "2026-10-31T09:09:22.944684+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 5,
-  "attempted": 5,
+  "missing_before_run": 3,
+  "attempted": 3,
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-10-30-trump-ignored-intel-on-china-s-nvidia-spy-to-protect-company-s-stock-report-says-3808b945e2.html",
-      "image": "news/images/2026-10-30-trump-ignored-intel-on-china-s-nvidia-spy-to-protect-company-s-stock-report-says-3808b945e2-source.jpg",
-      "bytes": 113193,
+      "article": "2026-10-31-hackers-steal-6-3-billion-from-binance-in-record-crypto-heist-60a1553d90.html",
+      "image": "news/images/2026-10-31-hackers-steal-6-3-billion-from-binance-in-record-crypto-heist-60a1553d90-source.jpg",
+      "bytes": 75603,
       "provider": "Original news source",
-      "source_url": "https://arstechnica.com/tech-policy/2026/10/report-trump-did-nothing-with-intel-that-china-planted-spy-close-to-nvidia-ceo/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2298607192-1024x648.jpg"
+      "source_url": "https://arstechnica.com/security/2026/10/hackers-steal-6-3-billion-from-binance-in-record-crypto-heist/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/binance-1024x648.jpg"
     },
     {
-      "article": "2026-10-30-record-number-of-purges-as-xi-emphasises-party-discipline-at-china-political-gathering-f592a70a59.html",
-      "image": "news/images/2026-10-30-record-number-of-purges-as-xi-emphasises-party-discipline-at-china-political-gathering-f592a70a59-source.jpg",
-      "bytes": 90448,
+      "article": "2026-10-31-g20-family-photo-cancelled-after-protests-over-presence-of-russian-minister-6b919fe50f.html",
+      "image": "news/images/2026-10-31-g20-family-photo-cancelled-after-protests-over-presence-of-russian-minister-6b919fe50f-source.jpg",
+      "bytes": 104562,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cq5ynw94k7kzo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/3573/live/24bff950-d388-11f1-b5f4-fd541fd21001.jpg"
-    },
-    {
-      "article": "2026-10-30-patrick-stewart-has-died-at-age-86-9d2c982f08.html",
-      "image": "news/images/2026-10-30-patrick-stewart-has-died-at-age-86-9d2c982f08-source.jpg",
-      "bytes": 99935,
-      "provider": "Original news source",
-      "source_url": "https://www.theverge.com/news/1022626/patrick-stewart-star-trek-death",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-2156843221.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
-    },
-    {
-      "article": "2026-10-30-mushroom-murderer-fails-to-overturn-convictions-in-australian-court-challenge-06cad47b7e.html",
-      "image": "news/images/2026-10-30-mushroom-murderer-fails-to-overturn-convictions-in-australian-court-challenge-06cad47b7e-source.jpg",
-      "bytes": 68479,
-      "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/ck8dz8j5n993o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/2fd0/live/73fed000-d3fa-11f1-ad77-7dc2f7c343f8.jpg"
-    },
-    {
-      "article": "2026-10-30-fl-vio-bolsonaro-calls-himself-leader-of-brazil-after-election-loss-e168c09ca6.html",
-      "image": "news/images/2026-10-30-fl-vio-bolsonaro-calls-himself-leader-of-brazil-after-election-loss-e168c09ca6-source.jpg",
-      "bytes": 94190,
-      "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/c3x2w4109pj8o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/57ed/live/bd177c10-d3aa-11f1-b441-2b33b063138f.jpg"
+      "source_url": "https://www.bbc.co.uk/news/articles/cmd6dp2y576do?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/fa3e/live/bc4ea460-d487-11f1-80bc-6d398902272f.jpg"
     }
   ],
   "openverse_photos": [],
-  "fallbacks": [],
+  "fallbacks": [
+    {
+      "article": "2026-10-31-pastor-urges-christians-to-hold-faith-amid-hardship-leadership-newspapers-1352efbf05.html",
+      "image": "news/images/2026-10-31-pastor-urges-christians-to-hold-faith-amid-hardship-leadership-newspapers-1352efbf05.svg",
+      "bytes": 1470,
+      "reason": "No source, AI or Openverse image available"
+    }
+  ],
   "failures": [],
   "remaining_missing_after_run": 0
 }

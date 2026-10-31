@@ -1,21 +1,25 @@
 {
-  "started_utc": "2026-10-30T09:21:23.364278+00:00",
-  "finished_utc": "2026-10-30T09:21:38.188254+00:00",
+  "started_utc": "2026-10-31T09:08:22.213596+00:00",
+  "finished_utc": "2026-10-31T09:08:39.088591+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
-  "feed_success_count": 30,
-  "feed_failure_count": 0,
-  "feed_failures": [],
-  "total_items": 350,
-  "fresh_items": 336,
-  "corroborated_candidates": 12,
-  "published_count": 5,
+  "feed_success_count": 29,
+  "feed_failure_count": 1,
+  "feed_failures": [
+    {
+      "category": "Science",
+      "url": "https://www.sciencedaily.com/rss/all.xml",
+      "error": "junk after document element: line 440, column 46"
+    }
+  ],
+  "total_items": 330,
+  "fresh_items": 317,
+  "corroborated_candidates": 3,
+  "published_count": 3,
   "published_titles": [
-    "Patrick Stewart has died at age 86",
-    "Flávio Bolsonaro calls himself 'leader of Brazil' after election loss",
-    "Trump ignored intel on China’s Nvidia spy to protect company’s stock, report says",
-    "Record number of purges as Xi emphasises 'party discipline' at China political gathering",
-    "Mushroom murderer fails to overturn convictions in Australian court challenge"
+    "Hackers steal $6.3 billion from Binance in record crypto heist",
+    "G20 'family photo' cancelled after protests over presence of Russian minister",
+    "Pastor Urges Christians To Hold Faith Amid Hardship - LEADERSHIP Newspapers"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }
