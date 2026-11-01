@@ -1,25 +1,21 @@
 {
-  "started_utc": "2026-10-31T09:08:22.213596+00:00",
-  "finished_utc": "2026-10-31T09:08:39.088591+00:00",
+  "started_utc": "2026-11-01T09:55:45.797466+00:00",
+  "finished_utc": "2026-11-01T09:55:58.783770+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
-  "feed_success_count": 29,
-  "feed_failure_count": 1,
-  "feed_failures": [
-    {
-      "category": "Science",
-      "url": "https://www.sciencedaily.com/rss/all.xml",
-      "error": "junk after document element: line 440, column 46"
-    }
-  ],
-  "total_items": 330,
-  "fresh_items": 317,
-  "corroborated_candidates": 3,
-  "published_count": 3,
+  "feed_success_count": 30,
+  "feed_failure_count": 0,
+  "feed_failures": [],
+  "total_items": 350,
+  "fresh_items": 333,
+  "corroborated_candidates": 8,
+  "published_count": 5,
   "published_titles": [
-    "Hackers steal $6.3 billion from Binance in record crypto heist",
-    "G20 'family photo' cancelled after protests over presence of Russian minister",
-    "Pastor Urges Christians To Hold Faith Amid Hardship - LEADERSHIP Newspapers"
+    "Binance CEO says 90 percent of stolen assets have been ‘replenished’",
+    "Final Fantasy 14 reveals Evercold’s second new job and February release date, with pre-orders opening next week",
+    "Patrick Stewart's Perfect 'Simpsons' Episode Reveals the Beloved Actor's Secret Weapon",
+    "VIDEO: Sanwo-Olu joins models on Lagos Fashion Week runway",
+    "How crypto hacking funds isolated North Korea’s nuclear programme"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }

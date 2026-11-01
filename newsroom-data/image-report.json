@@ -1,26 +1,50 @@
 {
-  "finished_utc": "2026-10-31T09:09:22.944684+00:00",
+  "finished_utc": "2026-11-01T09:56:41.577534+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 3,
-  "attempted": 3,
+  "missing_before_run": 6,
+  "attempted": 6,
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-10-31-hackers-steal-6-3-billion-from-binance-in-record-crypto-heist-60a1553d90.html",
-      "image": "news/images/2026-10-31-hackers-steal-6-3-billion-from-binance-in-record-crypto-heist-60a1553d90-source.jpg",
-      "bytes": 75603,
+      "article": "2026-11-01-video-sanwo-olu-joins-models-on-lagos-fashion-week-runway-e816df68df.html",
+      "image": "news/images/2026-11-01-video-sanwo-olu-joins-models-on-lagos-fashion-week-runway-e816df68df-source.jpg",
+      "bytes": 23936,
       "provider": "Original news source",
-      "source_url": "https://arstechnica.com/security/2026/10/hackers-steal-6-3-billion-from-binance-in-record-crypto-heist/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/binance-1024x648.jpg"
+      "source_url": "https://thereporter.com.ng/sanwo-olu-details-plan-to-integrate-proposed-state-police-into-lagos-security-framework",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRasg7rm6drgI7_bARXaR7su59AE4Z4FywxYF1Sc62jspQsWXvHWJ8lEVbAxbi-HyqJZYH19v2flp0iNKhiFj8bZ69lMtz_2XxyFzmy7vw&s=10"
     },
     {
-      "article": "2026-10-31-g20-family-photo-cancelled-after-protests-over-presence-of-russian-minister-6b919fe50f.html",
-      "image": "news/images/2026-10-31-g20-family-photo-cancelled-after-protests-over-presence-of-russian-minister-6b919fe50f-source.jpg",
-      "bytes": 104562,
+      "article": "2026-11-01-patrick-stewart-s-perfect-simpsons-episode-reveals-the-beloved-actor-s-secret-weapon-c829ce8166.html",
+      "image": "news/images/2026-11-01-patrick-stewart-s-perfect-simpsons-episode-reveals-the-beloved-actor-s-secret-weapon-c829ce8166-source.jpg",
+      "bytes": 89629,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cmd6dp2y576do?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/fa3e/live/bc4ea460-d487-11f1-80bc-6d398902272f.jpg"
+      "source_url": "https://www.polygon.com/patrick-stewart-the-simpsons-guest-star/",
+      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/msdsttr_pa117.jpg?w=1600&h=900&fit=crop"
+    },
+    {
+      "article": "2026-11-01-how-crypto-hacking-funds-isolated-north-korea-s-nuclear-programme-1ef5191705.html",
+      "image": "news/images/2026-11-01-how-crypto-hacking-funds-isolated-north-korea-s-nuclear-programme-1ef5191705-source.jpg",
+      "bytes": 105334,
+      "provider": "Original news source",
+      "source_url": "https://www.theguardian.com/world/2026/oct/30/how-crypto-hacking-funds-isolated-north-korea-nuclear-programme",
+      "image_url": "https://i.guim.co.uk/img/media/a2ab8c683105476fd958b1420dbb27c30fe2be77/232_0_2883_2307/master/2883.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=3ee3fa146cb6fa51f05a4e4a8994cdc4"
+    },
+    {
+      "article": "2026-11-01-final-fantasy-14-reveals-evercold-s-second-new-job-and-february-release-date-with-pre-orde-143788c144.html",
+      "image": "news/images/2026-11-01-final-fantasy-14-reveals-evercold-s-second-new-job-and-february-release-date-with-pre-orde-143788c144-source.jpg",
+      "bytes": 1488074,
+      "provider": "Original news source",
+      "source_url": "https://www.eurogamer.net/final-fantasy-14-evercold-zephyr-job-release-date",
+      "image_url": "https://assetsio.gnwcdn.com/Screenshot-2026-10-31-at-14.21.52.png?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
+    },
+    {
+      "article": "2026-11-01-binance-ceo-says-90-percent-of-stolen-assets-have-been-replenished-9e113926e9.html",
+      "image": "news/images/2026-11-01-binance-ceo-says-90-percent-of-stolen-assets-have-been-replenished-9e113926e9-source.jpg",
+      "bytes": 129763,
+      "provider": "Original news source",
+      "source_url": "https://www.theverge.com/tech/1024091/binance-ceo-90-percent-stolen-crypto",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK428_CRYPTO_3_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
     }
   ],
   "openverse_photos": [],
