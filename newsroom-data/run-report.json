@@ -1,21 +1,21 @@
 {
-  "started_utc": "2026-11-01T09:55:45.797466+00:00",
-  "finished_utc": "2026-11-01T09:55:58.783770+00:00",
+  "started_utc": "2026-11-02T10:22:51.614880+00:00",
+  "finished_utc": "2026-11-02T10:23:11.461780+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 350,
-  "fresh_items": 333,
-  "corroborated_candidates": 8,
+  "fresh_items": 332,
+  "corroborated_candidates": 6,
   "published_count": 5,
   "published_titles": [
-    "Binance CEO says 90 percent of stolen assets have been ‘replenished’",
-    "Final Fantasy 14 reveals Evercold’s second new job and February release date, with pre-orders opening next week",
-    "Patrick Stewart's Perfect 'Simpsons' Episode Reveals the Beloved Actor's Secret Weapon",
-    "VIDEO: Sanwo-Olu joins models on Lagos Fashion Week runway",
-    "How crypto hacking funds isolated North Korea’s nuclear programme"
+    "North Korea linked to massive Binance crypto heist",
+    "Popular Australian children's author jailed over child exploitation offences",
+    "Chinese state TV snubs Madrid match despite Mbappé apology",
+    "Nine dead in small plane crash near Trump’s Florida home",
+    "Will Nigeria’s Christians ever be safe? - Denison Forum"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }
