@@ -1,64 +1,53 @@
 {
-  "finished_utc": "2026-11-02T10:23:53.525158+00:00",
+  "finished_utc": "2026-11-03T10:21:31.534928+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 6,
-  "attempted": 6,
+  "missing_before_run": 5,
+  "attempted": 5,
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-11-02-popular-australian-children-s-author-jailed-over-child-exploitation-offences-a6fa6ddc69.html",
-      "image": "news/images/2026-11-02-popular-australian-children-s-author-jailed-over-child-exploitation-offences-a6fa6ddc69-source.jpg",
-      "bytes": 57576,
+      "article": "2026-11-03-yakuza-creator-s-new-studio-and-its-debut-game-gang-of-dragon-are-no-more-after-losing-fun-ba4abeffb1.html",
+      "image": "news/images/2026-11-03-yakuza-creator-s-new-studio-and-its-debut-game-gang-of-dragon-are-no-more-after-losing-fun-ba4abeffb1-source.jpg",
+      "bytes": 1202752,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cmjwe9nggp60o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/6df4/live/dcb768a0-d693-11f1-8f56-0b6ab08f384e.jpg"
+      "source_url": "https://www.eurogamer.net/yakuza-creator-new-studio-closed-netease",
+      "image_url": "https://assetsio.gnwcdn.com/Screenshot-2026-03-07-at-17.05.06.png?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
     },
     {
-      "article": "2026-11-02-north-korea-linked-to-massive-binance-crypto-heist-d5a34d8384.html",
-      "image": "news/images/2026-11-02-north-korea-linked-to-massive-binance-crypto-heist-d5a34d8384-source.jpg",
-      "bytes": 164493,
+      "article": "2026-11-03-spanish-striker-dies-after-on-pitch-collision-with-goalkeeper-dc0e259083.html",
+      "image": "news/images/2026-11-03-spanish-striker-dies-after-on-pitch-collision-with-goalkeeper-dc0e259083-source.jpg",
+      "bytes": 64006,
       "provider": "Original news source",
-      "source_url": "https://www.theverge.com/tech/1024176/north-korea-binance-crypto-heist",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK428_CRYPTO_2_B.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+      "source_url": "https://punchng.com/spanish-striker-dies-after-on-pitch-collision-with-goalkeeper/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/03110254/678ACA7B-DE1A-48B9-92D1-76F5E45DAEFA_1793700174-1070x630.webp"
     },
     {
-      "article": "2026-11-02-nine-dead-in-small-plane-crash-near-trump-s-florida-home-91a8bd66a0.html",
-      "image": "news/images/2026-11-02-nine-dead-in-small-plane-crash-near-trump-s-florida-home-91a8bd66a0-source.jpg",
-      "bytes": 236956,
+      "article": "2026-11-03-north-korea-denies-being-behind-record-6-3bn-binance-hack-ae98e06a1e.html",
+      "image": "news/images/2026-11-03-north-korea-denies-being-behind-record-6-3bn-binance-hack-ae98e06a1e-source.jpg",
+      "bytes": 82164,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/nine-dead-in-small-plane-crash-near-trumps-florida-home/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/03/23233520/AFP__20260323__A4F99ZQ__v2__MidRes__TopshotColombiaAccidentDefence-1200x630.jpg"
+      "source_url": "https://www.bbc.co.uk/news/articles/c6rey4v53exgo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/7a90/live/75145840-d727-11f1-b237-93d5595d4291.jpg"
     },
     {
-      "article": "2026-11-02-chinese-state-tv-snubs-madrid-match-despite-mbapp-apology-af1089b8a2.html",
-      "image": "news/images/2026-11-02-chinese-state-tv-snubs-madrid-match-despite-mbapp-apology-af1089b8a2-source.jpg",
-      "bytes": 31126,
+      "article": "2026-11-03-major-test-for-australia-s-social-media-ban-begins-in-high-court-b485efb22b.html",
+      "image": "news/images/2026-11-03-major-test-for-australia-s-social-media-ban-begins-in-high-court-b485efb22b-source.jpg",
+      "bytes": 127284,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/chinese-state-tv-snubs-madrid-match-despite-mbappe-apology/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/09/07154216/Mbappe_1788792136.webp"
+      "source_url": "https://www.bbc.co.uk/news/articles/ck79py02p1jlo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/2ab0/live/69114010-d75b-11f1-8f6b-d71817972456.jpg"
+    },
+    {
+      "article": "2026-11-03-afc-postpones-2027-asian-cup-till-december-a5e43518fa.html",
+      "image": "news/images/2026-11-03-afc-postpones-2027-asian-cup-till-december-a5e43518fa-source.jpg",
+      "bytes": 63208,
+      "provider": "Original news source",
+      "source_url": "https://punchng.com/afc-postpones-2027-asian-cup-till-december/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/03090643/Asian-cup_1793693203-1200x630.webp"
     }
   ],
-  "openverse_photos": [
-    {
-      "article": "2026-11-02-will-nigeria-s-christians-ever-be-safe-denison-forum-debdf97c8c.html",
-      "image": "news/images/2026-11-02-will-nigeria-s-christians-ever-be-safe-denison-forum-debdf97c8c.jpg",
-      "bytes": 87103,
-      "provider": "Openverse",
-      "creator": "Lisandro M. Enrique",
-      "license": "by-nc-nd",
-      "source_url": "https://www.flickr.com/photos/79614249@N00/40809333932"
-    },
-    {
-      "article": "2026-10-31-pastor-urges-christians-to-hold-faith-amid-hardship-leadership-newspapers-1352efbf05.html",
-      "image": "news/images/2026-10-31-pastor-urges-christians-to-hold-faith-amid-hardship-leadership-newspapers-1352efbf05.jpg",
-      "bytes": 87103,
-      "provider": "Openverse",
-      "creator": "Lisandro M. Enrique",
-      "license": "by-nc-nd",
-      "source_url": "https://www.flickr.com/photos/79614249@N00/40809333932"
-    }
-  ],
+  "openverse_photos": [],
   "fallbacks": [],
   "failures": [],
   "remaining_missing_after_run": 0
