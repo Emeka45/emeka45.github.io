@@ -1,21 +1,21 @@
 {
-  "started_utc": "2026-11-03T10:21:14.492721+00:00",
-  "finished_utc": "2026-11-03T10:21:30.338653+00:00",
+  "started_utc": "2026-11-04T10:14:27.524705+00:00",
+  "finished_utc": "2026-11-04T10:14:43.591741+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 350,
-  "fresh_items": 335,
-  "corroborated_candidates": 10,
+  "fresh_items": 336,
+  "corroborated_candidates": 9,
   "published_count": 5,
   "published_titles": [
-    "Spanish striker dies after on-pitch collision with goalkeeper",
-    "Major test for Australia's social media ban begins in High Court",
-    "AFC postpones 2027 Asian Cup till December",
-    "Yakuza creator's new studio and its debut game Gang of Dragon are no more after losing funding from NetEase",
-    "North Korea denies being behind record $6.3bn Binance hack"
+    "Climate, health actions could save 1.6 million lives yearly — WHO",
+    "ANC under pressure to reverse South Africa decline",
+    "Ubisoft Makes Bid to Purchase Xbox Studio on the Brink of Closure",
+    "Binance says hackers used fake job interviews and an internal AI tool to pull off the $6.3 billion heist",
+    "Key moments from a night of midterm election firsts"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }

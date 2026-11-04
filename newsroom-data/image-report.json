@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-11-03T10:21:31.534928+00:00",
+  "finished_utc": "2026-11-04T10:14:44.702391+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
   "missing_before_run": 5,
@@ -7,44 +7,44 @@
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-11-03-yakuza-creator-s-new-studio-and-its-debut-game-gang-of-dragon-are-no-more-after-losing-fun-ba4abeffb1.html",
-      "image": "news/images/2026-11-03-yakuza-creator-s-new-studio-and-its-debut-game-gang-of-dragon-are-no-more-after-losing-fun-ba4abeffb1-source.jpg",
-      "bytes": 1202752,
+      "article": "2026-11-04-ubisoft-makes-bid-to-purchase-xbox-studio-on-the-brink-of-closure-aaa6b5a659.html",
+      "image": "news/images/2026-11-04-ubisoft-makes-bid-to-purchase-xbox-studio-on-the-brink-of-closure-aaa6b5a659-source.jpg",
+      "bytes": 145379,
       "provider": "Original news source",
-      "source_url": "https://www.eurogamer.net/yakuza-creator-new-studio-closed-netease",
-      "image_url": "https://assetsio.gnwcdn.com/Screenshot-2026-03-07-at-17.05.06.png?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
+      "source_url": "https://www.polygon.com/ubisoft-xbox-arkane-studios-dishonored-blade/",
+      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/10/dishonored-key-art.jpg?w=1600&h=900&fit=crop"
     },
     {
-      "article": "2026-11-03-spanish-striker-dies-after-on-pitch-collision-with-goalkeeper-dc0e259083.html",
-      "image": "news/images/2026-11-03-spanish-striker-dies-after-on-pitch-collision-with-goalkeeper-dc0e259083-source.jpg",
-      "bytes": 64006,
+      "article": "2026-11-04-key-moments-from-a-night-of-midterm-election-firsts-3261efc66d.html",
+      "image": "news/images/2026-11-04-key-moments-from-a-night-of-midterm-election-firsts-3261efc66d-source.jpg",
+      "bytes": 91910,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/spanish-striker-dies-after-on-pitch-collision-with-goalkeeper/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/03110254/678ACA7B-DE1A-48B9-92D1-76F5E45DAEFA_1793700174-1070x630.webp"
+      "source_url": "https://www.bbc.co.uk/news/articles/cmr4y92rgd9po?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/e1cd/live/742f05d0-d82e-11f1-93e1-3b657b665bcf.jpg"
     },
     {
-      "article": "2026-11-03-north-korea-denies-being-behind-record-6-3bn-binance-hack-ae98e06a1e.html",
-      "image": "news/images/2026-11-03-north-korea-denies-being-behind-record-6-3bn-binance-hack-ae98e06a1e-source.jpg",
-      "bytes": 82164,
+      "article": "2026-11-04-climate-health-actions-could-save-1-6-million-lives-yearly-who-73fef93818.html",
+      "image": "news/images/2026-11-04-climate-health-actions-could-save-1-6-million-lives-yearly-who-73fef93818-source.jpg",
+      "bytes": 67186,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/c6rey4v53exgo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/7a90/live/75145840-d727-11f1-b237-93d5595d4291.jpg"
+      "source_url": "https://punchng.com/climate-health-actions-could-save-1-6-million-lives-yearly-who/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://punchng.com/wp-content/uploads/2026/07/World-Health-Organisation_1784640906.webp"
     },
     {
-      "article": "2026-11-03-major-test-for-australia-s-social-media-ban-begins-in-high-court-b485efb22b.html",
-      "image": "news/images/2026-11-03-major-test-for-australia-s-social-media-ban-begins-in-high-court-b485efb22b-source.jpg",
-      "bytes": 127284,
+      "article": "2026-11-04-binance-says-hackers-used-fake-job-interviews-and-an-internal-ai-tool-to-pull-off-the-6-3--d6e22b3fe1.html",
+      "image": "news/images/2026-11-04-binance-says-hackers-used-fake-job-interviews-and-an-internal-ai-tool-to-pull-off-the-6-3--d6e22b3fe1-source.jpg",
+      "bytes": 30459,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/ck79py02p1jlo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/2ab0/live/69114010-d75b-11f1-8f6b-d71817972456.jpg"
+      "source_url": "https://www.theverge.com/news/1025576/binance-cyrpto-theft-explained",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23932848/acastro_STK018__02.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
     },
     {
-      "article": "2026-11-03-afc-postpones-2027-asian-cup-till-december-a5e43518fa.html",
-      "image": "news/images/2026-11-03-afc-postpones-2027-asian-cup-till-december-a5e43518fa-source.jpg",
-      "bytes": 63208,
+      "article": "2026-11-04-anc-under-pressure-to-reverse-south-africa-decline-a606a4cdb5.html",
+      "image": "news/images/2026-11-04-anc-under-pressure-to-reverse-south-africa-decline-a606a4cdb5-source.jpg",
+      "bytes": 93224,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/afc-postpones-2027-asian-cup-till-december/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/03090643/Asian-cup_1793693203-1200x630.webp"
+      "source_url": "https://www.bbc.co.uk/news/articles/cr4g1x6l77xyo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/eb2c/live/fc87dad0-d7aa-11f1-93e1-3b657b665bcf.jpg"
     }
   ],
   "openverse_photos": [],
