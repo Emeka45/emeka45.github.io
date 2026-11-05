@@ -1,21 +1,21 @@
 {
-  "started_utc": "2026-11-04T10:14:27.524705+00:00",
-  "finished_utc": "2026-11-04T10:14:43.591741+00:00",
+  "started_utc": "2026-11-05T10:07:11.643042+00:00",
+  "finished_utc": "2026-11-05T10:07:30.152216+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
-  "total_items": 350,
+  "total_items": 349,
   "fresh_items": 336,
-  "corroborated_candidates": 9,
+  "corroborated_candidates": 11,
   "published_count": 5,
   "published_titles": [
-    "Climate, health actions could save 1.6 million lives yearly — WHO",
-    "ANC under pressure to reverse South Africa decline",
-    "Ubisoft Makes Bid to Purchase Xbox Studio on the Brink of Closure",
-    "Binance says hackers used fake job interviews and an internal AI tool to pull off the $6.3 billion heist",
-    "Key moments from a night of midterm election firsts"
+    "Italian chef sacked after refusing pineapple on pizza",
+    "Iran war cost Republicans midterm elections — Vance",
+    "Mother and daughter die after suspected grizzly bear attack in Canada",
+    "Joshua Wong, face of Hong Kong's pro-democracy protests, jailed for 10 years",
+    "Nintendo's biggest ROM chip supplier is bowing out of the business"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }

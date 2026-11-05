@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-11-04T10:14:44.702391+00:00",
+  "finished_utc": "2026-11-05T10:07:32.824280+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
   "missing_before_run": 5,
@@ -7,44 +7,44 @@
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-11-04-ubisoft-makes-bid-to-purchase-xbox-studio-on-the-brink-of-closure-aaa6b5a659.html",
-      "image": "news/images/2026-11-04-ubisoft-makes-bid-to-purchase-xbox-studio-on-the-brink-of-closure-aaa6b5a659-source.jpg",
-      "bytes": 145379,
+      "article": "2026-11-05-nintendo-s-biggest-rom-chip-supplier-is-bowing-out-of-the-business-4b982520ee.html",
+      "image": "news/images/2026-11-05-nintendo-s-biggest-rom-chip-supplier-is-bowing-out-of-the-business-4b982520ee-source.jpg",
+      "bytes": 138415,
       "provider": "Original news source",
-      "source_url": "https://www.polygon.com/ubisoft-xbox-arkane-studios-dishonored-blade/",
-      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/10/dishonored-key-art.jpg?w=1600&h=900&fit=crop"
+      "source_url": "https://arstechnica.com/gaming/2026/11/the-tech-memory-shortage-comes-for-nintendos-cartridge-supply-chain/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/switchcarts-1152x648.jpg"
     },
     {
-      "article": "2026-11-04-key-moments-from-a-night-of-midterm-election-firsts-3261efc66d.html",
-      "image": "news/images/2026-11-04-key-moments-from-a-night-of-midterm-election-firsts-3261efc66d-source.jpg",
-      "bytes": 91910,
+      "article": "2026-11-05-mother-and-daughter-die-after-suspected-grizzly-bear-attack-in-canada-596c0500c3.html",
+      "image": "news/images/2026-11-05-mother-and-daughter-die-after-suspected-grizzly-bear-attack-in-canada-596c0500c3-source.jpg",
+      "bytes": 103103,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cmr4y92rgd9po?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/e1cd/live/742f05d0-d82e-11f1-93e1-3b657b665bcf.jpg"
+      "source_url": "https://www.bbc.co.uk/news/articles/cqvgry8k5d01o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/9e75/live/6fd142d0-d8a3-11f1-b29d-fbcd9d61c58e.jpg"
     },
     {
-      "article": "2026-11-04-climate-health-actions-could-save-1-6-million-lives-yearly-who-73fef93818.html",
-      "image": "news/images/2026-11-04-climate-health-actions-could-save-1-6-million-lives-yearly-who-73fef93818-source.jpg",
-      "bytes": 67186,
+      "article": "2026-11-05-joshua-wong-face-of-hong-kong-s-pro-democracy-protests-jailed-for-10-years-f342dc77f6.html",
+      "image": "news/images/2026-11-05-joshua-wong-face-of-hong-kong-s-pro-democracy-protests-jailed-for-10-years-f342dc77f6-source.jpg",
+      "bytes": 73373,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/climate-health-actions-could-save-1-6-million-lives-yearly-who/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://punchng.com/wp-content/uploads/2026/07/World-Health-Organisation_1784640906.webp"
+      "source_url": "https://www.bbc.co.uk/news/articles/cwp9g3rlp8jlo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/ff8f/live/68eb4bf0-d8e4-11f1-a701-fddedf244c16.jpg"
     },
     {
-      "article": "2026-11-04-binance-says-hackers-used-fake-job-interviews-and-an-internal-ai-tool-to-pull-off-the-6-3--d6e22b3fe1.html",
-      "image": "news/images/2026-11-04-binance-says-hackers-used-fake-job-interviews-and-an-internal-ai-tool-to-pull-off-the-6-3--d6e22b3fe1-source.jpg",
-      "bytes": 30459,
+      "article": "2026-11-05-italian-chef-sacked-after-refusing-pineapple-on-pizza-875b9511d4.html",
+      "image": "news/images/2026-11-05-italian-chef-sacked-after-refusing-pineapple-on-pizza-875b9511d4-source.jpg",
+      "bytes": 34716,
       "provider": "Original news source",
-      "source_url": "https://www.theverge.com/news/1025576/binance-cyrpto-theft-explained",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23932848/acastro_STK018__02.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+      "source_url": "https://punchng.com/italian-chef-sacked-after-refusing-pineapple-on-pizza/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/05094127/7cd3f370-d8ed-11f1-b7ca-cbaa67b24b8c.jpg_1793868087.webp"
     },
     {
-      "article": "2026-11-04-anc-under-pressure-to-reverse-south-africa-decline-a606a4cdb5.html",
-      "image": "news/images/2026-11-04-anc-under-pressure-to-reverse-south-africa-decline-a606a4cdb5-source.jpg",
-      "bytes": 93224,
+      "article": "2026-11-05-iran-war-cost-republicans-midterm-elections-vance-f52f9c7619.html",
+      "image": "news/images/2026-11-05-iran-war-cost-republicans-midterm-elections-vance-f52f9c7619-source.jpg",
+      "bytes": 39078,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cr4g1x6l77xyo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/eb2c/live/fc87dad0-d7aa-11f1-93e1-3b657b665bcf.jpg"
+      "source_url": "https://punchng.com/iran-war-cost-republicans-midterm-elections-vance/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://punchng.com/wp-content/uploads/2026/07/US-Vice-President-JD-Vance_1784533170.webp"
     }
   ],
   "openverse_photos": [],
