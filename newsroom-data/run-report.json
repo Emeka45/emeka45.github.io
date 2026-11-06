@@ -1,21 +1,21 @@
 {
-  "started_utc": "2026-11-05T10:07:11.643042+00:00",
-  "finished_utc": "2026-11-05T10:07:30.152216+00:00",
+  "started_utc": "2026-11-06T10:12:24.819165+00:00",
+  "finished_utc": "2026-11-06T10:12:41.171987+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
-  "total_items": 349,
-  "fresh_items": 336,
-  "corroborated_candidates": 11,
+  "total_items": 350,
+  "fresh_items": 334,
+  "corroborated_candidates": 7,
   "published_count": 5,
   "published_titles": [
-    "Italian chef sacked after refusing pineapple on pizza",
-    "Iran war cost Republicans midterm elections — Vance",
-    "Mother and daughter die after suspected grizzly bear attack in Canada",
-    "Joshua Wong, face of Hong Kong's pro-democracy protests, jailed for 10 years",
-    "Nintendo's biggest ROM chip supplier is bowing out of the business"
+    "Macau jails pro-democracy campaigner in city's first national security case",
+    "How to find Richard the dog in Ocarina of Time",
+    "Melania hosts Russia, Ukraine as Trump touts big Europe deal",
+    "PlayStation sees record high player numbers and increased revenue for Q2 2026, and a lot of that success is down to Marvel's Wolverine",
+    "Army rescues 16 kidnap victims, recovers weapons in Niger"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }

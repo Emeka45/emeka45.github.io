@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-11-05T10:07:32.824280+00:00",
+  "finished_utc": "2026-11-06T10:12:43.506970+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
   "missing_before_run": 5,
@@ -7,44 +7,44 @@
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-11-05-nintendo-s-biggest-rom-chip-supplier-is-bowing-out-of-the-business-4b982520ee.html",
-      "image": "news/images/2026-11-05-nintendo-s-biggest-rom-chip-supplier-is-bowing-out-of-the-business-4b982520ee-source.jpg",
-      "bytes": 138415,
+      "article": "2026-11-06-playstation-sees-record-high-player-numbers-and-increased-revenue-for-q2-2026-and-a-lot-of-a16a4afc14.html",
+      "image": "news/images/2026-11-06-playstation-sees-record-high-player-numbers-and-increased-revenue-for-q2-2026-and-a-lot-of-a16a4afc14-source.jpg",
+      "bytes": 123340,
       "provider": "Original news source",
-      "source_url": "https://arstechnica.com/gaming/2026/11/the-tech-memory-shortage-comes-for-nintendos-cartridge-supply-chain/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/switchcarts-1152x648.jpg"
+      "source_url": "https://www.eurogamer.net/sony-playstation-fy-2026-wolverine-sales",
+      "image_url": "https://assetsio.gnwcdn.com/wolverine-header_ayYS3yR.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
     },
     {
-      "article": "2026-11-05-mother-and-daughter-die-after-suspected-grizzly-bear-attack-in-canada-596c0500c3.html",
-      "image": "news/images/2026-11-05-mother-and-daughter-die-after-suspected-grizzly-bear-attack-in-canada-596c0500c3-source.jpg",
-      "bytes": 103103,
+      "article": "2026-11-06-melania-hosts-russia-ukraine-as-trump-touts-big-europe-deal-0c87f0d5a1.html",
+      "image": "news/images/2026-11-06-melania-hosts-russia-ukraine-as-trump-touts-big-europe-deal-0c87f0d5a1-source.jpg",
+      "bytes": 47752,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cqvgry8k5d01o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/9e75/live/6fd142d0-d8a3-11f1-b29d-fbcd9d61c58e.jpg"
+      "source_url": "https://punchng.com/melania-hosts-russia-ukraine-as-trump-touts-big-europe-deal/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/06093832/AFP__20261105__D6K46QP__v4__MidRes__TopshotUsUkraineRussiaPoliticsConflict_1793954312-1200x630.webp"
     },
     {
-      "article": "2026-11-05-joshua-wong-face-of-hong-kong-s-pro-democracy-protests-jailed-for-10-years-f342dc77f6.html",
-      "image": "news/images/2026-11-05-joshua-wong-face-of-hong-kong-s-pro-democracy-protests-jailed-for-10-years-f342dc77f6-source.jpg",
-      "bytes": 73373,
+      "article": "2026-11-06-macau-jails-pro-democracy-campaigner-in-city-s-first-national-security-case-14856e4b32.html",
+      "image": "news/images/2026-11-06-macau-jails-pro-democracy-campaigner-in-city-s-first-national-security-case-14856e4b32-source.jpg",
+      "bytes": 70585,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cwp9g3rlp8jlo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/ff8f/live/68eb4bf0-d8e4-11f1-a701-fddedf244c16.jpg"
+      "source_url": "https://www.bbc.co.uk/news/articles/cmdx33v9vvr2o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/0ae0/live/23a8aa80-d9aa-11f1-88e6-7913ca4cf3b6.jpg"
     },
     {
-      "article": "2026-11-05-italian-chef-sacked-after-refusing-pineapple-on-pizza-875b9511d4.html",
-      "image": "news/images/2026-11-05-italian-chef-sacked-after-refusing-pineapple-on-pizza-875b9511d4-source.jpg",
-      "bytes": 34716,
+      "article": "2026-11-06-how-to-find-richard-the-dog-in-ocarina-of-time-56263c63b6.html",
+      "image": "news/images/2026-11-06-how-to-find-richard-the-dog-in-ocarina-of-time-56263c63b6-source.jpg",
+      "bytes": 173276,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/italian-chef-sacked-after-refusing-pineapple-on-pizza/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/05094127/7cd3f370-d8ed-11f1-b7ca-cbaa67b24b8c.jpg_1793868087.webp"
+      "source_url": "https://www.polygon.com/zelda-ocarina-of-time-remake-oot-richard-dog-location-how-to-find/",
+      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/zeldaootremake_guide_richard_lead.jpg?w=1600&h=900&fit=crop"
     },
     {
-      "article": "2026-11-05-iran-war-cost-republicans-midterm-elections-vance-f52f9c7619.html",
-      "image": "news/images/2026-11-05-iran-war-cost-republicans-midterm-elections-vance-f52f9c7619-source.jpg",
-      "bytes": 39078,
+      "article": "2026-11-06-army-rescues-16-kidnap-victims-recovers-weapons-in-niger-a45adb2f0e.html",
+      "image": "news/images/2026-11-06-army-rescues-16-kidnap-victims-recovers-weapons-in-niger-a45adb2f0e-source.jpg",
+      "bytes": 83184,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/iran-war-cost-republicans-midterm-elections-vance/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://punchng.com/wp-content/uploads/2026/07/US-Vice-President-JD-Vance_1784533170.webp"
+      "source_url": "https://punchng.com/army-rescues-16-kidnap-victims-recovers-weapons-in-niger/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/06102207/HWbifOsXoAAv0pr_1793956927.webp"
     }
   ],
   "openverse_photos": [],
