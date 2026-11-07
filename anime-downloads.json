@@ -937,18 +937,27 @@
       "id": "record-of-a-mortals-journey",
       "kind": "donghua",
       "title": "A Record of a Mortal’s Journey to Immortality",
-      "description": "An ordinary village boy uses persistence and caution to survive the perilous road to immortality.",
-      "license": "Commercial/copyrighted title — this is a discovery listing, not a hosted copy. Use the official provider’s availability and download features where offered.",
-      "sourceUrl": "https://search.bilibili.com/all?keyword=A%20Record%20of%20a%20Mortal%E2%80%99s%20Journey%20to%20Immortality",
-      "catalogueOnly": true,
+      "description": "Official Made By Bilibili donghua release. Watch the English-subtitled compilation and the latest linked episode where available. Playback and subtitles may vary by territory.",
+      "license": "Copyrighted series — official Made By Bilibili YouTube embeds only; no video files are copied or rehosted.",
+      "sourceUrl": "https://www.youtube.com/@MadeByBilibili",
+      "catalogueOnly": false,
       "episodes": [
         {
-          "title": "Official availability & episodes",
-          "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
-          "sourceUrl": "https://search.bilibili.com/all?keyword=A%20Record%20of%20a%20Mortal%E2%80%99s%20Journey%20to%20Immortality",
-          "downloads": []
+          "title": "Episodes 1–176 · English subtitles",
+          "description": "Official Made By Bilibili compilation. Use YouTube captions and check regional availability.",
+          "videoUrl": "https://www.youtube.com/watch?v=75poX2kfcWs",
+          "sourceUrl": "https://www.youtube.com/@MadeByBilibili"
+        },
+        {
+          "title": "Episode 192 · Mulan War arc",
+          "description": "Official Made By Bilibili episode upload. English-subtitle availability may vary.",
+          "videoUrl": "https://www.youtube.com/watch?v=qlodDgpiYhg",
+          "sourceUrl": "https://www.youtube.com/@MadeByBilibili"
         }
-      ]
+      ],
+      "officialWatchUrl": "https://www.youtube.com/watch?v=75poX2kfcWs",
+      "posterUrl": "https://i.ytimg.com/vi/75poX2kfcWs/maxresdefault.jpg",
+      "featured": true
     },
     {
       "id": "against-the-gods",
@@ -1977,6 +1986,26 @@
       "officialWatchUrl": "https://morevnaproject.org/anime/episode-4/",
       "catalogueOnly": true,
       "featured": true
+    },
+    {
+      "id": "tales-of-herding-gods",
+      "kind": "donghua",
+      "title": "Tales of Herding Gods",
+      "description": "Official Made By Bilibili Chinese fantasy donghua. Watch an English-subtitled episode directly through the distributor’s YouTube player; availability may vary by region.",
+      "license": "Copyrighted series — official Made By Bilibili YouTube embed only; no video files are copied or rehosted.",
+      "sourceUrl": "https://www.youtube.com/@MadeByBilibili",
+      "officialWatchUrl": "https://www.youtube.com/watch?v=I_NFA0zbYDM",
+      "posterUrl": "https://i.ytimg.com/vi/I_NFA0zbYDM/maxresdefault.jpg",
+      "catalogueOnly": false,
+      "featured": true,
+      "episodes": [
+        {
+          "title": "Episode 86 · Bring Disaster to the Nation and People",
+          "description": "Official Made By Bilibili upload. Check the YouTube player for captions and territorial availability.",
+          "videoUrl": "https://www.youtube.com/watch?v=I_NFA0zbYDM",
+          "sourceUrl": "https://www.youtube.com/@MadeByBilibili"
+        }
+      ]
     }
   ]
 }
