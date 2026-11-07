@@ -14,6 +14,19 @@ Each title should include a stable local `id`, a `kind` (`anime` or `donghua`), 
   "description": "Short description",
   "license": "Licence and attribution details",
   "sourceUrl": "https://official-source.example/license",
+  "episodes": [
+    {
+      "title": "Episode 1",
+      "description": "Episode details",
+      "videoUrl": "https://www.dailymotion.com/video/VIDEO_ID",
+      "downloads": [
+        {
+          "label": "Download 360p MP4",
+          "url": "https://authorized-host.example/episode-1-360p.mp4"
+        }
+      ]
+    }
+  ],
   "downloads": [
     {
       "label": "Download 360p WebM",
@@ -22,6 +35,12 @@ Each title should include a stable local `id`, a `kind` (`anime` or `donghua`), 
   ]
 }
 ```
+
+## Dailymotion playback
+
+- Add a Dailymotion episode URL to an episode's `videoUrl`, `watchUrl`, or `sourceUrl` field. The Anime & Donghua page opens it in the embedded Dailymotion player.
+- The **Search Dailymotion** button opens Dailymotion search using the current catalogue search term (or a default Anime/Donghua search).
+- Dailymotion playback and direct file downloads are separate controls. A Dailymotion page URL is not itself a downloadable MP4/WebM file; add a separate direct file URL in `downloads` when one is available.
 
 ## Rules
 
