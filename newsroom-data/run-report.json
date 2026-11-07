@@ -1,21 +1,21 @@
 {
-  "started_utc": "2026-11-06T10:12:24.819165+00:00",
-  "finished_utc": "2026-11-06T10:12:41.171987+00:00",
+  "started_utc": "2026-11-07T09:28:24.324869+00:00",
+  "finished_utc": "2026-11-07T09:28:36.965528+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 350,
-  "fresh_items": 334,
-  "corroborated_candidates": 7,
+  "fresh_items": 333,
+  "corroborated_candidates": 9,
   "published_count": 5,
   "published_titles": [
-    "Macau jails pro-democracy campaigner in city's first national security case",
-    "How to find Richard the dog in Ocarina of Time",
-    "Melania hosts Russia, Ukraine as Trump touts big Europe deal",
-    "PlayStation sees record high player numbers and increased revenue for Q2 2026, and a lot of that success is down to Marvel's Wolverine",
-    "Army rescues 16 kidnap victims, recovers weapons in Niger"
+    "Where to get Epona in Ocarina of Time",
+    "Paraguay's president impeached and under house arrest after bank collapse",
+    "Kenyan doomsday cult leader given life sentence for murdering 191 people",
+    "Could potential AI clones of GTA VI force a quicker official port?",
+    "10 Devastating Game Cancellations That Are Still Disappointing Years Later"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }
