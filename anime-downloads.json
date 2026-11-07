@@ -18,7 +18,8 @@
           "label": "360p WebM",
           "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/a7/Morevna_Episode_3.0.2_%28English%29.webm/Morevna_Episode_3.0.2_%28English%29.webm.360p.vp9.webm?download="
         }
-      ]
+      ],
+      "featured": true
     },
     {
       "id": "morevna-demo",
@@ -36,7 +37,8 @@
           "label": "OGV · about 25 MB",
           "url": "https://archive.org/download/TheBeautifulQueenMaryaMorevnaDemo/demo-20121110-final-1920x1080.ogv?download=1"
         }
-      ]
+      ],
+      "featured": true
     },
     {
       "id": "coffee-run",
@@ -238,7 +240,8 @@
           ],
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hutong_Meow.webm"
         }
-      ]
+      ],
+      "featured": true
     },
     {
       "id": "chinese-new-year-paper-cut-animation",
@@ -1961,7 +1964,19 @@
           "videoUrl": "https://www.youtube.com/watch?v=YHvzxVRL3E8",
           "sourceUrl": "https://kosys.opap.jp/story/"
         }
-      ]
+      ],
+      "featured": true
+    },
+    {
+      "id": "morevna-episode-4",
+      "kind": "anime",
+      "title": "Morevna Episode 4 — Death(Less)",
+      "description": "Open-source cyberpunk anime based on a traditional Russian fairy tale. Ivan Tsarevich faces the consequences of his careless behaviour and meets his enemy. Watch on the creator's official page.",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0). Credit Morevna Project and follow the share-alike terms.",
+      "sourceUrl": "https://morevnaproject.org/anime/episode-4/",
+      "officialWatchUrl": "https://morevnaproject.org/anime/episode-4/",
+      "catalogueOnly": true,
+      "featured": true
     }
   ]
 }
