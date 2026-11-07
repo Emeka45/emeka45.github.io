@@ -1915,6 +1915,53 @@
           "downloads": []
         }
       ]
+    },
+    {
+      "id": "kosys-open-anime",
+      "kind": "anime",
+      "title": "KOSYS! — Open-Source Anime Series",
+      "description": "Japanese technology-comedy anime about cybersecurity incidents inside a railway company's IT department. The original series is released under CC BY 4.0 unless otherwise noted.",
+      "license": "CC BY 4.0 for the original series unless otherwise noted. Attribution: OPAP-JP contributors — https://opap.jp/contributors. Check per-episode notices before redistribution.",
+      "sourceUrl": "https://kosys.opap.jp/introduction/",
+      "catalogueOnly": false,
+      "episodes": [
+        {
+          "title": "Episode 1 — XP but we have no money",
+          "description": "Official episode link published by the series creator.",
+          "videoUrl": "https://www.youtube.com/watch?v=a-VzjnKgcVI",
+          "sourceUrl": "https://kosys.opap.jp/story/"
+        },
+        {
+          "title": "Episode 2 — Our business system is wrong",
+          "description": "Official episode link published by the series creator.",
+          "videoUrl": "https://www.youtube.com/watch?v=zNln_gebc68",
+          "sourceUrl": "https://kosys.opap.jp/story/"
+        },
+        {
+          "title": "Episode 3.1 — Security perfection (Part 1)",
+          "description": "Official episode link published by the series creator.",
+          "videoUrl": "https://www.youtube.com/watch?v=Sim3-h5kw4s",
+          "sourceUrl": "https://kosys.opap.jp/story/"
+        },
+        {
+          "title": "Episode 3.2 — Security perfection (Part 2)",
+          "description": "Official episode link published by the series creator.",
+          "videoUrl": "https://www.youtube.com/watch?v=FzuYg6e4naE",
+          "sourceUrl": "https://kosys.opap.jp/story/"
+        },
+        {
+          "title": "Episode 3.3 — Security perfection (Part 3)",
+          "description": "Official episode link published by the series creator.",
+          "videoUrl": "https://www.youtube.com/watch?v=BEHIf9-hfH8",
+          "sourceUrl": "https://kosys.opap.jp/story/"
+        },
+        {
+          "title": "Episode 3.4 — Security perfection (Part 4)",
+          "description": "Official episode link published by the series creator.",
+          "videoUrl": "https://www.youtube.com/watch?v=YHvzxVRL3E8",
+          "sourceUrl": "https://kosys.opap.jp/story/"
+        }
+      ]
     }
   ]
 }
