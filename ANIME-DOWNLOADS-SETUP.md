@@ -50,3 +50,33 @@ Each title should include a stable local `id`, a `kind` (`anime` or `donghua`), 
 - Do not copy or rehost commercial anime or donghua without permission. A catalogue entry or a source-page link does not grant download rights.
 - Include accurate licence and attribution details; verify the source page before publishing a new title.
 - `kind: "donghua"` entries appear under the Donghua tab. If there are no authorized entries, the page explains that no verified direct downloads are listed yet.
+
+
+## Player and browsing features
+
+The Anime & Donghua page supports:
+- Separate Anime and Donghua catalogues.
+- Search, status filters (watch online, downloads, official sources), and sorting.
+- YouTube and Dailymotion episode embeds.
+- Direct MP4/WebM episode preview in the built-in player, with optional subtitle tracks.
+- Separate direct-file download links. A preview is not presented as a download, and a provider page is not presented as a direct file.
+
+### Episode fields
+
+```json
+{
+  "title": "Episode 1",
+  "description": "Episode synopsis",
+  "videoUrl": "https://www.youtube.com/watch?v=VIDEO_ID",
+  "sourceUrl": "https://official-creator.example/series/",
+  "subtitles": [
+    { "label": "English", "lang": "en", "url": "https://example.org/subtitles/episode-1.vtt", "default": true }
+  ],
+  "downloads": [
+    { "label": "240p WebM · low data", "url": "https://files.example.org/episode-1-240p.webm" },
+    { "label": "480p MP4", "url": "https://files.example.org/episode-1-480p.mp4" }
+  ]
+}
+```
+
+For direct MP4/WebM URLs, the built-in player offers a preview button beside the download link. YouTube and Dailymotion URLs are embedded from their respective providers. Subtitle URLs must point to valid WebVTT files. Always verify each episode's license, music rights, attribution and source before publishing.
