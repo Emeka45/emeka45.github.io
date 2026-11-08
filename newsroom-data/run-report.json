@@ -1,21 +1,21 @@
 {
-  "started_utc": "2026-11-07T09:28:24.324869+00:00",
-  "finished_utc": "2026-11-07T09:28:36.965528+00:00",
+  "started_utc": "2026-11-08T09:44:29.985589+00:00",
+  "finished_utc": "2026-11-08T09:44:46.632293+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 350,
-  "fresh_items": 333,
-  "corroborated_candidates": 9,
+  "fresh_items": 330,
+  "corroborated_candidates": 5,
   "published_count": 5,
   "published_titles": [
-    "Where to get Epona in Ocarina of Time",
-    "Paraguay's president impeached and under house arrest after bank collapse",
-    "Kenyan doomsday cult leader given life sentence for murdering 191 people",
-    "Could potential AI clones of GTA VI force a quicker official port?",
-    "10 Devastating Game Cancellations That Are Still Disappointing Years Later"
+    "Police Arrest 26 Suspects, Recover N145 Million Stolen Bus In Bayelsa",
+    "Oil wells: Churches deny claim against Kumuyi, Adeboye, Oyedepo - Punch Newspapers",
+    "What Is the Biggest Religion in the World? - The Guardian Nigeria News",
+    "Peter Obi hails Flamingos’ historic World Cup triumph",
+    "FULL LIST: 20 youngest FIFA World Cup winners"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }
