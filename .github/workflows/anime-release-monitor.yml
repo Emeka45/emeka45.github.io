@@ -1,6 +1,7 @@
 name: Anime release monitor
 
 on:
+  pull_request:
   workflow_dispatch:
   schedule:
     - cron: "17 */12 * * *"
@@ -53,6 +54,7 @@ jobs:
               subprocess.run(["git", "checkout", "--", "anime-release-index.json"], check=True)
           PY
       - name: Commit updated index
+        if: github.event_name != 'pull_request'
         run: |
           if git diff --quiet -- anime-release-index.json; then
             echo "Release index unchanged."
