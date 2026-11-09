@@ -1,0 +1,3 @@
+# Local, rights-cleared source media and generated encodes must not enter Git.
+media/incoming/*
+media/encoded/*
