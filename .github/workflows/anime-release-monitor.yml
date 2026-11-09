@@ -33,10 +33,10 @@ jobs:
           import re
           from pathlib import Path
           html = Path("anime-donghua.html").read_text(encoding="utf-8")
-          scripts = re.findall(r"<script\\b[^>]*>(.*?)</script>", html, re.S | re.I)
+          scripts = re.findall(r"<script\b[^>]*>(.*?)</script>", html, re.S | re.I)
           if not scripts:
               raise SystemExit("No inline script found in anime-donghua.html")
-          Path("/tmp/anime-hub.js").write_text("\\n".join(scripts), encoding="utf-8")
+          Path("/tmp/anime-hub.js").write_text("\n".join(scripts), encoding="utf-8")
           PY
           node --check /tmp/anime-hub.js
       - name: Ignore timestamp-only changes
