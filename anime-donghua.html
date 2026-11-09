@@ -130,6 +130,7 @@ function openDetails(item){
 }
 function closeDetails(){$('detailModal').hidden=true;$('detailContent').innerHTML=''}
 async function load(){
+ loadReleaseRadar();
  const btn=$('reload');btn.disabled=true;$('status').textContent='Loading the local download library…';$('grid').innerHTML='<div class="empty">Loading titles…</div>';
  try{state.items=await fetchManifest();render();updateStatus();}
  catch(_){$('grid').innerHTML='<div class="empty">The download library could not be loaded. Please refresh the page.</div>';$('status').textContent='Download library unavailable';}
@@ -145,7 +146,6 @@ $('closeDetails').onclick=closeDetails;$('detailCloseBottom').onclick=closeDetai
 $('closePlayer').onclick=()=>{$('player').pause();$('player').removeAttribute('src');$('player').querySelectorAll('track').forEach(t=>t.remove());$('player').load();$('player').hidden=false;$('dmFrame').src='about:blank';$('dmFrame').hidden=true;$('ytFrame').src='about:blank';$('ytFrame').hidden=true;$('playerModal').hidden=true};$('playerModal').onclick=e=>{if(e.target===$('playerModal'))$('closePlayer').click()};
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeDetails();if(!$('playerModal').hidden)$('closePlayer').click()}});
 load();
-loadReleaseRadar();
 })();
 </script>
 </body>
