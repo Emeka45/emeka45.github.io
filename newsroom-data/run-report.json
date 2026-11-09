@@ -1,21 +1,27 @@
 {
-  "started_utc": "2026-11-08T09:44:29.985589+00:00",
-  "finished_utc": "2026-11-08T09:44:46.632293+00:00",
+  "started_utc": "2026-11-09T10:43:12.435523+00:00",
+  "finished_utc": "2026-11-09T10:43:47.301602+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
-  "feed_success_count": 30,
-  "feed_failure_count": 0,
-  "feed_failures": [],
-  "total_items": 350,
-  "fresh_items": 330,
-  "corroborated_candidates": 5,
+  "feed_success_count": 29,
+  "feed_failure_count": 1,
+  "feed_failures": [
+    {
+      "category": "Religion & Faith",
+      "url": "https://nscia.com.ng/category/news/feed/",
+      "error": "The read operation timed out"
+    }
+  ],
+  "total_items": 341,
+  "fresh_items": 321,
+  "corroborated_candidates": 7,
   "published_count": 5,
   "published_titles": [
-    "Police Arrest 26 Suspects, Recover N145 Million Stolen Bus In Bayelsa",
-    "Oil wells: Churches deny claim against Kumuyi, Adeboye, Oyedepo - Punch Newspapers",
-    "What Is the Biggest Religion in the World? - The Guardian Nigeria News",
-    "Peter Obi hails Flamingos’ historic World Cup triumph",
-    "FULL LIST: 20 youngest FIFA World Cup winners"
+    "Nvidia probes CEO over Chinese spy link allegations",
+    "Zelda: Ocarina of Time and WoW: Forever Are the Good Kind of Remakes",
+    "Pope delivers veiled rebuke of Milei's austerity measures",
+    "Spy x Family Officially Announces New Season and Movie Coming Soon",
+    "Seven dead and more than 100 injured after trains collide in Egypt"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }

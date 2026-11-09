@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-11-08T09:44:48.863733+00:00",
+  "finished_utc": "2026-11-09T10:43:49.716511+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
   "missing_before_run": 5,
@@ -7,44 +7,44 @@
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-11-08-what-is-the-biggest-religion-in-the-world-the-guardian-nigeria-news-a0daa0d05b.html",
-      "image": "news/images/2026-11-08-what-is-the-biggest-religion-in-the-world-the-guardian-nigeria-news-a0daa0d05b-source.jpg",
-      "bytes": 43285,
+      "article": "2026-11-09-zelda-ocarina-of-time-and-wow-forever-are-the-good-kind-of-remakes-f4d46eb690.html",
+      "image": "news/images/2026-11-09-zelda-ocarina-of-time-and-wow-forever-are-the-good-kind-of-remakes-f4d46eb690-source.jpg",
+      "bytes": 2570910,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/meet-nigerias-umejiaku-fifa-u-17-womens-world-cup-best-player/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2016/10/17155511/punchlogo.png"
+      "source_url": "https://www.polygon.com/patch-notes-remakes-zelda-ocarina-of-time-wow-forever/",
+      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/the-legend-of-zelda-ocarina-of-time-deku-tree.png?w=1600&h=900&fit=crop"
     },
     {
-      "article": "2026-11-08-police-arrest-26-suspects-recover-n145-million-stolen-bus-in-bayelsa-549aecdb96.html",
-      "image": "news/images/2026-11-08-police-arrest-26-suspects-recover-n145-million-stolen-bus-in-bayelsa-549aecdb96-source.jpg",
-      "bytes": 77504,
+      "article": "2026-11-09-spy-x-family-officially-announces-new-season-and-movie-coming-soon-a675a98b35.html",
+      "image": "news/images/2026-11-09-spy-x-family-officially-announces-new-season-and-movie-coming-soon-a675a98b35-source.jpg",
+      "bytes": 119509,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/police-arrest-man-over-fake-alert-in-bauchi-recover-n3m-goods/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/08103509/1001783745_1794130509.webp"
+      "source_url": "https://www.polygon.com/spy-x-family-season-4-anime-movie-announced/",
+      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/sharedimages/2026/03/spy-x-family-code_-white.jpg?w=1600&h=900&fit=crop"
     },
     {
-      "article": "2026-11-08-peter-obi-hails-flamingos-historic-world-cup-triumph-f6782bfac1.html",
-      "image": "news/images/2026-11-08-peter-obi-hails-flamingos-historic-world-cup-triumph-f6782bfac1-source.jpg",
-      "bytes": 177352,
+      "article": "2026-11-09-seven-dead-and-more-than-100-injured-after-trains-collide-in-egypt-e47119ed9f.html",
+      "image": "news/images/2026-11-09-seven-dead-and-more-than-100-injured-after-trains-collide-in-egypt-e47119ed9f-source.jpg",
+      "bytes": 136408,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/peter-obi-hails-flamingos-historic-world-cup-triumph/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/07230416/D404872C-C2BE-44FE-9FC0-83CCA0BFB022_1794089056-1200x630.webp"
+      "source_url": "https://www.bbc.co.uk/news/articles/cwvgr20mmmevo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/3886/live/ab03aa70-db8a-11f1-b441-2b33b063138f.jpg"
     },
     {
-      "article": "2026-11-08-oil-wells-churches-deny-claim-against-kumuyi-adeboye-oyedepo-punch-newspapers-4940ece39b.html",
-      "image": "news/images/2026-11-08-oil-wells-churches-deny-claim-against-kumuyi-adeboye-oyedepo-punch-newspapers-4940ece39b-source.jpg",
-      "bytes": 46560,
+      "article": "2026-11-09-pope-delivers-veiled-rebuke-of-milei-s-austerity-measures-1a863aeffb.html",
+      "image": "news/images/2026-11-09-pope-delivers-veiled-rebuke-of-milei-s-austerity-measures-1a863aeffb-source.jpg",
+      "bytes": 60519,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/morning-recap-churches-deny-oil-wells-claim-inec-weighs-atikus-ticket-other-top-stories/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://punchng.com/wp-content/uploads/2026/06/Obasanjo-2-1200x630.webp"
+      "source_url": "https://www.bbc.co.uk/news/articles/ckj0l082jqzvo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/3d83/live/ef505e30-dbf8-11f1-93e1-3b657b665bcf.jpg"
     },
     {
-      "article": "2026-11-08-full-list-20-youngest-fifa-world-cup-winners-7715fb49b9.html",
-      "image": "news/images/2026-11-08-full-list-20-youngest-fifa-world-cup-winners-7715fb49b9-source.jpg",
-      "bytes": 62564,
+      "article": "2026-11-09-nvidia-probes-ceo-over-chinese-spy-link-allegations-edb6ef644d.html",
+      "image": "news/images/2026-11-09-nvidia-probes-ceo-over-chinese-spy-link-allegations-edb6ef644d-source.jpg",
+      "bytes": 85932,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/full-list-20-youngest-fifa-world-cup-winners/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/08080727/IMG_0627_1794121647-1200x630.webp"
+      "source_url": "https://punchng.com/nvidia-probes-ceo-over-chinese-spy-link-allegations/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/09092750/AFP__20261109__D6VC7G3__v1__MidRes__NvidiaCeoJensenHuangGivesKeynoteAheadOfCes_1794212870-1200x630.webp"
     }
   ],
   "openverse_photos": [],
