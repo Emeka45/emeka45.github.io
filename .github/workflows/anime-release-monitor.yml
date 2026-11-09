@@ -1,0 +1,40 @@
+name: Anime release monitor
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */12 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: anime-release-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run release monitor tests
+        run: python -m unittest discover -s tests -v
+      - name: Update release index
+        run: python tools/anime_release_monitor.py
+      - name: Commit updated index
+        run: |
+          if git diff --quiet -- anime-release-index.json; then
+            echo "Release index unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add anime-release-index.json
+          git commit -m "chore(anime): refresh release index"
+          git push
