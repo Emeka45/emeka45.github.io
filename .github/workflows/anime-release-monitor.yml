@@ -27,6 +27,19 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Update release index
         run: python tools/anime_release_monitor.py
+      - name: Ignore timestamp-only changes
+        run: |
+          python - <<'PY'
+          import json
+          import subprocess
+          from pathlib import Path
+          previous = json.loads(subprocess.check_output(["git", "show", "HEAD:anime-release-index.json"]))
+          current = json.loads(Path("anime-release-index.json").read_text(encoding="utf-8"))
+          previous.pop("generated_at", None)
+          current.pop("generated_at", None)
+          if previous == current:
+              subprocess.run(["git", "checkout", "--", "anime-release-index.json"], check=True)
+          PY
       - name: Commit updated index
         run: |
           if git diff --quiet -- anime-release-index.json; then
