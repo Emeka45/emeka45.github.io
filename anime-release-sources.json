@@ -1,0 +1,5 @@
+{
+  "schema_version": 1,
+  "description": "Approved RSS/Atom feeds for release metadata monitoring. Add only feeds published by official distributors, creators, or other sources whose metadata may be indexed. Do not add pirate-site feeds or feeds that expose unauthorized media links.",
+  "sources": []
+}
