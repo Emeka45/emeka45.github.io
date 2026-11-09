@@ -3,6 +3,21 @@
   "policy": "Catalogue includes creator-authorized/open-licensed media with direct download links and discovery-only listings for copyrighted titles. Commercial titles are not copied or rehosted; use official provider pages. Verify the licence and territorial availability of each media item before redistribution.",
   "titles": [
     {
+      "id": "reborn-space-mercenary-2026",
+      "kind": "anime",
+      "title": "Reborn as a Space Mercenary: I Woke Up Piloting the Strongest Starship!",
+      "description": "Currently airing sci-fi isekai anime. Crunchyroll lists English subtitles. Episodes 1–6 have aired as of 9 November 2026; new subtitled episodes are scheduled weekly. Open the official provider to watch. No authorised public 360p file download has been verified, so this listing does not pretend to offer one.",
+      "license": "Commercial copyrighted series — official-provider viewing only; no redistribution rights.",
+      "sourceUrl": "https://www.crunchyroll.com/watch/GE00389230FRFR/mimi-the-girl",
+      "catalogueOnly": true,
+      "subtitleLanguages": [
+        "English"
+      ],
+      "subtitleRequired": true,
+      "releaseSchedule": "Sundays; English-subtitled release schedule listed by Anime Corner",
+      "featured": true
+    },
+    {
       "id": "morevna-episode-3",
       "kind": "anime",
       "title": "Morevna Episode 3.0.2 (English)",
