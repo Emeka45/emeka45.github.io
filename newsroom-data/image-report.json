@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-11-09T10:43:49.716511+00:00",
+  "finished_utc": "2026-11-10T10:39:08.431195+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
   "missing_before_run": 5,
@@ -7,44 +7,44 @@
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-11-09-zelda-ocarina-of-time-and-wow-forever-are-the-good-kind-of-remakes-f4d46eb690.html",
-      "image": "news/images/2026-11-09-zelda-ocarina-of-time-and-wow-forever-are-the-good-kind-of-remakes-f4d46eb690-source.jpg",
-      "bytes": 2570910,
+      "article": "2026-11-10-oil-wells-rccg-pastor-dismisses-allegations-against-adeboye-demands-evidence-42c590fd48.html",
+      "image": "news/images/2026-11-10-oil-wells-rccg-pastor-dismisses-allegations-against-adeboye-demands-evidence-42c590fd48-source.jpg",
+      "bytes": 28324,
       "provider": "Original news source",
-      "source_url": "https://www.polygon.com/patch-notes-remakes-zelda-ocarina-of-time-wow-forever/",
-      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/the-legend-of-zelda-ocarina-of-time-deku-tree.png?w=1600&h=900&fit=crop"
+      "source_url": "https://punchng.com/oil-wells-rccg-pastor-dismisses-allegations-against-adeboye-demands-evidence/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://punchng.com/wp-content/uploads/2026/06/EA-ADEBOYE_1782746476-960x630.webp"
     },
     {
-      "article": "2026-11-09-spy-x-family-officially-announces-new-season-and-movie-coming-soon-a675a98b35.html",
-      "image": "news/images/2026-11-09-spy-x-family-officially-announces-new-season-and-movie-coming-soon-a675a98b35-source.jpg",
-      "bytes": 119509,
+      "article": "2026-11-10-nvidia-ceo-s-affair-becomes-a-national-security-problem-d77e007460.html",
+      "image": "news/images/2026-11-10-nvidia-ceo-s-affair-becomes-a-national-security-problem-d77e007460-source.jpg",
+      "bytes": 93720,
       "provider": "Original news source",
-      "source_url": "https://www.polygon.com/spy-x-family-season-4-anime-movie-announced/",
-      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/sharedimages/2026/03/spy-x-family-code_-white.jpg?w=1600&h=900&fit=crop"
+      "source_url": "https://arstechnica.com/tech-policy/2026/11/ceo-jensen-huang-admits-affair-as-nvidia-probes-possible-chinese-espionage/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/03/huang-1152x648.jpg"
     },
     {
-      "article": "2026-11-09-seven-dead-and-more-than-100-injured-after-trains-collide-in-egypt-e47119ed9f.html",
-      "image": "news/images/2026-11-09-seven-dead-and-more-than-100-injured-after-trains-collide-in-egypt-e47119ed9f-source.jpg",
-      "bytes": 136408,
+      "article": "2026-11-10-nintendo-adds-eshop-gifting-to-switch-consoles-7492b86332.html",
+      "image": "news/images/2026-11-10-nintendo-adds-eshop-gifting-to-switch-consoles-7492b86332-source.jpg",
+      "bytes": 160703,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cwvgr20mmmevo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/3886/live/ab03aa70-db8a-11f1-b441-2b33b063138f.jpg"
+      "source_url": "https://www.polygon.com/nintendo-switch-2-digital-games-eshop-gifts/",
+      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/12/mario-christmas.jpg?w=1600&h=900&fit=crop"
     },
     {
-      "article": "2026-11-09-pope-delivers-veiled-rebuke-of-milei-s-austerity-measures-1a863aeffb.html",
-      "image": "news/images/2026-11-09-pope-delivers-veiled-rebuke-of-milei-s-austerity-measures-1a863aeffb-source.jpg",
-      "bytes": 60519,
+      "article": "2026-11-10-australia-considers-criminal-penalties-for-rogue-ai-in-wake-of-openai-hack-2b5155b4f1.html",
+      "image": "news/images/2026-11-10-australia-considers-criminal-penalties-for-rogue-ai-in-wake-of-openai-hack-2b5155b4f1-source.jpg",
+      "bytes": 85177,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/ckj0l082jqzvo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/3d83/live/ef505e30-dbf8-11f1-93e1-3b657b665bcf.jpg"
+      "source_url": "https://www.bbc.co.uk/news/articles/cmp3g37l566po?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/c11d/live/472ca6e0-dcc6-11f1-a594-d13718d7f889.jpg"
     },
     {
-      "article": "2026-11-09-nvidia-probes-ceo-over-chinese-spy-link-allegations-edb6ef644d.html",
-      "image": "news/images/2026-11-09-nvidia-probes-ceo-over-chinese-spy-link-allegations-edb6ef644d-source.jpg",
-      "bytes": 85932,
+      "article": "2026-11-10-apc-zones-abia-governorship-ticket-to-abia-central-ahead-of-2027-elections-7f569321a3.html",
+      "image": "news/images/2026-11-10-apc-zones-abia-governorship-ticket-to-abia-central-ahead-of-2027-elections-7f569321a3-source.jpg",
+      "bytes": 68480,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/nvidia-probes-ceo-over-chinese-spy-link-allegations/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/09092750/AFP__20261109__D6VC7G3__v1__MidRes__NvidiaCeoJensenHuangGivesKeynoteAheadOfCes_1794212870-1200x630.webp"
+      "source_url": "https://thereporter.com.ng/apc-zones-abia-governorship-ticket-to-abia-central-ahead-of-2027-elections",
+      "image_url": "https://thereporter.com.ng/uploads/images/202604/image_870x580_69f36c879459a.jpg"
     }
   ],
   "openverse_photos": [],

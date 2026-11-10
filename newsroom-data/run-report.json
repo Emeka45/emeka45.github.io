@@ -1,27 +1,21 @@
 {
-  "started_utc": "2026-11-09T10:43:12.435523+00:00",
-  "finished_utc": "2026-11-09T10:43:47.301602+00:00",
+  "started_utc": "2026-11-10T10:38:43.764307+00:00",
+  "finished_utc": "2026-11-10T10:39:03.859150+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
-  "feed_success_count": 29,
-  "feed_failure_count": 1,
-  "feed_failures": [
-    {
-      "category": "Religion & Faith",
-      "url": "https://nscia.com.ng/category/news/feed/",
-      "error": "The read operation timed out"
-    }
-  ],
-  "total_items": 341,
-  "fresh_items": 321,
-  "corroborated_candidates": 7,
+  "feed_success_count": 30,
+  "feed_failure_count": 0,
+  "feed_failures": [],
+  "total_items": 350,
+  "fresh_items": 329,
+  "corroborated_candidates": 8,
   "published_count": 5,
   "published_titles": [
-    "Nvidia probes CEO over Chinese spy link allegations",
-    "Zelda: Ocarina of Time and WoW: Forever Are the Good Kind of Remakes",
-    "Pope delivers veiled rebuke of Milei's austerity measures",
-    "Spy x Family Officially Announces New Season and Movie Coming Soon",
-    "Seven dead and more than 100 injured after trains collide in Egypt"
+    "Nvidia CEO's affair becomes a national security problem",
+    "Nintendo Adds eShop Gifting to Switch Consoles",
+    "Australia considers criminal penalties for rogue AI in wake of OpenAI hack",
+    "APC Zones Abia Governorship Ticket to Abia Central Ahead of 2027 Elections",
+    "Oil wells: RCCG pastor dismisses allegations against Adeboye, demands evidence"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }
