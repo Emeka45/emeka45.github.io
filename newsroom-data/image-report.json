@@ -1,50 +1,34 @@
 {
-  "finished_utc": "2026-11-10T10:39:08.431195+00:00",
+  "finished_utc": "2026-11-11T10:06:53.011463+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 5,
-  "attempted": 5,
+  "missing_before_run": 3,
+  "attempted": 3,
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-11-10-oil-wells-rccg-pastor-dismisses-allegations-against-adeboye-demands-evidence-42c590fd48.html",
-      "image": "news/images/2026-11-10-oil-wells-rccg-pastor-dismisses-allegations-against-adeboye-demands-evidence-42c590fd48-source.jpg",
-      "bytes": 28324,
+      "article": "2026-11-11-sony-cancels-live-service-shooter-fairgames-e52b999ae9.html",
+      "image": "news/images/2026-11-11-sony-cancels-live-service-shooter-fairgames-e52b999ae9-source.jpg",
+      "bytes": 36323,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/oil-wells-rccg-pastor-dismisses-allegations-against-adeboye-demands-evidence/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://punchng.com/wp-content/uploads/2026/06/EA-ADEBOYE_1782746476-960x630.webp"
+      "source_url": "https://www.theverge.com/games/1031242/sony-playstation-fairgames-canceled",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/acastro_STK097_01.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
     },
     {
-      "article": "2026-11-10-nvidia-ceo-s-affair-becomes-a-national-security-problem-d77e007460.html",
-      "image": "news/images/2026-11-10-nvidia-ceo-s-affair-becomes-a-national-security-problem-d77e007460-source.jpg",
-      "bytes": 93720,
+      "article": "2026-11-11-nvidia-has-a-jensen-huang-problem-and-no-obvious-successor-b370ec43c3.html",
+      "image": "news/images/2026-11-11-nvidia-has-a-jensen-huang-problem-and-no-obvious-successor-b370ec43c3-source.jpg",
+      "bytes": 158813,
       "provider": "Original news source",
-      "source_url": "https://arstechnica.com/tech-policy/2026/11/ceo-jensen-huang-admits-affair-as-nvidia-probes-possible-chinese-espionage/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/03/huang-1152x648.jpg"
+      "source_url": "https://arstechnica.com/gadgets/2026/11/nvidia-has-a-jensen-huang-problem-and-no-obvious-successor/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2024/11/jensen_huang-1152x648.jpg"
     },
     {
-      "article": "2026-11-10-nintendo-adds-eshop-gifting-to-switch-consoles-7492b86332.html",
-      "image": "news/images/2026-11-10-nintendo-adds-eshop-gifting-to-switch-consoles-7492b86332-source.jpg",
-      "bytes": 160703,
+      "article": "2026-11-11-high-oil-prices-have-led-to-a-dip-in-global-carbon-emissions-95fd091a52.html",
+      "image": "news/images/2026-11-11-high-oil-prices-have-led-to-a-dip-in-global-carbon-emissions-95fd091a52-source.jpg",
+      "bytes": 607324,
       "provider": "Original news source",
-      "source_url": "https://www.polygon.com/nintendo-switch-2-digital-games-eshop-gifts/",
-      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/12/mario-christmas.jpg?w=1600&h=900&fit=crop"
-    },
-    {
-      "article": "2026-11-10-australia-considers-criminal-penalties-for-rogue-ai-in-wake-of-openai-hack-2b5155b4f1.html",
-      "image": "news/images/2026-11-10-australia-considers-criminal-penalties-for-rogue-ai-in-wake-of-openai-hack-2b5155b4f1-source.jpg",
-      "bytes": 85177,
-      "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cmp3g37l566po?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/c11d/live/472ca6e0-dcc6-11f1-a594-d13718d7f889.jpg"
-    },
-    {
-      "article": "2026-11-10-apc-zones-abia-governorship-ticket-to-abia-central-ahead-of-2027-elections-7f569321a3.html",
-      "image": "news/images/2026-11-10-apc-zones-abia-governorship-ticket-to-abia-central-ahead-of-2027-elections-7f569321a3-source.jpg",
-      "bytes": 68480,
-      "provider": "Original news source",
-      "source_url": "https://thereporter.com.ng/apc-zones-abia-governorship-ticket-to-abia-central-ahead-of-2027-elections",
-      "image_url": "https://thereporter.com.ng/uploads/images/202604/image_870x580_69f36c879459a.jpg"
+      "source_url": "https://arstechnica.com/science/2026/11/carbon-emissions-are-down-this-year-but-that-probably-wont-last/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2297120164-2560x1440.jpg"
     }
   ],
   "openverse_photos": [],
