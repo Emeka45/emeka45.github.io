@@ -1,34 +1,50 @@
 {
-  "finished_utc": "2026-11-11T10:06:53.011463+00:00",
+  "finished_utc": "2026-11-12T10:30:22.752153+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 3,
-  "attempted": 3,
+  "missing_before_run": 5,
+  "attempted": 5,
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-11-11-sony-cancels-live-service-shooter-fairgames-e52b999ae9.html",
-      "image": "news/images/2026-11-11-sony-cancels-live-service-shooter-fairgames-e52b999ae9-source.jpg",
-      "bytes": 36323,
+      "article": "2026-11-12-uk-appoints-ex-intelligence-chief-as-first-climate-security-envoy-0f7872506e.html",
+      "image": "news/images/2026-11-12-uk-appoints-ex-intelligence-chief-as-first-climate-security-envoy-0f7872506e-source.jpg",
+      "bytes": 45038,
       "provider": "Original news source",
-      "source_url": "https://www.theverge.com/games/1031242/sony-playstation-fairgames-canceled",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/acastro_STK097_01.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+      "source_url": "https://punchng.com/uk-appoints-ex-intelligence-chief-as-first-climate-security-envoy/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/12104150/AFP__20261112__D78W83N__v1__Mockup__TurkeyAustraliaUnCop31Climate_1794476510-1200x630.webp"
     },
     {
-      "article": "2026-11-11-nvidia-has-a-jensen-huang-problem-and-no-obvious-successor-b370ec43c3.html",
-      "image": "news/images/2026-11-11-nvidia-has-a-jensen-huang-problem-and-no-obvious-successor-b370ec43c3-source.jpg",
-      "bytes": 158813,
+      "article": "2026-11-12-the-legend-of-zelda-ocarina-of-time-remake-sells-in-huge-numbers-becoming-the-fastest-sell-0e1bc16040.html",
+      "image": "news/images/2026-11-12-the-legend-of-zelda-ocarina-of-time-remake-sells-in-huge-numbers-becoming-the-fastest-sell-0e1bc16040-source.jpg",
+      "bytes": 119692,
       "provider": "Original news source",
-      "source_url": "https://arstechnica.com/gadgets/2026/11/nvidia-has-a-jensen-huang-problem-and-no-obvious-successor/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2024/11/jensen_huang-1152x648.jpg"
+      "source_url": "https://www.eurogamer.net/zelda-ocarina-of-time-switch-2-sales-nintendo",
+      "image_url": "https://assetsio.gnwcdn.com/Zelda_Ocarina_Of_Time_Songs_Header.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
     },
     {
-      "article": "2026-11-11-high-oil-prices-have-led-to-a-dip-in-global-carbon-emissions-95fd091a52.html",
-      "image": "news/images/2026-11-11-high-oil-prices-have-led-to-a-dip-in-global-carbon-emissions-95fd091a52-source.jpg",
-      "bytes": 607324,
+      "article": "2026-11-12-sunken-treasure-historic-us-ocean-liner-reborn-as-artificial-reef-2c2e57fed8.html",
+      "image": "news/images/2026-11-12-sunken-treasure-historic-us-ocean-liner-reborn-as-artificial-reef-2c2e57fed8-source.jpg",
+      "bytes": 149187,
       "provider": "Original news source",
-      "source_url": "https://arstechnica.com/science/2026/11/carbon-emissions-are-down-this-year-but-that-probably-wont-last/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2297120164-2560x1440.jpg"
+      "source_url": "https://www.bbc.co.uk/news/articles/c3x298n87rn2o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/5661/live/7c6e9130-ddeb-11f1-9204-cdcddf7d901c.jpg"
+    },
+    {
+      "article": "2026-11-12-kidnapper-74-escapes-from-house-arrest-in-argentina-by-abseiling-from-balcony-5fc73bf738.html",
+      "image": "news/images/2026-11-12-kidnapper-74-escapes-from-house-arrest-in-argentina-by-abseiling-from-balcony-5fc73bf738-source.jpg",
+      "bytes": 95040,
+      "provider": "Original news source",
+      "source_url": "https://www.bbc.co.uk/news/articles/c933gn6710lyo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/a91e/live/b13e3560-ddd6-11f1-b865-d17d8611efca.jpg"
+    },
+    {
+      "article": "2026-11-12-caine-prize-finds-no-evidence-of-ai-use-in-zimbabwean-s-10-000-winning-story-1ec1ed4a9c.html",
+      "image": "news/images/2026-11-12-caine-prize-finds-no-evidence-of-ai-use-in-zimbabwean-s-10-000-winning-story-1ec1ed4a9c-source.jpg",
+      "bytes": 20964,
+      "provider": "Original news source",
+      "source_url": "https://punchng.com/caine-prize-finds-no-evidence-of-ai-use-in-zimbabweans-10000-winning-story/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/12085213/WhatsApp-Image-2026-11-12-at-8.42.32-AM_1794469933.webp"
     }
   ],
   "openverse_photos": [],
