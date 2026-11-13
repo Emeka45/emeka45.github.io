@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-11-12T10:30:22.752153+00:00",
+  "finished_utc": "2026-11-13T10:24:01.598759+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
   "missing_before_run": 5,
@@ -7,44 +7,44 @@
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-11-12-uk-appoints-ex-intelligence-chief-as-first-climate-security-envoy-0f7872506e.html",
-      "image": "news/images/2026-11-12-uk-appoints-ex-intelligence-chief-as-first-climate-security-envoy-0f7872506e-source.jpg",
-      "bytes": 45038,
+      "article": "2026-11-13-why-i-prayed-with-my-opponent-after-match-arokodare-05ad942d69.html",
+      "image": "news/images/2026-11-13-why-i-prayed-with-my-opponent-after-match-arokodare-05ad942d69-source.jpg",
+      "bytes": 130756,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/uk-appoints-ex-intelligence-chief-as-first-climate-security-envoy/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/12104150/AFP__20261112__D78W83N__v1__Mockup__TurkeyAustraliaUnCop31Climate_1794476510-1200x630.webp"
+      "source_url": "https://punchng.com/why-i-prayed-with-opponent-after-match-arokodare/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/09203630/Screenshot-2026-11-09-203605_1794252990-1122x630.webp"
     },
     {
-      "article": "2026-11-12-the-legend-of-zelda-ocarina-of-time-remake-sells-in-huge-numbers-becoming-the-fastest-sell-0e1bc16040.html",
-      "image": "news/images/2026-11-12-the-legend-of-zelda-ocarina-of-time-remake-sells-in-huge-numbers-becoming-the-fastest-sell-0e1bc16040-source.jpg",
-      "bytes": 119692,
+      "article": "2026-11-13-what-we-know-about-the-global-microsoft-outage-d93ee55ff8.html",
+      "image": "news/images/2026-11-13-what-we-know-about-the-global-microsoft-outage-d93ee55ff8-source.jpg",
+      "bytes": 126580,
       "provider": "Original news source",
-      "source_url": "https://www.eurogamer.net/zelda-ocarina-of-time-switch-2-sales-nintendo",
-      "image_url": "https://assetsio.gnwcdn.com/Zelda_Ocarina_Of_Time_Songs_Header.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
+      "source_url": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/dddf/live/8578f720-df49-11f1-b441-2b33b063138f.jpg"
     },
     {
-      "article": "2026-11-12-sunken-treasure-historic-us-ocean-liner-reborn-as-artificial-reef-2c2e57fed8.html",
-      "image": "news/images/2026-11-12-sunken-treasure-historic-us-ocean-liner-reborn-as-artificial-reef-2c2e57fed8-source.jpg",
-      "bytes": 149187,
+      "article": "2026-11-13-nvidia-ceo-jensen-huang-has-resigned-098cb7e1e3.html",
+      "image": "news/images/2026-11-13-nvidia-ceo-jensen-huang-has-resigned-098cb7e1e3-source.jpg",
+      "bytes": 112082,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/c3x298n87rn2o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/5661/live/7c6e9130-ddeb-11f1-9204-cdcddf7d901c.jpg"
+      "source_url": "https://arstechnica.com/gadgets/2026/11/ceo-jensen-huangs-job-is-suddenly-on-the-line-at-nvidia/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2296993009-1024x648.jpg"
     },
     {
-      "article": "2026-11-12-kidnapper-74-escapes-from-house-arrest-in-argentina-by-abseiling-from-balcony-5fc73bf738.html",
-      "image": "news/images/2026-11-12-kidnapper-74-escapes-from-house-arrest-in-argentina-by-abseiling-from-balcony-5fc73bf738-source.jpg",
-      "bytes": 95040,
+      "article": "2026-11-13-hell-let-loose-s-original-developers-napoleonic-era-extraction-game-hunger-gets-december-e-fd7c71b633.html",
+      "image": "news/images/2026-11-13-hell-let-loose-s-original-developers-napoleonic-era-extraction-game-hunger-gets-december-e-fd7c71b633-source.jpg",
+      "bytes": 168834,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/c933gn6710lyo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/a91e/live/b13e3560-ddd6-11f1-b865-d17d8611efca.jpg"
+      "source_url": "https://www.eurogamer.net/hunger-extraction-napoleonic-era-early-access-date",
+      "image_url": "https://assetsio.gnwcdn.com/hunger-early-access-screen-2.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
     },
     {
-      "article": "2026-11-12-caine-prize-finds-no-evidence-of-ai-use-in-zimbabwean-s-10-000-winning-story-1ec1ed4a9c.html",
-      "image": "news/images/2026-11-12-caine-prize-finds-no-evidence-of-ai-use-in-zimbabwean-s-10-000-winning-story-1ec1ed4a9c-source.jpg",
-      "bytes": 20964,
+      "article": "2026-11-13-before-scott-colom-these-two-men-were-the-last-black-us-senators-from-mississippi-9b673e6f0f.html",
+      "image": "news/images/2026-11-13-before-scott-colom-these-two-men-were-the-last-black-us-senators-from-mississippi-9b673e6f0f-source.jpg",
+      "bytes": 3880589,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/caine-prize-finds-no-evidence-of-ai-use-in-zimbabweans-10000-winning-story/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/12085213/WhatsApp-Image-2026-11-12-at-8.42.32-AM_1794469933.webp"
+      "source_url": "https://www.bbc.co.uk/news/articles/cmde1y19g19do?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/9195/live/8aa36db0-de8c-11f1-9afe-1f03bfe02283.png"
     }
   ],
   "openverse_photos": [],

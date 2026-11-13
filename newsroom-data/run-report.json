@@ -1,21 +1,21 @@
 {
-  "started_utc": "2026-11-12T10:30:07.300894+00:00",
-  "finished_utc": "2026-11-12T10:30:21.051959+00:00",
+  "started_utc": "2026-11-13T10:23:36.711214+00:00",
+  "finished_utc": "2026-11-13T10:23:59.953510+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
-  "total_items": 350,
-  "fresh_items": 328,
-  "corroborated_candidates": 12,
+  "total_items": 354,
+  "fresh_items": 333,
+  "corroborated_candidates": 9,
   "published_count": 5,
   "published_titles": [
-    "Kidnapper, 74, escapes from house arrest in Argentina by abseiling from balcony",
-    "Sunken treasure: Historic US ocean liner reborn as artificial reef",
-    "The Legend of Zelda: Ocarina of Time remake sells in huge numbers, becoming the fastest-selling Switch 2 game",
-    "UK appoints ex-intelligence chief as first climate security envoy",
-    "Caine Prize finds no evidence of AI use in Zimbabwean’s £10,000-winning story"
+    "Nvidia CEO Jensen Huang has resigned",
+    "What we know about the global Microsoft outage",
+    "Before Scott Colom, these two men were the last black US senators from Mississippi",
+    "Hell Let Loose's original developers' Napoleonic-era extraction game, Hunger, gets December early access release, and an open beta this month",
+    "Why I prayed with my opponent after match – Arokodare"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }
