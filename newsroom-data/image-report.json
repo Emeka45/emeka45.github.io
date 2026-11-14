@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-11-13T10:24:01.598759+00:00",
+  "finished_utc": "2026-11-14T09:40:59.345847+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
   "missing_before_run": 5,
@@ -7,47 +7,49 @@
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-11-13-why-i-prayed-with-my-opponent-after-match-arokodare-05ad942d69.html",
-      "image": "news/images/2026-11-13-why-i-prayed-with-my-opponent-after-match-arokodare-05ad942d69-source.jpg",
-      "bytes": 130756,
+      "article": "2026-11-14-spacex-s-starship-enters-earth-s-orbit-16ef6407e6.html",
+      "image": "news/images/2026-11-14-spacex-s-starship-enters-earth-s-orbit-16ef6407e6-source.jpg",
+      "bytes": 31946,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/why-i-prayed-with-opponent-after-match-arokodare/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/09203630/Screenshot-2026-11-09-203605_1794252990-1122x630.webp"
+      "source_url": "https://punchng.com/spacexs-starship-enters-earths-orbit/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/14094749/SpaceX-Starship_1794646069-1200x630.webp"
     },
     {
-      "article": "2026-11-13-what-we-know-about-the-global-microsoft-outage-d93ee55ff8.html",
-      "image": "news/images/2026-11-13-what-we-know-about-the-global-microsoft-outage-d93ee55ff8-source.jpg",
-      "bytes": 126580,
+      "article": "2026-11-14-nvidia-scandal-fallout-widens-as-trump-s-treasury-secretary-blames-cabinet-colleague-914883cd5d.html",
+      "image": "news/images/2026-11-14-nvidia-scandal-fallout-widens-as-trump-s-treasury-secretary-blames-cabinet-colleague-914883cd5d-source.jpg",
+      "bytes": 90128,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/dddf/live/8578f720-df49-11f1-b441-2b33b063138f.jpg"
+      "source_url": "https://www.bbc.co.uk/news/articles/cqvg2d1eg7zro?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/2783/live/a5cdb560-df6c-11f1-9892-87464bbcc2b8.jpg"
     },
     {
-      "article": "2026-11-13-nvidia-ceo-jensen-huang-has-resigned-098cb7e1e3.html",
-      "image": "news/images/2026-11-13-nvidia-ceo-jensen-huang-has-resigned-098cb7e1e3-source.jpg",
-      "bytes": 112082,
+      "article": "2026-11-14-microsoft-s-global-outage-may-be-worse-than-amazon-s-or-crowdstrike-s-expert-says-1956feb61c.html",
+      "image": "news/images/2026-11-14-microsoft-s-global-outage-may-be-worse-than-amazon-s-or-crowdstrike-s-expert-says-1956feb61c-source.jpg",
+      "bytes": 128027,
       "provider": "Original news source",
-      "source_url": "https://arstechnica.com/gadgets/2026/11/ceo-jensen-huangs-job-is-suddenly-on-the-line-at-nvidia/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2296993009-1024x648.jpg"
+      "source_url": "https://arstechnica.com/tech-policy/2026/11/microsoft-blames-failed-server-health-checks-not-hackers-for-global-outage/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2191081646-1024x648.jpg"
     },
     {
-      "article": "2026-11-13-hell-let-loose-s-original-developers-napoleonic-era-extraction-game-hunger-gets-december-e-fd7c71b633.html",
-      "image": "news/images/2026-11-13-hell-let-loose-s-original-developers-napoleonic-era-extraction-game-hunger-gets-december-e-fd7c71b633-source.jpg",
-      "bytes": 168834,
+      "article": "2026-11-14-faa-has-lifted-its-third-ever-nationwide-ground-stop-01f0852697.html",
+      "image": "news/images/2026-11-14-faa-has-lifted-its-third-ever-nationwide-ground-stop-01f0852697-source.jpg",
+      "bytes": 49637,
       "provider": "Original news source",
-      "source_url": "https://www.eurogamer.net/hunger-extraction-napoleonic-era-early-access-date",
-      "image_url": "https://assetsio.gnwcdn.com/hunger-early-access-screen-2.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
-    },
-    {
-      "article": "2026-11-13-before-scott-colom-these-two-men-were-the-last-black-us-senators-from-mississippi-9b673e6f0f.html",
-      "image": "news/images/2026-11-13-before-scott-colom-these-two-men-were-the-last-black-us-senators-from-mississippi-9b673e6f0f-source.jpg",
-      "bytes": 3880589,
-      "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cmde1y19g19do?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/9195/live/8aa36db0-de8c-11f1-9afe-1f03bfe02283.png"
+      "source_url": "https://arstechnica.com/tech-policy/2026/11/faa-orders-third-nationwide-ground-stop-in-its-history/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2022/10/air-traffic-1000x648.jpg"
     }
   ],
-  "openverse_photos": [],
+  "openverse_photos": [
+    {
+      "article": "2026-11-14-asuu-bars-officials-from-endorsing-2027-candidates-parties-88ddee10d9.html",
+      "image": "news/images/2026-11-14-asuu-bars-officials-from-endorsing-2027-candidates-parties-88ddee10d9.jpg",
+      "bytes": 243797,
+      "provider": "Openverse",
+      "creator": "UCL Engineering",
+      "license": "pdm",
+      "source_url": "http://www.flickr.com/photos/67955891@N04/16631025379"
+    }
+  ],
   "fallbacks": [],
   "failures": [],
   "remaining_missing_after_run": 0

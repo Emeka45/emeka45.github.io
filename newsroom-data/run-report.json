@@ -1,21 +1,21 @@
 {
-  "started_utc": "2026-11-13T10:23:36.711214+00:00",
-  "finished_utc": "2026-11-13T10:23:59.953510+00:00",
+  "started_utc": "2026-11-14T09:40:15.505951+00:00",
+  "finished_utc": "2026-11-14T09:40:31.506291+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 354,
-  "fresh_items": 333,
-  "corroborated_candidates": 9,
+  "fresh_items": 331,
+  "corroborated_candidates": 8,
   "published_count": 5,
   "published_titles": [
-    "Nvidia CEO Jensen Huang has resigned",
-    "What we know about the global Microsoft outage",
-    "Before Scott Colom, these two men were the last black US senators from Mississippi",
-    "Hell Let Loose's original developers' Napoleonic-era extraction game, Hunger, gets December early access release, and an open beta this month",
-    "Why I prayed with my opponent after match – Arokodare"
+    "SpaceX’s Starship enters Earth’s orbit",
+    "FAA has lifted its third-ever nationwide ground stop",
+    "Nvidia scandal fallout widens as Trump's treasury secretary blames cabinet colleague",
+    "ASUU bars officials from endorsing 2027 candidates, parties",
+    "Microsoft’s global outage may be worse than Amazon's or CrowdStrike's, expert says"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }
