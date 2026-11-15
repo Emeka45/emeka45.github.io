@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-11-14T09:40:59.345847+00:00",
+  "finished_utc": "2026-11-15T10:14:16.491594+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
   "missing_before_run": 5,
@@ -7,49 +7,47 @@
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-11-14-spacex-s-starship-enters-earth-s-orbit-16ef6407e6.html",
-      "image": "news/images/2026-11-14-spacex-s-starship-enters-earth-s-orbit-16ef6407e6-source.jpg",
-      "bytes": 31946,
+      "article": "2026-11-15-work-to-replace-old-copper-wire-led-to-the-faa-s-ground-stop-df6560a4fc.html",
+      "image": "news/images/2026-11-15-work-to-replace-old-copper-wire-led-to-the-faa-s-ground-stop-df6560a4fc-source.jpg",
+      "bytes": 152238,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/spacexs-starship-enters-earths-orbit/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/14094749/SpaceX-Starship_1794646069-1200x630.webp"
+      "source_url": "https://www.theverge.com/transportation/1033898/faa-ground-stop-sean-duffy-faa-copper-wire",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2304493507.jpg?quality=90&strip=all&crop=0%2C10.654918655606%2C100%2C78.690162688789&w=1200"
     },
     {
-      "article": "2026-11-14-nvidia-scandal-fallout-widens-as-trump-s-treasury-secretary-blames-cabinet-colleague-914883cd5d.html",
-      "image": "news/images/2026-11-14-nvidia-scandal-fallout-widens-as-trump-s-treasury-secretary-blames-cabinet-colleague-914883cd5d-source.jpg",
-      "bytes": 90128,
+      "article": "2026-11-15-top-south-korean-exam-scorer-admits-using-ai-to-cheat-e9cce4784d.html",
+      "image": "news/images/2026-11-15-top-south-korean-exam-scorer-admits-using-ai-to-cheat-e9cce4784d-source.jpg",
+      "bytes": 27238,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cqvg2d1eg7zro?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/2783/live/a5cdb560-df6c-11f1-9892-87464bbcc2b8.jpg"
+      "source_url": "https://punchng.com/top-south-korean-exam-scorer-admits-using-ai-to-cheat/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/10/30103833/South-Korea-flag_1793353113-1024x630.webp"
     },
     {
-      "article": "2026-11-14-microsoft-s-global-outage-may-be-worse-than-amazon-s-or-crowdstrike-s-expert-says-1956feb61c.html",
-      "image": "news/images/2026-11-14-microsoft-s-global-outage-may-be-worse-than-amazon-s-or-crowdstrike-s-expert-says-1956feb61c-source.jpg",
-      "bytes": 128027,
+      "article": "2026-11-15-spacex-returned-its-starship-rocket-on-saturday-but-there-s-a-catch-dc7c54a49c.html",
+      "image": "news/images/2026-11-15-spacex-returned-its-starship-rocket-on-saturday-but-there-s-a-catch-dc7c54a49c-source.jpg",
+      "bytes": 65214,
       "provider": "Original news source",
-      "source_url": "https://arstechnica.com/tech-policy/2026/11/microsoft-blames-failed-server-health-checks-not-hackers-for-global-outage/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2191081646-1024x648.jpg"
+      "source_url": "https://arstechnica.com/space/2026/11/with-starship-catch-spacex-still-shows-it-can-dazzle-the-world/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2304631389-1024x648.jpg"
     },
     {
-      "article": "2026-11-14-faa-has-lifted-its-third-ever-nationwide-ground-stop-01f0852697.html",
-      "image": "news/images/2026-11-14-faa-has-lifted-its-third-ever-nationwide-ground-stop-01f0852697-source.jpg",
-      "bytes": 49637,
+      "article": "2026-11-15-philippines-wins-first-eurovision-song-contest-asia-ebfdb8f9ac.html",
+      "image": "news/images/2026-11-15-philippines-wins-first-eurovision-song-contest-asia-ebfdb8f9ac-source.jpg",
+      "bytes": 157542,
       "provider": "Original news source",
-      "source_url": "https://arstechnica.com/tech-policy/2026/11/faa-orders-third-nationwide-ground-stop-in-its-history/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2022/10/air-traffic-1000x648.jpg"
+      "source_url": "https://www.bbc.co.uk/news/articles/cqrlgnx9dx6eo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/965c/live/69643890-e04f-11f1-8d5a-49633fbae59d.jpg"
+    },
+    {
+      "article": "2026-11-15-magic-the-gathering-is-getting-a-netflix-animated-series-for-real-this-time-82685932bc.html",
+      "image": "news/images/2026-11-15-magic-the-gathering-is-getting-a-netflix-animated-series-for-real-this-time-82685932bc-source.jpg",
+      "bytes": 95343,
+      "provider": "Original news source",
+      "source_url": "https://www.theverge.com/entertainment/1033909/magic-the-gathering-netflix-series",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/IefaLy5uPLc-HD.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200"
     }
   ],
-  "openverse_photos": [
-    {
-      "article": "2026-11-14-asuu-bars-officials-from-endorsing-2027-candidates-parties-88ddee10d9.html",
-      "image": "news/images/2026-11-14-asuu-bars-officials-from-endorsing-2027-candidates-parties-88ddee10d9.jpg",
-      "bytes": 243797,
-      "provider": "Openverse",
-      "creator": "UCL Engineering",
-      "license": "pdm",
-      "source_url": "http://www.flickr.com/photos/67955891@N04/16631025379"
-    }
-  ],
+  "openverse_photos": [],
   "fallbacks": [],
   "failures": [],
   "remaining_missing_after_run": 0
