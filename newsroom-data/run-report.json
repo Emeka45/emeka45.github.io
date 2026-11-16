@@ -1,32 +1,21 @@
 {
-  "started_utc": "2026-11-15T10:13:52.458425+00:00",
-  "finished_utc": "2026-11-15T10:14:16.000335+00:00",
+  "started_utc": "2026-11-16T10:26:14.212159+00:00",
+  "finished_utc": "2026-11-16T10:26:43.221025+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
-  "feed_success_count": 28,
-  "feed_failure_count": 2,
-  "feed_failures": [
-    {
-      "category": "Religion & Faith",
-      "url": "https://news.google.com/rss/search?q=Nigeria+Christianity+church+faith+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
-      "error": "HTTP Error 503: Service Unavailable"
-    },
-    {
-      "category": "Entertainment & Lifestyle",
-      "url": "https://news.google.com/rss/search?q=Nigeria+entertainment+celebrity+music+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
-      "error": "HTTP Error 503: Service Unavailable"
-    }
-  ],
-  "total_items": 314,
-  "fresh_items": 290,
-  "corroborated_candidates": 9,
+  "feed_success_count": 30,
+  "feed_failure_count": 0,
+  "feed_failures": [],
+  "total_items": 354,
+  "fresh_items": 330,
+  "corroborated_candidates": 7,
   "published_count": 5,
   "published_titles": [
-    "Magic: The Gathering is getting a Netflix animated series. For real this time.",
-    "SpaceX returned its Starship rocket on Saturday—but there's a catch",
-    "Work to replace old copper wire led to the FAA’s ground stop",
-    "Philippines wins first Eurovision Song Contest Asia",
-    "Top South Korean exam scorer admits using AI to cheat"
+    "AI cheating fears spook South Korea ahead of high-stakes college entrance exam",
+    "Australian MP 'full of gratitude' upon leaving hospital after alleged car attack",
+    "Vulcan rocket fails during launch, dealing major blow to SpaceX competitors",
+    "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
+    "Sanwo-Olu gifts Flamingos N10m, iPhones each"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }
