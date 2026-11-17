@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-11-16T10:26:44.939110+00:00",
+  "finished_utc": "2026-11-17T11:23:49.303598+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
   "missing_before_run": 5,
@@ -7,44 +7,44 @@
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-11-16-vulcan-rocket-fails-during-launch-dealing-major-blow-to-spacex-competitors-a9c043abda.html",
-      "image": "news/images/2026-11-16-vulcan-rocket-fails-during-launch-dealing-major-blow-to-spacex-competitors-a9c043abda-source.jpg",
-      "bytes": 88004,
+      "article": "2026-11-17-hyperscale-data-centers-use-2-of-us-electricity-4de3c9d09d.html",
+      "image": "news/images/2026-11-17-hyperscale-data-centers-use-2-of-us-electricity-4de3c9d09d-source.jpg",
+      "bytes": 173178,
       "provider": "Original news source",
-      "source_url": "https://arstechnica.com/space/2026/11/vulcan-rocket-fails-during-launch-dealing-major-blow-to-spacex-competitors/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2304790934-1152x648.jpg"
+      "source_url": "https://arstechnica.com/science/2026/11/hyperscale-data-centers-use-2-of-us-electricity/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2263547912-1152x648.jpg"
     },
     {
-      "article": "2026-11-16-suspected-china-spy-linked-to-nvidia-s-ex-boss-left-in-2025-megaspeed-says-d8381adf4d.html",
-      "image": "news/images/2026-11-16-suspected-china-spy-linked-to-nvidia-s-ex-boss-left-in-2025-megaspeed-says-d8381adf4d-source.jpg",
-      "bytes": 101071,
+      "article": "2026-11-17-full-list-nigerian-artistes-with-the-most-grammy-nominations-of-all-time-fa85de6b65.html",
+      "image": "news/images/2026-11-17-full-list-nigerian-artistes-with-the-most-grammy-nominations-of-all-time-fa85de6b65-source.jpg",
+      "bytes": 51734,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cmdx1vpprk9vo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/fa43/live/e2a9a870-e10d-11f1-93e1-3b657b665bcf.jpg"
+      "source_url": "https://punchng.com/full-list-nigerian-artistes-with-the-most-grammy-nominations-of-all-time/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/17091256/AFP__20261026__D4H98RY__v1__Mockup__776576274_1794903176-1200x630.webp"
     },
     {
-      "article": "2026-11-16-sanwo-olu-gifts-flamingos-n10m-iphones-each-679855a1c1.html",
-      "image": "news/images/2026-11-16-sanwo-olu-gifts-flamingos-n10m-iphones-each-679855a1c1-source.jpg",
-      "bytes": 129208,
+      "article": "2026-11-17-canada-charges-eight-nigerians-four-others-over-4-5m-car-theft-b515285ebe.html",
+      "image": "news/images/2026-11-17-canada-charges-eight-nigerians-four-others-over-4-5m-car-theft-b515285ebe-source.jpg",
+      "bytes": 65726,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/sanwo-olu-gifts-flamingos-n10m-iphones-each/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/16102627/WhatsApp-Image-2026-11-16-at-10.20.31-AM_1794821187-1200x630.webp"
+      "source_url": "https://punchng.com/canada-charges-eight-nigerians-four-others-over-4-5m-car-theft/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/17091514/project-cadetta-slideshow_1794903314.webp"
     },
     {
-      "article": "2026-11-16-australian-mp-full-of-gratitude-upon-leaving-hospital-after-alleged-car-attack-94facb72d3.html",
-      "image": "news/images/2026-11-16-australian-mp-full-of-gratitude-upon-leaving-hospital-after-alleged-car-attack-94facb72d3-source.jpg",
-      "bytes": 67674,
+      "article": "2026-11-17-california-sues-openai-over-rogue-ai-hacking-incidents-a1498f14a4.html",
+      "image": "news/images/2026-11-17-california-sues-openai-over-rogue-ai-hacking-incidents-a1498f14a4-source.jpg",
+      "bytes": 17645,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cmpqr9j81888o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/083d/live/b9880d40-e15f-11f1-a6b7-c136ad7bd6e3.jpg"
+      "source_url": "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/10/STK155_OPEN_AI_4_CVirginia_D.png?quality=90&strip=all&crop=0%2C10.742221417566%2C100%2C78.515557164868&w=1200"
     },
     {
-      "article": "2026-11-16-ai-cheating-fears-spook-south-korea-ahead-of-high-stakes-college-entrance-exam-5109707ec0.html",
-      "image": "news/images/2026-11-16-ai-cheating-fears-spook-south-korea-ahead-of-high-stakes-college-entrance-exam-5109707ec0-source.jpg",
-      "bytes": 110645,
+      "article": "2026-11-17-body-of-melbourne-cup-horse-found-dumped-in-sydney-skip-990c86d366.html",
+      "image": "news/images/2026-11-17-body-of-melbourne-cup-horse-found-dumped-in-sydney-skip-990c86d366-source.jpg",
+      "bytes": 149718,
       "provider": "Original news source",
-      "source_url": "https://www.theguardian.com/technology/2026/nov/15/ai-cheating-south-korea-college-entrance-exam",
-      "image_url": "https://i.guim.co.uk/img/media/a5f3ffab9cd63da939e5c4cfbd21bff5a434ce93/747_0_4581_3664/master/4581.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=0345763b40006ab93f3b552b4bf8de69"
+      "source_url": "https://www.bbc.co.uk/news/articles/ck1ewl2zjqgzo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/632b/live/b9ed96e0-e251-11f1-876d-1dfc6cf3b709.jpg"
     }
   ],
   "openverse_photos": [],

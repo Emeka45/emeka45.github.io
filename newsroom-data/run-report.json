@@ -1,21 +1,27 @@
 {
-  "started_utc": "2026-11-16T10:26:14.212159+00:00",
-  "finished_utc": "2026-11-16T10:26:43.221025+00:00",
+  "started_utc": "2026-11-17T11:23:14.331349+00:00",
+  "finished_utc": "2026-11-17T11:23:48.086940+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
-  "feed_success_count": 30,
-  "feed_failure_count": 0,
-  "feed_failures": [],
-  "total_items": 354,
-  "fresh_items": 330,
-  "corroborated_candidates": 7,
+  "feed_success_count": 29,
+  "feed_failure_count": 1,
+  "feed_failures": [
+    {
+      "category": "Religion & Faith",
+      "url": "https://nscia.com.ng/category/news/feed/",
+      "error": "The read operation timed out"
+    }
+  ],
+  "total_items": 345,
+  "fresh_items": 326,
+  "corroborated_candidates": 13,
   "published_count": 5,
   "published_titles": [
-    "AI cheating fears spook South Korea ahead of high-stakes college entrance exam",
-    "Australian MP 'full of gratitude' upon leaving hospital after alleged car attack",
-    "Vulcan rocket fails during launch, dealing major blow to SpaceX competitors",
-    "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
-    "Sanwo-Olu gifts Flamingos N10m, iPhones each"
+    "FULL LIST: Nigerian artistes with the most Grammy nominations of all time",
+    "Canada charges eight Nigerians, four others over $4.5m car theft",
+    "Hyperscale data centers use 2% of US electricity",
+    "Body of Melbourne Cup horse found dumped in Sydney skip",
+    "California sues OpenAI over rogue AI hacking incidents"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }
