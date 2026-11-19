@@ -1,21 +1,21 @@
 {
-  "started_utc": "2026-11-18T10:55:36.874534+00:00",
-  "finished_utc": "2026-11-18T10:55:56.068514+00:00",
+  "started_utc": "2026-11-19T10:58:09.988055+00:00",
+  "finished_utc": "2026-11-19T10:58:35.708845+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 354,
-  "fresh_items": 337,
-  "corroborated_candidates": 5,
+  "fresh_items": 335,
+  "corroborated_candidates": 10,
   "published_count": 5,
   "published_titles": [
-    "Civilization studio Firaxis Games lays off a third of staff",
-    "Inside the Chinese 'AI wonderland' where Xi will host Trump",
-    "Read everything that Nvidia’s board chair had to say about Jensen Huang",
-    "Police tighten security ahead of Tinubu rally, Obi’s Anambra visit",
-    "The Game Awards 2026 nominees announced, and GTA 6 leads with eight nods before it's even out"
+    "Grand Theft Auto VI: The Ars Technica review",
+    "Bancroft sandpaper claims heap pressure on Cummins",
+    "All Cheat Codes in GTA 6",
+    "Ted Cruz-led committee approves Trump FCC nominee 15-0 as Democrats boycott vote",
+    "Bayelsa Police Arrest Pastor Over Alleged Sexual Abuse Of Two Minors"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }

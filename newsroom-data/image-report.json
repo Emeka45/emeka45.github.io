@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-11-18T10:55:58.212484+00:00",
+  "finished_utc": "2026-11-19T10:58:41.575823+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
   "missing_before_run": 5,
@@ -7,44 +7,44 @@
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-11-18-the-game-awards-2026-nominees-announced-and-gta-6-leads-with-eight-nods-before-it-s-even-o-a788460369.html",
-      "image": "news/images/2026-11-18-the-game-awards-2026-nominees-announced-and-gta-6-leads-with-eight-nods-before-it-s-even-o-a788460369-source.jpg",
-      "bytes": 816665,
+      "article": "2026-11-19-ted-cruz-led-committee-approves-trump-fcc-nominee-15-0-as-democrats-boycott-vote-9704deccdc.html",
+      "image": "news/images/2026-11-19-ted-cruz-led-committee-approves-trump-fcc-nominee-15-0-as-democrats-boycott-vote-9704deccdc-source.jpg",
+      "bytes": 83160,
       "provider": "Original news source",
-      "source_url": "https://www.eurogamer.net/game-awards-2026-nominees-full-list-gta-6",
-      "image_url": "https://assetsio.gnwcdn.com/Screenshot-2026-11-17-at-18.56.07.png?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
+      "source_url": "https://arstechnica.com/tech-policy/2026/11/ted-cruz-led-committee-approves-trump-fcc-nominee-15-0-as-democrats-boycott-vote/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2025/01/ted-cruz-1152x648-1738093202.jpg"
     },
     {
-      "article": "2026-11-18-read-everything-that-nvidia-s-board-chair-had-to-say-about-jensen-huang-2be461b800.html",
-      "image": "news/images/2026-11-18-read-everything-that-nvidia-s-board-chair-had-to-say-about-jensen-huang-2be461b800-source.jpg",
-      "bytes": 36141,
+      "article": "2026-11-19-grand-theft-auto-vi-the-ars-technica-review-276c11e1f6.html",
+      "image": "news/images/2026-11-19-grand-theft-auto-vi-the-ars-technica-review-276c11e1f6-source.jpg",
+      "bytes": 98069,
       "provider": "Original news source",
-      "source_url": "https://www.theverge.com/tech/1036160/nvidia-earnings-harvey-c-jones-jensen-huang",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/STK083_NVIDIA_2.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+      "source_url": "https://arstechnica.com/gaming/2026/11/grand-theft-auto-vi-the-ars-technica-review/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/Grand-Theft-Auto-VI_20261102162743-1152x648-1794953901.jpg"
     },
     {
-      "article": "2026-11-18-police-tighten-security-ahead-of-tinubu-rally-obi-s-anambra-visit-20c9d1f2b9.html",
-      "image": "news/images/2026-11-18-police-tighten-security-ahead-of-tinubu-rally-obi-s-anambra-visit-20c9d1f2b9-source.jpg",
-      "bytes": 28016,
+      "article": "2026-11-19-bayelsa-police-arrest-pastor-over-alleged-sexual-abuse-of-two-minors-a3513cc49a.html",
+      "image": "news/images/2026-11-19-bayelsa-police-arrest-pastor-over-alleged-sexual-abuse-of-two-minors-a3513cc49a-source.jpg",
+      "bytes": 103425,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/police-tighten-security-ahead-of-tinubu-rally-obis-anambra-visit/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/09/14005416/Nigeria-Police-Van_1789343656.webp"
+      "source_url": "https://thereporter.com.ng/bayelsa-police-arrest-pastor-alleged-sexual-abuse-two-minors",
+      "image_url": "https://dailytrust.com/wp-content/uploads/2023/07/Police-logo.png"
     },
     {
-      "article": "2026-11-18-inside-the-chinese-ai-wonderland-where-xi-will-host-trump-dff0b178f8.html",
-      "image": "news/images/2026-11-18-inside-the-chinese-ai-wonderland-where-xi-will-host-trump-dff0b178f8-source.jpg",
-      "bytes": 46299,
+      "article": "2026-11-19-bancroft-sandpaper-claims-heap-pressure-on-cummins-c874193e9e.html",
+      "image": "news/images/2026-11-19-bancroft-sandpaper-claims-heap-pressure-on-cummins-c874193e9e-source.jpg",
+      "bytes": 105996,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/videos/ckjwjl6ywgn9o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/2905/live/37886bc0-e1df-11f1-99a1-253766e7ad8b.jpg"
+      "source_url": "https://www.bbc.co.uk/sport/cricket/articles/cmqlqdevgl9ro?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/fb1d/live/c5d2fbf0-e330-11f1-9c56-6ffaf0e1e706.jpg"
     },
     {
-      "article": "2026-11-18-civilization-studio-firaxis-games-lays-off-a-third-of-staff-0c2de801d3.html",
-      "image": "news/images/2026-11-18-civilization-studio-firaxis-games-lays-off-a-third-of-staff-0c2de801d3-source.jpg",
-      "bytes": 344205,
+      "article": "2026-11-19-all-cheat-codes-in-gta-6-16e6ea4f72.html",
+      "image": "news/images/2026-11-19-all-cheat-codes-in-gta-6-16e6ea4f72-source.jpg",
+      "bytes": 128605,
       "provider": "Original news source",
-      "source_url": "https://arstechnica.com/gaming/2026/11/civilization-studio-firaxis-games-lays-off-a-third-of-staff/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2025/01/civ7-graphics-1-1152x648-1738360684.jpg"
+      "source_url": "https://www.polygon.com/gta-6-cheat-codes-list-unlock/",
+      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/gta-6-jasopn-lucia-bank-robbery.jpg?w=1600&h=900&fit=crop"
     }
   ],
   "openverse_photos": [],
