@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T12:06:53.800746+00:00",
+  "updated_at": "2026-11-20T12:12:10.108164+00:00",
   "videos": [
     {
       "video_id": "rROAtl3bbVw",
@@ -32,6 +32,22 @@
       "is_short": false,
       "description": "Watch Episode 02 of the anime series Alderamin On the Sky with English subtitles on the Muse Asia channel.",
       "published_by_pipeline_at": "2026-11-20T12:03:45.818371+00:00"
+    },
+    {
+      "video_id": "zDGnn0pg1xs",
+      "title": "The Animal Kingdom's Hunger Games | MEGA Episode | Nat Geo Animals",
+      "category": "Nature & Culture",
+      "channel": "National Geographic",
+      "channel_id": "UCDPk9MG2RexnOMGTD-YnSnA",
+      "channel_url": "https://www.youtube.com/channel/UCDPk9MG2RexnOMGTD-YnSnA",
+      "url": "https://www.youtube.com/watch?v=zDGnn0pg1xs",
+      "embed_url": "https://www.youtube-nocookie.com/embed/zDGnn0pg1xs",
+      "thumbnail": "https://i.ytimg.com/vi/zDGnn0pg1xs/hqdefault.jpg",
+      "published_at": "2026-11-20T12:00:09+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "National Geographic — The Animal Kingdom's Hunger Games | MEGA Episode | Nat Geo Animals. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-11-20T12:12:07.001924+00:00"
     },
     {
       "video_id": "9nqUQ3_De28",
@@ -1442,6 +1458,22 @@
       "published_by_pipeline_at": "2026-11-15T10:15:00.460665+00:00"
     },
     {
+      "video_id": "EA-JCYPhrO4",
+      "title": "Bizarre Billionaire Requests",
+      "category": "Engineering & Infrastructure",
+      "channel": "The B1M",
+      "channel_id": "UCN3aYbtQ7yCqk9DM56B0kEw",
+      "channel_url": "https://www.youtube.com/channel/UCN3aYbtQ7yCqk9DM56B0kEw",
+      "url": "https://www.youtube.com/shorts/EA-JCYPhrO4",
+      "embed_url": "https://www.youtube-nocookie.com/embed/EA-JCYPhrO4",
+      "thumbnail": "https://i.ytimg.com/vi/EA-JCYPhrO4/hqdefault.jpg",
+      "published_at": "2026-11-14T15:00:03+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "The B1M — Bizarre Billionaire Requests. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-11-20T12:12:10.000408+00:00"
+    },
+    {
       "video_id": "4JaXMAooQqw",
       "title": "STUCA x SLICK - Supercharge",
       "category": "Music",
@@ -2368,38 +2400,6 @@
       "is_short": false,
       "description": "Sienna Senate speaks candidly in a revealing interview session presented by the COLORS music channel, offering viewers an intimate look at the artist's perspective.",
       "published_by_pipeline_at": "2026-11-11T10:07:18.110548+00:00"
-    },
-    {
-      "video_id": "n05Yu3UAI_o",
-      "title": "My First Mistake as an Engineer",
-      "category": "Educational & Engineering",
-      "channel": "Practical Engineering",
-      "channel_id": "UCMOqf8ab-42UUQIdVoKwjlQ",
-      "channel_url": "https://www.youtube.com/channel/UCMOqf8ab-42UUQIdVoKwjlQ",
-      "url": "https://www.youtube.com/watch?v=n05Yu3UAI_o",
-      "embed_url": "https://www.youtube-nocookie.com/embed/n05Yu3UAI_o",
-      "thumbnail": "https://i.ytimg.com/vi/n05Yu3UAI_o/hqdefault.jpg",
-      "published_at": "2026-11-10T14:00:20+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "In this educational video from Practical Engineering, the host reflects on a past professional error to provide valuable insights for aspiring engineers.",
-      "published_by_pipeline_at": "2026-11-16T10:27:14.569568+00:00"
-    },
-    {
-      "video_id": "cR54-XNfIAc",
-      "title": "420 Million Years Ago Earth's Landscape Looked Alien | BBC Earth Science",
-      "category": "Nature & Wildlife",
-      "channel": "BBC Earth",
-      "channel_id": "UCdsOTr6SmDrxuWE7sJFrkhQ",
-      "channel_url": "https://www.youtube.com/channel/UCdsOTr6SmDrxuWE7sJFrkhQ",
-      "url": "https://www.youtube.com/watch?v=cR54-XNfIAc",
-      "embed_url": "https://www.youtube-nocookie.com/embed/cR54-XNfIAc",
-      "thumbnail": "https://i.ytimg.com/vi/cR54-XNfIAc/hqdefault.jpg",
-      "published_at": "2026-11-10T14:00:12+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "BBC Earth — 420 Million Years Ago Earth's Landscape Looked Alien | BBC Earth Science. Watch the original video on YouTube.",
-      "published_by_pipeline_at": "2026-11-11T10:07:56.258240+00:00"
     }
   ]
 }

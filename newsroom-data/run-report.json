@@ -1,13 +1,19 @@
 {
-  "started_utc": "2026-11-20T12:05:59.277994+00:00",
-  "finished_utc": "2026-11-20T12:06:16.122446+00:00",
+  "started_utc": "2026-11-20T12:10:55.720961+00:00",
+  "finished_utc": "2026-11-20T12:11:40.004470+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
-  "feed_success_count": 30,
-  "feed_failure_count": 0,
-  "feed_failures": [],
-  "total_items": 354,
-  "fresh_items": 317,
+  "feed_success_count": 29,
+  "feed_failure_count": 1,
+  "feed_failures": [
+    {
+      "category": "Religion & Faith",
+      "url": "https://nscia.com.ng/category/news/feed/",
+      "error": "<urlopen error timed out>"
+    }
+  ],
+  "total_items": 345,
+  "fresh_items": 308,
   "corroborated_candidates": 0,
   "published_count": 0,
   "published_titles": [],
