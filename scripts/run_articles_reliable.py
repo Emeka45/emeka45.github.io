@@ -222,22 +222,52 @@ def validate_article(title: str, paragraphs: list[str]) -> list[str]:
 
 def render(title: str, category: str, paragraphs: list[str], now: dt.datetime):
     summary = paragraphs[0]
+    word_count = len(" ".join(paragraphs).split())
+    reading_minutes = max(1, round(word_count / 200))
     body = "".join(f"<p>{html.escape(p)}</p>" for p in paragraphs)
     takeaways = paragraphs[1:4]
-    body += "<h2>Key takeaways</h2><ul>" + "".join(
-        f"<li>{html.escape(p.split('. ', 1)[0] + '.')}</li>" for p in takeaways
-    ) + "</ul>"
+    takeaway_html = "".join(f"<li>{html.escape(p.split('. ', 1)[0] + '.')}</li>" for p in takeaways)
     canonical = f"https://emeka45.github.io/articles/{slug(title)}.html"
+    schema = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": title,
+        "description": summary,
+        "author": {"@type": "Person", "name": "C. O. Eric"},
+        "publisher": {"@type": "Organization", "name": "C. O. Eric"},
+        "datePublished": now.date().isoformat(),
+        "mainEntityOfPage": canonical
+    }, ensure_ascii=False).replace("</", "<\\/")
     document = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="{html.escape(summary[:250], quote=True)}">
+<meta name="author" content="C. O. Eric"><meta property="og:type" content="article">
+<meta property="og:title" content="{html.escape(title, quote=True)}"><meta property="og:description" content="{html.escape(summary[:250], quote=True)}">
+<meta property="article:published_time" content="{now.date().isoformat()}">
 <title>{html.escape(title)} — C. O. Eric Articles</title><link rel="canonical" href="{canonical}">
-<style>body{{margin:0;color:#202638;background:#f7f8fc;font:18px/1.8 system-ui,sans-serif}}main{{max-width:780px;margin:36px auto;padding:0 20px}}a{{color:#6041bd}}h1{{font-size:clamp(2.2rem,7vw,3.6rem);line-height:1.12;letter-spacing:-.04em}}h2{{margin-top:2em}}.meta{{color:#667085;font-size:.9rem}}.lead{{font-size:1.12rem;color:#40495b}}li{{margin:.5em 0}}footer{{margin-top:3em;border-top:1px solid #ddd;padding-top:1em;color:#667085;font-size:.9rem}}</style>
-</head><body><main><p><a href="../articles.html">← C. O. Eric Articles</a></p>
+<script type="application/ld+json">{schema}</script>
+<style>
+:root{{--ink:#202638;--muted:#667085;--line:#e7e8ef;--accent:#6041bd;--paper:#fff;--bg:#f7f8fc}}
+*{{box-sizing:border-box}}body{{margin:0;color:var(--ink);background:var(--bg);font:18px/1.85 Georgia,"Times New Roman",serif}}
+.top{{background:#19152c;color:#fff;padding:15px 0;font:14px/1.4 system-ui,sans-serif}}.top-inner{{max-width:980px;margin:auto;padding:0 22px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}}.top a{{color:#eee5ff;text-decoration:none;font-weight:750}}
+main{{max-width:860px;margin:38px auto 70px;padding:0 22px}}.article{{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:clamp(24px,6vw,64px);box-shadow:0 18px 48px #1018280a}}
+.crumb{{font:700 .88rem system-ui,sans-serif;color:var(--accent);text-decoration:none}}.meta{{color:var(--muted);font:700 .82rem/1.5 system-ui,sans-serif;letter-spacing:.02em;margin:30px 0 12px}}h1{{font:850 clamp(2.25rem,7vw,4.1rem)/1.08 system-ui,sans-serif;letter-spacing:-.055em;margin:0 0 20px}}.dek{{font:1.18rem/1.7 system-ui,sans-serif;color:#465064;margin:0 0 22px}}.byline{{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0;margin:24px 0 30px;color:var(--muted);font: .84rem system-ui,sans-serif}}.actions{{display:flex;gap:8px;flex-wrap:wrap}}.action{{border:1px solid var(--line);border-radius:999px;background:#fff;padding:7px 12px;color:var(--accent);font:700 .8rem system-ui,sans-serif;cursor:pointer}}.guide{{background:#f5f2ff;border-left:4px solid var(--accent);padding:18px 22px;margin:30px 0;border-radius:0 12px 12px 0;font: .94rem/1.6 system-ui,sans-serif}}.guide strong{{display:block;margin-bottom:8px}}.guide ul{{margin:0;padding-left:20px}}.guide li{{margin:6px 0}}.bodycopy p{{margin:0 0 1.35em}}.bodycopy p:first-child{{font-size:1.06em}}h2{{font:800 1.5rem/1.25 system-ui,sans-serif;letter-spacing:-.025em;margin:2.2em 0 .8em}}.takeaways{{background:#fbfaff;border:1px solid #e6defb;border-radius:15px;padding:22px 25px;margin:38px 0;font: .96rem/1.7 system-ui,sans-serif}}.takeaways h2{{font-size:1.2rem;margin:0 0 10px}}.takeaways li{{margin:8px 0}}.endnote{{border-top:1px solid var(--line);padding-top:22px;margin-top:40px;color:var(--muted);font: .88rem/1.7 system-ui,sans-serif}}.endnote a{{color:var(--accent)}}footer{{text-align:center;color:var(--muted);font: .8rem system-ui,sans-serif;margin:22px 0}}@media(max-width:560px){{body{{font-size:17px}}main{{margin:18px auto 45px;padding:0 12px}}.article{{border-radius:15px;padding:24px 20px}}}}@media print{{body{{background:#fff}}.top,.actions,footer{{display:none}}main{{margin:0;max-width:none;padding:0}}.article{{border:0;box-shadow:none;padding:0}}}}
+</style></head><body>
+<header class="top"><div class="top-inner"><a href="../articles.html">← C. O. Eric Articles</a><a href="../newsroom.html">Visit AI Newsroom</a></div></header>
+<main><article class="article">
+<a class="crumb" href="../articles.html">Articles / Features</a>
 <p class="meta">{html.escape(category)} · {now.strftime('%d %b %Y')}</p><h1>{html.escape(title)}</h1>
-<p class="lead"><strong>{html.escape(summary)}</strong></p>{body}
-<footer>Written as an original C. O. Eric editorial feature. Review important decisions against trusted, up-to-date sources.</footer>
-</main></body></html>"""
+<p class="dek">{html.escape(summary)}</p>
+<div class="byline"><span>By <strong>C. O. Eric</strong> · Original feature</span><span>{reading_minutes} min read · {word_count} words</span></div>
+<div class="actions"><button class="action" type="button" id="share">Share article</button><button class="action" type="button" onclick="window.print()">Print / Save PDF</button></div>
+<aside class="guide"><strong>In this article</strong><ul>{takeaway_html}</ul></aside>
+<div class="bodycopy">{body}</div>
+<section class="takeaways" id="takeaways"><h2>Key takeaways</h2><ul>{takeaway_html}</ul></section>
+<div class="endnote">This is an original editorial feature from C. O. Eric. Check important, time-sensitive decisions against current and authoritative sources. <br><a href="../articles.html">Explore more articles →</a></div>
+</article><footer>© {now.year} C. O. Eric · <a href="../editorial-policy.html">Editorial policy</a></footer></main>
+<script>
+document.getElementById('share').addEventListener('click',async()=>{{const data={{title:document.title,text:{json.dumps(summary)},url:location.href}};try{{if(navigator.share)await navigator.share(data);else{{await navigator.clipboard.writeText(location.href);document.getElementById('share').textContent='Link copied'}}}}catch(e){{if(e.name!=='AbortError')document.getElementById('share').textContent='Share unavailable'}}}});
+</script></body></html>"""
     return document, summary
 
 
