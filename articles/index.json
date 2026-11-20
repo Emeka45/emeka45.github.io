@@ -1,117 +1,5 @@
 [
   {
-    "file": "how-to-recognise-common-online-job-scams.html",
-    "title": "How to Recognise Common Online Job Scams",
-    "summary": "Fake job offers often target people who need work urgently. They may promise unusually high pay for simple tasks, claim that no experience is needed, or pressure applicants to pay before they can begin. A professional-looking advert does not prove that the employer is genuine.",
-    "category": "Practical Explainers",
-    "date": "20 Nov 2026"
-  },
-  {
-    "file": "understanding-your-digital-footprint-and-online-reputation.html",
-    "title": "Understanding Your Digital Footprint and Online Reputation",
-    "summary": "Every public post, comment, photograph and profile can contribute to the impression someone forms about a person or organisation online. A digital footprint is not always harmful, but it can reveal more than intended and may remain accessible after the original post is deleted.",
-    "category": "Technology & Modern Life",
-    "date": "20 Nov 2026"
-  },
-  {
-    "file": "how-to-prepare-for-a-job-interview-with-confidence.html",
-    "title": "How to Prepare for a Job Interview With Confidence",
-    "summary": "An interview is a structured conversation about the work an employer needs done and the evidence that you can do it. Preparation helps you explain your experience clearly, ask useful questions and decide whether the role is suitable for you.",
-    "category": "Money & Work",
-    "date": "20 Nov 2026"
-  },
-  {
-    "file": "how-to-evaluate-an-online-course-before-paying.html",
-    "title": "How to Evaluate an Online Course Before Paying",
-    "summary": "Online courses can make useful skills easier to access, but attractive adverts do not guarantee that a course is current, well taught or worth its price. Before paying, identify the exact skill you want to learn and the level of competence you expect to reach.",
-    "category": "Education",
-    "date": "20 Nov 2026"
-  },
-  {
-    "file": "how-to-build-a-simple-personal-knowledge-system.html",
-    "title": "How to Build a Simple Personal Knowledge System",
-    "summary": "Useful information is easy to lose when it is scattered across screenshots, browser tabs, notebooks and chat messages. A personal knowledge system gives important notes a reliable home and makes it possible to find them when a task or question returns.",
-    "category": "Education",
-    "date": "27 Oct 2026"
-  },
-  {
-    "file": "how-to-make-better-decisions-with-limited-information.html",
-    "title": "How to Make Better Decisions With Limited Information",
-    "summary": "Many real decisions must be made before every fact is available. Waiting for perfect certainty can itself have a cost, but acting on a guess can create avoidable harm. A useful process distinguishes what is known, what is uncertain and what can still be checked in time.",
-    "category": "Psychology & Human Behaviour",
-    "date": "26 Oct 2026"
-  },
-  {
-    "file": "how-to-learn-difficult-subjects-without-burning-out.html",
-    "title": "How to Learn Difficult Subjects Without Burning Out",
-    "summary": "A difficult subject can feel impossible when every unfamiliar term appears to depend on another unfamiliar idea. The solution is to identify the foundations, break the material into manageable pieces and test understanding regularly instead of repeatedly reading a large chapter from beginning to end.",
-    "category": "Education",
-    "date": "25 Oct 2026"
-  },
-  {
-    "file": "what-critical-thinking-really-means-in-everyday-life.html",
-    "title": "What Critical Thinking Really Means in Everyday Life",
-    "summary": "Critical thinking is the habit of evaluating a claim before accepting it. It does not mean rejecting everything or trying to win every argument. It means asking what the evidence supports, which assumptions are being made and whether another explanation fits the facts.",
-    "category": "Personal Development",
-    "date": "25 Oct 2026"
-  },
-  {
-    "file": "how-to-have-better-conversations-during-disagreements.html",
-    "title": "How to Have Better Conversations During Disagreements",
-    "summary": "Disagreement becomes difficult when people feel they must defend their identity instead of examining the issue. A productive conversation does not require identical opinions; it requires enough respect and clarity for each person to understand what is actually being disputed.",
-    "category": "Relationships & Family",
-    "date": "24 Oct 2026"
-  },
-  {
-    "file": "why-small-daily-habits-often-beat-sudden-motivation.html",
-    "title": "Why Small Daily Habits Often Beat Sudden Motivation",
-    "summary": "Motivation can help someone begin a task, but it changes with mood, sleep, stress and circumstances. A habit reduces the number of decisions required by linking an action to a regular cue, making progress less dependent on feeling inspired.",
-    "category": "Psychology & Human Behaviour",
-    "date": "24 Oct 2026"
-  },
-  {
-    "file": "how-to-think-clearly-when-the-internet-is-overwhelming.html",
-    "title": "How to Think Clearly When the Internet Is Overwhelming",
-    "summary": "The modern internet puts breaking news, personal opinions, advertising and entertainment in one continuous stream. Because every item competes for attention, it can become difficult to tell an important development from something designed merely to keep people scrolling.",
-    "category": "Personal Development",
-    "date": "24 Oct 2026"
-  },
-  {
-    "file": "how-to-spot-misleading-information-online.html",
-    "title": "How to Spot Misleading Information Online",
-    "summary": "Misleading online content is not always entirely fabricated. It may use an old photograph for a new event, remove a quotation from its context, present an allegation as a proven fact or use a headline that goes beyond what the report actually establishes.",
-    "category": "Practical Explainers",
-    "date": "24 Oct 2026"
-  },
-  {
-    "file": "how-to-protect-your-digital-privacy-on-a-phone.html",
-    "title": "How to Protect Your Digital Privacy on a Phone",
-    "summary": "A phone can hold messages, photos, location history, financial apps and access to other accounts. Protecting it is not one setting but a set of practical layers: secure the device, limit app access, protect accounts and think carefully before sharing information.",
-    "category": "Technology & Modern Life",
-    "date": "24 Oct 2026"
-  },
-  {
-    "file": "how-to-manage-money-when-income-is-irregular.html",
-    "title": "How to Manage Money When Income Is Irregular",
-    "summary": "When income changes from week to week, a budget based on one optimistic month can quickly become unreliable. A safer approach begins with the money that is actually available and gives priority to essential costs before optional spending.",
-    "category": "Money & Work",
-    "date": "24 Oct 2026"
-  },
-  {
-    "file": "a-practical-guide-to-building-better-study-habits.html",
-    "title": "A Practical Guide to Building Better Study Habits",
-    "summary": "Effective studying depends less on the number of hours spent with a book open than on what the learner can recall and apply afterwards. A manageable system combines clear objectives, active recall, practice and spaced review.",
-    "category": "Education",
-    "date": "24 Oct 2026"
-  },
-  {
-    "file": "how-to-use-ai-as-a-tool-without-letting-it-think-for-you.html",
-    "title": "How to Use AI as a Tool Without Letting It Think for You",
-    "summary": "AI can make research, drafting and explanation faster, but speed is not the same thing as judgment. The most useful relationship with an AI system is closer to using a calculator or research assistant: let it accelerate work while you remain responsible for the result.",
-    "category": "Technology & Modern Life",
-    "date": "21 Oct 2026"
-  },
-  {
     "title": "How to Use AI Tools Without Losing Your Own Judgment",
     "summary": "AI can help you research, learn and create faster—but the best results come when you treat it as a capable assistant, verify important claims and keep your own judgment in charge.",
     "category": "Technology & Modern Life",
@@ -138,5 +26,117 @@
       "news",
       "critical thinking"
     ]
+  },
+  {
+    "file": "why-small-daily-habits-often-beat-sudden-motivation.html",
+    "title": "Why Small Daily Habits Often Beat Sudden Motivation",
+    "summary": "Motivation can help someone begin a task, but it changes with mood, sleep, stress and circumstances. A habit reduces the number of decisions required by linking an action to a regular cue, making progress less dependent on feeling inspired.",
+    "category": "Psychology & Human Behaviour",
+    "date": "20 Nov 2026"
+  },
+  {
+    "file": "what-critical-thinking-really-means-in-everyday-life.html",
+    "title": "What Critical Thinking Really Means in Everyday Life",
+    "summary": "Critical thinking is the habit of evaluating a claim before accepting it. It does not mean rejecting everything or trying to win every argument. It means asking what the evidence supports, which assumptions are being made and whether another explanation fits the facts.",
+    "category": "Personal Development",
+    "date": "20 Nov 2026"
+  },
+  {
+    "file": "understanding-your-digital-footprint-and-online-reputation.html",
+    "title": "Understanding Your Digital Footprint and Online Reputation",
+    "summary": "Every public post, comment, photograph and profile can contribute to the impression someone forms about a person or organisation online. A digital footprint is not always harmful, but it can reveal more than intended and may remain accessible after the original post is deleted.",
+    "category": "Technology & Modern Life",
+    "date": "20 Nov 2026"
+  },
+  {
+    "file": "how-to-use-ai-as-a-tool-without-letting-it-think-for-you.html",
+    "title": "How to Use AI as a Tool Without Letting It Think for You",
+    "summary": "AI tools can explain unfamiliar subjects, organise notes, suggest drafts and help generate practice questions. Their speed is useful, but a fluent answer is not proof that its facts or reasoning are correct. The user still needs to decide what to trust and how to use the result.",
+    "category": "Technology & Modern Life",
+    "date": "20 Nov 2026"
+  },
+  {
+    "file": "how-to-think-clearly-when-the-internet-is-overwhelming.html",
+    "title": "How to Think Clearly When the Internet Is Overwhelming",
+    "summary": "The modern internet puts breaking news, personal opinions, advertising and entertainment in one continuous stream. Because every item competes for attention, it can become difficult to tell an important development from something designed merely to keep people scrolling.",
+    "category": "Personal Development",
+    "date": "20 Nov 2026"
+  },
+  {
+    "file": "how-to-spot-misleading-information-online.html",
+    "title": "How to Spot Misleading Information Online",
+    "summary": "Misleading online content is not always entirely fabricated. It may use an old photograph for a new event, remove a quotation from its context, present an allegation as a proven fact or use a headline that goes beyond what the report actually establishes.",
+    "category": "Practical Explainers",
+    "date": "20 Nov 2026"
+  },
+  {
+    "file": "how-to-recognise-common-online-job-scams.html",
+    "title": "How to Recognise Common Online Job Scams",
+    "summary": "Fake job offers often target people who need work urgently. They may promise unusually high pay for simple tasks, claim that no experience is needed, or pressure applicants to pay before they can begin. A professional-looking advert does not prove that the employer is genuine.",
+    "category": "Practical Explainers",
+    "date": "20 Nov 2026"
+  },
+  {
+    "file": "how-to-protect-your-digital-privacy-on-a-phone.html",
+    "title": "How to Protect Your Digital Privacy on a Phone",
+    "summary": "A phone can hold messages, photos, location history, financial apps and access to other accounts. Protecting it is not one setting but a set of practical layers: secure the device, limit app access, protect accounts and think carefully before sharing information.",
+    "category": "Technology & Modern Life",
+    "date": "20 Nov 2026"
+  },
+  {
+    "file": "how-to-prepare-for-a-job-interview-with-confidence.html",
+    "title": "How to Prepare for a Job Interview With Confidence",
+    "summary": "An interview is a structured conversation about the work an employer needs done and the evidence that you can do it. Preparation helps you explain your experience clearly, ask useful questions and decide whether the role is suitable for you.",
+    "category": "Money & Work",
+    "date": "20 Nov 2026"
+  },
+  {
+    "file": "how-to-manage-money-when-income-is-irregular.html",
+    "title": "How to Manage Money When Income Is Irregular",
+    "summary": "When income changes from week to week, a budget based on one optimistic month can quickly become unreliable. A safer approach begins with the money that is actually available and gives priority to essential costs before optional spending.",
+    "category": "Money & Work",
+    "date": "20 Nov 2026"
+  },
+  {
+    "file": "how-to-make-better-decisions-with-limited-information.html",
+    "title": "How to Make Better Decisions With Limited Information",
+    "summary": "Many real decisions must be made before every fact is available. Waiting for perfect certainty can itself have a cost, but acting on a guess can create avoidable harm. A useful process distinguishes what is known, what is uncertain and what can still be checked in time.",
+    "category": "Psychology & Human Behaviour",
+    "date": "20 Nov 2026"
+  },
+  {
+    "file": "how-to-learn-difficult-subjects-without-burning-out.html",
+    "title": "How to Learn Difficult Subjects Without Burning Out",
+    "summary": "A difficult subject can feel impossible when every unfamiliar term appears to depend on another unfamiliar idea. The solution is to identify the foundations, break the material into manageable pieces and test understanding regularly instead of repeatedly reading a large chapter from beginning to end.",
+    "category": "Education",
+    "date": "20 Nov 2026"
+  },
+  {
+    "file": "how-to-have-better-conversations-during-disagreements.html",
+    "title": "How to Have Better Conversations During Disagreements",
+    "summary": "Disagreement becomes difficult when people feel they must defend their identity instead of examining the issue. A productive conversation does not require identical opinions; it requires enough respect and clarity for each person to understand what is actually being disputed.",
+    "category": "Relationships & Family",
+    "date": "20 Nov 2026"
+  },
+  {
+    "file": "how-to-evaluate-an-online-course-before-paying.html",
+    "title": "How to Evaluate an Online Course Before Paying",
+    "summary": "Online courses can make useful skills easier to access, but attractive adverts do not guarantee that a course is current, well taught or worth its price. Before paying, identify the exact skill you want to learn and the level of competence you expect to reach.",
+    "category": "Education",
+    "date": "20 Nov 2026"
+  },
+  {
+    "file": "how-to-build-a-simple-personal-knowledge-system.html",
+    "title": "How to Build a Simple Personal Knowledge System",
+    "summary": "Useful information is easy to lose when it is scattered across screenshots, browser tabs, notebooks and chat messages. A personal knowledge system gives important notes a reliable home and makes it possible to find them when a task or question returns.",
+    "category": "Education",
+    "date": "20 Nov 2026"
+  },
+  {
+    "file": "a-practical-guide-to-building-better-study-habits.html",
+    "title": "A Practical Guide to Building Better Study Habits",
+    "summary": "Effective studying depends less on the number of hours spent with a book open than on what the learner can recall and apply afterwards. A manageable system combines clear objectives, active recall, practice and spaced review.",
+    "category": "Education",
+    "date": "20 Nov 2026"
   }
 ]
