@@ -120,8 +120,7 @@ CONTENT = {
 "Capture enough context to make a note understandable later. Record the main idea, why it matters, the source and the date when freshness matters. Save a link to the original material rather than copying an entire copyrighted article. Mark uncertain ideas as questions instead of treating them as established facts.",
 "Organise for retrieval, not perfection. A few broad categories and descriptive titles are often enough. Use search, tags or a short index for projects that recur. When collecting material for a report or examination, separate source notes from your own conclusions so you can trace where a claim came from.",
 "Review the system briefly each week. Turn useful notes into an action, a summary, a study question or a draft; delete duplicates and archive finished projects. A knowledge system earns its place by helping you think and act, not by accumulating the largest possible pile of saved information."
-]
-
+],
 "How to Evaluate an Online Course Before Paying": [
 "Online courses can make useful skills easier to access, but attractive adverts do not guarantee that a course is current, well taught or worth its price. Before paying, identify the exact skill you want to learn and the level of competence you expect to reach.",
 "Read the syllabus carefully and check whether it explains the topics, practical exercises and expected workload. A course that promises mastery in a few hours may be overselling its results. Look for sample lessons so you can judge the teaching style and whether explanations are understandable.",
