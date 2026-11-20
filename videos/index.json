@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T11:54:42.366530+00:00",
+  "updated_at": "2026-11-20T11:58:55.127753+00:00",
   "videos": [
     {
       "video_id": "9nqUQ3_De28",
@@ -16,6 +16,22 @@
       "is_short": false,
       "description": "Watch Episode 840 of the Crayon Shinchan TV series with English subtitles on the Muse Asia anime and donghua channel.",
       "published_by_pipeline_at": "2026-11-20T11:54:26.573778+00:00"
+    },
+    {
+      "video_id": "-krAmpDnk08",
+      "title": "《Mushoku Tensei: Jobless Reincarnation Season 3》 #shorts",
+      "category": "Anime & Donghua",
+      "channel": "Muse Asia",
+      "channel_id": "UCGbshtvS9t-8CW11W7TooQg",
+      "channel_url": "https://www.youtube.com/channel/UCGbshtvS9t-8CW11W7TooQg",
+      "url": "https://www.youtube.com/shorts/-krAmpDnk08",
+      "embed_url": "https://www.youtube-nocookie.com/embed/-krAmpDnk08",
+      "thumbnail": "https://i.ytimg.com/vi/-krAmpDnk08/hqdefault.jpg",
+      "published_at": "2026-11-20T11:00:33+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Muse Asia — 《Mushoku Tensei: Jobless Reincarnation Season 3》 #shorts. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-11-20T11:58:50.311556+00:00"
     },
     {
       "video_id": "EbCXV5H8_-c",
@@ -50,6 +66,22 @@
       "published_by_pipeline_at": "2026-11-20T11:54:24.268200+00:00"
     },
     {
+      "video_id": "xQKWQOsoCtU",
+      "title": "《A Returner's Magic Should be Special Season 2》Anime Highlight",
+      "category": "Anime & Donghua",
+      "channel": "Muse Asia",
+      "channel_id": "UCGbshtvS9t-8CW11W7TooQg",
+      "channel_url": "https://www.youtube.com/channel/UCGbshtvS9t-8CW11W7TooQg",
+      "url": "https://www.youtube.com/watch?v=xQKWQOsoCtU",
+      "embed_url": "https://www.youtube-nocookie.com/embed/xQKWQOsoCtU",
+      "thumbnail": "https://i.ytimg.com/vi/xQKWQOsoCtU/hqdefault.jpg",
+      "published_at": "2026-11-20T09:00:37+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "Watch an anime highlight video from Muse Asia for Season 2 of A Returner's Magic Should be Special, featured in the Anime & Donghua category.",
+      "published_by_pipeline_at": "2026-11-20T11:58:39.129486+00:00"
+    },
+    {
       "video_id": "6fxi040ntHs",
       "title": "🌺【大家到底都嗑了什麼……？】👭《魔法姊妹露露特莉莉》第18話｜精華重溫【Ani-One】",
       "category": "Anime & Donghua",
@@ -64,6 +96,38 @@
       "is_short": true,
       "description": "Watch the highlight review of Episode 18 of the anime Magic Sisters Lilu Lily on the Ani-One Asia channel.",
       "published_by_pipeline_at": "2026-11-20T11:54:38.210230+00:00"
+    },
+    {
+      "video_id": "3FlmxUDelfw",
+      "title": "🫠【麻煩的家伙們】🪀《超巡！超條前輩》第6話｜精華重溫【Ani-One】",
+      "category": "Anime & Donghua",
+      "channel": "Ani-One Asia",
+      "channel_id": "UC45ONEZZfMDZCnEhgYmVu-A",
+      "channel_url": "https://www.youtube.com/channel/UC45ONEZZfMDZCnEhgYmVu-A",
+      "url": "https://www.youtube.com/shorts/3FlmxUDelfw",
+      "embed_url": "https://www.youtube-nocookie.com/embed/3FlmxUDelfw",
+      "thumbnail": "https://i.ytimg.com/vi/3FlmxUDelfw/hqdefault.jpg",
+      "published_at": "2026-11-20T08:00:34+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Ani-One Asia — 🫠【麻煩的家伙們】🪀《超巡！超條前輩》第6話｜精華重溫【Ani-One】. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-11-20T11:58:50.402803+00:00"
+    },
+    {
+      "video_id": "f0Bz-Kx7Bak",
+      "title": "＼✨咒術之旅・香港！一齊展開享受美食、靚景嘅旅程啦🗺️🧳！／",
+      "category": "Anime & Donghua",
+      "channel": "Ani-One Asia",
+      "channel_id": "UC45ONEZZfMDZCnEhgYmVu-A",
+      "channel_url": "https://www.youtube.com/channel/UC45ONEZZfMDZCnEhgYmVu-A",
+      "url": "https://www.youtube.com/shorts/f0Bz-Kx7Bak",
+      "embed_url": "https://www.youtube-nocookie.com/embed/f0Bz-Kx7Bak",
+      "thumbnail": "https://i.ytimg.com/vi/f0Bz-Kx7Bak/hqdefault.jpg",
+      "published_at": "2026-11-20T07:54:30+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Join Ani-One Asia on the Anime & Donghua channel for a journey through Hong Kong featuring great food and scenic views in this Jujutsu Kaisen travel video.",
+      "published_by_pipeline_at": "2026-11-20T11:58:50.949479+00:00"
     },
     {
       "video_id": "6JHKeRZz0F0",
@@ -208,6 +272,22 @@
       "is_short": false,
       "description": "Watch the Control Freak remix of Porter Robinson's track \"Cheerleader,\" featured on the Trap Nation music channel.",
       "published_by_pipeline_at": "2026-11-20T10:47:58.526032+00:00"
+    },
+    {
+      "video_id": "-p3xByNP67o",
+      "title": "\"All Other Woman Ran Away From Me\" | Firefly Wedding",
+      "category": "Anime",
+      "channel": "Crunchyroll",
+      "channel_id": "UC6pGDc4bFGD1_36IKv3FnYg",
+      "channel_url": "https://www.youtube.com/channel/UC6pGDc4bFGD1_36IKv3FnYg",
+      "url": "https://www.youtube.com/shorts/-p3xByNP67o",
+      "embed_url": "https://www.youtube-nocookie.com/embed/-p3xByNP67o",
+      "thumbnail": "https://i.ytimg.com/vi/-p3xByNP67o/hqdefault.jpg",
+      "published_at": "2026-11-19T19:00:18+00:00",
+      "source": "YouTube channel feed",
+      "is_short": true,
+      "description": "Crunchyroll — \"All Other Woman Ran Away From Me\" | Firefly Wedding. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-11-20T11:58:52.937759+00:00"
     },
     {
       "video_id": "zc2fFGeGGS4",
@@ -512,6 +592,22 @@
       "is_short": false,
       "description": "In this educational video from Tested, the host explores the meticulous process of creating just ten frames of animation a day.",
       "published_by_pipeline_at": "2026-11-19T10:59:04.145035+00:00"
+    },
+    {
+      "video_id": "sY60PnVdWBY",
+      "title": "NASA’s Power to Explore Student Challenge 2026-27",
+      "category": "Space & Discovery",
+      "channel": "NASA",
+      "channel_id": "UC9SM7V7J1pAhPabOUST01fw",
+      "channel_url": "https://www.youtube.com/channel/UC9SM7V7J1pAhPabOUST01fw",
+      "url": "https://www.youtube.com/watch?v=sY60PnVdWBY",
+      "embed_url": "https://www.youtube-nocookie.com/embed/sY60PnVdWBY",
+      "thumbnail": "https://i.ytimg.com/vi/sY60PnVdWBY/hqdefault.jpg",
+      "published_at": "2026-11-18T13:13:10+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "This NASA video in the Space & Discovery category details the Power to Explore Student Challenge for the 2026-2027 period.",
+      "published_by_pipeline_at": "2026-11-20T11:58:53.572872+00:00"
     },
     {
       "video_id": "OPInvKC5zRc",
@@ -2304,102 +2400,6 @@
       "is_short": false,
       "description": "TED — How success can kill innovation—and how to fix it | Josemaria Siota | TEDxIESEBarcelona. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-11-10T10:39:46.099477+00:00"
-    },
-    {
-      "video_id": "nYn1eEm-kOU",
-      "title": "Sienna Senate - Do Your Thing | A COLORS MOMENT",
-      "category": "Music",
-      "channel": "COLORS",
-      "channel_id": "UC2Qw1dzXDBAZPwS7zm37g8g",
-      "channel_url": "https://www.youtube.com/channel/UC2Qw1dzXDBAZPwS7zm37g8g",
-      "url": "https://www.youtube.com/shorts/nYn1eEm-kOU",
-      "embed_url": "https://www.youtube-nocookie.com/embed/nYn1eEm-kOU",
-      "thumbnail": "https://i.ytimg.com/vi/nYn1eEm-kOU/hqdefault.jpg",
-      "published_at": "2026-11-09T17:14:50+00:00",
-      "source": "YouTube channel feed",
-      "is_short": true,
-      "description": "COLORS — Sienna Senate - Do Your Thing | A COLORS MOMENT. Watch the original video on YouTube.",
-      "published_by_pipeline_at": "2026-11-10T10:39:45.990593+00:00"
-    },
-    {
-      "video_id": "vutGHN0ux5k",
-      "title": "How Old Movies are Upscaled without Computers",
-      "category": "Educational & Making",
-      "channel": "Tested",
-      "channel_id": "UCiDJtJKMICpb9B1qf7qjEOA",
-      "channel_url": "https://www.youtube.com/channel/UCiDJtJKMICpb9B1qf7qjEOA",
-      "url": "https://www.youtube.com/watch?v=vutGHN0ux5k",
-      "embed_url": "https://www.youtube-nocookie.com/embed/vutGHN0ux5k",
-      "thumbnail": "https://i.ytimg.com/vi/vutGHN0ux5k/hqdefault.jpg",
-      "published_at": "2026-11-09T15:00:07+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Tested — How Old Movies are Upscaled without Computers. Watch the original video on YouTube.",
-      "published_by_pipeline_at": "2026-11-10T10:39:46.217556+00:00"
-    },
-    {
-      "video_id": "elD5QA5NYB4",
-      "title": "《The World's Strongest Witch》Anime Highlight",
-      "category": "Anime & Donghua",
-      "channel": "Muse Asia",
-      "channel_id": "UCGbshtvS9t-8CW11W7TooQg",
-      "channel_url": "https://www.youtube.com/channel/UCGbshtvS9t-8CW11W7TooQg",
-      "url": "https://www.youtube.com/watch?v=elD5QA5NYB4",
-      "embed_url": "https://www.youtube-nocookie.com/embed/elD5QA5NYB4",
-      "thumbnail": "https://i.ytimg.com/vi/elD5QA5NYB4/hqdefault.jpg",
-      "published_at": "2026-11-09T10:30:07+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Watch an anime highlight video for 《The World's Strongest Witch》, presented by Muse Asia in the Anime & Donghua category.",
-      "published_by_pipeline_at": "2026-11-09T10:44:08.695289+00:00"
-    },
-    {
-      "video_id": "iqTA48loH8M",
-      "title": "《角醒獵人奧米加之角》第9話 (繁中字幕 | 日語原聲)【Ani-One】",
-      "category": "Anime & Donghua",
-      "channel": "Ani-One Asia",
-      "channel_id": "UC45ONEZZfMDZCnEhgYmVu-A",
-      "channel_url": "https://www.youtube.com/channel/UC45ONEZZfMDZCnEhgYmVu-A",
-      "url": "https://www.youtube.com/watch?v=iqTA48loH8M",
-      "embed_url": "https://www.youtube-nocookie.com/embed/iqTA48loH8M",
-      "thumbnail": "https://i.ytimg.com/vi/iqTA48loH8M/hqdefault.jpg",
-      "published_at": "2026-11-09T10:00:10+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Watch episode nine of the anime series \"角醒獵人奧米加之角\" with traditional Chinese subtitles and original Japanese audio on the Ani-One Asia channel.",
-      "published_by_pipeline_at": "2026-11-09T10:44:09.439045+00:00"
-    },
-    {
-      "video_id": "6L87mT7VTXg",
-      "title": "《A Returner's Magic Should be Special Season 2》Anime Highlight",
-      "category": "Anime & Donghua",
-      "channel": "Muse Asia",
-      "channel_id": "UCGbshtvS9t-8CW11W7TooQg",
-      "channel_url": "https://www.youtube.com/channel/UCGbshtvS9t-8CW11W7TooQg",
-      "url": "https://www.youtube.com/watch?v=6L87mT7VTXg",
-      "embed_url": "https://www.youtube-nocookie.com/embed/6L87mT7VTXg",
-      "thumbnail": "https://i.ytimg.com/vi/6L87mT7VTXg/hqdefault.jpg",
-      "published_at": "2026-11-09T09:00:06+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Watch the official anime highlight for Season 2 of A Returner's Magic Should be Special, presented by Muse Asia in the Anime & Donghua category.",
-      "published_by_pipeline_at": "2026-11-09T10:44:10.378314+00:00"
-    },
-    {
-      "video_id": "6z8A3Q6Rzuo",
-      "title": "《魔法少女育成計畫restart》第6話 (繁中字幕 | 日語原聲)【Ani-One】",
-      "category": "Anime & Donghua",
-      "channel": "Ani-One Asia",
-      "channel_id": "UC45ONEZZfMDZCnEhgYmVu-A",
-      "channel_url": "https://www.youtube.com/channel/UC45ONEZZfMDZCnEhgYmVu-A",
-      "url": "https://www.youtube.com/watch?v=6z8A3Q6Rzuo",
-      "embed_url": "https://www.youtube-nocookie.com/embed/6z8A3Q6Rzuo",
-      "thumbnail": "https://i.ytimg.com/vi/6z8A3Q6Rzuo/hqdefault.jpg",
-      "published_at": "2026-11-09T04:24:27+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Watch the sixth episode of the anime series Magical Girl Raising Project Restart on Ani-One Asia, featuring original Japanese audio and Traditional Chinese subtitles.",
-      "published_by_pipeline_at": "2026-11-09T10:44:11.133455+00:00"
     }
   ]
 }

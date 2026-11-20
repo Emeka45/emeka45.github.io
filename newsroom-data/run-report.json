@@ -1,20 +1,17 @@
 {
-  "started_utc": "2026-11-20T11:53:45.917868+00:00",
-  "finished_utc": "2026-11-20T11:54:00.688023+00:00",
+  "started_utc": "2026-11-20T11:58:01.179001+00:00",
+  "finished_utc": "2026-11-20T11:58:14.972162+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 354,
-  "fresh_items": 325,
-  "corroborated_candidates": 4,
-  "published_count": 4,
+  "fresh_items": 318,
+  "corroborated_candidates": 1,
+  "published_count": 1,
   "published_titles": [
-    "US cybersecurity chief fired following tech outages",
-    "Police arrest nine over ₦8.6m robbery in Oyo",
-    "Dollar to Naira Exchange Rate Hits ₦1,373 at Official Market",
-    "Google is putting AI chats right on the homepage"
+    "Warren Spector lambasts GTA 6's \"billion dollar\" development - 'I just hope it's is the last of its kind even if it's the best we have to offer'"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }

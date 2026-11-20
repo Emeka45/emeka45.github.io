@@ -1,42 +1,18 @@
 {
-  "finished_utc": "2026-11-20T11:54:03.036248+00:00",
+  "finished_utc": "2026-11-20T11:58:15.830844+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 4,
-  "attempted": 4,
+  "missing_before_run": 1,
+  "attempted": 1,
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-11-20-us-cybersecurity-chief-fired-following-tech-outages-350a483021.html",
-      "image": "news/images/2026-11-20-us-cybersecurity-chief-fired-following-tech-outages-350a483021-source.jpg",
-      "bytes": 40378,
+      "article": "2026-11-20-warren-spector-lambasts-gta-6-s-billion-dollar-development-i-just-hope-it-s-is-the-last-of-fc77a57950.html",
+      "image": "news/images/2026-11-20-warren-spector-lambasts-gta-6-s-billion-dollar-development-i-just-hope-it-s-is-the-last-of-fc77a57950-source.jpg",
+      "bytes": 117257,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/us-cybersecurity-chief-fired-following-tech-outages/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/20120621/c87be270-e4bd-11f1-87df-79d8910e0f29.jpg_1795172781.webp"
-    },
-    {
-      "article": "2026-11-20-police-arrest-nine-over-8-6m-robbery-in-oyo-ded8c5f241.html",
-      "image": "news/images/2026-11-20-police-arrest-nine-over-8-6m-robbery-in-oyo-ded8c5f241-source.jpg",
-      "bytes": 51404,
-      "provider": "Original news source",
-      "source_url": "https://punchng.com/police-arrest-nine-over-%e2%82%a68-6m-robbery-in-oyo/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/20120915/HXj_8UfW0AAOFIL_1795172955-762x630.webp"
-    },
-    {
-      "article": "2026-11-20-google-is-putting-ai-chats-right-on-the-homepage-1231f0b7d6.html",
-      "image": "news/images/2026-11-20-google-is-putting-ai-chats-right-on-the-homepage-1231f0b7d6-source.jpg",
-      "bytes": 28829,
-      "provider": "Original news source",
-      "source_url": "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK093_GOOGLE_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
-    },
-    {
-      "article": "2026-11-20-dollar-to-naira-exchange-rate-hits-1-373-at-official-market-7b26673993.html",
-      "image": "news/images/2026-11-20-dollar-to-naira-exchange-rate-hits-1-373-at-official-market-7b26673993-source.jpg",
-      "bytes": 200596,
-      "provider": "Original news source",
-      "source_url": "https://www.technologyreview.com/2026/11/19/1148922/sila-panasonic-battery-deal/",
-      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/Moses-Lake-Facility_.jpg?resize=1200,600"
+      "source_url": "https://www.eurogamer.net/gta-6-warren-spector-lambasts-billion-dollar-development",
+      "image_url": "https://assetsio.gnwcdn.com/gta-6-cash.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
     }
   ],
   "openverse_photos": [],
