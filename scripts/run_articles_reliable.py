@@ -28,6 +28,12 @@ TOPICS = [
     ("How to Learn Difficult Subjects Without Burning Out", "Education"),
     ("How to Make Better Decisions With Limited Information", "Psychology & Human Behaviour"),
     ("How to Build a Simple Personal Knowledge System", "Education"),
+    ("How to Evaluate an Online Course Before Paying", "Education"),
+    ("How to Prepare for a Job Interview With Confidence", "Money & Work"),
+    ("Understanding Your Digital Footprint and Online Reputation", "Technology & Modern Life"),
+    ("How to Recognise Common Online Job Scams", "Practical Explainers"),
+    ("A Practical Guide to Setting Healthy Boundaries", "Relationships & Family"),
+    ("How to Make Better Use of Your Community Library", "Education"),
 ]
 
 CONTENT = {
@@ -115,6 +121,49 @@ CONTENT = {
 "Organise for retrieval, not perfection. A few broad categories and descriptive titles are often enough. Use search, tags or a short index for projects that recur. When collecting material for a report or examination, separate source notes from your own conclusions so you can trace where a claim came from.",
 "Review the system briefly each week. Turn useful notes into an action, a summary, a study question or a draft; delete duplicates and archive finished projects. A knowledge system earns its place by helping you think and act, not by accumulating the largest possible pile of saved information."
 ]
+
+"How to Evaluate an Online Course Before Paying": [
+"Online courses can make useful skills easier to access, but attractive adverts do not guarantee that a course is current, well taught or worth its price. Before paying, identify the exact skill you want to learn and the level of competence you expect to reach.",
+"Read the syllabus carefully and check whether it explains the topics, practical exercises and expected workload. A course that promises mastery in a few hours may be overselling its results. Look for sample lessons so you can judge the teaching style and whether explanations are understandable.",
+"Check who created the course and what relevant experience they can demonstrate. Independent reviews can help, but look for detailed feedback about assignments, support and outcomes rather than relying only on star ratings or testimonials displayed by the seller.",
+"Find out what the price includes. Confirm whether access is permanent or time-limited, whether certificates cost extra, how refunds work and whether you need additional software or subscriptions. Read the payment and cancellation terms before entering card or account details.",
+"Compare the course with free or lower-cost alternatives, including libraries, public learning platforms and reputable tutorials. Choose based on clear learning outcomes, credible instruction and practical value, not countdown timers or pressure to buy immediately."
+],
+"How to Prepare for a Job Interview With Confidence": [
+"An interview is a structured conversation about the work an employer needs done and the evidence that you can do it. Preparation helps you explain your experience clearly, ask useful questions and decide whether the role is suitable for you.",
+"Study the job description and identify the main responsibilities and required skills. For each important requirement, prepare a brief example from employment, school, volunteering or personal projects. Explain the situation, the action you took and the result without exaggerating your contribution.",
+"Research the organisation using reliable public information. Understand its services, customers and recent priorities, then prepare a few thoughtful questions about the role, training, expectations and how performance is assessed. Avoid pretending to know facts you have not verified.",
+"Plan the practical details early. Confirm the interview time, location or meeting link, test your phone or computer if it is online, and choose neat clothing appropriate to the setting. Allow time for transport and keep copies of relevant documents ready.",
+"During the interview, listen to each question and take a moment to organise your answer. If you do not understand something, ask for clarification. Be honest about gaps in your experience and explain how you would learn. Afterward, review what went well and what you can improve."
+],
+"Understanding Your Digital Footprint and Online Reputation": [
+"Every public post, comment, photograph and profile can contribute to the impression someone forms about a person or organisation online. A digital footprint is not always harmful, but it can reveal more than intended and may remain accessible after the original post is deleted.",
+"Start by searching your name and common usernames in a private browser window. Review the public information that appears, including old profiles, tagged photographs and comments. Check privacy settings on accounts you still use and remove material you no longer want to share where possible.",
+"Think about the audience before posting. A joke understood by close friends may be confusing outside that group, while a photograph can reveal a location, school, workplace or routine. Avoid publishing other people's personal information or images without permission.",
+"Remember that privacy settings reduce visibility but do not guarantee secrecy. Someone may save, forward or screenshot material before it is removed. Treat direct messages and private groups with care, especially when they contain sensitive details or documents.",
+"Build a positive footprint as well as reducing unwanted exposure. Keep professional profiles accurate, share work you are comfortable standing behind and correct misleading information when you can. A thoughtful online presence is built through consistent choices, not through trying to appear perfect."
+],
+"How to Recognise Common Online Job Scams": [
+"Fake job offers often target people who need work urgently. They may promise unusually high pay for simple tasks, claim that no experience is needed, or pressure applicants to pay before they can begin. A professional-looking advert does not prove that the employer is genuine.",
+"Be cautious when a recruiter asks for registration, training, equipment or activation fees before providing a verifiable job. Legitimate hiring processes vary, but demands for urgent transfers to personal accounts or cryptocurrency wallets are serious warning signs.",
+"Check the employer independently. Find its official website and contact details rather than relying only on links supplied in a message. Search for the job title and company name alongside terms such as complaint or scam, and contact the organisation through a channel you located yourself.",
+"Protect identity and financial information during recruitment. Do not send passwords, one-time verification codes or full banking credentials. Share identity documents only when you have verified who is requesting them and understand why they are needed.",
+"If you suspect a scam, stop communicating, preserve messages and payment records, and contact your bank or payment provider promptly if money was sent. Report the account or advert through the relevant platform and warn others without reposting unverified personal accusations."
+],
+"A Practical Guide to Setting Healthy Boundaries": [
+"Boundaries describe what a person can accept, what they are responsible for and how they will respond when a limit is crossed. They are not a way to control another person's choices; they help make expectations and responsibilities clearer.",
+"Begin by noticing situations that repeatedly leave you overwhelmed, resentful or uncomfortable. Identify the specific behaviour and the limit you need. A useful boundary is concrete, realistic and connected to something you can control, such as your time, privacy or availability.",
+"Communicate the limit calmly and directly. For example, explain when you are available to help, what information you prefer to keep private or which conversations you will pause if insults begin. Clear language is usually more effective than hints or threats.",
+"Consistency matters more than lengthy explanations. If you say you cannot answer work messages late at night, decide how you will handle messages that arrive then. Some people may need time to adjust, but repeated pressure does not mean the boundary is unreasonable.",
+"Boundaries should allow room for mutual respect and practical compromise. Review them when circumstances change, and listen to the needs of others without abandoning your own safety. If a situation involves threats, coercion or abuse, seek trusted support and prioritise safety."
+],
+"How to Make Better Use of Your Community Library": [
+"A community library can offer more than shelves of books. Depending on the location, it may provide reference materials, study space, newspapers, internet access, children's activities and guidance from staff who know the available resources.",
+"Start by learning the library's membership rules, opening hours and borrowing limits. Ask whether registration requires identification, whether there are fees and how renewals or overdue items are handled. Knowing the basic rules makes it easier to use the service confidently.",
+"Tell a librarian what you are trying to find rather than searching only by a broad subject. Staff may know useful catalogues, reference works, local archives or trustworthy online databases that are difficult to discover through a general search engine.",
+"Use the library as a place for focused learning. Set a clear goal for each visit, bring a list of questions and record the title or source of useful information. Respect shared study spaces and follow local rules about devices, food and noise.",
+"Support the library by returning borrowed materials on time, treating shared resources carefully and sharing accurate information about its services. If a book or resource is missing, ask whether an inter-library request or another legitimate source is available."
+],
 }
 
 def slug(text: str) -> str:
