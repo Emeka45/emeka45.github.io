@@ -227,6 +227,10 @@ def load_index():
 def article_word_count(path: Path) -> int:
     raw = path.read_text(encoding="utf-8", errors="replace")
     raw = re.sub(r"(?is)<style\b.*?</style>|<script\b.*?</script>", " ", raw)
+    # Count the editorial article itself, not CSS, navigation, metadata or duplicated takeaways.
+    match = re.search(r"(?is)<h1\b[^>]*>.*?</h1>(.*?)(?:<h2\b[^>]*>\s*Key takeaways\s*</h2>|<footer\b)", raw)
+    if match:
+        raw = match.group(1)
     plain = html.unescape(re.sub(r"<[^>]+>", " ", raw))
     return len(re.findall(r"[\w’'-]+", plain, flags=re.UNICODE))
 
