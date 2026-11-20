@@ -1,5 +1,11 @@
 {
-  "finished_utc": "2026-11-19T18:05:50.516129+00:00",
-  "published": false,
-  "reason": "All reviewed topics already exist and pass the repair check; no duplicate article was created."
+  "finished_utc": "2026-11-20T11:53:50.862454+00:00",
+  "mode": "topic-specific-editorial-library",
+  "published": true,
+  "title": "How to Evaluate an Online Course Before Paying",
+  "category": "Education",
+  "file": "how-to-evaluate-an-online-course-before-paying.html",
+  "word_count": 205,
+  "quality_checks": "passed",
+  "note": "Only reviewed topic-specific content is published; generic fallback content is disabled."
 }
