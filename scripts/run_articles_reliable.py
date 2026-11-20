@@ -450,7 +450,7 @@ def main():
     (ARTICLES / filename).write_text(document, encoding="utf-8")
     entry = {"file": filename, "title": title, "summary": summary, "category": category, "date": now.strftime("%d %b %Y")}
     entries = [entry] + [x for x in entries if str(x.get("title", "")).strip().lower() != title.lower()]
-    entries.sort(key=lambda x: (date_sort_key(x.get("date", "")), str(x.get("title", ""))), reverse=True)
+    entries.sort(key=lambda x: date_sort_key(x.get("date", "")), reverse=True)
     INDEX.write_text(json.dumps(entries[:100], ensure_ascii=False, indent=2), encoding="utf-8")
     report = {"finished_utc": now.isoformat(), "mode": "topic-specific-editorial-library", "published": True, "title": title, "category": category, "file": filename, "word_count": len(" ".join(paragraphs).split()), "quality_checks": "passed", "note": "Only reviewed topic-specific content is published; generic fallback content is disabled."}
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
