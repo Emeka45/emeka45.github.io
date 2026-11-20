@@ -402,7 +402,7 @@ def main():
             old_entry.update({"file": filename, "title": candidate_title, "summary": summary, "category": candidate_category, "date": now.strftime("%d %b %Y")})
             repaired.append({"title": candidate_title, "file": filename, "word_count": len(" ".join(paragraphs).split())})
         if repaired:
-            entries.sort(key=lambda x: (date_sort_key(x.get("date", "")), str(x.get("title", ""))), reverse=True)
+            entries.sort(key=lambda x: date_sort_key(x.get("date", "")), reverse=True)
             INDEX.write_text(json.dumps(entries[:100], ensure_ascii=False, indent=2), encoding="utf-8")
             report = {"finished_utc": now.isoformat(), "mode": "batch-quality-repair", "published": True, "repaired_count": len(repaired), "repaired_articles": repaired, "quality_checks": "passed", "note": "Existing short/template articles were replaced with topic-specific editorial content."}
             REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
