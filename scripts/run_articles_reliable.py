@@ -226,9 +226,9 @@ def load_index():
 
 def article_word_count(path: Path) -> int:
     raw = path.read_text(encoding="utf-8", errors="replace")
-    raw = re.sub(r"(?is)<style\\b.*?</style>|<script\\b.*?</script>", " ", raw)
+    raw = re.sub(r"(?is)<style\b.*?</style>|<script\b.*?</script>", " ", raw)
     plain = html.unescape(re.sub(r"<[^>]+>", " ", raw))
-    return len(re.findall(r"[\\w’'-]+", plain, flags=re.UNICODE))
+    return len(re.findall(r"[\w’'-]+", plain, flags=re.UNICODE))
 
 
 def article_body(title: str) -> list[str]:
