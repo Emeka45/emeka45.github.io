@@ -1,27 +1,20 @@
 {
-  "started_utc": "2026-11-20T10:46:13.609507+00:00",
-  "finished_utc": "2026-11-20T10:46:47.794980+00:00",
+  "started_utc": "2026-11-20T11:53:45.917868+00:00",
+  "finished_utc": "2026-11-20T11:54:00.688023+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
-  "feed_success_count": 29,
-  "feed_failure_count": 1,
-  "feed_failures": [
-    {
-      "category": "Religion & Faith",
-      "url": "https://nscia.com.ng/category/news/feed/",
-      "error": "<urlopen error timed out>"
-    }
-  ],
-  "total_items": 345,
+  "feed_success_count": 30,
+  "feed_failure_count": 0,
+  "feed_failures": [],
+  "total_items": 354,
   "fresh_items": 325,
-  "corroborated_candidates": 8,
-  "published_count": 5,
+  "corroborated_candidates": 4,
+  "published_count": 4,
   "published_titles": [
-    "China faults ICJ ruling on Myanmar’s Rohingya genocide",
-    "California targets Nvidia in China AI chip probe",
-    "GTA 6 Shows Why You Should Never, Ever, Ever Text and Drive (Ever)",
-    "Fiona the hippo dies after failed effort to remove swallowed hat",
-    "Trump, Putin and Xi release 'peace declaration' after historic meeting"
+    "US cybersecurity chief fired following tech outages",
+    "Police arrest nine over ₦8.6m robbery in Oyo",
+    "Dollar to Naira Exchange Rate Hits ₦1,373 at Official Market",
+    "Google is putting AI chats right on the homepage"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }
