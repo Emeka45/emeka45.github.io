@@ -324,9 +324,7 @@ def main():
             old_path = ARTICLES / str(old_entry.get("file", ""))
             if not old_path.is_file():
                 continue
-            old_text = html.unescape(re.sub(r"<[^>]+>", " ", old_path.read_text(encoding="utf-8", errors="replace")))
-            old_text = re.sub(r"\s+", " ", old_text).strip()
-            if len(old_text.split()) >= 300:
+            if article_word_count(old_path) >= 300:
                 continue
             paragraphs = article_body(candidate_title)
             errors = validate_article(candidate_title, paragraphs)
@@ -359,11 +357,7 @@ def main():
             if not old_entry:
                 continue
             old_path = ARTICLES / str(old_entry.get("file", ""))
-            old_text = ""
-            if old_path.is_file():
-                old_text = re.sub(r"<[^>]+>", " ", old_path.read_text(encoding="utf-8", errors="replace"))
-                old_text = html.unescape(re.sub(r"\s+", " ", old_text)).strip()
-            if len(old_text.split()) < 300:
+            if not old_path.is_file() or article_word_count(old_path) < 300:
                 chosen = (candidate_title, candidate_category)
                 break
         if chosen is None:
