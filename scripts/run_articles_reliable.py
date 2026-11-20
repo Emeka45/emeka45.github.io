@@ -187,6 +187,28 @@ EXTENSIONS = {
 "How to Make Better Use of Your Community Library": ["Ask whether the library provides digital catalogues, learning databases, public computers or services that can be used outside the building. Some libraries also host reading groups and literacy programmes. A short conversation with staff can reveal services that are not obvious from the shelves.", "Use more than one source when researching. Library books can provide background, while current official publications may be needed for recent rules or statistics. Record author, title, publisher and date so you can locate the source again."]
 }
 
+
+EXTRA_EXTENSIONS = {
+"How to Think Clearly When the Internet Is Overwhelming": ["A useful final check is to ask whether the information changes what you should do. If it does not, you may not need to keep following every update. Save the source for later reference, return to the task in front of you and allow the evidence to develop before forming a firm conclusion."],
+"How to Use AI as a Tool Without Letting It Think for You": ["Treat the final review as your responsibility even when the tool produced most of the first draft. Check whether the answer addresses the actual question, whether examples are appropriate and whether important limitations have been omitted. A useful assistant should make your work clearer, not make you less accountable for it."],
+"A Practical Guide to Building Better Study Habits": ["At the end of each week, choose the next week's priorities based on evidence from your practice. Spend more time on topics where you repeatedly make mistakes and maintain brief reviews of material you already understand. This balance prevents both neglecting weak areas and forgetting earlier learning."],
+"How to Spot Misleading Information Online": ["When you correct a mistake, make the correction visible to the same audience where possible. Quietly deleting a post may leave the false claim circulating in screenshots or forwards. A clear correction that explains what changed helps readers update their understanding and encourages a healthier information environment."],
+"Why Small Daily Habits Often Beat Sudden Motivation": ["If a routine repeatedly fails, reduce friction before increasing pressure. Prepare the materials, change the time or attach the action to a more reliable cue. The most useful routine is not the most impressive one on paper; it is the one that fits real life and can be sustained."],
+"How to Manage Money When Income Is Irregular": ["When a month goes better than expected, avoid treating the extra money as automatically available for new spending. Check upcoming bills, replenish any emergency reserve and plan for predictable costs that do not arrive every month. A little preparation during stronger periods can make a weaker period less disruptive."],
+"How to Protect Your Digital Privacy on a Phone": ["Make a simple response plan before something goes wrong. Know how to contact your network provider, lock the device, sign out of important accounts and alert your bank if financial access may be exposed. Keep emergency contact details somewhere you can reach without relying on the missing phone."],
+"How to Have Better Conversations During Disagreements": ["After a difficult conversation, consider whether the issue was resolved, paused or simply avoided. If a practical agreement was made, write down the next step so both people share the same understanding. If the discussion became unsafe, do not force another meeting without support and a plan for safety."],
+"What Critical Thinking Really Means in Everyday Life": ["A careful thinker is willing to say when the evidence is incomplete. This is not indecision; it is an honest description of what is known at that moment. When new information arrives, update the conclusion and explain why it changed rather than defending an earlier position out of pride."],
+"How to Learn Difficult Subjects Without Burning Out": ["A balanced plan includes time to consolidate learning, not only time to cover new material. At the end of a study block, write a short explanation of what you learned and one question that remains. This creates a clear starting point for the next session and makes progress easier to see."],
+"How to Make Better Decisions With Limited Information": ["For decisions involving other people, explain what is known and what remains uncertain. Avoid presenting estimates as promises. Clear communication gives others a chance to contribute missing information and reduces the risk that they will make plans based on confidence you do not actually have."],
+"How to Build a Simple Personal Knowledge System": ["Keep the system portable and backed up. Export important notes periodically and use ordinary formats where possible so your information is not trapped in one app. Protect private notes with appropriate device security, and avoid collecting personal information about others unless there is a clear, legitimate reason."],
+"How to Evaluate an Online Course Before Paying": ["A short trial can be more informative than a long sales page. Complete a sample lesson, try the platform on the device and network you expect to use, and see whether the instructor explains concepts clearly. If the provider refuses to show any meaningful sample or transparent terms, consider that a reason to wait."],
+"How to Prepare for a Job Interview With Confidence": ["Remember that an interview is also your opportunity to assess the employer. Ask about the actual duties, supervision, training, working conditions and how success will be measured. A clear answer helps you decide whether the job matches what was advertised and whether the expectations are reasonable."],
+"Understanding Your Digital Footprint and Online Reputation": ["A positive reputation is built through patterns rather than a single polished profile. Keep public claims accurate, credit other people's work and respond to criticism without sharing private information. These habits make your online presence more credible and reduce the likelihood that a temporary disagreement becomes a lasting public dispute."],
+"How to Recognise Common Online Job Scams": ["Report suspicious listings through the platform where they appeared and, where appropriate, to relevant consumer-protection or law-enforcement channels in your country. Share a warning with friends or community groups without publishing unverified accusations against a named individual. Preserve evidence so a proper investigation can assess it."],
+"A Practical Guide to Setting Healthy Boundaries": ["A boundary is most useful when it is realistic and enforceable. Avoid making threats you cannot or do not intend to carry out. Decide in advance what practical action you can take, communicate it calmly and seek help when another person repeatedly ignores limits or makes you feel unsafe."],
+"How to Make Better Use of Your Community Library": ["If the library lacks a particular resource, ask staff about alternatives before assuming it cannot be found. They may suggest another branch, a public archive, a legitimate digital collection or an inter-library request. Treat staff as partners in the search and explain the purpose so they can guide you efficiently."]
+}
+
 def slug(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")[:90] or "article"
 
@@ -201,8 +223,16 @@ def load_index():
         return []
 
 
+
+def article_word_count(path: Path) -> int:
+    raw = path.read_text(encoding="utf-8", errors="replace")
+    raw = re.sub(r"(?is)<style\\b.*?</style>|<script\\b.*?</script>", " ", raw)
+    plain = html.unescape(re.sub(r"<[^>]+>", " ", raw))
+    return len(re.findall(r"[\\w’'-]+", plain, flags=re.UNICODE))
+
+
 def article_body(title: str) -> list[str]:
-    return CONTENT.get(title, []) + EXTENSIONS.get(title, [])
+    return CONTENT.get(title, []) + EXTENSIONS.get(title, []) + EXTRA_EXTENSIONS.get(title, [])
 
 
 def validate_article(title: str, paragraphs: list[str]) -> list[str]:
