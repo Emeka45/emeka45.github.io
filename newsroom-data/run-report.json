@@ -1,24 +1,13 @@
 {
-  "started_utc": "2026-11-20T11:59:23.814196+00:00",
-  "finished_utc": "2026-11-20T11:59:46.772817+00:00",
+  "started_utc": "2026-11-20T12:03:11.771237+00:00",
+  "finished_utc": "2026-11-20T12:03:27.921774+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
-  "feed_success_count": 28,
-  "feed_failure_count": 2,
-  "feed_failures": [
-    {
-      "category": "Religion & Faith",
-      "url": "https://news.google.com/rss/search?q=Nigeria+Christianity+church+faith+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
-      "error": "HTTP Error 503: Service Unavailable"
-    },
-    {
-      "category": "Entertainment & Lifestyle",
-      "url": "https://news.google.com/rss/search?q=Nigeria+entertainment+celebrity+music+when:7d&hl=en-NG&gl=NG&ceid=NG:en",
-      "error": "HTTP Error 503: Service Unavailable"
-    }
-  ],
-  "total_items": 314,
-  "fresh_items": 279,
+  "feed_success_count": 30,
+  "feed_failure_count": 0,
+  "feed_failures": [],
+  "total_items": 354,
+  "fresh_items": 317,
   "corroborated_candidates": 0,
   "published_count": 0,
   "published_titles": [],
