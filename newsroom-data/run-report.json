@@ -1,21 +1,27 @@
 {
-  "started_utc": "2026-11-19T10:58:09.988055+00:00",
-  "finished_utc": "2026-11-19T10:58:35.708845+00:00",
+  "started_utc": "2026-11-20T10:46:13.609507+00:00",
+  "finished_utc": "2026-11-20T10:46:47.794980+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
-  "feed_success_count": 30,
-  "feed_failure_count": 0,
-  "feed_failures": [],
-  "total_items": 354,
-  "fresh_items": 335,
-  "corroborated_candidates": 10,
+  "feed_success_count": 29,
+  "feed_failure_count": 1,
+  "feed_failures": [
+    {
+      "category": "Religion & Faith",
+      "url": "https://nscia.com.ng/category/news/feed/",
+      "error": "<urlopen error timed out>"
+    }
+  ],
+  "total_items": 345,
+  "fresh_items": 325,
+  "corroborated_candidates": 8,
   "published_count": 5,
   "published_titles": [
-    "Grand Theft Auto VI: The Ars Technica review",
-    "Bancroft sandpaper claims heap pressure on Cummins",
-    "All Cheat Codes in GTA 6",
-    "Ted Cruz-led committee approves Trump FCC nominee 15-0 as Democrats boycott vote",
-    "Bayelsa Police Arrest Pastor Over Alleged Sexual Abuse Of Two Minors"
+    "China faults ICJ ruling on Myanmar’s Rohingya genocide",
+    "California targets Nvidia in China AI chip probe",
+    "GTA 6 Shows Why You Should Never, Ever, Ever Text and Drive (Ever)",
+    "Fiona the hippo dies after failed effort to remove swallowed hat",
+    "Trump, Putin and Xi release 'peace declaration' after historic meeting"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }

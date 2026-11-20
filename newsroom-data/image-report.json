@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-11-19T10:58:41.575823+00:00",
+  "finished_utc": "2026-11-20T10:46:49.688383+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
   "missing_before_run": 5,
@@ -7,44 +7,44 @@
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-11-19-ted-cruz-led-committee-approves-trump-fcc-nominee-15-0-as-democrats-boycott-vote-9704deccdc.html",
-      "image": "news/images/2026-11-19-ted-cruz-led-committee-approves-trump-fcc-nominee-15-0-as-democrats-boycott-vote-9704deccdc-source.jpg",
-      "bytes": 83160,
+      "article": "2026-11-20-trump-putin-and-xi-release-peace-declaration-after-historic-meeting-04448784d7.html",
+      "image": "news/images/2026-11-20-trump-putin-and-xi-release-peace-declaration-after-historic-meeting-04448784d7-source.jpg",
+      "bytes": 82499,
       "provider": "Original news source",
-      "source_url": "https://arstechnica.com/tech-policy/2026/11/ted-cruz-led-committee-approves-trump-fcc-nominee-15-0-as-democrats-boycott-vote/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2025/01/ted-cruz-1152x648-1738093202.jpg"
+      "source_url": "https://www.bbc.co.uk/news/articles/c623j4ln97x7o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/56c4/live/c36d8970-e448-11f1-a094-5fdc692f3e33.jpg"
     },
     {
-      "article": "2026-11-19-grand-theft-auto-vi-the-ars-technica-review-276c11e1f6.html",
-      "image": "news/images/2026-11-19-grand-theft-auto-vi-the-ars-technica-review-276c11e1f6-source.jpg",
-      "bytes": 98069,
+      "article": "2026-11-20-gta-6-shows-why-you-should-never-ever-ever-text-and-drive-ever-d004463814.html",
+      "image": "news/images/2026-11-20-gta-6-shows-why-you-should-never-ever-ever-text-and-drive-ever-d004463814-source.jpg",
+      "bytes": 115059,
       "provider": "Original news source",
-      "source_url": "https://arstechnica.com/gaming/2026/11/grand-theft-auto-vi-the-ars-technica-review/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/Grand-Theft-Auto-VI_20261102162743-1152x648-1794953901.jpg"
+      "source_url": "https://www.polygon.com/gta-6-texting-and-driving/",
+      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/grand-theft-auto-6-jason-driving.jpg?w=1600&h=900&fit=crop"
     },
     {
-      "article": "2026-11-19-bayelsa-police-arrest-pastor-over-alleged-sexual-abuse-of-two-minors-a3513cc49a.html",
-      "image": "news/images/2026-11-19-bayelsa-police-arrest-pastor-over-alleged-sexual-abuse-of-two-minors-a3513cc49a-source.jpg",
-      "bytes": 103425,
+      "article": "2026-11-20-fiona-the-hippo-dies-after-failed-effort-to-remove-swallowed-hat-9ac944bbdb.html",
+      "image": "news/images/2026-11-20-fiona-the-hippo-dies-after-failed-effort-to-remove-swallowed-hat-9ac944bbdb-source.jpg",
+      "bytes": 65362,
       "provider": "Original news source",
-      "source_url": "https://thereporter.com.ng/bayelsa-police-arrest-pastor-alleged-sexual-abuse-two-minors",
-      "image_url": "https://dailytrust.com/wp-content/uploads/2023/07/Police-logo.png"
+      "source_url": "https://www.bbc.co.uk/news/articles/cwz0k3172xzko?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/ff3b/live/b1a3a370-e464-11f1-99a1-253766e7ad8b.jpg"
     },
     {
-      "article": "2026-11-19-bancroft-sandpaper-claims-heap-pressure-on-cummins-c874193e9e.html",
-      "image": "news/images/2026-11-19-bancroft-sandpaper-claims-heap-pressure-on-cummins-c874193e9e-source.jpg",
-      "bytes": 105996,
+      "article": "2026-11-20-china-faults-icj-ruling-on-myanmar-s-rohingya-genocide-1a550098cb.html",
+      "image": "news/images/2026-11-20-china-faults-icj-ruling-on-myanmar-s-rohingya-genocide-1a550098cb-source.jpg",
+      "bytes": 59112,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/sport/cricket/articles/cmqlqdevgl9ro?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/fb1d/live/c5d2fbf0-e330-11f1-9c56-6ffaf0e1e706.jpg"
+      "source_url": "https://punchng.com/china-faults-icj-ruling-on-myanmars-rohingya-genocide/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://punchng.com/wp-content/uploads/2026/06/china-4594413_1280-1200x630.webp"
     },
     {
-      "article": "2026-11-19-all-cheat-codes-in-gta-6-16e6ea4f72.html",
-      "image": "news/images/2026-11-19-all-cheat-codes-in-gta-6-16e6ea4f72-source.jpg",
-      "bytes": 128605,
+      "article": "2026-11-20-california-targets-nvidia-in-china-ai-chip-probe-164a5f698f.html",
+      "image": "news/images/2026-11-20-california-targets-nvidia-in-china-ai-chip-probe-164a5f698f-source.jpg",
+      "bytes": 51003,
       "provider": "Original news source",
-      "source_url": "https://www.polygon.com/gta-6-cheat-codes-list-unlock/",
-      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/gta-6-jasopn-lucia-bank-robbery.jpg?w=1600&h=900&fit=crop"
+      "source_url": "https://www.bbc.co.uk/news/articles/cqn70vxp5p4no?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/2b75/live/e227dc20-e46c-11f1-950d-9b3226707024.jpg"
     }
   ],
   "openverse_photos": [],
