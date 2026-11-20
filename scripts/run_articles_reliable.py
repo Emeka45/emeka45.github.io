@@ -34,6 +34,10 @@ TOPICS = [
     ("How to Recognise Common Online Job Scams", "Practical Explainers"),
     ("A Practical Guide to Setting Healthy Boundaries", "Relationships & Family"),
     ("How to Make Better Use of Your Community Library", "Education"),
+    ("How to Write a Clear CV When You Have Little Experience", "Money & Work"),
+    ("What to Check Before Renting a Room or Apartment", "Practical Explainers"),
+    ("How to Build a Personal Budget You Can Maintain", "Money & Work"),
+    ("How to Read a Contract Before You Sign", "Practical Explainers"),
 ]
 
 CONTENT = {
@@ -163,6 +167,36 @@ CONTENT = {
 "Use the library as a place for focused learning. Set a clear goal for each visit, bring a list of questions and record the title or source of useful information. Respect shared study spaces and follow local rules about devices, food and noise.",
 "Support the library by returning borrowed materials on time, treating shared resources carefully and sharing accurate information about its services. If a book or resource is missing, ask whether an inter-library request or another legitimate source is available."
 ],
+
+"How to Write a Clear CV When You Have Little Experience": [
+"A CV is a short, organised account of what you can contribute to a role. When formal work experience is limited, it can still show education, practical skills, volunteering, projects and responsibilities that demonstrate reliability. The aim is to make relevant evidence easy for an employer to find.",
+"Begin with accurate contact details and a brief profile tailored to the kind of work you are seeking. Avoid vague claims such as being the best candidate. Mention relevant strengths and support them later with examples from school, community activities or personal projects.",
+"List education and training clearly, including the institution, qualification and dates where appropriate. Describe relevant coursework, practical assignments or short courses and what you produced. Do not present an unfinished qualification as completed or invent certificates.",
+"Use a skills section that is specific to the vacancy. Digital skills, communication, customer service, writing and record keeping are more useful when linked to a real example. Explain how you organised an event or handled records rather than simply writing 'good organiser'.",
+"Keep the layout simple and easy to scan. Use consistent headings, readable fonts and reverse chronological order for dated experience. Check spelling, dates and phone numbers, then save the document in the format requested by the employer. A truthful, focused CV is stronger than unsupported claims."
+],
+"What to Check Before Renting a Room or Apartment": [
+"Finding a place to rent involves more than comparing the monthly price. A room or apartment may look suitable during a brief viewing but create problems later if the terms, facilities, location or responsibilities are unclear. Careful inspection and a written agreement can prevent avoidable disputes.",
+"Visit the property in person where possible and inspect it during daylight. Check doors, windows, locks, water supply, electricity, ventilation, drainage and visible signs of dampness. Ask which facilities are shared and who is responsible for repairs, cleaning and utility costs.",
+"Understand the full cost before paying. Ask about rent, deposits, agency or legal fees, service charges and recurring bills. Request receipts and verify the identity and authority of the person collecting money. Be cautious if pressured to transfer funds before seeing the property.",
+"Read the tenancy terms carefully. Check the length of the tenancy, renewal process, notice period, permitted use, guest rules, repair responsibilities and conditions for returning a deposit. If a clause is unclear, ask for an explanation in writing and consider independent local advice.",
+"Think about daily life around the property. Consider transport, access to work or school, noise, safety, nearby services and utility reliability. Speak with current occupants or neighbours respectfully if possible. Record existing damage with permission and keep copies of the agreement and receipts."
+],
+"How to Build a Personal Budget You Can Maintain": [
+"A useful budget gives income clear jobs before it disappears into untracked spending. It does not need complicated software or perfect predictions. A simple record of money received, essential costs, flexible spending and savings can reveal where adjustments are possible.",
+"Start with income you can reasonably expect, not the most optimistic amount you might earn. If earnings vary, use a conservative estimate and make a separate plan for stronger months. Record when payments are expected so you can match them against bills and obligations.",
+"List essential expenses first, including housing, food, transport, utilities, education, health needs and debt repayments. Then identify flexible costs such as entertainment, subscriptions and optional purchases. Be realistic: a budget that ignores ordinary needs is unlikely to last.",
+"Choose a tracking method you will actually use. A notebook, spreadsheet or trusted budgeting app can work if you record spending consistently. Review totals weekly, compare them with the plan and adjust categories when prices or circumstances change.",
+"Give savings a practical purpose, such as emergencies, school costs, repairs or a planned purchase. Start with an amount that does not prevent you from meeting essential needs. Avoid schemes promising guaranteed high returns or requiring recruitment fees."
+],
+"How to Read a Contract Before You Sign": [
+"A contract records promises, responsibilities and conditions agreed by the people or organisations involved. Signing can create obligations that are difficult or expensive to change later. Before agreeing, understand what the document requires, what you receive in return and what happens if something goes wrong.",
+"Identify the parties and purpose of the agreement. Check that names, addresses, dates and descriptions are accurate. Make sure the person signing for an organisation has authority. If the document refers to attachments, schedules or policies, ask for every referenced part before agreeing.",
+"Read practical obligations carefully. Look for payment amounts, due dates, services to be provided, delivery standards, deadlines, renewal terms and responsibilities for costs or repairs. Words such as must, may, unless and subject to can change how a clause operates.",
+"Check how the agreement can end or change. Understand notice requirements, cancellation charges, refunds, penalties, dispute procedures and automatic renewal. Do not rely on a verbal assurance that contradicts written terms; ask for an agreed change to be recorded.",
+"Never sign a blank page or a document you have not been allowed to read. Ask questions and request time to consider unclear clauses. For important employment, tenancy, business or financial agreements, independent legal advice may be worthwhile. Legal effect depends on applicable law and the facts."
+],
+
 }
 
 
@@ -185,6 +219,28 @@ EXTENSIONS = {
 "How to Recognise Common Online Job Scams": ["Watch for recruitment messages that move quickly from an interview to requests for money or sensitive documents. Check whether the email domain matches the employer's real website and whether the recruiter can be verified through an independently found company contact. A copied logo is not proof.", "If you have paid, contact your bank or payment provider immediately and preserve receipts, account names, phone numbers and messages. Do not pay a second person who promises recovery for an advance fee; recovery scams often target the same victims."],
 "A Practical Guide to Setting Healthy Boundaries": ["Expect that a boundary may need to be repeated, especially when a pattern has existed for a long time. Keep the message brief and focus on the action you will take rather than trying to force agreement. You can end a call that becomes abusive or decline an unsafe request.", "Review boundaries as responsibilities change. A limit that works during a quiet period may need adjustment during exams, caregiving or demanding work. Communicate changes early and make room for reasonable reciprocal needs without surrendering safety or dignity."],
 "How to Make Better Use of Your Community Library": ["Ask whether the library provides digital catalogues, learning databases, public computers or services that can be used outside the building. Some libraries also host reading groups and literacy programmes. A short conversation with staff can reveal services that are not obvious from the shelves.", "Use more than one source when researching. Library books can provide background, while current official publications may be needed for recent rules or statistics. Record author, title, publisher and date so you can locate the source again."]
+
+"How to Write a Clear CV When You Have Little Experience": [
+"Read the vacancy and move the most relevant evidence higher on the page. Use action words to describe what you did, but keep the description accurate. If you worked in a team, explain your own contribution rather than claiming responsibility for the entire result.",
+"Ask someone you trust to review the CV for clarity and errors. Remove personal details that are not requested, and never include passwords, bank information or identity numbers. Tailoring a CV means highlighting genuine relevance, not changing facts to match an advert.",
+"If you have no formal employment history, use a section called projects, volunteering or relevant experience. Describe real tasks such as tutoring, organising, helping customers in a family business or completing a school project. Be ready to explain each example honestly."
+],
+"What to Check Before Renting a Room or Apartment": [
+"Confirm how access and security work. Ask who holds keys, how visitors are handled and who to contact during an urgent repair. A clear process matters especially where several tenants share a building or facilities.",
+"Do not rely only on photographs or messages from an online listing. Scammers can copy genuine property images and claim to represent an owner. Verify the property and agent independently, and use traceable payment methods with written receipts.",
+"Before moving in, agree on how the condition of the property will be recorded and how maintenance requests should be made. Keep a copy of the inventory and photographs, and report problems promptly in writing."
+],
+"How to Build a Personal Budget You Can Maintain": [
+"Plan for expenses that occur less often than monthly, such as annual fees, school materials, clothing or routine maintenance. Divide an estimated cost into smaller amounts and set them aside when possible so irregular bills do not disrupt the plan.",
+"Treat the budget as a tool for decisions, not a punishment. If an essential cost rises, adjust flexible categories and update the plan. Review progress without shame, and seek trustworthy help if debt or urgent bills become difficult to manage.",
+"Choose one date each week to review the plan. Check the balance available, bills due before the next income and any category that is running over. A short regular review is usually more useful than creating a detailed budget once and never looking at it again."
+],
+"How to Read a Contract Before You Sign": [
+"Look for terms that appear in more than one place and check whether they conflict. Definitions near the beginning may affect later clauses, while an attachment may add charges. If a summary differs from detailed terms, ask which wording governs and request written clarification.",
+"Keep a complete signed copy and messages that explain agreed changes. Note important dates such as renewal, payment and notice deadlines. If a dispute arises, these records help explain what was agreed and when. Do not alter a signed copy yourself.",
+"If the agreement involves significant money, long-term duties or serious personal consequences, take time to obtain independent advice before signing. A qualified adviser can explain how the clauses interact under relevant law. A pause before signing is often easier than undoing an unclear commitment later."
+],
+
 }
 
 
