@@ -213,6 +213,16 @@ def slug(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")[:90] or "article"
 
 
+def date_sort_key(value: str) -> float:
+    value = str(value or "").strip()
+    for fmt in ("%d %b %Y", "%Y-%m-%d", "%Y-%m-%dT%H:%M:%S"):
+        try:
+            return dt.datetime.strptime(value[:19], fmt).timestamp()
+        except ValueError:
+            pass
+    return 0.0
+
+
 def load_index():
     if not INDEX.exists():
         return []
@@ -336,7 +346,7 @@ def main():
             old_entry.update({"file": filename, "title": candidate_title, "summary": summary, "category": candidate_category, "date": now.strftime("%d %b %Y")})
             repaired.append({"title": candidate_title, "file": filename, "word_count": len(" ".join(paragraphs).split())})
         if repaired:
-            entries.sort(key=lambda x: (str(x.get("date", "")), str(x.get("title", ""))), reverse=True)
+            entries.sort(key=lambda x: (date_sort_key(x.get("date", "")), str(x.get("title", ""))), reverse=True)
             INDEX.write_text(json.dumps(entries[:100], ensure_ascii=False, indent=2), encoding="utf-8")
             report = {"finished_utc": now.isoformat(), "mode": "batch-quality-repair", "published": True, "repaired_count": len(repaired), "repaired_articles": repaired, "quality_checks": "passed", "note": "Existing short/template articles were replaced with topic-specific editorial content."}
             REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -363,10 +373,10 @@ def main():
         if chosen is None:
             chosen = next(((t, category) for t, category in TOPICS if t.lower() not in titles), None)
     if chosen is None:
-        report = {"finished_utc": now.isoformat(), "published": False, "reason": "All reviewed topics already exist and pass the repair check; no duplicate article was created."}
+        report = {"finished_utc": now.isoformat(), "published": False, "reason": "The reviewed editorial queue is exhausted. Add and review new topic-specific content before the next scheduled publication."}
         REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
         print(json.dumps(report, ensure_ascii=False, indent=2))
-        return
+        raise SystemExit(3)
 
     title, category = chosen
     if category_override and requested:
