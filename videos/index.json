@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T11:58:55.127753+00:00",
+  "updated_at": "2026-11-20T12:00:18.920500+00:00",
   "videos": [
     {
       "video_id": "9nqUQ3_De28",
@@ -304,6 +304,38 @@
       "is_short": true,
       "description": "Milo J performs \"Ama De Mi Sol\" in a special COLORS MOMENT for the music channel COLORS.",
       "published_by_pipeline_at": "2026-11-20T10:48:36.451005+00:00"
+    },
+    {
+      "video_id": "mjzTY52VUjQ",
+      "title": "Can art help you find yourself again? | Phil Jackson | TEDxArlington Heights",
+      "category": "Ideas & Conversations",
+      "channel": "TED",
+      "channel_id": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+      "channel_url": "https://www.youtube.com/channel/UCsT0YIqwnpJCM-mx7-gSA4Q",
+      "url": "https://www.youtube.com/watch?v=mjzTY52VUjQ",
+      "embed_url": "https://www.youtube-nocookie.com/embed/mjzTY52VUjQ",
+      "thumbnail": "https://i.ytimg.com/vi/mjzTY52VUjQ/hqdefault.jpg",
+      "published_at": "2026-11-19T17:37:39+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "In this TEDx talk from the Ideas & Conversations channel, speaker Phil Jackson explores whether art can help individuals rediscover themselves.",
+      "published_by_pipeline_at": "2026-11-20T12:00:17.356998+00:00"
+    },
+    {
+      "video_id": "wQ5BWeCdWY4",
+      "title": "Why the best stories are polarizing | Maryam Mehrtash | TEDxArlington Heights",
+      "category": "Ideas & Conversations",
+      "channel": "TED",
+      "channel_id": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+      "channel_url": "https://www.youtube.com/channel/UCsT0YIqwnpJCM-mx7-gSA4Q",
+      "url": "https://www.youtube.com/watch?v=wQ5BWeCdWY4",
+      "embed_url": "https://www.youtube-nocookie.com/embed/wQ5BWeCdWY4",
+      "thumbnail": "https://i.ytimg.com/vi/wQ5BWeCdWY4/hqdefault.jpg",
+      "published_at": "2026-11-19T17:37:00+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "In this TEDx talk from the Ideas & Conversations channel, Maryam Mehrtash explores why the most compelling and effective stories naturally tend to be polarizing.",
+      "published_by_pipeline_at": "2026-11-20T12:00:18.295733+00:00"
     },
     {
       "video_id": "vWxm1G-d900",
@@ -784,6 +816,22 @@
       "is_short": false,
       "description": "Watch Yuki Chiba perform \"SIDE A/SIDE B\" in this musical presentation from the COLORS channel, captured in a concise video card.",
       "published_by_pipeline_at": "2026-11-18T10:56:26.042393+00:00"
+    },
+    {
+      "video_id": "AUZOZNMPhk0",
+      "title": "Nuclear Scientist Answers Nuclear Physics Questions",
+      "category": "Technology & Ideas",
+      "channel": "WIRED",
+      "channel_id": "UCftwRNsjfRo08xYE31tkiyw",
+      "channel_url": "https://www.youtube.com/channel/UCftwRNsjfRo08xYE31tkiyw",
+      "url": "https://www.youtube.com/watch?v=AUZOZNMPhk0",
+      "embed_url": "https://www.youtube-nocookie.com/embed/AUZOZNMPhk0",
+      "thumbnail": "https://i.ytimg.com/vi/AUZOZNMPhk0/hqdefault.jpg",
+      "published_at": "2026-11-17T17:00:05+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "In this Technology and Ideas video from WIRED, a nuclear scientist answers questions about nuclear physics.",
+      "published_by_pipeline_at": "2026-11-20T12:00:18.837272+00:00"
     },
     {
       "video_id": "FmvRhxq2oHE",
@@ -1520,6 +1568,22 @@
       "is_short": true,
       "description": "COLORS — Danielle Ponder | A COLORS MOMENT. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-11-14T09:41:58.531362+00:00"
+    },
+    {
+      "video_id": "2-8DSSlZoHg",
+      "title": "Professor Fact Checks Ancient Greece Slop",
+      "category": "Technology & Ideas",
+      "channel": "WIRED",
+      "channel_id": "UCftwRNsjfRo08xYE31tkiyw",
+      "channel_url": "https://www.youtube.com/channel/UCftwRNsjfRo08xYE31tkiyw",
+      "url": "https://www.youtube.com/watch?v=2-8DSSlZoHg",
+      "embed_url": "https://www.youtube-nocookie.com/embed/2-8DSSlZoHg",
+      "thumbnail": "https://i.ytimg.com/vi/2-8DSSlZoHg/hqdefault.jpg",
+      "published_at": "2026-11-13T17:00:13+00:00",
+      "source": "YouTube channel feed",
+      "is_short": false,
+      "description": "WIRED — Professor Fact Checks Ancient Greece Slop. Watch the original video on YouTube.",
+      "published_by_pipeline_at": "2026-11-20T12:00:18.920375+00:00"
     },
     {
       "video_id": "qvvgDQamby4",
@@ -2336,70 +2400,6 @@
       "is_short": true,
       "description": "Hillsong Worship — As You Are. Watch the original video on YouTube.",
       "published_by_pipeline_at": "2026-11-10T10:39:45.870134+00:00"
-    },
-    {
-      "video_id": "-aSSceKnJkg",
-      "title": "Black Clover 2nd Season Ending \"Yellow Brick Road\" by ONE OR EIGHT",
-      "category": "Anime",
-      "channel": "Crunchyroll",
-      "channel_id": "UC6pGDc4bFGD1_36IKv3FnYg",
-      "channel_url": "https://www.youtube.com/channel/UC6pGDc4bFGD1_36IKv3FnYg",
-      "url": "https://www.youtube.com/watch?v=-aSSceKnJkg",
-      "embed_url": "https://www.youtube-nocookie.com/embed/-aSSceKnJkg",
-      "thumbnail": "https://i.ytimg.com/vi/-aSSceKnJkg/hqdefault.jpg",
-      "published_at": "2026-11-10T00:00:17+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Watch the second season ending",
-      "published_by_pipeline_at": "2026-11-10T10:39:37.215014+00:00"
-    },
-    {
-      "video_id": "I-_ZdgNllJg",
-      "title": "Typhon - Go Nuts",
-      "category": "Music",
-      "channel": "Trap Nation",
-      "channel_id": "UCa10nxShhzNrCE1o2ZOPztg",
-      "channel_url": "https://www.youtube.com/channel/UCa10nxShhzNrCE1o2ZOPztg",
-      "url": "https://www.youtube.com/watch?v=I-_ZdgNllJg",
-      "embed_url": "https://www.youtube-nocookie.com/embed/I-_ZdgNllJg",
-      "thumbnail": "https://i.ytimg.com/vi/I-_ZdgNllJg/hqdefault.jpg",
-      "published_at": "2026-11-09T22:14:08+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Experience the electronic track \"Go Nuts\" by Typhon, brought to you by the popular music channel Trap Nation in this dynamic video.",
-      "published_by_pipeline_at": "2026-11-10T10:39:37.810406+00:00"
-    },
-    {
-      "video_id": "axzdyAqXd_I",
-      "title": "She One Shot The Final Boss With a Beginner Spell | The World's Strongest Witch",
-      "category": "Anime",
-      "channel": "Crunchyroll",
-      "channel_id": "UC6pGDc4bFGD1_36IKv3FnYg",
-      "channel_url": "https://www.youtube.com/channel/UC6pGDc4bFGD1_36IKv3FnYg",
-      "url": "https://www.youtube.com/watch?v=axzdyAqXd_I",
-      "embed_url": "https://www.youtube-nocookie.com/embed/axzdyAqXd_I",
-      "thumbnail": "https://i.ytimg.com/vi/axzdyAqXd_I/hqdefault.jpg",
-      "published_at": "2026-11-09T22:00:16+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "Watch a powerful anime scene on Crunchyroll where a skilled witch effortlessly defeats the final boss using a basic beginner spell in this featured video.",
-      "published_by_pipeline_at": "2026-11-10T10:39:38.407904+00:00"
-    },
-    {
-      "video_id": "BRxVLWT-myU",
-      "title": "How success can kill innovation—and how to fix it | Josemaria Siota | TEDxIESEBarcelona",
-      "category": "Ideas & Conversations",
-      "channel": "TED",
-      "channel_id": "UCsT0YIqwnpJCM-mx7-gSA4Q",
-      "channel_url": "https://www.youtube.com/channel/UCsT0YIqwnpJCM-mx7-gSA4Q",
-      "url": "https://www.youtube.com/watch?v=BRxVLWT-myU",
-      "embed_url": "https://www.youtube-nocookie.com/embed/BRxVLWT-myU",
-      "thumbnail": "https://i.ytimg.com/vi/BRxVLWT-myU/hqdefault.jpg",
-      "published_at": "2026-11-09T18:00:38+00:00",
-      "source": "YouTube channel feed",
-      "is_short": false,
-      "description": "TED — How success can kill innovation—and how to fix it | Josemaria Siota | TEDxIESEBarcelona. Watch the original video on YouTube.",
-      "published_by_pipeline_at": "2026-11-10T10:39:46.099477+00:00"
     }
   ]
 }

@@ -1,20 +1,11 @@
 {
-  "finished_utc": "2026-11-20T11:58:15.830844+00:00",
+  "finished_utc": "2026-11-20T11:59:46.867746+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 1,
-  "attempted": 1,
+  "missing_before_run": 0,
+  "attempted": 0,
   "generated": [],
-  "source_photos": [
-    {
-      "article": "2026-11-20-warren-spector-lambasts-gta-6-s-billion-dollar-development-i-just-hope-it-s-is-the-last-of-fc77a57950.html",
-      "image": "news/images/2026-11-20-warren-spector-lambasts-gta-6-s-billion-dollar-development-i-just-hope-it-s-is-the-last-of-fc77a57950-source.jpg",
-      "bytes": 117257,
-      "provider": "Original news source",
-      "source_url": "https://www.eurogamer.net/gta-6-warren-spector-lambasts-billion-dollar-development",
-      "image_url": "https://assetsio.gnwcdn.com/gta-6-cash.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
-    }
-  ],
+  "source_photos": [],
   "openverse_photos": [],
   "fallbacks": [],
   "failures": [],
