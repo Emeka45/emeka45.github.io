@@ -1,40 +1,5 @@
 [
   {
-    "file": "a-practical-guide-to-setting-healthy-boundaries.html",
-    "title": "A Practical Guide to Setting Healthy Boundaries",
-    "summary": "Boundaries describe what a person can accept, what they are responsible for and how they will respond when a limit is crossed. They are not a way to control another person's choices; they help make expectations and responsibilities clearer.",
-    "category": "Relationships & Family",
-    "date": "20 Nov 2026"
-  },
-  {
-    "title": "How to Use AI Tools Without Losing Your Own Judgment",
-    "summary": "AI can help you research, learn and create faster—but the best results come when you treat it as a capable assistant, verify important claims and keep your own judgment in charge.",
-    "category": "Technology & Modern Life",
-    "date": "2026-10-21",
-    "file": "how-to-use-ai-tools-without-losing-your-own-judgment.html",
-    "tags": [
-      "AI",
-      "digital literacy",
-      "learning",
-      "technology",
-      "critical thinking"
-    ]
-  },
-  {
-    "title": "How to Check Viral News Before Sharing It",
-    "summary": "A practical guide to checking viral claims, tracing original sources, reading dates carefully and avoiding accidental misinformation online.",
-    "category": "Practical Explainers",
-    "date": "2026-10-21",
-    "file": "how-to-check-viral-news-before-sharing-it.html",
-    "tags": [
-      "misinformation",
-      "fact-checking",
-      "digital literacy",
-      "news",
-      "critical thinking"
-    ]
-  },
-  {
     "file": "why-small-daily-habits-often-beat-sudden-motivation.html",
     "title": "Why Small Daily Habits Often Beat Sudden Motivation",
     "summary": "Motivation can help someone begin a task, but it changes with mood, sleep, stress and circumstances. A habit reduces the number of decisions required by linking an action to a regular cue, making progress less dependent on feeling inspired.",
@@ -105,6 +70,13 @@
     "date": "20 Nov 2026"
   },
   {
+    "file": "how-to-make-better-use-of-your-community-library.html",
+    "title": "How to Make Better Use of Your Community Library",
+    "summary": "A community library can offer more than shelves of books. Depending on the location, it may provide reference materials, study space, newspapers, internet access, children's activities and guidance from staff who know the available resources.",
+    "category": "Education",
+    "date": "20 Nov 2026"
+  },
+  {
     "file": "how-to-make-better-decisions-with-limited-information.html",
     "title": "How to Make Better Decisions With Limited Information",
     "summary": "Many real decisions must be made before every fact is available. Waiting for perfect certainty can itself have a cost, but acting on a guess can create avoidable harm. A useful process distinguishes what is known, what is uncertain and what can still be checked in time.",
@@ -140,10 +112,45 @@
     "date": "20 Nov 2026"
   },
   {
+    "file": "a-practical-guide-to-setting-healthy-boundaries.html",
+    "title": "A Practical Guide to Setting Healthy Boundaries",
+    "summary": "Boundaries describe what a person can accept, what they are responsible for and how they will respond when a limit is crossed. They are not a way to control another person's choices; they help make expectations and responsibilities clearer.",
+    "category": "Relationships & Family",
+    "date": "20 Nov 2026"
+  },
+  {
     "file": "a-practical-guide-to-building-better-study-habits.html",
     "title": "A Practical Guide to Building Better Study Habits",
     "summary": "Effective studying depends less on the number of hours spent with a book open than on what the learner can recall and apply afterwards. A manageable system combines clear objectives, active recall, practice and spaced review.",
     "category": "Education",
     "date": "20 Nov 2026"
+  },
+  {
+    "title": "How to Use AI Tools Without Losing Your Own Judgment",
+    "summary": "AI can help you research, learn and create faster—but the best results come when you treat it as a capable assistant, verify important claims and keep your own judgment in charge.",
+    "category": "Technology & Modern Life",
+    "date": "2026-10-21",
+    "file": "how-to-use-ai-tools-without-losing-your-own-judgment.html",
+    "tags": [
+      "AI",
+      "digital literacy",
+      "learning",
+      "technology",
+      "critical thinking"
+    ]
+  },
+  {
+    "title": "How to Check Viral News Before Sharing It",
+    "summary": "A practical guide to checking viral claims, tracing original sources, reading dates carefully and avoiding accidental misinformation online.",
+    "category": "Practical Explainers",
+    "date": "2026-10-21",
+    "file": "how-to-check-viral-news-before-sharing-it.html",
+    "tags": [
+      "misinformation",
+      "fact-checking",
+      "digital literacy",
+      "news",
+      "critical thinking"
+    ]
   }
 ]
