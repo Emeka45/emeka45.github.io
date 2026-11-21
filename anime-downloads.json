@@ -6,16 +6,17 @@
       "id": "reborn-space-mercenary-2026",
       "kind": "anime",
       "title": "Reborn as a Space Mercenary: I Woke Up Piloting the Strongest Starship!",
-      "description": "Currently airing sci-fi isekai anime. Crunchyroll lists English subtitles. Episodes 1–6 have aired as of 9 November 2026; new subtitled episodes are scheduled weekly. Open the official provider to watch. No authorised public 360p file download has been verified, so this listing does not pretend to offer one.",
+      "description": "Sci-fi isekai anime catalogue entry. The previously attached provider URL did not match this title and has been removed pending source verification. Check an official provider for current availability and English subtitle support.",
       "license": "Commercial copyrighted series — official-provider viewing only; no redistribution rights.",
-      "sourceUrl": "https://www.crunchyroll.com/watch/GE00389230FRFR/mimi-the-girl",
       "catalogueOnly": true,
       "subtitleLanguages": [
         "English"
       ],
       "subtitleRequired": true,
       "releaseSchedule": "Sundays; English-subtitled release schedule listed by Anime Corner",
-      "featured": true
+      "featured": true,
+      "subtitleStatus": "provider-listed",
+      "sourceStatus": "needs-review"
     },
     {
       "id": "morevna-episode-3",
@@ -34,7 +35,8 @@
           "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/a7/Morevna_Episode_3.0.2_%28English%29.webm/Morevna_Episode_3.0.2_%28English%29.webm.360p.vp9.webm?download="
         }
       ],
-      "featured": true
+      "featured": true,
+      "subtitleStatus": "unknown"
     },
     {
       "id": "morevna-demo",
@@ -53,7 +55,8 @@
           "url": "https://archive.org/download/TheBeautifulQueenMaryaMorevnaDemo/demo-20121110-final-1920x1080.ogv?download=1"
         }
       ],
-      "featured": true
+      "featured": true,
+      "subtitleStatus": "unknown"
     },
     {
       "id": "coffee-run",
@@ -75,7 +78,8 @@
           "label": "480p WebM",
           "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/80/Coffee_Run_-_Blender_Open_Movie-full_movie.webm/Coffee_Run_-_Blender_Open_Movie-full_movie.webm.480p.vp9.webm?download="
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "wing-it",
@@ -97,7 +101,8 @@
           "label": "480p WebM",
           "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/3/38/WING_IT%21_-_Blender_Open_Movie-full_movie.webm/WING_IT%21_-_Blender_Open_Movie-full_movie.webm.480p.vp9.webm?download="
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "spring",
@@ -119,7 +124,8 @@
           "label": "480p WebM",
           "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/a5/Spring_-_Blender_Open_Movie.webm/Spring_-_Blender_Open_Movie.webm.480p.vp9.webm?download="
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "charge",
@@ -141,7 +147,8 @@
           "label": "480p WebM",
           "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b5/Charge_-_Blender_Open_Movie-full_movie.webm/Charge_-_Blender_Open_Movie-full_movie.webm.480p.vp9.webm?download="
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "sprite-fright",
@@ -163,7 +170,8 @@
           "label": "480p WebM",
           "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/7/76/Sprite_Fright_-_Blender_Open_Movie-full_movie.webm/Sprite_Fright_-_Blender_Open_Movie-full_movie.webm.480p.vp9.webm?download="
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "caminandes-gran-dillama",
@@ -185,7 +193,8 @@
           "label": "480p WebM",
           "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/7/7c/Caminandes_-_Gran_Dillama_-_Blender_Foundation%27s_new_Open_Movie.webm/Caminandes_-_Gran_Dillama_-_Blender_Foundation%27s_new_Open_Movie.webm.480p.vp9.webm?download="
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "big-buck-bunny",
@@ -203,7 +212,8 @@
           "label": "1080p MOV",
           "url": "https://download.blender.org/demo/movies/BBB/big_buck_bunny_1080p_h264.mov"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "hutong-meow",
@@ -253,10 +263,12 @@
               "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/83/Hutong_Meow.webm/Hutong_Meow.webm.720p.vp9.webm?download="
             }
           ],
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hutong_Meow.webm"
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hutong_Meow.webm",
+          "subtitleStatus": "unknown"
         }
       ],
-      "featured": true
+      "featured": true,
+      "subtitleStatus": "unknown"
     },
     {
       "id": "chinese-new-year-paper-cut-animation",
@@ -284,7 +296,8 @@
               "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/5d/2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C%E5%B9%B4%E2%80%9D%E6%95%85%E4%BA%8B.webm/2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C%E5%B9%B4%E2%80%9D%E6%95%85%E4%BA%8B.webm.480p.vp9.webm?download="
             }
           ],
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C%E5%B9%B4%E2%80%9D%E6%95%85%E4%BA%8B.webm"
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C%E5%B9%B4%E2%80%9D%E6%95%85%E4%BA%8B.webm",
+          "subtitleStatus": "unknown"
         }
       ],
       "downloads": [
@@ -300,7 +313,8 @@
           "label": "480p · clearer picture",
           "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/5d/2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C%E5%B9%B4%E2%80%9D%E6%95%85%E4%BA%8B.webm/2021%E5%B9%B42%E6%9C%8813%E6%97%A5_%E5%BD%93%E5%89%AA%E7%BA%B8%E9%81%87%E8%A7%81%E5%8A%A8%E7%94%BB%EF%BC%9A%E5%90%91%E4%B8%96%E7%95%8C%E8%AE%B2%E8%BF%B0%E4%B8%AD%E5%9B%BD%E2%80%9C%E5%B9%B4%E2%80%9D%E6%95%85%E4%BA%8B.webm.480p.vp9.webm?download="
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "frieren-beyond-journeys-end",
@@ -315,9 +329,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Frieren%3A%20Beyond%20Journey%E2%80%99s%20End",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "solo-leveling",
@@ -332,9 +348,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Solo%20Leveling",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "demon-slayer",
@@ -349,9 +367,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Demon%20Slayer%3A%20Kimetsu%20no%20Yaiba",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "jujutsu-kaisen",
@@ -366,9 +386,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Jujutsu%20Kaisen",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "one-piece",
@@ -383,9 +405,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=One%20Piece",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "naruto",
@@ -400,9 +424,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Naruto",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "bleach",
@@ -417,9 +443,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Bleach",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "my-hero-academia",
@@ -434,9 +462,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=My%20Hero%20Academia",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "spy-family",
@@ -451,9 +481,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=SPY%20x%20FAMILY",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "attack-on-titan",
@@ -468,9 +500,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Attack%20on%20Titan",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "fullmetal-alchemist-brotherhood",
@@ -485,9 +519,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Fullmetal%20Alchemist%3A%20Brotherhood",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "hunter-x-hunter",
@@ -502,9 +538,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Hunter%20x%20Hunter",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "death-note",
@@ -519,9 +557,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Death%20Note",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "dragon-ball",
@@ -536,9 +576,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Dragon%20Ball",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "dragon-ball-z",
@@ -553,9 +595,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Dragon%20Ball%20Z",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "detective-conan",
@@ -570,9 +614,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Detective%20Conan",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "haikyu",
@@ -587,9 +633,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Haikyu!!",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "blue-lock",
@@ -604,9 +652,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Blue%20Lock",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "chainsaw-man",
@@ -621,9 +671,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Chainsaw%20Man",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "vinland-saga",
@@ -638,9 +690,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Vinland%20Saga",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "mob-psycho-100",
@@ -655,9 +709,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Mob%20Psycho%20100",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "one-punch-man",
@@ -672,9 +728,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=One-Punch%20Man",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "black-clover",
@@ -689,9 +747,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Black%20Clover",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "sailor-moon",
@@ -706,9 +766,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Sailor%20Moon",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "studio-ghibli-collection",
@@ -723,9 +785,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Studio%20Ghibli%20films",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-apothecary-diaries",
@@ -740,9 +804,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=The%20Apothecary%20Diaries",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "battle-through-the-heavens",
@@ -757,9 +823,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=Battle%20Through%20the%20Heavens",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "soul-land",
@@ -774,9 +842,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=Soul%20Land",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "soul-land-ii",
@@ -791,9 +861,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=Soul%20Land%20II%3A%20The%20Unrivaled%20Tang%20Sect",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-daily-life-of-the-immortal-king",
@@ -808,9 +880,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Daily%20Life%20of%20the%20Immortal%20King",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "perfect-world",
@@ -825,9 +899,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=Perfect%20World",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "a-will-eternal",
@@ -842,9 +918,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=A%20Will%20Eternal",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "renegade-immortal",
@@ -859,9 +937,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=Renegade%20Immortal",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "swallowed-star",
@@ -876,9 +956,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=Swallowed%20Star",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "throne-of-seal",
@@ -893,9 +975,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=Throne%20of%20Seal",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-magic-chef-of-ice-and-fire",
@@ -910,9 +994,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Magic%20Chef%20of%20Ice%20and%20Fire",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "martial-universe",
@@ -927,9 +1013,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=Martial%20Universe",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-great-ruler",
@@ -944,9 +1032,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Great%20Ruler",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "record-of-a-mortals-journey",
@@ -961,18 +1051,21 @@
           "title": "Episodes 1–176 · English subtitles",
           "description": "Official Made By Bilibili compilation. Use YouTube captions and check regional availability.",
           "videoUrl": "https://www.youtube.com/watch?v=75poX2kfcWs",
-          "sourceUrl": "https://www.youtube.com/@MadeByBilibili"
+          "sourceUrl": "https://www.youtube.com/@MadeByBilibili",
+          "subtitleStatus": "unknown"
         },
         {
           "title": "Episode 192 · Mulan War arc",
           "description": "Official Made By Bilibili episode upload. English-subtitle availability may vary.",
           "videoUrl": "https://www.youtube.com/watch?v=qlodDgpiYhg",
-          "sourceUrl": "https://www.youtube.com/@MadeByBilibili"
+          "sourceUrl": "https://www.youtube.com/@MadeByBilibili",
+          "subtitleStatus": "unknown"
         }
       ],
       "officialWatchUrl": "https://www.youtube.com/watch?v=75poX2kfcWs",
       "posterUrl": "https://i.ytimg.com/vi/75poX2kfcWs/maxresdefault.jpg",
-      "featured": true
+      "featured": true,
+      "subtitleStatus": "unknown"
     },
     {
       "id": "against-the-gods",
@@ -987,9 +1080,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=Against%20the%20Gods",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-galactic-marine",
@@ -1004,9 +1099,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20First%20Order",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "fog-hill-of-five-elements",
@@ -1021,9 +1118,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=Fog%20Hill%20of%20Five%20Elements",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "link-click",
@@ -1038,9 +1137,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=Link%20Click",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "scissor-seven",
@@ -1055,9 +1156,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=Scissor%20Seven",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-outcast",
@@ -1072,9 +1175,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Outcast",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "blades-of-the-guardians",
@@ -1089,9 +1194,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=Blades%20of%20the%20Guardians",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-land-of-miracles",
@@ -1106,9 +1213,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Land%20of%20Miracles",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-island-of-siliang",
@@ -1123,9 +1232,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Island%20of%20Siliang",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-warrior-from-sky",
@@ -1140,9 +1251,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Warrior%20from%20Sky",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "white-cat-legend",
@@ -1157,9 +1270,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=White%20Cat%20Legend",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-ravages-of-time",
@@ -1174,9 +1289,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Ravages%20of%20Time",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "legend-of-exorcism",
@@ -1191,9 +1308,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=Legend%20of%20Exorcism",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "heaven-officials-blessing",
@@ -1208,9 +1327,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=Heaven%20Official%E2%80%99s%20Blessing",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "grandmaster-of-demonic-cultivation",
@@ -1225,9 +1346,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Founder%20of%20Diabolism",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-kings-avatar",
@@ -1242,9 +1365,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20King%E2%80%99s%20Avatar",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-outcast-seasonal",
@@ -1259,9 +1384,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and its available episodes. Offline downloads, where offered, remain subject to the provider’s app, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=Hitori%20no%20Shita%3A%20The%20Outcast",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "oshi-no-ko",
@@ -1276,9 +1403,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Oshi%20no%20Ko",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "your-lie-in-april",
@@ -1293,9 +1422,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Your%20Lie%20in%20April",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "violet-evergarden",
@@ -1310,9 +1441,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Violet%20Evergarden",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "cowboy-bebop",
@@ -1327,9 +1460,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Cowboy%20Bebop",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "code-geass",
@@ -1344,9 +1479,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Code%20Geass",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "steins-gate",
@@ -1361,9 +1498,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Steins%3BGate",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "neon-genesis-evangelion",
@@ -1378,9 +1517,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Neon%20Genesis%20Evangelion",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "psycho-pass",
@@ -1395,9 +1536,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Psycho-Pass",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "tokyo-ghoul",
@@ -1412,9 +1555,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Tokyo%20Ghoul",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "dr-stone",
@@ -1429,9 +1574,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Dr.%20Stone",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "fire-force",
@@ -1446,9 +1593,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Fire%20Force",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "fairy-tail",
@@ -1463,9 +1612,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Fairy%20Tail",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "inuyasha",
@@ -1480,9 +1631,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Inuyasha",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "rurouni-kenshin",
@@ -1497,9 +1650,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Rurouni%20Kenshin",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "initial-d",
@@ -1514,9 +1669,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Initial%20D",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "yuri-on-ice",
@@ -1531,9 +1688,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Yuri!!!%20on%20Ice",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "violet-evergarden-gaiden",
@@ -1548,9 +1707,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Violet%20Evergarden%3A%20Eternity%20and%20the%20Auto%20Memory%20Doll",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "made-in-abyss",
@@ -1565,9 +1726,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Made%20in%20Abyss",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-promised-neverland",
@@ -1582,9 +1745,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=The%20Promised%20Neverland",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "ranking-of-kings",
@@ -1599,9 +1764,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://www.crunchyroll.com/search?q=Ranking%20of%20Kings",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-demon-hunter",
@@ -1616,9 +1783,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Demon%20Hunter",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-eternal-strife",
@@ -1633,9 +1802,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Eternal%20Strife",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-golden-king-of-the-world",
@@ -1650,9 +1821,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Golden%20King%20of%20the%20World",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-sword-of-coming",
@@ -1667,9 +1840,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Sword%20of%20Coming",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-ninth-kind",
@@ -1684,9 +1859,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Ninth%20Kind",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-mirror-twin-cities",
@@ -1701,9 +1878,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Mirror%3A%20Twin%20Cities",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-dragon-prince-yuan",
@@ -1718,9 +1897,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=Dragon%20Prince%20Yuan",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-legend-of-sword-domain",
@@ -1735,9 +1916,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Legend%20of%20Sword%20Domain",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-immortal-ascension",
@@ -1752,9 +1935,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=Immortal%20Ascension",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-unparalleled-black-white",
@@ -1769,9 +1954,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Unparalleled%20Black%20%26%20White",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-god-of-high-school-donghua",
@@ -1786,9 +1973,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20God%20of%20High%20School",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-kingdoms-of-ruin",
@@ -1803,9 +1992,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Kingdoms%20of%20Ruin",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-fire-catcher-lord",
@@ -1820,9 +2011,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Fire%20Catcher%20Lord",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-spirealm",
@@ -1837,9 +2030,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Spirealm",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-snow-eagle-lord",
@@ -1854,9 +2049,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=Snow%20Eagle%20Lord",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-legend-of-condor-hero-donghua",
@@ -1871,9 +2068,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Legend%20of%20the%20Condor%20Heroes%20(Animation)",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-story-of-jianghu",
@@ -1888,9 +2087,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Story%20of%20Jianghu",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-black-troop",
@@ -1905,9 +2106,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Black%20Troop",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-young-brewmaster",
@@ -1922,9 +2125,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=Young%20Brewmaster%E2%80%99s%20Adventure",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "the-legend-of-wei-lan",
@@ -1939,9 +2144,11 @@
           "title": "Official availability & episodes",
           "description": "Open the provider search to find the series and available episodes. Offline downloads, where offered, depend on provider, region and subscription terms.",
           "sourceUrl": "https://search.bilibili.com/all?keyword=The%20Legend%20of%20Wei%20Lan",
-          "downloads": []
+          "downloads": [],
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     },
     {
       "id": "kosys-open-anime",
@@ -1956,40 +2163,47 @@
           "title": "Episode 1 — XP but we have no money",
           "description": "Official episode link published by the series creator.",
           "videoUrl": "https://www.youtube.com/watch?v=a-VzjnKgcVI",
-          "sourceUrl": "https://kosys.opap.jp/story/"
+          "sourceUrl": "https://kosys.opap.jp/story/",
+          "subtitleStatus": "unknown"
         },
         {
           "title": "Episode 2 — Our business system is wrong",
           "description": "Official episode link published by the series creator.",
           "videoUrl": "https://www.youtube.com/watch?v=zNln_gebc68",
-          "sourceUrl": "https://kosys.opap.jp/story/"
+          "sourceUrl": "https://kosys.opap.jp/story/",
+          "subtitleStatus": "unknown"
         },
         {
           "title": "Episode 3.1 — Security perfection (Part 1)",
           "description": "Official episode link published by the series creator.",
           "videoUrl": "https://www.youtube.com/watch?v=Sim3-h5kw4s",
-          "sourceUrl": "https://kosys.opap.jp/story/"
+          "sourceUrl": "https://kosys.opap.jp/story/",
+          "subtitleStatus": "unknown"
         },
         {
           "title": "Episode 3.2 — Security perfection (Part 2)",
           "description": "Official episode link published by the series creator.",
           "videoUrl": "https://www.youtube.com/watch?v=FzuYg6e4naE",
-          "sourceUrl": "https://kosys.opap.jp/story/"
+          "sourceUrl": "https://kosys.opap.jp/story/",
+          "subtitleStatus": "unknown"
         },
         {
           "title": "Episode 3.3 — Security perfection (Part 3)",
           "description": "Official episode link published by the series creator.",
           "videoUrl": "https://www.youtube.com/watch?v=BEHIf9-hfH8",
-          "sourceUrl": "https://kosys.opap.jp/story/"
+          "sourceUrl": "https://kosys.opap.jp/story/",
+          "subtitleStatus": "unknown"
         },
         {
           "title": "Episode 3.4 — Security perfection (Part 4)",
           "description": "Official episode link published by the series creator.",
           "videoUrl": "https://www.youtube.com/watch?v=YHvzxVRL3E8",
-          "sourceUrl": "https://kosys.opap.jp/story/"
+          "sourceUrl": "https://kosys.opap.jp/story/",
+          "subtitleStatus": "unknown"
         }
       ],
-      "featured": true
+      "featured": true,
+      "subtitleStatus": "unknown"
     },
     {
       "id": "morevna-episode-4",
@@ -2000,7 +2214,8 @@
       "sourceUrl": "https://morevnaproject.org/anime/episode-4/",
       "officialWatchUrl": "https://morevnaproject.org/anime/episode-4/",
       "catalogueOnly": true,
-      "featured": true
+      "featured": true,
+      "subtitleStatus": "unknown"
     },
     {
       "id": "tales-of-herding-gods",
@@ -2018,9 +2233,11 @@
           "title": "Episode 86 · Bring Disaster to the Nation and People",
           "description": "Official Made By Bilibili upload. Check the YouTube player for captions and territorial availability.",
           "videoUrl": "https://www.youtube.com/watch?v=I_NFA0zbYDM",
-          "sourceUrl": "https://www.youtube.com/@MadeByBilibili"
+          "sourceUrl": "https://www.youtube.com/@MadeByBilibili",
+          "subtitleStatus": "unknown"
         }
-      ]
+      ],
+      "subtitleStatus": "unknown"
     }
   ]
 }
