@@ -60,15 +60,13 @@ def main():
             errors.append(f"{label}: subtitleLanguages must be an array")
         if item.get("subtitleStatus") == "verified":
             declared = any(str(lang).lower().startswith("en") for lang in item.get("subtitleLanguages", []))
-            episodes = item.get("episodes", [])
-            track_verified = any(
-                isinstance(ep, dict)
-                and ep.get("subtitleStatus") == "verified"
-                and has_english_track(ep.get("subtitles", []))
-                for ep in episodes
-            )
-            if not declared and not track_verified:
-                errors.append(f"{label}: verified English subtitles require an English language declaration or verified episode track")
+            evidence_ok = is_https_url(item.get("subtitleEvidence", "")) and bool(item.get("subtitleCheckedAt"))
+            if not declared or not evidence_ok:
+                errors.append(f"{label}: verified English subtitles require English language metadata, an HTTPS evidence URL and subtitleCheckedAt")
+        episodes = item.get("episodes", [])
+        for ep_index, ep in enumerate(episodes if isinstance(episodes, list) else []):
+            if isinstance(ep, dict) and ep.get("subtitleStatus") == "verified" and not has_english_track(ep.get("subtitles", [])):
+                errors.append(f"{label} episode {ep_index + 1}: verified subtitles require a real English HTTPS subtitle track")
         for field in ("sourceUrl", "posterUrl"):
             value = item.get(field)
             if value and not is_https_url(value):
