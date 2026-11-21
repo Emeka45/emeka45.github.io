@@ -1,27 +1,19 @@
 {
-  "started_utc": "2026-11-21T09:02:54.887657+00:00",
-  "finished_utc": "2026-11-21T09:03:29.891588+00:00",
+  "started_utc": "2026-11-21T10:29:38.688761+00:00",
+  "finished_utc": "2026-11-21T10:29:55.913508+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
-  "feed_success_count": 29,
-  "feed_failure_count": 1,
-  "feed_failures": [
-    {
-      "category": "Religion & Faith",
-      "url": "https://nscia.com.ng/category/news/feed/",
-      "error": "<urlopen error timed out>"
-    }
-  ],
-  "total_items": 346,
-  "fresh_items": 324,
-  "corroborated_candidates": 7,
-  "published_count": 5,
+  "feed_success_count": 30,
+  "feed_failure_count": 0,
+  "feed_failures": [],
+  "total_items": 355,
+  "fresh_items": 325,
+  "corroborated_candidates": 3,
+  "published_count": 3,
   "published_titles": [
-    "Tech stock sell-off drags markets down as Anthropic shares slide",
-    "Everything We Know About GTA 7",
-    "NUC approves Oyinlola’s university in Osun",
-    "Who is Johannes Zuch supposed to be in GTA 6?",
-    "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude"
+    "Fossil fuel row stalls COP31 climate deal",
+    "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
+    "Rockstar says GTA VI made $3.79 billion in its first day"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }
