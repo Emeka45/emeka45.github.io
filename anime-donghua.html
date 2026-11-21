@@ -56,7 +56,7 @@ function render(){
  const hasDownload=x=>(x.downloads||[]).length||(x.episodes||[]).some(ep=>(ep.downloads||[]).length);
  const hasWatch=x=>(x.episodes||[]).some(ep=>ep.videoUrl||ep.watchUrl);
  if(state.filter==='subtitled')rows=rows.filter(x=>englishSubtitleStatus(x)==='verified');
- if(state.filter==='watch')rows=rows.filter(x=>hasWatch(x)||((x.episodes||[]).some(ep=>(ep.downloads||[]).some(d=>mediaUrl(d.url))));
+ if(state.filter==='watch')rows=rows.filter(x=>hasWatch(x)||((x.episodes||[]).some(ep=>(ep.downloads||[]).some(d=>mediaUrl(d.url)))));
  if(state.filter==='download')rows=rows.filter(hasDownload);
  if(state.filter==='official')rows=rows.filter(x=>x.catalogueOnly);
  rows.sort((a,b)=>state.sort==='az'?a.title.localeCompare(b.title):state.sort==='za'?b.title.localeCompare(a.title):Number(!!b.featured)-Number(!!a.featured)||a.title.localeCompare(b.title));
