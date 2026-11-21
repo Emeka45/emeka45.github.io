@@ -1,0 +1,31 @@
+name: Validate Anime and Donghua Catalogue
+
+on:
+  push:
+    paths:
+      - "anime-downloads.json"
+      - "anime-donghua.html"
+      - "scripts/validate_anime_catalog.py"
+      - ".github/workflows/validate-anime-catalog.yml"
+  pull_request:
+    paths:
+      - "anime-downloads.json"
+      - "anime-donghua.html"
+      - "scripts/validate_anime_catalog.py"
+      - ".github/workflows/validate-anime-catalog.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-catalogue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Validate catalogue data
+        run: python scripts/validate_anime_catalog.py
