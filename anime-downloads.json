@@ -9,13 +9,11 @@
       "description": "Sci-fi isekai anime catalogue entry. The previously attached provider URL did not match this title and has been removed pending source verification. Check an official provider for current availability and English subtitle support.",
       "license": "Commercial copyrighted series — official-provider viewing only; no redistribution rights.",
       "catalogueOnly": true,
-      "subtitleLanguages": [
-        "English"
-      ],
+      "subtitleLanguages": [],
       "subtitleRequired": true,
       "releaseSchedule": "Sundays; English-subtitled release schedule listed by Anime Corner",
       "featured": true,
-      "subtitleStatus": "provider-listed",
+      "subtitleStatus": "unknown",
       "sourceStatus": "needs-review"
     },
     {
