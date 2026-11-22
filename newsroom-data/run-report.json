@@ -1,19 +1,21 @@
 {
-  "started_utc": "2026-11-21T10:29:38.688761+00:00",
-  "finished_utc": "2026-11-21T10:29:55.913508+00:00",
+  "started_utc": "2026-11-22T10:34:04.871858+00:00",
+  "finished_utc": "2026-11-22T10:34:18.927582+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 355,
-  "fresh_items": 325,
-  "corroborated_candidates": 3,
-  "published_count": 3,
+  "fresh_items": 327,
+  "corroborated_candidates": 8,
+  "published_count": 5,
   "published_titles": [
-    "Fossil fuel row stalls COP31 climate deal",
-    "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
-    "Rockstar says GTA VI made $3.79 billion in its first day"
+    "Three killed and dozens missing after fire at Indonesian factory",
+    "South Korea education minister resigns over exam cheating scandal",
+    "The FBI and USDA were reportedly hacked",
+    "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
+    "Police arrest two nephews over killing of 70-year-old uncle in Bauchi"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }

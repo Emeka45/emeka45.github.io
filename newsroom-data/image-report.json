@@ -1,34 +1,50 @@
 {
-  "finished_utc": "2026-11-21T10:29:56.760935+00:00",
+  "finished_utc": "2026-11-22T10:34:20.512683+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 3,
-  "attempted": 3,
+  "missing_before_run": 5,
+  "attempted": 5,
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-11-21-trump-threatens-tremendous-tax-for-moving-ai-data-centers-outside-the-us-b1c2856459.html",
-      "image": "news/images/2026-11-21-trump-threatens-tremendous-tax-for-moving-ai-data-centers-outside-the-us-b1c2856459-source.jpg",
-      "bytes": 270369,
+      "article": "2026-11-22-three-killed-and-dozens-missing-after-fire-at-indonesian-factory-e470fde8d9.html",
+      "image": "news/images/2026-11-22-three-killed-and-dozens-missing-after-fire-at-indonesian-factory-e470fde8d9-source.jpg",
+      "bytes": 120041,
       "provider": "Original news source",
-      "source_url": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK466_ELECTION_2024_CVirginia_E.jpg?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200"
+      "source_url": "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/0675/live/85d2f2e0-e62c-11f1-b2ea-350d14ed1ad7.jpg"
     },
     {
-      "article": "2026-11-21-rockstar-says-gta-vi-made-3-79-billion-in-its-first-day-6132f007d0.html",
-      "image": "news/images/2026-11-21-rockstar-says-gta-vi-made-3-79-billion-in-its-first-day-6132f007d0-source.jpg",
-      "bytes": 107566,
+      "article": "2026-11-22-the-fbi-and-usda-were-reportedly-hacked-d6150eed36.html",
+      "image": "news/images/2026-11-22-the-fbi-and-usda-were-reportedly-hacked-d6150eed36-source.jpg",
+      "bytes": 185864,
       "provider": "Original news source",
-      "source_url": "https://www.theverge.com/games/1036279/gta-vi-sales",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/STKS540_GTA_VI_2_D.jpg?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200"
+      "source_url": "https://www.theverge.com/tech/1039543/fbi-usda-hacked",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23318430/akrales_220309_4977_0038.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
     },
     {
-      "article": "2026-11-21-fossil-fuel-row-stalls-cop31-climate-deal-057437345f.html",
-      "image": "news/images/2026-11-21-fossil-fuel-row-stalls-cop31-climate-deal-057437345f-source.jpg",
-      "bytes": 43285,
+      "article": "2026-11-22-south-korea-education-minister-resigns-over-exam-cheating-scandal-d69cea9875.html",
+      "image": "news/images/2026-11-22-south-korea-education-minister-resigns-over-exam-cheating-scandal-d69cea9875-source.jpg",
+      "bytes": 84987,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/fossil-fuel-row-stalls-cop31-climate-deal/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2016/10/17155511/punchlogo.png"
+      "source_url": "https://www.bbc.co.uk/news/articles/cw3dgk29d37no?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/1f58/live/2ab01bc0-e651-11f1-a094-5fdc692f3e33.jpg"
+    },
+    {
+      "article": "2026-11-22-police-arrest-two-nephews-over-killing-of-70-year-old-uncle-in-bauchi-ba9c96d54f.html",
+      "image": "news/images/2026-11-22-police-arrest-two-nephews-over-killing-of-70-year-old-uncle-in-bauchi-ba9c96d54f-source.jpg",
+      "bytes": 51144,
+      "provider": "Original news source",
+      "source_url": "https://punchng.com/police-arrest-two-nephews-over-killing-of-70-year-old-uncle-in-bauchi/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/22111222/1001828046_1795342342-720x630.webp"
+    },
+    {
+      "article": "2026-11-22-mexican-drug-lord-on-fbi-s-10-most-wanted-list-arrested-in-shoot-out-85cf99f12c.html",
+      "image": "news/images/2026-11-22-mexican-drug-lord-on-fbi-s-10-most-wanted-list-arrested-in-shoot-out-85cf99f12c-source.jpg",
+      "bytes": 33666,
+      "provider": "Original news source",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckz749ey0r75o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/5701/live/7ac9e270-e5ad-11f1-99a1-253766e7ad8b.jpg"
     }
   ],
   "openverse_photos": [],
