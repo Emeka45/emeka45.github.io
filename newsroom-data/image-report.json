@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-11-22T10:34:20.512683+00:00",
+  "finished_utc": "2026-11-23T11:35:23.200665+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
   "missing_before_run": 5,
@@ -7,47 +7,49 @@
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-11-22-three-killed-and-dozens-missing-after-fire-at-indonesian-factory-e470fde8d9.html",
-      "image": "news/images/2026-11-22-three-killed-and-dozens-missing-after-fire-at-indonesian-factory-e470fde8d9-source.jpg",
-      "bytes": 120041,
+      "article": "2026-11-23-russian-warship-hit-by-ukrainian-drones-in-libya-zelensky-says-fa82ba8afd.html",
+      "image": "news/images/2026-11-23-russian-warship-hit-by-ukrainian-drones-in-libya-zelensky-says-fa82ba8afd-source.jpg",
+      "bytes": 30086,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/0675/live/85d2f2e0-e62c-11f1-b2ea-350d14ed1ad7.jpg"
+      "source_url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/7507/live/ee06aa60-e720-11f1-a094-5fdc692f3e33.jpg"
     },
     {
-      "article": "2026-11-22-the-fbi-and-usda-were-reportedly-hacked-d6150eed36.html",
-      "image": "news/images/2026-11-22-the-fbi-and-usda-were-reportedly-hacked-d6150eed36-source.jpg",
-      "bytes": 185864,
+      "article": "2026-11-23-gta-6-is-getting-review-bombed-in-zelda-vs-gta-troll-war-5af7ffe25e.html",
+      "image": "news/images/2026-11-23-gta-6-is-getting-review-bombed-in-zelda-vs-gta-troll-war-5af7ffe25e-source.jpg",
+      "bytes": 110283,
       "provider": "Original news source",
-      "source_url": "https://www.theverge.com/tech/1039543/fbi-usda-hacked",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23318430/akrales_220309_4977_0038.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+      "source_url": "https://www.polygon.com/gta-6-review-bombed-legend-of-zelda/",
+      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/lucia_caminos_07.jpg?w=1600&h=900&fit=crop"
     },
     {
-      "article": "2026-11-22-south-korea-education-minister-resigns-over-exam-cheating-scandal-d69cea9875.html",
-      "image": "news/images/2026-11-22-south-korea-education-minister-resigns-over-exam-cheating-scandal-d69cea9875-source.jpg",
-      "bytes": 84987,
+      "article": "2026-11-23-fg-un-disappointed-as-cop31-climate-talks-collapse-92a628ee4b.html",
+      "image": "news/images/2026-11-23-fg-un-disappointed-as-cop31-climate-talks-collapse-92a628ee4b-source.jpg",
+      "bytes": 51142,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cw3dgk29d37no?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/1f58/live/2ab01bc0-e651-11f1-a094-5fdc692f3e33.jpg"
+      "source_url": "https://punchng.com/fg-un-disappointed-as-cop31-climate-talks-collapse/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/09100151/AFP__20261107__D6RL8CR__v1__MidRes__Cop31UnClimateChangeConference_1794214911.webp"
     },
     {
-      "article": "2026-11-22-police-arrest-two-nephews-over-killing-of-70-year-old-uncle-in-bauchi-ba9c96d54f.html",
-      "image": "news/images/2026-11-22-police-arrest-two-nephews-over-killing-of-70-year-old-uncle-in-bauchi-ba9c96d54f-source.jpg",
-      "bytes": 51144,
+      "article": "2026-11-23-binding-of-isaac-developer-removes-ai-music-from-repentance-plus-482a466a95.html",
+      "image": "news/images/2026-11-23-binding-of-isaac-developer-removes-ai-music-from-repentance-plus-482a466a95-source.jpg",
+      "bytes": 89085,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/police-arrest-two-nephews-over-killing-of-70-year-old-uncle-in-bauchi/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/22111222/1001828046_1795342342-720x630.webp"
-    },
-    {
-      "article": "2026-11-22-mexican-drug-lord-on-fbi-s-10-most-wanted-list-arrested-in-shoot-out-85cf99f12c.html",
-      "image": "news/images/2026-11-22-mexican-drug-lord-on-fbi-s-10-most-wanted-list-arrested-in-shoot-out-85cf99f12c-source.jpg",
-      "bytes": 33666,
-      "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/ckz749ey0r75o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/5701/live/7ac9e270-e5ad-11f1-99a1-253766e7ad8b.jpg"
+      "source_url": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/j7yPmbNCP4I-HD.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200"
     }
   ],
-  "openverse_photos": [],
+  "openverse_photos": [
+    {
+      "article": "2026-11-23-tinubu-urges-igboho-to-work-with-security-agencies-to-protect-south-west-b596c700f3.html",
+      "image": "news/images/2026-11-23-tinubu-urges-igboho-to-work-with-security-agencies-to-protect-south-west-b596c700f3.jpg",
+      "bytes": 243797,
+      "provider": "Openverse",
+      "creator": "UCL Engineering",
+      "license": "pdm",
+      "source_url": "http://www.flickr.com/photos/67955891@N04/16631025379"
+    }
+  ],
   "fallbacks": [],
   "failures": [],
   "remaining_missing_after_run": 0

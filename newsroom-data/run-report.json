@@ -1,21 +1,21 @@
 {
-  "started_utc": "2026-11-22T10:34:04.871858+00:00",
-  "finished_utc": "2026-11-22T10:34:18.927582+00:00",
+  "started_utc": "2026-11-23T11:34:49.587917+00:00",
+  "finished_utc": "2026-11-23T11:35:19.498513+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 355,
-  "fresh_items": 327,
-  "corroborated_candidates": 8,
+  "fresh_items": 324,
+  "corroborated_candidates": 7,
   "published_count": 5,
   "published_titles": [
-    "Three killed and dozens missing after fire at Indonesian factory",
-    "South Korea education minister resigns over exam cheating scandal",
-    "The FBI and USDA were reportedly hacked",
-    "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
-    "Police arrest two nephews over killing of 70-year-old uncle in Bauchi"
+    "FG, UN disappointed as COP31 climate talks collapse",
+    "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
+    "Binding of Isaac developer removes AI music from Repentance Plus",
+    "Tinubu urges Igboho to work with security agencies to protect South-West",
+    "GTA 6 Is Getting Review Bombed in Zelda vs. GTA Troll War"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }
