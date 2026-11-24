@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-11-23T11:35:23.200665+00:00",
+  "finished_utc": "2026-11-24T13:09:18.312314+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
   "missing_before_run": 5,
@@ -7,49 +7,47 @@
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-11-23-russian-warship-hit-by-ukrainian-drones-in-libya-zelensky-says-fa82ba8afd.html",
-      "image": "news/images/2026-11-23-russian-warship-hit-by-ukrainian-drones-in-libya-zelensky-says-fa82ba8afd-source.jpg",
-      "bytes": 30086,
+      "article": "2026-11-24-video-i-ll-be-a-better-ceo-reinstated-nvidia-boss-tells-cheering-staff-72c49e7f41.html",
+      "image": "news/images/2026-11-24-video-i-ll-be-a-better-ceo-reinstated-nvidia-boss-tells-cheering-staff-72c49e7f41-source.jpg",
+      "bytes": 85932,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/7507/live/ee06aa60-e720-11f1-a094-5fdc692f3e33.jpg"
+      "source_url": "https://punchng.com/video-ill-be-a-better-ceo-reinstated-nvidia-boss-tells-cheering-staff/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/09092750/AFP__20261109__D6VC7G3__v1__MidRes__NvidiaCeoJensenHuangGivesKeynoteAheadOfCes_1794212870-1200x630.webp"
     },
     {
-      "article": "2026-11-23-gta-6-is-getting-review-bombed-in-zelda-vs-gta-troll-war-5af7ffe25e.html",
-      "image": "news/images/2026-11-23-gta-6-is-getting-review-bombed-in-zelda-vs-gta-troll-war-5af7ffe25e-source.jpg",
-      "bytes": 110283,
+      "article": "2026-11-24-ukraine-sinks-russian-warship-strikes-cargo-ships-from-mediterranean-to-baltic-56f33daec7.html",
+      "image": "news/images/2026-11-24-ukraine-sinks-russian-warship-strikes-cargo-ships-from-mediterranean-to-baltic-56f33daec7-source.jpg",
+      "bytes": 663972,
       "provider": "Original news source",
-      "source_url": "https://www.polygon.com/gta-6-review-bombed-legend-of-zelda/",
-      "image_url": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/lucia_caminos_07.jpg?w=1600&h=900&fit=crop"
+      "source_url": "https://arstechnica.com/gadgets/2026/11/ukraines-sea-drones-blow-up-russian-warship-in-benghazi-operation/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/merkury-fire_benghazi-libya_20261122_054739_ssc4_rgb_flat_50cm_1920px_logo_geo-1920x1440.jpg"
     },
     {
-      "article": "2026-11-23-fg-un-disappointed-as-cop31-climate-talks-collapse-92a628ee4b.html",
-      "image": "news/images/2026-11-23-fg-un-disappointed-as-cop31-climate-talks-collapse-92a628ee4b-source.jpg",
-      "bytes": 51142,
+      "article": "2026-11-24-plateau-can-chairman-warns-christians-against-political-manipulation-ahead-of-2027-electio-a6f65ff8ef.html",
+      "image": "news/images/2026-11-24-plateau-can-chairman-warns-christians-against-political-manipulation-ahead-of-2027-electio-a6f65ff8ef-source.jpg",
+      "bytes": 55112,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/fg-un-disappointed-as-cop31-climate-talks-collapse/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/09100151/AFP__20261107__D6RL8CR__v1__MidRes__Cop31UnClimateChangeConference_1794214911.webp"
+      "source_url": "https://punchng.com/2027-ex-cjn-warns-against-repeat-of-2011-post-election-killings/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/24131043/WhatsApp-Image-2026-11-24-at-12.47.44-PM_1795522243-1000x630.webp"
     },
     {
-      "article": "2026-11-23-binding-of-isaac-developer-removes-ai-music-from-repentance-plus-482a466a95.html",
-      "image": "news/images/2026-11-23-binding-of-isaac-developer-removes-ai-music-from-repentance-plus-482a466a95-source.jpg",
-      "bytes": 89085,
+      "article": "2026-11-24-comedian-impersonates-trump-s-dance-moves-mocks-trade-talks-at-canada-press-dinner-b4f4b2b819.html",
+      "image": "news/images/2026-11-24-comedian-impersonates-trump-s-dance-moves-mocks-trade-talks-at-canada-press-dinner-b4f4b2b819-source.jpg",
+      "bytes": 807329,
       "provider": "Original news source",
-      "source_url": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/j7yPmbNCP4I-HD.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200"
+      "source_url": "https://www.bbc.co.uk/news/articles/cr930y92dyx4o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/9f36/live/7d4e5560-e758-11f1-b407-33329b1ec67a.png"
+    },
+    {
+      "article": "2026-11-24-china-sentences-official-to-death-for-spying-leaking-state-secrets-0ddd04fcec.html",
+      "image": "news/images/2026-11-24-china-sentences-official-to-death-for-spying-leaking-state-secrets-0ddd04fcec-source.jpg",
+      "bytes": 59112,
+      "provider": "Original news source",
+      "source_url": "https://punchng.com/china-sentences-official-to-death-for-spying-leaking-state-secrets/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://punchng.com/wp-content/uploads/2026/06/china-4594413_1280-1200x630.webp"
     }
   ],
-  "openverse_photos": [
-    {
-      "article": "2026-11-23-tinubu-urges-igboho-to-work-with-security-agencies-to-protect-south-west-b596c700f3.html",
-      "image": "news/images/2026-11-23-tinubu-urges-igboho-to-work-with-security-agencies-to-protect-south-west-b596c700f3.jpg",
-      "bytes": 243797,
-      "provider": "Openverse",
-      "creator": "UCL Engineering",
-      "license": "pdm",
-      "source_url": "http://www.flickr.com/photos/67955891@N04/16631025379"
-    }
-  ],
+  "openverse_photos": [],
   "fallbacks": [],
   "failures": [],
   "remaining_missing_after_run": 0

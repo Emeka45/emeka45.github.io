@@ -1,21 +1,21 @@
 {
-  "started_utc": "2026-11-23T11:34:49.587917+00:00",
-  "finished_utc": "2026-11-23T11:35:19.498513+00:00",
+  "started_utc": "2026-11-24T13:08:53.695468+00:00",
+  "finished_utc": "2026-11-24T13:09:16.303466+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 355,
-  "fresh_items": 324,
-  "corroborated_candidates": 7,
+  "fresh_items": 333,
+  "corroborated_candidates": 9,
   "published_count": 5,
   "published_titles": [
-    "FG, UN disappointed as COP31 climate talks collapse",
-    "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
-    "Binding of Isaac developer removes AI music from Repentance Plus",
-    "Tinubu urges Igboho to work with security agencies to protect South-West",
-    "GTA 6 Is Getting Review Bombed in Zelda vs. GTA Troll War"
+    "Ukraine sinks Russian warship, strikes cargo ships from Mediterranean to Baltic",
+    "Plateau CAN Chairman Warns Christians Against Political Manipulation Ahead Of 2027 Elections - Arise News",
+    "Comedian impersonates Trump's dance moves, mocks trade talks at Canada press dinner",
+    "China sentences official to death for spying, leaking state secrets",
+    "VIDEO: ‘I’ll be a better CEO,’ reinstated Nvidia boss tells cheering staff"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }
