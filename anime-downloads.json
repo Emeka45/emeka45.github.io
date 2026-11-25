@@ -108,7 +108,11 @@
         }
       ],
       "subtitleStatus": "unknown",
-      "subtitleLanguages": []
+      "subtitleLanguages": [],
+      "posterUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/WING_IT%21_-_Blender_Open_Movie-full_movie.webm/320px--WING_IT%21_-_Blender_Open_Movie-full_movie.webm.jpg",
+      "posterCredit": "Blender Studio via Wikimedia Commons",
+      "posterLicense": "CC BY 4.0",
+      "posterLicenseUrl": "https://creativecommons.org/licenses/by/4.0/"
     },
     {
       "id": "spring",
