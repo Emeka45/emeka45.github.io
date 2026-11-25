@@ -1,21 +1,21 @@
 {
-  "started_utc": "2026-11-24T13:08:53.695468+00:00",
-  "finished_utc": "2026-11-24T13:09:16.303466+00:00",
+  "started_utc": "2026-11-25T11:55:50.064952+00:00",
+  "finished_utc": "2026-11-25T11:56:05.891717+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 355,
-  "fresh_items": 333,
-  "corroborated_candidates": 9,
+  "fresh_items": 334,
+  "corroborated_candidates": 10,
   "published_count": 5,
   "published_titles": [
-    "Ukraine sinks Russian warship, strikes cargo ships from Mediterranean to Baltic",
-    "Plateau CAN Chairman Warns Christians Against Political Manipulation Ahead Of 2027 Elections - Arise News",
-    "Comedian impersonates Trump's dance moves, mocks trade talks at Canada press dinner",
-    "China sentences official to death for spying, leaking state secrets",
-    "VIDEO: ‘I’ll be a better CEO,’ reinstated Nvidia boss tells cheering staff"
+    "Tinubu mourns Pete Edochie, hails late actor’s contribution to Nollywood",
+    "Huawei found guilty of stealing trade secrets",
+    "China launches Shenzhou 24 spacecraft carrying 2 Chinese and 1 Pakistani astronaut",
+    "Colombian police storm supermarket to free 20 held hostage for 17 hours",
+    "ICJ Issues Historic Ruling on Genocide of Rohingya Minority in Myanmar - International Christian Concern"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }

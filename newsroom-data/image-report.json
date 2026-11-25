@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-11-24T13:09:18.312314+00:00",
+  "finished_utc": "2026-11-25T11:56:07.550520+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
   "missing_before_run": 5,
@@ -7,44 +7,44 @@
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-11-24-video-i-ll-be-a-better-ceo-reinstated-nvidia-boss-tells-cheering-staff-72c49e7f41.html",
-      "image": "news/images/2026-11-24-video-i-ll-be-a-better-ceo-reinstated-nvidia-boss-tells-cheering-staff-72c49e7f41-source.jpg",
-      "bytes": 85932,
+      "article": "2026-11-25-tinubu-mourns-pete-edochie-hails-late-actor-s-contribution-to-nollywood-25e5468583.html",
+      "image": "news/images/2026-11-25-tinubu-mourns-pete-edochie-hails-late-actor-s-contribution-to-nollywood-25e5468583-source.jpg",
+      "bytes": 31940,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/video-ill-be-a-better-ceo-reinstated-nvidia-boss-tells-cheering-staff/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/09092750/AFP__20261109__D6VC7G3__v1__MidRes__NvidiaCeoJensenHuangGivesKeynoteAheadOfCes_1794212870-1200x630.webp"
+      "source_url": "https://punchng.com/tinubu-mourns-pete-edochie-hails-late-actors-contribution-to-nollywood/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/25033027/images-24_1795573827.webp"
     },
     {
-      "article": "2026-11-24-ukraine-sinks-russian-warship-strikes-cargo-ships-from-mediterranean-to-baltic-56f33daec7.html",
-      "image": "news/images/2026-11-24-ukraine-sinks-russian-warship-strikes-cargo-ships-from-mediterranean-to-baltic-56f33daec7-source.jpg",
-      "bytes": 663972,
+      "article": "2026-11-25-icj-issues-historic-ruling-on-genocide-of-rohingya-minority-in-myanmar-international-chris-7b432ed2a7.html",
+      "image": "news/images/2026-11-25-icj-issues-historic-ruling-on-genocide-of-rohingya-minority-in-myanmar-international-chris-7b432ed2a7-source.jpg",
+      "bytes": 90163,
       "provider": "Original news source",
-      "source_url": "https://arstechnica.com/gadgets/2026/11/ukraines-sea-drones-blow-up-russian-warship-in-benghazi-operation/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/merkury-fire_benghazi-libya_20261122_054739_ssc4_rgb_flat_50cm_1920px_logo_geo-1920x1440.jpg"
+      "source_url": "https://www.theguardian.com/world/2026/nov/24/malaysia-to-send-thousands-of-migrants-back-to-myanmar",
+      "image_url": "https://i.guim.co.uk/img/media/d6322487e65959fb8cbf133843b8295362b0ce38/0_0_3825_3061/master/3825.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=3696b58a15b6bbe21e5705563cce793b"
     },
     {
-      "article": "2026-11-24-plateau-can-chairman-warns-christians-against-political-manipulation-ahead-of-2027-electio-a6f65ff8ef.html",
-      "image": "news/images/2026-11-24-plateau-can-chairman-warns-christians-against-political-manipulation-ahead-of-2027-electio-a6f65ff8ef-source.jpg",
-      "bytes": 55112,
+      "article": "2026-11-25-huawei-found-guilty-of-stealing-trade-secrets-098c0c715f.html",
+      "image": "news/images/2026-11-25-huawei-found-guilty-of-stealing-trade-secrets-098c0c715f-source.jpg",
+      "bytes": 107326,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/2027-ex-cjn-warns-against-repeat-of-2011-post-election-killings/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/24131043/WhatsApp-Image-2026-11-24-at-12.47.44-PM_1795522243-1000x630.webp"
+      "source_url": "https://www.theverge.com/tech/1041820/huawei-guilty-trade-secrets-trial",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2302952808.jpg?quality=90&strip=all&crop=0%2C10.736249198466%2C100%2C78.527501603069&w=1200"
     },
     {
-      "article": "2026-11-24-comedian-impersonates-trump-s-dance-moves-mocks-trade-talks-at-canada-press-dinner-b4f4b2b819.html",
-      "image": "news/images/2026-11-24-comedian-impersonates-trump-s-dance-moves-mocks-trade-talks-at-canada-press-dinner-b4f4b2b819-source.jpg",
-      "bytes": 807329,
+      "article": "2026-11-25-colombian-police-storm-supermarket-to-free-20-held-hostage-for-17-hours-1f7d1f1361.html",
+      "image": "news/images/2026-11-25-colombian-police-storm-supermarket-to-free-20-held-hostage-for-17-hours-1f7d1f1361-source.jpg",
+      "bytes": 95003,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cr930y92dyx4o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/9f36/live/7d4e5560-e758-11f1-b407-33329b1ec67a.png"
+      "source_url": "https://www.bbc.co.uk/news/articles/ckp80mjr9emyo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/997a/live/4f4b3940-e8c4-11f1-ac76-db9e97f93d67.jpg"
     },
     {
-      "article": "2026-11-24-china-sentences-official-to-death-for-spying-leaking-state-secrets-0ddd04fcec.html",
-      "image": "news/images/2026-11-24-china-sentences-official-to-death-for-spying-leaking-state-secrets-0ddd04fcec-source.jpg",
-      "bytes": 59112,
+      "article": "2026-11-25-china-launches-shenzhou-24-spacecraft-carrying-2-chinese-and-1-pakistani-astronaut-8bbcffaab4.html",
+      "image": "news/images/2026-11-25-china-launches-shenzhou-24-spacecraft-carrying-2-chinese-and-1-pakistani-astronaut-8bbcffaab4-source.jpg",
+      "bytes": 85420,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/china-sentences-official-to-death-for-spying-leaking-state-secrets/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://punchng.com/wp-content/uploads/2026/06/china-4594413_1280-1200x630.webp"
+      "source_url": "https://www.bbc.co.uk/news/videos/cmz74l0yzzvyo?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4b78/live/6330c460-e889-11f1-a094-5fdc692f3e33.jpg"
     }
   ],
   "openverse_photos": [],
