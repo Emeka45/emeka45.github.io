@@ -80,7 +80,11 @@
         }
       ],
       "subtitleStatus": "unknown",
-      "subtitleLanguages": []
+      "subtitleLanguages": [],
+      "posterUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Coffee_Run_-_Blender_Open_Movie-full_movie.webm/320px--Coffee_Run_-_Blender_Open_Movie-full_movie.webm.jpg",
+      "posterCredit": "Blender Foundation via Wikimedia Commons",
+      "posterLicense": "CC BY 4.0",
+      "posterLicenseUrl": "https://creativecommons.org/licenses/by/4.0/"
     },
     {
       "id": "wing-it",
@@ -200,7 +204,11 @@
         }
       ],
       "subtitleStatus": "unknown",
-      "subtitleLanguages": []
+      "subtitleLanguages": [],
+      "posterUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Blender_Foundation_-_Caminandes_-_Episode_2_-_Gran_Dillama_-_Cover_thumbnail.png/320px-Blender_Foundation_-_Caminandes_-_Episode_2_-_Gran_Dillama_-_Cover_thumbnail.png",
+      "posterCredit": "Blender Foundation via Wikimedia Commons",
+      "posterLicense": "CC BY 3.0",
+      "posterLicenseUrl": "https://creativecommons.org/licenses/by/3.0/"
     },
     {
       "id": "big-buck-bunny",
