@@ -1,21 +1,21 @@
 {
-  "started_utc": "2026-11-25T11:55:50.064952+00:00",
-  "finished_utc": "2026-11-25T11:56:05.891717+00:00",
+  "started_utc": "2026-11-26T11:44:38.598712+00:00",
+  "finished_utc": "2026-11-26T11:44:58.894472+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
   "feed_success_count": 30,
   "feed_failure_count": 0,
   "feed_failures": [],
   "total_items": 355,
-  "fresh_items": 334,
-  "corroborated_candidates": 10,
+  "fresh_items": 335,
+  "corroborated_candidates": 6,
   "published_count": 5,
   "published_titles": [
-    "Tinubu mourns Pete Edochie, hails late actor’s contribution to Nollywood",
-    "Huawei found guilty of stealing trade secrets",
-    "China launches Shenzhou 24 spacecraft carrying 2 Chinese and 1 Pakistani astronaut",
-    "Colombian police storm supermarket to free 20 held hostage for 17 hours",
-    "ICJ Issues Historic Ruling on Genocide of Rohingya Minority in Myanmar - International Christian Concern"
+    "The FCC has authorized SpaceX to deploy 1 million satellites",
+    "Thirty-one killed in massive fire as fuel tanker crashes on Cairo highway",
+    "US announces new tariffs on host of countries including China",
+    "DR Congo summons Ugandan envoy over Museveni’s son’s remarks",
+    "Tired of GTA 6? Here's 23 lesser-known gems that might beat it at its own game"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }

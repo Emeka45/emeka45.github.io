@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-11-25T11:56:07.550520+00:00",
+  "finished_utc": "2026-11-26T11:45:01.487865+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
   "missing_before_run": 5,
@@ -7,44 +7,44 @@
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-11-25-tinubu-mourns-pete-edochie-hails-late-actor-s-contribution-to-nollywood-25e5468583.html",
-      "image": "news/images/2026-11-25-tinubu-mourns-pete-edochie-hails-late-actor-s-contribution-to-nollywood-25e5468583-source.jpg",
-      "bytes": 31940,
+      "article": "2026-11-26-us-announces-new-tariffs-on-host-of-countries-including-china-d05df80b2f.html",
+      "image": "news/images/2026-11-26-us-announces-new-tariffs-on-host-of-countries-including-china-d05df80b2f-source.jpg",
+      "bytes": 57721,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/tinubu-mourns-pete-edochie-hails-late-actors-contribution-to-nollywood/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/25033027/images-24_1795573827.webp"
+      "source_url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/cdd4/live/6fdb6db0-e946-11f1-8b2f-671485cea0be.jpg"
     },
     {
-      "article": "2026-11-25-icj-issues-historic-ruling-on-genocide-of-rohingya-minority-in-myanmar-international-chris-7b432ed2a7.html",
-      "image": "news/images/2026-11-25-icj-issues-historic-ruling-on-genocide-of-rohingya-minority-in-myanmar-international-chris-7b432ed2a7-source.jpg",
-      "bytes": 90163,
+      "article": "2026-11-26-tired-of-gta-6-here-s-23-lesser-known-gems-that-might-beat-it-at-its-own-game-ed9b859c40.html",
+      "image": "news/images/2026-11-26-tired-of-gta-6-here-s-23-lesser-known-gems-that-might-beat-it-at-its-own-game-ed9b859c40-source.jpg",
+      "bytes": 153100,
       "provider": "Original news source",
-      "source_url": "https://www.theguardian.com/world/2026/nov/24/malaysia-to-send-thousands-of-migrants-back-to-myanmar",
-      "image_url": "https://i.guim.co.uk/img/media/d6322487e65959fb8cbf133843b8295362b0ce38/0_0_3825_3061/master/3825.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=3696b58a15b6bbe21e5705563cce793b"
+      "source_url": "https://www.eurogamer.net/gta-6-23-lesser-known-gems-that-might-beat-it-at-its-own-game",
+      "image_url": "https://assetsio.gnwcdn.com/not-gta-header-resize.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
     },
     {
-      "article": "2026-11-25-huawei-found-guilty-of-stealing-trade-secrets-098c0c715f.html",
-      "image": "news/images/2026-11-25-huawei-found-guilty-of-stealing-trade-secrets-098c0c715f-source.jpg",
-      "bytes": 107326,
+      "article": "2026-11-26-thirty-one-killed-in-massive-fire-as-fuel-tanker-crashes-on-cairo-highway-c16bd62cfa.html",
+      "image": "news/images/2026-11-26-thirty-one-killed-in-massive-fire-as-fuel-tanker-crashes-on-cairo-highway-c16bd62cfa-source.jpg",
+      "bytes": 88930,
       "provider": "Original news source",
-      "source_url": "https://www.theverge.com/tech/1041820/huawei-guilty-trade-secrets-trial",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2302952808.jpg?quality=90&strip=all&crop=0%2C10.736249198466%2C100%2C78.527501603069&w=1200"
+      "source_url": "https://www.bbc.co.uk/news/articles/cqy7rn30v314o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/299a/live/007f6470-e96a-11f1-99a1-253766e7ad8b.jpg"
     },
     {
-      "article": "2026-11-25-colombian-police-storm-supermarket-to-free-20-held-hostage-for-17-hours-1f7d1f1361.html",
-      "image": "news/images/2026-11-25-colombian-police-storm-supermarket-to-free-20-held-hostage-for-17-hours-1f7d1f1361-source.jpg",
-      "bytes": 95003,
+      "article": "2026-11-26-the-fcc-has-authorized-spacex-to-deploy-1-million-satellites-726bc6c5ff.html",
+      "image": "news/images/2026-11-26-the-fcc-has-authorized-spacex-to-deploy-1-million-satellites-726bc6c5ff-source.jpg",
+      "bytes": 57560,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/ckp80mjr9emyo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/997a/live/4f4b3940-e8c4-11f1-ac76-db9e97f93d67.jpg"
+      "source_url": "https://arstechnica.com/space/2026/11/the-fcc-has-authorized-spacex-to-deploy-1-million-satellites/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/starmind-1152x648.jpeg"
     },
     {
-      "article": "2026-11-25-china-launches-shenzhou-24-spacecraft-carrying-2-chinese-and-1-pakistani-astronaut-8bbcffaab4.html",
-      "image": "news/images/2026-11-25-china-launches-shenzhou-24-spacecraft-carrying-2-chinese-and-1-pakistani-astronaut-8bbcffaab4-source.jpg",
-      "bytes": 85420,
+      "article": "2026-11-26-dr-congo-summons-ugandan-envoy-over-museveni-s-son-s-remarks-6c50a32f4b.html",
+      "image": "news/images/2026-11-26-dr-congo-summons-ugandan-envoy-over-museveni-s-son-s-remarks-6c50a32f4b-source.jpg",
+      "bytes": 28374,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/videos/cmz74l0yzzvyo?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4b78/live/6330c460-e889-11f1-a094-5fdc692f3e33.jpg"
+      "source_url": "https://punchng.com/dr-congo-summons-ugandan-envoy-over-musevenis-sons-remarks/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/26103827/659d3900-e964-11f1-82b3-2f50a9074536.jpg_1795685907.webp"
     }
   ],
   "openverse_photos": [],
