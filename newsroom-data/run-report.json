@@ -1,21 +1,27 @@
 {
-  "started_utc": "2026-11-26T11:44:38.598712+00:00",
-  "finished_utc": "2026-11-26T11:44:58.894472+00:00",
+  "started_utc": "2026-11-27T11:38:22.702188+00:00",
+  "finished_utc": "2026-11-27T11:39:17.233995+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
-  "feed_success_count": 30,
-  "feed_failure_count": 0,
-  "feed_failures": [],
-  "total_items": 355,
-  "fresh_items": 335,
-  "corroborated_candidates": 6,
+  "feed_success_count": 29,
+  "feed_failure_count": 1,
+  "feed_failures": [
+    {
+      "category": "Anime",
+      "url": "https://www.animenewsnetwork.com/news/rss.xml",
+      "error": "The read operation timed out"
+    }
+  ],
+  "total_items": 335,
+  "fresh_items": 314,
+  "corroborated_candidates": 8,
   "published_count": 5,
   "published_titles": [
-    "The FCC has authorized SpaceX to deploy 1 million satellites",
-    "Thirty-one killed in massive fire as fuel tanker crashes on Cairo highway",
-    "US announces new tariffs on host of countries including China",
-    "DR Congo summons Ugandan envoy over Museveni’s son’s remarks",
-    "Tired of GTA 6? Here's 23 lesser-known gems that might beat it at its own game"
+    "Ex-media executive admits saying Australian child sex abuse survivor 'looking to be raped again'",
+    "Guinea-Bissau junta delays return to civilian rule until 2028",
+    "Mushroom murderer Erin Patterson launches last-ditch High Court appeal",
+    "Spain races to stop oil spill after ship capsizes off Ibiza",
+    "New Zealand's ruling coalition falls short of parliamentary majority by one seat"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }

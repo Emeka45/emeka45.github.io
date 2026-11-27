@@ -1,5 +1,5 @@
 {
-  "finished_utc": "2026-11-26T11:45:01.487865+00:00",
+  "finished_utc": "2026-11-27T11:39:18.498525+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
   "missing_before_run": 5,
@@ -7,44 +7,44 @@
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-11-26-us-announces-new-tariffs-on-host-of-countries-including-china-d05df80b2f.html",
-      "image": "news/images/2026-11-26-us-announces-new-tariffs-on-host-of-countries-including-china-d05df80b2f-source.jpg",
-      "bytes": 57721,
+      "article": "2026-11-27-spain-races-to-stop-oil-spill-after-ship-capsizes-off-ibiza-06ed3cbd82.html",
+      "image": "news/images/2026-11-27-spain-races-to-stop-oil-spill-after-ship-capsizes-off-ibiza-06ed3cbd82-source.jpg",
+      "bytes": 62380,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/cdd4/live/6fdb6db0-e946-11f1-8b2f-671485cea0be.jpg"
+      "source_url": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/3e73/live/33d0e9f0-e99e-11f1-b880-15b494ba858d.jpg"
     },
     {
-      "article": "2026-11-26-tired-of-gta-6-here-s-23-lesser-known-gems-that-might-beat-it-at-its-own-game-ed9b859c40.html",
-      "image": "news/images/2026-11-26-tired-of-gta-6-here-s-23-lesser-known-gems-that-might-beat-it-at-its-own-game-ed9b859c40-source.jpg",
-      "bytes": 153100,
+      "article": "2026-11-27-new-zealand-s-ruling-coalition-falls-short-of-parliamentary-majority-by-one-seat-e882a16ade.html",
+      "image": "news/images/2026-11-27-new-zealand-s-ruling-coalition-falls-short-of-parliamentary-majority-by-one-seat-e882a16ade-source.jpg",
+      "bytes": 88347,
       "provider": "Original news source",
-      "source_url": "https://www.eurogamer.net/gta-6-23-lesser-known-gems-that-might-beat-it-at-its-own-game",
-      "image_url": "https://assetsio.gnwcdn.com/not-gta-header-resize.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
+      "source_url": "https://www.bbc.co.uk/news/articles/c670278qk879o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/6f08/live/c2e7e400-ea01-11f1-976c-6d185a1abdb9.jpg"
     },
     {
-      "article": "2026-11-26-thirty-one-killed-in-massive-fire-as-fuel-tanker-crashes-on-cairo-highway-c16bd62cfa.html",
-      "image": "news/images/2026-11-26-thirty-one-killed-in-massive-fire-as-fuel-tanker-crashes-on-cairo-highway-c16bd62cfa-source.jpg",
-      "bytes": 88930,
+      "article": "2026-11-27-mushroom-murderer-erin-patterson-launches-last-ditch-high-court-appeal-ccfbb26725.html",
+      "image": "news/images/2026-11-27-mushroom-murderer-erin-patterson-launches-last-ditch-high-court-appeal-ccfbb26725-source.jpg",
+      "bytes": 84942,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/cqy7rn30v314o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/299a/live/007f6470-e96a-11f1-99a1-253766e7ad8b.jpg"
+      "source_url": "https://www.bbc.co.uk/news/articles/ck053e1d3ly1o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/6fe1/live/e746c130-ea16-11f1-bb90-c99309416892.jpg"
     },
     {
-      "article": "2026-11-26-the-fcc-has-authorized-spacex-to-deploy-1-million-satellites-726bc6c5ff.html",
-      "image": "news/images/2026-11-26-the-fcc-has-authorized-spacex-to-deploy-1-million-satellites-726bc6c5ff-source.jpg",
-      "bytes": 57560,
+      "article": "2026-11-27-guinea-bissau-junta-delays-return-to-civilian-rule-until-2028-4ecd8f07a5.html",
+      "image": "news/images/2026-11-27-guinea-bissau-junta-delays-return-to-civilian-rule-until-2028-4ecd8f07a5-source.jpg",
+      "bytes": 62456,
       "provider": "Original news source",
-      "source_url": "https://arstechnica.com/space/2026/11/the-fcc-has-authorized-spacex-to-deploy-1-million-satellites/",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/starmind-1152x648.jpeg"
+      "source_url": "https://punchng.com/guinea-bissau-junta-delays-return-to-civilian-rule-until-2028/?utm_source=rss.punchng.com&utm_medium=web",
+      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/27105055/9028aca0-ea3f-11f1-9fc4-ef897a334b75.jpg_1795773055.webp"
     },
     {
-      "article": "2026-11-26-dr-congo-summons-ugandan-envoy-over-museveni-s-son-s-remarks-6c50a32f4b.html",
-      "image": "news/images/2026-11-26-dr-congo-summons-ugandan-envoy-over-museveni-s-son-s-remarks-6c50a32f4b-source.jpg",
-      "bytes": 28374,
+      "article": "2026-11-27-ex-media-executive-admits-saying-australian-child-sex-abuse-survivor-looking-to-be-raped-a-74522c0e9a.html",
+      "image": "news/images/2026-11-27-ex-media-executive-admits-saying-australian-child-sex-abuse-survivor-looking-to-be-raped-a-74522c0e9a-source.jpg",
+      "bytes": 75984,
       "provider": "Original news source",
-      "source_url": "https://punchng.com/dr-congo-summons-ugandan-envoy-over-musevenis-sons-remarks/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/26103827/659d3900-e964-11f1-82b3-2f50a9074536.jpg_1795685907.webp"
+      "source_url": "https://www.bbc.co.uk/news/articles/ckr5grlq78n9o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/88cd/live/81fb0990-ea42-11f1-9fc4-ef897a334b75.jpg"
     }
   ],
   "openverse_photos": [],
