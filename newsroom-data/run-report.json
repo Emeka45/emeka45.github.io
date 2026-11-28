@@ -1,27 +1,19 @@
 {
-  "started_utc": "2026-11-27T11:38:22.702188+00:00",
-  "finished_utc": "2026-11-27T11:39:17.233995+00:00",
+  "started_utc": "2026-11-28T11:12:58.821675+00:00",
+  "finished_utc": "2026-11-28T11:13:18.323668+00:00",
   "mode": "reliable-template-fallback",
   "feed_count": 30,
-  "feed_success_count": 29,
-  "feed_failure_count": 1,
-  "feed_failures": [
-    {
-      "category": "Anime",
-      "url": "https://www.animenewsnetwork.com/news/rss.xml",
-      "error": "The read operation timed out"
-    }
-  ],
-  "total_items": 335,
-  "fresh_items": 314,
-  "corroborated_candidates": 8,
-  "published_count": 5,
+  "feed_success_count": 30,
+  "feed_failure_count": 0,
+  "feed_failures": [],
+  "total_items": 355,
+  "fresh_items": 333,
+  "corroborated_candidates": 3,
+  "published_count": 3,
   "published_titles": [
-    "Ex-media executive admits saying Australian child sex abuse survivor 'looking to be raped again'",
-    "Guinea-Bissau junta delays return to civilian rule until 2028",
-    "Mushroom murderer Erin Patterson launches last-ditch High Court appeal",
-    "Spain races to stop oil spill after ship capsizes off Ibiza",
-    "New Zealand's ruling coalition falls short of parliamentary majority by one seat"
+    "Canada's top court largely upholds Quebec ban on religious symbols for public servants",
+    "The best Black Friday deals Ars could find",
+    "Yooka-Laylee’s free upgrade is skipping Xbox"
   ],
   "note": "Publishes original summaries from independently corroborated RSS reports without consuming Gemini quota."
 }

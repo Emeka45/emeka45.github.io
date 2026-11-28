@@ -1,50 +1,34 @@
 {
-  "finished_utc": "2026-11-27T11:39:18.498525+00:00",
+  "finished_utc": "2026-11-28T11:13:19.233410+00:00",
   "model": "gemini-2.5-flash-image",
   "max_images_per_run": 20,
-  "missing_before_run": 5,
-  "attempted": 5,
+  "missing_before_run": 3,
+  "attempted": 3,
   "generated": [],
   "source_photos": [
     {
-      "article": "2026-11-27-spain-races-to-stop-oil-spill-after-ship-capsizes-off-ibiza-06ed3cbd82.html",
-      "image": "news/images/2026-11-27-spain-races-to-stop-oil-spill-after-ship-capsizes-off-ibiza-06ed3cbd82-source.jpg",
-      "bytes": 62380,
+      "article": "2026-11-28-yooka-laylee-s-free-upgrade-is-skipping-xbox-52b7767c84.html",
+      "image": "news/images/2026-11-28-yooka-laylee-s-free-upgrade-is-skipping-xbox-52b7767c84-source.jpg",
+      "bytes": 175299,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/3e73/live/33d0e9f0-e99e-11f1-b880-15b494ba858d.jpg"
+      "source_url": "https://www.theverge.com/games/1044715/yooka-laylees-free-upgrade-is-skipping-xbox",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/V1-scaled-1.png?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200"
     },
     {
-      "article": "2026-11-27-new-zealand-s-ruling-coalition-falls-short-of-parliamentary-majority-by-one-seat-e882a16ade.html",
-      "image": "news/images/2026-11-27-new-zealand-s-ruling-coalition-falls-short-of-parliamentary-majority-by-one-seat-e882a16ade-source.jpg",
-      "bytes": 88347,
+      "article": "2026-11-28-the-best-black-friday-deals-ars-could-find-c0e99f7cd8.html",
+      "image": "news/images/2026-11-28-the-best-black-friday-deals-ars-could-find-c0e99f7cd8-source.jpg",
+      "bytes": 94305,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/c670278qk879o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/6f08/live/c2e7e400-ea01-11f1-976c-6d185a1abdb9.jpg"
+      "source_url": "https://arstechnica.com/shopping/2026/11/the-best-black-friday-deals-ars-could-find/",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/black_friday_matrix-1152x648-1795796083.jpg"
     },
     {
-      "article": "2026-11-27-mushroom-murderer-erin-patterson-launches-last-ditch-high-court-appeal-ccfbb26725.html",
-      "image": "news/images/2026-11-27-mushroom-murderer-erin-patterson-launches-last-ditch-high-court-appeal-ccfbb26725-source.jpg",
-      "bytes": 84942,
+      "article": "2026-11-28-canada-s-top-court-largely-upholds-quebec-ban-on-religious-symbols-for-public-servants-204398c0d5.html",
+      "image": "news/images/2026-11-28-canada-s-top-court-largely-upholds-quebec-ban-on-religious-symbols-for-public-servants-204398c0d5-source.jpg",
+      "bytes": 135620,
       "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/ck053e1d3ly1o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/6fe1/live/e746c130-ea16-11f1-bb90-c99309416892.jpg"
-    },
-    {
-      "article": "2026-11-27-guinea-bissau-junta-delays-return-to-civilian-rule-until-2028-4ecd8f07a5.html",
-      "image": "news/images/2026-11-27-guinea-bissau-junta-delays-return-to-civilian-rule-until-2028-4ecd8f07a5-source.jpg",
-      "bytes": 62456,
-      "provider": "Original news source",
-      "source_url": "https://punchng.com/guinea-bissau-junta-delays-return-to-civilian-rule-until-2028/?utm_source=rss.punchng.com&utm_medium=web",
-      "image_url": "https://cdn.punchng.com/wp-content/uploads/2026/11/27105055/9028aca0-ea3f-11f1-9fc4-ef897a334b75.jpg_1795773055.webp"
-    },
-    {
-      "article": "2026-11-27-ex-media-executive-admits-saying-australian-child-sex-abuse-survivor-looking-to-be-raped-a-74522c0e9a.html",
-      "image": "news/images/2026-11-27-ex-media-executive-admits-saying-australian-child-sex-abuse-survivor-looking-to-be-raped-a-74522c0e9a-source.jpg",
-      "bytes": 75984,
-      "provider": "Original news source",
-      "source_url": "https://www.bbc.co.uk/news/articles/ckr5grlq78n9o?at_medium=RSS&at_campaign=rss",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/88cd/live/81fb0990-ea42-11f1-9fc4-ef897a334b75.jpg"
+      "source_url": "https://www.bbc.co.uk/news/articles/cq3dgpy9lem3o?at_medium=RSS&at_campaign=rss",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/b5e9/live/7ddd01c0-ea82-11f1-a739-457c2295eaba.jpg"
     }
   ],
   "openverse_photos": [],
